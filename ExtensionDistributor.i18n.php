@@ -1053,6 +1053,13 @@ $messages['frp'] = array(
 	'extdist-want-more' => 'Avêr una ôtra èxtension',
 );
 
+/** Friulian (Furlan)
+ * @author Klenje
+ */
+$messages['fur'] = array(
+	'extdist-submit-extension' => 'Va indevant',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
