@@ -69,7 +69,7 @@ class ExtensionDistributorPage extends SpecialPage {
 
 		$this->extensionList = array();
 		
-		foreach ( $wgExtDistBranches as $branchPath => $branch ) {
+		foreach ( $wgExtDistBranches as $branchPath ) {
 			$wc = "$wgExtDistWorkingCopy/$branchPath/extensions";
 			$dir = opendir( $wc );
 			
