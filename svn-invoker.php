@@ -74,7 +74,7 @@ function svnExecute() {
 	$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
 	// Determine last changed revision in the checkout
-	$localRev = svnGetRev( $dir, &$remoteDir );
+	$localRev = svnGetRev( $dir, $remoteDir );
 	if ( !$localRev ) {
 		return;
 	}
