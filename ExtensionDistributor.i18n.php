@@ -274,7 +274,7 @@ $messages['be-tarask'] = array(
 Большасьць пашырэньняў працуе зь некалькімі вэрсіямі MediaWiki, таму, калі тут няма Вашай вэрсіі MediaWiki, альбо Вам патрабуюцца магчымасьці апошняй вэрсіі, паспрабуйце апошнюю вэрсію.',
 	'extdist-no-versions' => 'Выбранае пашырэньне ($1) не даступнае ні ў якой вэрсіі!',
 	'extdist-submit-version' => 'Працягваць',
-	'extdist-no-remote' => 'Не атрымалася скантактавацца з аддаленым кліентам Subversion.',
+	'extdist-no-remote' => 'Немагчыма скантактавацца з аддаленым кліентам Subversion.',
 	'extdist-remote-error' => 'Памылка аддаленага кліента Subversion: <pre>$1</pre>',
 	'extdist-remote-invalid-response' => 'Няслушны адказ ад аддаленага кліента Subversion.',
 	'extdist-svn-error' => 'Памылка Subversion: <pre>$1</pre>',
