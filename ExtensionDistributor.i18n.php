@@ -685,9 +685,9 @@ Nejwěcej rozšyrjenjow funkcioněrujo w někotarych wersijach MediaWiki, jolic 
 	'extdist-svn-error' => 'Subversion jo starcył na zmólku: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Njejo móžno XML-daty ze "svn info" pśeźěłaś: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar jo wróśił kod skóncenja $1:',
-	'extdist-created' => "Pakśik wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.
+	'extdist-created' => "Foto wobglědowaka wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.
 
-URL za toś ten pakśik jo:
+URL za toś to foto wobglědowaka jo:
 :$4
 Dataja wužywa se, aby se ned ześěgnuła na serwer, ale pšosym njeskładuj ju ako załožk, dokulaž se wopśimjeśe njezaktualizěrujo a wóna móžo se pózdźej wulašowaś.
 
@@ -700,8 +700,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Na Windowsu móžoš [http://www.7-zip.org/ 7-zip] wužywaś, aby rozpakował dataje.
 
 Jolic twój wiki jo na zdalonem serwerje, rozpakuj dataje do nachylnego zapisa na swójom lokalnem licadle a nagraj pótom '''wše''' rozpakowane dataje do zapisa rozšyrjenjow na serwerje.
-
-Źiwaj na to, až někotare rozšyrjenja trjebaja dataju z mjenim ExtensionFunctions.php, kótaraž jo w <tt>extensions/ExtensionFunctions.php</tt>, to groni, w ''nadrědowanem'' zapisu zapisa wótpowědnego rozšyrjenja. Pakśik za toś te rozšyrjenja wopśimujo toś tu dataju ako tar-bombu, rozpakowanu do ./ExtensionFunctions.php. Njezabudni toś tu dataju do swójogo zdalonego serwera nagraś.
 
 Za tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php registrěrowaś. Dokumentacija rozšyrjenja by měła instrukcije wopśimjeś, kak se dajo cyniś.
 
@@ -1437,28 +1435,26 @@ Le majoritate del extensiones functiona trans versiones de MediaWiki, ergo si tu
 	'extdist-svn-error' => 'Subversion incontrava un error: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Non pote processar le formulario XML ab "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar retornava le codice de exito $1:',
-	'extdist-created' => "Un instantaneo del version <b>\$2</b> del extension <b>\$1</b> pro MediaWiki <b>\$3</b> ha essite create.
+	'extdist-created' => "Un instantaneo del version <b>$2</b> del extension <b>$1</b> pro MediaWiki <b>$3</b> ha essite create.
 Le discargamento debe comenciar automaticamente post 5 secundas.
 
 Le adresse URL de iste instantaneo es:
-:\$4
+:$4
 Es possibile usar iste adresse pro discargamento immediate verso un servitor, sed per favor non adde lo al lista de favoritos, post que le contento non essera actualisate, e illo pote esser delite plus tarde.
 
 Le archivo tar debe esser extrahite in tu directorio de extensiones. Per exemplo, in un systema de operation de typo Unix:
 
 <pre>
-tar -xzf \$5 -C /var/www/mediawiki/extensions
+tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
 In Windows, tu pote usar [http://www.7-zip.org/ 7-zip] pro extraher le files.
 
-Si tu wiki es situate in un servitor remote, extrahe le files in un directorio temporari in tu computator local, e postea carga '''tote''' le files extrahite verso le directorio de extensiones in le servitor.
+Si tu wiki es situate in un servitor remote, extrahe le files in un directorio temporari in tu computator local, e postea incarga '''tote''' le files extrahite verso le directorio de extensiones in le servitor.
 
-Nota ben que alcun extensiones require un file con nomime ExtensionFunctions.php, situate a  <tt>extensions/ExtensionFunctions.php</tt>, isto es, in le directorio ''superior'' al directorio de iste extension particular. Le instantaneo pro iste extensiones contine iste file como un \"tarbomb\" que se extrahe in ./ExtensionFunctions.php. Non oblidar cargar iste file a tu servitor remote.
+Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings.php. Le documentation del extension deberea continer instructiones explicante como facer lo.
 
-Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings.php. Le documentation del extension deberea continer instructiones super como facer lo.
-
-Si tu ha alcun questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
+Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
 );
 
@@ -2299,9 +2295,9 @@ Większość rozszerzeń działa ze wszystkimi wersjami MediaWiki, więc jeśli 
 	'extdist-svn-error' => 'Subversion napotkał błąd <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nie można przetworzyć danych XML z „svn info”: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar zwrócił kod zakończenia $1:',
-	'extdist-created' => "Utworzono skompresowane archiwum z rozszerzeniem <b>$1</b> na podstawie wersji <b>$2</b> dla MediaWiki <b>$3</b>. Pobieranie powinno rozpocząć się w ciągu 5 sekund.
+	'extdist-created' => "Utworzono skompresowane archiwum rozszerzenia <b>$1</b> w wersji <b>$2</b> dla MediaWiki <b>$3</b>. Pobieranie powinno rozpocząć się automatycznie w ciągu 5 sekund.
 
-Archiwum znajduje się pod adresem URL:
+Archiwum znajduje się pod adresem URL
 :$4
 Adresu można użyć do natychmiastowego przesłania archiwum na serwer, ale nie należy zapisywać adresu, ponieważ zawartość archiwum nie będzie aktualizowana i w późniejszym czasie archiwum może zostać usunięte.
 
@@ -2314,8 +2310,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 W systemach Windows do rozpakowania plików możesz użyć programu [http://www.7-zip.org/ 7-zip].
 
 Jeśli Twoja wiki znajduje się na zdalnym serwerze, wypakuj pliki do tymczasowego katalogu na lokalnym komputerze a następnie prześlij na serwer '''wszystkie''' pliki do katalogu z rozszerzeniami.
-
-Uwaga – niektóre rozszerzenia wymagają pliku o nazwie ExtensionFunctions.php, który znajduje się w <tt>extensions/ExtensionFunctions.php</tt>, tzn. w głównym katalogu danego rozszerzenia. Dla tego typu rozszerzeń skompresowane archiwum zawiera plik bez katalogu, który jest rozpakowywany w bieżącym katalogu ./ExtensionFunctions.php. Nie zapomnij przesłać ten plik na zdalny serwer.
 
 Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzenie w pliku LocalSettings.php. Dokumentacja rozszerzenia powinna zawierać instrukcję jak to zrobić.
 
@@ -2729,8 +2723,6 @@ Na sistemu Windows lahko za razširjanje datotek uporabite [http://www.7-zip.org
 
 Če je vaš wiki na oddaljenem strežniku, razširite datoteke v začasno mapo na vašem lokalnem računalniku in nato '''vse''' razširjene datoteke naložite v mapo razširitev na strežniku.
 
-Upoštevajte, da nekatere razširitve potrebujejo datoteko ExtensionFunctions.php, ki se nahaja na <tt>extensions/ExtensionFunctions.php</tt>, to je v ''starševskem'' imeniku mape te določene razširitve. Posnetek teh razširitev vsebuje omenjeno datoteko kot tarbomb, razširjeno v ./ExtensionFunctions.php. Ne izpustite te datoteke pri nalaganju na vaš oddaljeni strežnik.
-
 Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalSettings.php. Dokumentacija razširirtve bi morala vsebovati navodila, kako to storiti.
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
@@ -3133,13 +3125,13 @@ Phần lớn bộ mở rộng có thể chạy được trên nhiều phiên b�
 	'extdist-svn-error' => 'Phiên bản con gặp một lỗi: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Không thể xử lý XML từ "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar trả về mã thoát $1:',
-	'extdist-created' => "Ảnh của phiên bản <b>$2</b> của bộ mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b> đã được tạo ra. Nó sẽ được tự động bắt đầu trong 5 giây nữa.
+	'extdist-created' => "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải xuống trong 5 giây nữa.
 
-Địa chỉ URL của ảnh này là:
+Địa chỉ URL của bản lưu trữ này là:
 :$4
-Nó có thể được dùng để tải trực tiếp về máy chủ, nhưng xin đừng đánh dấu trang (bookmark) nó, vì nội dung co thể sẽ không được cập nhật, và nó có thể bị xóa sau vài ngày nữa.
+Có thể tải trực tiếp lên máy chủ, nhưng xin đừng đánh dấu trang (<i>bookmark</i>) nó, vì nội dung co thể sẽ không được cập nhật, và nó có thể bị xóa sau vài ngày nữa.
 
-Tập tin lưu trữ tar nên được bung vào thư mục chứa bộ mở rộng của bạn. Ví dụ, trên hệ điều hành tương tự Unix:
+Tập tin lưu trữ tar nên được bung vào thư mục chứa phần mở rộng của bạn. Ví dụ, trên hệ điều hành tương tự Unix:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -3149,11 +3141,9 @@ Trên Windows, bạn có thể sử dụng [http://www.7-zip.org/ 7-zip] để g
 
 Nếu wiki của bạn nằm ở máy chủ từ xa, hãy bung các tập tin đó vào một thư mục tạm trên máy tính hiện tại của bạn, rồi sau đó tải '''tất cả''' các tập tin đã giải nén lên thư mục chứa bộ mở rộng trên máy chủ.
 
-Chú ý rằng một số bộ mở rộng cần một tập tin có tên ExtensionFunctions.php, nằm tại <tt>extensions/ExtensionFunctions.php</tt>, tức là, trong thư mục ''cha'' của thư mục chứa bộ mở rộng nào đó. Ảnh của các bộ mở rộng này có chứa tập này dưới dạng tarbomb, được giải nén thành ./ExtensionFunctions.php. Đừng quên tải tập tin này lên máy chủ từ xa của bạn.
+Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần mở rộng trong LocalSettings.php. Tài liệu đi kèm với phần mở rộng sẽ có những hướng dẫn về cách thực hiện điều này.
 
-Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký bộ mở rộng trong LocalSettings.php. Tài liệu đi kèm với bộ mở rộng sẽ có những hướng dẫn về cách thực hiện điều này.
-
-Nếu bạn có câu hỏi nào về hệ thống phân phối bộ mở rộng này, xin đi đến [[Extension talk:ExtensionDistributor]].",
+Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Lấy một bộ mở rộng khác',
 );
 
