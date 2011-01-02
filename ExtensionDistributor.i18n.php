@@ -1012,6 +1012,7 @@ Jos sinulla on kysymyksiä tähän jakelujärjestelmään liittyen, sivulla [[Ex
  * @author McDutchie
  * @author Urhixidur
  * @author Verdy p
+ * @author Wyz
  */
 $messages['fr'] = array(
 	'extensiondistributor' => 'Télécharger l’extension MediaWiki',
@@ -1053,9 +1054,7 @@ Sous Windows, vous pouvez utiliser [http://www.7-zip.org/ 7-zip] pour extraire l
 
 Si votre wiki est hébergé sur un serveur distant, extrayez les fichiers dans un répertoire temporaire de votre ordinateur local, puis téléversez-les '''tous''' dans le répertoire extensions du serveur.
 
-Notez que quelques extensions nécessitent un fichier nommé <tt>ExtensionFunctions.php</tt> stocké dans le répertoire <tt>extensions</tt>, lui-même situé dans le répertoire ''parent'' du répertoire particulier pour cette extension. L’image de telles extensions contient ce fichier dans l’archive tar, il sera extrait sous <tt>./ExtensionFunctions.php</tt>. N’omettez pas de le téléverser aussi sur votre serveur distant.
-
-Une fois les fichiers extraits et installés, il vous faudra enregistrer l’extension dans <tt>LocalSettings.php</tt>. La documentation de l’extension devrait contenir un guide d’installation expliquant comment procéder.
+Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <tt>LocalSettings.php</tt>. La documentation de l’extension devrait contenir un guide d’installation expliquant comment procéder.
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
@@ -1461,6 +1460,7 @@ Si tu ha questiones super iste systema de distribution de extensiones, per favor
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
  * @author Irwangatot
+ * @author IvanLanin
  */
 $messages['id'] = array(
 	'extensiondistributor' => 'Unduh pengaya MediaWiki',
@@ -1490,13 +1490,13 @@ Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi
 	'extdist-svn-error' => 'Subversion mengalami masalah: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML dari "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
-	'extdist-created' => "Sebuah versi snapshot <b>$2</b> dari <b>$1</b> ekstensi untuk MediaWiki <b>$3</b> telah dibuat. Download anda akan dimulai secara otomatis dalam 5 detik. 
+	'extdist-created' => "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.
 
-URL untuk snapshot ini adalah:  
+URL untuk cuplikan ini adalah:  
 :$4  
-Ini dapat digunakan untuk men-download langsung ke server, tapi tolong jangan tandai itu, karena isinya tidak akan diupdate, dan dapat dihapus di kemudian hari. 
+Tautan ini dapat digunakan untuk mengunduh langsung ke server, tetapi jangan tandai karena isinya tidak akan diperbarui dan dapat dihapus di kemudian hari. 
 
-Arsip tar harus diekstrak ke direktori ekstensi anda. Sebagai contoh, pada sebuah OS unix-like:  
+Arsip tar harus diekstrak ke direktori ekstensi Anda. Sebagai contoh, pada sistem operasi keluarga UNIX:  
 
 <pre>  
 tar -xzf $5 -C /var/www/mediawiki/extensions  
@@ -1504,13 +1504,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Pada Windows, Anda dapat menggunakan [http://www.7-zip.org/ 7-zip] untuk mengekstrak file.  
 
-Jika Wiki Anda di server jauh, ekstrak file ke direktori sementara pada komputer lokal Anda, dan kemudian meng-upload'' 'semua''' file  yang diekstrak ke direktori ekstensi pada server. 
+Jika wiki Anda di server jauh, ekstrak berkas ke direktori sementara pada komputer lokal Anda, dan kemudian unggah '''semua''' berkas yang diekstrak ke direktori ekstensi pada server.
 
-Perhatikan bahwa beberapa ekstensi yang membutuhkan file yang bernama ExtensionFunctions.php, terletak di <tt>extensions/ExtensionFunctions.php</tt>, yaitu di''induk''direktori khusus ekstensi ini . Snapshot untuk perluasan ini berisi file ini sebagai tarbomb, diekstrak ke ./ExtensionFunctions.php. Jangan lalai untuk meng-upload file ini ke server jauh. 
+Setelah mengekstrak berkas, Anda harus mendaftarkan ekstensi di LocalSettings.php. Dokumentasi ekstensi seharusnya memberikan petunjuk tentang cara untuk melakukan hal ini.
 
-Setelah Anda ekstrak file, Anda harus mendaftarkan ekstensi di LocalSettings.php. Dokumentasi exktensi harus mempunyai petunjuk tentang cara untuk melakukan ini. 
-
-Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan ke [[Extension talk:ExtensionDistributor]].",
+Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tuju ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
@@ -2361,8 +2359,6 @@ Dzora a Windows, it peule dovré [http://www.7-zip.org/ 7-zip] për dëscompaté
 
 Se toa wiki a l'é su un servent leugn, dëscompata j'archivi ant un dossié dzora a tò ordinator local, e peui caria '''tùit''' j'archivi dëscompatà ant ël dossié d'estension dzora al servent.
 
-Nòta che chèiche estension a l'han dabzògn ëd n'archivi ciamà ExtensionFunctions.php, piassà an <tt>extensions/ExtensionFunctions.php</tt>, visadì, ant ël dossié ''pare'' dë sto particolar dossié d'estension. La còpia d'amblé për coste estension a conten st'archivi com un tarbomb, dëscompatà con ./ExtensionFunctions.php. Dësmentia pa ëd carié st'archivi-sì dzora a tò servent leugn.
-
 Apress ch'it l'has dëscompatà j'archivi, it deve argistré l'estension an LocalSettings.php. La documentassion ëd l'estension a dovrìa avèj d'istrussion su com fé sòn.
 
 S'it l'has chèiche chestion su sto sistema ëd distribuì j'estension, për piasì va a [[Extension talk:ExtensionDistributor]].",
@@ -3030,9 +3026,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Якщо ваша вікі на віддаленому сервері, розпакуйте файли в тимчасову папку на вашому локальному комп'ютері, а потім завантажте '''всі''' розпаковані файли в каталог розширення на сервері. 
 
-Зверніть увагу, що деяким розширенням потрібен файл з назвою ExtensionFunctions.php, розташований в <tt>extensions/ExtensionFunctions.php</tt>, тобто в ''батьківському'' каталозі по відношенню до каталогу цього розширення. Знімок цих розширень містить цей файл у вигляді tar-бомби, розпакованої у ./ExtensionFunctions.php. Не варто нехтувати завантаженням цього файлу на віддалений сервер. 
-
-Після того як ви отримали файли, вам необхідно зареєструвати розширення в LocalSettings.php. Документація розширення повинні мати інструкції про те, як це зробити. 
+Після того, як ви розпакували файли, вам необхідно зареєструвати розширення в LocalSettings.php. Документація розширення повинні мати інструкції про те, як це зробити. 
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
