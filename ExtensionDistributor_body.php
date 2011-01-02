@@ -259,7 +259,7 @@ class ExtensionDistributorPage extends SpecialPage {
 			htmlspecialchars( wfMsg( 'extdist-want-more' ) ) . '</a></big></p>' );
 
 		// Redirect to the file
-		header( 'Refresh: 5;' . $url );
+		header( 'Refresh: 5;url=' . $url );
 	}
 
 	protected function updateAndGetRevisionLocal( $extension, $version ) {
