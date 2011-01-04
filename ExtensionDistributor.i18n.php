@@ -1123,7 +1123,7 @@ A maioría das extensións traballan con múltiples versións de MediaWiki, polo
 
 O enderezo URL desta fotografía é:
 :$4
-Poderá ser usada para descargala inmediatamente a un servidor, pero, por favor, non a engada á lista dos seus favoritos mentres o contido non é actualizado. Poderá tamén ser eliminada nuns días.
+Poderá ser usada para descargala inmediatamente a un servidor, pero, por favor, non a engada á lista dos seus favoritos mentres o contido non estea actualizado. Poderá tamén ser eliminada nuns días. 
 
 O arquivo tar deberá ser extraído no seu directorio de extensións. Por exemplo, nun sistema beseado no UNIX:
 
@@ -1134,8 +1134,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 No Windows, pode usar [http://www.7-zip.org/ 7-zip] para extraer os ficheiros.
 
 Se o seu wiki está nun servidor remoto, extraia os ficheiros nun directorio temporal no seu computador e logo cargue '''todos''' os ficheiros extraídos no directorio de extensións do servidor.
-
-Déase de conta de que algunhas extensións precisan dun ficheiro chamado ExtensionFunctions.php, localizado en <tt>extensions/ExtensionFunctions.php</tt>, que está no directorio ''parente'' deste directorio particular da extensión. A fotografía destas extensións contén este ficheiro como un tarbomb, extraído en ./ExtensionFunctions.php. Non se descoide ao cargar este ficheiro no seu servidor remoto.
 
 Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSettings.php. A documentación da extensión deberá ter instrucións de como facer isto.
 
