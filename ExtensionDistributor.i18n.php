@@ -1899,7 +1899,7 @@ $messages['ml'] = array(
 	'extdist-svn-error' => 'സബ്‌‌വേർഷൻ ഒരു പിഴവ് അഭിമുഖീകരിക്കുന്നു: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"svn info" തന്ന എക്സ്.എം.എൽ. ഉപയോഗിക്കാൻ കഴിയില്ല: <pre>$1</pre>',
 	'extdist-tar-error' => 'ടാർ എക്സിറ്റ് കോഡ് $1 തിരിച്ചയച്ചിരിക്കുന്നു:',
-	'extdist-created' => 'മീഡിയവിക്കി <b>$3</b> ഉപയോഗിക്കുന്ന <b>$1</b> അനുബന്ധത്തിന്റെ തത്സമയ പതിപ്പ് <b>$2</b> സൃഷ്ടിച്ചിരിക്കുന്നു. താങ്കളുടെ ഡൗൺലോഡ് 5 സെക്കന്റുകൾക്കുള്ളിൽ സ്വയം തുടങ്ങുന്നതാണ്.
+	'extdist-created' => "മീഡിയവിക്കി <b>$3</b> ഉപയോഗിക്കുന്ന <b>$1</b> അനുബന്ധത്തിന്റെ തത്സമയ പതിപ്പ് <b>$2</b> സൃഷ്ടിച്ചിരിക്കുന്നു. താങ്കളുടെ ഡൗൺലോഡ് 5 സെക്കന്റുകൾക്കുള്ളിൽ സ്വയം തുടങ്ങുന്നതാണ്.
 
 ഈ തത്സമയ ശേഖരണത്തിന്റെ യൂ.ആർ.എൽ.:
 :$4
@@ -1914,13 +1914,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 വിൻഡോസിൽ, പ്രമാണങ്ങൾ എക്സ്ട്രാക്റ്റ് ചെയ്യാൻ [http://www.7-zip.org/ 7-സിപ്] ഉപയോഗിക്കാം.
 
-താങ്കളുടെ വിക്കി ഒരു വിദൂര സെ‌‌ർവറിലാണെങ്കിൽ, താങ്കളുടെ കൈയിലെ കമ്പ്യൂട്ടറിലെ താത്കാലിക ഡയറക്റ്ററിയിലേയ്ക്ക് പ്രമാണങ്ങൾ എക്സ്ട്രാക്റ്റ് ചെയ്ത ശേഷം, അവ എല്ലാം സെർവറിലെ അനുബന്ധങ്ങൾക്കുള്ള ഡയറക്റ്ററിയിലേയ്ക്ക് അപ്‌‌ലോഡ് ചെയ്ത് നൽകുക.
-
-ചില അനുബന്ധങ്ങൾക്ക് അനുബന്ധങ്ങൾക്കായുള്ള ഒരു പ്രത്യേക ഡയറക്റ്ററിയുടെ മാതൃ ഡയറക്റ്ററിയായ <tt>extensions/ExtensionFunctions.php</tt> എന്നതിലെ  ExtensionFunctions.php എന്ന പ്രമാണം ആവശ്യമാണെന്നോർക്കുക,  അനുബന്ധങ്ങളുടെ തത്സമയ രൂപങ്ങളിൽ ഈ പ്രമാണം ടാർബോംബ് ആയി ഉണ്ടായിരിക്കും, ./ExtensionFunctions.php ആയിട്ടായിരിക്കും എക്സ്‌‌ട്രാക്റ്റ് ചെയ്യപ്പെടുക. ഈ പ്രമാണം വിദൂര സെ‌‌ർവറിലേയ്ക്ക് അപ്‌‌ലോഡ് ചെയ്യുമ്പോൾ അവഗണിക്കാതിരിക്കുക.
+താങ്കളുടെ വിക്കി ഒരു വിദൂര സെ‌‌ർവറിലാണെങ്കിൽ, താങ്കളുടെ കൈയിലെ കമ്പ്യൂട്ടറിലെ താത്കാലിക ഡയറക്റ്ററിയിലേയ്ക്ക് പ്രമാണങ്ങൾ എക്സ്ട്രാക്റ്റ് ചെയ്ത ശേഷം, അവ '''എല്ലാം''' സെർവറിലെ അനുബന്ധങ്ങൾക്കുള്ള ഡയറക്റ്ററിയിലേയ്ക്ക് അപ്‌‌ലോഡ് ചെയ്ത് നൽകുക.
 
 പ്രമാണങ്ങൾ എക്സ്ട്രാക്റ്റ് ചെയ്ത ശേഷം, അവ LocalSettings.php എന്ന പ്രമാണത്തിൽ അടയാളപ്പെടുത്തേണ്ടതുണ്ട്. അനുബന്ധത്തിന്റെ സഹായ താളിൽ ഇതെങ്ങനെ ചെയ്യാമെന്ന് നൽകിയിട്ടുണ്ടായിരിക്കും.
 
-ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.',
+ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.",
 	'extdist-want-more' => 'മറ്റൊരു അനുബന്ധം നേടുക',
 );
 
@@ -2036,6 +2034,7 @@ Wenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Exten
 );
 
 /** Dutch (Nederlands)
+ * @author Mihxil
  * @author Naudefj
  * @author SPQRobin
  * @author Siebrand
@@ -2068,7 +2067,7 @@ De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw ve
 
 De URL voor de snapshot is:
 :$4
-Deze verwijzing kan gebruikt worden door het direct downloaden van de server, maar maak geen bladwijzers aan, omdat de inhoud bijgewerkt kan worden, of de snapshot op een later moment verwijderd kan worden.
+Deze verwijzing kan gebruikt worden door het direct downloaden van een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt zal worden, en op een later moment verwijderd kan worden.
 
 Pak het tararchief uit in uw map "extensions/". Op een UNIX-achtig besturingssysteem gaat dat als volgt:
 
@@ -2080,9 +2079,7 @@ Op Windows kunt u [http://www.7-zip.org/ 7-zip] gebruiken om de bestanden uit te
 
 Als uw wiki op een op afstand beheerde server staat, pak de bestanden dan uit in een tijdelijke map op uw computer. Upload daarna \'\'\'alle\'\'\' uitgepakte bestanden naar de map "extensions/" op de server.
 
-Een aantal uitbreidingen hebben het bestand ExtensionFunctions.php nodig, <tt>extensions/ExtensionFunctions.php</tt>, dat in de map direct boven de map met de naam van de uitbreiding hoort te staan. De snapshots voor deze uitbreidingen bevatten dit bestand als tarbomb. Het wordt uitgepakt als ./ExtensionFunctions.php. Vergeet dit bestand niet te uploaden naar uw server.
-
-Nadat u de bestanden hebt uitgepakt en op de juiste plaatst hebt neergezet, moet u de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding treft u de instructies aan.
+Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding treft u de instructies aan.
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
