@@ -2067,7 +2067,7 @@ De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw ve
 
 De URL voor de snapshot is:
 :$4
-Deze verwijzing kan gebruikt worden door het direct downloaden van een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt zal worden, en op een later moment verwijderd kan worden.
+Deze verwijzing kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.
 
 Pak het tararchief uit in uw map "extensions/". Op een UNIX-achtig besturingssysteem gaat dat als volgt:
 
