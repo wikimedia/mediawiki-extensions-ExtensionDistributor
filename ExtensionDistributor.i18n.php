@@ -366,7 +366,7 @@ Al lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neu
 	'extdist-remote-error' => "Fazi gant ar c'hliant subversion a-bell : <pre>$1</pre>",
 	'extdist-remote-invalid-response' => "Respont direizh eus ar c'hliant subverion a-bell.",
 	'extdist-svn-error' => "Ur fazi 'zo bet gant ''Subversion'' : <pre>$1</pre>",
-	'extdist-svn-parse-error' => 'Diposubl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
+	'extdist-svn-parse-error' => 'Dibosupl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :",
 	'extdist-created' => "Un eilad eus ar stumm <b>$2</b> eus <b>$1</b> astenn evit MediaWiki <b>$3</b> a zo bet krouet. Ho pellgargadenn a rank kregiñ a-benn 5 eilenn.
 
@@ -1202,6 +1202,7 @@ Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Sy
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotem Liss
  */
 $messages['he'] = array(
@@ -1229,25 +1230,23 @@ $messages['he'] = array(
 	'extdist-svn-error' => 'תוכנת Subversion נתקלה בשגיאה: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'לא ניתן לעבד את ה־XML שהוחזר מפקודת "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'פקודת tar החזירה את קוד היציאה $1:',
-	'extdist-created' => "נוצר קובץ של גרסה <b>$2</b> של ההרחבה <b>$1</b> עבור מדיה־ויקי <b>$3</b>. ההורדה תתחיל אוטומטית בעוד 5 שניות.
+	'extdist-created' => "נוצר קובץ היטל של גרסה <b>$2</b> של ההרחבה <b>$1</b> עבור מדיה־ויקי <b>$3</b>. ההורדה אמורה להתחיל אוטומטית בעוד 5 שניות.
 
-כתובת ה־URL של קובץ זה היא:
+הכתובת של קובץ זה היא:
 :$4
-ניתן להשתמש בה להורדה מיידית לשרת, אבל אנא אל תוסיפו אותה לסימניות הדפדפן, כיוון שתכניה לא יעודכנו, וכיוון שייתכן שהיא תימחק מאוחר יותר.
+ניתן להשתמש בה להורדה מידית לשרת, אבל אנא אל תוסיפו אותה לסימניות הדפדפן, כיוון שתוכנה לא יעודכן, וכיוון שייתכן שהיא תימחק מאוחר יותר.
 
-עליכם לפרוס את קובץ ה־tar לתוך תיקיית ההרחבות שלכם. לדוגמה, במערכת הפעלה דמוית יוניקס:
+יש לחלץ את קובץ ה־tar לתוך תיקיית ההרחבות שלכם. לדוגמה, במערכת הפעלה דמוית יוניקס:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-בחלונות, באפשרותכם להשתמש בתוכנת [http://www.7-zip.org/ 7-zip] כדי לפרוס את הקבצים.
+בחלונות, אפשר להשתמש בתוכנת [http://www.7-zip.org/ 7-zip] לחילוץ הקבצים.
 
-אם אתר הוויקי שלכם הוא בשרת מרוחק, פרסו את הקבצים לתוך תיקייה זמנית במחשב המקומי שלכם, ואז העלו את '''כל''' הקבצים שנפרסו לתיקיית ההרחבות בשרת.
+אם אתר הוויקי שלכם נמצא בשרת מרוחק, חלצו את הקבצים לתוך תיקייה זמנית במחשב המקומי שלכם, ואז העלו את '''כל''' הקבצים שחולצו לתיקיית ההרחבות בשרת.
 
-שימו לב שכמה הרחבות דורשות קובץ הנקרא ExtensionFunctions.php, הממוקם בתיקייה <tt>extensions/ExtensionFunctions.php</tt>, כלומר, בתיקיית ה'''הורה''' של התיקייה של ההרחבה המסוימת הזאת. הקובץ שנוצר להרחבות כאלה מכיל את הקובץ כקובץ שנפרס לתיקיית העבודה הנוכחית (Tarbomb), כלומר נפרס לנתיב ./ExtensionFunctions.php. אל תשכחו להעלות גם את הקובץ הזה לשרת המרוחק שלכם.
-
-לאחר שפרסתם את הקבצים, תצטרכו לרשום את ההרחבה בקובץ LocalSettings.php. תיעוד ההרחבה אמור לכלול הנחיות כיצד לעשות זאת.
+לאחר שחילצתם את הקבצים, תצטרכו לרשום את ההרחבה בקובץ LocalSettings.php. תיעוד ההרחבה אמור לכלול הנחיות כיצד לעשות זאת.
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
