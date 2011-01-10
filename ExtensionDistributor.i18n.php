@@ -1191,9 +1191,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Unter Windows chasch s Programm [http://www.7-zip.org/ 7-zip] zum Uuspacke vu dr Dateie neh.
 
-Wänn Dyy Wiki uf eme entfärnte Server lauft, no pack d Dateie in e temporäre Verzeichnis uf Dyynem lokale Computer uus un lad deno '''alli''' uuspackte Dateie uf dr entfärnt Server uffe.
-
-Bitte gib Acht, ass e Teil Erwyterige d Datei <tt>ExtensionFunctions.php</tt> bruuche. Si lyt unter <tt>extensions/ExtensionFunctions.php</tt>, em Heimetverzeichnis vu dr Erwyterige. Im Schnappschuss vu däre Erwyterig het s die Datei as tarbomb, no <tt>./ExtensionFunctions.php</tt> uuspackt. Vergiss nit, au die Datei uf Dyy entfärnte Server uufezlade.
+Wänn Dyy Wiki uf eme entfärnte Server lauft, no pack d Dateie in e temporär Verzeichnis uf Dyynem lokale Computer uus un lad deno '''alli''' uuspackte Dateie uf dr entfärnt Server uffe.
 
 Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <tt>LocalSettings.php</tt> regischtriere. In dr Dokumentation zue dr Erwyterig sott s a Aaleitig derzue haa.
 
@@ -2404,11 +2402,9 @@ No Windows, poderá usar o [http://www.7-zip.org/ 7-zip] para extrair os ficheir
 
 Se a sua wiki estiver localizada num servidor remoto, extraia os ficheiros para um directório temporário no seu computador local, e depois carregue '''todos''' os directórios e ficheiros extraídos para o directório de extensões da wiki no servidor.
 
-Note que algumas extensões precisam que um ficheiro ExtensionFunctions.php seja colocado em <tt>extensions/ExtensionFunctions.php</tt>, ou seja, no directório acima do desta extensão. O instantâneo dessas extensões deverá conter este ficheiro como uma 'tarbomb', que é extraída para ./ExtensionFunctions.php. Não negligencie o carregamento deste ficheiro para o seu servidor remoto.
+Após colocar a extensão no directório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.
 
-Após ter colocado a extensão no directório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.
-
-Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, vá a [[Extension talk:ExtensionDistributor]].",
+Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
 );
 
