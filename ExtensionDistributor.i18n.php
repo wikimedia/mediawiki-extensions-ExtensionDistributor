@@ -3237,40 +3237,40 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Liangent
+ * @author Mark85296341
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
-	'extensiondistributor' => '下載MediaWiki擴展',
-	'extensiondistributor-desc' => '發佈擴展存檔映像的擴展',
+	'extensiondistributor' => '下載 MediaWiki 擴充套件',
+	'extensiondistributor-desc' => '發布擴充套件存檔映像的擴充套件',
 	'extdist-not-configured' => '請設定 $wgExtDistTarDir 和 $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => '已經設定的工作複本目錄不存在！',
-	'extdist-no-such-extension' => '沒有這個擴展 "$1"',
-	'extdist-no-such-version' => '該擴展 "$1" 不存在於這個版本 "$2" 中。',
-	'extdist-choose-extension' => '選擇您要去下載的擴展:',
-	'extdist-wc-empty' => '設定的工作複本目錄無可發佈之擴展！',
+	'extdist-no-such-extension' => '沒有這個擴充套件「$1」',
+	'extdist-no-such-version' => '該擴充套件「$1」不存在於這個版本「$2」中。',
+	'extdist-choose-extension' => '選擇您要去下載的擴充套件：',
+	'extdist-wc-empty' => '設定的工作複本目錄無可發布之擴充套件！',
 	'extdist-submit-extension' => '繼續',
 	'extdist-current-version' => '開發版本（trunk）',
-	'extdist-choose-version' => '
-<big>您現正下載 <b>$1</b> 擴展。</big>
+	'extdist-choose-version' => '<big>您現正下載 <b>$1</b> 擴充套件。</big>
 
 選擇您要的 MediaWiki 版本。
 
-多數的擴展都可以在多個 MediaWiki 版本上運行，如果您的 MediaWiki 版本不存在，又或者您需要最新的擴展功能的話，可嘗試用最新的版本。',
-	'extdist-no-versions' => '所選擇擴展 （$1） 不適用於任何的版本！',
+多數的擴充套件都可以在多個 MediaWiki 版本上執行，如果您的 MediaWiki 版本不存在，又或者您需要最新的擴充套件功能的話，可嘗試用最新的版本。',
+	'extdist-no-versions' => '所選擇擴充套件 （$1） 不適用於任何的版本！',
 	'extdist-submit-version' => '繼續',
 	'extdist-no-remote' => '不能夠聯絡遠端 subversion 客戶端。',
-	'extdist-remote-error' => '自遠端 subversion 客戶端的錯誤: <pre>$1</pre>',
+	'extdist-remote-error' => '自遠端 subversion 客戶端的錯誤：<pre>$1</pre>',
 	'extdist-remote-invalid-response' => '自遠端 subversion 客戶端的無效回應。',
-	'extdist-svn-error' => 'Subversion 遇到一個錯誤: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '不能夠處理 "svn info" 之 XML: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar 回應結束碼 $1:',
-	'extdist-created' => "一個可供 MediaWiki <b>$3</b> 使用的 <b>$1</b> 擴展之 <b>$2</b> 版本的映像已經建立。您的下載將會在5秒鐘之後自動開始。
+	'extdist-svn-error' => 'Subversion 遇到一個錯誤：<pre>$1</pre>',
+	'extdist-svn-parse-error' => '不能夠處理「svn info」之 XML：<pre>$1</pre>',
+	'extdist-tar-error' => 'Tar 回應結束碼 $1：',
+	'extdist-created' => "一個可供 MediaWiki <b>$3</b> 使用的 <b>$1</b> 擴充套件之 <b>$2</b> 版本的映像已經建立。您的下載將會在 5 秒鐘之後自動開始。
 
 這個映像的 URL 是:
 :$4
-它可能會用於即時下載到伺服器中，但是請不要記錄在書籤中，因為裏面啲內容可能不會更新，亦可能會在之後的時間刪除。
+它可能會用於即時下載到伺服器中，但是請不要記錄在書籤中，因為裡面的內容可能不會更新，亦可能會在之後的時間刪除。
 
-該 tar 壓縮檔應該要解壓縮到您的擴展目錄。例如，在 unix 類 OS:
+該 tar 壓縮檔應該要解壓縮到您的擴充套件目錄。例如，在 unix 類 OS:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -3280,11 +3280,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 如果您的 wiki 是在一個遠端伺服器的話，就在電腦中解壓縮檔案到一個臨時目錄，然後再上載'''全部'''已經解壓縮的檔案到伺服器的擴展目錄上。
 
-要留意的是有的擴展是需要一個名叫 ExtensionFunctions.php 的檔案，在 <tt>extensions/ExtensionFunctions.php</tt>，即是，在這個擴展目錄的''父''目錄。那些擴展的映像都會含有以這個檔案的 tarbomb 檔案，解壓縮到 ./ExtensionFunctions.php。不要忘記上載這個檔案到您的遠端伺服器。
+要留意的是有的擴充套件是需要一個名叫 ExtensionFunctions.php 的檔案，在 <tt>extensions/ExtensionFunctions.php</tt>，即是，在這個擴充套件目錄的''父''目錄。那些擴充套件的映像都會含有以這個檔案的 tarbomb 檔案，解壓縮到 ./ExtensionFunctions.php。不要忘記上載這個檔案到您的遠端伺服器。
 
-響您解壓縮檔案之後，您需要在 LocalSettings.php 中註冊該等擴展。該擴展之說明會有指示如何做到它。
+響您解壓縮檔案之後，您需要在 LocalSettings.php 中註冊該等擴充套件。該擴充套件說明會有指示如何做到它。
 
-如果您有任何對於這個擴展發佈系統有問題的話，請去[[Extension talk:ExtensionDistributor]]。",
-	'extdist-want-more' => '取另一個擴展',
+如果您有任何對於這個擴充套件發布系統有問題的話，請去[[Extension talk:ExtensionDistributor]]。",
+	'extdist-want-more' => '取得另一個擴充套件',
 );
 
