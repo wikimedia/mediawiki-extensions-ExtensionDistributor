@@ -197,7 +197,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'الحصول على امتداد آخر',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -249,7 +249,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 	'extdist-want-more' => 'Башҡа киңәйеү алырға',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -573,9 +573,10 @@ Wenn du Fragen zu diesem Erweiterungs-Verteil-System hast, gehe bitte zur Seite 
 	'extdist-want-more' => 'Eine weitere Erweiterung holen.',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
  * @author MichaelFrey
+ * @author Umherirrender
  */
 $messages['de-formal'] = array(
 	'extdist-not-configured' => 'Bitte konfigurieren Sie $wgExtDistTarDir und $wgExtDistWorkingCopy',
@@ -2714,7 +2715,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 	'extdist-want-more' => 'Dobi drugo razširitev',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -2723,7 +2724,7 @@ $messages['sr-ec'] = array(
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica)) */
+/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'extdist-submit-extension' => 'Produži',
 	'extdist-submit-version' => 'Produži',
