@@ -314,6 +314,8 @@ class ExtensionDistributorPage extends SpecialPage {
 			return false;
 		}
 
+		$encResponse = '';
+
 		fwrite( $sock, $cmd . "\000\000\000" );
 		while ( $sock && !feof( $sock ) ) {
 			$encResponse .= fread( $sock, 8192 );
