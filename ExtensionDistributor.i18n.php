@@ -1736,10 +1736,10 @@ tar -xzf \$5 -C /var/www/mediawiki/extensions
 Med <i lang=\"en\">Windows</i>, kanns De [http://www.7-zip.org/ 7-zip] nämme.
 
 Wann Ding Wiki nit op dämm Rääschner läuf, wo de di Aschif-Datei lijje häß, dann donn se en e Zwescheverzeichnis ußpacke, un dann donn '''jede''' usjepackte Datei un '''jedes''' usjepackte Verzeichnis op Dingem Wiki singe Server en et <code lang=\"en\">extensions</code>-Verzeichnis huhlade.
-
+<!--
 Paß op: Etlijje Zosätz bruche en Dattei mem Name <code>ExtensionFunctions.php</code> em Verzeischnes <tt>extensions/ExtensionFunctions.php</tt>, alsu em ''Bovver''verzeischnes fun dämm, wo däm Zosatz sing Projramme jewöhnlesch lijje. Dä Schnappschoß för esu en Zosätz enthällt di Dattei als e <code>tar</code>-Aschiif, noh <code>./ExtensionFunctions.php</code> ußjepack. Dengk draan, dat Dinge och huhzelaade.
-
-Wan De mem Ußpacke (un velleich Huhlade) fadesch bes, do moß De dä Zosatz en  <code>LocalSettings.php</code> enndraare. De Dokementazjohn för dä Zosatz sät jenouer, wi dat em einzelne jeiht.
+-->
+Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz en  <code>LocalSettings.php</code> enndraare. De Dokementazjohn för dä Zosatz sät jenouer, wi dat em einzelne jeiht.
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Noch ene Zosatz holle',
