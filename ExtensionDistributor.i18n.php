@@ -1568,6 +1568,7 @@ Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione
  * @author Aotake
  * @author Fryed-peach
  * @author Marine-Blue
+ * @author Ohgi
  */
 $messages['ja'] = array(
 	'extensiondistributor' => 'MediaWiki 拡張機能のダウンロード',
@@ -1597,19 +1598,17 @@ $messages['ja'] = array(
 
 このスナップショットのURLは次の通りです:
 :$4
-今すぐダウンロードするようにして、このアドレスをブックマークしないようにしてください。コンテンツのアップデートに対応できません。また、ファイルは数日後に削除される可能性があります。
+コンテンツのアップデートに対応できないため、また、ファイルは数日後に削除される可能性があるため、今すぐダウンロードし、このアドレスをブックマークしないでください。
 
-tar アーカイブは拡張機能ディレクトリに展開してください。Unix 系の OS では、例えば下記のようにします。
+tar アーカイブは拡張機能ディレクトリに展開してください。Unix 系の OS では、下記のようにします。
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Windows では [http://www.7-zip.org/ 7-zip] がアーカイブの展開に利用できます。
+Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用できます。
 
 ウィキを遠隔サーバーに設置している場合、ローカル・コンピュータの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''全ての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。
-
-なお、いくつかの拡張機能は ExtensionFunctions.php というファイルを extensions/ExtensionFunctions.php、つまりこの拡張機能用ディレクトリの親ディレクトリに置く必要があります。このような拡張機能のスナップショットにはこのファイルが ''tarbomb'' として含まれていて、./ExtensionFunctions.php に展開します。このファイルを遠隔サーバーにアップロードするのを忘れないでください。
 
 ファイルを全て展開したら、その拡張機能を LocalSettings.php へ登録する必要があります。具体的な作業手順は各拡張機能のドキュメントで解説されています。
 
