@@ -47,6 +47,7 @@ After you have extracted the files, you will need to register the extension in L
 
 If you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]].",
 		'extdist-want-more' => 'Get another extension',
+		'extdist-trunk-warning' => "'''Warning''': this tool will get you a development snapshot that might very well '''not work''' with the MediaWiki version you selected or be broken altogether and is likely to be '''out of date'''.",
 );
 
 /** Message documentation (Message documentation)

@@ -199,12 +199,16 @@ class ExtensionDistributorPage extends SpecialPage {
 			Xml::submitButton( wfMsg( 'extdist-submit-version' ), array( 'name' => 'extdist_submit' ) ) .
 			Xml::closeElement( 'form' ) . "\n"
 	   	);
+	   	
+	   	$wgOut->addHtml( '<span style="color:darkred">' . wfMsgExt( 'extdist-trunk-warning', 'parse' ) . '</span>' );
 	}
 
 	protected function doDownload( $extension, $version ) {
 		global $wgExtDistWorkingCopy, $wgExtDistTarDir, $wgExtDistBranches,
 			$wgOut, $wgExtDistTarUrl, $wgExtDistRemoteClient;
 
+		$wgOut->addHtml( '<span style="color:darkred">' . wfMsgExt( 'extdist-trunk-warning', 'parse' ) . '</span>' );
+			
 		if ( $wgExtDistRemoteClient ) {
 			$rev = $this->updateAndGetRevisionRemote( $extension, $version );
 		} else {
