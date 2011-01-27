@@ -523,13 +523,14 @@ Případné dotazy k tomuto systému distribuce rozšíření můžete klást na
 
 /** German (Deutsch)
  * @author Als-Holder
+ * @author Kghbln
  * @author Metalhead64
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'extensiondistributor' => 'MediaWiki-Erweiterungen herunterladen',
-	'extensiondistributor-desc' => 'Erweiterung für die Verteilung von Schnappschuss-Archiven von Erweiterungen',
+	'extensiondistributor' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
+	'extensiondistributor-desc' => 'Erweiterung zur Verteilung von Entwicklungsversionen von MediaWiki-Erweiterungen',
 	'extdist-not-configured' => 'Bitte konfiguriere $wgExtDistTarDir und $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Das konfigurierte Kopien-Arbeitsverzeichnis ist nicht vorhanden!',
 	'extdist-no-such-extension' => 'Erweiterung „$1“ ist nicht vorhanden',
@@ -537,7 +538,7 @@ $messages['de'] = array(
 	'extdist-choose-extension' => 'Bitte wähle eine Erweiterung zum Herunterladen aus:',
 	'extdist-wc-empty' => 'Das konfigurierte Kopien-Arbeitsverzeichnis enthält keine zu verteilenden Erweiterungen!',
 	'extdist-submit-extension' => 'Weiter',
-	'extdist-current-version' => 'Entwicklerversion (trunk)',
+	'extdist-current-version' => 'Entwicklungsversion (trunk)',
 	'extdist-choose-version' => '
 <big>Du lädst die <b>$1</b>-Erweiterung herunter.</big>
 
@@ -572,6 +573,7 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung in der <tt>LocalS
 
 Wenn du Fragen zu diesem Erweiterungs-Verteil-System hast, gehe bitte zur Seite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung holen.',
+	'extdist-trunk-warning' => "'''Warnung:''' Mit diesem Tool erhält man eine Entwicklungsversion, die in Verbindung mit der ausgewählten MediaWiki-Version möglicherweise '''nicht funktionsfähig''', bzw. '''vollkommen funktionsunfähig''' oder gar '''veraltet''' ist.",
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -793,7 +795,7 @@ Pliparto de kromprogramoj funkcias trans pluraj versioj de MediaWiki, do se via 
 
 La URL-o por ĉi tiu statika kopio estas:
 :$4
-Ĝi estas uzebla por tuja elŝuto al servilo, sed bonvolu ne aldoni legosignon al ĝin, ĉar la enhavo ne estos ĝisdata, kaj ĝi eble estos forigita ĉe posta dato.
+Ĝi estas uzebla por tuja elŝuto al servilo, sed bonvolu ne aldoni legosignon al ĝin, ĉar la enhavo ne estos ĝisdata, kaj ĝi eble estos forigita je posta dato.
 
 La tar-arkivo estu eltirita en vian kromprograman dosierujon. Ekz-e, en Unikseca OS:
 
@@ -801,15 +803,13 @@ La tar-arkivo estu eltirita en vian kromprograman dosierujon. Ekz-e, en Unikseca
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Kun Vindozo, vi povas utiligi [http://www.7-zip.org/ 7-zip] eltiri la dosierojn.
+Per Vindozo, vi povas utiligi [http://www.7-zip.org/ 7-zip] eltiri la dosierojn.
 
-Se via vikio estas en ektera servilo, eltiru la dosierojn al provizoran dosierujon en via loka komputilo, kaj poste alŝutu '''ĉiuj''' de la eltiritaj dosieroj al la kromprograma dosierujo en la servilo.
+Se via vikio estas en ekstera servilo, eltiru la dosierojn al provizoran dosierujon en via loka komputilo, kaj poste alŝutu '''ĉiuj''' de la eltiritaj dosieroj al la kromprograma dosierujo en la servilo.
 
-Notu, ke iuj kromprogramoj bezonas dosieron nomitan ExtensionFunctions.php, lokitan en <tt>extensions/ExtensionFunctions.php</tt>, alivorte, la ''patra'' dosierujo de la dosierujo de ĉi tiu kromprogramo. La statika kopio por ĉi tiuj kromprogramoj enhavas ĉi tiun dosieron kiel ''tar-bombo'', eltiritan al ./ExtensionFunctions.php. Ne forgesu alŝuti ĉi tiun dosieron al via ekstera servilo.
+Post vi eltiris la dosierojn, vi devos registri la kromprogramon en LocalSettings.php. La kromprograma dokumentado havos la instrukciojn tiel fari.
 
-Post vi eltiris la dosierojn, vi bezonas registri la kromprogramon en LocalSettings.php. La kromprograma dokumentado havos la instrukcioj kiel fari.
-
-Se vi havas iujn demandojn pri ĉi tiu kromprograma distribuada sistemo, bonvolu komenti al [[Extension talk:ExtensionDistributor]].",
+Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bonvolu iri al [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Akiri pluan kromprogramon',
 );
 
@@ -1452,6 +1452,7 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
+	'extdist-trunk-warning' => "'''Attention''': con iste instrumento tu recipe un version in disveloppamento que ben possibilemente '''non functiona''' con le version de MediaWiki que tu ha seligite o es defectuose in general, e probabilemente '''non es actual'''.",
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1868,6 +1869,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
+	'extdist-trunk-warning' => "'''Предупредување''': оваа алатка ви дава преглед на развоен примерок кој веројатно '''нема да работи''' со одбраната верзија на МедијаВики, а може и целосно да е расипан. Покрај ова, веројатно е и '''застарен'''.",
 );
 
 /** Malayalam (മലയാളം)
@@ -2081,6 +2083,7 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
+	'extdist-trunk-warning' => "'''Waarschuwing''': u krijgt een ontwikkelversie van deze uitbreiding die wellicht '''niet werkt''' met de versie van MediaWiki die u hebt geselecteerd. De softwarecomponent is waarschijnlijk ook '''gedateerd'''.",
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2713,6 +2716,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dobi drugo razširitev',
+	'extdist-trunk-warning' => "'''Opozorilo''': to orodje vam bo pridobilo razvojni posnetek, za katerega obstaja velika verjetnost, da '''ne bo deloval''' dobro z izbrano različico MediaWiki ali pa sploh ne bo deloval in bo verjetno '''zastarel'''.",
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
