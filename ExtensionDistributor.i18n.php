@@ -301,6 +301,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Калі Вы маеце якія-небудзь пытаньні пра сыстэму ўсталяваньня пашырэньня, калі ласка, задайце іх на старонцы [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атрымаць іншае пашырэньне',
+	'extdist-trunk-warning' => "'''Папярэджаньне''': гэты інструмэнт дасьць Вам вэрсію ў распрацоўцы, якая яшчэ можа '''не працаваць''' як сьлед з выбранай Вамі вэрсіяй MediaWiki, ці быць пашкоджанай, ці быць '''састарэлай'''.",
 );
 
 /** Bulgarian (Български)
@@ -765,6 +766,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 );
 
 /** Esperanto (Esperanto)
+ * @author Mihxil
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -791,11 +793,11 @@ Pliparto de kromprogramoj funkcias trans pluraj versioj de MediaWiki, do se via 
 	'extdist-svn-error' => 'Subversion renkontis eraron: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ne povas trakti la XML de "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar donis elirkodon $1:',
-	'extdist-created' => "Statika kopio de versio <b>$2</b> de la <b>$1</b> kromprogramo por MediaWiki <b>$3</b> estis kreita. Via elŝuto komencos aŭtomate post 5 sekundoj.
+	'extdist-created' => "Statika kopio de versio <b>$2</b> de la <b>$1</b> kromprogramo por MediaWiki <b>$3</b> estis kreita. Via elŝuto komenciĝos aŭtomate post 5 sekundoj.
 
 La URL-o por ĉi tiu statika kopio estas:
 :$4
-Ĝi estas uzebla por tuja elŝuto al servilo, sed bonvolu ne aldoni legosignon al ĝin, ĉar la enhavo ne estos ĝisdata, kaj ĝi eble estos forigita je posta dato.
+Ĝi estas uzebla por tuja elŝuto al servilo, sed bonvolu ne aldoni legosignon al ĝi, ĉar la enhavo ne estos ĝisdata, kaj ĝi eble estos forigita je posta dato.
 
 La tar-arkivo estu eltirita en vian kromprograman dosierujon. Ekz-e, en Unikseca OS:
 
@@ -803,11 +805,11 @@ La tar-arkivo estu eltirita en vian kromprograman dosierujon. Ekz-e, en Unikseca
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Per Vindozo, vi povas utiligi [http://www.7-zip.org/ 7-zip] eltiri la dosierojn.
+Per Vindozo, vi povas utiligi [http://www.7-zip.org/ 7-zip] por eltiri la dosierojn.
 
-Se via vikio estas en ekstera servilo, eltiru la dosierojn al provizoran dosierujon en via loka komputilo, kaj poste alŝutu '''ĉiuj''' de la eltiritaj dosieroj al la kromprograma dosierujo en la servilo.
+Se via vikio estas en ekstera servilo, eltiru la dosierojn al provizora dosierujo en via loka komputilo, kaj poste alŝutu '''ĉiujn''' eltiritajn dosierojn al la kromprograma dosierujo en la servilo.
 
-Post vi eltiris la dosierojn, vi devos registri la kromprogramon en LocalSettings.php. La kromprograma dokumentado havos la instrukciojn tiel fari.
+Eltirinte la dosierojn, vi devos registri la kromprogramon en LocalSettings.php. La kromprograma dokumentado havu la instrukciojn kiel fari tion.
 
 Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bonvolu iri al [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Akiri pluan kromprogramon',
@@ -1012,6 +1014,7 @@ Jos sinulla on kysymyksiä tähän jakelujärjestelmään liittyen, sivulla [[Ex
  * @author Grondin
  * @author IAlex
  * @author McDutchie
+ * @author Sherbrooke
  * @author Urhixidur
  * @author Verdy p
  * @author Wyz
@@ -1060,6 +1063,7 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <t
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
+	'extdist-trunk-warning' => "'''Attention''': cet outil obtiendra une version de développement qui risque '''de ne pas fonctionner''' avec la version du MediaWiki que vous avez choisie ou qui ne fonctionne pas et est probablement '''périmé'''.",
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1571,6 +1575,7 @@ Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione
  * @author Fryed-peach
  * @author Marine-Blue
  * @author Ohgi
+ * @author Whym
  */
 $messages['ja'] = array(
 	'extensiondistributor' => 'MediaWiki 拡張機能のダウンロード',
@@ -1616,6 +1621,7 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
+	'extdist-trunk-warning' => "'''警告'''： このツールで取得される開発版のスナップショットは、選択されたMediaWikiバージョンでは'''動作しない'''ことがおおいにありえます。合わせて動かした場合、壊れるかもしれません。また、'''最新版ではない'''おそれがあります。",
 );
 
 /** Georgian (ქართული)
@@ -2359,6 +2365,7 @@ Apress ch'it l'has dëscompatà j'archivi, it deve argistré l'estension an Loca
 
 S'it l'has chèiche chestion su sto sistema ëd distribuì j'estension, për piasì va a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
+	'extdist-trunk-warning' => "'''Avis''': st'utiss-sì at pijerà n'istantanea ch'a podrìa benissim '''pa travajé''' con la vërsion Mediawiki ch'it l'has selessionà o esse benissim s-ciapà e a l'é bel fé ch'a sia '''vej'''.",
 );
 
 /** Portuguese (Português)
@@ -2410,6 +2417,7 @@ Após colocar a extensão no directório de extensões da sua wiki, terá de reg
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
+	'extdist-trunk-warning' => "'''Aviso''': esta ferramenta fornece-lhe um instantâneo da versão de desenvolvimento que pode '''não funcionar''' com a versão do MediaWiki que seleccionou, ou não funcionar de todo, e que provavelmente está '''desactualizada'''.",
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -3133,6 +3141,7 @@ Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần m�
 
 Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Lấy một bộ mở rộng khác',
+	'extdist-trunk-warning' => "'''Cảnh báo''': Công cụ này sẽ cung cấp bản lưu trữ đang phát triển rất có thể '''không tương tích''' với phiên bản MediaWiki được chọn hoặc có thể bị hư hẳn và '''lỗi thời'''.",
 );
 
 /** Cantonese (粵語)
@@ -3238,6 +3247,7 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 有关于此扩展名配电系统的任何问题，请转到 [[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取另一个扩展',
+	'extdist-trunk-warning' => "'''警告'''：此工具将得到很好的可能的发展快照'''不工作'''MediaWiki 版本与您选择或完全损坏和可能是'''过时的'''。",
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
