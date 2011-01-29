@@ -1203,6 +1203,7 @@ Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <tt>LocalSettings.php
 
 Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'No ne Erwyterig hole',
+	'extdist-trunk-warning' => "'''Warnig:''' Mit däm Tool chunnt mer e Entwickligsversion iber, wu in Verbindig mit dr uusgwehlte MediaWiki-Version villicht '''nit funktionsfähig''', bzw. '''ganz funktionsuufähig''' oder sogar '''veraltet''' isch.",
 );
 
 /** Hebrew (עברית)
@@ -1926,6 +1927,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.",
 	'extdist-want-more' => 'മറ്റൊരു അനുബന്ധം നേടുക',
+	'extdist-trunk-warning' => "'''അറിയിപ്പ്''': ഈ ഉപകരണം ലഭ്യമാക്കുക താങ്കളുടെ മീഡിയവിക്കി പതിപ്പിനോടൊത്ത് നന്നായി '''പ്രവർത്തിക്കാത്തതോ''' അല്ലെങ്കിൽ കേടുപാടുള്ളതും '''കാലഹരണപ്പെട്ടതും''' ആയ വികസന ഘട്ട സ്നാപ്ഷോട്ട് ആയേക്കാം.",
 );
 
 /** Malay (Bahasa Melayu)
