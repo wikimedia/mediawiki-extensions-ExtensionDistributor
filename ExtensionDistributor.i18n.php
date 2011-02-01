@@ -1255,6 +1255,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
+	'extdist-trunk-warning' => "'''אזהרה''': כלי זה מביא גרסה בפיתוח שייתכן מאוד ש'''אינה עובדת''' עם גרסת מדיה ויקי שבחרתם או להיות מקולקלת לגמרי וצפויה להיות '''בלתי מעודכנת'''.",
 );
 
 /** Croatian (Hrvatski)
@@ -2470,6 +2471,7 @@ Após colocar a extensão no diretório de extensões da sua wiki, terá de regi
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
+	'extdist-trunk-warning' => "'''Aviso''': esta ferramenta fornece-lhe um instantâneo da versão de desenvolvimento que pode '''não funcionar''' com a versão do MediaWiki que você selecionou, ou não funcionar de todo, e que provavelmente está '''desatualizada'''.",
 );
 
 /** Romanian (Română)
@@ -2552,6 +2554,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Если у вас есть вопрос об этой системе распространения расширений, пожалуйста, обратитесь к странице [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачать другое расширение',
+	'extdist-trunk-warning' => "'''Внимание.''' Этот инструмент выдаст вам снимок разработки, который вполне может '''не работать''' с выбранной версией MediaWiki, или вообще оказаться сломанным и даже '''устаревшим'''.",
 );
 
 /** Rusyn (Русиньскый)
