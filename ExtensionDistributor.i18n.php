@@ -1465,6 +1465,7 @@ Si tu ha questiones super iste systema de distribution de extensiones, per favor
  * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
+ * @author Kenrick95
  */
 $messages['id'] = array(
 	'extensiondistributor' => 'Unduh pengaya MediaWiki',
@@ -1516,6 +1517,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
+	'extdist-trunk-warning' => "'''Peringatan''''': peralatan ini akan membuat Anda snapshot pembangunan yang mungkin sangat baik'''tidak bekerja''' dengan versi MediaWiki Anda pilih atau rusak sama sekali dan mungkin 'ketinggalan zaman''' ''.",
 );
 
 /** Italian (Italiano)
