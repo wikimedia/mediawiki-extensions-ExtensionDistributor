@@ -1463,6 +1463,7 @@ Si tu ha questiones super iste systema de distribution de extensiones, per favor
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author Irwangatot
  * @author IvanLanin
  * @author Kenrick95
@@ -1517,7 +1518,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
-	'extdist-trunk-warning' => "'''Peringatan''''': peralatan ini akan membuat Anda snapshot pembangunan yang mungkin sangat baik'''tidak bekerja''' dengan versi MediaWiki Anda pilih atau rusak sama sekali dan mungkin 'ketinggalan zaman''' ''.",
+	'extdist-trunk-warning' => "'''Peringatan''': peralatan ini akan memberikan Anda cuplikan pengembangan yang mungkin '''tidak bekerja''' dengan baik pada versi MediaWiki yang Anda pilih atau tidak berhubungan dan bisa saja '''kadaluwarsa'''.",
 );
 
 /** Italian (Italiano)
@@ -2320,6 +2321,7 @@ Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzen
 
 Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zadaj je na stronie [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Pobierz inne rozszerzenie',
+	'extdist-trunk-warning' => "'''Uwaga''' – to narzędzie umożliwia pobranie wersji oprogramowania z danej chwili, która może '''nie działać''' z wybraną przez Ciebie wersją MediaWiki. Pobrany kod może być również całkowicie '''nieaktualny'''.",
 );
 
 /** Piedmontese (Piemontèis)
