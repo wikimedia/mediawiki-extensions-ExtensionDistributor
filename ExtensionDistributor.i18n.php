@@ -1755,6 +1755,7 @@ Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz 
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Noch ene Zosatz holle',
+	'extdist-trunk-warning' => "'''Opjepaß:''' heh dat Wärkzüsch es en enem onfäädeje Zohshtand vun singe Äntwecklong un künnt joot '''jaa nit funxjeniere''' med Dinge Version vun MediaWiki, un wascheinlesch es et nit mieh op enem neue Shtand un ald '''veralldet'''.",
 );
 
 /** Luxembourgish (Lëtzebuergesch)
