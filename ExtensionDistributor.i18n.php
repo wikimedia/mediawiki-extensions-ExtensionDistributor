@@ -2738,11 +2738,12 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
-	'extdist-submit-extension' => 'Продужи',
-	'extdist-submit-version' => 'Продужи',
+	'extdist-submit-extension' => 'Настави',
+	'extdist-submit-version' => 'Настави',
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
