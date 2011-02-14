@@ -3155,6 +3155,13 @@ Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở r�
 	'extdist-trunk-warning' => "'''Cảnh báo''': Công cụ này sẽ cung cấp bản lưu trữ đang phát triển rất có thể '''không tương tích''' với phiên bản MediaWiki được chọn hoặc có thể bị hư hẳn và '''lỗi thời'''.",
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'extensiondistributor' => 'ַאַראָפלאָדן מעדיעוויקי פֿאַרברייטערונג',
+);
+
 /** Cantonese (粵語)
  * @author Shinjiman
  */
