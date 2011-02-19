@@ -1145,6 +1145,7 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
+	'extdist-trunk-warning' => "'''Atención:''' Esta ferramenta proporciona unha versión en desenvolvemento que pode '''non funcionar''' moi ben coa versión de MediaWiki que seleccionou; pode ser que non funcione en calquera caso e que estea '''desactualizado'''.",
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
