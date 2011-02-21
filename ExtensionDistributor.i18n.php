@@ -1356,6 +1356,7 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
+	'extdist-trunk-warning' => "'''Warnowanje''': Z tutym nastrojom dóstanješ wuwiwansku wersiju, kotraž snano derje '''njefunguje''' z wersiju MediaWiki, kotruž sy wubrał abo docyła njefunguje a najskerje je '''zestarjenja'''.",
 );
 
 /** Hungarian (Magyar)
