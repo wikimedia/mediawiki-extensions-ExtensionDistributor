@@ -441,6 +441,7 @@ Nakon što otpakujete datoteke, morat ćete registrovati proširenje u LocalSett
 
 Ako imate nekih pitanja oko ovog sistema distribucije proširenja, molimo pogledajte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Nađi slijedeće proširenje',
+	'extdist-trunk-warning' => "'''Upozorenje''': ovaj alat će vam dati razvojnu verziju, koja u vezi sa odabranom verzijom MediaWikija možda ''neće''' dobro raditi ili raditi u dovoljnoj mjeri ili će čak biti '''zastarijela'''.",
 );
 
 /** Catalan (Català)
