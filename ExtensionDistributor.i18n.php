@@ -343,6 +343,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fohanno
+ * @author Fulup
  * @author Gwendal
  * @author Y-M D
  */
@@ -370,27 +371,25 @@ Al lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neu
 	'extdist-svn-error' => "Ur fazi 'zo bet gant ''Subversion'' : <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'Dibosupl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :",
-	'extdist-created' => "Un eilad eus ar stumm <b>$2</b> eus <b>$1</b> astenn evit MediaWiki <b>$3</b> a zo bet krouet. Ho pellgargadenn a rank kregiñ a-benn 5 eilenn.
+	'extdist-created' => "Krouet ez eus bet un eilad prim eus ar stumm <b>$2</b> eus <b>$1</b> an astenn evit MediaWiki <b>$3</b>. Ho pellgargadenn a zlefe kregiñ a-benn 5 eilenn.
 
-Url an eilad zo :
+Url an eilad prim zo :
 :$4
-Gallout a ra bezañ implijet evit pellgargañ war-du ur servijer, met trugarez da chom hep skrivañ anezho en ho sinedoù peogwir ne vo ket hizivaet hag e vo dilamet a-c'houdevezh.
+Gallout a ra bezañ implijet evit pellgargañ diouzhtu diwar ur servijer, met na enrollit ket anezhañ en ho sinedoù peogwir ne vo ket hizivaet an danvez hag e c'hall bezañ dilamet a-c'houdevezh.
 
-An diell tar a vo tennet en ho kavlec'h. Da skouer en ur reizhiad evel Unix:
+An diell tar a vo eztennet e kavlec'h hoc'h astennoù. Da skouer, en ur reizhiad evel Unix :
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Gant Windows, gallout a rit implij [http://www.7-zip.org/ 7-zip] evit tennañ an dielloù.
+Gant Windows, e c'hallit implijout [http://www.7-zip.org/ 7-zip] evit eztennañ ar restroù.
 
-M'emañ ho wiki war ur servijer a-bell, tennit an diell en ur c'havlec'h padennek en ho urzhiataer lec'hel, ha da c'houde ezporzhiañ '''holl''' an dielloù tennet er c'havlec'h astenn war ar servijer.
+M'emañ ho wiki war ur servijer a-bell, eztennit ar restroù en ur c'havlec'h padennek en hoc'h urzhiataer lec'hel, ha da c'houde ezporzhiit '''holl''' ar restroù eztennet da gavlec'h an astennoù war ar servijer.
 
-Astennoù 'zo o  deus ezhomm eus un diell anvet ExtensionFunctions.php, lec'hiet er c'havlec'h <tt>extensions/ExtensionFunctions.php</tt>, hag a zo  evit an astenn ispisial-mañ en uskavlec'h. An eilad evit an astenn-mañ a zo ennañ un diell tar, tennet diwar ./ExtensionFunctions.php. Na zisoñjit ket da ezporzhiañ an diell en ho servijer a-bell.
+Goude bezañ eztennet ar restroù, ho po ezhomm da enrollañ an astenn e LocalSettings.php. Teulliadur an astenn a zlefe bezañ ennañ kuzulioù war an doare d'en ober.
 
-Goude bezañ bet tennet an diell, ezhomm ho po enrollañ an astenn e LocalSettings.php. Teulliadur an astenn a rank kaout kemennadurioù d'ober kement-mañ.
-
-M'ho peus goulennoù diwar-benn an reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
+M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Tapout un astenn all',
 );
 
@@ -711,6 +710,7 @@ Za tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php
 
 Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Druge rozšyrjenje wobstaraś',
+	'extdist-trunk-warning' => "'''Warnowanje''': Z toś tym rědom dostanjoš wuwiwańsku wersiju, kótaraž snaź derje '''njefunkcioněrujo''' z wersiju MediaWiki, kótaruž sy wubrał abo scełego njefunkcioněrujo a nejskerjej jo '''zestarjona'''.",
 );
 
 /** Greek (Ελληνικά)
@@ -1357,7 +1357,7 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
-	'extdist-trunk-warning' => "'''Warnowanje''': Z tutym nastrojom dóstanješ wuwiwansku wersiju, kotraž snano derje '''njefunguje''' z wersiju MediaWiki, kotruž sy wubrał abo docyła njefunguje a najskerje je '''zestarjenja'''.",
+	'extdist-trunk-warning' => "'''Warnowanje''': Z tutym nastrojom dóstanješ wuwiwansku wersiju, kotraž snano derje '''njefunguje''' z wersiju MediaWiki, kotruž sy wubrał abo docyła njefunguje a najskerje je '''zestarjena'''.",
 );
 
 /** Hungarian (Magyar)
