@@ -2919,28 +2919,27 @@ Gumagawa sa kahabaan ng maramihang mga bersyon ng MediaWiki ang karamihan sa mga
 	'extdist-svn-error' => 'Nakaranas ng isang kamalian ang kabahaging bersyon: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Hindi naisagawa ang XML mula sa "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Ibinalik ng pormat na ''tar'' ang kodigo sa paglabas na $1:",
-	'extdist-created' => "Nalikha na ang isang kuha ng larawan ng bersyong <b>\$2</b> ng karugtong na <b>\$1</b> para sa MediaWiking <b>\$3</b>. Dapat na kusang magsimula na ang iyong pagkakargang pababa sa loob ng 5 mga segundo.
+	'extdist-created' => "Nalikha ang isang kuhang larawan ng bersyong <b>$2</b> ng dugtong na <b>$1</b> para sa MediaWiki na <b>$3</b>. Dapat na kusang magsimula ang iyong pagkakargang paibaba sa loob ng 5 mga segundo.
 
-Ang URL ng kuha ng larawang ito ay:
-:\$4
-Maaaring gamitin ito para sa kaagad na pagkakargang pababa patungo sa isang serbidor, ngunit huwag po lamang itong lagyan ng \"panandang pang-aklat\" (''bookmark''), dahil hindi maisasapanahon ang mga nilalaman, at maaaring mabura ito sa paglaon.
+Ang URL para sa kuhang larawang ito ay:
+:$4
+Maaaring gamitin ito para sa kaagad na pagkakargang paibaba patungo sa isang tagapaghain, ngunit huwag itong lagyan ng panandang pang-aklat, dahil hindi maisasapanahon ang mga nilalaman, at maaaring mabura ito sa paglaon.
 
-Dapat na hanguin ang sinupan/arkibo ng ''tar'' (pormat ng talaksan) patungo sa iyong direktoryo ng mga karugtong.  Halimbawa na, sa isang mistulang ''unix'' na OS:
+Dapat na hanguin ang sinupan ng tar patungo sa iyong direktoryo ng mga dugtong.  Halimbawa, sa isang mistulang unix na OS:
 
 <pre>
-tar -xzf \$5 -C /var/www/mediawiki/extensions
+tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Sa Windows, maaari mong gamitin ang [http://www.7-zip.org/ 7-zip] upang mahango ang mga talaksan.
+Sa Windows, maaari mong gamitin ang [http://www.7-zip.org/ 7-zip] upang humango ng mga talaksan.
 
-Kung ang wiki mo ay nasa ibabaw ng isang malayong serbidor/tagahain, hanguin ang mga talaksan patungo sa isang pansamantalang direktoryong nasa ibabaw ng pampook/lokal mong kompyuter, at pagkatapos ay ikarga pataas ang '''lahat''' ng nahangong mga talaksan papunta sa direktoryo ng mga karugtong na nasa ibabaw ng serbidor.
+Kung ang wiki mo ay nasa isang malayong tagapaghain, hanguin ang mga talaksan patungo sa isang pansamantalang direktoryo na nasa iyong lokal na kompyuter, at pagkatapos ay ikarga paitaas ang '''lahat''' ng nahangong mga talaksan papunta sa direktoryo ng mga dugtong na nasa ibabaw ng tagapaghain.
 
-Tandaan na nangangailangan ang ilang mga karugtong ng isang talaksang tinatawag na ExtensionFunctions.php, na nasa <tt>extensions/ExtensionFunctions.php</tt>, na ang ibig sabihin ay nasa loob ng ''magulang'' na direktoryo ng partikular na direktoryong ito ng karugtong.  Ang mga kuha ng larawang para sa mga karugtong na ito ay napapalooban ng ganitong talaksan upang magsilbi bilang isang \"pampasabog na tar\" (''tarbomb''), na hinahango patungo sa ./ExtensionFunctions.php. Huwag kalimutang ikarga pataas ang talaksang ito patungo sa iyong malayong serbidor.
+Pagkaraan mong mahango ang mga talaksan, kailangan mong ipatala ang mga dugtong sa LocalSettings.php.  Ang dokumentasyon ng dugtong ay dapat na may mga panuto kung paano ito gagawin.
 
-Matapos  mong hangunin ang mga talaksan, kakailanganin mong itala/irehistro ang karugtong sa loob ng LocalSettings.php.  Ang kasulatan ng karugtong ay dapat na mayroong mga panuntunan hinggil sa kung paano ito maisasagawa.
-
-Kung mayroon kang anumang katanungan hinggil sa sistemang ito ng pagpapamahagi ng karugtong, mangyaring pumunta lamang po sa [[Extension talk:ExtensionDistributor]].",
+Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng dugtong na ito, mangyaring pumunta sa [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Kumuha ng iba pang karugtong',
+	'extdist-trunk-warning' => "'''Babala''': ang kasangkapang ito ay makakakuha para sa iyo ng isang larawang-kuha ng pag-unlad na maaaring '''hindi gumana''' na maayos sa bersyon ng MediaWiki na napili mo o maaaring sira lahat at maaaring '''wala na sa panahon'''.",
 );
 
 /** Turkish (Türkçe)
