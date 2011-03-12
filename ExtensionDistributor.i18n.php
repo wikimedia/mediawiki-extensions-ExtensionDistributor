@@ -2356,27 +2356,27 @@ Vàire estension a travajo dzora a 'd version diferente ëd MediaWiki, parèj se
 	'extdist-svn-error' => "La sot-version a l'ha rëncontrà n'eror: <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'As peul pa processesse l\'XML da "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:",
-	'extdist-created' => "Na còpia d'amblé ëd la version <b>$2</b> ëd l'estension <b>$1</b> për MediaWiki <b>$3</b> a l'é stàita creà. Toa dëscaria a dovrìa parte automaticament tra 5 second.
+	'extdist-created' => "Na còpia d'amblé ëd la version <b>$2</b> ëd l'estension <b>$1</b> për MediaWiki <b>$3</b> a l'é stàita creà. Soa dëscaria a dovrìa parte automaticament tra 5 second.
 
-L'URL për sta còpia-sì a l'é:
+L'adrëssa për sta còpia-sì a l'é:
 :$4
-A peul esse dovrà për cariela sùbit su un servent, ma për piasì memorisla pa, da già che ël contnù a sarà pa modificà, e a peul esse scancelà un doman.
+A peul esse dovrà për cariela sùbit su un servent, ma për piasì ch'a la buta pa ant ij sò marca-pàgina, da già che ël contnù a sarà pa agiornà, e a peul esse scancelà un doman.
 
-L'archivi tar a dovrìa esse dëscompatà an tò dossié d'estension. Për esempi, ant un sistema ëd tipo OS unix:
+L'archivi tar a dovrìa esse dëscompatà an sò dossié d'estension. Për esempi, ant un sistema ëd tipo OS unix:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Dzora a Windows, it peule dovré [http://www.7-zip.org/ 7-zip] për dëscompaté j'archivi.
+Dzora a Windows, a peule dovré [http://www.7-zip.org/ 7-zip] për dëscompaté j'archivi.
 
-Se toa wiki a l'é su un servent leugn, dëscompata j'archivi ant un dossié dzora a tò ordinator local, e peui caria '''tùit''' j'archivi dëscompatà ant ël dossié d'estension dzora al servent.
+Se soa wiki a l'é su un servent leugn, ch'a dëscompata j'archivi ant un dossié dzora a sò ordinator local, e peui ch'a caria '''tùit''' j'archivi dëscompatà ant ël dossié d'estension dzora al servent.
 
-Apress ch'it l'has dëscompatà j'archivi, it deve argistré l'estension an LocalSettings.php. La documentassion ëd l'estension a dovrìa avèj d'istrussion su com fé sòn.
+Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSettings.php. La documentassion ëd l'estension a dovrìa avèj d'istrussion su com fé sòn.
 
-S'it l'has chèiche chestion su sto sistema ëd distribuì j'estension, për piasì va a [[Extension talk:ExtensionDistributor]].",
+S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-trunk-warning' => "'''Avis''': st'utiss-sì at pijerà n'istantanea ch'a podrìa benissim '''pa travajé''' con la vërsion Mediawiki ch'it l'has selessionà o esse benissim s-ciapà e a l'é bel fé ch'a sia '''vej'''.",
+	'extdist-trunk-warning' => "'''Avis''': st'utiss-sì a-j fornirà na version an dësvlup ch'a podrìa pro '''pa travajé''' con la version Mediawiki ch'a l'ha selessionà o ëdcò marcé pa e a l'é bel fé ch'a sia '''vej'''.",
 );
 
 /** Portuguese (Português)
