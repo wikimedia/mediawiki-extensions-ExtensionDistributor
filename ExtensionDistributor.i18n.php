@@ -1262,6 +1262,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Croatian (Hrvatski)
  * @author Ex13
+ * @author Herr Mlinka
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -1308,6 +1309,7 @@ Nakon što se raspakirali arhivu, potrebno je uključiti ekstenziju u LocalSetti
 
 Ukoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu stranicu: [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Dohvati drugu ekstenziju',
+	'extdist-trunk-warning' => "'''Upozorenje''': ovaj će vam alat dati razvojnu snimku koja vrlo vjerojatno '''neće raditi''' s MediaWiki verzijom koji ste odabrali ili će biti u potpunosti slomljena i moguće je da je '''zastarjela'''.",
 );
 
 /** Upper Sorbian (Hornjoserbsce)
