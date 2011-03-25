@@ -2667,13 +2667,13 @@ Väčšina rozšírení funguje na viacerých verziách MediaWiki, takže ak tu 
 	'extdist-svn-error' => 'Subversion narazil na chybu: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nebolo možné spracovať XML z výstupu „svn info”: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar skončil s návratovým kódom $1:',
-	'extdist-created' => "Obraz verzie <b>$2</b> rozšírenia <b>$1</b> pre MediaWiki <b>$3</b> bol stiahnutý. Sťahovanie by malo začať automaticky do 5 sekúnd.
+	'extdist-created' => "Snímka verzie <b>$2</b> rozšírenia <b>$1</b> pre MediaWiki <b>$3</b> bol vytvorený. Sťahovanie by malo začať automaticky do 5 sekúnd.
 
 URL tohto obrazu je:
 :$4
 Je možné ho použiť na okamžité stiahnutie na server, ale prosím neukladajte ho ako záložku, pretože jeho obsah sa nebude aktualizovať a neskôr môže byť zmazaný.
 
-Tar archív by ste mali rozbaliť do vášho adresára s rozšíreniami. Príkad pre unixové systémy:
+Tar archív by ste mali rozbaliť do vášho adresára s rozšíreniami. Príklad pre unixové systémy:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -2682,8 +2682,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Na Windows môžete na rozbalenie súborov použiť [http://www.7-zip.org/ 7-zip].
 
 Ak je vaša wiki na vzdialenom serveri, rozbaľte súbory do dočasného adresára na vašom lokálnom počítači a potom nahrajte '''všetky''' rozbalené súbory do adresára pre rozšírenia na serveri.
-
-Všimnite si, že niektoré rozšírenia potrebujú nájsť súbor s názvom ExtensionFunctions.php v <tt>extensions/ExtensionFunctions.php</tt>, t.j. v ''nadradenom'' adresári adresára tohto konkrétneho rozšírenia. Snímka týchto rozšírení obsahuje tento súbor, ktorý sa rozbalí do ./ExtensionFunctions.php. Nezanedbajte nahrať tento súbor na vzdialený serer.
 
 Po rozbalení súborov budete musieť rozšírenie zaregistrovať v LocalSettings.php. Dokumentácia k rozšíreniu by mala obsahovať informácie ako to spraviť.
 
