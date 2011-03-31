@@ -520,6 +520,7 @@ Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <tt>Lo
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
+	'extdist-trunk-warning' => "'''Upozornění''': tento nástroj vám vyrobí balíček z vývojové verze, který dost možná '''nebude fungovat''' se zvolenou verzí MediaWiki nebo bude úplně rozbitý a také může být '''zastaralý'''.",
 );
 
 /** German (Deutsch)
@@ -2486,10 +2487,11 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'extensiondistributor' => 'Descarcă extensia MediaWiki',
+	'extensiondistributor' => 'Descărcare extensie MediaWiki',
 	'extdist-no-such-extension' => 'Extensia "$1" inexistentă',
 	'extdist-no-such-version' => 'Extensia "$1" nu există în versiunea "$2".',
 	'extdist-submit-extension' => 'Continuă',
