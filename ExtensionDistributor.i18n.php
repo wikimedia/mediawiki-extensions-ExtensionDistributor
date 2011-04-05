@@ -390,6 +390,7 @@ Goude bezañ eztennet ar restroù, ho po ezhomm da enrollañ an astenn e LocalSe
 
 M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Tapout un astenn all',
+	'extdist-trunk-warning' => "'''Diwallit''' : gant an ostilh-mañ ho po ur stumm diorren a c'hall '''chom hep mont en-dro'''' mat pe tamm ebet gant ar stumm eus MediaWiki hoc'h eus dibabet hag a zo '''gwall zispredet''' evit doare.",
 );
 
 /** Bosnian (Bosanski)
@@ -540,12 +541,11 @@ $messages['de'] = array(
 	'extdist-wc-empty' => 'Das konfigurierte Kopien-Arbeitsverzeichnis enthält keine zu verteilenden Erweiterungen!',
 	'extdist-submit-extension' => 'Weiter',
 	'extdist-current-version' => 'Entwicklungsversion (trunk)',
-	'extdist-choose-version' => '
-<big>Du lädst die <b>$1</b>-Erweiterung herunter.</big>
+	'extdist-choose-version' => '<big>Du kannst gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.</big>
 
-Bitte wähle deine MediaWiki-Version.
+Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen arbeiten mit vielen MediaWiki-Versionen zusammen. Wenn deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Fähigkeiten der Erweiterung nutzen möchtest, versuche es mit der aktuellen Version.',
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen der Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist nicht in der allen Versionen verfügbar!',
 	'extdist-submit-version' => 'Weiter',
 	'extdist-no-remote' => 'Der ferngesteuerte Subversion-Client ist nicht erreichbar.',
