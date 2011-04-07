@@ -2188,9 +2188,9 @@ De fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen
 
 Adressen til dette øyeblikksbildet er:
 :$4
-Adressen kan brukes for nedlasting til tjeneren, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.
+Adressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.
 
-Tar-arkivet burde pakkes ut i din utvidelsesmappe; for eksempel, på et Unix-lignende operativsystem:
+Tar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -2198,13 +2198,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 På Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.
 
-Om wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer i utvidelsesmappa på tjeneren.
-
-Merk at noen utvidelser trenger en fil ved navn ExtensionFunctions.php, i mappa <tt>extensions/ExtensionFunctions.php</tt>, altså i ''foreldremappa'' til den enkelte utvidelsen sin mappe. Øyeblikksbildet for disse utvidelsene inneholder denne filen som en ''tarbomb'' som pakkes ut til ./ExtensionFunctions.php. Ikke glem å laste opp denne filen til den eksterne tjeneren.
+Om wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.
 
 Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.
 
-Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].",
+Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hent flere utvidelser',
 );
 
