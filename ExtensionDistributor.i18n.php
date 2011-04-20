@@ -1527,6 +1527,7 @@ Dapatkan ekstensi lain',
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author Darth Kule
  * @author McDutchie
  * @author Melos
@@ -1560,9 +1561,9 @@ Molte estensioni funzionano su più versioni di MediaWiki, quindi se la tua vers
 
 L'URL per questa istantanea è:
 :$4
-Può essere usato per scaricare immediatamente dal server, ma non aggiungerlo ai Preferiti poiché il contenuto non sarà aggiornato e il collegamento potrebbe essere rimosso successivamente.
+Può essere usato per scaricare immediatamente dal server, ma non aggiungerlo ai preferiti poiché il contenuto non sarà aggiornato e il collegamento potrebbe essere rimosso successivamente.
 
-L'archivio tar dovrebbe essere estratto nella tua directory delle estensioni. Per esempio, su un sistema operativo di tipo unix:
+L'archivio tar dovrebbe essere estratto nella tua directory delle estensioni. Per esempio, su un sistema operativo di tipo Unix:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -1571,8 +1572,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Su Windows puoi usare [http://www.7-zip.org/ 7-zip] per estrarre i file.
 
 Se la tua wiki si trova su un server remoto, estrai i file in una cartella temporanea sul tuo computer locale e in seguito carica '''tutti''' i file estratti nella directory delle estensioni sul server.
-
-Fai attenzione che alcune estensioni hanno bisogno di un file chiamato ExtensionFunctions.php, situato in <tt>extensions/ExtensionFunctions.php</tt>, che è la cartella ''superiore'' di questa particolare directory della estensione. L'istantanea per queste estensioni contiene questo file come una tarbom, estratta in ./ExtensionFunctions.php. Non dimenticare di caricare questo file sul tuo server locale.
 
 Dopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalSettings.php. Il manuale dell'estensione dovrebbe contenere le istruzioni su come farlo.
 
