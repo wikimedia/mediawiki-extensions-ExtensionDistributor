@@ -1844,7 +1844,7 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
  * @author Brest
  */
 $messages['mk'] = array(
-	'extensiondistributor' => 'Преземање на МедијаВики додаток',
+	'extensiondistributor' => 'Преземање на додаток за МедијаВики',
 	'extensiondistributor-desc' => 'Додаток за дистрибуција на урнек-архиви на додатоци',
 	'extdist-not-configured' => 'Задајте $wgExtDistTarDir и $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Зададениот директориум со работниот примерок не постои!',
