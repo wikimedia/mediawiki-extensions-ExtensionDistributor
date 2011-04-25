@@ -2203,6 +2203,7 @@ Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. D
 
 Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hent flere utvidelser',
+	'extdist-trunk-warning' => "'''Advarsel''': dette verktøyet vil gi deg en utviklingsversjon som godt kan hende '''ikke virker''' med MediaWiki-versjonen du valgte eller være helt ødelagt og trolig '''utdatert'''.",
 );
 
 /** Occitan (Occitan)
