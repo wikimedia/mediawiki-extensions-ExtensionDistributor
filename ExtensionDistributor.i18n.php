@@ -2686,6 +2686,7 @@ Po rozbalení súborov budete musieť rozšírenie zaregistrovať v LocalSetting
 
 Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navštívte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stiahnuť iné rozšírenie',
+	'extdist-trunk-warning' => "'''Upozornenie''': tento nástroj vám poskytne vývojovú snímku, ktorá '''nemusí fungovať''' s verziou MediaWiki, ktorú ste si vybrali alebo môže byť úplne pokazená a pravdepodobne '''zastaralá'''.",
 );
 
 /** Slovenian (Slovenščina)
