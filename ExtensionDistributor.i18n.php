@@ -2053,6 +2053,7 @@ Wenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Exten
 /** Dutch (Nederlands)
  * @author Mihxil
  * @author Naudefj
+ * @author Romaine
  * @author SPQRobin
  * @author Siebrand
  */
@@ -2060,7 +2061,7 @@ $messages['nl'] = array(
 	'extensiondistributor' => 'MediaWiki-uitbreiding downloaden',
 	'extensiondistributor-desc' => 'Uitbreiding voor het distribueren van uitbreidingen',
 	'extdist-not-configured' => 'Maak de instellingen voor $wgExtDistTarDir en $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'De instelde werkmap bestaat niet!',
+	'extdist-wc-missing' => 'De ingestelde werkmap bestaat niet!',
 	'extdist-no-such-extension' => 'De uitbreiding "$1" bestaat niet',
 	'extdist-no-such-version' => 'De uitbreiding "$1" bestaat niet in de versie "$2".',
 	'extdist-choose-extension' => 'Selecteer de uitbreiding die u wilt downloaden:',
@@ -2508,6 +2509,7 @@ Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci
  */
 $messages['roa-tara'] = array(
 	'extensiondistributor' => 'Scareche le estenziune de MediaUicchi',
+	'extdist-no-such-extension' => 'Nisciuna estenzione "$1"',
 	'extdist-no-such-version' => 'L\'estenzione "$1" non g\'esiste jndr\'à versiune "$2".',
 	'extdist-submit-extension' => 'Condinue',
 	'extdist-current-version' => 'Versiune de sveluppe (trunk)',
