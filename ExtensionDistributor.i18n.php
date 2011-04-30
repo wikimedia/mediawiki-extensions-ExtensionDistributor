@@ -334,8 +334,10 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Wikitanvir
  */
 $messages['bn'] = array(
+	'extensiondistributor' => 'মিডিয়াউইকি এক্সটেনশন ডাউনলোড করুন',
 	'extdist-submit-extension' => 'অগ্রসর হোন',
 	'extdist-submit-version' => 'অগ্রসর হোন',
 );
@@ -2820,10 +2822,12 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Veeven
  */
 $messages['te'] = array(
 	'extdist-no-such-extension' => '"$1" అనే పొడగింత లేదు',
+	'extdist-no-such-version' => 'వెర్షను "$2" లో ఎక్స్టెన్షను "$1" లేదు.',
 	'extdist-choose-extension' => 'మీరు ఏ పొడగింతని దింపుకోవాలనుకుంటున్నారో ఎంచుకోండి:',
 	'extdist-submit-extension' => 'కొనసాగించు',
 	'extdist-choose-version' => '<big>మీరు <b>$1</b> పొడగింతని దింపుకోబోతున్నారు.</big>
@@ -2831,6 +2835,7 @@ $messages['te'] = array(
 మీ మిడియావికీ సంచికని ఎంచుకోండి.
 
 చాలా పొడగింతలు పలు మీడియావికీ సంచికల్లో పనిచేస్తాయి, కాబట్టి మీ మీడియావికీ సంచిక ఇక్కడ లేకపోతే, లేదా మీకు పొడగింతల సరికొత్త సౌలభ్యాల అవసరం ఉంటే, ప్రస్తుత సంచికని ఉపయోగించండి.',
+	'extdist-no-versions' => 'ఎంచుకున్న ఎక్స్టెన్షను ($1) ఏ వెర్షనులోనూ లేదు!',
 	'extdist-submit-version' => 'కొనసాగించు',
 	'extdist-want-more' => 'మరొక పొడగింతని పొందండి',
 );
