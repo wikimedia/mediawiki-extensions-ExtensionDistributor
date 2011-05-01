@@ -1495,7 +1495,7 @@ Pilih ekstensi yang ingin Anda unduh:',
 Pilih versi MediaWiki anda.
 
 Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi MediaWiki Anda tidak ada di sini, atau jika Anda membutuhkan fitur ekstensi terbaru, coba gunakan versi terbaru.',
-	'extdist-no-versions' => 'Ekstensi terpilih ($1) tidak tersedia di versi manapun!',
+	'extdist-no-versions' => 'Ekstensi terpilih ($1) tidak tersedia di versi mana pun!',
 	'extdist-submit-version' => 'Lanjutkan',
 	'extdist-no-remote' => 'Tidak dapat terhubung ke client subversio.',
 	'extdist-remote-error' => 'Kesalahan dari subversion client: <pre>$1</pre>',
