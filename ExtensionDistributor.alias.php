@@ -6,11 +6,11 @@
  * @ingroup Extensions
  */
 
-$aliases = array();
+$specialPageAliases = array();
 
 /** English
  * @author Chad Horohoe
  */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'ExtensionDistributor' => array( 'ExtensionDistributor' ),
 );
