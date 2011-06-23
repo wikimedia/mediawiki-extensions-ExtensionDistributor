@@ -556,13 +556,13 @@ Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern d
 	'extdist-svn-error' => 'Subversion hat einen Fehler gemeldet: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XML-Daten von „svn info“ können nicht verarbeitet werden: <pre>$1</pre>',
 	'extdist-tar-error' => 'Das Tar-Programm lieferte den Beendigungscode $1:',
-	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Der Download startet automatisch in 5 Sekunden.
+	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
 :$4
-Die URL ist nur zum sofortigen Download gedacht, bitte speichere sie nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zu einem späteren Zeitpunkt gelöscht werden kann.
+Die URL ist allerdings nur zum sofortigen Herunterladen gedacht. Speichere sie daher nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zudem zu einem späteren Zeitpunkt gelöscht sein kann.
 
-Das Tar-Archiv sollte in das Erweiterungs-Verzeichnis entpackt werden. Auf einem Unix-ähnlichen Betriebssystem mit:
+Das Tar-Archiv muss in das Installationsverzeichnis für die Erweiterungen entpackt werden. Auf einem Unix-ähnlichen Betriebssystem wird dies wie folgt gemacht:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -570,35 +570,36 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Unter Windows kannst du das Programm [http://www.7-zip.org/ 7-zip] zum Entpacken der Dateien verwenden.
 
-Wenn dein Wiki auf einem entfernten Server läuft, entpacke die Dateien in ein temporäres Verzeichnis auf deinem lokalen Computer und lade dann '''alle''' entpackten Dateien auf den entfernten Server hoch.
+Sofern dein Wiki auf einem entfernten Server läuft, entpacke die Dateien zunächst in ein temporäres Verzeichnis auf deinem lokalen Computer und lade dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.
 
-Nachdem du die Dateien entpackt hast, musst du die Erweiterung in der <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur Erweiterung sollte eine Anleitung dazu enthalten.
+Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
-Wenn du Fragen zu diesem Erweiterungs-Verteil-System hast, gehe bitte zur Seite [[Extension talk:ExtensionDistributor]].",
+Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, gehe bitte zur dieser [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung holen.',
 	'extdist-trunk-warning' => "'''Warnung:''' Mit diesem Tool erhält man eine Entwicklungsversion, die in Verbindung mit der ausgewählten MediaWiki-Version möglicherweise '''nicht funktionsfähig''', bzw. '''vollkommen funktionsunfähig''' oder gar '''veraltet''' ist.",
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
+ * @author Kghbln
  * @author MichaelFrey
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
 	'extdist-not-configured' => 'Bitte konfigurieren Sie $wgExtDistTarDir und $wgExtDistWorkingCopy',
 	'extdist-choose-extension' => 'Bitte wählen Sie eine Erweiterung zum Herunterladen aus:',
-	'extdist-choose-version' => '<big>Sie laden die <b>$1</b>-Erweiterung herunter.</big>
+	'extdist-choose-version' => '<big>Sie können gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.</big>
 
-Bitte wählen Sie ihre MediaWiki-Version.
+Bitte wählen Sie zunächst die von Ihnen genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen arbeiten mit vielen MediaWiki-Versionen zusammen. Wenn Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Fähigkeiten der Erweiterung nutzen möchtest, versuche es mit der aktuellen Version.',
-	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Der Download startet automatisch in 5 Sekunden.
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen der Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (trunk). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.',
+	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
 :$4
-Die URL ist nur zum sofortigen Download gedacht, bitte speichern Sie sie nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zu einem späteren Zeitpunkt gelöscht werden kann.
+Die URL ist allerdings nur zum sofortigen Herunterladen gedacht. Speichern Sie sie daher nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zudem zu einem späteren Zeitpunkt gelöscht sein kann.
 
-Das .tar-Archiv sollte in das Erweiterungs-Verzeichnis entpackt werden. Auf einem Unix-ähnlichen Betriebssystem mit:
+Das Tar-Archiv muss in das Installationsverzeichnis für die Erweiterungen entpackt werden. Auf einem Unix-ähnlichen Betriebssystem wird dies wie folgt gemacht:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -606,11 +607,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Unter Windows können Sie das Programm [http://www.7-zip.org/ 7-zip] zum Entpacken der Dateien verwenden.
 
-Wenn Ihr Wiki auf einem entfernten Server läuft, entpacken Sie die Dateien in ein temporäres Verzeichnis auf Ihrem lokalen Computer und laden Sie dann '''alle''' entpackten Dateien auf den entfernten Server hoch.
+Sofern Ihr Wiki auf einem entfernten Server läuft, entpacken Sie die Dateien zunächst in ein temporäres Verzeichnis auf Ihrem lokalen Computer und laden Sie dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.
 
-Nachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung in der <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur Erweiterung sollte eine Anleitung dazu enthalten.
+Nachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
-Wenn Sie Fragen zu diesem Erweiterungs-Verteil-System haben, gehen Sie bitte zur Seite [[Extension talk:ExtensionDistributor]].",
+Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, gehen Sie bitte zur dieser [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 );
 
 /** Zazaki (Zazaki)
