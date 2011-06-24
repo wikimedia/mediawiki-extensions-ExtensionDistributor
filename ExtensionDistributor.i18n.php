@@ -574,7 +574,7 @@ Sofern dein Wiki auf einem entfernten Server läuft, entpacke die Dateien zunäc
 
 Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
-Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, gehe bitte zur dieser [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
+Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung holen.',
 	'extdist-trunk-warning' => "'''Warnung:''' Mit diesem Tool erhält man eine Entwicklungsversion, die in Verbindung mit der ausgewählten MediaWiki-Version möglicherweise '''nicht funktionsfähig''', bzw. '''vollkommen funktionsunfähig''' oder gar '''veraltet''' ist.",
 );
@@ -611,7 +611,7 @@ Sofern Ihr Wiki auf einem entfernten Server läuft, entpacken Sie die Dateien zu
 
 Nachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
-Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, gehen Sie bitte zur dieser [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
+Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen haben, nutzen Sie bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 );
 
 /** Zazaki (Zazaki)
