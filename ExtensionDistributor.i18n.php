@@ -1943,6 +1943,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
  */
@@ -1974,7 +1975,7 @@ Kebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, 
 
 URL untuk petikan ini ialah:
 :$4
-Alamat ini boleh digunakan untuk memuat turun ke dalam pelayan anda dengan segera. Akan tetapi, jangan tanda alamat ini kerana kandungannya tidak akan dikemaskinikan, dan kelak mungkin akan dihapuskan balik.
+Alamat ini boleh digunakan untuk memuat turun ke dalam pelayan anda dengan segera. Akan tetapi, jangan simpan alamat ini dalam ''bookmark'' kerana kandungannya tidak akan dikemas kini lagi, dan kelak mungkin akan dihapuskan balik.
 
 Arkib tar yang dimuat turun perlu dikeluarkan ke dalam direktori extensions anda. Sebagai contoh, untuk sistem pengendalian ala UNIX:
 
@@ -1990,7 +1991,7 @@ Sesetengah penyambung memerlukan sebuah fail bernama ExtensionFunctions.php yang
 
 Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan penyambung tersebut dalam LocalSettings.php. Anda boleh mendapatkan arahan untuk melakukan pendaftaran ini dengan merujuk dokumentasi yang disertakan dengan penyambung tersebut.
 
-Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila kunjungi [[Extension talk:ExtensionDistributor]].",
+Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
 );
 
