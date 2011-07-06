@@ -1705,8 +1705,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 만약 당신의 위키가 원격 서버에 있다면. 당신의 컴퓨터에 임시로 압축을 푼 뒤, 압축이 풀어진 '''모든''' 파일을 서버의 확장 기능 폴더에 올리십시오.
 
-일부 확장 기능은<tt>extensions/ExtensionFunctions.php</tt>에 위치한 ExtensionFunctions.php라는 파일을 필요로 할 것입니다. 이 파일은 각각의 확장 기능 폴더의 상위 폴더에 위치하고 있습니다. 이러한 확장 기능의 묶음은 ./ExtensionFunctions.php에 압축이 풀리도록 이 파일을 포함하고 있습니다. 당신의 원격 서버에 이 파일을 올리는 것을 잊지 마십시오.
-
 압축을 푼 후, 확장 기능을 LocalSettings.php에 등록해야 합니다. 확장 기능의 설명 문서가 어떻게 확장 기능을 등록하는 지에 대한 설명을 담고 있습니다.
 
 이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서를 방문해주십시오.",
@@ -2396,7 +2394,7 @@ $messages['pt'] = array(
 	'extdist-no-such-extension' => 'A extensão "$1" não existe',
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
-	'extdist-wc-empty' => 'O directório da cópia de trabalho configurado não possui extensões distribuíveis!',
+	'extdist-wc-empty' => 'O directório configurado para a cópia de trabalho não tem extensões distribuíveis!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Versão de desenvolvimento (tronco)',
 	'extdist-choose-version' => '
