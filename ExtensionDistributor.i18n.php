@@ -1991,6 +1991,7 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
+	'extdist-trunk-warning' => "'''Amaran''': alatan ini akan memberi anda petikan pembangunan yang mungkin sekali '''tidak berkesan''' dengan versi MediaWiki yang anda pilih, atau rosak sepenuhnya dan mungkin sudah '''ketinggalan zaman'''.",
 );
 
 /** Erzya (Эрзянь)
