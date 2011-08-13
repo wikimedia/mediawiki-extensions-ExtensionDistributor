@@ -546,7 +546,7 @@ $messages['de'] = array(
 
 Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen der Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist nicht in der allen Versionen verfügbar!',
 	'extdist-submit-version' => 'Weiter',
 	'extdist-no-remote' => 'Der ferngesteuerte Subversion-Client ist nicht erreichbar.',
@@ -575,7 +575,6 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
-	'extdist-trunk-warning' => "'''Warnung:''' Mit diesem Tool erhält man eine Entwicklungsversion, die in Verbindung mit der ausgewählten MediaWiki-Version möglicherweise '''nicht funktionsfähig''', bzw. '''vollkommen funktionsunfähig''' oder gar '''veraltet''' ist.",
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -591,7 +590,7 @@ $messages['de-formal'] = array(
 
 Bitte wählen Sie zunächst die von Ihnen genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen der Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (trunk). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.',
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen einer Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (trunk). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
