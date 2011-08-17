@@ -245,7 +245,6 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 
 Әгәр һеҙҙең был киңәйеүҙе таратыу системаһы тураһында һорауҙарығыҙ булһа, зинһар, [[Extension talk:ExtensionDistributor]] битен ҡарағыҙ.",
 	'extdist-want-more' => 'Башҡа киңәйеү алырға',
-	'extdist-trunk-warning' => "'''Иғтибар''': Был ҡорал һеҙгә MediaWiki-ның һайланған өлгөһө менән ''''эшләмәгән''', йәки бөтөнләй боҙолған, хатта '''иҫкергән''' күсермәне ҡайтарыуы мөмкин.",
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
@@ -299,7 +298,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Калі Вы маеце якія-небудзь пытаньні пра сыстэму ўсталяваньня пашырэньня, калі ласка, задайце іх на старонцы [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атрымаць іншае пашырэньне',
-	'extdist-trunk-warning' => "'''Папярэджаньне''': гэты інструмэнт дасьць Вам вэрсію ў распрацоўцы, якая яшчэ можа '''не працаваць''' як сьлед з выбранай Вамі вэрсіяй MediaWiki, ці быць пашкоджанай, ці быць '''састарэлай'''.",
 );
 
 /** Bulgarian (Български)
@@ -391,7 +389,6 @@ Goude bezañ eztennet ar restroù, ho po ezhomm da enrollañ an astenn e LocalSe
 
 M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Tapout un astenn all',
-	'extdist-trunk-warning' => "'''Diwallit''' : gant an ostilh-mañ ho po ur stumm diorren a c'hall '''chom hep mont en-dro'''' mat pe tamm ebet gant ar stumm eus MediaWiki hoc'h eus dibabet hag a zo '''gwall zispredet''' evit doare.",
 );
 
 /** Bosnian (Bosanski)
@@ -441,7 +438,6 @@ Nakon što otpakujete datoteke, morat ćete registrovati proširenje u LocalSett
 
 Ako imate nekih pitanja oko ovog sistema distribucije proširenja, molimo pogledajte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Nađi slijedeće proširenje',
-	'extdist-trunk-warning' => "'''Upozorenje''': ovaj alat će vam dati razvojnu verziju, koja u vezi sa odabranom verzijom MediaWikija možda ''neće''' dobro raditi ili raditi u dovoljnoj mjeri ili će čak biti '''zastarijela'''.",
 );
 
 /** Catalan (Català)
@@ -521,7 +517,6 @@ Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <tt>Lo
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
-	'extdist-trunk-warning' => "'''Upozornění''': tento nástroj vám vyrobí balíček z vývojové verze, který dost možná '''nebude fungovat''' se zvolenou verzí MediaWiki nebo bude úplně rozbitý a také může být '''zastaralý'''.",
 );
 
 /** German (Deutsch)
@@ -711,7 +706,6 @@ Za tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php
 
 Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Druge rozšyrjenje wobstaraś',
-	'extdist-trunk-warning' => "'''Warnowanje''': Z toś tym rědom dostanjoš wuwiwańsku wersiju, kótaraž snaź derje '''njefunkcioněrujo''' z wersiju MediaWiki, kótaruž sy wubrał abo scełego njefunkcioněrujo a nejskerjej jo '''zestarjona'''.",
 );
 
 /** Greek (Ελληνικά)
@@ -1065,7 +1059,6 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <t
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
-	'extdist-trunk-warning' => "'''Attention''': cet outil obtiendra une version de développement qui risque '''de ne pas fonctionner''' avec la version du MediaWiki que vous avez choisie ou qui ne fonctionne pas et est probablement '''périmé'''.",
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1147,7 +1140,6 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
-	'extdist-trunk-warning' => "'''Atención:''' Esta ferramenta proporciona unha versión en desenvolvemento que pode '''non funcionar''' moi ben coa versión de MediaWiki que seleccionou; pode ser que non funcione en calquera caso e que estea '''desactualizado'''.",
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1206,7 +1198,6 @@ Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <tt>LocalSettings.php
 
 Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'No ne Erwyterig hole',
-	'extdist-trunk-warning' => "'''Warnig:''' Mit däm Tool chunnt mer e Entwickligsversion iber, wu in Verbindig mit dr uusgwehlte MediaWiki-Version villicht '''nit funktionsfähig''', bzw. '''ganz funktionsuufähig''' oder sogar '''veraltet''' isch.",
 );
 
 /** Hebrew (עברית)
@@ -1258,7 +1249,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
-	'extdist-trunk-warning' => "'''אזהרה''': כלי זה מביא גרסה בפיתוח שייתכן מאוד ש'''אינה עובדת''' עם גרסת מדיה ויקי שבחרתם או להיות מקולקלת לגמרי וצפויה להיות '''בלתי מעודכנת'''.",
 );
 
 /** Croatian (Hrvatski)
@@ -1310,7 +1300,6 @@ Nakon što se raspakirali arhivu, potrebno je uključiti ekstenziju u LocalSetti
 
 Ukoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu stranicu: [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Dohvati drugu ekstenziju',
-	'extdist-trunk-warning' => "'''Upozorenje''': ovaj će vam alat dati razvojnu snimku koja vrlo vjerojatno '''neće raditi''' s MediaWiki verzijom koji ste odabrali ili će biti u potpunosti slomljena i moguće je da je '''zastarjela'''.",
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1360,7 +1349,6 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
-	'extdist-trunk-warning' => "'''Warnowanje''': Z tutym nastrojom dóstanješ wuwiwansku wersiju, kotraž snano derje '''njefunguje''' z wersiju MediaWiki, kotruž sy wubrał abo docyła njefunguje a najskerje je '''zestarjena'''.",
 );
 
 /** Hungarian (Magyar)
@@ -1464,7 +1452,6 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
-	'extdist-trunk-warning' => "'''Attention''': con iste instrumento tu recipe un version in disveloppamento que ben possibilemente '''non functiona''' con le version de MediaWiki que tu ha seligite o es defectuose in general, e probabilemente '''non es actual'''.",
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1524,7 +1511,6 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
-	'extdist-trunk-warning' => "'''Peringatan''': peralatan ini akan memberikan Anda cuplikan pengembangan yang mungkin '''tidak bekerja''' dengan baik pada versi MediaWiki yang Anda pilih atau tidak berhubungan dan bisa saja '''kadaluwarsa'''.",
 );
 
 /** Italian (Italiano)
@@ -1631,7 +1617,6 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
-	'extdist-trunk-warning' => "'''警告'''： このツールで取得される開発版のスナップショットは、選択されたMediaWikiバージョンでは'''動作しない'''ことがおおいにありえます。合わせて動かした場合、壊れるかもしれません。また、'''最新版ではない'''おそれがあります。",
 );
 
 /** Georgian (ქართული)
@@ -1758,7 +1743,6 @@ Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz 
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Noch ene Zosatz holle',
-	'extdist-trunk-warning' => "'''Opjepaß:''' heh dat Wärkzüsch es en enem onfäädeje Zohshtand vun singe Äntwecklong un künnt joot '''jaa nit funxjeniere''' med Dinge Version vun MediaWiki, un wascheinlesch es et nit mieh op enem neue Shtand un ald '''veralldet'''.",
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1884,7 +1868,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
-	'extdist-trunk-warning' => "'''Предупредување''': оваа алатка ви дава преглед на развоен примерок кој веројатно '''нема да работи''' со одбраната верзија на МедијаВики, а може и целосно да е расипан. Покрај ова, веројатно е и '''застарен'''.",
 );
 
 /** Malayalam (മലയാളം)
@@ -1935,7 +1918,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.",
 	'extdist-want-more' => 'മറ്റൊരു അനുബന്ധം നേടുക',
-	'extdist-trunk-warning' => "'''അറിയിപ്പ്''': ഈ ഉപകരണം ലഭ്യമാക്കുക താങ്കളുടെ മീഡിയവിക്കി പതിപ്പിനോടൊത്ത് നന്നായി '''പ്രവർത്തിക്കാത്തതോ''' അല്ലെങ്കിൽ കേടുപാടുള്ളതും '''കാലഹരണപ്പെട്ടതും''' ആയ വികസന ഘട്ട സ്നാപ്ഷോട്ട് ആയേക്കാം.",
 );
 
 /** Malay (Bahasa Melayu)
@@ -1989,7 +1971,6 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
-	'extdist-trunk-warning' => "'''Amaran''': alatan ini akan memberi anda petikan pembangunan yang mungkin sekali '''tidak berkesan''' dengan versi MediaWiki yang anda pilih, atau rosak sepenuhnya dan mungkin sudah '''ketinggalan zaman'''.",
 );
 
 /** Erzya (Эрзянь)
@@ -2102,7 +2083,6 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
-	'extdist-trunk-warning' => "'''Waarschuwing''': u krijgt een ontwikkelversie van deze uitbreiding die wellicht '''niet werkt''' met de versie van MediaWiki die u hebt geselecteerd. De softwarecomponent is waarschijnlijk ook '''gedateerd'''.",
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2205,7 +2185,6 @@ Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. D
 
 Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hent flere utvidelser',
-	'extdist-trunk-warning' => "'''Advarsel''': dette verktøyet vil gi deg en utviklingsversjon som godt kan hende '''ikke virker''' med MediaWiki-versjonen du valgte eller være helt ødelagt og trolig '''utdatert'''.",
 );
 
 /** Occitan (Occitan)
@@ -2259,7 +2238,7 @@ S'avètz de questions a prepaus d'aqueste sistèma de distribucion de las extens
 	'extdist-want-more' => 'Obténer una autra extension',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -2327,7 +2306,6 @@ Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzen
 
 Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zadaj je na stronie [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Pobierz inne rozszerzenie',
-	'extdist-trunk-warning' => "'''Uwaga''' – to narzędzie umożliwia pobranie wersji oprogramowania z danej chwili, która może '''nie działać''' z wybraną przez Ciebie wersją MediaWiki. Pobrany kod może być również całkowicie '''nieaktualny'''.",
 );
 
 /** Piedmontese (Piemontèis)
@@ -2378,7 +2356,6 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-trunk-warning' => "'''Avis''': st'utiss-sì a-j fornirà na version an dësvlup ch'a podrìa pro '''pa travajé''' con la version Mediawiki ch'a l'ha selessionà o ëdcò marcé pa e a l'é bel fé ch'a sia '''vej'''.",
 );
 
 /** Portuguese (Português)
@@ -2430,7 +2407,6 @@ Após colocar a extensão no directório de extensões da sua wiki, terá de reg
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
-	'extdist-trunk-warning' => "'''Aviso''': esta ferramenta fornece-lhe um instantâneo da versão de desenvolvimento que pode '''não funcionar''' com a versão do MediaWiki que seleccionou, ou não funcionar de todo, e que provavelmente está '''desactualizada'''.",
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -2481,7 +2457,6 @@ Após colocar a extensão no diretório de extensões da sua wiki, terá de regi
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
-	'extdist-trunk-warning' => "'''Aviso''': esta ferramenta fornece-lhe um instantâneo da versão de desenvolvimento que pode '''não funcionar''' com a versão do MediaWiki que você selecionou, ou não funcionar de todo, e que provavelmente está '''desatualizada'''.",
 );
 
 /** Romanian (Română)
@@ -2566,7 +2541,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Если у вас есть вопрос об этой системе распространения расширений, пожалуйста, обратитесь к странице [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачать другое расширение',
-	'extdist-trunk-warning' => "'''Внимание.''' Этот инструмент выдаст вам снимок разработки, который вполне может '''не работать''' с выбранной версией MediaWiki, или вообще оказаться сломанным и даже '''устаревшим'''.",
 );
 
 /** Rusyn (Русиньскый)
@@ -2592,7 +2566,7 @@ $messages['rue'] = array(
 	'extdist-want-more' => 'Скачати інше росшырїня',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -2639,7 +2613,6 @@ Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] б�
 
 Бу туһунан тугу эмит ыйытыаххын баҕардаххына бу сирэйгэ киирээр: [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атын тупсарыыны хачайдыырга',
-	'extdist-trunk-warning' => "'''Болҕой.''' Бу хаартыска (снэпшот) оҥорор тэрил MediaWiki сорох барылларын кытта '''үлэлиэ суоҕун''' сөп, эбэтэр отой да алдьаммыт дуу, '''эргэрбит''' дуу буолуон сөп эбит.",
 );
 
 /** Slovak (Slovenčina)
@@ -2689,7 +2662,6 @@ Po rozbalení súborov budete musieť rozšírenie zaregistrovať v LocalSetting
 
 Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navštívte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stiahnuť iné rozšírenie',
-	'extdist-trunk-warning' => "'''Upozornenie''': tento nástroj vám poskytne vývojovú snímku, ktorá '''nemusí fungovať''' s verziou MediaWiki, ktorú ste si vybrali alebo môže byť úplne pokazená a pravdepodobne '''zastaralá'''.",
 );
 
 /** Slovenian (Slovenščina)
@@ -2739,7 +2711,6 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dobi drugo razširitev',
-	'extdist-trunk-warning' => "'''Opozorilo''': to orodje vam bo pridobilo razvojni posnetek, za katerega obstaja velika verjetnost, da '''ne bo deloval''' dobro z izbrano različico MediaWiki ali pa sploh ne bo deloval in bo verjetno '''zastarel'''.",
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
@@ -2946,7 +2917,6 @@ Pagkaraan mong mahango ang mga talaksan, kailangan mong ipatala ang mga dugtong 
 
 Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng dugtong na ito, mangyaring pumunta sa [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Kumuha ng iba pang karugtong',
-	'extdist-trunk-warning' => "'''Babala''': ang kasangkapang ito ay makakakuha para sa iyo ng isang larawang-kuha ng pag-unlad na maaaring '''hindi gumana''' na maayos sa bersyon ng MediaWiki na napili mo o maaaring sira lahat at maaaring '''wala na sa panahon'''.",
 );
 
 /** Turkish (Türkçe)
@@ -3160,7 +3130,6 @@ Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần m�
 
 Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Lấy một bộ mở rộng khác',
-	'extdist-trunk-warning' => "'''Cảnh báo''': Công cụ này sẽ cung cấp bản lưu trữ đang phát triển rất có thể '''không tương tích''' với phiên bản MediaWiki được chọn hoặc có thể bị hư hẳn và '''lỗi thời'''.",
 );
 
 /** Yiddish (ייִדיש)
@@ -3273,7 +3242,6 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 有关于此扩展名配电系统的任何问题，请转到 [[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取另一个扩展',
-	'extdist-trunk-warning' => "'''警告'''：此工具将得到很好的可能的发展快照'''不工作'''MediaWiki 版本与您选择或完全损坏和可能是'''过时的'''。",
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
