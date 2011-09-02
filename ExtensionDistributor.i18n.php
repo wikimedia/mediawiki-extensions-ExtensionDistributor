@@ -900,6 +900,7 @@ $messages['eu'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Huji
+ * @author Mjbmr
  * @author Wayiran
  */
 $messages['fa'] = array(
@@ -941,8 +942,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 در ویندوز، می‌توانید از [http://www.7-zip.org/ 7-zip] برای استخراج پرونده‌ها استفاده کنید.
 
 اگر ویکی شما یک کارساز ازراه‌دور است، پرونده‌ها را در یک دایرکتوری موقتی در رایانهٔ محلی‌تان استخراج کنید، و سپس '''همهٔ''' پرونده‌های استخراج‌شده را به دایرکتوری افزونه‌ها در سرور بارگذاری کنید.
-
-توجه کنید که برخی افزونه‌ها به فایلی که ExtensionFunctions.php خوانده می‌شود نیاز دارند، که در <tt>extensions/ExtensionFunctions.php</tt>، واقع در دایرکتوری ''مادر'' از این دایرکتوری افزونه‌های مخصوص، قرار دارد. عکس‌فوری برای این افزونه‌ها این پرونده را به عنوان tarbomb استخراج‌شده در ./ExtensionFunctions.php، در بر دارد. از بارگذاری این پرونده به کارساز راه‌دور را غفلت نکنید.
 
 پس از آنکه پرونده‌ها را استخراج کردید، لازم است افزونه را در LocalSettings.php ثبت کنید. توضیحات افزونه باید این دستورالعمل که چطور این را انجام دهیم را داشته باشد.
 
@@ -1820,6 +1819,18 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 	'extdist-want-more' => "Nag 'n uitbreiding downloade",
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'extensiondistributor' => 'Parsisiųsti MediaWiki pratęsimą',
+	'extdist-no-such-extension' => 'Nėra plėtinio " $1 "',
+	'extdist-choose-extension' => 'Pasirinkite kuri plėtinį, kurį norite atsisiųsti:',
+	'extdist-submit-extension' => 'Tęsti',
+	'extdist-submit-version' => 'Tęsti',
+	'extdist-want-more' => 'Gauti kitą plėtinį',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  * @author Brest
@@ -2458,12 +2469,15 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'extensiondistributor' => 'Descărcare extensie MediaWiki',
+	'extensiondistributor-desc' => 'Extensie pentru distribuirea unor arhive fotografice ale extensiilor',
+	'extdist-not-configured' => 'Vă rugăm să configurați $wgExtDistTarDir și $wgExtDistWorkingCopy',
 	'extdist-no-such-extension' => 'Extensia "$1" inexistentă',
 	'extdist-no-such-version' => 'Extensia "$1" nu există în versiunea "$2".',
 	'extdist-submit-extension' => 'Continuă',
@@ -2473,6 +2487,7 @@ $messages['ro'] = array(
 Alegeți versiunea dvs MediaWiki.
 
 Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci dacă versiunea dvs MediaWiki nu este aici sau dacă aveți nevoie de cele mai recente funcționalități pentru extensii, încercați să folosiți versiunea curentă.',
+	'extdist-no-versions' => 'Extensia selectată ($1) nu este disponibilă în orice versiune!',
 	'extdist-submit-version' => 'Continuă',
 	'extdist-want-more' => 'Obține altă extensie',
 );
