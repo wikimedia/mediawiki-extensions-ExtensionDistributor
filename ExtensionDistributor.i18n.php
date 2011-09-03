@@ -2489,6 +2489,7 @@ Alegeți versiunea dvs MediaWiki.
 Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci dacă versiunea dvs MediaWiki nu este aici sau dacă aveți nevoie de cele mai recente funcționalități pentru extensii, încercați să folosiți versiunea curentă.',
 	'extdist-no-versions' => 'Extensia selectată ($1) nu este disponibilă în orice versiune!',
 	'extdist-submit-version' => 'Continuă',
+	'extdist-svn-parse-error' => 'Imposibil de procesat XML din „svn info”: <pre>$1</pre>',
 	'extdist-want-more' => 'Obține altă extensie',
 );
 
@@ -2562,12 +2563,19 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['rue'] = array(
 	'extensiondistributor' => 'Скачати росшырїня MediaWiki',
 	'extensiondistributor-desc' => 'Росшырїня про дістрібуцію архівів росшырїня',
+	'extdist-not-configured' => 'Просиме, наштелюйте $wgExtDistTarDir і $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Адресарь наставленый про працовну копію не єствує!',
 	'extdist-no-such-extension' => 'Росшырїня „$1” не єствує',
 	'extdist-no-such-version' => 'Росшырїня "$1" не єствує у верзії "$2".',
 	'extdist-choose-extension' => 'Выберте, котре росшырїня хочете скачати:',
+	'extdist-wc-empty' => 'Наставленый адресарь з працовнов копіёв не обсягує жадны росшырїня, котры бы было можне дістрібуовати!',
 	'extdist-submit-extension' => 'Продовжыти',
 	'extdist-current-version' => 'Вывоёва верзія (trunk)',
+	'extdist-choose-version' => '<big>Тягате росшырїня <b>$1</b>.</big>
+
+Выберьте верзію MediaWiki.
+
+Векшына росшырїнь фунґує на веце верзіях MediaWiki, также кідь гев ваша верзія MediaWiki не є уведжена або вам треба новшы властноти росшырїня, попробуйте хосновати актуалну верзію.',
 	'extdist-no-versions' => 'Выбране росшырїня ($1) не є доступне в жадній верзії!',
 	'extdist-submit-version' => 'Продовжыти',
 	'extdist-no-remote' => 'Не подарило ся контактовати далекого кліента Subversion.',
@@ -2576,6 +2584,25 @@ $messages['rue'] = array(
 	'extdist-svn-error' => 'Subversion наразив на хыбу: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Не дало ся спрацовати XML з выступу „svn info”: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar скінчів з вернутым кодом $1:',
+	'extdist-created' => "Пакунок <b>$1</b> у верзії <b>$2</b> про MediaWiki <b>$3</b> быв створеный. Ёго скачаня бы ся мало автоматічно спустити за пять секунд.
+
+Адреса того пакунка є:
+: $4
+Можете собі одталь нынї пакунок скачати, але тоту адресу собі ниґде не укладайте, бо обсяг одказованого файлу не буде актуалізованый і файл може быти пізнїше змазаный.
+
+Тот tar собі роспакуйте до адресаря <tt>extensions</tt>. На операчный сістемах на базї Unixu наприклад:
+
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
+
+На Windows можете пакунок розбалити з проґрамом [http://www.7-zip.org/ 7-zip].
+
+Кідь ваша вікі біжыть на далекім сервері, роспакуйте архів до даякого дочасного адресаря на локалнім компютерї і потім награйте '''вшыткы''' роспакованы файлы до адресаря <tt>extensions</tt> на далекім сервері.
+
+По роспакованю файлів будете мусити росшырїня реґістровати у файлї <tt>LocalSettings.php</tt>. Детайлїшы інформації бы мала обсяговати документавія ку росшырїню.
+
+Вопросы ку тій сістемі дістрібуції росшырїня можете класти на сторінцї [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачати інше росшырїня',
 );
 
