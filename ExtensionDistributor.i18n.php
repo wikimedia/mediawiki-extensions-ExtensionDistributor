@@ -517,6 +517,21 @@ Případné dotazy k tomuto systému distribuce rozšíření můžete klást na
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
 );
 
+/** Danish (Dansk)
+ * @author Peter Alberti
+ */
+$messages['da'] = array(
+	'extensiondistributor' => 'Hent MediaWikiudvidelse',
+	'extdist-not-configured' => 'Venligst indstil $wgExtDistTarDir og $wgExtDistWorkingCopy',
+	'extdist-no-such-extension' => 'Ingen udvidelse ved navn "$1"',
+	'extdist-no-such-version' => 'Udvidelsen "$1" findes ikke i versionen "$2".',
+	'extdist-choose-extension' => 'Vælg den udvidelse, du ønsker at hente:',
+	'extdist-submit-extension' => 'Fortsæt',
+	'extdist-submit-version' => 'Fortsæt',
+	'extdist-tar-error' => 'Tar gav returkoden $1:',
+	'extdist-want-more' => 'Hent en anden udvidelse',
+);
+
 /** German (Deutsch)
  * @author Als-Holder
  * @author Kghbln
@@ -2773,6 +2788,7 @@ $messages['sr-el'] = array(
 /** Swedish (Svenska)
  * @author Boivie
  * @author M.M.S.
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'extensiondistributor' => 'Ladda ner tillägg till MediaWiki',
@@ -2801,7 +2817,7 @@ De flesta tilläggen fungerar på flera versioner av MediaWiki, så om versionen
 	'extdist-tar-error' => 'Tar returnerade utgångskod $1:',
 	'extdist-created' => "En ögonblicksbild av version <b>$2</b> av tillägget <b>$1</b> för MediaWiki <b>$3</b> har skapats. Din nerladdning ska starta automatiskt om 5 sekunder.
 
-URLet för ögonblicksbilden är:
+URL:et för ögonblicksbilden är:
 :$4
 Den kan användas för direkt nedladdning till en server, men bokmärk den inte, för innehållet kommer inte uppdateras, och den kan bli raderad vid ett senare tillfälle.
 
@@ -2814,8 +2830,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 På Windows kan du använda [http://www.7-zip.org/ 7-zip] för att packa upp filerna.
 
 Om din wiki är på en fjärrserver, packa upp filerna till en tillfällig katalog på din lokala dator, och ladda sedan upp '''alla''' uppackade filer till extensions-katalogen på servern.
-
-Observera att några programtillägg behöver filen ExtensionFunctions.php, som finns i <tt>extensions/ExtensionFunctions.php</tt>, det är i ''föräldra''katalogen till just det här filtilläggets katalog. Ögonblicksbilden för dessa programtillägg innehåller den här filen som en tarbomb, uppackad till ./ExtensionFunctions.php. Glöm inte att ladda upp den filen till din fjärrserver.
 
 Efter att du packat upp filerna, behöver du registrera programtillägget i LocalSettings.php. Programtilläggets dokumentation ska ha instruktioner om hur man gör det.
 
