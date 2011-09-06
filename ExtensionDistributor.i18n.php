@@ -3299,6 +3299,7 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Anakmalaysia
  * @author Liangent
  * @author Mark85296341
  * @author Shinjiman
@@ -3327,27 +3328,25 @@ $messages['zh-hant'] = array(
 	'extdist-svn-error' => 'Subversion 遇到一個錯誤：<pre>$1</pre>',
 	'extdist-svn-parse-error' => '不能夠處理「svn info」之 XML：<pre>$1</pre>',
 	'extdist-tar-error' => 'Tar 回應結束碼 $1：',
-	'extdist-created' => "一個可供 MediaWiki <b>$3</b> 使用的 <b>$1</b> 擴充套件之 <b>$2</b> 版本的映像已經建立。您的下載將會在 5 秒鐘之後自動開始。
+	'extdist-created' => "已創建的定制<b>$3</b> 的<b>$1</b> 擴展的版本<b>$2</b> 的快照。您下載應在 5 秒後自動啟動。
 
-這個映像的 URL 是:
+，此快照的 URL 是：
 :$4
-它可能會用於即時下載到伺服器中，但是請不要記錄在書籤中，因為裡面的內容可能不會更新，亦可能會在之後的時間刪除。
+，可用於直接下載到一個的服務器，但請不要不書籤它，因為內容將不會更新，和它可能在晚些時候會被刪除。
 
-該 tar 壓縮檔應該要解壓縮到您的擴充套件目錄。例如，在 unix 類 OS:
+tar 存檔應提取到您擴展的目錄。為例對一個類似 unix 的操作系統：
 
 <pre>
-tar -xzf $5 -C /var/www/mediawiki/extensions
+tar -xzf $5-C /var/www/mediawiki/extensions
 </pre>
 
-在 Windows，您可以用 [http://www.7-zip.org/ 7-zip] 去解壓縮這些檔案。
+在Windows 中，可以使用[http://www.7-zip.org/ 7-zip] 解壓縮文件。
 
-如果您的 wiki 是在一個遠端伺服器的話，就在電腦中解壓縮檔案到一個臨時目錄，然後再上載'''全部'''已經解壓縮的檔案到伺服器的擴展目錄上。
+遠程服務器上如果您維基提取到一個臨時目錄在本地計算機上的文件，然後將上傳'''所有'''的解壓縮的文件擴展名的目錄在服務器上。
 
-要留意的是有的擴充套件是需要一個名叫 ExtensionFunctions.php 的檔案，在 <tt>extensions/ExtensionFunctions.php</tt>，即是，在這個擴充套件目錄的''父''目錄。那些擴充套件的映像都會含有以這個檔案的 tarbomb 檔案，解壓縮到 ./ExtensionFunctions.php。不要忘記上載這個檔案到您的遠端伺服器。
+提取文件後，您將需要在LocalSettings.php 中註冊擴展。擴展的文檔應有說明如何執行此操作。
 
-響您解壓縮檔案之後，您需要在 LocalSettings.php 中註冊該等擴充套件。該擴充套件說明會有指示如何做到它。
-
-如果您有任何對於這個擴充套件發布系統有問題的話，請去[[Extension talk:ExtensionDistributor]]。",
+有關於此擴展名配電系統的任何問題，請轉到[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取得另一個擴充套件',
 );
 
