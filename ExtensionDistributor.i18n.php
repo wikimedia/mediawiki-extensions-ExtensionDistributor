@@ -1087,6 +1087,11 @@ $messages['frp'] = array(
 	'extdist-wc-empty' => 'Lo rèpèrtouèro por copies d’ôvra configurâ at gins d’èxtension distribuâbla !',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Vèrsion de dèvelopament (trunk)',
+	'extdist-choose-version' => '<big>Vos éte aprés tèlèchargiér l’èxtension <b>$1</b>.</big>
+
+Chouèsésséd voutra vèrsion de MediaWiki.
+
+La plepârt de les èxtensions tôrne sur difèrentes vèrsions de MediaWiki. Avouéc, se voutra vèrsion est pas presenta ique, ou ben se vos avéd fôta de les dèrriéres fonccionalitâts de l’èxtension, tâchiéd d’utilisar la vèrsion d’ora.',
 	'extdist-no-versions' => 'L’èxtension chouèsia ($1) est pas disponibla dens gins de vèrsion !',
 	'extdist-submit-version' => 'Continuar',
 	'extdist-no-remote' => 'Empossiblo de sè veriér vers lo cliant sot-vèrsion distant.',
@@ -1095,6 +1100,25 @@ $messages['frp'] = array(
 	'extdist-svn-error' => 'Sot-vèrsion at rencontrâ una èrror : <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Empossiblo de trètar les balyês XML retornâs per « svn info » : <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar at retornâ lo code de sortia $1 :',
+	'extdist-created' => "Una copia drêta de la vèrsion <b>$2</b> de l’èxtension <b>$1</b> por MediaWiki <b>$3</b> at étâ fêta. Voutron tèlèchargement devrêt comenciér ôtomaticament dens 5 secondes.
+
+L’adrèce de ceta copia est :
+:$4
+Pôt étre utilisâ por un tèlèchargement drêt de vers un sèrvor, mas èvitâd de l’enscrire dens voutros mârca-pâges, puésque son contegnu serat pas betâ a jorn et pués pôt étre suprimâ a una dâta futura.
+
+Les arch·ives tar devriant étre èxtrètes dens voutron rèpèrtouèro <tt>èxtensions</tt>. Per ègzemplo sur un sistèmo semblâblo a UNIX :
+
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
+
+Desot Windows, vos pouede utilisar [http://www.7-zip.org/ 7-zip] por èxtrère los fichiérs.
+
+Se voutron vouiqui est hèbèrgiê sur un sèrvor distant, èxtreséd los fichiérs dens un rèpèrtouèro temporèro de voutron ordenator local, et pués tèlèchargiéd-los '''tôs''' dens lo rèpèrtouèro <tt>èxtensions</tt> du sèrvor.
+
+Un côp los fichiérs èxtrèts, vos fôdrat encartar l’èxtension dens <tt>LocalSettings.php</tt>. La documentacion de l’èxtension devrêt contegnir un guido d’enstalacion qu’èxplique coment procèdar.
+
+Se vos avéd des quèstions sur cél sistèmo de distribucion de les èxtensions, volyéd vêre [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Avêr una ôtra èxtension',
 );
 
@@ -2519,6 +2543,7 @@ $messages['roa-tara'] = array(
 	'extdist-submit-extension' => 'Condinue',
 	'extdist-current-version' => 'Versiune de sveluppe (trunk)',
 	'extdist-submit-version' => 'Condinue',
+	'extdist-tar-error' => "Tar ha turnate 'nu codece de assute $1:",
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
 );
 
