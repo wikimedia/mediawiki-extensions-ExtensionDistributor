@@ -2542,7 +2542,10 @@ $messages['roa-tara'] = array(
 	'extdist-no-such-version' => 'L\'estenzione "$1" non g\'esiste jndr\'à versiune "$2".',
 	'extdist-submit-extension' => 'Condinue',
 	'extdist-current-version' => 'Versiune de sveluppe (trunk)',
+	'extdist-no-versions' => "L'estenzione scacchiate ($1) non g'è disponibbele pe nisicuna versione!",
 	'extdist-submit-version' => 'Condinue',
+	'extdist-no-remote' => "Non ge pozze condattà 'u cliende remote d'a sotteversione.",
+	'extdist-remote-error' => "Errore da 'u cliende remote d'a sotteversione: <pre>$1</pre>",
 	'extdist-tar-error' => "Tar ha turnate 'nu codece de assute $1:",
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
 );
