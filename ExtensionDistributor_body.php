@@ -249,7 +249,7 @@ class ExtensionDistributorPage extends SpecialPage {
 			}
 		}
 
-		$url = "$wgExtDistTarUrl/$tarName";
+		$url = wfExpandUrl( "$wgExtDistTarUrl/$tarName", PROTO_CURRENT );
 
 		// Show a message
 		$wgOut->addWikiMsg( 'extdist-created', $extension, "r$rev",
