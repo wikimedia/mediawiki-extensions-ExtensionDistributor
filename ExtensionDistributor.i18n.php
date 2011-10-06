@@ -541,7 +541,7 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'extensiondistributor' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
-	'extensiondistributor-desc' => 'Erweiterung zur Verteilung von Entwicklungsversionen von MediaWiki-Erweiterungen',
+	'extensiondistributor-desc' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
 	'extdist-not-configured' => 'Bitte konfiguriere $wgExtDistTarDir und $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Das konfigurierte Kopien-Arbeitsverzeichnis ist nicht vorhanden!',
 	'extdist-no-such-extension' => 'Erweiterung „$1“ ist nicht vorhanden',
