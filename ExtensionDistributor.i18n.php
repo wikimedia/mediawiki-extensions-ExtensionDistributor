@@ -1043,7 +1043,7 @@ $messages['fr'] = array(
 Sélectionnez votre version de MediaWiki.
 
 La plupart des extensions tourne sur différentes versions de MediaWiki. Aussi, si votre version n’est pas présente ici, ou si vous avez besoin des dernières fonctionnalités de l’extension, essayez d’utiliser la version courante.',
-	'extdist-no-versions' => "L’extension sélectionnée ($1) n'est disponible dans aucune version !",
+	'extdist-no-versions' => 'L’extension sélectionnée ($1) n’est disponible dans aucune version !',
 	'extdist-submit-version' => 'Continuer',
 	'extdist-no-remote' => 'Impossible de contacter le client subversion distant.',
 	'extdist-remote-error' => 'Erreur du client subversion distant : <pre>$1</pre>',
