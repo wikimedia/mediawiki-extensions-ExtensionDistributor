@@ -3179,7 +3179,7 @@ $messages['vi'] = array(
 	'extdist-wc-empty' => 'Thư mục sao chép hiện hành được cấu hình không có bộ mở rộng nào phân phối được!',
 	'extdist-submit-extension' => 'Tiếp tục',
 	'extdist-current-version' => 'Phiên bản phát triển (trunk)',
-	'extdist-choose-version' => '<big>Bạn đang tải xuống bộ mở rộng <b>$1</b>.</big>
+	'extdist-choose-version' => '<big>Bạn đang tải về bộ mở rộng <b>$1</b>.</big>
 
 Chọn phiên bản MediaWiki của bạn.
 
@@ -3192,7 +3192,7 @@ Phần lớn bộ mở rộng có thể chạy được trên nhiều phiên b�
 	'extdist-svn-error' => 'Phiên bản con gặp một lỗi: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Không thể xử lý XML từ "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar trả về mã thoát $1:',
-	'extdist-created' => "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải xuống trong 5 giây nữa.
+	'extdist-created' => "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải về trong 5 giây nữa.
 
 Địa chỉ URL của bản lưu trữ này là:
 :$4
