@@ -540,7 +540,7 @@ $messages['da'] = array(
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'extensiondistributor' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
+	'extensiondistributor' => 'MediaWiki-Erweiterungen herunterladen',
 	'extensiondistributor-desc' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
 	'extdist-not-configured' => 'Bitte konfiguriere $wgExtDistTarDir und $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Das konfigurierte Kopien-Arbeitsverzeichnis ist nicht vorhanden!',
