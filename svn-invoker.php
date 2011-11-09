@@ -9,6 +9,8 @@ if ( php_sapi_name() !== 'cli' ) {
 	exit( 1 );
 }
 
+$wgExtDistWorkingCopy = false;
+$wgExtDistLockFile = false;
 $confFile = dirname( __FILE__ ) . '/svn-invoker.conf';
 if ( !file_exists( $confFile ) ) {
 	echo "Error: please create svn-invoker.conf based on svn-invoker.conf.sample\n";
@@ -39,7 +41,7 @@ function svnError( $msg, $info = false ) {
 }
 
 function svnExecute() {
-	global $wgExtDistWorkingCopy;
+	global $wgExtDistWorkingCopy, $wgExtDistLockFile;
 
 	$encCommand = '';
 	$done = false;
@@ -55,6 +57,30 @@ function svnExecute() {
 	if ( !$encCommand ) {
 		svnError( 'extdist-remote-error', "Invalid command." );
 		return;
+	}
+
+	if ( $wgExtDistLockFile ) {
+		$lockFile = fopen( $wgExtDistLockFile, 'r+' );
+		if ( !$lockFile ) {
+			svnError( 'extdist-remote-error', "Unable to open lock file." );
+			return;
+		}
+		$timeout = 20;
+		for ( $i = 0; $i < $timeout; $i++ ) {
+			$wouldBlock = false;
+			if ( flock( $lockFile, LOCK_EX | LOCK_NB ) ) {
+				break;
+			}
+			if ( !$wouldBlock ) {
+				svnError( 'extdist-remote-error', "Error attempting to obtain lock." );
+				return;
+			}
+			sleep( 1 );
+		}
+		if ( $i == $timeout ) {
+			svnError( 'extdist-remote-error', "Lock wait timeout." );
+			return;
+		}
 	}
 
 	$command = json_decode( $encCommand );
