@@ -65,15 +65,11 @@ function svnExecute() {
 			svnError( 'extdist-remote-error', "Unable to open lock file." );
 			return;
 		}
-		$timeout = 20;
+		$timeout = 3;
 		for ( $i = 0; $i < $timeout; $i++ ) {
 			$wouldBlock = false;
 			if ( flock( $lockFile, LOCK_EX | LOCK_NB ) ) {
 				break;
-			}
-			if ( !$wouldBlock ) {
-				svnError( 'extdist-remote-error', "Error attempting to obtain lock." );
-				return;
 			}
 			sleep( 1 );
 		}
