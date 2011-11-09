@@ -60,7 +60,7 @@ function svnExecute() {
 	}
 
 	if ( $wgExtDistLockFile ) {
-		$lockFile = fopen( $wgExtDistLockFile, 'r+' );
+		$lockFile = fopen( $wgExtDistLockFile, 'a' );
 		if ( !$lockFile ) {
 			svnError( 'extdist-remote-error', "Unable to open lock file." );
 			return;

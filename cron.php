@@ -21,9 +21,9 @@ require( $confFile );
 cronExecute();
 
 function cronExecute() {
-	global $wgExtDistLockFile;
+	global $wgExtDistWorkingCopy, $wgExtDistLockFile;
 	if ( $wgExtDistLockFile ) {
-		$lockFile = fopen( $wgExtDistLockFile, 'r+' );
+		$lockFile = fopen( $wgExtDistLockFile, 'a' );
 		if ( !$lockFile ) {
 			echo "Error opening lock file\n";
 			exit( 1 );
@@ -35,9 +35,9 @@ function cronExecute() {
 	}
 
 	// Update the files
-	svnUpdate( "$wgExtDistWorkingCopy/trunk" );
-	for ( glob( "$wgExtDistWorkingCopy/branches/*", GLOB_ONLYDIR ) as $branch ) {
-		svnUpdate( $branch );
+	svnUpdate( "$wgExtDistWorkingCopy/trunk/extensions" );
+	foreach ( glob( "$wgExtDistWorkingCopy/branches/*", GLOB_ONLYDIR ) as $branch ) {
+		svnUpdate( "$branch/extensions" );
 	}
 }
 
