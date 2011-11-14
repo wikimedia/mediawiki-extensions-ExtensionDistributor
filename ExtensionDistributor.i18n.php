@@ -2300,8 +2300,8 @@ $messages['os'] = array(
  */
 $messages['pdc'] = array(
 	'extensiondistributor' => 'MediaWiki-Extension runnerlaade',
-	'extdist-submit-extension' => 'Weiter',
-	'extdist-submit-version' => 'Weiter',
+	'extdist-submit-extension' => 'Weider',
+	'extdist-submit-version' => 'Weider',
 );
 
 /** Polish (Polski)
