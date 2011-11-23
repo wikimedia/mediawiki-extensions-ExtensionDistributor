@@ -2796,7 +2796,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 	'extdist-want-more' => 'Dobi drugo razširitev',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -2806,7 +2806,7 @@ $messages['sr-ec'] = array(
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'extdist-submit-extension' => 'Produži',
 	'extdist-submit-version' => 'Produži',
