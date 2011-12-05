@@ -364,7 +364,7 @@ Al lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neu
 	'extdist-no-remote' => "N'eus ket tu da dizhout ar c'hliant subversion a-bell.",
 	'extdist-remote-error' => "Fazi gant ar c'hliant subversion a-bell : <pre>$1</pre>",
 	'extdist-remote-invalid-response' => "Respont direizh eus ar c'hliant subverion a-bell.",
-	'extdist-svn-error' => "Ur fazi 'zo bet gant ''Subversion'' : <pre>$1</pre>",
+	'extdist-svn-error' => "Ur fazi zo bet gant ''Subversion'' : <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'Dibosupl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :",
 	'extdist-created' => "Krouet ez eus bet un eilad prim eus ar stumm <b>$2</b> eus <b>$1</b> an astenn evit MediaWiki <b>$3</b>. Ho pellgargadenn a zlefe kregiñ a-benn 5 eilenn.
