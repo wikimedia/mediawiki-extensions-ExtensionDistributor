@@ -43,6 +43,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Extension Distributor',
 	'author'         => 'Tim Starling',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
 	'descriptionmsg' => 'extensiondistributor-desc',
 );
