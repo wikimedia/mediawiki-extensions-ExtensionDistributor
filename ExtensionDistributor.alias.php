@@ -14,3 +14,8 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'ExtensionDistributor' => array( 'ExtensionDistributor' ),
 );
+
+/**
+ * For backwards compatibility with MediaWiki 1.15 and earlier.
+ */
+$aliases =& $specialPageAliases;

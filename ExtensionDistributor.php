@@ -5,6 +5,13 @@
  * to be run on mediawiki.org
  */
 
+$wgExtensionCredits['specialpage'][] = array(
+	'path'           => __FILE__,
+	'name'           => 'Extension Distributor',
+	'author'         => 'Tim Starling',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
+	'descriptionmsg' => 'extensiondistributor-desc',
+);
 
 /********************
  * Configuration
@@ -33,16 +40,12 @@ $wgExtDistRemoteClient = false;
  * Registration
  */
 $dir = dirname( __FILE__ ) . '/';
+
+// Internationlization files
+$wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.i18n.php';
+$wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDistributor.alias.php';
+
+// Special page classes
 $wgSpecialPages['ExtensionDistributor'] = 'ExtensionDistributorPage';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgAutoloadClasses['ExtensionDistributorPage'] = $dir . 'ExtensionDistributor_body.php';
-$wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.i18n.php';
-$wgExtensionAliasesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.alias.php';
-
-$wgExtensionCredits['specialpage'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'Extension Distributor',
-	'author'         => 'Tim Starling',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
-	'descriptionmsg' => 'extensiondistributor-desc',
-);
