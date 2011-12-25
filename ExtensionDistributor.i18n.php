@@ -2029,6 +2029,57 @@ $messages['myv'] = array(
 	'extdist-submit-version' => 'Поладомс',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author EivindJ
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'extensiondistributor' => 'Last ned utvidelser til MediaWiki',
+	'extensiondistributor-desc' => 'Utvidelse for distribusjon av andre utvidelser',
+	'extdist-not-configured' => 'Still inn $wgExtDistTarDir og $wgExtDistWorkingCopy',
+	'extdist-wc-missing' => 'Mappen med arbeidskopien finnes ikke.',
+	'extdist-no-such-extension' => 'Ingen utvidelse ved navn «$1»',
+	'extdist-no-such-version' => 'Versjon «$2» av «$1» finnes ikke',
+	'extdist-choose-extension' => 'Velg hvilken utvidelse du ønsker å laste ned:',
+	'extdist-wc-empty' => 'Mappen med arbeidskopien har ingen distribuerbare utvidelser.',
+	'extdist-submit-extension' => 'Fortsett',
+	'extdist-current-version' => 'Utviklingsversjon (trunk)',
+	'extdist-choose-version' => '<big>Du laster ned utvidelsen <b>$1</b>.</big>
+
+Angi hvilken MediaWiki-versjon du bruker.
+
+De fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.',
+	'extdist-no-versions' => 'Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.',
+	'extdist-submit-version' => 'Fortsett',
+	'extdist-no-remote' => 'Kunne ikke kontakte ekstern SVN-klient.',
+	'extdist-remote-error' => 'Feil fra ekstern SVN-klient: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Ugyldig svar fra ekstern SVN-klient.',
+	'extdist-svn-error' => 'SVN fant en feil: <pre>$1</pre>',
+	'extdist-svn-parse-error' => 'Kunne ikke prosessere XML fra «svn info»: <pre>$1</pre>',
+	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:',
+	'extdist-created' => "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.
+
+Adressen til dette øyeblikksbildet er:
+:$4
+Adressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.
+
+Tar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:
+
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
+
+På Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.
+
+Om wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.
+
+Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.
+
+Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
+	'extdist-want-more' => 'Hent flere utvidelser',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -2184,57 +2235,6 @@ Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http
 	'extdist-want-more' => 'Hent fleire utvidingar',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author EivindJ
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'extensiondistributor' => 'Last ned utvidelser til MediaWiki',
-	'extensiondistributor-desc' => 'Utvidelse for distribusjon av andre utvidelser',
-	'extdist-not-configured' => 'Still inn $wgExtDistTarDir og $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Mappen med arbeidskopien finnes ikke.',
-	'extdist-no-such-extension' => 'Ingen utvidelse ved navn «$1»',
-	'extdist-no-such-version' => 'Versjon «$2» av «$1» finnes ikke',
-	'extdist-choose-extension' => 'Velg hvilken utvidelse du ønsker å laste ned:',
-	'extdist-wc-empty' => 'Mappen med arbeidskopien har ingen distribuerbare utvidelser.',
-	'extdist-submit-extension' => 'Fortsett',
-	'extdist-current-version' => 'Utviklingsversjon (trunk)',
-	'extdist-choose-version' => '<big>Du laster ned utvidelsen <b>$1</b>.</big>
-
-Angi hvilken MediaWiki-versjon du bruker.
-
-De fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.',
-	'extdist-no-versions' => 'Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.',
-	'extdist-submit-version' => 'Fortsett',
-	'extdist-no-remote' => 'Kunne ikke kontakte ekstern SVN-klient.',
-	'extdist-remote-error' => 'Feil fra ekstern SVN-klient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ugyldig svar fra ekstern SVN-klient.',
-	'extdist-svn-error' => 'SVN fant en feil: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Kunne ikke prosessere XML fra «svn info»: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:',
-	'extdist-created' => "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.
-
-Adressen til dette øyeblikksbildet er:
-:$4
-Adressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.
-
-Tar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:
-
-<pre>
-tar -xzf $5 -C /var/www/mediawiki/extensions
-</pre>
-
-På Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.
-
-Om wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.
-
-Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.
-
-Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
-	'extdist-want-more' => 'Hent flere utvidelser',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -2284,6 +2284,14 @@ Un còp l’extraccion facha, auretz besonh d’enregistrar l’extension dins L
 
 S'avètz de questions a prepaus d'aqueste sistèma de distribucion de las extensions, anatz sus [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obténer una autra extension',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
+ */
+$messages['or'] = array(
+	'extdist-submit-extension' => 'ଚାଲୁରଖ',
+	'extdist-submit-version' => 'ଚାଲୁରଖ',
 );
 
 /** Ossetic (Ирон)
