@@ -2189,7 +2189,7 @@ Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'extensiondistributor' => 'Last ned utvidelser til MediaWiki',
 	'extensiondistributor-desc' => 'Utvidelse for distribusjon av andre utvidelser',
 	'extdist-not-configured' => 'Still inn $wgExtDistTarDir og $wgExtDistWorkingCopy',
