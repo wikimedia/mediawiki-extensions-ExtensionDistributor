@@ -966,6 +966,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Finnish (Suomi)
  * @author Crt
+ * @author Nedergard
  * @author Nike
  * @author Str4nd
  * @author ZeiP
@@ -998,9 +999,9 @@ Useimmat laajennukset toimivat useiden MediaWikin versioiden välillä. Jos Medi
 
 URL tälle tilannevedokselle on
 :$4
-Osoitetta voi käyttää välittömään lataukseen palvelimelle, mutta älä laita sitä kirjanmerkiksi, koska sen sisältö ei päivity ja se saatetaan poistaa.
+Osoitetta voi käyttää välittömään lataukseen palvelimelle, mutta älä lisää sitä kirjanmerkkeihisi, koska sen sisältö ei päivity ja se saatetaan poistaa.
 
-Tar-paketti pitäisi purkaa extensions-hakemistoon. Esimerkiksi unix-tyylisessä käyttöjärjestelmässä se tapahtuu seuraavalla komennolla:
+Tar-paketti on purettava extensions-hakemistoon. Esimerkiksi unix-tyylisessä käyttöjärjestelmässä se tapahtuu seuraavalla komennolla:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -1008,13 +1009,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Windowsissa voit käyttää [http://www.7-zip.org/ 7-zip]-ohjelmaa tiedostojen purkamiseen.
 
-Jos wikisi on etäpalvelimella, pura tiedostot väliaikaishakemistoon paikalliselle tietokoneelle ja tämän jälkeen lähetä '''kaikki''' puretut tiedostot extensions-hakemistoon etäpalvelimelle.
+Jos wikisi on etäpalvelimella, pura tiedostot paikallisen tietokoneen väliaikaishakemistoon ja lähetä sen jälkeen '''kaikki''' puretut tiedostot palvelimen extensions-hakemistoon.
 
-Huomaa, että jotkin laajennukset vaativat tiedoston ''ExtensionFunctions.php'', jonka sijainti on <tt>extensions/ExtensionFunctions.php</tt>. Tiedosto sijaitsee varsinaisen laajennushakemiston ''ylähakemistossa''. Näille laajennuksille luotu tilannevedos sisältää tämän tiedoston tar-pommina, purettuna juuressa ./ExtensionFunctions.php. Älä jätä lähettämättä tätä tiedostoa etäpalvelimellesi.
+Kun olet purkanut tiedostot, laajennus on rekisteröitävä LocalSettings.php-tiedostoon. Laajennuksen ohjeissa pitäisi löytyä rekisteröintiohjeet.
 
-Kun olet purkanut tiedostot, sinun tulee rekisteröidä laajennus LocalSettings.php-tiedostoon. Laajennuksen ohjeissa pitäisi olla ohjeet siihen.
-
-Jos sinulla on kysymyksiä tähän jakelujärjestelmään liittyen, sivulla [[Extension talk:ExtensionDistributor]] voi keskustella aiheesta.",
+Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hae toinen laajennus',
 );
 
