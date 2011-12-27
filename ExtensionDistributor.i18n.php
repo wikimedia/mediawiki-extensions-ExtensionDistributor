@@ -2705,6 +2705,14 @@ Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] б�
 	'extdist-want-more' => 'Атын тупсарыыны хачайдыырга',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'extdist-submit-extension' => 'ඉදිරියට යන්න',
+	'extdist-submit-version' => 'ඉදිරියට යන්න',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
