@@ -1286,6 +1286,13 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'extdist-submit-version' => 'जारी रखें',
+);
+
 /** Croatian (Hrvatski)
  * @author Ex13
  * @author Herr Mlinka
@@ -2709,8 +2716,10 @@ Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] б�
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'extensiondistributor' => 'මාධ්‍යවිකි විස්තීරණය බාගන්න',
 	'extdist-submit-extension' => 'ඉදිරියට යන්න',
 	'extdist-submit-version' => 'ඉදිරියට යන්න',
+	'extdist-want-more' => 'වෙනත් විස්තිර්ණයක් ලබාගන්න',
 );
 
 /** Slovak (Slovenčina)
