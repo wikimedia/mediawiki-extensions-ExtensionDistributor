@@ -3238,10 +3238,13 @@ Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở r�
 );
 
 /** Yiddish (ייִדיש)
+ * @author Imre
  * @author פוילישער
  */
 $messages['yi'] = array(
 	'extensiondistributor' => 'ַאַראָפלאָדן מעדיעוויקי פֿאַרברייטערונג',
+	'extdist-submit-extension' => 'פֿארזעצן',
+	'extdist-submit-version' => 'פֿארזעצן',
 );
 
 /** Cantonese (粵語)
