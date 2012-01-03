@@ -70,14 +70,19 @@ $messages['qqq'] = array(
 
 /** Afrikaans (Afrikaans)
  * @author Naudefj
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'extensiondistributor' => 'Laai MediaWiki-uitbreiding af',
+	'extensiondistributor-desc' => 'Uitbreiding vir die verspreiding van die momentopname argiewe van uitbreidings',
 	'extdist-not-configured' => 'Stel asseblief $wgExtDistTarDir en $wgExtDistWorkingCopy',
 	'extdist-no-such-extension' => 'Die uitbreiding "$1" bestaan nie',
+	'extdist-wc-empty' => 'Die geconfigureerd werk kopie gids het geen verdeelbare uitbreidings!',
 	'extdist-submit-extension' => 'Gaan voort',
 	'extdist-current-version' => 'Ontwikkelingsweergawe (trunc)',
 	'extdist-submit-version' => 'Gaan voort',
+	'extdist-no-remote' => 'Kan afgeleë subversie kliënt te kontak.',
+	'extdist-remote-invalid-response' => "Ongeldige antwoord van 'n ​​afgeleë subversie kliënt.",
 	'extdist-tar-error' => 'TAR stuur die volgende kode terug $1:',
 	'extdist-want-more' => "Laai nog 'n uitbreiding af",
 );
@@ -1289,8 +1294,24 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  * @author Ansumang
  */
 $messages['hi'] = array(
+	'extensiondistributor' => 'डाउनलोड़ मीडियाविकि एक्सटेंशन',
+	'extensiondistributor-desc' => 'एक्सटेंशन स्नैपशॉट अभिलेखागार वितरण के लिए एक्सटेंशन',
+	'extdist-not-configured' => 'कृपया $wgExtDistTarDir और $wgExtDistWorkingCopy कॉन्फ़िगर करें',
+	'extdist-wc-missing' => 'कॉन्फ़िगर किए गए कार्यशील प्रतिलिपि निर्देशिका मौजूद नहीं है!',
+	'extdist-no-such-extension' => 'कोई ऐसे एक्सटेंशन "$1" नहीं',
+	'extdist-no-such-version' => 'एक्सटैन्शन "$1" "$2" संस्करण में मौजूद नहीं ।',
+	'extdist-choose-extension' => 'कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:',
 	'extdist-submit-extension' => 'जारी रखें',
+	'extdist-current-version' => 'विकास संस्करण (ट्रंक)',
+	'extdist-choose-version' => '<big>आप डाउनलोड कर रहे हैं <b>$1</b> एक्सटेंशन ।</big>
+
+अपने मीडियाविकि संस्करण चुनें ।
+
+अधिकांश एक्सटेंशन मीडियाविकि के एकाधिक संस्करणों में कम करते हैं, तो यदि आपके मीडियाविकि संस्करण यहाँ नहीं है, या यदि आपको नवीनतम विस्तार सुविधाओं की जरूरत है, वर्तमान संस्करण का उपयोग करें ।',
 	'extdist-submit-version' => 'जारी रखें',
+	'extdist-svn-parse-error' => '"svn info" से XML प्रक्रिया चल नहीं पाया: <pre>$1</pre>',
+	'extdist-tar-error' => 'तार लौटे निकास कोड़ $1:',
+	'extdist-want-more' => 'अन्य एक्सटेन्शन पाएँ',
 );
 
 /** Croatian (Hrvatski)
@@ -2723,6 +2744,7 @@ $messages['si'] = array(
 	'extdist-no-such-version' => '"$1" විස්තීරණය "$2" අනුවාදයෙහි නොපවතියි.',
 	'extdist-choose-extension' => 'ඔබට බාගැනීමට අවශ්‍ය විස්තීරණය තෝරන්න:',
 	'extdist-submit-extension' => 'ඉදිරියට යන්න',
+	'extdist-current-version' => 'සංවර්ධනයමය අනුවාදය (පිරිකසුව)',
 	'extdist-choose-version' => '<big>ඔබ බාගතකරමින් සිටින්නේ <b>$1</b> විස්තිර්ණයයි.</big>
 
 ඔබේ මාධ්‍යවිකි අනුවාදය තෝරන්න.
