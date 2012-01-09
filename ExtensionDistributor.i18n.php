@@ -3338,6 +3338,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Hydra
+ * @author Hzy980512
  * @author Liangent
  * @author Shinjiman
  * @author Wmr89502270
@@ -3349,44 +3350,43 @@ $messages['zh-hans'] = array(
 	'extdist-wc-missing' => '已经设置的工作复本目录不存在！',
 	'extdist-no-such-extension' => '没有这个扩展 "$1"',
 	'extdist-no-such-version' => '该扩展 "$1" 不存在于这个版本 "$2" 中。',
-	'extdist-choose-extension' => '选择您要去下载的扩展:',
+	'extdist-choose-extension' => '选择要下载的扩展：',
 	'extdist-wc-empty' => '设置的工作复本目录无可发布之扩展！',
 	'extdist-submit-extension' => '继续',
 	'extdist-current-version' => '开发版本（trunk）',
-	'extdist-choose-version' => '
-<big>您现正下载 <b>$1</b> 扩展。</big>
+	'extdist-choose-version' => '<big>您将要下载<b>$1</b>扩展。</big>
 
-选择您要的 MediaWiki 版本。
+请选择您的MediaWiki版本。
 
 多数的扩展都可以在多个 MediaWiki 版本上运行，如果您的 MediaWiki 版本不存在，又或者您需要最新的扩展功能的话，可尝试用最新的版本。',
-	'extdist-no-versions' => '所选择扩展 （$1） 不适用于任何的版本！',
+	'extdist-no-versions' => '所选择扩展（$1）不适用于任何的版本！',
 	'extdist-submit-version' => '继续',
-	'extdist-no-remote' => '不能够联络远端 subversion 客户端。',
-	'extdist-remote-error' => '自远端 subversion 客户端的错误: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => '自远端 subversion 客户端的无效反应。',
+	'extdist-no-remote' => '无法连接远程subversion客户端。',
+	'extdist-remote-error' => 'Subversion客户端返回了错误：<pre>$1</pre>',
+	'extdist-remote-invalid-response' => '远程Subversion客户端发出了无效回复。',
 	'extdist-svn-error' => 'Subversion 遇到一个错误: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '不能够处理 "svn info" 之 XML: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar 反应结束码 $1:',
-	'extdist-created' => "已创建的定制 <b>$3</b> 的 <b>$1</b> 扩展的版本 <b>$2</b> 的快照。您下载应在 5 秒后自动启动。
+	'extdist-svn-parse-error' => '不能够处理"svn info"的 XML: <pre>$1</pre>',
+	'extdist-tar-error' => 'Tar 返回了结束码 $1：',
+	'extdist-created' => "MediaWiki <b>$3</b>版本的<b>$1</b>扩展的<b>$2</b>版本已创建。下载将在5秒内自动开始。
 
-，此快照的 URL 是：
+快照的链接是：
 :$4
-，可用于直接下载到一个的服务器，但请不要不书签它，因为内容将不会更新，和它可能在晚些时候会被删除。
+它可能可以给您直接在服务器上下载，但不要收藏它，因为它不会更新，并且下载后可能过后就会删除。
 
-tar 存档应提取到您扩展的目录。为例对一个类似 unix 的操作系统：
+Tar压缩文件要解压到您的扩展目录中。比如在类Unix系统中使用命令：
 
 <pre>
-tar -xzf $5-C /var/www/mediawiki/extensions
+tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-在 Windows 中，可以使用 [http://www.7-zip.org/ 7-zip] 解压缩文件。
+Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 
-远程服务器上如果您维基提取到一个临时目录在本地计算机上的文件，然后将上载 '' 所有 '' 的解压缩的文件扩展名的目录在服务器上。
+若您的维基在远程服务器上，请解压所有文件到您的电脑上的一个临时文件夹中，然后上传'''所有'''文件到远程服务器上的扩展目录中。
 
-提取文件后，您将需要在 LocalSettings.php 中注册扩展。扩展的文档应有说明如何执行此操作。
+解压文件后，您就需要在LocalSettings.php中注册您的插件。插件资料中应该已经介绍了。
 
-有关于此扩展名配电系统的任何问题，请转到 [[Extension talk:ExtensionDistributor]]。",
-	'extdist-want-more' => '取另一个扩展',
+如果您对这个插件获取系统有任何建议，请前去[[Extension talk:ExtensionDistributor]]。",
+	'extdist-want-more' => '下载其他扩展',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
