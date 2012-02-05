@@ -2336,7 +2336,7 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
-	'extensiondistributor' => 'MediaWiki-Extension runnerlaade',
+	'extensiondistributor' => 'MediaWiki-Extension runnerdraage',
 	'extdist-submit-extension' => 'Weider',
 	'extdist-submit-version' => 'Weider',
 );
