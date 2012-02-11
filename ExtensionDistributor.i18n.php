@@ -832,6 +832,7 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
 );
 
 /** Spanish (Español)
+ * @author Bernardom
  * @author Crazymadlover
  * @author Imre
  * @author Pertile
@@ -846,7 +847,7 @@ $messages['es'] = array(
 	'extdist-wc-missing' => '¡El directorio de copia en funcionamiento configurado no existe!',
 	'extdist-no-such-extension' => 'No existe la extensión «$1»',
 	'extdist-no-such-version' => 'la extensión "$1" no existe en la versión "$2".',
-	'extdist-choose-extension' => 'Seleccione cual extensión desea descargar:',
+	'extdist-choose-extension' => 'Seleccione qué extensión desea descargar:',
 	'extdist-wc-empty' => '¡El directorio configurado de copia en funcionamiento no tiene extensiones distribuibles!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'versión en desarrollo (principal)',
