@@ -2,7 +2,7 @@
 
 /**
  * Special page that allows users to download extensions as tar archives.
- * 
+ *
  * @author Tim Starling
  */
 class ExtensionDistributorPage extends SpecialPage {
@@ -24,17 +24,17 @@ class ExtensionDistributorPage extends SpecialPage {
 
 		if ( $subpage ) {
 			$parts = explode( '/', $subpage, 2 );
-			
+
 			if ( count( $parts ) == 1 ) {
 				$parts[] = false;
 			}
-			
+
 			list( $extension, $version ) = $parts;
 		} else {
 			$extension = $wgRequest->getVal( 'extdist_extension' );
 			$version = $wgRequest->getVal( 'extdist_version' );
 		}
-		
+
 		if ( !$extension ) {
 			$this->showExtensionSelector();
 			return;
@@ -68,46 +68,46 @@ class ExtensionDistributorPage extends SpecialPage {
 		}
 
 		$this->extensionList = array();
-		
+
 		foreach ( $wgExtDistBranches as $branchPath => $branch ) {
 			$wc = "$wgExtDistWorkingCopy/$branchPath/extensions";
 			$dir = opendir( $wc );
-			
+
 			if ( !$dir ) {
 				return false;
 			}
 
 			$this->extensionList[$branchPath] = array();
-			
+
 			while ( false !== ( $file = readdir( $dir ) ) ) {
 				if ( substr( $file, 0, 1 ) == '.' ) {
 					continue;
 				}
-				
+
 				if ( !is_dir( "$wc/$file" ) ) {
 					continue;
 				}
-				
+
 				if ( file_exists( "$wc/$file/NO-DIST" ) ) {
 					continue;
 				}
-				
+
 				$this->extensionList[$branchPath][] = $file;
 			}
-			
+
 			natcasesort( $this->extensionList[$branchPath] );
 		}
-		
+
 		return $this->extensionList;
 	}
 
 	protected function getBranchName( $path ) {
 		global $wgExtDistBranches;
-		
+
 		if ( !isset( $wgExtDistBranches[$path] ) ) {
 			return false;
 		}
-		
+
 		if ( isset( $wgExtDistBranches[$path]['msgName'] ) ) {
 			return wfMsg( $wgExtDistBranches[$path]['msgName'] );
 		} else {
@@ -119,12 +119,12 @@ class ExtensionDistributorPage extends SpecialPage {
 		global $wgOut;
 
 		$extensions = $this->getExtensionList();
-		
+
 		if ( $extensions === false ) {
 			$wgOut->addWikiMsg( 'extdist-wc-missing' );
 			return;
 		}
-		
+
 		if ( !$extensions['trunk'] ) {
 			$wgOut->addWikiMsg( 'extdist-wc-empty' );
 			return;
@@ -152,11 +152,11 @@ class ExtensionDistributorPage extends SpecialPage {
 
 	protected function showVersionSelector( $extensionName ) {
 		global $wgOut, $wgExtDistBranches;
-		
+
 		$extensions = $this->getExtensionList();
 
 		$versions = array();
-		
+
 		foreach ( $wgExtDistBranches as $branchPath => $branch ) {
 			if ( !in_array( $extensionName, $extensions[$branchPath] ) ) {
 				continue;
@@ -167,7 +167,7 @@ class ExtensionDistributorPage extends SpecialPage {
 			} else {
 				$branchName = $branch['name'];
 			}
-			
+
 			$versions[$branchPath] = $branchName;
 		}
 
@@ -185,15 +185,15 @@ class ExtensionDistributorPage extends SpecialPage {
 			Xml::element( 'input' , array( 'type' => 'hidden',
 				'name' => 'extdist_extension', 'value' => $extensionName ) ) .
 			"<select name=\"extdist_version\">\n" );
-		
+
 		$selected = 0;
-		
+
 		foreach ( $versions as $branchPath => $branchName ) {
 			$wgOut->addHTML( Xml::option( $branchName, $branchPath, ($selected == 1) ) );
-				
+
 			$selected++;
 		}
-		
+
 		$wgOut->addHTML(
 			Xml::closeElement( 'select' ) . ' ' .
 			Xml::submitButton( wfMsg( 'extdist-submit-version' ), array( 'name' => 'extdist_submit' ) ) .
@@ -210,7 +210,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		} else {
 			$rev = $this->updateAndGetRevisionLocal( $extension, $version );
 		}
-		
+
 		if ( $rev === false ) {
 			// Error already displayed
 			return;
@@ -241,10 +241,10 @@ class ExtensionDistributorPage extends SpecialPage {
 				' ' . wfEscapeShellArg( $extension ) .
 				( $needEF ? ' ExtensionFunctions.php' : '' ) .
 				' 2>&1';
-				
+
 			$retval = - 1;
 			$result = wfShellExec( $cmd, $retval );
-			
+
 			if ( $retval ) {
 				$wgOut->addWikiMsg( 'extdist-tar-error', $retval );
 				$wgOut->addHTML( '<pre>' . htmlspecialchars( $result ) . '</pre>' );
@@ -267,15 +267,15 @@ class ExtensionDistributorPage extends SpecialPage {
 
 	protected function updateAndGetRevisionLocal( $extension, $version ) {
 		global $wgExtDistWorkingCopy, $wgOut;
-		
+
 		// svn up
 		$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
-		
+
 		$cmd = "svn up --non-interactive " . wfEscapeShellArg( $dir ) . " 2>&1";
 		$retval = - 1;
-		
+
 		$result = wfShellExec( $cmd, $retval );
-		
+
 		if ( $retval ) {
 			$wgOut->addWikiMsg( 'extdist-svn-error', $result );
 			return false;
@@ -285,7 +285,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		$cmd = "svn info --non-interactive --xml " . wfEscapeShellArg( $dir );
 		$retval = - 1;
 		$result = wfShellExec( $cmd, $retval );
-		
+
 		if ( $retval ) {
 			$wgOut->addWikiMsg( 'extdist-svn-error', $result );
 			return false;
@@ -293,7 +293,7 @@ class ExtensionDistributorPage extends SpecialPage {
 
 		$sx = new SimpleXMLElement( $result );
 		$rev = $sx->entry->commit['revision'];
-		
+
 		if ( !$rev || strpos( $rev, '/' ) !== false || strpos( $rev, "\000" ) !== false ) {
 			$wgOut->addWikiMsg( 'extdist-svn-parse-error', $result );
 			return false;
@@ -304,14 +304,14 @@ class ExtensionDistributorPage extends SpecialPage {
 
 	protected function updateAndGetRevisionRemote( $extension, $version ) {
 		global $wgExtDistRemoteClient, $wgOut;
-		
+
 		$cmd = json_encode( array( 'extension' => $extension, 'version' => $version ) );
 		$cmd = str_replace( "\000", '', $cmd );
-		
+
 		list( $host, $port ) = explode( ':', $wgExtDistRemoteClient, 2 );
-		
+
 		$sock = fsockopen( $host, $port );
-		
+
 		if ( !$sock ) {
 			$wgOut->addWikiMsg( 'extdist-no-remote' );
 			return false;
@@ -324,21 +324,21 @@ class ExtensionDistributorPage extends SpecialPage {
 			$encResponse .= fread( $sock, 8192 );
 		}
 		fclose( $sock );
-		
+
 		$response = json_decode( $encResponse );
-		
+
 		if ( isset( $response->error ) ) {
 			$info = isset( $response->errorInfo ) ? $response->errorInfo : '';
 			$wgOut->addWikiMsg( $response->error, $info );
 			return false;
 		}
-		
+
 		if ( !isset( $response->revision ) ) {
 			$wgOut->addWikiMsg( 'extdist-remote-invalid-response' );
 			return false;
 		}
-		
+
 		return $response->revision;
 	}
-	
+
 }
