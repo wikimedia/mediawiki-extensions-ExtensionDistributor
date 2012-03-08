@@ -227,9 +227,12 @@ class ExtensionDistributorPage extends SpecialPage {
 			// Does the tar file need ExtensionFunctions.php?
 			$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 			$retval = - 1;
-			$files = call_user_func_array( 'wfEscapeShellArg', glob( "$dir/*.php" ) );
-			wfShellExec( "grep -q '\bExtensionFunctions' " . $files, $retval );
-			$needEF = !$retval;
+			$needEF = false;
+			if ( file_exists( 'ExtensionFunctions.php' ) ) {
+				$files = call_user_func_array( 'wfEscapeShellArg', glob( "$dir/*.php" ) );
+				wfShellExec( "grep -q '\bExtensionFunctions' " . $files, $retval );
+				$needEF = !$retval;
+			}
 
 			// Create the archive.
 			$cmd = 'tar -czf ' . wfEscapeShellArg( $tarFile ) .
