@@ -20,13 +20,19 @@ require( $confFile );
 
 svnExecute();
 
+/**
+ * @param $s string
+ * @return bool
+ */
 function svnValidate( $s ) {
-	if ( strpos( $s, '..' ) !== false ) {
-		return false;
-	}
-	return true;
+	return strpos( $s, '..' ) === false;
 }
 
+/**
+ * @param $cmd
+ * @param $retval
+ * @return string
+ */
 function svnShellExec( $cmd, &$retval ) {
 	$retval = 1; // error by default?
 	ob_start();
@@ -36,6 +42,10 @@ function svnShellExec( $cmd, &$retval ) {
 	return $output;
 }
 
+/**
+ * @param $msg
+ * @param bool $info
+ */
 function svnError( $msg, $info = false ) {
 	echo json_encode( array( 'error' => $msg, 'errorInfo' => $info ) );
 }
@@ -67,7 +77,6 @@ function svnExecute() {
 		}
 		$timeout = 3;
 		for ( $i = 0; $i < $timeout; $i++ ) {
-			$wouldBlock = false;
 			if ( flock( $lockFile, LOCK_EX | LOCK_NB ) ) {
 				break;
 			}
@@ -100,13 +109,13 @@ function svnExecute() {
 	if ( !$localRev ) {
 		return;
 	}
-		
+
 	// Determine last changed revision in the repo
 	$remoteRev = svnGetRev( $remoteDir );
 	if ( !$remoteRev ) {
 		return;
 	}
-	
+
 	if ( $remoteRev != $localRev ) {
 		// Bad luck, we need to svn up
 		$cmd = "svn up --non-interactive " . escapeshellarg( $dir ) . " 2>&1";
@@ -117,15 +126,19 @@ function svnExecute() {
 			return;
 		}
 	}
-	
+
 	echo json_encode( array( 'revision' => $remoteRev ) );
 }
 
-// Returns the last changed revision or false
-// @param $dir Path or url of the folder
-// Output param $url Remote location of the folder
+/**
+ * Returns the last changed revision or false
+ *
+ * @param $dir string
+ * @param $url null|string Output param $url Remote location of the folder
+ * @return bool|string
+ */
 function svnGetRev( $dir, &$url = null ) {
-	
+
 	$cmd = "svn info --non-interactive --xml " . escapeshellarg( $dir );
 	$retval = - 1;
 	$result = svnShellExec( $cmd, $retval );
@@ -145,6 +158,6 @@ function svnGetRev( $dir, &$url = null ) {
 		svnError( 'extdist-svn-parse-error', $result );
 		return false;
 	}
-	
+
 	return $rev;
 }

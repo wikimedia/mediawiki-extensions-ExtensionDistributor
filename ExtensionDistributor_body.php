@@ -12,6 +12,9 @@ class ExtensionDistributorPage extends SpecialPage {
 		parent::__construct( 'ExtensionDistributor' );
 	}
 
+	/**
+	 * @param $subpage string
+	 */
 	public function execute( $subpage ) {
 		global $wgExtDistTarDir, $wgExtDistWorkingCopy, $wgOut, $wgRequest;
 
@@ -60,6 +63,9 @@ class ExtensionDistributorPage extends SpecialPage {
 		$this->doDownload( $extension, $version );
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function getExtensionList() {
 		global $wgExtDistWorkingCopy, $wgExtDistBranches;
 
@@ -101,6 +107,10 @@ class ExtensionDistributorPage extends SpecialPage {
 		return $this->extensionList;
 	}
 
+	/**
+	 * @param $path string
+	 * @return bool|String
+	 */
 	protected function getBranchName( $path ) {
 		global $wgExtDistBranches;
 
@@ -150,6 +160,10 @@ class ExtensionDistributorPage extends SpecialPage {
 		);
 	}
 
+	/**
+	 * @param $extensionName string
+	 * @return mixed
+	 */
 	protected function showVersionSelector( $extensionName ) {
 		global $wgOut, $wgExtDistBranches;
 
@@ -201,6 +215,10 @@ class ExtensionDistributorPage extends SpecialPage {
 		);
 	}
 
+	/**
+	 * @param $extension string
+	 * @param $version string
+	 */
 	protected function doDownload( $extension, $version ) {
 		global $wgExtDistWorkingCopy, $wgExtDistTarDir, $wgExtDistBranches,
 			$wgOut, $wgExtDistTarUrl, $wgExtDistRemoteClient;
@@ -265,6 +283,11 @@ class ExtensionDistributorPage extends SpecialPage {
 		header( 'Refresh: 5;url=' . $url );
 	}
 
+	/**
+	 * @param $extension string
+	 * @param $version string
+	 * @return bool|string
+	 */
 	protected function updateAndGetRevisionLocal( $extension, $version ) {
 		global $wgExtDistWorkingCopy, $wgOut;
 
@@ -302,6 +325,11 @@ class ExtensionDistributorPage extends SpecialPage {
 		return $rev;
 	}
 
+	/**
+	 * @param $extension string
+	 * @param $version string
+	 * @return bool|string
+	 */
 	protected function updateAndGetRevisionRemote( $extension, $version ) {
 		global $wgExtDistRemoteClient, $wgOut;
 
