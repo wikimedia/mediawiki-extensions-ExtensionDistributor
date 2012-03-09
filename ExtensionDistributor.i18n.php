@@ -153,6 +153,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
+ * @author Reedy
  */
 $messages['arz'] = array(
 	'extensiondistributor' => 'تنزيل امتداد ميدياويكي',
@@ -193,8 +194,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 على ويندوز، يمكنك استخدام [http://www.7-zip.org/ 7-زيب] لاستخراج الملفات.
 
 لو أن الويكى الخاص بك على خادم بعيد، استخرج الملفات إلى مجلد مؤقت على حاسوبك المحلى، ثم ارفع '''كل''' الملفات المستخرجة إلى مجلد الامتدادات على الخادم.
-
-لاحظ أن بعض الامتدادات تحتاج إلى ملف يسمى ExtensionFunctions.php، موجود فى <tt>extensions/ExtensionFunctions.php</tt>، هذا, فى المجلد ''الأب'' لمجلد الامتدادات المحدد هذا. اللقطة لهذه الامتدادات تحتوى على هذا الملف كتار بومب، يتم استخراجها إلى ./ExtensionFunctions.php. لا تتجاهل رفع هذا الملف إلى خادمك البعيد.
 
 بعد استخراجك للملفات، ستحتاج إلى تسجيل الامتداد فى LocalSettings.php. وثائق الامتداد ينبغى أن تحتوى على التعليمات عن كيفية عمل هذا.
 
@@ -256,6 +255,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Reedy
  */
 $messages['be-tarask'] = array(
 	'extensiondistributor' => 'Загрузіць пашырэньне MediaWiki',
@@ -296,8 +296,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 У сыстэмах Windows, для распакоўкі Вы можаце выкарыстоўваць праграму [http://www.7-zip.org/ 7-zip].
 
 Калі Вашая вікі знаходзіцца на аддаленым сэрвэры, распакуйце файлы ў часовую дырэкторыю на Вашым кампутары, і потым загрузіце '''ўсе''' распакаваныя файлы ў дырэкторыю пашырэньня на сэрвэры.
-
-Майце на ўвазе, што некаторыя пашырэньні патрабуюць файл з назвай ExtensionFunctions.php, які знаходзіцца на <tt>extensions/ExtensionFunctions.php</tt>, што знаходзіцца ў ''галоўнай'' дырэкторыі гэтага пашырэньня. Архіў гэтага пашырэньня ўтрымлівае гэты файл як tarbomb, які распакаваны ў ./ExtensionFunctions.php. Не забудзьце загрузіць гэты файл на Ваш аддалены сэрвэр.
 
 Пасьля распакоўкі файлаў, Вам трэба зарэгістраваць пашырэньне ў LocalSettings.php. Дакумэнтацыя пашырэньня павінна ўтрымліваць інструкцыю, як гэта зрабіць.
 
@@ -629,6 +627,7 @@ Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterun
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Reedy
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -670,8 +669,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Windows de, qey vetışê dosyayan şıma eşkêni [http://www.7-zip.org/ 7-zip] bışuxulni.
 
 Eke wikiya şıma yew pêşkeşwano dûr de ya, dosyayanê xo compiterê xo u dıma '''heme''' dosyayê veteyan parçeya rêzkerdışê compiteri de kopya bıkerê.
-
-tayê parçeyan de extiyaciyê na dosya ExtensionFunctions.php esta, <tt>extensions/ExtensionFunctions.php</tt> de, rêzkerdışo ''bıngeyın'' de yo. veciyayo ExtensionFunctions.php.
 
 badê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumantasyonê parçeyi raye mocnena şıma.
 
@@ -732,6 +729,7 @@ Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi p�
  * @author Dead3y3
  * @author Geraki
  * @author Omnipaedista
+ * @author Reedy
  */
 $messages['el'] = array(
 	'extensiondistributor' => 'Κατέβασμα επέκτασης Mediawiki',
@@ -772,8 +770,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Στα Windows, μπορείτε να χρησιμοποιήσετε το πρόγραμμα [http://www.7-zip.org/ 7-zip] για να αποσυμπιέσετε τα αρχεία.
 
 Αν το wiki σας είναι σε έναν απομακρυσμένο εξυπηρετητή, αποσυμπιέστε τα αρχεία σε έναν προσωρινό κατάλογο στον τοπικό σας υπολογιστή, και μετά επιφορτώστε '''όλα''' τα αποσυμπιεσμένα αρχεία στον κατάλογο επεκτάσεων στον εξυπηρετητή.
-
-Σημειώστε ότι μερικές επεκτάσεις χρειάζονται ένα αρχείο με ονομασία ExtensionFunctions.php, το οποίο βρίσκεται στη διαδρομή <tt>extensions/ExtensionFunctions.php</tt>, δηλαδή στον ''πατρικό'' κατάλογο αυτού του συγκεκριμένου καταλόγου επεκτάσεων. Το στιγμιότυπο για αυτές τις επεκτάσεις περιέχει αυτό το αρχείο ως tarbomb, αποσυμπιεσμένο στο ./ExtensionFunctions.php. Μην αμελήσετε να επιφορτώσετε αυτό το αρχείο στον απομακρυσμένο εξυπηρετητή σας.
 
 Αφότου αποσυμπιέσετε τα αρχεία, θα χρειαστεί να εγγράψετε την επέκταση στο αρχείο LocalSettings.php. Η τεκμηρίωση της επέκτασης θα πρέπει να έχει οδηγίες για το πως να το κάνετε.
 
@@ -1420,6 +1416,7 @@ Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[
 /** Hungarian (Magyar)
  * @author Dani
  * @author Glanthor Reviol
+ * @author Reedy
  */
 $messages['hu'] = array(
 	'extensiondistributor' => 'MediaWiki-kigészítők letöltése',
@@ -1461,8 +1458,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Windowson használhatod a [http://www.7-zip.org/ 7-zip]-et a fájlok kibontásához.
 
 Ha a wikid egy távoli szerveren van, bontsd ki a fájlokat egy ideiglenes könyvtárba a helyi számítógépeden, majd tölds fel '''az összes''' kitömörített fájlt a szerver kiterjesztések könyvtárába.
-
-Néhány kiterjesztésnek szüksége van egy ExtensionFunctions.php nevű fájlra, amelynek elérési útja: <tt>extensions/ExtensionFunctions.php</tt>, azaz az aktuális kiterjesztés ''szülő'' könyvtára. Ezeknek a kiterejsztéseknek a pillanatfelvétele tarbomb-ként tartalmazza ezt a fájlt, a ./ExtensionFunctions.php mappába kibontva. Ne felejtsd el feltölteni ezt a fájlt a távoli szerverre.
 
 Miután kibontottad a fájlokat, regisztrálnod kell a kiterjesztést a LocalSettings.php-ben. Erről a kiterjesztés dokumentációjának kell bővebb útmutatást adnia.
 
@@ -1762,6 +1757,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Colognian (Ripoarisch)
  * @author Purodha
+ * @author Reedy
  */
 $messages['ksh'] = array(
 	'extensiondistributor' => 'MediaWiki Zosatzprojramm erunger lade',
@@ -1787,27 +1783,25 @@ De miißte Zosätz fungxjeneere met diverse Versione fun MediaWiki, alsu falls D
 	'extdist-svn-error' => 'Et <i lang="en">subversion (svn)</i> hät ene Fähler jefonge: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'De XML-Date fun <code lang="en">svn info</code> kunnte mer nit verärrbeide: <pre>$1</pre>',
 	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:',
-	'extdist-created' => "En Schnappschoß-Version fun dä Version <b>\$2</b> fun däm Zosatz „<b>\$1</b>“ för MediaWiki Version <b>\$3</b> eß aanjelaat woode. Et ErungerLade sull automattesch loß jonn, in fönnef Sekunde.
+	'extdist-created' => 'En Schnappschoß-Version fun dä Version <b>$2</b> fun däm Zosatz „<b>$1</b>“ för MediaWiki Version <b>$3</b> eß aanjelaat woode. Et ErungerLade sull automattesch loß jonn, in fönnef Sekunde.
 
 Dä URL för dä Schnappschoß es:
-:\$4
+:$4
 Di Address is bloß för jetz jrad eronger ze lade jedaach. Donn se nit faßhallde. Der Datei ier Enhallt weed bahl övverhollt sin, un se weed och nit lang opjehovve.
 
-En dä Datei es e <i lang=\"en\">tar</i>-Aschiif. Dat sullt en dat Verzeischnes met de MediaWiki-Zosätz ußjepack wäde. Med <i lang=\"en\">Unix</i> un äänlijje Bedriefß-Süsteme jeit dat en dä Aat:
+En dä Datei es e <i lang="en">tar</i>-Aschiif. Dat sullt en dat Verzeischnes met de MediaWiki-Zosätz ußjepack wäde. Med <i lang="en">Unix</i> un äänlijje Bedriefß-Süsteme jeit dat en dä Aat:
 
 <pre>
-tar -xzf \$5 -C /var/www/mediawiki/extensions
+tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-Med <i lang=\"en\">Windows</i>, kanns De [http://www.7-zip.org/ 7-zip] nämme.
+Med <i lang="en">Windows</i>, kanns De [http://www.7-zip.org/ 7-zip] nämme.
 
-Wann Ding Wiki nit op dämm Rääschner läuf, wo de di Aschif-Datei lijje häß, dann donn se en e Zwescheverzeichnis ußpacke, un dann donn '''jede''' usjepackte Datei un '''jedes''' usjepackte Verzeichnis op Dingem Wiki singe Server en et <code lang=\"en\">extensions</code>-Verzeichnis huhlade.
-<!--
-Paß op: Etlijje Zosätz bruche en Dattei mem Name <code>ExtensionFunctions.php</code> em Verzeischnes <tt>extensions/ExtensionFunctions.php</tt>, alsu em ''Bovver''verzeischnes fun dämm, wo däm Zosatz sing Projramme jewöhnlesch lijje. Dä Schnappschoß för esu en Zosätz enthällt di Dattei als e <code>tar</code>-Aschiif, noh <code>./ExtensionFunctions.php</code> ußjepack. Dengk draan, dat Dinge och huhzelaade.
--->
+Wann Ding Wiki nit op dämm Rääschner läuf, wo de di Aschif-Datei lijje häß, dann donn se en e Zwescheverzeichnis ußpacke, un dann donn \'\'\'jede\'\'\' usjepackte Datei un \'\'\'jedes\'\'\' usjepackte Verzeichnis op Dingem Wiki singe Server en et <code lang="en">extensions</code>-Verzeichnis huhlade.
+
 Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz en  <code>LocalSettings.php</code> enndraare. De Dokementazjohn för dä Zosatz sät jenouer, wi dat em einzelne jeiht.
 
-Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].",
+Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Noch ene Zosatz holle',
 );
 
@@ -1839,6 +1833,7 @@ Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWik
 /** Limburgish (Limburgs)
  * @author Aelske
  * @author Ooswesthoesbes
+ * @author Reedy
  */
 $messages['li'] = array(
 	'extensiondistributor' => 'Download MediaWiki extension',
@@ -1879,8 +1874,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Op Windows kunt u [http://www.7-zip.org/ 7-zip] gebruiken om de bestanden uit te pakken.
 
 Als uw wiki op een op afstand beheerde server staat, pak de bestanden dan uit in een tijdelijke map op uw computer. Upload daarna \'\'\'alle\'\'\' uitgepakte bestanden naar de map "extensions/" op de server.
-
-Een aantal uitbreidingen hebben het bestand ExtensionFunctions.php nodig, <tt>extensions/ExtensionFunctions.php</tt>, dat in de map direct boven de map met de naam van de uitbreiding hoort te staan. De snapshots voor deze uitbreidingen bevatten dit bestand als tarbomb. Het wordt uitgepakt als ./ExtensionFunctions.php. Vergeet dit bestand niet te uploaden naar uw server.
 
 Nadat u de bestanden hebt uitgepakt en op de juiste plaatst hebt neergezet, moet u de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding treft u de instructies aan.
 
@@ -2002,6 +1995,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
+ * @author Reedy
  */
 $messages['ms'] = array(
 	'extensiondistributor' => 'Muat turun penyambung MediaWiki',
@@ -2043,8 +2037,6 @@ Untuk Windows pula, anda boleh menggunakan perisian [http://www.7-zip.org/ 7-zip
 
 Sekiranya wiki anda terdapat dalam pelayan jauh, sila keluarkan fail-fail yang berkenaan ke dalam direktori sementara dalam komputer tempatan anda, kemudian muat naik '''semua''' fail yang telah dikeluarkan ke dalam direktori extensions dalam komputer pelayan.
 
-Sesetengah penyambung memerlukan sebuah fail bernama ExtensionFunctions.php yang terletak di <tt>extensions/ExtensionFunctions.php</tt>, iaitu dalam direktori ''induk'' bagi direktori penyambung ini. Petikan bagi penyambung-penyambung ini mengandugi fail ini sebagai arkib tar, yang telah dikeluarkan ke dalam ./ExtensionFunctions.php. Jangan lupa untuk memuat naik fail ini ke dalam komputer jauh anda.
-
 Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan penyambung tersebut dalam LocalSettings.php. Anda boleh mendapatkan arahan untuk melakukan pendaftaran ini dengan merujuk dokumentasi yang disertakan dengan penyambung tersebut.
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
@@ -2059,9 +2051,8 @@ $messages['myv'] = array(
 	'extdist-submit-version' => 'Поладомс',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪Norsk (bokmål)‬)
  * @author EivindJ
- * @author Jon Harald Søby
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -2111,6 +2102,7 @@ Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Ext
 );
 
 /** Low German (Plattdüütsch)
+ * @author Reedy
  * @author Slomox
  */
 $messages['nds'] = array(
@@ -2152,8 +2144,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Ünner Windows kannst du dat Programm [http://www.7-zip.org/ 7-zip] för dat Utpacken vun de Datein bruken.
 
 Wenn dien Wiki op en vun feern bedeenten Server löppt, pack de Datein in en temporäre Mapp op dien lokalen Reekner ut un laad denn '''all''' utpackte Datein op den Server hooch.
-
-Acht dor op, dat welk Extensions de Datei <tt>ExtensionFunctions.php</tt> bruukt. De liggt ünner <tt>extensions/ExtensionFunctions.php</tt>, de Hööfdmapp för de Extensions. Bi den Snappschuss vun disse Extension is disse Datei ok as tarbomb bi, utpackt na <tt>./ExtensionFunctions.php</tt>. Vergeet nich, ok disse Datei op dien Server hoochtoladen.
 
 Nadem du de Datein utpackt hest, musst du de Extension in de <tt>LocalSettings.php</tt> registreren. In de Doku för de Extension schull dor wat to stahn.
 
@@ -2216,6 +2206,8 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
+ * @author Reedy
  */
 $messages['nn'] = array(
 	'extensiondistributor' => 'Last ned utvidingar til MediaWiki',
@@ -2257,8 +2249,6 @@ På Windows kan du nytta [http://www.7-zip.org/ 7-zip] for å pakka ut filene.
 
 Om wikien din er på ein ekstern tenar, pakk ut filene i ei midlertidig mappa på datamaskinen din, og last opp '''alle''' utpakka filer i utvidingsmappa på tenaren.
 
-Merk at nokre utvidingar treng ei fil med namnet ExtensionFunctions.php, i mappa <tt>extensions/ExtensionFunctions.php</tt>, altso i ''foreldremappa'' til den enkelte utvidinga si mappa. Snøggskotet for desse utvidingane inneheld denne fila som ein ''tarbomb'' som blir pakka ut til ./ExtensionFunctions.php. Ikkje gløym å lasta opp denne fila til den eksterne tenaren.
-
 Etter å ha pakka ut filene må du registrera utvidinga i LocalSettings.php. Dokumentasjonen til utvidinga burde ha instruksjonar på korleis ein gjer dette.
 
 Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].",
@@ -2267,6 +2257,7 @@ Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Reedy
  */
 $messages['oc'] = array(
 	'extensiondistributor' => 'Telecargar l’extension MediaWiki',
@@ -2307,8 +2298,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Jos Windows, podètz utilizar [http://www.7-zip.org/ 7-zip] per extraire los fichièrs.
 
 Se vòstre wiki se tròba sus un servidor distant, extractatz los fichièrs dins un fichièr temporari sus vòstre ordenador local, e en seguida televersatz los '''totes''' dins lo repertòri d'extensions del servidor.
-
-Notatz plan que qualques extensions necessitan un fichièr nomenat ExtensionFunctions.php, localizat sus  <tt>extensions/ExtensionFunctions.php</tt>, qu'es dins lo repertòri ''parent'' del repertòri particular de ladicha extension. L’imatge d'aquestas extensions contenon aqueste fichièr dins l’archiu tar que serà extrach jos ./ExtensionFunctions.php. Neglijatz pas de le televersar tanben sul servidor.
 
 Un còp l’extraccion facha, auretz besonh d’enregistrar l’extension dins LocalSettings.php. Aquesta deuriá aver un mòde operatòri per aquò.
 
@@ -2955,6 +2944,7 @@ $messages['te'] = array(
 
 /** Thai (ไทย)
  * @author Korrawit
+ * @author Reedy
  * @author Woraponboonkerd
  */
 $messages['th'] = array(
@@ -2980,8 +2970,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 สำหรับบนระบบปฏิบัติการวินโดวส์ คุณสามารถใช้โปรแกรม [http://www.7-zip.org/ 7-zip] แตกไฟล์ออกมา
 
 ถ้าวิกิของคุณอยู่ในเซิร์ฟเวอร์สั่งการทางไกล ให้ดึงไฟล์ออกมาวางไว้ที่โฟลเดอร์ชั่วคราวบนคอมพิวเตอร์ของคุณก่อน แล้วจึงอัพโหลดไฟล์'''ทั้งหมด'''ไปยังไดเร็กทอรีของซอฟต์แวร์เสริมบนเซิร์ฟเวอร์
-
-อย่าลืมว่าซอฟต์แวร์เสริมบางอย่างต้องการไฟล์ที่ชื่อว่า ExtensionFunctions.php ซึ่งอยู่ที่ <tt>extensions/ExtensionFunctions.php</tt> ซึ่งนั่นก็คือไดเร็กทอรี''หลัก''ของซอฟต์แวร์เสริมนั้นๆ ไฟล์คัดลอกของซอฟต์แวร์เสริมเหล่านี้มีไฟล์ภายในที่อยู่ในลักษณะ tarbomb และถูกดึงออกไว้ที่ ./ExtensionFunctions.php ดังนั้นห้ามเว้นการอัพโหลดไฟล์นี้ไปยังเซิร์ฟเวอร์สั่งการของคุณ
 
 หลังจากที่คุณดึงไฟล์ออกมาแล้ว คุณจำเป็นต้องลงทะเบียนซอฟต์แวร์เสริมใน LocalSettings.php ซึ่งเอกสารแนบที่มากับซอฟต์แวร์เสริมจะมีขั้นตอนการทำอยู่
 
@@ -3064,6 +3052,7 @@ Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng d
 
 /** Turkish (Türkçe)
  * @author Joseph
+ * @author Reedy
  */
 $messages['tr'] = array(
 	'extensiondistributor' => 'MedyaViki eklentisini indir',
@@ -3104,8 +3093,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 Windows'ta, dosyaları çıkartmak için [http://www.7-zip.org/ 7-zip]'i kullanabilirsiniz.
 
 Eğer vikiniz uzaktan bir sunucuda ise, dosyaları yerel bilgisayarınızda geçici bir dizine çıkarın, ve sonra '''bütün''' çıkarılan dosyaları sunucunun eklenti dizinine kopyalayın.
-
-Bazı eklentiler ExtensionFunctions.php adlı bir dosyaya ihtiyaç duyar, <tt>extensions/ExtensionFunctions.php</tt>'de, bu belirli eklentinin dizininin ''ana'' dizininde. Bu eklentilerin anlık görüntüsü, bu dosyayı tarbomb olarak içerir, ExtensionFunctions.php'a çıkarılmıştır. Bu dosyayı uzaktan sunucunuza yüklemeyi ihmal etmeyin.
 
 Dosyaları çıkardıktan sonra, eklentiyi LocalSettings.php'de kaydetmelisiniz. Eklenti dokümantasyonu bunu nasıl yapacağınızın açıklamasını içerebilir.
 
@@ -3168,6 +3155,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Vèneto (Vèneto)
  * @author Candalua
+ * @author Reedy
  */
 $messages['vec'] = array(
 	'extensiondistributor' => 'Descarga na estension MediaWiki',
@@ -3209,15 +3197,13 @@ Su Windows te podi doparar [http://www.7-zip.org/ 7-zip] par estrarre i file.
 
 Se la to wiki la se cata su de un server remoto, estrai i file in te na cartèla tenporanea sul to computer locale e in seguito carga '''tuti quanti''' i file estrati in te la cartèla de le estension sul server.
 
-Stà tento che serte estension le gà bisogno de un file ciamà ExtensionFunctions.php, che se cata in <tt>extensions/ExtensionFunctions.php</tt>, che xe la cartèla ''superior'' de sta particolare cartèla de l'estension. L'istantanea par ste estensioni la contien sto file come na tarbom, estrata in ./ExtensionFunctions.php. No stà desmentegarte de cargar sto file sul to server locale.
-
 Dopo che ti gà estrato i file, te gavarè bisogno de registrar l'estension in LocalSettings.php. El manual de l'estension el dovarìa contegner le istrussion su come far.
 
 Se ti gà qualche domanda riguardo el sistema de distribussion de sta estension, varda [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Toli n'antra estension",
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel')
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
@@ -3286,6 +3272,7 @@ $messages['yi'] = array(
 );
 
 /** Cantonese (粵語)
+ * @author Reedy
  * @author Shinjiman
  */
 $messages['yue'] = array(
@@ -3328,8 +3315,6 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 響 Windows，你可以用 [http://www.7-zip.org/ 7-zip] 去解壓嗰啲檔案。
 
 如果你嘅 wiki 係響一個遠端伺服器嘅話，就響電腦度解壓檔案到一個臨時目錄，然後再上載'''全部'''已經解壓咗嘅檔案到伺服器嘅擴展目錄。
-
-要留意嘅有啲擴展係需要一個叫做 ExtensionFunctions.php 嘅檔案，響 <tt>extensions/ExtensionFunctions.php</tt>，即係，響呢個擴展目錄嘅''父''目錄。嗰啲擴展嘅映像都會含有以呢個檔案嘅 tarbomb 檔案，解壓到 ./ExtensionFunctions.php。唔好唔記得上載埋呢個檔案到你嘅遠端伺服器。
 
 響你解壓咗啲檔案之後，你需要響 LocalSettings.php 度註冊番個擴展。個擴展說明講咗點樣可以做到呢樣嘢。
 
