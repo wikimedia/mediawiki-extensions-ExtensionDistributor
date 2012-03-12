@@ -223,10 +223,11 @@ class ExtensionDistributorPage extends SpecialPage {
 		global $wgExtDistWorkingCopy, $wgExtDistTarDir, $wgExtDistBranches,
 			$wgOut, $wgExtDistTarUrl, $wgExtDistRemoteClient;
 
+		$vcs = isset( $wgExtDistBranches[$version]['vcs'] ) ? $wgExtDistBranches[$version]['vcs'] : 'svn';
 		if ( $wgExtDistRemoteClient ) {
-			$rev = $this->updateAndGetRevisionRemote( $extension, $version );
+			$rev = $this->updateAndGetRevisionRemote( $extension, $version, $vcs );
 		} else {
-			$rev = $this->updateAndGetRevisionLocal( $extension, $version );
+			$rev = $this->updateAndGetRevisionLocal( $extension, $version, $vcs );
 		}
 
 		if ( $rev === false ) {
@@ -286,54 +287,45 @@ class ExtensionDistributorPage extends SpecialPage {
 	/**
 	 * @param $extension string
 	 * @param $version string
+	 * @param $vcs string Version control system to use for branch
 	 * @return bool|string
 	 */
-	protected function updateAndGetRevisionLocal( $extension, $version ) {
+	protected function updateAndGetRevisionLocal( $extension, $version, $vcs ) {
 		global $wgExtDistWorkingCopy, $wgOut;
 
 		// svn up
 		$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
-		$cmd = "svn up --non-interactive " . wfEscapeShellArg( $dir ) . " 2>&1";
-		$retval = - 1;
-
-		$result = wfShellExec( $cmd, $retval );
-
-		if ( $retval ) {
-			$wgOut->addWikiMsg( 'extdist-svn-error', $result );
+		$ed = ExtensionDistributorVCS::factory( $vcs );
+		if ( $ed === null ) {
+			$wgOut->addWikiMsg( 'extdist-cvs-unsupported', $vcs );
 			return false;
 		}
 
-		// Determine last changed revision
-		$cmd = "svn info --non-interactive --xml " . wfEscapeShellArg( $dir );
-		$retval = - 1;
-		$result = wfShellExec( $cmd, $retval );
-
-		if ( $retval ) {
-			$wgOut->addWikiMsg( 'extdist-svn-error', $result );
+		$result = $ed->updateAndGetVersion( $dir );
+		if ( !$result->isGood() ) {
+			$this->getOutput()->addWikiText( $result->getWikiText() );
 			return false;
 		}
-
-		$sx = new SimpleXMLElement( $result );
-		$rev = $sx->entry->commit['revision'];
-
-		if ( !$rev || strpos( $rev, '/' ) !== false || strpos( $rev, "\000" ) !== false ) {
-			$wgOut->addWikiMsg( 'extdist-svn-parse-error', $result );
-			return false;
-		}
-
-		return $rev;
+		return $result->value;
 	}
 
 	/**
 	 * @param $extension string
 	 * @param $version string
+	 * @param $vcs string Version control system to use for branch
 	 * @return bool|string
 	 */
-	protected function updateAndGetRevisionRemote( $extension, $version ) {
+	protected function updateAndGetRevisionRemote( $extension, $version, $vcs ) {
 		global $wgExtDistRemoteClient, $wgOut;
 
-		$cmd = json_encode( array( 'extension' => $extension, 'version' => $version ) );
+		$cmd = json_encode(
+			array(
+				'extension' => $extension,
+				'version' => $version,
+				'vcs' => $vcs
+			)
+		);
 		$cmd = str_replace( "\000", '', $cmd );
 
 		list( $host, $port ) = explode( ':', $wgExtDistRemoteClient, 2 );

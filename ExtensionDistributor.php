@@ -49,3 +49,6 @@ $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDist
 $wgSpecialPages['ExtensionDistributor'] = 'ExtensionDistributorPage';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgAutoloadClasses['ExtensionDistributorPage'] = $dir . 'ExtensionDistributor_body.php';
+$wgAutoloadClasses['ExtensionDistributorSVN'] = $dir . 'ExtensionDistributorSVN.php';
+$wgAutoloadClasses['ExtensionDistributorVCS'] = $dir . 'ExtensionDistributorVCS.php';
+$wgAutoloadClasses['ExtensionDistributorGit'] = $dir . 'ExtensionDistributorGit.php';

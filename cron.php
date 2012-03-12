@@ -35,15 +35,62 @@ function cronExecute() {
 	}
 
 	// Update the files
-	svnUpdate( "$wgExtDistWorkingCopy/trunk/extensions" );
+	vcsUpdate( "$wgExtDistWorkingCopy/trunk/extensions" );
+
 	foreach ( glob( "$wgExtDistWorkingCopy/branches/*", GLOB_ONLYDIR ) as $branch ) {
-		svnUpdate( "$branch/extensions" );
+		vcsUpdate( "$branch/extensions" );
 	}
 }
 
+/**
+ * @param $dir string
+ * @return bool
+ */
+function isSVNDir( $dir ) {
+	return is_dir( "$dir/.svn");
+}
+
+/**
+ * @param $dir string
+ * @return bool
+ */
+function isGitDir( $dir ) {
+	return is_dir( "$dir/.git");
+}
+
+/**
+ * @param $dir string
+ */
+function vcsUpdate( $dir ) {
+	if ( isSVNDir( $dir ) ) {
+		svnUpdate( $dir );
+	} elseif ( isGitDir( $dir ) ) {
+		gitUpdate( $dir );
+	} else {
+		// Meh?
+	}
+}
+
+/**
+ * @param $path string
+ */
 function svnUpdate( $path ) {
 	$cmd = "svn up --non-interactive " . escapeshellarg( $path );
-	$retval = 1;
+	$retval = -1;
+	system( $cmd, $retval );
+	if ( $retval ) {
+		echo "Error executing command: $cmd\n";
+		exit( 1 );
+	}
+}
+
+/**
+ * @param $path string
+ */
+function gitUpdate( $path ) {
+	chdir( $path );
+	$cmd = "git pull -q";
+	$retval = -1;
 	system( $cmd, $retval );
 	if ( $retval ) {
 		echo "Error executing command: $cmd\n";
