@@ -550,12 +550,12 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'extensiondistributor' => 'MediaWiki-Erweiterungen herunterladen',
 	'extensiondistributor-desc' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
-	'extdist-not-configured' => 'Bitte konfiguriere $wgExtDistTarDir und $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Das konfigurierte Kopien-Arbeitsverzeichnis ist nicht vorhanden!',
-	'extdist-no-such-extension' => 'Erweiterung „$1“ ist nicht vorhanden',
-	'extdist-no-such-version' => 'Die Erweiterung „$1“ gibt es nicht in der Version „$2“.',
+	'extdist-not-configured' => 'Bitte konfiguriere die Parameter <code>$wgExtDistTarDir</code> und <code>$wgExtDistWorkingCopy</code>.',
+	'extdist-wc-missing' => 'Das für Arbeitskopien konfigurierte Verzeichnis ist nicht vorhanden!',
+	'extdist-no-such-extension' => 'Die Erweiterung „$1“ ist nicht vorhanden.',
+	'extdist-no-such-version' => 'Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.',
 	'extdist-choose-extension' => 'Bitte wähle eine Erweiterung zum Herunterladen aus:',
-	'extdist-wc-empty' => 'Das konfigurierte Kopien-Arbeitsverzeichnis enthält keine zu verteilenden Erweiterungen!',
+	'extdist-wc-empty' => 'Das für Arbeitskopien konfigurierte Verzeichnis enthält keine zu verteilenden Erweiterungen!',
 	'extdist-submit-extension' => 'Weiter',
 	'extdist-current-version' => 'Entwicklungsversion (trunk)',
 	'extdist-choose-version' => '<big>Du kannst gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.</big>
@@ -563,14 +563,16 @@ $messages['de'] = array(
 Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
 
 Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
-	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist nicht in der allen Versionen verfügbar!',
+	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist in keiner Version verfügbar!',
 	'extdist-submit-version' => 'Weiter',
-	'extdist-no-remote' => 'Der ferngesteuerte Subversion-Client ist nicht erreichbar.',
-	'extdist-remote-error' => 'Fehlermeldung des ferngesteuerten Subversion-Client: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ungültige Antwort vom ferngesteuerten Subversion-Client.',
+	'extdist-no-remote' => 'Der externe Subversion-Client ist nicht erreichbar.',
+	'extdist-remote-error' => 'Der externe Subversion-Client hat den folgenden Fehler gemeldet: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Der externe Subversion-Client hat eine ungültige Antwort ausgegeben.',
 	'extdist-svn-error' => 'Subversion hat einen Fehler gemeldet: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'XML-Daten von „svn info“ können nicht verarbeitet werden: <pre>$1</pre>',
-	'extdist-tar-error' => 'Das Tar-Programm lieferte den Beendigungscode $1:',
+	'extdist-svn-parse-error' => 'Die XML-Daten von „svn info“ können nicht verarbeitet werden: <pre>$1</pre>',
+	'extdist-git-error' => 'Git hat einen Fehler gemeldet: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git hat zur aktuellen Revision einen ungültigen SHA1-Hashwert ausgegeben: <pre>$1<pre>',
+	'extdist-tar-error' => 'Das Tar-Programm hat den Abbruchcode $1 ausgegeben:',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
@@ -591,6 +593,8 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
+	'extdist-cvs-unsupported' => 'Das Versionsverwaltungssystem „$1“ wird nicht unterstützt.',
+	'extdist-git-invalid-dir' => 'Auf das Verzeichnis zum Abruf über Git konnte nicht zugegriffen werden.',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -600,7 +604,7 @@ Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterung
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'extdist-not-configured' => 'Bitte konfigurieren Sie $wgExtDistTarDir und $wgExtDistWorkingCopy',
+	'extdist-not-configured' => 'Bitte konfigurieren Sie die Parameter <code>$wgExtDistTarDir</code> und <code>$wgExtDistWorkingCopy</code>.',
 	'extdist-choose-extension' => 'Bitte wählen Sie eine Erweiterung zum Herunterladen aus:',
 	'extdist-choose-version' => '<big>Sie können gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.</big>
 
@@ -831,6 +835,7 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Bernardom
  * @author Crazymadlover
  * @author Imre
@@ -862,6 +867,8 @@ La mayoría de extensiones funcionan a través de múltiples versiones de Mediaw
 	'extdist-remote-invalid-response' => 'Respuesta inválida del cliente subversion remoto.',
 	'extdist-svn-error' => "''Subversion'' encontró un error: <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'Incapaz de procesar el XML de "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git ha encontrado un error: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git ha devuelto un hash SHA1 inválido para la revisión actual: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar ha devuelto el código de salida $1:',
 	'extdist-created' => "Se ha creado una instantánea de la versión <b>$2</b> de la extensión <b>$1</b> para MediaWiki <b>$3</b>. Tu descarga debería comenzar automáticamente en 5 segundos.
 
@@ -883,6 +890,8 @@ Después de extraer los archivos, necesitarás registrar la extensión en LocalS
 
 Si tienes cualquier duda sobre este sistema de distribución de extensiones, por favor ve a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener otra extensión',
+	'extdist-cvs-unsupported' => 'El Distribuidor de extensión no admite el sistema de control de versión "$1".',
+	'extdist-git-invalid-dir' => 'No se ha podido entrar al directorio para la comprobación de Git',
 );
 
 /** Estonian (Eesti)
@@ -1024,6 +1033,7 @@ Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension t
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author McDutchie
@@ -1055,6 +1065,8 @@ La plupart des extensions tourne sur différentes versions de MediaWiki. Aussi, 
 	'extdist-remote-invalid-response' => 'Réponse incorrecte depuis le client subversion distant.',
 	'extdist-svn-error' => 'Subversion a rencontré une erreur : <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Impossible de traiter les données XML retournées par « svn info » : <pre>$1</pre>',
+	'extdist-git-error' => 'Git a rencontré une erreur :<pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git a renvoyé un hachage SHA1 non valide pour la révision actuelle:<pre>$1</pre>',
 	'extdist-tar-error' => 'Tar a retourné le code de sortie $1 :',
 	'extdist-created' => "Une copie instantanée de la version <b>$2</b> de l’extension <b>$1</b> pour MediaWiki <b>$3</b> a été créée. Votre téléchargement devrait commencer automatiquement dans 5 secondes.
 
@@ -1076,6 +1088,8 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <t
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
+	'extdist-cvs-unsupported' => 'Le distributeur d\'extension ne supporte pas le système de contrôle de version "$1".',
+	'extdist-git-invalid-dir' => "Impossible d'entrer dans le répertoire pour une inspection de Git",
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1160,6 +1174,8 @@ A maioría das extensións traballan con múltiples versións de MediaWiki, polo
 	'extdist-remote-invalid-response' => 'Resposta inválida do cliente da subversión remota.',
 	'extdist-svn-error' => 'A subversión atopou un erro: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Non se pode procesar o XML de "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'O Git atopou un erro: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'O Git devolveu un hash SHA1 inválido para a revisión actual: <pre>$1<pre>',
 	'extdist-tar-error' => 'Tar devolveu o código de saída $1:',
 	'extdist-created' => "Creouse unha fotografía da versión <b>$2</b> da extensión <b>$1</b> de MediaWiki <b>$3</b>. A súa descarga debería comezar automaticamente en 5 segundos.
 
@@ -1181,6 +1197,8 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
+	'extdist-cvs-unsupported' => 'A extensión de distribución non soporta o sistema de control de versións "$1".',
+	'extdist-git-invalid-dir' => 'Non se pode entrar no directorio para a comprobación do Git',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1256,8 +1274,7 @@ $messages['he'] = array(
 	'extdist-wc-empty' => 'בתיקייה שהוגדרה כתיקיית ההרחבות אין הרחבות שניתן להוריד!',
 	'extdist-submit-extension' => 'המשך',
 	'extdist-current-version' => 'גרסת הפיתוח (trunk)',
-	'extdist-choose-version' => '
-<big>אתם מורידים את ההרחבה <b>$1</b>.</big>
+	'extdist-choose-version' => '<big>אתם מורידים את ההרחבה <b>$1</b>.</big>
 
 אנא בחרו את גרסת מדיה־ויקי שאתם משתמשים בה.
 
@@ -1393,6 +1410,8 @@ Najwjace rozšěrjenjow funguje přez wjacore wersije MediaWiki, jeli twoja wers
 	'extdist-remote-invalid-response' => 'Njepłaćiwa wotmołwa nazdalneho klienta Subversion.',
 	'extdist-svn-error' => 'Subversion je na zmylk storčił: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Njemóžno XML-daty wot "svn info" předźełać: <pre>$1</pre>',
+	'extdist-git-error' => 'Git je na zmylk storčił: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git je njepłaćiwu pruwowansku SHA1-sumu za aktualnu wersiju wróćił: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar je kod skónčenja $1 wróćił:',
 	'extdist-created' => "Foto wobrazowki wersije <b>$2</b> rozšěrjenja <b>$1</b> wersije MediaWiki <b>$3</b> je so wutworił. Twoje sćehnjenje dyrbjało za 5 sekundow awtomatisce startować.
 
@@ -1414,6 +1433,8 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
+	'extdist-cvs-unsupported' => 'Extension Distributor wersijowy kontrolny system "$1" njepodpěruje.',
+	'extdist-git-invalid-dir' => 'Njeje móžno, zapis za wotwołanje přez Git zapodać',
 );
 
 /** Hungarian (Magyar)
@@ -1494,6 +1515,8 @@ Le majoritate del extensiones functiona trans versiones de MediaWiki, ergo si tu
 	'extdist-remote-invalid-response' => 'Responsa invalide del cliente Subversion remote.',
 	'extdist-svn-error' => 'Subversion incontrava un error: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Non pote processar le formulario XML ab "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git incontrava un error: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git retornava un hash SHA1 invalide pro le version actual: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar retornava le codice de exito $1:',
 	'extdist-created' => "Un instantaneo del version <b>$2</b> del extension <b>$1</b> pro MediaWiki <b>$3</b> ha essite create.
 Le discargamento debe comenciar automaticamente post 5 secundas.
@@ -1516,6 +1539,8 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
+	'extdist-cvs-unsupported' => 'Extension Distributor non supporta le systema de controlo de versiones "$1".',
+	'extdist-git-invalid-dir' => 'Impossibile entrar in le directorio pro le synchronisation sortiente (checkout) ab Git',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1923,6 +1948,8 @@ $messages['mk'] = array(
 	'extdist-remote-invalid-response' => 'Грешен одговор  од далечинскиот Subversion клиент.',
 	'extdist-svn-error' => 'Настана грешка во Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Грешка при обработката на XML од „svn info“: <pre>$1</pre>',
+	'extdist-git-error' => 'Git наиде на грешка: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git даде неважечка SHA1-тараба за тековната ревизија: <pre>$1<pre>',
 	'extdist-tar-error' => 'Tar го даде кодот на грешката $1:',
 	'extdist-created' => "Направена е снимка од верзијата <b>$2</b> на додатокот <b>$1</b> за МедијаВики <b>$3</b>. Преземањето треба да започне автоматски за 5 секунди. URL-адресата за оваа снимка е:
 :$4
@@ -1942,6 +1969,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
+	'extdist-cvs-unsupported' => 'Распространувачот на додатоци не ја поддржува контролниот систем на верзии „$1“.',
+	'extdist-git-invalid-dir' => 'Не можам да навлезам во директориумот за проверка на Git',
 );
 
 /** Malayalam (മലയാളം)
@@ -2184,6 +2213,8 @@ De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw ve
 	'extdist-remote-invalid-response' => 'Ongeldig antwoord van de externe subversionclient.',
 	'extdist-svn-error' => 'Subversion geeft de volgende foutmelding: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Het was niet mogelijk de XML van "svn info" te verwerken: <pre>$1</pre>',
+	'extdist-git-error' => 'Er is een fout opgetreden in git: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git heeft een onjuiste SHA1-hash teruggegeven voor de huidige versie: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar gaf de volgende exitcode $1:',
 	'extdist-created' => 'De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Uw download start automatisch over 5 seconden.
 
@@ -2205,6 +2236,8 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
+	'extdist-cvs-unsupported' => 'Het is niet mogelijk om uitbreidingen te distribueren met behulp van het versioncontrolsysteem "$1" omdat dit niet wordt ondersteund.',
+	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2335,6 +2368,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Leinad
  * @author Maikking
@@ -2363,6 +2397,8 @@ Większość rozszerzeń działa ze wszystkimi wersjami MediaWiki, więc jeśli 
 	'extdist-remote-invalid-response' => 'Nieprawidłowa odpowiedź zdalnego klienta Subversion.',
 	'extdist-svn-error' => 'Subversion napotkał błąd <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nie można przetworzyć danych XML z „svn info”: <pre>$1</pre>',
+	'extdist-git-error' => 'Git napotkał błąd: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git zwrócił nieprawidłowy skrót SHA1 dla bieżącej wersji: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar zwrócił kod zakończenia $1:',
 	'extdist-created' => "Utworzono skompresowane archiwum rozszerzenia <b>$1</b> w wersji <b>$2</b> dla MediaWiki <b>$3</b>. Pobieranie powinno rozpocząć się automatycznie w ciągu 5 sekund.
 
@@ -2384,6 +2420,8 @@ Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzen
 
 Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zadaj je na stronie [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Pobierz inne rozszerzenie',
+	'extdist-cvs-unsupported' => 'Dystrybutor rozszerzenia nie obsługuje systemu kontroli wersji "$1".',
+	'extdist-git-invalid-dir' => 'Nie można wprowadzić katalogu git do pobrania',
 );
 
 /** Piedmontese (Piemontèis)
