@@ -13,8 +13,7 @@ $messages['en'] = array(
 		'extdist-wc-empty' => 'The configured working copy directory has no distributable extensions!',
 		'extdist-submit-extension' => 'Continue',
 		'extdist-current-version' => 'Development version (trunk)',
-		'extdist-choose-version' => '
-<big>You are downloading the <b>$1</b> extension.</big>
+		'extdist-choose-version' => '<big>You are downloading the <b>$1</b> extension.</big>
 
 Select your MediaWiki version.
 
@@ -956,7 +955,7 @@ $messages['fa'] = array(
 ممکن است به‌منظور بارگیری آنی به یک کارساز (سرور) استفاده شود، اما لطفاً آن را بوکمارک نکنید، چراکه محتویات به‌روزرسانی نخواهند شد و شاید در تاریخی بعدتر پاک شوند.
 
 بایگانی tar باید در دایرکتوری افزونه‌هایتان استخراج شود. برای مثال، در سامانه‌عامل‌های مانند یونیکس:
- 
+
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
@@ -1166,7 +1165,7 @@ A maioría das extensións traballan con múltiples versións de MediaWiki, polo
 
 O enderezo URL desta fotografía é:
 :$4
-Poderá ser usada para descargala inmediatamente a un servidor, pero, por favor, non a engada á lista dos seus favoritos mentres o contido non estea actualizado. Poderá tamén ser eliminada nuns días. 
+Poderá ser usada para descargala inmediatamente a un servidor, pero, por favor, non a engada á lista dos seus favoritos mentres o contido non estea actualizado. Poderá tamén ser eliminada nuns días.
 
 O arquivo tar deberá ser extraído no seu directorio de extensións. Por exemplo, nun sistema beseado no UNIX:
 
@@ -1333,7 +1332,7 @@ $messages['hr'] = array(
 	'extdist-wc-empty' => 'U konfiguriranom radnom direktoriju za kopiranje nema ekstenzija za distribuciju!',
 	'extdist-submit-extension' => 'Nastavi',
 	'extdist-current-version' => 'Razvojna inačica (stablo)',
-	'extdist-choose-version' => '<big>Preuzimate ekstenziju <b>$1</b>.</big> 
+	'extdist-choose-version' => '<big>Preuzimate ekstenziju <b>$1</b>.</big>
 
 Izaberite vašu inačicu MedijaWikija.
 
@@ -1556,17 +1555,17 @@ Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi
 	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
 	'extdist-created' => "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.
 
-URL untuk cuplikan ini adalah:  
-:$4  
-Tautan ini dapat digunakan untuk mengunduh langsung ke server, tetapi jangan tandai karena isinya tidak akan diperbarui dan dapat dihapus di kemudian hari. 
+URL untuk cuplikan ini adalah:
+:$4
+Tautan ini dapat digunakan untuk mengunduh langsung ke server, tetapi jangan tandai karena isinya tidak akan diperbarui dan dapat dihapus di kemudian hari.
 
-Arsip tar harus diekstrak ke direktori ekstensi Anda. Sebagai contoh, pada sistem operasi keluarga UNIX:  
+Arsip tar harus diekstrak ke direktori ekstensi Anda. Sebagai contoh, pada sistem operasi keluarga UNIX:
 
-<pre>  
-tar -xzf $5 -C /var/www/mediawiki/extensions  
-</pre>  
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
 
-Pada Windows, Anda dapat menggunakan [http://www.7-zip.org/ 7-zip] untuk mengekstrak file.  
+Pada Windows, Anda dapat menggunakan [http://www.7-zip.org/ 7-zip] untuk mengekstrak file.
 
 Jika wiki Anda di server jauh, ekstrak berkas ke direktori sementara pada komputer lokal Anda, dan kemudian unggah '''semua''' berkas yang diekstrak ke direktori ekstensi pada server.
 
@@ -2707,11 +2706,11 @@ $messages['sah'] = array(
 	'extdist-svn-error' => 'Барыл (Subversion) алҕаһа: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"Svn info" хамаанда ыыппыт XML уларытар процеһын алҕаһа: <pre>$1</pre>',
 	'extdist-tar-error' => 'Куод $1 сыыһатын Tar көрдөрөр:',
-	'extdist-created' => "MediaWiki <b>$3</b> анаан <b>$1</b> тупсарыы <b>$2</b> барылын снэпшота (хаартыската) оҥоһулунна. 5 сөкүүндэннэн хачайданыы саҕаланыахтаах. 
+	'extdist-created' => "MediaWiki <b>$3</b> анаан <b>$1</b> тупсарыы <b>$2</b> барылын снэпшота (хаартыската) оҥоһулунна. 5 сөкүүндэннэн хачайданыы саҕаланыахтаах.
 
 Снэпшот URL-а:
 :$4
-Бу аадырыс сиэрбэргэ сип-сибилигин хачайдыырга туһаныллар, кэлин үлэлиэ суоҕун сөп, онон сигэни закладкаҕа киллэрэр наадата суох. 
+Бу аадырыс сиэрбэргэ сип-сибилигин хачайдыырга туһаныллар, кэлин үлэлиэ суоҕун сөп, онон сигэни закладкаҕа киллэрэр наадата суох.
 
 Tar-архыыбы тупсарыылар паапкаларыгар (директория расширений) арыйыахха наада. Холобур, юникс бииһин ууһун ОС-тарыгар бу хамаанда туттуллар:
 
@@ -2721,7 +2720,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] бырагыраамманы туттуоххун сөп.
 
-Эн биикиҥ ыраах (удаленный) сиэрбэргэ турар буоллаҕына билэлэри быстах кэмҥэ анаан оҥоһуллубут паапкаҕа хостоо, онтон хостоммут билэлэри '''барытын''' сиэрбэр тупсарыыга аналлаах паапкатыгар көһөр. 
+Эн биикиҥ ыраах (удаленный) сиэрбэргэ турар буоллаҕына билэлэри быстах кэмҥэ анаан оҥоһуллубут паапкаҕа хостоо, онтон хостоммут билэлэри '''барытын''' сиэрбэр тупсарыыга аналлаах паапкатыгар көһөр.
 
 Билэлэри хостоон баран тупсарыыны бу билэҕэ LocalSettings.php суруттарыахха наада. Манна аналлаах ыйыылар-кэрдиилэр тупсарыы дөкүмүөнүгэр баар буолуохтахтар.
 
@@ -3136,23 +3135,23 @@ $messages['uk'] = array(
 	'extdist-svn-error' => 'Помилка субверсії: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Не вдається обробити XML з "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar повернув код помилки $1:',
-	'extdist-created' => "Знімок версії <b>$2</b> розширення <b>$1</b> MediaWiki <b>$3</b> створено. Завантаження почнеться автоматично через 5 секунд. 
+	'extdist-created' => "Знімок версії <b>$2</b> розширення <b>$1</b> MediaWiki <b>$3</b> створено. Завантаження почнеться автоматично через 5 секунд.
 
-URL-адреса для цього знімка: 
-:$4 
+URL-адреса для цього знімка:
+:$4
 Вона може бути використана для негайного завантаження з сервера, але, будь ласка, не заносьте її в закладки, тому що її зміст не буде оновлюватись, адреса може бути непрацездатною через деякій час.
 
-Tar-архів необхідно розпакувати в каталог розширення. Наприклад, в UNIX-подібних ОС: 
+Tar-архів необхідно розпакувати в каталог розширення. Наприклад, в UNIX-подібних ОС:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
 
-У Windows ви можете скористатись [http://www.7-zip.org/ 7-zip] для розпакування файлів. 
+У Windows ви можете скористатись [http://www.7-zip.org/ 7-zip] для розпакування файлів.
 
-Якщо ваша вікі на віддаленому сервері, розпакуйте файли в тимчасову папку на вашому локальному комп'ютері, а потім завантажте '''всі''' розпаковані файли в каталог розширення на сервері. 
+Якщо ваша вікі на віддаленому сервері, розпакуйте файли в тимчасову папку на вашому локальному комп'ютері, а потім завантажте '''всі''' розпаковані файли в каталог розширення на сервері.
 
-Після того, як ви розпакували файли, вам необхідно зареєструвати розширення в LocalSettings.php. Документація розширення повинні мати інструкції про те, як це зробити. 
+Після того, як ви розпакували файли, вам необхідно зареєструвати розширення в LocalSettings.php. Документація розширення повинні мати інструкції про те, як це зробити.
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
