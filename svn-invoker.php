@@ -18,7 +18,7 @@ if ( !file_exists( $confFile ) ) {
 }
 require( $confFile );
 
-svnExecute();
+executeInvoker();
 
 /**
  * @param $s string
@@ -50,7 +50,7 @@ function invokerError( $msg, $info = false ) {
 	echo json_encode( array( 'error' => $msg, 'errorInfo' => $info ) );
 }
 
-function svnExecute() {
+function executeInvoker() {
 	global $wgExtDistWorkingCopy, $wgExtDistLockFile;
 
 	$encCommand = '';
@@ -100,21 +100,46 @@ function svnExecute() {
 		invokerError( 'extdist-remote-error', "Invalid extension parameter" );
 		return;
 	}
+
 	$version = $command->version;
 	$extension = $command->extension;
 	$vcs = $command->vcs;
+	if ( !in_array( $vcs, array( 'git', 'svn' ) ) ) {
+		invokerError( 'extdist-remote-error', "Invalid vcs parameter" );
+		return;
+	}
+
 	$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
+	$remoteRev = null;
+	if ( $vcs === 'svn' ) {
+		$remoteRev = svnExecute( $dir );
+	} elseif( $vcs === 'git' ) {
+		$remoteRev = gitExecute( $dir );
+	}
+
+	if ( $remoteRev === null ) {
+		return;
+	}
+
+	echo json_encode( array( 'revision' => $remoteRev ) );
+}
+
+/**
+ * @param $dir string
+ * @return null|string
+ */
+function svnExecute( $dir ) {
 	// Determine last changed revision in the checkout
 	$localRev = svnGetRev( $dir, $remoteDir );
 	if ( !$localRev ) {
-		return;
+		return null;
 	}
 
 	// Determine last changed revision in the repo
 	$remoteRev = svnGetRev( $remoteDir );
 	if ( !$remoteRev ) {
-		return;
+		return null;
 	}
 
 	if ( $remoteRev != $localRev ) {
@@ -124,11 +149,10 @@ function svnExecute() {
 		$result = invokerShellExec( $cmd, $retval );
 		if ( $retval ) {
 			invokerError( 'extdist-svn-error', $result );
-			return;
+			return null;
 		}
 	}
-
-	echo json_encode( array( 'revision' => $remoteRev ) );
+	return $remoteRev;
 }
 
 /**
@@ -164,6 +188,33 @@ function svnGetRev( $dir, &$url = null ) {
 
 /**
  * @param $dir string
+ * @return null|string
+ */
+function gitExecute( $dir ) {
+	$localRev = gitGetRev( $dir );
+	if ( !$localRev ) {
+		return null;
+	}
+
+	// TODO: Need to check remote before attempting update, bit daft unconditionally pulling
+	chdir( $dir );
+	$cmd = "git pull -q";
+	$retval = -1;
+	$result = invokerShellExec( $cmd, $retval );
+	if ( $retval ) {
+		invokerError( 'extdist-svn-error', $result );
+		return null;
+	}
+
+	$newLocalRev = gitGetRev( $dir );
+	if ( !$newLocalRev ) {
+		return null;
+	}
+	return $newLocalRev;
+}
+
+/**
+ * @param $dir string
  * @return bool|string
  */
 function gitGetRev( $dir ) {
@@ -187,20 +238,4 @@ function gitGetRev( $dir ) {
 
 	// TODO: Should we truncate the 40 character sha1 hash to a more common/usable 7 chars?
 	return $result;
-}
-
-/**
- * @param $dir string
- * @return bool
- */
-function isSVNDir( $dir ) {
-	return is_dir( "$dir/.svn");
-}
-
-/**
- * @param $dir string
- * @return bool
- */
-function isGitDir( $dir ) {
-	return is_dir( "$dir/.svn");
 }
