@@ -1286,6 +1286,8 @@ $messages['he'] = array(
 	'extdist-remote-invalid-response' => 'תשובה בלתי תקינה מלקוח ה־Subversion המרוחק.',
 	'extdist-svn-error' => 'תוכנת Subversion נתקלה בשגיאה: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'לא ניתן לעבד את ה־XML שהוחזר מפקודת "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'תוכנת Git מצאה שגיאה: <pre dir="ltr">$1</pre>',
+	'extdist-git-invalidsha1' => 'תוכנת Git החזירה גיבוב SHA1 בלתי־תקין עבור הגרסה הזאת: <pre dir="ltr">$1<pre>',
 	'extdist-tar-error' => 'פקודת tar החזירה את קוד היציאה $1:',
 	'extdist-created' => "נוצר קובץ היטל של גרסה <b>$2</b> של ההרחבה <b>$1</b> עבור מדיה־ויקי <b>$3</b>. ההורדה אמורה להתחיל אוטומטית בעוד 5 שניות.
 
@@ -1307,6 +1309,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
+	'extdist-cvs-unsupported' => 'מפיץ ההרחבות אינו תומך במערכת ניהול הגרסאות "$1".',
+	'extdist-git-invalid-dir' => 'לא התאפשרה כניסה לספרייה לצורך אחזור קבצים באמצעות git',
 );
 
 /** Hindi (हिन्दी)
@@ -2052,6 +2056,8 @@ Kebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, 
 	'extdist-remote-invalid-response' => 'Jawapan tidak sah daripada pelanggan subversion jauh.',
 	'extdist-svn-error' => 'Subversion mendapati ralat: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML daripada "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git mengalami rakat: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git memulangkan hash SHA1 yang tidak sah untuk semakant terkini: <pre>$1<pre>',
 	'extdist-tar-error' => 'Tar memulangkan kod keluar $1:',
 	'extdist-created' => "Sebuah petikan bagi penyambung <b>$1</b> versi <b>$2</b> untuk MediaWiki <b>$3</b> telah dicipta. Proses muat turun akan dimulakan secara automatik dalam masa 5 saat.
 
@@ -2073,6 +2079,7 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
+	'extdist-cvs-unsupported' => 'Extension Distributor tidak menyokong sistem kawalan versi "$1".',
 );
 
 /** Erzya (Эрзянь)
