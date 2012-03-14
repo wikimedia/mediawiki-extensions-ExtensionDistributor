@@ -9,7 +9,6 @@ class ExtensionDistributorSVN extends ExtensionDistributorVCS {
 	public function updateAndGetVersion( $dir ) {
 		$cmd = "svn up --non-interactive " . wfEscapeShellArg( $dir ) . " 2>&1";
 		$retval = -1;
-
 		$result = wfShellExec( $cmd, $retval );
 
 		if ( $retval ) {

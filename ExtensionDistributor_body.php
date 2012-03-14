@@ -238,7 +238,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		// Determine tar name.
 		$cleanName = str_replace( '/', '_', $extension );
 		$versionName = $wgExtDistBranches[$version]['tarLabel'];
-		$tarName = "$cleanName-$versionName-r$rev.tar.gz";
+		$tarName = "$cleanName-$versionName-r$rev.tar.gz"; // TODO: Do we still want r prefix for git? Probably not
 		$tarFile = "$wgExtDistTarDir/$tarName";
 
 		// Create the archive if it doesn't exist.
@@ -293,12 +293,11 @@ class ExtensionDistributorPage extends SpecialPage {
 	protected function updateAndGetRevisionLocal( $extension, $version, $vcs ) {
 		global $wgExtDistWorkingCopy, $wgOut;
 
-		// svn up
 		$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
 		$ed = ExtensionDistributorVCS::factory( $vcs );
 		if ( $ed === null ) {
-			$wgOut->addWikiMsg( 'extdist-cvs-unsupported', $vcs );
+			$wgOut->addWikiMsg( 'extdist-vcs-unsupported', $vcs );
 			return false;
 		}
 

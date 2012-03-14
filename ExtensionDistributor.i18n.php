@@ -48,7 +48,7 @@ After you have extracted the files, you will need to register the extension in L
 
 If you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]].",
 		'extdist-want-more' => 'Get another extension',
-		'extdist-cvs-unsupported' => 'Extension Distributor doesn\'t support the "$1" version control system.',
+		'extdist-vcs-unsupported' => 'Extension Distributor doesn\'t support the "$1" version control system.',
 		'extdist-git-invalid-dir' => 'Unable to enter directory for git checkout',
 );
 
@@ -593,7 +593,7 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
-	'extdist-cvs-unsupported' => 'Das Versionsverwaltungssystem „$1“ wird nicht unterstützt.',
+	'extdist-vcs-unsupported' => 'Das Versionsverwaltungssystem „$1“ wird nicht unterstützt.',
 	'extdist-git-invalid-dir' => 'Auf das Verzeichnis zum Abruf über Git konnte nicht zugegriffen werden.',
 );
 
@@ -890,7 +890,7 @@ Después de extraer los archivos, necesitarás registrar la extensión en LocalS
 
 Si tienes cualquier duda sobre este sistema de distribución de extensiones, por favor ve a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener otra extensión',
-	'extdist-cvs-unsupported' => 'El Distribuidor de extensión no admite el sistema de control de versión "$1".',
+	'extdist-vcs-unsupported' => 'El Distribuidor de extensión no admite el sistema de control de versión "$1".',
 	'extdist-git-invalid-dir' => 'No se ha podido entrar al directorio para la comprobación de Git',
 );
 
@@ -1088,7 +1088,7 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <t
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
-	'extdist-cvs-unsupported' => 'Le distributeur d\'extension ne supporte pas le système de contrôle de version "$1".',
+	'extdist-vcs-unsupported' => 'Le distributeur d\'extension ne supporte pas le système de contrôle de version "$1".',
 	'extdist-git-invalid-dir' => "Impossible d'entrer dans le répertoire pour une inspection de Git",
 );
 
@@ -1197,7 +1197,7 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
-	'extdist-cvs-unsupported' => 'A extensión de distribución non soporta o sistema de control de versións "$1".',
+	'extdist-vcs-unsupported' => 'A extensión de distribución non soporta o sistema de control de versións "$1".',
 	'extdist-git-invalid-dir' => 'Non se pode entrar no directorio para a comprobación do Git',
 );
 
@@ -1433,7 +1433,7 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
-	'extdist-cvs-unsupported' => 'Extension Distributor wersijowy kontrolny system "$1" njepodpěruje.',
+	'extdist-vcs-unsupported' => 'Extension Distributor wersijowy kontrolny system "$1" njepodpěruje.',
 	'extdist-git-invalid-dir' => 'Njeje móžno, zapis za wotwołanje přez Git zapodać',
 );
 
@@ -1539,7 +1539,7 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
-	'extdist-cvs-unsupported' => 'Extension Distributor non supporta le systema de controlo de versiones "$1".',
+	'extdist-vcs-unsupported' => 'Extension Distributor non supporta le systema de controlo de versiones "$1".',
 	'extdist-git-invalid-dir' => 'Impossibile entrar in le directorio pro le synchronisation sortiente (checkout) ab Git',
 );
 
@@ -1969,7 +1969,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
-	'extdist-cvs-unsupported' => 'Распространувачот на додатоци не ја поддржува контролниот систем на верзии „$1“.',
+	'extdist-vcs-unsupported' => 'Распространувачот на додатоци не ја поддржува контролниот систем на верзии „$1“.',
 	'extdist-git-invalid-dir' => 'Не можам да навлезам во директориумот за проверка на Git',
 );
 
@@ -2236,7 +2236,7 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
-	'extdist-cvs-unsupported' => 'Het is niet mogelijk om uitbreidingen te distribueren met behulp van het versioncontrolsysteem "$1" omdat dit niet wordt ondersteund.',
+	'extdist-vcs-unsupported' => 'Het is niet mogelijk om uitbreidingen te distribueren met behulp van het versioncontrolsysteem "$1" omdat dit niet wordt ondersteund.',
 	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
 );
 
@@ -2420,7 +2420,7 @@ Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzen
 
 Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zadaj je na stronie [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Pobierz inne rozszerzenie',
-	'extdist-cvs-unsupported' => 'Dystrybutor rozszerzenia nie obsługuje systemu kontroli wersji "$1".',
+	'extdist-vcs-unsupported' => 'Dystrybutor rozszerzenia nie obsługuje systemu kontroli wersji "$1".',
 	'extdist-git-invalid-dir' => 'Nie można wprowadzić katalogu git do pobrania',
 );
 
