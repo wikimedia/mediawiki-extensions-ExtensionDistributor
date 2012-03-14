@@ -8,7 +8,7 @@
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Extension Distributor',
-	'author'         => 'Tim Starling',
+	'author'         => array( 'Tim Starling', 'Sam Reed' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
 	'descriptionmsg' => 'extensiondistributor-desc',
 );

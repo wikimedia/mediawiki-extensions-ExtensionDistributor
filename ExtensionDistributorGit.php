@@ -37,6 +37,7 @@ class ExtensionDistributorGit extends ExtensionDistributorVCS {
 			return Status::newFatal( 'extdist-git-invalidsha1', $result );
 		}
 
+		// TODO: Should we truncate the 40 character sha1 hash to a more common/usable 7 chars?
 		return Status::newGood( $result );
 	}
 }

@@ -33,7 +33,7 @@ function svnValidate( $s ) {
  * @param $retval
  * @return string
  */
-function svnShellExec( $cmd, &$retval ) {
+function invokerShellExec( $cmd, &$retval ) {
 	$retval = 1; // error by default?
 	ob_start();
 	passthru( $cmd, $retval );
@@ -46,7 +46,7 @@ function svnShellExec( $cmd, &$retval ) {
  * @param $msg
  * @param bool $info
  */
-function svnError( $msg, $info = false ) {
+function invokerError( $msg, $info = false ) {
 	echo json_encode( array( 'error' => $msg, 'errorInfo' => $info ) );
 }
 
@@ -65,14 +65,14 @@ function svnExecute() {
 		$encCommand .= $buf;
 	}
 	if ( !$encCommand ) {
-		svnError( 'extdist-remote-error', "Invalid command." );
+		invokerError( 'extdist-remote-error', "Invalid command." );
 		return;
 	}
 
 	if ( $wgExtDistLockFile ) {
 		$lockFile = fopen( $wgExtDistLockFile, 'a' );
 		if ( !$lockFile ) {
-			svnError( 'extdist-remote-error', "Unable to open lock file." );
+			invokerError( 'extdist-remote-error', "Unable to open lock file." );
 			return;
 		}
 		$timeout = 3;
@@ -83,25 +83,26 @@ function svnExecute() {
 			sleep( 1 );
 		}
 		if ( $i == $timeout ) {
-			svnError( 'extdist-remote-error', "Lock wait timeout." );
+			invokerError( 'extdist-remote-error', "Lock wait timeout." );
 			return;
 		}
 	}
 
 	$command = json_decode( $encCommand );
-	if ( !isset( $command->version ) || !isset( $command->extension ) ) {
-		svnError( 'extdist-remote-error', "Missing version or extension parameter." );
+	if ( !isset( $command->version ) || !isset( $command->extension ) || !isset( $command->vcs ) ) {
+		invokerError( 'extdist-remote-error', "Missing version, extension or vcs parameter." );
 		return;
 	}
 	if ( !svnValidate( $command->version ) ) {
-		svnError( 'extdist-remote-error', "Invalid version parameter" );
+		invokerError( 'extdist-remote-error', "Invalid version parameter" );
 		return;
 	} elseif ( !svnValidate( $command->extension ) ) {
-		svnError( 'extdist-remote-error', "Invalid extension parameter" );
+		invokerError( 'extdist-remote-error', "Invalid extension parameter" );
 		return;
 	}
 	$version = $command->version;
 	$extension = $command->extension;
+	$vcs = $command->vcs;
 	$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
 	// Determine last changed revision in the checkout
@@ -119,10 +120,10 @@ function svnExecute() {
 	if ( $remoteRev != $localRev ) {
 		// Bad luck, we need to svn up
 		$cmd = "svn up --non-interactive " . escapeshellarg( $dir ) . " 2>&1";
-		$retval = - 1;
-		$result = svnShellExec( $cmd, $retval );
+		$retval = -1;
+		$result = invokerShellExec( $cmd, $retval );
 		if ( $retval ) {
-			svnError( 'extdist-svn-error', $result );
+			invokerError( 'extdist-svn-error', $result );
 			return;
 		}
 	}
@@ -138,12 +139,11 @@ function svnExecute() {
  * @return bool|string
  */
 function svnGetRev( $dir, &$url = null ) {
-
 	$cmd = "svn info --non-interactive --xml " . escapeshellarg( $dir );
-	$retval = - 1;
-	$result = svnShellExec( $cmd, $retval );
+	$retval = -1;
+	$result = invokerShellExec( $cmd, $retval );
 	if ( $retval ) {
-		svnError( 'extdist-svn-error', $result );
+		invokerError( 'extdist-svn-error', $result );
 		return false;
 	}
 
@@ -155,9 +155,52 @@ function svnGetRev( $dir, &$url = null ) {
 		$rev = false;
 	}
 	if ( !$rev || strpos( $rev, '/' ) !== false || strpos( $rev, "\000" ) !== false ) {
-		svnError( 'extdist-svn-parse-error', $result );
+		invokerError( 'extdist-svn-parse-error', $result );
 		return false;
 	}
 
 	return $rev;
+}
+
+/**
+ * @param $dir string
+ * @return bool|string
+ */
+function gitGetRev( $dir ) {
+	chdir( $dir );
+	$cmd = "git rev-parse HEAD";
+	$retval = -1;
+	$result = invokerShellExec( $cmd, $retval );
+	if ( $retval ) {
+		invokerError( 'extdist-git-error', $result );
+		return false;
+	}
+
+	// Trim trailing whitespace
+	$result = rtrim( $result );
+
+	// Check it looks like a SHA1 hash
+	if ( !preg_match( '/^[0-9a-f]{40}$/i', $result ) ) {
+		invokerError( 'extdist-git-invalidsha1', $result );
+		return false;
+	}
+
+	// TODO: Should we truncate the 40 character sha1 hash to a more common/usable 7 chars?
+	return $result;
+}
+
+/**
+ * @param $dir string
+ * @return bool
+ */
+function isSVNDir( $dir ) {
+	return is_dir( "$dir/.svn");
+}
+
+/**
+ * @param $dir string
+ * @return bool
+ */
+function isGitDir( $dir ) {
+	return is_dir( "$dir/.svn");
 }
