@@ -135,7 +135,7 @@ class ExtensionDistributorPage extends SpecialPage {
 			return;
 		}
 
-		if ( !$extensions['trunk'] ) {
+		if ( !isset( $extensions['trunk'] ) || !$extensions['trunk'] ) {
 			$wgOut->addWikiMsg( 'extdist-wc-empty' );
 			return;
 		}
