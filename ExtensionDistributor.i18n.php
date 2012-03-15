@@ -259,6 +259,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
  * @author Jim-by
  * @author Red Winged Duck
  * @author Reedy
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'extensiondistributor' => 'Загрузіць пашырэньне MediaWiki',
@@ -283,6 +284,8 @@ $messages['be-tarask'] = array(
 	'extdist-remote-invalid-response' => 'Няслушны адказ ад аддаленага кліента Subversion.',
 	'extdist-svn-error' => 'Памылка Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Немагчыма апрацаваць XML ад «svn info»: <pre>$1</pre>',
+	'extdist-git-error' => 'Памылка Git: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git павярнуў няслушны хэш SHA1 для бягучай вэрсіі: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar вярнуў код памылкі $1:',
 	'extdist-created' => "Быў створаны здымак вэрсіі <b>$2</b> пашырэньня <b>$1</b> MediaWiki <b>$3</b>. Загрузка пачнецца аўтаматычна праз 5 сэкундаў.
 
@@ -304,6 +307,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Калі Вы маеце якія-небудзь пытаньні пра сыстэму ўсталяваньня пашырэньня, калі ласка, задайце іх на старонцы [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атрымаць іншае пашырэньне',
+	'extdist-vcs-unsupported' => 'Пашырэньне Distributor не падтрымліваю сыстэму кантролю вэрсіяў «$1».',
+	'extdist-git-invalid-dir' => 'Не атрымалася адчыніць дырэкторыю для выкананьня git checkout',
 );
 
 /** Bulgarian (Български)
