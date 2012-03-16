@@ -2084,7 +2084,7 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
-	'extdist-cvs-unsupported' => 'Extension Distributor tidak menyokong sistem kawalan versi "$1".',
+	'extdist-vcs-unsupported' => 'Extension Distributor tidak menyokong sistem kawalan versi "$1".',
 );
 
 /** Erzya (Эрзянь)
