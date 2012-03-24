@@ -26,7 +26,7 @@ Most extensions work across multiple versions of MediaWiki, so if your MediaWiki
 		'extdist-svn-error' => 'Subversion encountered an error: <pre>$1</pre>',
 		'extdist-svn-parse-error' => 'Unable to process the XML from "svn info": <pre>$1</pre>',
 		'extdist-git-error' => 'Git encountered an error: <pre>$1</pre>',
-		'extdist-git-invalidsha1' => 'Git returned an invalid SHA1 hash for the current revision: <pre>$1<pre>',
+		'extdist-git-invalidsha1' => 'Git returned an invalid SHA1 hash for the current revision: <pre>$1</pre>',
 		'extdist-tar-error' => 'Tar returned exit code $1:',
 		'extdist-created' => "A snapshot of version <b>$2</b> of the <b>$1</b> extension for MediaWiki <b>$3</b> has been created. Your download should start automatically in 5 seconds.
 
