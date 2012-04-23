@@ -1241,6 +1241,8 @@ Di meischte Erwyterige schaffe mit vyyle MediaWiki-Versione zämme. Wänn Dyyni 
 	'extdist-remote-invalid-response' => 'Uugiltigi Antwort vum färngstyyrte Subversion-Client.',
 	'extdist-svn-error' => 'Subversion het e Fähler gmäldet: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XML-Date vu „svn info“ chenne nit verschafft wäre: <pre>$1</pre>',
+	'extdist-git-error' => 'Git het e Fähler gmäldet: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git het zue dr aktuälle Revision e nit giltige SHA1-Hashwärt uusgee: <pre>$1</pre>',
 	'extdist-tar-error' => 'S Tar-Programm het dr Beändigungscode $1 gliferet:',
 	'extdist-created' => "E Schnappschuss vu dr Version <b>$2</b> vu dr MediaWiki-Erwyterig <b>$1</b> isch aagleit wore (MediaWiki-Version <b>$3</b>). S Abelade fangt automatisch in 5 Sekunde aa.
 
@@ -1262,6 +1264,8 @@ Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <tt>LocalSettings.php
 
 Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'No ne Erwyterig hole',
+	'extdist-vcs-unsupported' => 'S Versionsverwaltigssyschtem „$1“ wird nit unterstitzt.',
+	'extdist-git-invalid-dir' => 'Uf s Verzeichnis zum Abruef iber Git het nit chenne zuegriffe wäre',
 );
 
 /** Hebrew (עברית)
