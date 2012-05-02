@@ -31,6 +31,6 @@ class ExtensionDistributorSVN extends ExtensionDistributorVCS {
 			return Status::newFatal( 'extdist-svn-parse-error', $result );
 		}
 
-		return Status::newGood( $rev );
+		return Status::newGood( "r$rev" );
 	}
 }

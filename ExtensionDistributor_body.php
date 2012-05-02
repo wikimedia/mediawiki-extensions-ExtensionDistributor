@@ -238,7 +238,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		// Determine tar name.
 		$cleanName = str_replace( '/', '_', $extension );
 		$versionName = $wgExtDistBranches[$version]['tarLabel'];
-		$tarName = "$cleanName-$versionName-r$rev.tar.gz"; // TODO: Do we still want r prefix for git? Probably not
+		$tarName = "$cleanName-$versionName-$rev.tar.gz";
 		$tarFile = "$wgExtDistTarDir/$tarName";
 
 		// Create the archive if it doesn't exist.
@@ -274,7 +274,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		$url = wfExpandUrl( "$wgExtDistTarUrl/$tarName", PROTO_CURRENT );
 
 		// Show a message
-		$wgOut->addWikiMsg( 'extdist-created', $extension, "r$rev",
+		$wgOut->addWikiMsg( 'extdist-created', $extension, $rev,
 			$this->getBranchName( $version ), $url, $tarName );
 		$wgOut->addHTML( '<p><br /><big>' .
 			'<a href="' . $this->getTitle()->escapeLocalUrl() . '">' .

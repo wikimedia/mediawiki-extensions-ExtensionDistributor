@@ -209,7 +209,7 @@ function gitExecute( $dir ) {
 	if ( !$newLocalRev ) {
 		return null;
 	}
-	return $newLocalRev;
+	return "r$newLocalRev";
 }
 
 /**
@@ -235,6 +235,5 @@ function gitGetRev( $dir ) {
 		return false;
 	}
 
-	// TODO: Should we truncate the 40 character sha1 hash to a more common/usable 7 chars?
-	return $result;
+	return substr( $result, 0, 7 );
 }
