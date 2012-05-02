@@ -110,7 +110,6 @@ function executeInvoker() {
 	}
 
 	$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
-
 	$remoteRev = null;
 	if ( $vcs === 'svn' ) {
 		$remoteRev = svnExecute( $dir );
@@ -202,7 +201,7 @@ function gitExecute( $dir ) {
 	$retval = -1;
 	$result = invokerShellExec( $cmd, $retval );
 	if ( $retval ) {
-		invokerError( 'extdist-svn-error', $result );
+		invokerError( 'extdist-git-error', $result );
 		return null;
 	}
 
