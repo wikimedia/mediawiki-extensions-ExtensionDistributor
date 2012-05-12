@@ -576,7 +576,7 @@ Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern d
 	'extdist-svn-error' => 'Subversion hat einen Fehler gemeldet: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Die XML-Daten von „svn info“ können nicht verarbeitet werden: <pre>$1</pre>',
 	'extdist-git-error' => 'Git hat einen Fehler gemeldet: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git hat zur aktuellen Revision einen ungültigen SHA1-Hashwert ausgegeben: <pre>$1<pre>',
+	'extdist-git-invalidsha1' => 'Git hat zur aktuellen Revision einen ungültigen SHA1-Hashwert ausgegeben: <pre>$1</pre>',
 	'extdist-tar-error' => 'Das Tar-Programm hat den Abbruchcode $1 ausgegeben:',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
@@ -714,6 +714,8 @@ Nejwěcej rozšyrjenjow funkcioněrujo w někotarych wersijach MediaWiki, jolic 
 	'extdist-remote-invalid-response' => 'Njepłaśiwe wótegrono wót zdalonego klienta Subversion.',
 	'extdist-svn-error' => 'Subversion jo starcył na zmólku: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Njejo móžno XML-daty ze "svn info" pśeźěłaś: <pre>$1</pre>',
+	'extdist-git-error' => 'Git jo starcył na zmólku: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git jo njepłaśiwu hash-gódnotu SHA1 za aktualnu wersiju wrośił: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar jo wróśił kod skóncenja $1:',
 	'extdist-created' => "Foto wobglědowaka wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.
 
@@ -735,6 +737,8 @@ Za tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php
 
 Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Druge rozšyrjenje wobstaraś',
+	'extdist-vcs-unsupported' => 'Extension Distributor njepódpěra wersijowy kontrolny system "$1".',
+	'extdist-git-invalid-dir' => 'Njejo móžno, zapis za wótwołanje pśez Git zapódaś',
 );
 
 /** Greek (Ελληνικά)
@@ -1180,7 +1184,7 @@ A maioría das extensións traballan con múltiples versións de MediaWiki, polo
 	'extdist-svn-error' => 'A subversión atopou un erro: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Non se pode procesar o XML de "svn info": <pre>$1</pre>',
 	'extdist-git-error' => 'O Git atopou un erro: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'O Git devolveu un hash SHA1 inválido para a revisión actual: <pre>$1<pre>',
+	'extdist-git-invalidsha1' => 'O Git devolveu un hash SHA1 inválido para a revisión actual: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar devolveu o código de saída $1:',
 	'extdist-created' => "Creouse unha fotografía da versión <b>$2</b> da extensión <b>$1</b> de MediaWiki <b>$3</b>. A súa descarga debería comezar automaticamente en 5 segundos.
 
@@ -1318,7 +1322,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
-	'extdist-cvs-unsupported' => 'מפיץ ההרחבות אינו תומך במערכת ניהול הגרסאות "$1".',
+	'extdist-vcs-unsupported' => 'מפיץ ההרחבות אינו תומך במערכת ניהול הגרסאות "$1".',
 	'extdist-git-invalid-dir' => 'לא התאפשרה כניסה לספרייה לצורך אחזור קבצים באמצעות git',
 );
 
@@ -1962,7 +1966,7 @@ $messages['mk'] = array(
 	'extdist-svn-error' => 'Настана грешка во Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Грешка при обработката на XML од „svn info“: <pre>$1</pre>',
 	'extdist-git-error' => 'Git наиде на грешка: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git даде неважечка SHA1-тараба за тековната ревизија: <pre>$1<pre>',
+	'extdist-git-invalidsha1' => 'Git даде неважечка SHA1-тараба за тековната ревизија: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar го даде кодот на грешката $1:',
 	'extdist-created' => "Направена е снимка од верзијата <b>$2</b> на додатокот <b>$1</b> за МедијаВики <b>$3</b>. Преземањето треба да започне автоматски за 5 секунди. URL-адресата за оваа снимка е:
 :$4
@@ -2066,7 +2070,7 @@ Kebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, 
 	'extdist-svn-error' => 'Subversion mendapati ralat: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML daripada "svn info": <pre>$1</pre>',
 	'extdist-git-error' => 'Git mengalami rakat: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git memulangkan hash SHA1 yang tidak sah untuk semakant terkini: <pre>$1<pre>',
+	'extdist-git-invalidsha1' => 'Git memulangkan hash SHA1 yang tidak sah untuk semakant terkini: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar memulangkan kod keluar $1:',
 	'extdist-created' => "Sebuah petikan bagi penyambung <b>$1</b> versi <b>$2</b> untuk MediaWiki <b>$3</b> telah dicipta. Proses muat turun akan dimulakan secara automatik dalam masa 5 saat.
 
@@ -2882,6 +2886,8 @@ Večina razširitev deluje na več različicah MediaWiki, zato v primeru, da va�
 	'extdist-remote-invalid-response' => 'Neveljavni odziv oddaljenega odjemalca subversion.',
 	'extdist-svn-error' => 'Subversion je naletel na napako: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ne morem obdelati XML iz »svn info«: <pre>$1</pre>',
+	'extdist-git-error' => 'Git je naletel na napako: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git je vrnil neveljaven odtis SHA1 za trenutno redakcijo: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar je vrnih izhodno kodo $1:',
 	'extdist-created' => "Posnetek različice <b>$2</b> razširitve <b>$1</b> za MediaWiki <b>$3</b> je ustvarjen. Vaš prenos bi se moral začeti samodejno v 5 sekundah.
 
@@ -2903,6 +2909,8 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dobi drugo razširitev',
+	'extdist-vcs-unsupported' => 'Razširjevalec razširitev ne podpira nadzornega sistema različice »$1«.',
+	'extdist-git-invalid-dir' => 'Ne morem vnesti mape za git checkout.',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
@@ -3176,12 +3184,11 @@ $messages['uk'] = array(
 	'extdist-wc-empty' => 'Зазначений в налаштуваннях каталог робочої копії не містить дистрибутивів розширень!',
 	'extdist-submit-extension' => 'Продовжити',
 	'extdist-current-version' => 'Версія в розробці (trunk)',
-	'extdist-choose-version' => '
-<big>Ви завантажуєте <b>$1</b> розширення.</big>
+	'extdist-choose-version' => '<big>Ви завантажуєте розширення <b>$1</b>.</big>
 
-Оберіть вашу версію MediaWiki.
+Оберіть Вашу версію MediaWiki.
 
-Більшість розширень працюють на кількох версіях MediaWiki, тому, якщо вашої версії MediaWiki тут немає, або якщо у Вас є потреба в функціях останньої версії розширення, спробуйте використати поточну версію.',
+Більшість розширень працюють на кількох версіях MediaWiki, тому, якщо вашої версії MediaWiki тут немає, або якщо у Вас є потреба в функціях найновішої версії розширення, спробуйте використати поточну версію.',
 	'extdist-no-versions' => 'Обране розширення ($1) не доступне в жодній версії!',
 	'extdist-submit-version' => 'Продовжити',
 	'extdist-no-remote' => "Не вдається зв'язатись з віддаленим клієнтом субверсії.",
@@ -3262,7 +3269,7 @@ Se ti gà qualche domanda riguardo el sistema de distribussion de sta estension,
 	'extdist-want-more' => "Toli n'antra estension",
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
@@ -3275,21 +3282,21 @@ $messages['vep'] = array(
  * @author Vinhtantran
  */
 $messages['vi'] = array(
-	'extensiondistributor' => 'Tải về bộ mở rộng MediaWiki',
-	'extensiondistributor-desc' => 'Bộ mở rộng để phân phối các bản lưu trữ ảnh của các bộ mở rộng',
+	'extensiondistributor' => 'Tải về phần mở rộng MediaWiki',
+	'extensiondistributor-desc' => 'Phần mở rộng để phân phối các bản lưu trữ ảnh của các phần mở rộng',
 	'extdist-not-configured' => 'Xin hãy cấu hình $wgExtDistTarDir và $wgExtDistWorkingCopy',
 	'extdist-wc-missing' => 'Không tồn tại thư mục sao chép hiện hành đã được cấu hình!',
-	'extdist-no-such-extension' => 'Không có bộ mở rộng "$1"',
-	'extdist-no-such-version' => 'Bộ mở rộng "$1" không tồn tại trong phiên bản "$2".',
-	'extdist-choose-extension' => 'Chọn bộ mở rộng bạn muốn tải về:',
-	'extdist-wc-empty' => 'Thư mục sao chép hiện hành được cấu hình không có bộ mở rộng nào phân phối được!',
+	'extdist-no-such-extension' => 'Không có phần mở rộng “$1”',
+	'extdist-no-such-version' => 'Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.',
+	'extdist-choose-extension' => 'Chọn phần mở rộng bạn muốn tải về:',
+	'extdist-wc-empty' => 'Thư mục sao chép hiện hành được cấu hình không có phần mở rộng nào phân phối được!',
 	'extdist-submit-extension' => 'Tiếp tục',
 	'extdist-current-version' => 'Phiên bản phát triển (trunk)',
-	'extdist-choose-version' => '<big>Bạn đang tải về bộ mở rộng <b>$1</b>.</big>
+	'extdist-choose-version' => '<big>Bạn đang tải về phần mở rộng <b>$1</b>.</big>
 
 Chọn phiên bản MediaWiki của bạn.
 
-Phần lớn bộ mở rộng có thể chạy được trên nhiều phiên bản MediaWiki, do đó nếu phiên bản MediaWiki của bạn không được liệt kê ở đây, hoặc nếu bạn cần sử dụng các tính năng mở rộng mới nhất, hãy thử sử dụng phiên bản hiện hành.',
+Phần lớn phần mở rộng có thể chạy được trên nhiều phiên bản MediaWiki, do đó nếu phiên bản MediaWiki của bạn không được liệt kê ở đây, hoặc nếu bạn cần sử dụng các tính năng mở rộng mới nhất, hãy thử sử dụng phiên bản hiện hành.',
 	'extdist-no-versions' => 'Phiên bản được chọn ($1) không có sẵn trong bất kỳ phiên bản nào!',
 	'extdist-submit-version' => 'Tiếp tục',
 	'extdist-no-remote' => 'Không thể liên hệ với máy khách phiên bản con ở xa.',
@@ -3297,6 +3304,8 @@ Phần lớn bộ mở rộng có thể chạy được trên nhiều phiên b�
 	'extdist-remote-invalid-response' => 'Phản hồi không hợp lệ từ máy khách phiên bản con từ xa.',
 	'extdist-svn-error' => 'Phiên bản con gặp một lỗi: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Không thể xử lý XML từ "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git gặp lỗi: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git cho ra giá trị băm SHA1 không hợp lệ đối với thay đổi hiện hành: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar trả về mã thoát $1:',
 	'extdist-created' => "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải về trong 5 giây nữa.
 
@@ -3312,12 +3321,14 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Trên Windows, bạn có thể sử dụng [http://www.7-zip.org/ 7-zip] để giải nén các tập tin.
 
-Nếu wiki của bạn nằm ở máy chủ từ xa, hãy bung các tập tin đó vào một thư mục tạm trên máy tính hiện tại của bạn, rồi sau đó tải '''tất cả''' các tập tin đã giải nén lên thư mục chứa bộ mở rộng trên máy chủ.
+Nếu wiki của bạn nằm ở máy chủ từ xa, hãy bung các tập tin đó vào một thư mục tạm trên máy tính hiện tại của bạn, rồi sau đó tải '''tất cả''' các tập tin đã giải nén lên thư mục chứa phần mở rộng trên máy chủ.
 
 Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần mở rộng trong LocalSettings.php. Tài liệu đi kèm với phần mở rộng sẽ có những hướng dẫn về cách thực hiện điều này.
 
 Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
-	'extdist-want-more' => 'Lấy một bộ mở rộng khác',
+	'extdist-want-more' => 'Lấy một phần mở rộng khác',
+	'extdist-vcs-unsupported' => 'Trình phân phối Phần mở rộng không hỗ trợ hệ thống quản lý phiên bản “$1”.',
+	'extdist-git-invalid-dir' => 'Không thể mở thư mục để thực hiện git checkout',
 );
 
 /** Yiddish (ייִדיש)
@@ -3387,6 +3398,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  * @author Liangent
  * @author Shinjiman
  * @author Wmr89502270
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'extensiondistributor' => '下载MediaWiki扩展',
@@ -3411,6 +3423,8 @@ $messages['zh-hans'] = array(
 	'extdist-remote-invalid-response' => '远程Subversion客户端发出了无效回复。',
 	'extdist-svn-error' => 'Subversion 遇到一个错误: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '不能够处理"svn info"的 XML: <pre>$1</pre>',
+	'extdist-git-error' => 'Git 遇到一个错误：<pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git 对当前修订返回了一个无效SHA1散列：<pre>$1</pre>',
 	'extdist-tar-error' => 'Tar 返回了结束码 $1：',
 	'extdist-created' => "MediaWiki <b>$3</b>版本的<b>$1</b>扩展的<b>$2</b>版本已创建。下载将在5秒内自动开始。
 
@@ -3432,6 +3446,8 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 
 如果您对这个插件获取系统有任何建议，请前去[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '下载其他扩展',
+	'extdist-vcs-unsupported' => '扩展分发器不支持“$1”版本控制系统。',
+	'extdist-git-invalid-dir' => 'git checkout 无法进入目录',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
