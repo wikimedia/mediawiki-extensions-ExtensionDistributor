@@ -204,6 +204,59 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'الحصول على امتداد آخر',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'extensiondistributor' => 'Descargar estensión de MediaWiki',
+	'extensiondistributor-desc' => "Estensión pa distribuir archivos de instantánees d'estensiones",
+	'extdist-not-configured' => 'Por favor configura $wgExtDistTarDir y $wgExtDistWorkingCopy',
+	'extdist-wc-missing' => '¡El direutoriu de copia de trabayu configuráu nun esiste!',
+	'extdist-no-such-extension' => 'Nun esiste la estensión «$1»',
+	'extdist-no-such-version' => 'La estensión «$1» nun esiste na versión «$2».',
+	'extdist-choose-extension' => 'Seleiciona la estensión que quies descargar:',
+	'extdist-wc-empty' => '¡El direutoriu de copia de trabayu configuráu nun tien estensiones distribuibles!',
+	'extdist-submit-extension' => 'Siguir',
+	'extdist-current-version' => 'Versión en desendolcu (trunk)',
+	'extdist-choose-version' => "<big>Tas descargando la estensión <b>$1</b>.</big>
+
+Seleiciona la to versión de MediaWiki.
+
+La mayor parte de les estensiones funcionen con múltiples versiones de Mediawiki, de mou que si la to versión de Mediawiki nun ta equí, o si necesites les caberes carauterístiques de les estensiones. trata d'usar la versión actual.",
+	'extdist-no-versions' => '¡La estensión seleicionada ($1) nun ta disponible en denguna versión!',
+	'extdist-submit-version' => 'Siguir',
+	'extdist-no-remote' => 'Nun se pudo entrar en contautu col cliente remotu de subversion.',
+	'extdist-remote-error' => 'Error del cliente remotu de subversion: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Respuesta inválida del cliente remotu de subversion.',
+	'extdist-svn-error' => 'Subversion alcontró un error: <pre>$1</pre>',
+	'extdist-svn-parse-error' => 'Nun se pudo procesar el XML de "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git alcontró un error: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git devolvió un hash SHA1 inválidu pa la revisión actual: <pre>$1</pre>',
+	'extdist-tar-error' => "Tar devolvió'l códigu de salida $1:",
+	'extdist-created' => "Se creó una instantánea de la versión <b>$2</b> de la estensión <b>$1</b> de MediaWiki <b>$3</b>. Tu descarga debería comenzar de mou automáticu en 5 segundos.
+
+La URL d'esta instantánea ye:
+:$4
+Se pue usar pa la descarga nel intre a un sirvidor; pero nun la guardes nun marcador, porque'l conteníu nun s'anovará, y pue desaniciase nuna fecha posterior.
+
+L'archivu tar tendría d'estrayese nel to direutoriu d'estensiones. Por exemplu, nun sistema operativu tipu Unix:
+
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
+
+En Windows, pues usar [http://www.7-zip.org/ 7-zip] pa estrayer los ficheros.
+
+Si la to wiki ta nun sirvidor remotu, estrái los ficheros nun direutoriu temporal del to ordenador, y llueu xube '''tolos''' ficheros estrayíos al direutoriu d'estensiones del sirvidor.
+
+Después d'estrayer los ficheros, necesitarás rexistrar la estensión en LocalSettings.php. La documentación de la estensión debería tener instrucciones de cómo facelo.
+
+Si tienes cualesquier entruga tocante a esti sistema de distribución d'estensiones, por favor visita [[Extension talk:ExtensionDistributor]].",
+	'extdist-want-more' => 'Descargar otra estensión',
+	'extdist-vcs-unsupported' => "El Distribuidor d'estensiones nun tien sofitu pal sistema de control de versiones «$1».",
+	'extdist-git-invalid-dir' => 'Nun se pudo entrar al direutoriu pa la comprobación git',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
