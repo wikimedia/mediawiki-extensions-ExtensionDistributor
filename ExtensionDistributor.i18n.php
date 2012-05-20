@@ -1702,6 +1702,8 @@ Molte estensioni funzionano su più versioni di MediaWiki, quindi se la tua vers
 	'extdist-remote-invalid-response' => 'Risposta non valida dal client subversion remoto.',
 	'extdist-svn-error' => 'Subversion ha incontrato un errore: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Impossibile elaborare l\'XML da "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git ha incontrato un errore: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git ha restituito un hash SHA1 non valido per la revisione attuale: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar ha restituito il seguente exitcode $1:',
 	'extdist-created' => "Un'istantanea della versione <b>$2</b> dell'estensione <b>$1</b> per MediaWiki <b>$3</b> è stata creata. Il tuo download dovrebbe partire automaticamente fra 5 secondi.
 
@@ -1723,6 +1725,8 @@ Dopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalS
 
 Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione vedi [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Prendi un'altra estensione",
+	'extdist-vcs-unsupported' => 'Extension Distributor non supporta il sistema di controllo versioni "$1".',
+	'extdist-git-invalid-dir' => 'Impossibile accedere alla directory per git checkout',
 );
 
 /** Japanese (日本語)
