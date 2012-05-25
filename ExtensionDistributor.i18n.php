@@ -560,6 +560,8 @@ Většina rozšíření funguje na více verzích MediaWiki, takže pokud tu va�
 	'extdist-remote-invalid-response' => 'Neplatná odpověď od vzdáleného klienta Subversion.',
 	'extdist-svn-error' => 'Subversion narazil na chybu: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nebylo možné zpracovat XML z výstupu „svn info”: <pre>$1</pre>',
+	'extdist-git-error' => 'Git narazil na chybu: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git vrátil neplatný SHA1 haš aktuální revize: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar sknočil s návratovým kódem $1:',
 	'extdist-created' => "Balíček rozšíření <b>$1</b> ve verzi <b>$2</b> pro MediaWiki <b>$3</b> byl vytvořen. Jeho stahování by se mělo automaticky spustit za pět sekund.
 
@@ -581,6 +583,8 @@ Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <tt>Lo
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
+	'extdist-vcs-unsupported' => 'Distributor rozšíření nepodporuje verzovací systém „$1“.',
+	'extdist-git-invalid-dir' => 'Nepodařilo se vstoupit do adresáře pro pracovní kopii z gitu',
 );
 
 /** Danish (Dansk)
