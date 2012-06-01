@@ -2701,6 +2701,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Kaganer
  * @author MaxSem
  * @author Александр Сигачёв
  */
@@ -2727,6 +2728,8 @@ $messages['ru'] = array(
 	'extdist-remote-invalid-response' => 'Ошибочный ответ клиента subversion.',
 	'extdist-svn-error' => 'Ошибка Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ошибка обработки XML, возвращённого командой «svn info»: <pre>$1</pre>',
+	'extdist-git-error' => 'Git обнаружил ошибку:<pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git вернул недопустимый хэш SHA1 для текущей ревизии:<pre>$1</pre>',
 	'extdist-tar-error' => 'Tar вернул код ошибки $1:',
 	'extdist-created' => "Создан снимок версии <b>$2</b> расширения <b>$1</b> для MediaWiki <b>$3</b>. Загрузка должна начаться автоматически через 5 секунд.
 
