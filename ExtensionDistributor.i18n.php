@@ -2700,7 +2700,7 @@ $messages['roa-tara'] = array(
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Kaganer
  * @author MaxSem
  * @author Александр Сигачёв
