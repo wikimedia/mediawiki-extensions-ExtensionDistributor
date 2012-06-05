@@ -1738,6 +1738,7 @@ Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione
  * @author Fryed-peach
  * @author Marine-Blue
  * @author Ohgi
+ * @author Shirayuki
  * @author Whym
  */
 $messages['ja'] = array(
@@ -1756,7 +1757,7 @@ $messages['ja'] = array(
 あなたが利用しているMediaWikiのバージョンを選択してください。
 
 多くの拡張機能は複数のバージョンで利用できますが、あなたの使用しているMediaWikiのバージョンが下記にない場合、最新版にアップデートする必要があります。',
-	'extdist-no-versions' => '選択された拡張機能($1)は全てのバージョンで利用できません！',
+	'extdist-no-versions' => '選択された拡張機能($1)はどのバージョンでも利用できません！',
 	'extdist-submit-version' => '選択',
 	'extdist-no-remote' => 'subversionクライアントと接続できませんでした。',
 	'extdist-remote-error' => 'subversionクライアントがエラーを返しました: <pre>$1</pre>',
@@ -1778,9 +1779,9 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用できます。
 
-ウィキを遠隔サーバーに設置している場合、ローカル・コンピュータの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''全ての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。
+ウィキを遠隔サーバーに設置している場合、ローカル・コンピュータの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''すべての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。
 
-ファイルを全て展開したら、その拡張機能を LocalSettings.php へ登録する必要があります。具体的な作業手順は各拡張機能のドキュメントで解説されています。
+ファイルをすべて展開したら、その拡張機能を LocalSettings.php へ登録する必要があります。具体的な作業手順は各拡張機能のドキュメントで解説されています。
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
