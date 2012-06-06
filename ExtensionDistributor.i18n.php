@@ -1868,12 +1868,12 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  */
 $messages['ksh'] = array(
 	'extensiondistributor' => 'MediaWiki Zosatzprojramm erunger lade',
-	'extensiondistributor-desc' => 'Zosazprojramm för Arschive met Zosazprojramme ze verteile.',
+	'extensiondistributor-desc' => 'Zosazprojramm för Arschive met Zosazprojramme ze verdeile.',
 	'extdist-not-configured' => 'Bes esu joot un donn <code>$wgExtDistTarDir</code> un <code>$wgExtDistWorkingCopy</code> setze.',
 	'extdist-wc-missing' => 'Dat Ärbeitsverzeischnes för de Kopije es nit do.',
-	'extdist-no-such-extension' => 'Ene Zosatz „$1“ es nit do.',
-	'extdist-no-such-version' => 'Ene Zosatz „$1“ es nit do, en de Version „$2“.',
-	'extdist-choose-extension' => 'Sök Der us, wat för ene Zosatz De erunger lade wells:',
+	'extdist-no-such-extension' => 'Ene Zosatz „$1“ es nit doh.',
+	'extdist-no-such-version' => 'Dä Zosatz „$1“ en dä Version „$2“ es nit doh.',
+	'extdist-choose-extension' => 'Sök Der us, wat för ene Zosatz De eronger laade wells:',
 	'extdist-wc-empty' => 'En dämm Ärbeitsverzeischnes sin kein Zosätz dren, di mer verdeile künnte.',
 	'extdist-submit-extension' => 'Wigger',
 	'extdist-current-version' => 'De aktoelle Entwecklungs-Version (<i lang="en">trunk</i>)',
@@ -1889,6 +1889,8 @@ De miißte Zosätz fungxjeneere met diverse Versione fun MediaWiki, alsu falls D
 	'extdist-remote-invalid-response' => 'Et <i lang="en">subversion (svn)</i> op däm andere Rääschner hät en Antwoot jejovve, met dä künne mer nix aanfange.',
 	'extdist-svn-error' => 'Et <i lang="en">subversion (svn)</i> hät ene Fähler jefonge: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'De XML-Date fun <code lang="en">svn info</code> kunnte mer nit verärrbeide: <pre>$1</pre>',
+	'extdist-git-error' => 'Et <ilang="en">Git</i> hädd ene Fähler jemäldt: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Et <i lang="en">Git</i> hädd ene kappodde <code lang="en">SHA1</code>-Prööfsumm för de neuste Version jemäldt: <pre>$1</pre>',
 	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:',
 	'extdist-created' => 'En Schnappschoß-Version fun dä Version <b>$2</b> fun däm Zosatz „<b>$1</b>“ för MediaWiki Version <b>$3</b> eß aanjelaat woode. Et ErungerLade sull automattesch loß jonn, in fönnef Sekunde.
 
@@ -1910,6 +1912,8 @@ Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz 
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Noch ene Zosatz holle',
+	'extdist-vcs-unsupported' => 'Mer künne met däm Syßteem „$1“ för de Versione ze verwallde nit ömjonn.',
+	'extdist-git-invalid-dir' => 'Mer künne nit en et reschteje Verzeischness eren für met <i lang="en">Git</i> jät ze holle.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
