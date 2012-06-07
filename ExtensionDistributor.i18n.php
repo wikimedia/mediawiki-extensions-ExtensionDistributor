@@ -1814,6 +1814,7 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'extensiondistributor' => '미디어위키 확장 기능 내려받기',
@@ -1837,8 +1838,10 @@ $messages['ko'] = array(
 	'extdist-no-remote' => '외부 서브버전 클라이언트와 연결할 수 없습니다.',
 	'extdist-remote-error' => '외부 서브버전 클라이언트에서 오류 발생: <pre>$1</pre>',
 	'extdist-remote-invalid-response' => '원격 서브버전 클라이언트에서 잘못된 응답이 도착했습니다.',
-	'extdist-svn-error' => 'SVN에서 오류가 발생하렸습니다: <pre>$1</pre>',
+	'extdist-svn-error' => 'SVN에서 오류가 발생하였습니다: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"svn info"의 XML을 처리할 수 없습니다: <pre>$1</pre>',
+	'extdist-git-error' => 'Git에서 오류가 발생하였습니다: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git에서 현재 판에 대한 잘못된 SHA1 해시가 반환되었습니다: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar에서 종료 코드 $1을(를) 반환하였습니다:',
 	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 생성되었습니다. 5초 후에 다운로드가 자동적으로 실행될 것입니다.
 
@@ -1860,6 +1863,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서를 방문해주십시오.",
 	'extdist-want-more' => '다른 확장 기능 내려받기',
+	'extdist-vcs-unsupported' => '확장 기능 배포자는 "$1" 버전 컨트롤 시스템을 지원하지 않습니다.',
+	'extdist-git-invalid-dir' => 'git 확인을 위한 디렉토리를 입력할 수 없습니다',
 );
 
 /** Colognian (Ripoarisch)
