@@ -204,7 +204,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'الحصول على امتداد آخر',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -364,7 +364,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-git-invalid-dir' => 'Не атрымалася адчыніць дырэкторыю для выкананьня git checkout',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Turin
  */
@@ -403,7 +403,7 @@ $messages['bn'] = array(
 	'extdist-submit-version' => 'অগ্রসর হোন',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Gwendal
@@ -455,7 +455,7 @@ M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [
 	'extdist-want-more' => 'Tapout un astenn all',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -504,7 +504,7 @@ Ako imate nekih pitanja oko ovog sistema distribucije proširenja, molimo pogled
 	'extdist-want-more' => 'Nađi slijedeće proširenje',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  * @author Solde
  */
@@ -533,7 +533,7 @@ La majoria d'extensions funcionen a les diferents versions de Mediawiki, així q
 	'extdist-want-more' => 'Descarrega una altra extensió',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
  */
@@ -587,7 +587,7 @@ Případné dotazy k tomuto systému distribuce rozšíření můžete klást na
 	'extdist-git-invalid-dir' => 'Nepodařilo se vstoupit do adresáře pro pracovní kopii z gitu',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Peter Alberti
  */
 $messages['da'] = array(
@@ -900,7 +900,7 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
 	'extdist-want-more' => 'Akiri pluan kromprogramon',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Bernardom
  * @author Crazymadlover
@@ -960,7 +960,7 @@ Si tienes cualquier duda sobre este sistema de distribución de extensiones, por
 	'extdist-git-invalid-dir' => 'No se ha podido entrar al directorio para la comprobación de Git',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Ker
  * @author Pikne
@@ -983,7 +983,7 @@ Suurem osa laiendusi töötab erinevate MediaWiki versioonidega. Kui sinu MediaW
 	'extdist-want-more' => 'Hangi teine laiendus',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
@@ -1045,7 +1045,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'دریافت در قالبی دیگر',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nedergard
  * @author Nike
@@ -1098,7 +1098,7 @@ Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension t
 	'extdist-want-more' => 'Hae toinen laajennus',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Grondin
  * @author IAlex
@@ -1158,7 +1158,7 @@ Si vous avez des questions concernant ce système de distribution des extensions
 	'extdist-git-invalid-dir' => "Impossible d'entrer dans le répertoire pour une inspection de Git",
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1207,7 +1207,7 @@ Se vos avéd des quèstions sur cél sistèmo de distribucion de les èxtensions
 	'extdist-want-more' => 'Avêr una ôtra èxtension',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  */
 $messages['fur'] = array(
@@ -1407,7 +1407,7 @@ $messages['hi'] = array(
 	'extdist-want-more' => 'अन्य एक्सटेन्शन पाएँ',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Ex13
  * @author Herr Mlinka
  * @author SpeedyGonsales
@@ -1511,7 +1511,7 @@ Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[
 	'extdist-git-invalid-dir' => 'Njeje móžno, zapis za wotwołanje přez Git zapodać',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  * @author Reedy
@@ -1563,7 +1563,7 @@ Ha bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, ker
 	'extdist-want-more' => 'Másik kiterjesztés letöltése',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1676,7 +1676,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 Dapatkan ekstensi lain',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  * @author McDutchie
@@ -1997,7 +1997,7 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 	'extdist-want-more' => "Nag 'n uitbreiding downloade",
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -2009,7 +2009,7 @@ $messages['lt'] = array(
 	'extdist-want-more' => 'Gauti kitą plėtinį',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -2332,7 +2332,7 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Reedy
@@ -2383,7 +2383,7 @@ Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http
 	'extdist-want-more' => 'Hent fleire utvidingar',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  * @author Reedy
  */
@@ -2459,7 +2459,7 @@ $messages['pdc'] = array(
 	'extdist-submit-version' => 'Weider',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Derbeth
  * @author Leinad
@@ -2566,7 +2566,7 @@ S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'
 	'extdist-want-more' => "Pija n'àutra estension",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -2617,7 +2617,7 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 	'extdist-want-more' => 'Obter outra extensão',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  */
@@ -2667,7 +2667,7 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 	'extdist-want-more' => 'Obter outra extensão',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -2692,7 +2692,7 @@ Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci
 	'extdist-want-more' => 'Obține altă extensie',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  * @author Reder
  */
@@ -2812,7 +2812,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'Скачати інше росшырїня',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -2885,7 +2885,7 @@ $messages['si'] = array(
 	'extdist-want-more' => 'වෙනත් විස්තිර්ණයක් ලබාගන්න',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -2934,7 +2934,7 @@ Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navšt�
 	'extdist-want-more' => 'Stiahnuť iné rozšírenie',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -2987,7 +2987,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 	'extdist-git-invalid-dir' => 'Ne morem vnesti mape za git checkout.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -2997,14 +2997,14 @@ $messages['sr-ec'] = array(
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'extdist-submit-extension' => 'Produži',
 	'extdist-submit-version' => 'Produži',
 	'extdist-want-more' => 'Preuzmi drugu ekstenziju',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author M.M.S.
  * @author WikiPhoenix
@@ -3241,7 +3241,7 @@ Eğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Ex
 	'extdist-want-more' => 'Başka eklenti al',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author NickK
  * @author Prima klasy4na
@@ -3293,7 +3293,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'Завантажити інше розширення',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  * @author Reedy
  */
@@ -3466,7 +3466,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => '攞另一個擴展',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  * @author Hzy980512
  * @author Liangent
@@ -3524,7 +3524,7 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 	'extdist-git-invalid-dir' => 'git checkout 无法进入目录',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Liangent
  * @author Mark85296341
