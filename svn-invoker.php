@@ -197,6 +197,15 @@ function gitExecute( $dir ) {
 
 	// TODO: Need to check remote before attempting update, bit daft unconditionally pulling
 	chdir( $dir );
+
+	$cmd = "git checkout master -q";
+	$retval = -1;
+	$result = invokerShellExec( $cmd, $retval );
+	if ( $retval ) {
+		invokerError( 'extdist-git-error', $result );
+		return null;
+	}
+
 	$cmd = "git pull -q";
 	$retval = -1;
 	$result = invokerShellExec( $cmd, $retval );
@@ -209,7 +218,7 @@ function gitExecute( $dir ) {
 	if ( !$newLocalRev ) {
 		return null;
 	}
-	return "r$newLocalRev";
+	return $newLocalRev;
 }
 
 /**
