@@ -307,7 +307,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 	'extdist-want-more' => 'Башҡа киңәйеү алырға',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -745,7 +745,7 @@ Eke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension tal
 	'extdist-want-more' => 'Yewna ekstensiyon bigere',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -1214,7 +1214,7 @@ $messages['fur'] = array(
 	'extdist-submit-extension' => 'Va indevant',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -1458,7 +1458,7 @@ Ukoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu st
 	'extdist-want-more' => 'Dohvati drugu ekstenziju',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -2763,7 +2763,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => 'Скачать другое расширение',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
