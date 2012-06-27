@@ -11,7 +11,7 @@ if ( php_sapi_name() !== 'cli' ) {
 
 $wgExtDistWorkingCopy = false;
 $wgExtDistLockFile = false;
-$confFile = dirname( __FILE__ ) . '/svn-invoker.conf';
+$confFile = realpath( dirname( $_SERVER["SCRIPT_FILENAME"] ) ) . '/svn-invoker.conf';
 if ( !file_exists( $confFile ) ) {
 	echo "Error: please create svn-invoker.conf based on svn-invoker.conf.sample\n";
 	exit( 1 );
@@ -89,6 +89,13 @@ function svnUpdate( $path ) {
  */
 function gitUpdate( $path ) {
 	chdir( $path );
+	$cmd = "git checkout master -q";
+	$retval = -1;
+	system( $cmd, $retval );
+	if ( $retval ) {
+		echo "Error executing command: $cmd\n";
+		exit( 1 );
+	}
 	$cmd = "git pull -q";
 	$retval = -1;
 	system( $cmd, $retval );
