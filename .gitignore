@@ -1,1 +1,5 @@
+.svn
+*~
+*.kate-swp
+.*.swp
 svn-invoker.conf
