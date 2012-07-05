@@ -3163,10 +3163,12 @@ Gumagawa sa kahabaan ng maramihang mga bersyon ng MediaWiki ang karamihan sa mga
 	'extdist-no-versions' => 'Hindi makukuha mula sa loob ng anumang bersyon ang napiling karugtong na ($1)!',
 	'extdist-submit-version' => 'Ipagpatuloy',
 	'extdist-no-remote' => 'Hindi nagawang makipag-ugnayan sa malayong kliyente ng kabahaging bersyon.',
-	'extdist-remote-error' => 'Kamalian mula sa malayong kliyente ng kabahaging bersyon: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Hindi tanggap na tugon mula sa malayong kliyente ng kabahaging bersyon.',
+	'extdist-remote-error' => 'Kamalian mula sa malayong kliyente ng Tagapamudmod ng Dugtong: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Hindi katanggap-tanggap na tugon mula sa malayong kliyente ng Tagapamudmod ng Dugtong.',
 	'extdist-svn-error' => 'Nakaranas ng isang kamalian ang kabahaging bersyon: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Hindi naisagawa ang XML mula sa "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Nakaranas ng isang kamalian ang Git: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Nagbalik ang Git ng isang hindi katanggap-tanggap na tadtad ng SHA1 para sa kasalukuyang rebisyon: <pre>$1</pre>',
 	'extdist-tar-error' => "Ibinalik ng pormat na ''tar'' ang kodigo sa paglabas na $1:",
 	'extdist-created' => "Nalikha ang isang kuhang larawan ng bersyong <b>$2</b> ng dugtong na <b>$1</b> para sa MediaWiki na <b>$3</b>. Dapat na kusang magsimula ang iyong pagkakargang paibaba sa loob ng 5 mga segundo.
 
@@ -3188,6 +3190,8 @@ Pagkaraan mong mahango ang mga talaksan, kailangan mong ipatala ang mga dugtong 
 
 Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng dugtong na ito, mangyaring pumunta sa [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Kumuha ng iba pang karugtong',
+	'extdist-vcs-unsupported' => 'Hindi sinusuportahan ng Tagapamudmod ng Dugtong ang sistema ng bersiyong pantaban na "$1".',
+	'extdist-git-invalid-dir' => 'Hindi nagawang ipasok ang direktoryo para sa pagpapatalang palabas ng Git',
 );
 
 /** Turkish (Türkçe)
