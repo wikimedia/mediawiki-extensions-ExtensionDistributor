@@ -996,6 +996,7 @@ $messages['eu'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Huji
+ * @author Leyth
  * @author Mjbmr
  * @author Wayiran
  */
@@ -1022,6 +1023,7 @@ $messages['fa'] = array(
 	'extdist-remote-invalid-response' => 'پاسخ غیر مجاز از طرف برنامهٔ ساب‌ورژن خارجی.',
 	'extdist-svn-error' => 'ساب‌ورژن دچار یک خطا شد: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'امکان پردازش اکس‌ام‌ال دریافتی از «svn info» وجود ندارد: <pre>$1</pre>',
+	'extdist-git-error' => 'ساب‌ورژن دچار یک خطا شد: <pre>$1</pre>',
 	'extdist-tar-error' => 'تار خطای خروج $1 برگرداند:',
 	'extdist-created' => "یک عکس‌فوری از نسخهٔ <b>$2</b> افزونهٔ <b>$1</b> برای مدیاویکی <b>$3</b> ایجاد شده است. بارگیری شما باید تا ۵ ثانیه به صورت خودکار آغاز گردد.
 
@@ -1127,8 +1129,8 @@ La plupart des extensions tourne sur différentes versions de MediaWiki. Aussi, 
 	'extdist-no-versions' => 'L’extension sélectionnée ($1) n’est disponible dans aucune version !',
 	'extdist-submit-version' => 'Continuer',
 	'extdist-no-remote' => 'Impossible de contacter le client subversion distant.',
-	'extdist-remote-error' => 'Erreur du client subversion distant : <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Réponse incorrecte depuis le client subversion distant.',
+	'extdist-remote-error' => "Erreur du client du distributeur d'extension distant: <pre>$1</pre>",
+	'extdist-remote-invalid-response' => "Réponse non valide du client du distributeur d'extension distant.",
 	'extdist-svn-error' => 'Subversion a rencontré une erreur : <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Impossible de traiter les données XML retournées par « svn info » : <pre>$1</pre>',
 	'extdist-git-error' => 'Git a rencontré une erreur :<pre>$1</pre>',
