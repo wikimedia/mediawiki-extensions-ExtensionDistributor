@@ -257,7 +257,7 @@ Si tienes cualesquier entruga tocante a esti sistema de distribución d'estensio
 	'extdist-git-invalid-dir' => 'Nun se pudo entrar al direutoriu pa la comprobación git',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -2168,7 +2168,7 @@ Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung i
 	'extdist-git-invalid-dir' => 'Tidak dapat memasukkan direktori untuk daftar keluar git',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -2176,7 +2176,7 @@ $messages['myv'] = array(
 	'extdist-submit-version' => 'Поладомс',
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author EivindJ
  * @author Nghtwlkr
  */
@@ -2706,7 +2706,7 @@ $messages['roa-tara'] = array(
 	'extdist-no-versions' => "L'estenzione scacchiate ($1) non g'è disponibbele pe nisicuna versione!",
 	'extdist-submit-version' => 'Condinue',
 	'extdist-no-remote' => "Non ge pozze condattà 'u cliende remote d'a sotteversione.",
-	'extdist-remote-error' => "Errore da 'u cliende remote d'a sotteversione: <pre>$1</pre>",
+	'extdist-remote-error' => "Errore da 'u cliende remote de l'Estenzione d'u Distributore: <pre>$1</pre>",
 	'extdist-tar-error' => "Tar ha turnate 'nu codece de assute $1:",
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
 );
@@ -3348,7 +3348,7 @@ Se ti gà qualche domanda riguardo el sistema de distribussion de sta estension,
 	'extdist-want-more' => "Toli n'antra estension",
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
