@@ -696,6 +696,7 @@ Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterun
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Erdemaslancan
  * @author Reedy
  * @author Xoser
  */
@@ -704,7 +705,7 @@ $messages['diq'] = array(
 	'extensiondistributor-desc' => 'Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî',
 	'extdist-not-configured' => 'Ma rica keno ke $wgExtDistTarDir u $wgExtDistWorkingCopy konfigure bike',
 	'extdist-wc-missing' => 'Direktorê kopyayî yê konfigure çini yo!',
-	'extdist-no-such-extension' => 'Ekstensiyonê "$1"î çini yo',
+	'extdist-no-such-extension' => '"$1" name dı oleken çıniyo',
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
 	'extdist-wc-empty' => 'Direktorê kopyayî yê konfigure ekstensiyon xo çini yo!',
@@ -718,8 +719,8 @@ zafi parçeyi versiyonê MedyaVikiyi de xebıtyeni, eke versiyonê MedyaVikiyi y
 	'extdist-no-versions' => 'Ektensiyonan ($1) ke ti weçina versiyanan bînan de çini yo!',
 	'extdist-submit-version' => 'dewam bıker',
 	'extdist-no-remote' => 'Nieşkeno muşteriyê subvert ê durî ra kontak bike.',
-	'extdist-remote-error' => 'Muşteriyê subvert ê durî ra yew ğelet biyo: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Cevabê muşteriyê subvert ê durî raşt niyo.',
+	'extdist-remote-error' => 'Waşter dê bınwersiyon dê duri dı xırabin: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Waşter dê bınwersiyon dê duri ra cewabo nêravêrde.',
 	'extdist-svn-error' => 'Subversiyon de yew ğelet biyo: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Formê XML î "svn info", nieşkeno process biko: <pre>$1</pre>',
 	'extdist-tar-error' => 'Kodê tar return exitî $1:',
@@ -742,7 +743,7 @@ Eke wikiya şıma yew pêşkeşwano dûr de ya, dosyayanê xo compiterê xo u d�
 badê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumantasyonê parçeyi raye mocnena şıma.
 
 Eke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension talk:ExtensionDistributor]].",
-	'extdist-want-more' => 'Yewna ekstensiyon bigere',
+	'extdist-want-more' => 'Yewna oleken bigere',
 );
 
 /** Lower Sorbian (dolnoserbski)
