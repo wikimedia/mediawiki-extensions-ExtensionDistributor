@@ -1000,6 +1000,7 @@ $messages['eu'] = array(
  * @author Leyth
  * @author Mjbmr
  * @author Wayiran
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'extensiondistributor' => 'بارگیری افزونهٔ مدیاویکی',
@@ -1845,7 +1846,7 @@ $messages['ko'] = array(
 	'extdist-git-error' => 'Git에서 오류가 발생하였습니다: <pre>$1</pre>',
 	'extdist-git-invalidsha1' => 'Git에서 현재 판에 대한 잘못된 SHA1 해시가 반환되었습니다: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar에서 종료 코드 $1을(를) 반환하였습니다:',
-	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 생성되었습니다. 5초 후에 다운로드가 자동적으로 실행될 것입니다.
+	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행될 것입니다.
 
 묶음의 URL은 다음에 있습니다:
 :$4
@@ -3250,6 +3251,7 @@ Eğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Ex
 /** Ukrainian (українська)
  * @author AS
  * @author NickK
+ * @author Olvin
  * @author Prima klasy4na
  * @author Тест
  */
@@ -3272,8 +3274,8 @@ $messages['uk'] = array(
 	'extdist-no-versions' => 'Обране розширення ($1) не доступне в жодній версії!',
 	'extdist-submit-version' => 'Продовжити',
 	'extdist-no-remote' => "Не вдається зв'язатись з віддаленим клієнтом субверсії.",
-	'extdist-remote-error' => 'Помилка віддаленого клієнту субверсії: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Неприпустима відповідь від віддаленого клієнту субверсії.',
+	'extdist-remote-error' => 'Помилка розповсюджувача розширення віддаленого клієнта: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Неприпустима відповідь розповсюджувача розширення віддаленого клієнта.',
 	'extdist-svn-error' => 'Помилка субверсії: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Не вдається обробити XML з "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar повернув код помилки $1:',
