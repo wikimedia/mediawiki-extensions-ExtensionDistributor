@@ -117,7 +117,7 @@ $messages['ar'] = array(
 	'extdist-no-such-version' => 'الامتداد "$1" لا يوجد في النسخة "$2".',
 	'extdist-choose-extension' => 'اختر أي امتدات تريد تنزيله:',
 	'extdist-wc-empty' => 'مجلد نسخة العمل المضبوط ليس به امتدادات قابلة للتوزيع!',
-	'extdist-submit-extension' => 'استمر',
+	'extdist-submit-extension' => 'استمرار',
 	'extdist-current-version' => 'نسخة التطوير (جذع)',
 	'extdist-choose-version' => '<big>أنت تقوم بتنزيل امتداد <b>$1</b>.</big>
 
