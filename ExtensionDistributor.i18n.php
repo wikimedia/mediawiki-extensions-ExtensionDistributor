@@ -3061,10 +3061,15 @@ Om du har några frågor om programtilläggets distributionssystem, gå till [[E
 
 /** Tamil (தமிழ்)
  * @author TRYPPN
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'extensiondistributor' => 'மீடியாவிக்கி நீட்சியைத் தரவிறக்கவும்',
+	'extdist-choose-extension' => 'நீங்கள் தரவிறக்க வேண்டிய நீட்சியைத் தெரிவு செய்யவும்:',
 	'extdist-submit-extension' => 'தொடரவும்',
+	'extdist-no-versions' => 'தெரிவு செய்யப்பட்ட நீட்சி ($1) எந்தவொரு பதிப்பிலும் கிடைக்காது!',
 	'extdist-submit-version' => 'தொடரவும்',
+	'extdist-want-more' => 'இன்னோர் நீட்சியைப் பெறவும்',
 );
 
 /** Telugu (తెలుగు)
