@@ -1791,6 +1791,35 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 	'extdist-want-more' => '他の拡張機能を入手',
 );
 
+/** Javanese (Basa Jawa)
+ * @author NoiX180
+ */
+$messages['jv'] = array(
+	'extensiondistributor' => 'Undhuh èkstènsi MediaWiki',
+	'extensiondistributor-desc' => 'Èkstènsi kanggo ndistribusikaké arsip snapshot èkstènsi',
+	'extdist-not-configured' => 'Mangga atur $wgExtDistTarDir lan $wgExtDistWorkingCopy',
+	'extdist-wc-missing' => 'Dirèktori panyalinan aktif sing wis diatur ora ana!',
+	'extdist-no-such-extension' => 'Ora ana èkstènsi "$1"',
+	'extdist-no-such-version' => 'Èkstènsi "$1" ora ana nèng vèrsi "$2".',
+	'extdist-choose-extension' => 'Pilih èkstènsi endi sing Sampéyan pingin undhuh:',
+	'extdist-wc-empty' => 'Dirèktori panyalinan aktif sing wis dikonfigurasi ora nduwé èkstènsi sing bisa didistribusèkaé!',
+	'extdist-submit-extension' => 'Banjuraké',
+	'extdist-current-version' => 'Vèrsi pangembangan (trunk)',
+	'extdist-no-versions' => 'Èkstènsi kapilih ($1) ora sumadhiya nèng vèrsi apa waé!',
+	'extdist-submit-version' => 'Banjuraké',
+	'extdist-no-remote' => 'Ora bisa ngubungi klièn subvèrsi sing adoh.',
+	'extdist-remote-error' => 'Kasalahan saka klièn adoh Distributor Èkstènsi: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Tanggepan ora sah saka klièn adoh Distributor Èkstènsi.',
+	'extdist-svn-error' => 'Subvèrsi ngalami kasalahan: <pre>$1</pre>',
+	'extdist-svn-parse-error' => 'Ora bisa mrosès formulir XML "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git ngalami kasalahan: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git mbalèkaké hash SHA1 sing ora sah kanggo rèvisi saiki: <pre>$1</pre>',
+	'extdist-tar-error' => 'Tar mbalèkaké kodhé metu $1:',
+	'extdist-want-more' => 'Èntukaké èkstènsi liya',
+	'extdist-vcs-unsupported' => 'Distributor Èkstènsi ora nyengkuyung sistem kontrol vèrsi "$1".',
+	'extdist-git-invalid-dir' => 'Ora bisa mlebu dirèktori kanggo pamriksan git',
+);
+
 /** Georgian (ქართული)
  * @author BRUTE
  */
@@ -2168,6 +2197,39 @@ Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung i
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
 	'extdist-vcs-unsupported' => 'Extension Distributor tidak menyokong sistem kawalan versi "$1".',
 	'extdist-git-invalid-dir' => 'Tidak dapat memasukkan direktori untuk daftar keluar git',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'extensiondistributor' => 'Niżżel estensjoni MediaWiki',
+	'extensiondistributor-desc' => "Estensjoni sabiex tiddistribwixxi arkivji ta' ritratti istantanji tal-estensjonijiet",
+	'extdist-not-configured' => 'Jekk jogħġbok ikkonfigura $wgExtDistTarDir u $wgExtDistWorkingCopy',
+	'extdist-wc-missing' => 'Id-direttorju ikkonfigurat għall-kopji tax-xogħol ma jeżistix!',
+	'extdist-no-such-extension' => 'Ma teżisti l-ebda estensjoni bl-isem "$1"',
+	'extdist-no-such-version' => 'L-estensjoni "$1" ma teżistix fil-verżjoni "$2".',
+	'extdist-choose-extension' => 'Agħżel liema estenjoni xi tniżżel:',
+	'extdist-wc-empty' => "Id-direttorju ikkonfigurat għall-kopji tax-xogħol m'għandux estensjonijiet distribwibbli!",
+	'extdist-submit-extension' => 'Kompli',
+	'extdist-current-version' => "Verżjoni ta' żvilupp (trunk)",
+	'extdist-choose-version' => '<big>Inti qiegħed tniżżel l-estensjoni <b>$1</b>.</big>
+
+Agħżel il-verżjoni tal-MediaWiki tiegħek.
+
+Ħafna mill-estensjonijiet jaħdmu fuq diversi verżjonijiet tal-MediaWiki, għalhekk jekk il-verżjoni tal-MediaWiki mhix hawnhekk, jew għandek bżonn tal-aħħar funzjonijiet tal-estensjoni, ipprova uża l-verżjoni attwali.',
+	'extdist-no-versions' => 'L-estensjoni magħżula ($1) mhijiex disponibbli fl-ebda verżjoni!',
+	'extdist-submit-version' => 'Kompli',
+	'extdist-no-remote' => 'Kien impossibbli li jiġi kkuntatjat il-klijent tas-sovverżjoni remota.',
+	'extdist-remote-error' => 'Żball mill-klijent remot Extension Distributor: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Rispons invalidu għall-klijent remot Extension Distributor.',
+	'extdist-svn-error' => "Is-sovverżjoni ltaqgħet ma' żball: <pre>$1</pre>",
+	'extdist-svn-parse-error' => 'Kien impossibbli li jiġi pproċessat l-XML minn "svn info": <pre>$1</pre>',
+	'extdist-git-error' => "Il-Git iltaqa' ma' żball: <pre>$1</pre>",
+	'extdist-git-invalidsha1' => "Il-Git irritorna ''hash'' SHA1 invalida għar-reviżjoni attwali: <pre>$1</pre>",
+	'extdist-tar-error' => "Tar irritorna l-''exit code'' segwenti $1:",
+	'extdist-want-more' => 'Ġib estensjoni oħra',
+	'extdist-vcs-unsupported' => 'Extension Distributor ma jsostnix is-sistema tal-kontroll tal-verżjonijiet "$1".',
 );
 
 /** Erzya (эрзянь)
@@ -3304,6 +3366,14 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'extdist-submit-extension' => 'جاری رکھیں',
+	'extdist-submit-version' => 'جاری رکھیں',
 );
 
 /** vèneto (vèneto)
