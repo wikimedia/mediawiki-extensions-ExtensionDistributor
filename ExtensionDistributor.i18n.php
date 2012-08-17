@@ -3374,6 +3374,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['ur'] = array(
 	'extdist-submit-extension' => 'جاری رکھیں',
 	'extdist-submit-version' => 'جاری رکھیں',
+	'extdist-remote-invalid-response' => 'توسیع کے ڈسٹریبیوٹر ریموٹ کلائنٹ سے باطل کے جواب.',
+	'extdist-want-more' => 'ایک اور توسیع حاصل کریں',
 );
 
 /** vèneto (vèneto)
