@@ -1750,8 +1750,8 @@ $messages['ja'] = array(
 	'extensiondistributor-desc' => '拡張機能のスナップショットのアーカイブを配布するための拡張機能',
 	'extdist-not-configured' => '$wgExtDistTarDirと$wgExtDistWorkingCopyの設定を行ってください',
 	'extdist-wc-missing' => '指定されたコピー用ディレクトリが存在しません！',
-	'extdist-no-such-extension' => '"$1"という拡張機能は存在しません',
-	'extdist-no-such-version' => '拡張機能 "$1" に "$2" というバージョンは存在しません。',
+	'extdist-no-such-extension' => '「$1」という拡張機能はありません',
+	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
 	'extdist-wc-empty' => '指定されたコピー先ディレクトリにダウンロードする拡張機能が存在しません！',
 	'extdist-submit-extension' => '続行',
@@ -1763,12 +1763,14 @@ $messages['ja'] = array(
 多くの拡張機能は複数のバージョンで利用できますが、あなたの使用しているMediaWikiのバージョンが下記にない場合、最新版にアップデートする必要があります。',
 	'extdist-no-versions' => '選択された拡張機能($1)はどのバージョンでも利用できません！',
 	'extdist-submit-version' => '選択',
-	'extdist-no-remote' => 'subversionクライアントと接続できませんでした。',
-	'extdist-remote-error' => 'subversionクライアントがエラーを返しました: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'subversionクライアントが無効なレスポンスを返しました。',
-	'extdist-svn-error' => 'Subversionでエラーが発生しました: <pre>$1</pre>',
+	'extdist-no-remote' => 'リモート subversion クライアントにアクセスできませんでした。',
+	'extdist-remote-error' => 'Extension Distributor リモート クライアントがエラーを返しました: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Extension Distributor リモート クライアントが無効な応答をしました。',
+	'extdist-svn-error' => 'subversion でエラーが発生しました: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XMLへの変換処理が正しく行われませんでした: <pre>$1</pre>',
-	'extdist-tar-error' => 'tarが終了コード $1 を返しました:',
+	'extdist-git-error' => 'git でエラーが発生しました: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'git が現在の版について無効な SHA1 ハッシュを返しました: <pre>$1</pre>',
+	'extdist-tar-error' => 'tar が終了コード $1 を返しました:',
 	'extdist-created' => "MediaWiki <b>$3</b> の拡張機能 <b>$1</b> バージョン <b>$2</b> のスナップショットが作成されました。5秒後、自動的にダウンロードが開始されます。
 
 このスナップショットのURLは次の通りです:
@@ -1789,6 +1791,8 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
+	'extdist-vcs-unsupported' => 'Extension Distributor はバージョン管理システム「$1」に対応していません。',
+	'extdist-git-invalid-dir' => 'git チェックアウトのためにディレクトリに入ろうとして失敗しました',
 );
 
 /** Javanese (Basa Jawa)
@@ -2777,6 +2781,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Kaganer
+ * @author Kalan
  * @author MaxSem
  * @author Александр Сигачёв
  */
@@ -2826,6 +2831,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Если у вас есть вопрос об этой системе распространения расширений, пожалуйста, обратитесь к странице [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачать другое расширение',
+	'extdist-vcs-unsupported' => 'Система контроля версий «$1» не поддерживается.',
+	'extdist-git-invalid-dir' => 'Не удаётся войти в директорию для действия «git checkout»',
 );
 
 /** Rusyn (русиньскый)
