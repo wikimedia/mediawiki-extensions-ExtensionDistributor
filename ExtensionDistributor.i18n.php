@@ -717,7 +717,7 @@ Versiyonê MedyaVikiyi bıweçinê.
 
 zafi parçeyi versiyonê MedyaVikiyi de xebıtyeni, eke versiyonê MedyaVikiyi yê şıma tiya de çino, versiyonê rocaneyi bısehnê.',
 	'extdist-no-versions' => 'Ektensiyonan ($1) ke ti weçina versiyanan bînan de çini yo!',
-	'extdist-submit-version' => 'dewam bıker',
+	'extdist-submit-version' => 'Dewam ke',
 	'extdist-no-remote' => 'Nieşkeno muşteriyê subvert ê durî ra kontak bike.',
 	'extdist-remote-error' => 'Waşter dê bınwersiyon dê duri dı xırabin: <pre>$1</pre>',
 	'extdist-remote-invalid-response' => 'Waşter dê bınwersiyon dê duri ra cewabo nêravêrde.',
