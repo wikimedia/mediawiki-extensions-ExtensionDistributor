@@ -569,7 +569,7 @@ Adresa tohoto balíčku je:
 : $4
 Můžete si odtud nyní balíček stáhnout, ale laskavě si tuto adresu nikam neukládejte, protože obsah odkazovaného souboru nebude aktualizován a soubor může být později smazán.
 
-Tento tar si rozbalte do adresáře <tt>extensions</tt>. Na operačních systémech na bázi Unixu například:
+Tento tar si rozbalte do adresáře <code>extensions</code>. Na operačních systémech na bázi Unixu například:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -577,9 +577,9 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Na Windows můžete balíček rozbalit pomocí programu [http://www.7-zip.org/ 7-zip].
 
-Pokud vaše wiki běží na vzdáleném serveru, rozbalte si archiv do nějakého dočasného adresáře na lokálním počítači a poté nahrajte '''všechny''' rozbalené soubory do adresáře <tt>extensions</tt> na vzdáleném serveru.
+Pokud vaše wiki běží na vzdáleném serveru, rozbalte si archiv do nějakého dočasného adresáře na lokálním počítači a poté nahrajte '''všechny''' rozbalené soubory do adresáře <code>extensions</code> na vzdáleném serveru.
 
-Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <tt>LocalSettings.php</tt>. Podrobnější informace by měla obsahovat dokumentace k rozšíření.
+Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <code>LocalSettings.php</code>. Podrobnější informace by měla obsahovat dokumentace k rozšíření.
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
@@ -651,7 +651,7 @@ Unter Windows kannst du das Programm [http://www.7-zip.org/ 7-zip] zum Entpacken
 
 Sofern dein Wiki auf einem entfernten Server läuft, entpacke die Dateien zunächst in ein temporäres Verzeichnis auf deinem lokalen Computer und lade dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.
 
-Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
+Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei <code>LocalSettings.php</code> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
@@ -659,7 +659,7 @@ Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterung
 	'extdist-git-invalid-dir' => 'Auf das Verzeichnis zum Abruf über Git konnte nicht zugegriffen werden.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  * @author MichaelFrey
@@ -689,7 +689,7 @@ Unter Windows können Sie das Programm [http://www.7-zip.org/ 7-zip] zum Entpack
 
 Sofern Ihr Wiki auf einem entfernten Server läuft, entpacken Sie die Dateien zunächst in ein temporäres Verzeichnis auf Ihrem lokalen Computer und laden Sie dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.
 
-Nachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung noch in der Datei <tt>LocalSettings.php</tt> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
+Nachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung noch in der Datei <code>LocalSettings.php</code> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.
 
 Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen haben, nutzen Sie bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 );
@@ -1144,7 +1144,7 @@ L’adresse de cette copie est :
 : $4
 Elle peut être utilisée pour un téléchargement immédiat vers un serveur, mais évitez de l’inscrire dans vos signets, puisque son contenu ne sera pas mis à jour et peut être effacé à une date ultérieure.
 
-L’archive tar devrait être extraite dans votre répertoire <tt>extensions</tt>. Par exemple sur un système semblable à Unix :
+L’archive tar devrait être extraite dans votre répertoire <code>extensions</code>. Par exemple sur un système semblable à Unix :
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -1154,7 +1154,7 @@ Sous Windows, vous pouvez utiliser [http://www.7-zip.org/ 7-zip] pour extraire l
 
 Si votre wiki est hébergé sur un serveur distant, extrayez les fichiers dans un répertoire temporaire de votre ordinateur local, puis téléversez-les '''tous''' dans le répertoire extensions du serveur.
 
-Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <tt>LocalSettings.php</tt>. La documentation de l’extension devrait contenir un guide d’installation expliquant comment procéder.
+Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <code>LocalSettings.php</code>. La documentation de l’extension devrait contenir un guide d’installation expliquant comment procéder.
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
@@ -1195,7 +1195,7 @@ L’adrèce de ceta copia est :
 :$4
 Pôt étre utilisâ por un tèlèchargement drêt de vers un sèrvor, mas èvitâd de l’enscrire dens voutros mârca-pâges, puésque son contegnu serat pas betâ a jorn et pués pôt étre suprimâ a una dâta futura.
 
-Les arch·ives tar devriant étre èxtrètes dens voutron rèpèrtouèro <tt>èxtensions</tt>. Per ègzemplo sur un sistèmo semblâblo a UNIX :
+Les arch·ives tar devriant étre èxtrètes dens voutron rèpèrtouèro <code>èxtensions</code>. Per ègzemplo sur un sistèmo semblâblo a UNIX :
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -1203,9 +1203,9 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Desot Windows, vos pouede utilisar [http://www.7-zip.org/ 7-zip] por èxtrère los fichiérs.
 
-Se voutron vouiqui est hèbèrgiê sur un sèrvor distant, èxtreséd los fichiérs dens un rèpèrtouèro temporèro de voutron ordenator local, et pués tèlèchargiéd-los '''tôs''' dens lo rèpèrtouèro <tt>èxtensions</tt> du sèrvor.
+Se voutron vouiqui est hèbèrgiê sur un sèrvor distant, èxtreséd los fichiérs dens un rèpèrtouèro temporèro de voutron ordenator local, et pués tèlèchargiéd-los '''tôs''' dens lo rèpèrtouèro <code>èxtensions</code> du sèrvor.
 
-Un côp los fichiérs èxtrèts, vos fôdrat encartar l’èxtension dens <tt>LocalSettings.php</tt>. La documentacion de l’èxtension devrêt contegnir un guido d’enstalacion qu’èxplique coment procèdar.
+Un côp los fichiérs èxtrèts, vos fôdrat encartar l’èxtension dens <code>LocalSettings.php</code>. La documentacion de l’èxtension devrêt contegnir un guido d’enstalacion qu’èxplique coment procèdar.
 
 Se vos avéd des quèstions sur cél sistèmo de distribucion de les èxtensions, volyéd vêre [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Avêr una ôtra èxtension',
@@ -1325,7 +1325,7 @@ Unter Windows chasch s Programm [http://www.7-zip.org/ 7-zip] zum Uuspacke vu dr
 
 Wänn Dyy Wiki uf eme entfärnte Server lauft, no pack d Dateie in e temporär Verzeichnis uf Dyynem lokale Computer uus un lad deno '''alli''' uuspackte Dateie uf dr entfärnt Server uffe.
 
-Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <tt>LocalSettings.php</tt> regischtriere. In dr Dokumentation zue dr Erwyterig sott s a Aaleitig derzue haa.
+Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <code>LocalSettings.php</code> regischtriere. In dr Dokumentation zue dr Erwyterig sott s a Aaleitig derzue haa.
 
 Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'No ne Erwyterig hole',
@@ -1930,7 +1930,7 @@ De miißte Zosätz fungxjeneere met diverse Versione fun MediaWiki, alsu falls D
 	'extdist-remote-invalid-response' => 'Dat Projramm  op däm andere Rääschner hät en Antwoot jejovve, met dä künne mer nix aanfange.',
 	'extdist-svn-error' => 'Et <i lang="en">subversion (svn)</i> hät ene Fähler jefonge: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'De XML-Date fun <code lang="en">svn info</code> kunnte mer nit verärrbeide: <pre>$1</pre>',
-	'extdist-git-error' => 'Et <ilang="en">Git</i> hädd ene Fähler jemäldt: <pre>$1</pre>',
+	'extdist-git-error' => 'Et <i lang="en">Git</i> hädd ene Fähler jemäldt: <pre>$1</pre>',
 	'extdist-git-invalidsha1' => 'Et <i lang="en">Git</i> hädd ene kappodde <code lang="en">SHA1</code>-Prööfsumm för de neuste Version jemäldt: <pre>$1</pre>',
 	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:',
 	'extdist-created' => 'En Schnappschoß-Version fun dä Version <b>$2</b> fun däm Zosatz „<b>$1</b>“ för MediaWiki Version <b>$3</b> eß aanjelaat woode. Et ErungerLade sull automattesch loß jonn, in fönnef Sekunde.
@@ -2342,7 +2342,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Wenn dien Wiki op en vun feern bedeenten Server löppt, pack de Datein in en temporäre Mapp op dien lokalen Reekner ut un laad denn '''all''' utpackte Datein op den Server hooch.
 
-Nadem du de Datein utpackt hest, musst du de Extension in de <tt>LocalSettings.php</tt> registreren. In de Doku för de Extension schull dor wat to stahn.
+Nadem du de Datein utpackt hest, musst du de Extension in de <code>LocalSettings.php</code> registreren. In de Doku för de Extension schull dor wat to stahn.
 
 Wenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'En annere Extension kriegen.',
@@ -2872,7 +2872,7 @@ $messages['rue'] = array(
 : $4
 Можете собі одталь нынї пакунок скачати, але тоту адресу собі ниґде не укладайте, бо обсяг одказованого файлу не буде актуалізованый і файл може быти пізнїше змазаный.
 
-Тот tar собі роспакуйте до адресаря <tt>extensions</tt>. На операчный сістемах на базї Unixu наприклад:
+Тот tar собі роспакуйте до адресаря <code>extensions</code>. На операчный сістемах на базї Unixu наприклад:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -2880,9 +2880,9 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 На Windows можете пакунок розбалити з проґрамом [http://www.7-zip.org/ 7-zip].
 
-Кідь ваша вікі біжыть на далекім сервері, роспакуйте архів до даякого дочасного адресаря на локалнім компютерї і потім награйте '''вшыткы''' роспакованы файлы до адресаря <tt>extensions</tt> на далекім сервері.
+Кідь ваша вікі біжыть на далекім сервері, роспакуйте архів до даякого дочасного адресаря на локалнім компютерї і потім награйте '''вшыткы''' роспакованы файлы до адресаря <code>extensions</code> на далекім сервері.
 
-По роспакованю файлів будете мусити росшырїня реґістровати у файлї <tt>LocalSettings.php</tt>. Детайлїшы інформації бы мала обсяговати документавія ку росшырїню.
+По роспакованю файлів будете мусити росшырїня реґістровати у файлї <code>LocalSettings.php</code>. Детайлїшы інформації бы мала обсяговати документавія ку росшырїню.
 
 Вопросы ку тій сістемі дістрібуції росшырїня можете класти на сторінцї [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачати інше росшырїня',
@@ -3620,7 +3620,7 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 	'extdist-git-invalid-dir' => 'git checkout 无法进入目录',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Liangent
  * @author Mark85296341
@@ -3645,10 +3645,12 @@ $messages['zh-hant'] = array(
 	'extdist-no-versions' => '所選擇擴充套件 （$1） 不適用於任何的版本！',
 	'extdist-submit-version' => '繼續',
 	'extdist-no-remote' => '不能夠聯絡遠端 subversion 客戶端。',
-	'extdist-remote-error' => '自遠端 subversion 客戶端的錯誤：<pre>$1</pre>',
-	'extdist-remote-invalid-response' => '自遠端 subversion 客戶端的無效回應。',
+	'extdist-remote-error' => '擴展分發器遠程客戶端返回了錯誤：<pre>$1</pre>',
+	'extdist-remote-invalid-response' => '擴展分發器遠程客戶端返回了無效回復。',
 	'extdist-svn-error' => 'Subversion 遇到一個錯誤：<pre>$1</pre>',
 	'extdist-svn-parse-error' => '不能夠處理「svn info」之 XML：<pre>$1</pre>',
+	'extdist-git-error' => 'Git 遇到一個錯誤：<pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git 對當前修訂返回了一個無效SHA1散列：<pre>$1</pre>',
 	'extdist-tar-error' => 'Tar 回應結束碼 $1：',
 	'extdist-created' => "已創建的定制<b>$3</b> 的<b>$1</b> 擴展的版本<b>$2</b> 的快照。您下載應在 5 秒後自動啟動。
 
@@ -3670,5 +3672,7 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 有關於此擴展名配電系統的任何問題，請轉到[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取得另一個擴充套件',
+	'extdist-vcs-unsupported' => '擴展分發器不支持“$1”版本控制系統。',
+	'extdist-git-invalid-dir' => 'git checkout 無法進入目錄',
 );
 
