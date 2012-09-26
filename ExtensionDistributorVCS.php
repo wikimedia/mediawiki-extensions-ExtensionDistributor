@@ -1,7 +1,6 @@
 <?php
 
 abstract class ExtensionDistributorVCS {
-
 	/**
 	 * @param $vcs string
 	 * @return ExtensionDistributorGIT|ExtensionDistributorSVN|null

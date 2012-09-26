@@ -16,12 +16,12 @@ class ExtensionDistributorPage extends SpecialPage {
 	 * @param $subpage string
 	 */
 	public function execute( $subpage ) {
-		global $wgExtDistTarDir, $wgExtDistWorkingCopy, $wgOut, $wgRequest;
+		global $wgExtDistTarDir, $wgExtDistWorkingCopy;
 
 		$this->setHeaders();
 
 		if ( !$wgExtDistTarDir || !$wgExtDistWorkingCopy ) {
-			$wgOut->addWikiMsg( 'extdist-not-configured' );
+			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
 			return;
 		}
 
@@ -34,8 +34,8 @@ class ExtensionDistributorPage extends SpecialPage {
 
 			list( $extension, $version ) = $parts;
 		} else {
-			$extension = $wgRequest->getVal( 'extdist_extension' );
-			$version = $wgRequest->getVal( 'extdist_version' );
+			$extension = $this->getRequest()->getVal( 'extdist_extension' );
+			$version = $this->getRequest()->getVal( 'extdist_version' );
 		}
 
 		if ( !$extension ) {
@@ -45,7 +45,7 @@ class ExtensionDistributorPage extends SpecialPage {
 
 		$extensions = $this->getExtensionList();
 		if ( !in_array( $extension, $extensions['trunk'] ) ) {
-			$wgOut->addWikiMsg( 'extdist-no-such-extension', $extension );
+			$this->getOutput()->addWikiMsg( 'extdist-no-such-extension', $extension );
 			$this->showExtensionSelector();
 			return;
 		}
@@ -56,7 +56,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		}
 
 		if ( !isset( $extensions[$version] ) || !in_array( $extension, $extensions[$version] ) ) {
-			$wgOut->addWikiMsg( 'extdist-no-such-version', $extension, $version );
+			$this->getOutput()->addWikiMsg( 'extdist-no-such-version', $extension, $version );
 			return;
 		}
 
@@ -119,29 +119,28 @@ class ExtensionDistributorPage extends SpecialPage {
 		}
 
 		if ( isset( $wgExtDistBranches[$path]['msgName'] ) ) {
-			return wfMsg( $wgExtDistBranches[$path]['msgName'] );
+			return $this->msg( $wgExtDistBranches[$path]['msgName'] )->text();
 		} else {
 			return $wgExtDistBranches[$path]['name'];
 		}
 	}
 
 	protected function showExtensionSelector() {
-		global $wgOut;
-
 		$extensions = $this->getExtensionList();
 
 		if ( $extensions === false ) {
-			$wgOut->addWikiMsg( 'extdist-wc-missing' );
+			$this->getOutput()->addWikiMsg( 'extdist-wc-missing' );
 			return;
 		}
 
 		if ( !isset( $extensions['trunk'] ) || !$extensions['trunk'] ) {
-			$wgOut->addWikiMsg( 'extdist-wc-empty' );
+			$this->getOutput()->addWikiMsg( 'extdist-wc-empty' );
 			return;
 		}
 
-		$wgOut->addWikiMsg( 'extdist-choose-extension' );
-		$wgOut->addHTML(
+		$out = $this->getOutput();
+		$out->addWikiMsg( 'extdist-choose-extension' );
+		$out->addHTML(
 			Xml::openElement( 'form', array(
 				'action' => $this->getTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
@@ -150,12 +149,15 @@ class ExtensionDistributorPage extends SpecialPage {
 		);
 
 		foreach ( $extensions['trunk'] as $extension ) {
-			$wgOut->addHTML( Xml::element( 'option', array( 'value' => $extension ), $extension ) . "\n" );
+			$out->addHTML( Xml::element( 'option', array( 'value' => $extension ), $extension ) . "\n" );
 		}
 
-		$wgOut->addHTML(
+		$out->addHTML(
 			Xml::closeElement( 'select' ) . ' ' .
-			Xml::submitButton( wfMsg( 'extdist-submit-extension' ), array( 'name' => 'extdist_submit' ) ) .
+			Xml::submitButton(
+				$this->msg( 'extdist-submit-extension' )->text(),
+				array( 'name' => 'extdist_submit' )
+			) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
 	}
@@ -165,7 +167,7 @@ class ExtensionDistributorPage extends SpecialPage {
 	 * @return mixed
 	 */
 	protected function showVersionSelector( $extensionName ) {
-		global $wgOut, $wgExtDistBranches;
+		global $wgExtDistBranches;
 
 		$extensions = $this->getExtensionList();
 
@@ -177,7 +179,7 @@ class ExtensionDistributorPage extends SpecialPage {
 			}
 
 			if ( isset( $branch['msgName'] ) ) {
-				$branchName = wfMsg( $branch['msgName'] );
+				$branchName = $this->msg( $branch['msgName'] )->text();
 			} else {
 				$branchName = $branch['name'];
 			}
@@ -186,13 +188,17 @@ class ExtensionDistributorPage extends SpecialPage {
 		}
 
 		if ( !$versions ) {
-			$wgOut->addWikiMsg( 'extdist-no-versions', $extensionName );
+			$this->getOutput()->addWikiMsg( 'extdist-no-versions', $extensionName );
 			$this->showExtensionSelector();
 			return;
 		}
 
-		$wgOut->addWikiMsg( 'extdist-choose-version', $extensionName );
-		$wgOut->addHTML(
+		$out = $this->getOutput();
+		$out->wrapWikiMsg(
+			"<h2>\n$1\n</h2>",
+			$this->msg( 'extdist-choose-version', $extensionName )->escaped()
+		);
+		$out->addHTML(
 			Xml::openElement( 'form', array(
 				'action' => $this->getTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
@@ -203,14 +209,17 @@ class ExtensionDistributorPage extends SpecialPage {
 		$selected = 0;
 
 		foreach ( $versions as $branchPath => $branchName ) {
-			$wgOut->addHTML( Xml::option( $branchName, $branchPath, ($selected == 1) ) );
+			$out->addHTML( Xml::option( $branchName, $branchPath, ($selected == 1) ) );
 
 			$selected++;
 		}
 
-		$wgOut->addHTML(
+		$out->addHTML(
 			Xml::closeElement( 'select' ) . ' ' .
-			Xml::submitButton( wfMsg( 'extdist-submit-version' ), array( 'name' => 'extdist_submit' ) ) .
+			Xml::submitButton(
+				$this->msg( 'extdist-submit-version' )->text(),
+				array( 'name' => 'extdist_submit' )
+			) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
 	}
@@ -221,7 +230,7 @@ class ExtensionDistributorPage extends SpecialPage {
 	 */
 	protected function doDownload( $extension, $version ) {
 		global $wgExtDistWorkingCopy, $wgExtDistTarDir, $wgExtDistBranches,
-			$wgOut, $wgExtDistTarUrl, $wgExtDistRemoteClient;
+			$wgExtDistTarUrl, $wgExtDistRemoteClient;
 
 		$vcs = isset( $wgExtDistBranches[$version]['vcs'] ) ? $wgExtDistBranches[$version]['vcs'] : 'svn';
 		if ( $wgExtDistRemoteClient ) {
@@ -265,8 +274,8 @@ class ExtensionDistributorPage extends SpecialPage {
 			$result = wfShellExec( $cmd, $retval );
 
 			if ( $retval ) {
-				$wgOut->addWikiMsg( 'extdist-tar-error', $retval );
-				$wgOut->addHTML( '<pre>' . htmlspecialchars( $result ) . '</pre>' );
+				$this->getOutput()->addWikiMsg( 'extdist-tar-error', $retval );
+				$this->getOutput()->addHTML( '<pre>' . htmlspecialchars( $result ) . '</pre>' );
 				return;
 			}
 		}
@@ -274,11 +283,11 @@ class ExtensionDistributorPage extends SpecialPage {
 		$url = wfExpandUrl( "$wgExtDistTarUrl/$tarName", PROTO_CURRENT );
 
 		// Show a message
-		$wgOut->addWikiMsg( 'extdist-created', $extension, $rev,
+		$this->getOutput()->addWikiMsg( 'extdist-created', $extension, $rev,
 			$this->getBranchName( $version ), $url, $tarName );
-		$wgOut->addHTML( '<p><br /><big>' .
+		$this->getOutput()->addHTML( '<p><br /><h2>' .
 			'<a href="' . $this->getTitle()->escapeLocalUrl() . '">' .
-			htmlspecialchars( wfMsg( 'extdist-want-more' ) ) . '</a></big></p>' );
+				$this->msg( 'extdist-want-more' )->escaped() . '</a></h2></p>' );
 
 		// Redirect to the file
 		header( 'Refresh: 5;url=' . $url );
@@ -291,13 +300,13 @@ class ExtensionDistributorPage extends SpecialPage {
 	 * @return bool|string
 	 */
 	protected function updateAndGetRevisionLocal( $extension, $version, $vcs ) {
-		global $wgExtDistWorkingCopy, $wgOut;
+		global $wgExtDistWorkingCopy;
 
 		$dir = "$wgExtDistWorkingCopy/$version/extensions/$extension";
 
 		$ed = ExtensionDistributorVCS::factory( $vcs );
 		if ( $ed === null ) {
-			$wgOut->addWikiMsg( 'extdist-vcs-unsupported', $vcs );
+			$this->getOutput()->addWikiMsg( 'extdist-vcs-unsupported', $vcs );
 			return false;
 		}
 
@@ -316,7 +325,7 @@ class ExtensionDistributorPage extends SpecialPage {
 	 * @return bool|string
 	 */
 	protected function updateAndGetRevisionRemote( $extension, $version, $vcs ) {
-		global $wgExtDistRemoteClient, $wgOut;
+		global $wgExtDistRemoteClient;
 
 		$cmd = json_encode(
 			array(
@@ -332,7 +341,7 @@ class ExtensionDistributorPage extends SpecialPage {
 		$sock = fsockopen( $host, $port );
 
 		if ( !$sock ) {
-			$wgOut->addWikiMsg( 'extdist-no-remote' );
+			$this->getOutput()->addWikiMsg( 'extdist-no-remote' );
 			return false;
 		}
 
@@ -348,16 +357,15 @@ class ExtensionDistributorPage extends SpecialPage {
 
 		if ( isset( $response->error ) ) {
 			$info = isset( $response->errorInfo ) ? $response->errorInfo : '';
-			$wgOut->addWikiMsg( $response->error, $info );
+			$this->getOutput()->addWikiMsg( $response->error, $info );
 			return false;
 		}
 
 		if ( !isset( $response->revision ) ) {
-			$wgOut->addWikiMsg( 'extdist-remote-invalid-response' );
+			$this->getOutput()->addWikiMsg( 'extdist-remote-invalid-response' );
 			return false;
 		}
 
 		return $response->revision;
 	}
-
 }

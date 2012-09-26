@@ -1,7 +1,6 @@
 <?php
 
 class ExtensionDistributorGit extends ExtensionDistributorVCS {
-
 	/**
 	 * @param $dir string
 	 * @return Status

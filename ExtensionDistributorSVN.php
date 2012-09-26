@@ -1,7 +1,6 @@
 <?php
 
 class ExtensionDistributorSVN extends ExtensionDistributorVCS {
-
 	/**
 	 * @param $dir string
 	 * @return Status

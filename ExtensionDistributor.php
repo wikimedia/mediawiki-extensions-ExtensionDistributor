@@ -39,7 +39,7 @@ $wgExtDistRemoteClient = false;
 /********************
  * Registration
  */
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 
 // Internationlization files
 $wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.i18n.php';
