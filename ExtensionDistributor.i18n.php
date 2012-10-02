@@ -307,7 +307,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 	'extdist-want-more' => 'Башҡа киңәйеү алырға',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -2248,7 +2248,7 @@ $messages['myv'] = array(
 	'extdist-submit-version' => 'Поладомс',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author EivindJ
  * @author Nghtwlkr
  */
@@ -2405,7 +2405,7 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Reedy
@@ -3063,7 +3063,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 	'extdist-git-invalid-dir' => 'Ne morem vnesti mape za git checkout.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -3073,7 +3073,7 @@ $messages['sr-ec'] = array(
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'extdist-submit-extension' => 'Produži',
 	'extdist-submit-version' => 'Produži',
@@ -3562,7 +3562,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-want-more' => '攞另一個擴展',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Hzy980512
  * @author Liangent
