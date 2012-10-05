@@ -711,11 +711,11 @@ $messages['diq'] = array(
 	'extdist-wc-empty' => 'Direktorê kopyayî yê konfigure ekstensiyon xo çini yo!',
 	'extdist-submit-extension' => 'Dewam bıker',
 	'extdist-current-version' => 'versiyonê dewlemend kerdışi (trunk)',
-	'extdist-choose-version' => 'parçeya <b>$1</b>i ani war.
+	'extdist-choose-version' => 'Şımaye olekene  <b>$1</b>i ronane
 
-Versiyonê MedyaVikiyi bıweçinê.
+Versiyonê MedyaWikiyi weçinê.
 
-zafi parçeyi versiyonê MedyaVikiyi de xebıtyeni, eke versiyonê MedyaVikiyi yê şıma tiya de çino, versiyonê rocaneyi bısehnê.',
+Zaf olekene versiyonê MedyaWikiyi de xebıtyeni, eke versiyonê MedyaWikiyi yê şıma tiya de çıniyo, versiyonê rocaneyi fına karfiyê.',
 	'extdist-no-versions' => 'Ektensiyonan ($1) ke ti weçina versiyanan bînan de çini yo!',
 	'extdist-submit-version' => 'Dewam ke',
 	'extdist-no-remote' => 'Nieşkeno muşteriyê subvert ê durî ra kontak bike.',
@@ -1758,9 +1758,9 @@ $messages['ja'] = array(
 	'extdist-current-version' => '開発バージョン (trunk)',
 	'extdist-choose-version' => '拡張機能 <b>$1</b> をダウンロードしようとしています。
 
-あなたが利用しているMediaWikiのバージョンを選択してください。
+ご使用中の MediaWiki のバージョンを選択してください。
 
-多くの拡張機能は複数のバージョンで利用できますが、あなたの使用しているMediaWikiのバージョンが下記にない場合、最新版にアップデートする必要があります。',
+多くの拡張機能は複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、または拡張機能の最新の機能が必要な場合は、最新版をお試しください。',
 	'extdist-no-versions' => '選択された拡張機能($1)はどのバージョンでも利用できません！',
 	'extdist-submit-version' => '選択',
 	'extdist-no-remote' => 'リモート subversion クライアントにアクセスできませんでした。',
@@ -1864,9 +1864,9 @@ $messages['ko'] = array(
 	'extdist-wc-empty' => '설정된 복제 디렉토리에 배포 가능한 확장 기능이 없습니다!',
 	'extdist-submit-extension' => '계속',
 	'extdist-current-version' => '개발 중인 버전 (trunk)',
-	'extdist-choose-version' => '당신은 <b>$1</b> 확장 기능을 다운로드하고 있습니다.
+	'extdist-choose-version' => '<b>$1</b> 확장 기능을 다운로드하고 있습니다.
 
-당신의 미디어위키 버전을 선택하세요.
+미디어위키 버전을 선택하세요.
 
 대부분의 확장 기능은 미디어위키의 여러 버전에서도 동작합니다, 당신의 미디어위키 확장 기능이 여기 없거나 최신 버전이 필요하다면, 현재 버전 다운로드를 선택하세요.',
 	'extdist-no-versions' => '선택한 확장 기능($1)이 어떤 버전으로도 존재하지 않습니다.',
