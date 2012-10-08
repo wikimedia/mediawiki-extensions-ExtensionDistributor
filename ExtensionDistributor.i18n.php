@@ -1234,7 +1234,7 @@ $messages['gl'] = array(
 	'extdist-current-version' => 'Versión en desenvolvemento (trunk)',
 	'extdist-choose-version' => 'Está descargando a extensión <b>$1</b>.
 
-Seleccione a súa versión MediaWiki.
+Seleccione a súa versión de MediaWiki.
 
 A maioría das extensións traballan con múltiples versións de MediaWiki, polo que se a súa versión de MediaWiki non está aquí, ou se precisa características da última extensión, probe a usar a versión actual.',
 	'extdist-no-versions' => 'A extensión seleccionada ($1) non está dispoñible en ningunha versión!',
@@ -3012,6 +3012,7 @@ Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navšt�
 
 /** Slovenian (slovenščina)
  * @author Dbc334
+ * @author Eleassar
  */
 $messages['sl'] = array(
 	'extensiondistributor' => 'Prenesi razširitev MediaWiki',
@@ -3029,7 +3030,7 @@ $messages['sl'] = array(
 Izberite svojo različico MediaWiki.
 
 Večina razširitev deluje na več različicah MediaWiki, zato v primeru, da vaša različica MediaWiki tukaj ni navedena ali potrebujete najnovejše funkcije razširitve, poskusite uporabiti trenutno različico.',
-	'extdist-no-versions' => 'Izbrana razširitev ($1) ni na voljo v nobeni različici!',
+	'extdist-no-versions' => 'Izbrana razširitev ($1) ni na razpolago v nobeni različici!',
 	'extdist-submit-version' => 'Nadaljuj',
 	'extdist-no-remote' => 'Ne morem stopiti v stik z oddaljenim odjemalcem subversion.',
 	'extdist-remote-error' => 'Napaka od oddaljenega odjemalca razširjevalca razširitev: <pre>$1</pre>',
