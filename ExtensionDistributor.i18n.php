@@ -1517,6 +1517,7 @@ Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[
 
 /** Hungarian (magyar)
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  * @author Reedy
  */
@@ -1531,8 +1532,7 @@ $messages['hu'] = array(
 	'extdist-wc-empty' => 'A beállított másolat munkakönyvtárban nincsenek terjeszthető kiterjesztések!',
 	'extdist-submit-extension' => 'Folytatás',
 	'extdist-current-version' => 'Fejlesztői verzió (trunk)',
-	'extdist-choose-version' => '
-Éppen a(z) <b>$1</b> kiterjesztést töltöd le.
+	'extdist-choose-version' => 'Éppen a(z) <b>$1</b> kiterjesztést töltöd le.
 
 Válaszd ki a MediaWiki verziót.
 
