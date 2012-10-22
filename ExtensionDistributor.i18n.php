@@ -87,7 +87,7 @@ $messages['af'] = array(
 	'extdist-current-version' => 'Ontwikkelingsweergawe (trunc)',
 	'extdist-submit-version' => 'Gaan voort',
 	'extdist-no-remote' => 'Kan afgeleë subversie kliënt te kontak.',
-	'extdist-remote-invalid-response' => "Ongeldige antwoord van 'n ​​afgeleë subversie kliënt.",
+	'extdist-remote-invalid-response' => "Ongeldige antwoord van 'n ​​afgeleë subversie kliënt.", # Fuzzy
 	'extdist-tar-error' => 'TAR stuur die volgende kode terug $1:',
 	'extdist-want-more' => "Laai nog 'n uitbreiding af",
 );
@@ -177,8 +177,8 @@ $messages['arz'] = array(
 	'extdist-no-versions' => 'الامتداد المختار ($1) غير متوفر فى أى نسخة!',
 	'extdist-submit-version' => 'استمرار',
 	'extdist-no-remote' => 'غير قادر على الاتصال بعميل سب فيرجن البعيد.',
-	'extdist-remote-error' => 'خطأ من عميل سب فيرجن البعيد: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'رد غير صحيح من عميل سب فيرجن البعيد.',
+	'extdist-remote-error' => 'خطأ من عميل سب فيرجن البعيد: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'رد غير صحيح من عميل سب فيرجن البعيد.', # Fuzzy
 	'extdist-svn-error' => 'سب فيرجن صادف خطأ: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'غير قادر على معالجة XML من "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'تار أرجع كود خروج $1:',
@@ -280,8 +280,8 @@ MediaWiki өлгөгөҙҙө һайлағыҙ.
 	'extdist-no-versions' => 'Һайланған киңәйеүҙе ($1) бер өлгөлә лә алып булмай!',
 	'extdist-submit-version' => 'Дауам итергә',
 	'extdist-no-remote' => 'Алыҫтағы Subversion клиенты менән бәйләнеш булдырыу мөмкин түгел.',
-	'extdist-remote-error' => 'Алыҫтағы Subversion клиентынан хата: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Алыҫтағы Subversion клиентынан алынған яуап дөрөҫ түгел.',
+	'extdist-remote-error' => 'Алыҫтағы Subversion клиентынан хата: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Алыҫтағы Subversion клиентынан алынған яуап дөрөҫ түгел.', # Fuzzy
 	'extdist-svn-error' => 'Subversion хатаһы: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '«svn info» фарманынан алынған XML-ды эшкәртеү мөмкин түгел: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar $1 коды ҡайтарҙы:',
@@ -386,8 +386,8 @@ $messages['bg'] = array(
 	'extdist-no-versions' => 'Избраното разширение ($1) не е налично в никоя версия!',
 	'extdist-submit-version' => 'Продължаване',
 	'extdist-no-remote' => 'Не е възможно свързване с отдалечения subversion клиент.',
-	'extdist-remote-error' => 'Грешка от отдалечения subversion клиент: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Невалиден отговор от отдалечения Subversion клиент.',
+	'extdist-remote-error' => 'Грешка от отдалечения subversion клиент: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Невалиден отговор от отдалечения Subversion клиент.', # Fuzzy
 	'extdist-svn-error' => 'Възникна грешка в Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Грешка при обработване на XML, върнат от командата "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar върна код за грешка $1:',
@@ -428,8 +428,8 @@ Al lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neu
 	'extdist-no-versions' => 'Dizimplijadus eo an astenn bet dibabet ($1) e stumm ebet !',
 	'extdist-submit-version' => "Kenderc'hel",
 	'extdist-no-remote' => "N'eus ket tu da dizhout ar c'hliant subversion a-bell.",
-	'extdist-remote-error' => "Fazi gant ar c'hliant subversion a-bell : <pre>$1</pre>",
-	'extdist-remote-invalid-response' => "Respont direizh eus ar c'hliant subverion a-bell.",
+	'extdist-remote-error' => "Fazi gant ar c'hliant subversion a-bell : <pre>$1</pre>", # Fuzzy
+	'extdist-remote-invalid-response' => "Respont direizh eus ar c'hliant subverion a-bell.", # Fuzzy
 	'extdist-svn-error' => "Ur fazi zo bet gant ''Subversion'' : <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'Dibosupl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :",
@@ -477,8 +477,8 @@ Većina proširenja radi na mnogim verzijama MediaWikija, pa ako se Vaša verzij
 	'extdist-no-versions' => 'Odabrano proširenje ($1) nije dostupno u nijednoj verziji!',
 	'extdist-submit-version' => 'Nastavi',
 	'extdist-no-remote' => 'Ne može se kontaktirati udaljeni klijent subverzije.',
-	'extdist-remote-error' => 'Greška od udaljenog klijenta subverzije: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Nevaljan odgovor od udaljenog klijenta subverzije.',
+	'extdist-remote-error' => 'Greška od udaljenog klijenta subverzije: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Nevaljan odgovor od udaljenog klijenta subverzije.', # Fuzzy
 	'extdist-svn-error' => 'Desila se greška kod subverzije: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ne mogu procesirati XML formu iz "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Program ''tar'' je vratio izlazni kod $1:",
@@ -525,8 +525,8 @@ La majoria d'extensions funcionen a les diferents versions de Mediawiki, així q
 	'extdist-no-versions' => "L'extensió seleccionada ($1) no està disponible en cap versió.",
 	'extdist-submit-version' => 'Continua',
 	'extdist-no-remote' => "No s'ha pogut contactar amb el client remot de Subversion.",
-	'extdist-remote-error' => 'Error del client remot de Subversion: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Resposta invàlida del client remot de Subversion.',
+	'extdist-remote-error' => 'Error del client remot de Subversion: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Resposta invàlida del client remot de Subversion.', # Fuzzy
 	'extdist-svn-error' => 'Subversion ha trobat un error: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'No s\'ha pogut processar l\'XML de "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "L'ordre tar ha retornat un codi de sortida $1:",
@@ -709,7 +709,7 @@ $messages['diq'] = array(
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
 	'extdist-wc-empty' => 'Direktorê kopyayî yê konfigure ekstensiyon xo çini yo!',
-	'extdist-submit-extension' => 'Dewam bıker',
+	'extdist-submit-extension' => 'Dewam ke',
 	'extdist-current-version' => 'versiyonê dewlemend kerdışi (trunk)',
 	'extdist-choose-version' => 'Şımaye olekene  <b>$1</b>i ronane
 
@@ -824,8 +824,8 @@ $messages['el'] = array(
 	'extdist-no-versions' => 'Η επιλεγμένη επέκταση ($1) δεν είναι διαθέσιμη σε καμία έκδοση!',
 	'extdist-submit-version' => 'Συνέχεια',
 	'extdist-no-remote' => 'Αδύνατη η επικοινωνία με τον απομακρυσμένο πελάτη subversion.',
-	'extdist-remote-error' => 'Σφάλμα από τον απομακρυσμένο πελάτη subversion: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Άκυρη απόκριση από τον απομακρυσμένο πελάτη subversion.',
+	'extdist-remote-error' => 'Σφάλμα από τον απομακρυσμένο πελάτη subversion: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Άκυρη απόκριση από τον απομακρυσμένο πελάτη subversion.', # Fuzzy
 	'extdist-svn-error' => 'Το σύστημα Subversion αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Αδύνατη η επεξεργασία της XML από το "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'To Tar επέστρεψε κωδικό εξόδου $1:',
@@ -874,8 +874,8 @@ Pliparto de kromprogramoj funkcias trans pluraj versioj de MediaWiki, do se via 
 	'extdist-no-versions' => 'La elektita kromprogramo ($1) ne estas havebla en iu ajn versio!',
 	'extdist-submit-version' => 'Daŭri',
 	'extdist-no-remote' => 'Ne povas kontakti eksteran klienton de subversion.',
-	'extdist-remote-error' => 'Eraro de la ekstera kliento de subversion: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Malvalida respondo de ekstera kliento de Subversion.',
+	'extdist-remote-error' => 'Eraro de la ekstera kliento de subversion: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Malvalida respondo de ekstera kliento de Subversion.', # Fuzzy
 	'extdist-svn-error' => 'Subversion renkontis eraron: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ne povas trakti la XML de "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar donis elirkodon $1:',
@@ -1075,8 +1075,8 @@ Useimmat laajennukset toimivat useiden MediaWikin versioiden välillä. Jos Medi
 	'extdist-no-versions' => 'Valitusta laajennuksesta ($1) ei ole saatavilla yhtään versiota!',
 	'extdist-submit-version' => 'Jatka',
 	'extdist-no-remote' => 'Subversion-asiakasohjelmaan ei saatu yhteyttä.',
-	'extdist-remote-error' => 'Virhe ulkoisesta subversion-asiakasohjelmasta: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Kelpaamaton vastaus ulkoiselta subversion-asiakasohjelmalta.',
+	'extdist-remote-error' => 'Virhe ulkoisesta subversion-asiakasohjelmasta: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Kelpaamaton vastaus ulkoiselta subversion-asiakasohjelmalta.', # Fuzzy
 	'extdist-svn-error' => 'Subversion kohtasi virheen: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XML-dataa ei voitu käsitellä ”svn info” -komennosta: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar-ohjelman suoritus päättyi paluuarvoon $1:',
@@ -1184,8 +1184,8 @@ La plepârt de les èxtensions tôrne sur difèrentes vèrsions de MediaWiki. Av
 	'extdist-no-versions' => 'L’èxtension chouèsia ($1) est pas disponibla dens gins de vèrsion !',
 	'extdist-submit-version' => 'Continuar',
 	'extdist-no-remote' => 'Empossiblo de sè veriér vers lo cliant sot-vèrsion distant.',
-	'extdist-remote-error' => 'Èrror du cliant sot-vèrsion distant : <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Rèponsa fôssa dês lo cliant sot-vèrsion distant.',
+	'extdist-remote-error' => 'Èrror du cliant sot-vèrsion distant : <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Rèponsa fôssa dês lo cliant sot-vèrsion distant.', # Fuzzy
 	'extdist-svn-error' => 'Sot-vèrsion at rencontrâ una èrror : <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Empossiblo de trètar les balyês XML retornâs per « svn info » : <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar at retornâ lo code de sortia $1 :',
@@ -1302,8 +1302,8 @@ Di meischte Erwyterige schaffe mit vyyle MediaWiki-Versione zämme. Wänn Dyyni 
 	'extdist-no-versions' => 'Di gwählt Erwyterig ($1) git s nit in allene Versione!',
 	'extdist-submit-version' => 'Wyter',
 	'extdist-no-remote' => 'S git kei Kontakt zum färngstyyrte Subversion-Client.',
-	'extdist-remote-error' => 'Fählermäldig vum färngstyyrte Subversion-Client: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Uugiltigi Antwort vum färngstyyrte Subversion-Client.',
+	'extdist-remote-error' => 'Fählermäldig vum färngstyyrte Subversion-Client: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Uugiltigi Antwort vum färngstyyrte Subversion-Client.', # Fuzzy
 	'extdist-svn-error' => 'Subversion het e Fähler gmäldet: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XML-Date vu „svn info“ chenne nit verschafft wäre: <pre>$1</pre>',
 	'extdist-git-error' => 'Git het e Fähler gmäldet: <pre>$1</pre>',
@@ -1435,8 +1435,8 @@ Većina ekstenzija će raditi na više (ili svim) inačicama MedijaWikija, pa ak
 	'extdist-no-versions' => 'Odabrana ekstenzija ($1) nije dostupna u nijednoj inačici!',
 	'extdist-submit-version' => 'Nastavi',
 	'extdist-no-remote' => 'Ne mogu uspostaviti vezu s udaljenim SVN (subversion) klijentom.',
-	'extdist-remote-error' => 'Pogrješka udaljenog SVN klijenta: <pre> $1 </pre>',
-	'extdist-remote-invalid-response' => 'Neispravan odgovor od udaljenog SVN klijenta.',
+	'extdist-remote-error' => 'Pogrješka udaljenog SVN klijenta: <pre> $1 </pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Neispravan odgovor od udaljenog SVN klijenta.', # Fuzzy
 	'extdist-svn-error' => 'SVN je naišao na pogrešku: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nije moguće obraditi XML iz "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar je vratio izlazni kod $1:',
@@ -1540,8 +1540,8 @@ A legtöbb kiterjesztés működik a MediaWiki több verziójával, így ha az �
 	'extdist-no-versions' => 'A választott kiterjesztés ($1) nem érhető el semmilyen verzióban!',
 	'extdist-submit-version' => 'Folytatás',
 	'extdist-no-remote' => 'Nem sikerült kapcsolódni a távoli Subversion klienshez.',
-	'extdist-remote-error' => 'Hiba a távoli Subversion klienstől: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Érvénytelen válasz a távoli Subversion klienstől.',
+	'extdist-remote-error' => 'Hiba a távoli Subversion klienstől: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Érvénytelen válasz a távoli Subversion klienstől.', # Fuzzy
 	'extdist-svn-error' => 'A Subversion hibával tért vissza: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Az „svn info” által visszaadott XML-t nem sikerült feldolgozni: <pre>$1</pre>',
 	'extdist-tar-error' => 'A tar által adott visszatérési kód $1:',
@@ -1651,8 +1651,8 @@ Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi
 	'extdist-no-versions' => 'Ekstensi terpilih ($1) tidak tersedia di versi mana pun!',
 	'extdist-submit-version' => 'Lanjutkan',
 	'extdist-no-remote' => 'Tidak dapat terhubung ke client subversio.',
-	'extdist-remote-error' => 'Kesalahan dari subversion client: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'respon tidak sah dari subversion client.',
+	'extdist-remote-error' => 'Kesalahan dari subversion client: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'respon tidak sah dari subversion client.', # Fuzzy
 	'extdist-svn-error' => 'Subversion mengalami masalah: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML dari "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
@@ -2006,8 +2006,8 @@ De meiste uitbreidinge werke met meerdere versies van MediaWiki, dus as de versi
 	'extdist-no-versions' => 'De geselecteerde uitbreiding ($1) is in gein enkele versie besjikbaar!',
 	'extdist-submit-version' => 'Doorgaon',
 	'extdist-no-remote' => 't Waas neet meugelik de externe subversionclient te benadere',
-	'extdist-remote-error' => 'Fout van de externe subversionclient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ongeldig antwoord van de externe subversionclient.',
+	'extdist-remote-error' => 'Fout van de externe subversionclient: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ongeldig antwoord van de externe subversionclient.', # Fuzzy
 	'extdist-svn-error' => 'Subversion göf de volgende foutmelding: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '\'t Waas neet meugelik de XML van "svn info" te verwerke: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar goof de volgende exitcode $1:',
@@ -2271,8 +2271,8 @@ De fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen
 	'extdist-no-versions' => 'Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.',
 	'extdist-submit-version' => 'Fortsett',
 	'extdist-no-remote' => 'Kunne ikke kontakte ekstern SVN-klient.',
-	'extdist-remote-error' => 'Feil fra ekstern SVN-klient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ugyldig svar fra ekstern SVN-klient.',
+	'extdist-remote-error' => 'Feil fra ekstern SVN-klient: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ugyldig svar fra ekstern SVN-klient.', # Fuzzy
 	'extdist-svn-error' => 'SVN fant en feil: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Kunne ikke prosessere XML fra «svn info»: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:',
@@ -2321,8 +2321,8 @@ En groten Deel vun de Extensions arbeidt mit vele MediaWiki-Versionen. Wenn dien
 	'extdist-no-versions' => 'De utwählte Extension ($1) is in keen Version verföögbor!',
 	'extdist-submit-version' => 'Wiedermaken',
 	'extdist-no-remote' => 'De feernstüürte Subversion-Client mellt sik nich.',
-	'extdist-remote-error' => 'Fehler vun’n feernstüürt Subversion-Client: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ungüllige Antwoord vun’n feernstüürt Subversion-Client.',
+	'extdist-remote-error' => 'Fehler vun’n feernstüürt Subversion-Client: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ungüllige Antwoord vun’n feernstüürt Subversion-Client.', # Fuzzy
 	'extdist-svn-error' => 'Subversion hett en Fehler mellt: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'XML-Daten von „svn info“ kunnen nich verarbeidt warrn: <pre>$1</pre>',
 	'extdist-tar-error' => 'Dat Tar-Programm mellt den Enn-Kood $1:',
@@ -2429,8 +2429,8 @@ Dei fleste utvidingane fungerer på fleire versjonar av MediaWiki, so om versjon
 	'extdist-no-versions' => 'Den valte utvidinga ($1) er ikkje tilgjengeleg i nokon versjon!',
 	'extdist-submit-version' => 'Hald fram',
 	'extdist-no-remote' => 'Kunne ikkje kontakta ekstern SVN-klient.',
-	'extdist-remote-error' => 'Feil frå ekstern SVN-klient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ugyldig svar frå ekstern SVN-klient.',
+	'extdist-remote-error' => 'Feil frå ekstern SVN-klient: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ugyldig svar frå ekstern SVN-klient.', # Fuzzy
 	'extdist-svn-error' => 'SVN fann ein feil: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Kunne ikkje handsama XML frå "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar returnerte utgangskoden $1:',
@@ -2452,7 +2452,7 @@ Om wikien din er på ein ekstern tenar, pakk ut filene i ei midlertidig mappa p�
 
 Etter å ha pakka ut filene må du registrera utvidinga i LocalSettings.php. Dokumentasjonen til utvidinga burde ha instruksjonar på korleis ein gjer dette.
 
-Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].",
+Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].", # Fuzzy
 	'extdist-want-more' => 'Hent fleire utvidingar',
 );
 
@@ -2479,8 +2479,8 @@ La màger part de las extensions vira sus diferentas versions de MediaWiki. Atal
 	'extdist-no-versions' => 'L’extension seleccionada ($1) es indisponibla dins mantuna version !',
 	'extdist-submit-version' => 'Contunhar',
 	'extdist-no-remote' => 'Impossible de contactar lo client subversion distant.',
-	'extdist-remote-error' => 'Error del client subversion distant : <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Responsa incorrècta dempuèi lo client subversion distant.',
+	'extdist-remote-error' => 'Error del client subversion distant : <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Responsa incorrècta dempuèi lo client subversion distant.', # Fuzzy
 	'extdist-svn-error' => 'Subversion a rencontrat una error : <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Impossible de tractar lo XML a partir de « svn info » : <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar a tornat lo còde de sortida $1 :',
@@ -2612,8 +2612,8 @@ Vàire estension a travajo dzora a 'd version diferente ëd MediaWiki, parèj se
 	'extdist-no-versions' => "L'estension selessionà ($1) a l'é pa disponìbil an gnun-e version!",
 	'extdist-submit-version' => 'Continua',
 	'extdist-no-remote' => 'As peul pa contaté ël client leugn ëd la sot-version.',
-	'extdist-remote-error' => 'Eror dal client leugn ëd la sot-version: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn ëd la sot-version.',
+	'extdist-remote-error' => 'Eror dal client leugn ëd la sot-version: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn ëd la sot-version.', # Fuzzy
 	'extdist-svn-error' => "La sot-version a l'ha rëncontrà n'eror: <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'As peul pa processesse l\'XML da "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:",
@@ -2663,8 +2663,8 @@ A maioria das extensões funciona em várias versões do MediaWiki, portanto se 
 	'extdist-no-versions' => 'A extensão selecionada ($1) não está disponível em nenhuma versão!',
 	'extdist-submit-version' => 'Continuar',
 	'extdist-no-remote' => 'Não foi possível contactar o cliente Subversion remoto.',
-	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.',
+	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.', # Fuzzy
 	'extdist-svn-error' => 'O Subversion encontrou um erro: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Não foi possível processar o XML da informação SVN: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar retornou código de saída $1:',
@@ -2713,8 +2713,8 @@ A maioria das extensões funciona através de múltiplas versões do MediaWiki, 
 	'extdist-no-versions' => 'A extensão selecionada ($1) não está disponível em nenhuma versão!',
 	'extdist-submit-version' => 'Continuar',
 	'extdist-no-remote' => 'Não foi possível contatar o cliente Subversion remoto.',
-	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.',
+	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.', # Fuzzy
 	'extdist-svn-error' => 'O Subversion encontrou um erro: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Não foi possível processar o XML do "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar retornou código de saída $1:',
@@ -2808,8 +2808,8 @@ $messages['ru'] = array(
 	'extdist-no-versions' => 'Выбранное расширение («$1») не доступно ни в одной версии!',
 	'extdist-submit-version' => 'Продолжить',
 	'extdist-no-remote' => 'Не получилось связаться с удалённым клиентом Subversion.',
-	'extdist-remote-error' => 'Ошибка удалённого клиента Subversion: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ошибочный ответ клиента subversion.',
+	'extdist-remote-error' => 'Ошибка удалённого клиента Subversion: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ошибочный ответ клиента subversion.', # Fuzzy
 	'extdist-svn-error' => 'Ошибка Subversion: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Ошибка обработки XML, возвращённого командой «svn info»: <pre>$1</pre>',
 	'extdist-git-error' => 'Git обнаружил ошибку:<pre>$1</pre>',
@@ -2861,7 +2861,7 @@ $messages['rue'] = array(
 	'extdist-no-versions' => 'Выбране росшырїня ($1) не є доступне в жадній верзії!',
 	'extdist-submit-version' => 'Продовжыти',
 	'extdist-no-remote' => 'Не подарило ся контактовати далекого кліента Subversion.',
-	'extdist-remote-error' => 'Хыба од далекого кліента Subversion: <pre>$1</pre>',
+	'extdist-remote-error' => 'Хыба од далекого кліента Subversion: <pre>$1</pre>', # Fuzzy
 	'extdist-remote-invalid-response' => 'Неправилна одповідь од далекого кліента Дістрібутора росшырїнь.',
 	'extdist-svn-error' => 'Subversion наразив на хыбу: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Не дало ся спрацовати XML з выступу „svn info”: <pre>$1</pre>',
@@ -2910,8 +2910,8 @@ $messages['sah'] = array(
 	'extdist-no-versions' => 'Талбыт ($1) тупсарыыҥ ханнык да барылга үлэлиир кыаҕа суох!',
 	'extdist-submit-version' => 'Салгыы',
 	'extdist-no-remote' => 'Атын барылы (subversion client) кытта сибээс кыайан олохтоммото.',
-	'extdist-remote-error' => 'Атын барыл (subversion client) алҕастаах: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Атын барыл (subversion client) алҕастаах хоруйа.',
+	'extdist-remote-error' => 'Атын барыл (subversion client) алҕастаах: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Атын барыл (subversion client) алҕастаах хоруйа.', # Fuzzy
 	'extdist-svn-error' => 'Барыл (Subversion) алҕаһа: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"Svn info" хамаанда ыыппыт XML уларытар процеһын алҕаһа: <pre>$1</pre>',
 	'extdist-tar-error' => 'Куод $1 сыыһатын Tar көрдөрөр:',
@@ -2983,8 +2983,8 @@ Väčšina rozšírení funguje na viacerých verziách MediaWiki, takže ak tu 
 	'extdist-no-versions' => 'Zvolené rozšírenie ($1) nie je dostupné v žiadnej verzii!',
 	'extdist-submit-version' => 'Pokračovať',
 	'extdist-no-remote' => 'Nepodarilo sa kontaktovať vzdialeného klienta Subversion.',
-	'extdist-remote-error' => 'Chyba od vzdialeného klienta Subversion: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Neplatná odpoveď od vzdialeného klienta Subversion.',
+	'extdist-remote-error' => 'Chyba od vzdialeného klienta Subversion: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Neplatná odpoveď od vzdialeného klienta Subversion.', # Fuzzy
 	'extdist-svn-error' => 'Subversion narazil na chybu: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Nebolo možné spracovať XML z výstupu „svn info”: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar skončil s návratovým kódom $1:',
@@ -3074,7 +3074,8 @@ $messages['sr-ec'] = array(
 	'extdist-want-more' => 'Преузми другу екстензију',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'extdist-submit-extension' => 'Produži',
 	'extdist-submit-version' => 'Produži',
@@ -3106,8 +3107,8 @@ De flesta tilläggen fungerar på flera versioner av MediaWiki, så om versionen
 	'extdist-no-versions' => 'Det valda tillägget ($1) är inte tillgängligt i någon version!',
 	'extdist-submit-version' => 'Fortsätt',
 	'extdist-no-remote' => 'Kunde inte kontakta extern SVN-klient.',
-	'extdist-remote-error' => 'Fel från extern SVN-klient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ogiltigt svar från extern SVN-klient.',
+	'extdist-remote-error' => 'Fel från extern SVN-klient: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Ogiltigt svar från extern SVN-klient.', # Fuzzy
 	'extdist-svn-error' => 'SVN hittade ett fel: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Kunde inte processera XML från "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar returnerade utgångskod $1:',
@@ -3216,8 +3217,8 @@ $messages['tk'] = array(
 	'extdist-no-versions' => 'Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!',
 	'extdist-submit-version' => 'Dowam et',
 	'extdist-no-remote' => 'Uzakdan Subversion müşderisi bilen aragatnaşyk gurup bolmaýar.',
-	'extdist-remote-error' => 'Uzakdan Subversion müşderisinden säwlik: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Uzakdan Subversion müşderisined nädogry jogap.',
+	'extdist-remote-error' => 'Uzakdan Subversion müşderisinden säwlik: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Uzakdan Subversion müşderisined nädogry jogap.', # Fuzzy
 	'extdist-svn-error' => 'Subversion säwlige duçar boldy: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"svn info"dan XML-ni işläp bolmaýar: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar çykyş kody $1 gaýdyp geldi:',
@@ -3300,8 +3301,8 @@ Pekçok eklenti MedyaVikinin birçok sürümünde çalışır, eğer MedyaViki s
 	'extdist-no-versions' => 'Seçili eklenti ($1) hiçbir versiyonda mevcut değil!',
 	'extdist-submit-version' => 'Devam et',
 	'extdist-no-remote' => 'Uzaktan altsürüm istemcisiyle temas kurulamıyor.',
-	'extdist-remote-error' => 'Uzaktan altsürüm istemcisinde hata: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Uzaktan altsürüm istemcisinden geçersiz yanıt.',
+	'extdist-remote-error' => 'Uzaktan altsürüm istemcisinde hata: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Uzaktan altsürüm istemcisinden geçersiz yanıt.', # Fuzzy
 	'extdist-svn-error' => 'Altsürüm bir hatayla karşılaştı: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '"svn info"daki XML işlenemiyor: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar çıkış kodu $1 geri döndürdü:',
@@ -3413,8 +3414,8 @@ Tante estension le va su più version de MediaWiki, quindi se la to version de M
 	'extdist-no-versions' => "L'estension che ti gà sielto ($1) no la xe disponibile in nissuna version!",
 	'extdist-submit-version' => 'Continua',
 	'extdist-no-remote' => 'No se riesse a contatar el client subversion remoto.',
-	'extdist-remote-error' => 'Eròr dal client subversion remoto: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Risposta mia valida dal client subversion remoto.',
+	'extdist-remote-error' => 'Eròr dal client subversion remoto: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => 'Risposta mia valida dal client subversion remoto.', # Fuzzy
 	'extdist-svn-error' => 'Subversion el gà catà un eròr: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'No se riesse a elaborar l\'XML da "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'El Tar el gà ritornà el seguente còdese de uscita $1:',
@@ -3526,7 +3527,7 @@ $messages['yue'] = array(
 	'extdist-choose-extension' => '揀你要去下載嘅擴展:',
 	'extdist-wc-empty' => '設定咗嘅工作複本目錄無可發佈嘅擴展！',
 	'extdist-submit-extension' => '繼續',
-	'extdist-current-version' => '現時版本 (trunk)',
+	'extdist-current-version' => '現時版本 (trunk)', # Fuzzy
 	'extdist-choose-version' => '
 你而家下載緊 <b>$1</b> 擴展。
 
@@ -3536,8 +3537,8 @@ $messages['yue'] = array(
 	'extdist-no-versions' => '所揀嘅擴展 ($1) 不適用於任何嘅版本！',
 	'extdist-submit-version' => '繼續',
 	'extdist-no-remote' => '唔能夠聯絡遠端 subversion 客戶端。',
-	'extdist-remote-error' => '自遠端 subversion 客戶端嘅錯誤: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => '自遠端 subversion 客戶端嘅無效回應。',
+	'extdist-remote-error' => '自遠端 subversion 客戶端嘅錯誤: <pre>$1</pre>', # Fuzzy
+	'extdist-remote-invalid-response' => '自遠端 subversion 客戶端嘅無效回應。', # Fuzzy
 	'extdist-svn-error' => 'Subversion 遇到一個錯誤: <pre>$1</pre>',
 	'extdist-svn-parse-error' => '唔能夠處理 "svn info" 嘅 XML: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar 回應結束碼 $1:',
@@ -3676,4 +3677,3 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 	'extdist-vcs-unsupported' => '擴展分發器不支持“$1”版本控制系統。',
 	'extdist-git-invalid-dir' => 'git checkout 無法進入目錄',
 );
-
