@@ -3382,9 +3382,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 );
 
 /** Urdu (اردو)
+ * @author Muhammad Shuaib
  * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
+	'extensiondistributor' => 'زیراثقال میڈیاوکی توسیع',
 	'extdist-submit-extension' => 'جاری رکھیں',
 	'extdist-submit-version' => 'جاری رکھیں',
 	'extdist-remote-invalid-response' => 'توسیع کے ڈسٹریبیوٹر ریموٹ کلائنٹ سے باطل کے جواب.',
