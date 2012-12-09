@@ -3330,6 +3330,7 @@ Eğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Ex
 
 /** Ukrainian (українська)
  * @author AS
+ * @author Base
  * @author NickK
  * @author Olvin
  * @author Prima klasy4na
@@ -3358,6 +3359,8 @@ $messages['uk'] = array(
 	'extdist-remote-invalid-response' => 'Неприпустима відповідь розповсюджувача розширення віддаленого клієнта.',
 	'extdist-svn-error' => 'Помилка субверсії: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Не вдається обробити XML з "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git виявив помилку: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git повернув недопустимий хеш SHA1 для поточної версії: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar повернув код помилки $1:',
 	'extdist-created' => "Знімок версії <b>$2</b> розширення <b>$1</b> MediaWiki <b>$3</b> створено. Завантаження почнеться автоматично через 5 секунд.
 
@@ -3379,6 +3382,8 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
+	'extdist-vcs-unsupported' => 'Розширення Distributor не підтримує систему контролю версій «$1».',
+	'extdist-git-invalid-dir' => 'Не вдається увійти до директорії для виконання git checkout',
 );
 
 /** Urdu (اردو)
