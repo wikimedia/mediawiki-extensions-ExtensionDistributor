@@ -1651,10 +1651,11 @@ Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi
 	'extdist-no-versions' => 'Ekstensi terpilih ($1) tidak tersedia di versi mana pun!',
 	'extdist-submit-version' => 'Lanjutkan',
 	'extdist-no-remote' => 'Tidak dapat terhubung ke client subversio.',
-	'extdist-remote-error' => 'Kesalahan dari subversion client: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'respon tidak sah dari subversion client.', # Fuzzy
+	'extdist-remote-error' => 'Kesalahan dari klien jauh Extension Distributor: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Respon salah dari klien jauh Extension Distributor.',
 	'extdist-svn-error' => 'Subversion mengalami masalah: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML dari "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Git mengalami masalah: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
 	'extdist-created' => "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.
 
@@ -1678,6 +1679,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
+	'extdist-vcs-unsupported' => 'Extension Distributor tidak mendukung sistem kontrol versi "$1".',
 );
 
 /** Italian (italiano)
