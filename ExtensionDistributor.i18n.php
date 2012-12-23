@@ -1656,6 +1656,7 @@ Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi
 	'extdist-svn-error' => 'Subversion mengalami masalah: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Tidak dapat memproses XML dari "svn info": <pre>$1</pre>',
 	'extdist-git-error' => 'Git mengalami masalah: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git mengembalikan hash SHA1 salah untuk revisi terkini: <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
 	'extdist-created' => "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.
 
@@ -1680,6 +1681,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 
 Dapatkan ekstensi lain',
 	'extdist-vcs-unsupported' => 'Extension Distributor tidak mendukung sistem kontrol versi "$1".',
+	'extdist-git-invalid-dir' => 'Gagal memasuki direktori checkout git',
 );
 
 /** Italian (italiano)
