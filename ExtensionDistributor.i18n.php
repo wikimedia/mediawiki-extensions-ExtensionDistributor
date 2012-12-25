@@ -1753,11 +1753,11 @@ $messages['ja'] = array(
 	'extensiondistributor' => 'MediaWiki 拡張機能のダウンロード',
 	'extensiondistributor-desc' => '拡張機能のスナップショットのアーカイブを配布するための拡張機能',
 	'extdist-not-configured' => '$wgExtDistTarDirと$wgExtDistWorkingCopyの設定を行ってください',
-	'extdist-wc-missing' => '指定されたコピー用ディレクトリが存在しません！',
+	'extdist-wc-missing' => '指定されたコピー用ディレクトリが存在しません!',
 	'extdist-no-such-extension' => '「$1」という拡張機能はありません',
 	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
-	'extdist-wc-empty' => '指定されたコピー先ディレクトリにダウンロードする拡張機能が存在しません！',
+	'extdist-wc-empty' => '指定されたコピー先ディレクトリにダウンロードする拡張機能が存在しません!',
 	'extdist-submit-extension' => '続行',
 	'extdist-current-version' => '開発バージョン (trunk)',
 	'extdist-choose-version' => '拡張機能 <b>$1</b> をダウンロードしようとしています。
@@ -1765,7 +1765,7 @@ $messages['ja'] = array(
 ご使用中の MediaWiki のバージョンを選択してください。
 
 多くの拡張機能は複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、または拡張機能の最新の機能が必要な場合は、最新版をお試しください。',
-	'extdist-no-versions' => '選択された拡張機能($1)はどのバージョンでも利用できません！',
+	'extdist-no-versions' => '選択した拡張機能 ($1) はどのバージョンでも利用できません!',
 	'extdist-submit-version' => '選択',
 	'extdist-no-remote' => 'リモート subversion クライアントにアクセスできませんでした。',
 	'extdist-remote-error' => 'Extension Distributor リモート クライアントがエラーを返しました: <pre>$1</pre>',
@@ -1789,7 +1789,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用できます。
 
-ウィキを遠隔サーバーに設置している場合、ローカル・コンピュータの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''すべての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。
+ウィキを遠隔サーバーに設置している場合、ローカルコンピューターの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''すべての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。
 
 ファイルをすべて展開したら、その拡張機能を LocalSettings.php へ登録する必要があります。具体的な作業手順は各拡張機能のドキュメントで解説されています。
 
@@ -2616,10 +2616,12 @@ Vàire estension a travajo dzora a 'd version diferente ëd MediaWiki, parèj se
 	'extdist-no-versions' => "L'estension selessionà ($1) a l'é pa disponìbil an gnun-e version!",
 	'extdist-submit-version' => 'Continua',
 	'extdist-no-remote' => 'As peul pa contaté ël client leugn ëd la sot-version.',
-	'extdist-remote-error' => 'Eror dal client leugn ëd la sot-version: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn ëd la sot-version.', # Fuzzy
+	'extdist-remote-error' => 'Eror dal client leugn Extension Distributor: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn Extension Distributor.',
 	'extdist-svn-error' => "La sot-version a l'ha rëncontrà n'eror: <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'As peul pa processesse l\'XML da "svn info": <pre>$1</pre>',
+	'extdist-git-error' => "Git a l'ha rëncontrà n'eror: <pre>$1</pre>",
+	'extdist-git-invalidsha1' => "Git a l'ha artornà n'hash SHA1 pa bon për la revision corenta: <pre>$1</pre>",
 	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:",
 	'extdist-created' => "Na còpia d'amblé ëd la version <b>$2</b> ëd l'estension <b>$1</b> për MediaWiki <b>$3</b> a l'é stàita creà. Soa dëscaria a dovrìa parte automaticament tra 5 second.
 
@@ -2641,6 +2643,8 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
+	'extdist-vcs-unsupported' => 'Extension Distributor a paògia pa ël sistem ëd contròl vërsion "$1".',
+	'extdist-git-invalid-dir' => 'AS peul pa anserisse la cartela për ël checkout git',
 );
 
 /** Portuguese (português)
