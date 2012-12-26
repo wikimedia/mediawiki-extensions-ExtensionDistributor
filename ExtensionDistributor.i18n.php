@@ -3115,8 +3115,8 @@ De flesta tilläggen fungerar på flera versioner av MediaWiki, så om versionen
 	'extdist-no-versions' => 'Det valda tillägget ($1) är inte tillgängligt i någon version!',
 	'extdist-submit-version' => 'Fortsätt',
 	'extdist-no-remote' => 'Kunde inte kontakta extern SVN-klient.',
-	'extdist-remote-error' => 'Fel från extern SVN-klient: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ogiltigt svar från extern SVN-klient.', # Fuzzy
+	'extdist-remote-error' => 'Fel från extern Extension Distributor-klient: <pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Ogiltigt svar från extern Extension Distributor-klient.',
 	'extdist-svn-error' => 'SVN hittade ett fel: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Kunde inte processera XML från "svn info": <pre>$1</pre>',
 	'extdist-tar-error' => 'Tar returnerade utgångskod $1:',
