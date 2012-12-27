@@ -1541,9 +1541,11 @@ A legtöbb kiterjesztés működik a MediaWiki több verziójával, így ha az �
 	'extdist-submit-version' => 'Folytatás',
 	'extdist-no-remote' => 'Nem sikerült kapcsolódni a távoli Subversion klienshez.',
 	'extdist-remote-error' => 'Hiba a távoli Subversion klienstől: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Érvénytelen válasz a távoli Subversion klienstől.', # Fuzzy
+	'extdist-remote-invalid-response' => 'Érvénytelen válasz a távoli Extension Distributor klienstől.',
 	'extdist-svn-error' => 'A Subversion hibával tért vissza: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Az „svn info” által visszaadott XML-t nem sikerült feldolgozni: <pre>$1</pre>',
+	'extdist-git-error' => 'Git hibába ütközött: <pre>$1</pre>',
+	'extdist-git-invalidsha1' => 'Git érvénytelen SHA1 hash értéket adott vissza az aktuális verzióhoz: <pre>$1</pre>',
 	'extdist-tar-error' => 'A tar által adott visszatérési kód $1:',
 	'extdist-created' => "A(z) <b>$1</b> MediaWiki <b>$3</b> kiterjesztés <b>$2</b> verziójának pillanatfelvétele elkészült. A letöltés automatikusan megkezdődik 5 másodpercen belül.
 
@@ -1565,6 +1567,7 @@ Miután kibontottad a fájlokat, regisztrálnod kell a kiterjesztést a LocalSet
 
 Ha bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, keresd fel az [[Extension talk:ExtensionDistributor]] lapot.",
 	'extdist-want-more' => 'Másik kiterjesztés letöltése',
+	'extdist-vcs-unsupported' => 'Az Extension Distributor nem támogatja a "$1" verzió kezelő rendszert.',
 );
 
 /** Interlingua (interlingua)
