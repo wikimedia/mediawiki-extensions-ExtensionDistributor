@@ -2052,6 +2052,13 @@ $messages['lt'] = array(
 	'extdist-want-more' => 'Gauti kitą plėtinį',
 );
 
+/** Latvian (latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'extdist-submit-version' => 'Turpināt',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
