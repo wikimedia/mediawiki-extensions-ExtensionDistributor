@@ -5,12 +5,11 @@ $messages = array();
 $messages['en'] = array(
 		'extensiondistributor' => 'Download MediaWiki extension',
 		'extensiondistributor-desc' => 'Extension for distributing snapshot archives of extensions',
-		'extdist-not-configured' => 'Please configure $wgExtDistTarDir and $wgExtDistWorkingCopy',
-		'extdist-wc-missing' => 'The configured working copy directory does not exist!',
+		'extdist-not-configured' => 'Please configure $wgExtDistList and $wgExtDistArchiveAPI',
+		'extdist-list-missing' => 'Unable to fetch extension list!',
 		'extdist-no-such-extension' => 'No such extension "$1"',
 		'extdist-no-such-version' => 'The extension "$1" does not exist in the version "$2".',
 		'extdist-choose-extension' => 'Select which extension you want to download:',
-		'extdist-wc-empty' => 'The configured working copy directory has no distributable extensions!',
 		'extdist-submit-extension' => 'Continue',
 		'extdist-current-version' => 'Development version (trunk)',
 		'extdist-choose-version' => 'You are downloading the <b>$1</b> extension.
@@ -20,14 +19,6 @@ Select your MediaWiki version.
 Most extensions work across multiple versions of MediaWiki, so if your MediaWiki version is not here, or if you have a need for the latest extension features, try using the current version.',
 		'extdist-no-versions' => 'The selected extension ($1) is not available in any version!',
 		'extdist-submit-version' => 'Continue',
-		'extdist-no-remote' => 'Unable to contact remote subversion client.',
-		'extdist-remote-error' => 'Error from Extension Distributor remote client: <pre>$1</pre>',
-		'extdist-remote-invalid-response' => 'Invalid response from Extension Distributor remote client.',
-		'extdist-svn-error' => 'Subversion encountered an error: <pre>$1</pre>',
-		'extdist-svn-parse-error' => 'Unable to process the XML from "svn info": <pre>$1</pre>',
-		'extdist-git-error' => 'Git encountered an error: <pre>$1</pre>',
-		'extdist-git-invalidsha1' => 'Git returned an invalid SHA1 hash for the current revision: <pre>$1</pre>',
-		'extdist-tar-error' => 'Tar returned exit code $1:',
 		'extdist-created' => "A snapshot of version <b>$2</b> of the <b>$1</b> extension for MediaWiki <b>$3</b> has been created. Your download should start automatically in 5 seconds.
 
 The URL for this snapshot is:
@@ -48,8 +39,7 @@ After you have extracted the files, you will need to register the extension in L
 
 If you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]].",
 		'extdist-want-more' => 'Get another extension',
-		'extdist-vcs-unsupported' => 'Extension Distributor doesn\'t support the "$1" version control system.',
-		'extdist-git-invalid-dir' => 'Unable to enter directory for git checkout',
+		'extdist-tar-error' => 'Unable to fetch archive URL from archive API.',
 );
 
 /** Message documentation (Message documentation)
