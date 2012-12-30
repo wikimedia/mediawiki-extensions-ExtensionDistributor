@@ -2399,7 +2399,7 @@ De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw ve
 
 De URL voor de snapshot is:
 :$4
-Deze verwijzing kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.
+Deze koppeling kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.
 
 Pak het tararchief uit in uw map "extensions/". Op een UNIX-achtig besturingssysteem gaat dat als volgt:
 
@@ -2417,6 +2417,37 @@ Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
 	'extdist-vcs-unsupported' => 'Het is niet mogelijk om uitbreidingen te distribueren met behulp van het versioncontrolsysteem "$1" omdat dit niet wordt ondersteund.',
 	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'extdist-choose-extension' => 'Selecteer de uitbreiding die je wilt downloaden:',
+	'extdist-choose-version' => 'Je bent de uitbreiding <b>$1</b> aan het downloaden.
+
+Selecteer je versie van MediaWiki.
+
+De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als jouw versie niet in de lijst staat, of als je behoefte hebt aan de nieuwste mogelijkheden van de uitbreidingen, gebruik dan de huidige versie.',
+	'extdist-created' => 'De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Je download start automatisch over 5 seconden.
+
+De URL voor de snapshot is:
+:$4
+Deze koppeling kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.
+
+Pak het tararchief uit in uw map "extensions/". Op een UNIX-achtig besturingssysteem gaat dat als volgt:
+
+<pre>
+tar -xzf $5 -C /var/www/mediawiki/extensions
+</pre>
+
+Op Windows kan je [http://www.7-zip.org/ 7-zip] gebruiken om de bestanden uit te pakken.
+
+Als je wiki op een op afstand beheerde server staat, pak de bestanden dan uit in een tijdelijke map op uw computer. Upload daarna \'\'\'alle\'\'\' uitgepakte bestanden naar de map "extensions/" op de server.
+
+Nadat je de bestanden hebt uitgepakt, moet je de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding tref je de instructies aan.
+
+Als je vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
