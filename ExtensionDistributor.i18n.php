@@ -3377,6 +3377,14 @@ Eğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Ex
 	'extdist-want-more' => 'Başka eklenti al',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'extdist-submit-extension' => 'داۋاملاشتۇر',
+	'extdist-submit-version' => 'داۋاملاشتۇر',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Base
