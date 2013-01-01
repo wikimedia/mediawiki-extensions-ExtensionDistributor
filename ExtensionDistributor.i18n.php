@@ -802,6 +802,7 @@ Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi p�
 /** Greek (Ελληνικά)
  * @author Dead3y3
  * @author Geraki
+ * @author Glavkos
  * @author Omnipaedista
  * @author Reedy
  */
@@ -824,10 +825,11 @@ $messages['el'] = array(
 	'extdist-no-versions' => 'Η επιλεγμένη επέκταση ($1) δεν είναι διαθέσιμη σε καμία έκδοση!',
 	'extdist-submit-version' => 'Συνέχεια',
 	'extdist-no-remote' => 'Αδύνατη η επικοινωνία με τον απομακρυσμένο πελάτη subversion.',
-	'extdist-remote-error' => 'Σφάλμα από τον απομακρυσμένο πελάτη subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Άκυρη απόκριση από τον απομακρυσμένο πελάτη subversion.', # Fuzzy
+	'extdist-remote-error' => 'Σφάλμα από Διανομέα Επέκτασης απομακρυσμένου υπολογιστή-πελάτη:<pre>$1</pre>',
+	'extdist-remote-invalid-response' => 'Μη έγκυρη απόκριση από Διανομέα Επέκτασης απομακρυσμένου υπολογιστή-πελάτη..',
 	'extdist-svn-error' => 'Το σύστημα Subversion αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Αδύνατη η επεξεργασία της XML από το "svn info": <pre>$1</pre>',
+	'extdist-git-error' => 'Το Git αντιμετώπισε ένα σφάλμα:<pre>$1</pre>',
 	'extdist-tar-error' => 'To Tar επέστρεψε κωδικό εξόδου $1:',
 	'extdist-created' => "Ένα στιγμιότυπο της έκδοσης <b>$2</b> της επέκτασης <b>$1</b> για το MediaWiki <b>$3</b> έχει δημιουργηθεί. Η λήψη σας θα πρέπει να ξεκινήσει αυτόματα σε 5 δευτερόλεπτα.
 
