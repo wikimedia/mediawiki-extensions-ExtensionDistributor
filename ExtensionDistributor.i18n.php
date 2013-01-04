@@ -2663,8 +2663,8 @@ Vàire estension a travajo dzora a 'd version diferente ëd MediaWiki, parèj se
 	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn Extension Distributor.',
 	'extdist-svn-error' => "La sot-version a l'ha rëncontrà n'eror: <pre>$1</pre>",
 	'extdist-svn-parse-error' => 'As peul pa processesse l\'XML da "svn info": <pre>$1</pre>',
-	'extdist-git-error' => "Git a l'ha rëncontrà n'eror: <pre>$1</pre>",
-	'extdist-git-invalidsha1' => "Git a l'ha artornà n'hash SHA1 pa bon për la revision corenta: <pre>$1</pre>",
+	'extdist-git-error' => "Git a l'ha rancontrà n'eror: <pre>$1</pre>",
+	'extdist-git-invalidsha1' => "Git a l'ha mandà andré n'hash SHA1 pa bon për la revision corenta: <pre>$1</pre>",
 	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:",
 	'extdist-created' => "Na còpia d'amblé ëd la version <b>$2</b> ëd l'estension <b>$1</b> për MediaWiki <b>$3</b> a l'é stàita creà. Soa dëscaria a dovrìa parte automaticament tra 5 second.
 
@@ -2686,8 +2686,8 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-vcs-unsupported' => 'Extension Distributor a paògia pa ël sistem ëd contròl vërsion "$1".',
-	'extdist-git-invalid-dir' => 'AS peul pa anserisse la cartela për ël checkout git',
+	'extdist-vcs-unsupported' => 'Extension Distributor a manten nen ël sistema ëd contròl ëd version «$1».',
+	'extdist-git-invalid-dir' => 'Impossìbil intré ant ël dossié për un contròl ëd Git',
 );
 
 /** Portuguese (português)
