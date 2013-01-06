@@ -804,6 +804,7 @@ Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi p�
  * @author Geraki
  * @author Glavkos
  * @author Omnipaedista
+ * @author Protnet
  * @author Reedy
  */
 $messages['el'] = array(
@@ -829,7 +830,7 @@ $messages['el'] = array(
 	'extdist-remote-invalid-response' => 'Μη έγκυρη απόκριση από Διανομέα Επέκτασης απομακρυσμένου υπολογιστή-πελάτη..',
 	'extdist-svn-error' => 'Το σύστημα Subversion αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
 	'extdist-svn-parse-error' => 'Αδύνατη η επεξεργασία της XML από το "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Το Git αντιμετώπισε ένα σφάλμα:<pre>$1</pre>',
+	'extdist-git-error' => 'Το Git αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
 	'extdist-tar-error' => 'To Tar επέστρεψε κωδικό εξόδου $1:',
 	'extdist-created' => "Ένα στιγμιότυπο της έκδοσης <b>$2</b> της επέκτασης <b>$1</b> για το MediaWiki <b>$3</b> έχει δημιουργηθεί. Η λήψη σας θα πρέπει να ξεκινήσει αυτόματα σε 5 δευτερόλεπτα.
 
