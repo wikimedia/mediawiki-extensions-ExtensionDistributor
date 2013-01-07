@@ -8,7 +8,7 @@
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Extension Distributor',
-	'author'         => array( 'Tim Starling', 'Sam Reed' ),
+	'author'         => array( 'Tim Starling', 'Sam Reed', 'Chad Horohoe' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
 	'descriptionmsg' => 'extensiondistributor-desc',
 );
@@ -17,24 +17,29 @@ $wgExtensionCredits['specialpage'][] = array(
  * Configuration
  */
 
-/** Directory to put tar files in */
-$wgExtDistTarDir = false;
+/** File to fetch list of extensions from */
+$wgExtDistListFile = 'https://gerrit.wikimedia.org/mediawiki-extensions.txt';
 
-/** URL corresponding to $wgExtDistTarDir */
-$wgExtDistTarUrl = false;
-
-/** Subversion /mediawiki working copy */
-$wgExtDistWorkingCopy = false;
-
-/** 
- * Supported branches, the first one is the default.
- * To add a branch, first check out the new branch in $wgExtDistWorkingCopy, and 
- * then add it here. Do not add a branch here without first checking it out.
+/**
+ * URL to get a Location: header from for the actual archive. This is based on
+ * GitHub's REST API for fetching archives. In theory, it could be any service
+ * that can respond with a 302 and a Location: header pointing to where the
+ * archive can be retrieved. That archive should be a tar.gz file, and contain
+ * a content-disposition header of the format:
+ *    "attachment; filename=<extension>-<sha1>.tar.gz"
+ *
+ * $EXT is replaced with the extension name (eg: ParserFunctions)
+ * "tarball" is the archive format
+ * $REF is the branch name (eg: master, REL1_21)
  */
-$wgExtDistBranches = array();
+$wgExtDistArchiveAPI = 'https://api.github.com/repos/wikimedia/mediawiki-extensions-$EXT/tarball/$REF';
 
-/** Remote socket for svn-invoker.php (optional) */
-$wgExtDistRemoteClient = false;
+/**
+ * Supported branches, master is the default (and shouldn't be removed)
+ */
+$wgExtDistBranches = array(
+	'master',
+);
 
 /********************
  * Registration
@@ -46,9 +51,6 @@ $wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor
 $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDistributor.alias.php';
 
 // Special page classes
-$wgSpecialPages['ExtensionDistributor'] = 'ExtensionDistributorPage';
+$wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
-$wgAutoloadClasses['ExtensionDistributorPage'] = $dir . 'ExtensionDistributor_body.php';
-$wgAutoloadClasses['ExtensionDistributorSVN'] = $dir . 'ExtensionDistributorSVN.php';
-$wgAutoloadClasses['ExtensionDistributorVCS'] = $dir . 'ExtensionDistributorVCS.php';
-$wgAutoloadClasses['ExtensionDistributorGit'] = $dir . 'ExtensionDistributorGit.php';
+$wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
