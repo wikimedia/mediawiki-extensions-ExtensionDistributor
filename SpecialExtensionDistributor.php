@@ -167,6 +167,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @param $version string
 	 */
 	protected function doDownload( $extension, $version ) {
+		global $wgExtensionAssetsPath;
 		$info = $this->fetchArchiveInfo( $extension, $version );
 
 		if( !$info ) {
@@ -175,12 +176,15 @@ class SpecialExtensionDistributor extends SpecialPage {
 		}
 
 		// Show a message
+		$downloadImg = "$wgExtensionAssetsPath/ExtensionDistributor/download.png";
 		$this->getOutput()->addWikiMsg( 'extdist-created', $extension, $info['sha1'],
 			$version, $info['url'], $info['archive'] );
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'p' ) . Xml::element( 'br' ) . Xml::openElement( 'h2' ) .
-			Linker::link( $this->getTitle(), $this->msg( 'extdist-want-more' )->escaped() ) .
-			Xml::closeElement( 'h2' ) . Xml::closeElement( 'p' ) . "\n"
+			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
+			Linker::link( $this->getTitle(),
+				Xml::element( 'img', array( 'src' => $downloadImg ) ) .
+				$this->msg( 'extdist-want-more' )->escaped() ) .
+			Xml::closeElement( 'p' ) . "\n"
 		);
 
 		// Redirect to the file
