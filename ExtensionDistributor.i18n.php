@@ -68,18 +68,14 @@ $messages['qqq'] = array(
 $messages['af'] = array(
 	'extensiondistributor' => 'Laai MediaWiki-uitbreiding af',
 	'extensiondistributor-desc' => 'Uitbreiding vir die verspreiding van die momentopname argiewe van uitbreidings',
-	'extdist-not-configured' => 'Stel asseblief $wgExtDistTarDir en $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Die geconfigureerd werk kopie directory bestaan ​​nie!',
+	'extdist-not-configured' => 'Stel asseblief $wgExtDistList en $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Die uitbreiding "$1" bestaan nie',
 	'extdist-choose-extension' => 'Kies die uitbreiding wat jy wil aflaai:',
-	'extdist-wc-empty' => 'Die geconfigureerd werk kopie gids het geen verdeelbare uitbreidings!',
 	'extdist-submit-extension' => 'Gaan voort',
 	'extdist-current-version' => 'Ontwikkelingsweergawe (trunc)',
 	'extdist-submit-version' => 'Gaan voort',
-	'extdist-no-remote' => 'Kan afgeleë subversie kliënt te kontak.',
-	'extdist-remote-invalid-response' => "Ongeldige antwoord van 'n ​​afgeleë subversie kliënt.", # Fuzzy
-	'extdist-tar-error' => 'TAR stuur die volgende kode terug $1:',
 	'extdist-want-more' => "Laai nog 'n uitbreiding af",
+	'extdist-tar-error' => 'TAR stuur die volgende kode terug $1:', # Fuzzy
 );
 
 /** Gheg Albanian (Gegë)
@@ -88,8 +84,7 @@ $messages['af'] = array(
 $messages['aln'] = array(
 	'extensiondistributor' => 'Shkarko extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension për shpërndarjen e arkivave fotografi e shtesave',
-	'extdist-not-configured' => 'Ju lutem, konfiguroni $wgExtDistTarDir dhe $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfiguruar directory kopje e punës nuk ekziston!',
+	'extdist-not-configured' => 'Ju lutem, konfiguroni $wgExtDistList dhe $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Jo zgjatje e tillë "$1"',
 	'extdist-no-such-version' => 'Zgjatja "$1" nuk ekziston në versionin e "$2".',
 );
@@ -101,12 +96,10 @@ $messages['aln'] = array(
 $messages['ar'] = array(
 	'extensiondistributor' => 'تنزيل امتداد ميدياويكي',
 	'extensiondistributor-desc' => 'امتداد لتوزيع أرشيفات ملتقطة للامتدادات',
-	'extdist-not-configured' => 'من فضلك اضبط $wgExtDistTarDir و $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'مجلد نسخة العمل المحدد غير موجود!',
+	'extdist-not-configured' => 'من فضلك اضبط $wgExtDistList و $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'لا امتداد كهذا "$1"',
 	'extdist-no-such-version' => 'الامتداد "$1" لا يوجد في النسخة "$2".',
 	'extdist-choose-extension' => 'اختر أي امتدات تريد تنزيله:',
-	'extdist-wc-empty' => 'مجلد نسخة العمل المضبوط ليس به امتدادات قابلة للتوزيع!',
 	'extdist-submit-extension' => 'استمرار',
 	'extdist-current-version' => 'نسخة التطوير (جذع)',
 	'extdist-choose-version' => 'أنت تقوم بتنزيل امتداد <b>$1</b>.
@@ -116,12 +109,6 @@ $messages['ar'] = array(
 معظم الامتدادات تعمل خلال نسخ متعددة من ميدياويكي، لذا إذا كانت نسخة ميدياويكي الخاصة بك ليست هنا، أو لو كانت لديك حاجة لأحدث خواص الامتداد، حاول استخدام النسخة الحالية.',
 	'extdist-no-versions' => 'الامتداد المختار ($1) غير متوفر في أي نسخة!',
 	'extdist-submit-version' => 'استمرار',
-	'extdist-no-remote' => 'غير قادر على الاتصال بعميل سب فيرجن البعيد.',
-	'extdist-remote-error' => 'خطأ من عميل توزيع الامتدادات البعيد: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'رد غير صحيح من عميل توزيع الامتدادات البعيد.',
-	'extdist-svn-error' => 'سب فيرجن صادف خطأ: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'غير قادر على معالجة XML من "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'تار أرجع كود خروج $1:',
 	'extdist-created' => "لقطة من النسخة <b>$2</b> من الامتداد <b>$1</b> لميدياويكي <b>$3</b> تم إنشاؤها. تحميلك ينبغي أن يبدأ تلقائيا خلال 5 ثوان.
 
 المسار لهذه اللقطة هو:
@@ -142,6 +129,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 لو كانت لديك أية أسئلة حول نظام توزيع الامتدادات هذا، من فضلك اذهب إلى [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'الحصول على امتداد آخر',
+	'extdist-tar-error' => 'تار أرجع كود خروج $1:', # Fuzzy
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -151,12 +139,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['arz'] = array(
 	'extensiondistributor' => 'تنزيل امتداد ميدياويكي',
 	'extensiondistributor-desc' => 'امتداد لتوزيع أرشيفات ملتقطة للامتدادات',
-	'extdist-not-configured' => 'من فضلك اضبط $wgExtDistTarDir و $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'مجلد نسخة العمل المحدد غير موجود!',
+	'extdist-not-configured' => 'من فضلك اضبط $wgExtDistList و $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'لا امتداد كهذا "$1"',
 	'extdist-no-such-version' => 'الامتداد "$1" لا يوجد فى النسخة "$2".',
 	'extdist-choose-extension' => 'اختر أى امتدات تريد تنزيله:',
-	'extdist-wc-empty' => 'مجلد نسخة العمل المضبوط ليس به امتدادات قابلة للتوزيع!',
 	'extdist-submit-extension' => 'استمر',
 	'extdist-current-version' => 'نسخة التطوير (جذع)',
 	'extdist-choose-version' => 'أنت تقوم بتنزيل امتداد <b>$1</b>.
@@ -166,12 +152,6 @@ $messages['arz'] = array(
 معظم الامتدادات تعمل خلال نسخ متعددة من ميدياويكى، لذا إذا كانت نسخة ميدياويكى الخاصة بك ليست هنا، أو لو كانت لديك حاجة لأحدث خواص الامتداد، حاول استخدام النسخة الحالية.',
 	'extdist-no-versions' => 'الامتداد المختار ($1) غير متوفر فى أى نسخة!',
 	'extdist-submit-version' => 'استمرار',
-	'extdist-no-remote' => 'غير قادر على الاتصال بعميل سب فيرجن البعيد.',
-	'extdist-remote-error' => 'خطأ من عميل سب فيرجن البعيد: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'رد غير صحيح من عميل سب فيرجن البعيد.', # Fuzzy
-	'extdist-svn-error' => 'سب فيرجن صادف خطأ: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'غير قادر على معالجة XML من "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'تار أرجع كود خروج $1:',
 	'extdist-created' => "لقطة من النسخة <b>$2</b> من الامتداد <b>$1</b> لميدياويكى <b>$3</b> تم إنشاؤها. تحميلك ينبغى أن يبدأ تلقائيا خلال 5 ثوان.
 
 المسار لهذه اللقطة هو:
@@ -192,6 +172,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 لو كانت لديك أية أسئلة حول نظام توزيع الامتدادات هذا، من فضلك اذهب إلى [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'الحصول على امتداد آخر',
+	'extdist-tar-error' => 'تار أرجع كود خروج $1:', # Fuzzy
 );
 
 /** Asturian (asturianu)
@@ -200,12 +181,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['ast'] = array(
 	'extensiondistributor' => 'Descargar estensión de MediaWiki',
 	'extensiondistributor-desc' => "Estensión pa distribuir archivos de instantánees d'estensiones",
-	'extdist-not-configured' => 'Por favor configura $wgExtDistTarDir y $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => '¡El direutoriu de copia de trabayu configuráu nun esiste!',
+	'extdist-not-configured' => 'Por favor configura $wgExtDistList y $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Nun esiste la estensión «$1»',
 	'extdist-no-such-version' => 'La estensión «$1» nun esiste na versión «$2».',
 	'extdist-choose-extension' => 'Seleiciona la estensión que quies descargar:',
-	'extdist-wc-empty' => '¡El direutoriu de copia de trabayu configuráu nun tien estensiones distribuibles!',
 	'extdist-submit-extension' => 'Siguir',
 	'extdist-current-version' => 'Versión en desendolcu (trunk)',
 	'extdist-choose-version' => "Tas descargando la estensión <b>$1</b>.
@@ -215,14 +194,6 @@ Seleiciona la to versión de MediaWiki.
 La mayor parte de les estensiones funcionen con múltiples versiones de Mediawiki, de mou que si la to versión de Mediawiki nun ta equí, o si necesites les caberes carauterístiques de les estensiones. trata d'usar la versión actual.",
 	'extdist-no-versions' => '¡La estensión seleicionada ($1) nun ta disponible en denguna versión!',
 	'extdist-submit-version' => 'Siguir',
-	'extdist-no-remote' => 'Nun se pudo entrar en contautu col cliente remotu de subversion.',
-	'extdist-remote-error' => "Error del cliente remotu del Distribuidor d'estensiones: <pre>$1</pre>",
-	'extdist-remote-invalid-response' => "Respuesta inválida del cliente remotu del Distribuidor d'estensiones.",
-	'extdist-svn-error' => 'Subversion alcontró un error: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Nun se pudo procesar el XML de "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git alcontró un error: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git devolvió un hash SHA1 inválidu pa la revisión actual: <pre>$1</pre>',
-	'extdist-tar-error' => "Tar devolvió'l códigu de salida $1:",
 	'extdist-created' => "Se creó una instantánea de la versión <b>$2</b> de la estensión <b>$1</b> de MediaWiki <b>$3</b>. Tu descarga debería comenzar de mou automáticu en 5 segundos.
 
 La URL d'esta instantánea ye:
@@ -243,8 +214,7 @@ Después d'estrayer los ficheros, necesitarás rexistrar la estensión en LocalS
 
 Si tienes cualesquier entruga tocante a esti sistema de distribución d'estensiones, por favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Descargar otra estensión',
-	'extdist-vcs-unsupported' => "El Distribuidor d'estensiones nun tien sofitu pal sistema de control de versiones «$1».",
-	'extdist-git-invalid-dir' => 'Nun se pudo entrar al direutoriu pa la comprobación git',
+	'extdist-tar-error' => "Tar devolvió'l códigu de salida $1:", # Fuzzy
 );
 
 /** Bashkir (башҡортса)
@@ -254,12 +224,10 @@ Si tienes cualesquier entruga tocante a esti sistema de distribución d'estensio
 $messages['ba'] = array(
 	'extensiondistributor' => 'MediaWiki киңәйеүҙәрен күсереп алырға',
 	'extensiondistributor-desc' => 'Киңәйеүҙәр менән дистрибутивты күсереп алыу өсөн киңәйеү',
-	'extdist-not-configured' => 'Зинһар, $wgExtDistTarDir һәм $wgExtDistWorkingCopy көйләгеҙ',
-	'extdist-wc-missing' => 'Көйләүҙәрҙә күрһәтелгән эшләй торған күсермә директорияһы юҡ!',
+	'extdist-not-configured' => 'Зинһар, $wgExtDistList һәм $wgExtDistArchiveAPI көйләгеҙ',
 	'extdist-no-such-extension' => '"$1" киңәйеүе юҡ',
 	'extdist-no-such-version' => '"$1" киңәйеүенең "$2" өлгөһө юҡ',
 	'extdist-choose-extension' => 'Күсереп алыу өсөн киңәйеү һайлағыҙ:',
-	'extdist-wc-empty' => 'Көйләүҙәрҙә күрһәтелгән эшләй торған күсермә директорияһының таратмалы киңәйеүҙәре юҡ!',
 	'extdist-submit-extension' => 'Дауам итергә',
 	'extdist-current-version' => 'Эшләп сығарыу өлгөһө (trunk)',
 	'extdist-choose-version' => 'Һеҙ <b>$1</b> киңәйеүен күсереп алаһығыҙ.
@@ -269,12 +237,6 @@ MediaWiki өлгөгөҙҙө һайлағыҙ.
 Киңәйеүҙәрҙең күбеһе төрлө MediaWiki өлгөләре менән эшләй, шуға күрә әгәр һеҙҙең MediaWiki өлгөһө бында күрһәтелмәһә, йәки һеҙгә һуңғы киңәйеү өлгөһөнөң мөмкинлектәре кәрәкһә, ағымдағы өлгөнө ҡулланып ҡарағыҙ.',
 	'extdist-no-versions' => 'Һайланған киңәйеүҙе ($1) бер өлгөлә лә алып булмай!',
 	'extdist-submit-version' => 'Дауам итергә',
-	'extdist-no-remote' => 'Алыҫтағы Subversion клиенты менән бәйләнеш булдырыу мөмкин түгел.',
-	'extdist-remote-error' => 'Алыҫтағы Subversion клиентынан хата: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Алыҫтағы Subversion клиентынан алынған яуап дөрөҫ түгел.', # Fuzzy
-	'extdist-svn-error' => 'Subversion хатаһы: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '«svn info» фарманынан алынған XML-ды эшкәртеү мөмкин түгел: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar $1 коды ҡайтарҙы:',
 	'extdist-created' => "MediaWiki өсөн <b>$1</b> киңәйеүенең <b>$2</b> өлгөһөнөң <b>$3</b> күсермәһе булдырылды. Күсереп алыу 5 секундтан үҙенән-үҙе башланырға тейеш.
 
 Был күсермәнең URL адресы:
@@ -295,6 +257,7 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 
 Әгәр һеҙҙең был киңәйеүҙе таратыу системаһы тураһында һорауҙарығыҙ булһа, зинһар, [[Extension talk:ExtensionDistributor]] битен ҡарағыҙ.",
 	'extdist-want-more' => 'Башҡа киңәйеү алырға',
+	'extdist-tar-error' => 'Tar $1 коды ҡайтарҙы:', # Fuzzy
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -307,12 +270,10 @@ Windows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zi
 $messages['be-tarask'] = array(
 	'extensiondistributor' => 'Загрузіць пашырэньне MediaWiki',
 	'extensiondistributor-desc' => 'Пашырэньне для распаўсюджваньня архіваў пашырэньняў',
-	'extdist-not-configured' => 'Калі ласка, задайце $wgExtDistTarDir і $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Зададзеная працоўная копія дырэкторыі не існуе!',
+	'extdist-not-configured' => 'Калі ласка, задайце $wgExtDistList і $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Пашырэньне «$1» не існуе',
 	'extdist-no-such-version' => 'Вэрсія «$2» пашырэньня «$1» ня знойдзеная.',
 	'extdist-choose-extension' => 'Выберыце, якое пашырэньне Вы жадаеце загрузіць:',
-	'extdist-wc-empty' => 'Зададзеная працоўная копія дырэкторыі ня мае пашырэньняў для распаўсюджваньня!',
 	'extdist-submit-extension' => 'Працягваць',
 	'extdist-current-version' => 'Вэрсія ў распрацоўцы (trunk)',
 	'extdist-choose-version' => 'Вы загружаеце пашырэньне <b>$1</b>.
@@ -322,14 +283,6 @@ $messages['be-tarask'] = array(
 Большасьць пашырэньняў працуе зь некалькімі вэрсіямі MediaWiki, таму, калі тут няма Вашай вэрсіі MediaWiki, альбо Вам патрабуюцца магчымасьці апошняй вэрсіі, паспрабуйце апошнюю вэрсію.',
 	'extdist-no-versions' => 'Выбранае пашырэньне ($1) не даступнае ні ў якой вэрсіі!',
 	'extdist-submit-version' => 'Працягваць',
-	'extdist-no-remote' => 'Немагчыма скантактавацца з аддаленым кліентам Subversion.',
-	'extdist-remote-error' => 'Памылка аддаленага кліента Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Няслушны адказ ад аддаленага кліента Extension Distributor.',
-	'extdist-svn-error' => 'Памылка Subversion: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Немагчыма апрацаваць XML ад «svn info»: <pre>$1</pre>',
-	'extdist-git-error' => 'Памылка Git: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git павярнуў няслушны хэш SHA1 для бягучай вэрсіі: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar вярнуў код памылкі $1:',
 	'extdist-created' => "Быў створаны здымак вэрсіі <b>$2</b> пашырэньня <b>$1</b> MediaWiki <b>$3</b>. Загрузка пачнецца аўтаматычна праз 5 сэкундаў.
 
 Спасылка на здымак:
@@ -350,8 +303,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Калі Вы маеце якія-небудзь пытаньні пра сыстэму ўсталяваньня пашырэньня, калі ласка, задайце іх на старонцы [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атрымаць іншае пашырэньне',
-	'extdist-vcs-unsupported' => 'Пашырэньне Distributor не падтрымліваю сыстэму кантролю вэрсіяў «$1».',
-	'extdist-git-invalid-dir' => 'Не атрымалася адчыніць дырэкторыю для выкананьня git checkout',
+	'extdist-tar-error' => 'Tar вярнуў код памылкі $1:', # Fuzzy
 );
 
 /** Bulgarian (български)
@@ -360,12 +312,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  */
 $messages['bg'] = array(
 	'extensiondistributor' => 'Сваляне на разширения за MediaWiki',
-	'extdist-not-configured' => 'Необходимо е да се настроят $wgExtDistTarDir и $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Настроената директория на работното копие не съществува!',
+	'extdist-not-configured' => 'Необходимо е да се настроят $wgExtDistList и $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Няма такова разширение „$1“',
 	'extdist-no-such-version' => 'Разширението „$1“ не съществува във версия „$2“.',
 	'extdist-choose-extension' => 'Изберете разширение, което желаете да свалите:',
-	'extdist-wc-empty' => 'Настроената директория на работното копие не съдържа разширения за разпространение!',
 	'extdist-submit-extension' => 'Продължаване',
 	'extdist-current-version' => 'Разработвана версия (trunk)',
 	'extdist-choose-version' => 'На път сте да изтеглите разширението <b>$1</b>.
@@ -375,12 +325,7 @@ $messages['bg'] = array(
 Повечето разширения работят на много версии на MediaWiki, затова ако вашата версия на MediaWiki я няма или искате най-новите възможности на разширението, опитайте да използвате текущата версия.',
 	'extdist-no-versions' => 'Избраното разширение ($1) не е налично в никоя версия!',
 	'extdist-submit-version' => 'Продължаване',
-	'extdist-no-remote' => 'Не е възможно свързване с отдалечения subversion клиент.',
-	'extdist-remote-error' => 'Грешка от отдалечения subversion клиент: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Невалиден отговор от отдалечения Subversion клиент.', # Fuzzy
-	'extdist-svn-error' => 'Възникна грешка в Subversion: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Грешка при обработване на XML, върнат от командата "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar върна код за грешка $1:',
+	'extdist-tar-error' => 'Tar върна код за грешка $1:', # Fuzzy
 );
 
 /** Bengali (বাংলা)
@@ -402,12 +347,10 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'extensiondistributor' => 'Pellgargañ an astenn MediaWiki',
 	'extensiondistributor-desc' => 'Astenn evit dasparzh dielloù en ur mare bennak eus an astennoù',
-	'extdist-not-configured' => 'Mar plij keflunit $wgExtDistTarDir ha $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => "N'eus ket eus kavlec'h evit an eilad labour kefluniet !",
+	'extdist-not-configured' => 'Mar plij keflunit $wgExtDistList ha $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'N\'eus ket eus an astenn "$1"',
 	'extdist-no-such-version' => 'N\'eus ket eus an astenn "$1" en doare "$2".',
 	'extdist-choose-extension' => "Dibabit peseurt astenn ho peus c'hoant pellgargañ :",
-	'extdist-wc-empty' => "Kavlec'h eiladoù kefluniet al labour en deus astenn dasparzh ebet !",
 	'extdist-submit-extension' => "Kenderc'hel",
 	'extdist-current-version' => 'Doare diorroiñ (trunk)',
 	'extdist-choose-version' => "Emaoc'h o pellgargañ an astenn <b>$1</b>.
@@ -417,12 +360,6 @@ Dibabit ho stumm MediaWiki.
 Al lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neuze ma n'emañ ket ho stumm amañ, pe m'hoc'h eus ezhomm arc'hweladurioù ziwezhañ an astenn, klaskit implijout ar stumm a-vremañ.",
 	'extdist-no-versions' => 'Dizimplijadus eo an astenn bet dibabet ($1) e stumm ebet !',
 	'extdist-submit-version' => "Kenderc'hel",
-	'extdist-no-remote' => "N'eus ket tu da dizhout ar c'hliant subversion a-bell.",
-	'extdist-remote-error' => "Fazi gant ar c'hliant subversion a-bell : <pre>$1</pre>", # Fuzzy
-	'extdist-remote-invalid-response' => "Respont direizh eus ar c'hliant subverion a-bell.", # Fuzzy
-	'extdist-svn-error' => "Ur fazi zo bet gant ''Subversion'' : <pre>$1</pre>",
-	'extdist-svn-parse-error' => 'Dibosupl eo tretañ ar roadennoù XML troet eus "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :",
 	'extdist-created' => "Krouet ez eus bet un eilad prim eus ar stumm <b>$2</b> eus <b>$1</b> an astenn evit MediaWiki <b>$3</b>. Ho pellgargadenn a zlefe kregiñ a-benn 5 eilenn.
 
 Url an eilad prim zo :
@@ -443,6 +380,7 @@ Goude bezañ eztennet ar restroù, ho po ezhomm da enrollañ an astenn e LocalSe
 
 M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Tapout un astenn all',
+	'extdist-tar-error' => "Tar en deus adtroet ar c'hod dont er-maez $1 :", # Fuzzy
 );
 
 /** Bosnian (bosanski)
@@ -451,12 +389,10 @@ M'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [
 $messages['bs'] = array(
 	'extensiondistributor' => 'Učitaj MediaWiki proširenje',
 	'extensiondistributor-desc' => 'Proširenja za raspodjelu snapshot arhiva za ekstenzije',
-	'extdist-not-configured' => 'Molimo da podesite $wgExtDistTarDir i $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Podešeni radni direktorijum za kopije ne postoji!',
+	'extdist-not-configured' => 'Molimo da podesite $wgExtDistList i $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Nema takve ekstenzije "$1"',
 	'extdist-no-such-version' => 'Proširenje "$1" ne postoji u verziji "$2".',
 	'extdist-choose-extension' => 'Odaberite koje proširenje želite da učitate:',
-	'extdist-wc-empty' => 'Konfigurirani radni direktorij kopiranja nema proširenja za distribuciju!',
 	'extdist-submit-extension' => 'Nastavi',
 	'extdist-current-version' => 'Razvojna verzija (trunk)',
 	'extdist-choose-version' => 'Skidate proširenje <b>$1</b>.
@@ -466,12 +402,6 @@ Odaberite Vašu verziju MediaWikija.
 Većina proširenja radi na mnogim verzijama MediaWikija, pa ako se Vaša verzija MediaWikija ne nalazi ovdje, ili ako vam je potrebna za najnovije funkcije proširenja, pokušajte koristiti trenutnu verziju.',
 	'extdist-no-versions' => 'Odabrano proširenje ($1) nije dostupno u nijednoj verziji!',
 	'extdist-submit-version' => 'Nastavi',
-	'extdist-no-remote' => 'Ne može se kontaktirati udaljeni klijent subverzije.',
-	'extdist-remote-error' => 'Greška od udaljenog klijenta subverzije: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Nevaljan odgovor od udaljenog klijenta subverzije.', # Fuzzy
-	'extdist-svn-error' => 'Desila se greška kod subverzije: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Ne mogu procesirati XML formu iz "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => "Program ''tar'' je vratio izlazni kod $1:",
 	'extdist-created' => "Napravljen je prikaz verzije <b>$2</b> od proširenja <b>$1</b> za MediaWiki <b>$3</b>. Vaše preuzimanje će otpočeti automatski za 5 sekundi.
 
 URL za ovaj prikaz je:
@@ -492,6 +422,7 @@ Nakon što otpakujete datoteke, morat ćete registrovati proširenje u LocalSett
 
 Ako imate nekih pitanja oko ovog sistema distribucije proširenja, molimo pogledajte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Nađi slijedeće proširenje',
+	'extdist-tar-error' => "Program ''tar'' je vratio izlazni kod $1:", # Fuzzy
 );
 
 /** Catalan (català)
@@ -501,7 +432,7 @@ Ako imate nekih pitanja oko ovog sistema distribucije proširenja, molimo pogled
 $messages['ca'] = array(
 	'extensiondistributor' => 'Descarrega una extensió de Mediawiki',
 	'extensiondistributor-desc' => 'Extensió per distribuir arxius actualitzats de les extensions',
-	'extdist-not-configured' => 'Per favor, configurau $wgExtDistTarDir i $wgExtDistWorkingCopy',
+	'extdist-not-configured' => 'Per favor, configurau $wgExtDistList i $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'No existeix l\'extensió "$1"',
 	'extdist-no-such-version' => 'L\'extensió "$1" no existeix en la versió "$2"',
 	'extdist-choose-extension' => 'Seleccionau quina extensió voleu descarregar:',
@@ -514,13 +445,8 @@ Seleccionau la vostra versió del Mediawiki.
 La majoria d'extensions funcionen a les diferents versions de Mediawiki, així que si la vostra versió de Mediawiki no és aquí o si necessitau les darreres funcionalitats de l'extensió, provau d'usar la versió actual.",
 	'extdist-no-versions' => "L'extensió seleccionada ($1) no està disponible en cap versió.",
 	'extdist-submit-version' => 'Continua',
-	'extdist-no-remote' => "No s'ha pogut contactar amb el client remot de Subversion.",
-	'extdist-remote-error' => 'Error del client remot de Subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Resposta invàlida del client remot de Subversion.', # Fuzzy
-	'extdist-svn-error' => 'Subversion ha trobat un error: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'No s\'ha pogut processar l\'XML de "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => "L'ordre tar ha retornat un codi de sortida $1:",
 	'extdist-want-more' => 'Descarrega una altra extensió',
+	'extdist-tar-error' => "L'ordre tar ha retornat un codi de sortida $1:", # Fuzzy
 );
 
 /** Czech (česky)
@@ -530,12 +456,10 @@ La majoria d'extensions funcionen a les diferents versions de Mediawiki, així q
 $messages['cs'] = array(
 	'extensiondistributor' => 'Stáhnout rozšíření MediaWiki',
 	'extensiondistributor-desc' => 'Rozšíření pro distribuci archivů rozšíření',
-	'extdist-not-configured' => 'Prosím, nastavte $wgExtDistTarDir a $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Adresář nastavený pro pracovní kopii neexistuje!',
+	'extdist-not-configured' => 'Prosím, nastavte $wgExtDistList a $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Rozšíření „$1” neexistuje',
 	'extdist-no-such-version' => 'Rozšíření „$1” neexistuje ve verzi „$2”',
 	'extdist-choose-extension' => 'Vyberte, které rozšíření chcete stáhnout:',
-	'extdist-wc-empty' => 'Nastavený adresář s pracovní kopií neobsahuje žádná rozšíření, která by bylo možné distribuovat!',
 	'extdist-submit-extension' => 'Pokračovat',
 	'extdist-current-version' => 'Vývojová verze (trunk)',
 	'extdist-choose-version' => 'Stahujete rozšíření <b>$1</b>.
@@ -545,14 +469,6 @@ Vyberte verzi MediaWiki.
 Většina rozšíření funguje na více verzích MediaWiki, takže pokud tu vaše verze MediaWiki není uvedena nebo potřebujete nejnovější vlastnosti rozšíření, zkuste použít aktuální verzi.',
 	'extdist-no-versions' => 'Zvolené rozšíření ($1) není dostupné v žádné verzi!',
 	'extdist-submit-version' => 'Pokračovat',
-	'extdist-no-remote' => 'Nepodařilo se kontaktovat vzdáleného klienta Subversion.',
-	'extdist-remote-error' => 'Chyba od vzdáleného klienta Distributora rozšíření: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Neplatná odpověď od vzdáleného klienta Distributora rozšíření.',
-	'extdist-svn-error' => 'Subversion narazil na chybu: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Nebylo možné zpracovat XML z výstupu „svn info”: <pre>$1</pre>',
-	'extdist-git-error' => 'Git narazil na chybu: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git vrátil neplatný SHA1 haš aktuální revize: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar sknočil s návratovým kódem $1:',
 	'extdist-created' => "Balíček rozšíření <b>$1</b> ve verzi <b>$2</b> pro MediaWiki <b>$3</b> byl vytvořen. Jeho stahování by se mělo automaticky spustit za pět sekund.
 
 Adresa tohoto balíčku je:
@@ -573,8 +489,7 @@ Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <code>
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
-	'extdist-vcs-unsupported' => 'Distributor rozšíření nepodporuje verzovací systém „$1“.',
-	'extdist-git-invalid-dir' => 'Nepodařilo se vstoupit do adresáře pro pracovní kopii z gitu',
+	'extdist-tar-error' => 'Tar sknočil s návratovým kódem $1:', # Fuzzy
 );
 
 /** Danish (dansk)
@@ -582,14 +497,14 @@ Případné dotazy k tomuto systému distribuce rozšíření můžete klást na
  */
 $messages['da'] = array(
 	'extensiondistributor' => 'Hent MediaWikiudvidelse',
-	'extdist-not-configured' => 'Venligst indstil $wgExtDistTarDir og $wgExtDistWorkingCopy',
+	'extdist-not-configured' => 'Venligst indstil $wgExtDistList og $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Ingen udvidelse ved navn "$1"',
 	'extdist-no-such-version' => 'Udvidelsen "$1" findes ikke i versionen "$2".',
 	'extdist-choose-extension' => 'Vælg den udvidelse, du ønsker at hente:',
 	'extdist-submit-extension' => 'Fortsæt',
 	'extdist-submit-version' => 'Fortsæt',
-	'extdist-tar-error' => 'Tar gav returkoden $1:',
 	'extdist-want-more' => 'Hent en anden udvidelse',
+	'extdist-tar-error' => 'Tar gav returkoden $1:', # Fuzzy
 );
 
 /** German (Deutsch)
@@ -602,12 +517,10 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'extensiondistributor' => 'MediaWiki-Erweiterungen herunterladen',
 	'extensiondistributor-desc' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
-	'extdist-not-configured' => 'Bitte konfiguriere die Parameter <code>$wgExtDistTarDir</code> und <code>$wgExtDistWorkingCopy</code>.',
-	'extdist-wc-missing' => 'Das für Arbeitskopien konfigurierte Verzeichnis ist nicht vorhanden!',
+	'extdist-not-configured' => 'Bitte konfiguriere die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistArchiveAPI</code>.',
 	'extdist-no-such-extension' => 'Die Erweiterung „$1“ ist nicht vorhanden.',
 	'extdist-no-such-version' => 'Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.',
 	'extdist-choose-extension' => 'Bitte wähle eine Erweiterung zum Herunterladen aus:',
-	'extdist-wc-empty' => 'Das für Arbeitskopien konfigurierte Verzeichnis enthält keine zu verteilenden Erweiterungen!',
 	'extdist-submit-extension' => 'Weiter',
 	'extdist-current-version' => 'Entwicklungsversion (trunk)',
 	'extdist-choose-version' => 'Du kannst gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.
@@ -617,14 +530,6 @@ Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
 Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist in keiner Version verfügbar!',
 	'extdist-submit-version' => 'Weiter',
-	'extdist-no-remote' => 'Der externe Subversion-Client ist nicht erreichbar.',
-	'extdist-remote-error' => 'Der externe Client hat den folgenden Fehler gemeldet: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Der externe Client hat eine ungültige Antwort zurückgegeben.',
-	'extdist-svn-error' => 'Subversion hat einen Fehler gemeldet: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Die XML-Daten von „svn info“ können nicht verarbeitet werden: <pre>$1</pre>',
-	'extdist-git-error' => 'Git hat einen Fehler gemeldet: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git hat zur aktuellen Revision einen ungültigen SHA1-Hashwert ausgegeben: <pre>$1</pre>',
-	'extdist-tar-error' => 'Das Tar-Programm hat den Abbruchcode $1 ausgegeben:',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
@@ -645,8 +550,7 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
-	'extdist-vcs-unsupported' => 'Das Versionsverwaltungssystem „$1“ wird nicht unterstützt.',
-	'extdist-git-invalid-dir' => 'Auf das Verzeichnis zum Abruf über Git konnte nicht zugegriffen werden.',
+	'extdist-tar-error' => 'Das Tar-Programm hat den Abbruchcode $1 ausgegeben:', # Fuzzy
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -656,7 +560,7 @@ Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterung
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'extdist-not-configured' => 'Bitte konfigurieren Sie die Parameter <code>$wgExtDistTarDir</code> und <code>$wgExtDistWorkingCopy</code>.',
+	'extdist-not-configured' => 'Bitte konfigurieren Sie die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistArchiveAPI</code>.',
 	'extdist-choose-extension' => 'Bitte wählen Sie eine Erweiterung zum Herunterladen aus:',
 	'extdist-choose-version' => 'Sie können gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.
 
@@ -693,12 +597,10 @@ Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterun
 $messages['diq'] = array(
 	'extensiondistributor' => 'Extensiyonê MediyaWikiyî bar bike',
 	'extensiondistributor-desc' => 'Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî',
-	'extdist-not-configured' => 'Ma rica keno ke $wgExtDistTarDir u $wgExtDistWorkingCopy konfigure bike',
-	'extdist-wc-missing' => 'Direktorê kopyayî yê konfigure çini yo!',
+	'extdist-not-configured' => 'Ma rica keno ke $wgExtDistList u $wgExtDistArchiveAPI konfigure bike',
 	'extdist-no-such-extension' => '"$1" name dı oleken çıniyo',
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
-	'extdist-wc-empty' => 'Direktorê kopyayî yê konfigure ekstensiyon xo çini yo!',
 	'extdist-submit-extension' => 'Dewam ke',
 	'extdist-current-version' => 'versiyonê dewlemend kerdışi (trunk)',
 	'extdist-choose-version' => 'Şımaye olekene  <b>$1</b>i ronane
@@ -708,12 +610,6 @@ Versiyonê MedyaWikiyi weçinê.
 Zaf olekene versiyonê MedyaWikiyi de xebıtyeni, eke versiyonê MedyaWikiyi yê şıma tiya de çıniyo, versiyonê rocaneyi fına karfiyê.',
 	'extdist-no-versions' => 'Ektensiyonan ($1) ke ti weçina versiyanan bînan de çini yo!',
 	'extdist-submit-version' => 'Dewam ke',
-	'extdist-no-remote' => 'Nieşkeno muşteriyê subvert ê durî ra kontak bike.',
-	'extdist-remote-error' => 'Waşter dê bınwersiyon dê duri dı xırabin: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Waşter dê bınwersiyon dê duri ra cewabo nêravêrde.',
-	'extdist-svn-error' => 'Subversiyon de yew ğelet biyo: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Formê XML î "svn info", nieşkeno process biko: <pre>$1</pre>',
-	'extdist-tar-error' => 'Kodê tar return exitî $1:',
 	'extdist-created' => "qey yew lehza esayişê parçeyê <b>$1</b>i u versiyonê <b>$2</b>i MediaWiki <b>$3</b> vıraziya. gani war ardışê şıma zerreyê panc deqiqe de bı otomatik destpêbıkero.
 
 esayişê URLyi yê lehzayek:
@@ -734,6 +630,7 @@ badê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumanta
 
 Eke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Yewna oleken bigere',
+	'extdist-tar-error' => 'Kodê tar return exitî $1:', # Fuzzy
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -742,12 +639,11 @@ Eke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension tal
 $messages['dsb'] = array(
 	'extensiondistributor' => 'Rozšyrjenje MediaWiki ześěgnuś',
 	'extensiondistributor-desc' => 'Rozšyrjenje za rozdźělowanje archiwow rozšyrjenjow',
-	'extdist-not-configured' => 'Pšosym konfigurěruj $wgExtDistTarDir a $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfigurěrowany zapis źěłoweje kopije njeeksistěrujo!',
+	'extdist-not-configured' => 'Pšosym konfigurěruj $wgExtDistList a $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Lisćina rozšyrjenjow njedajo se wobstaraś!',
 	'extdist-no-such-extension' => 'Rozšyrjenje "$1" njeeksistěrujo',
 	'extdist-no-such-version' => 'Rozšyrjenje "$1" njeeksistěrujo we wersiji "$2".',
 	'extdist-choose-extension' => 'Wubjeŕ rozšyrjenje, kótarež coš ześěgnuś:',
-	'extdist-wc-empty' => 'Konfigurěrowany zapis źěłoweje kopije njama rozdźělujobne rozšyrjenja!',
 	'extdist-submit-extension' => 'Dalej',
 	'extdist-current-version' => 'Wuwiśowa wersija (trunk)',
 	'extdist-choose-version' => 'Ześěgujoš rozšyrjenje <b>$1</b>.
@@ -757,14 +653,6 @@ Wubjeŕ swóju wersiju MediaWiki.
 Nejwěcej rozšyrjenjow funkcioněrujo w někotarych wersijach MediaWiki, jolic stakim twója wersija MediaWiki njejo how abo trjebaš nejnowše funkcije rozšyrjenja, wopytaj aktualnu wersiju wužywaś.',
 	'extdist-no-versions' => 'Wubrane rozšyrjenje ($1) njestoj k dispoziciji we wšych wersijach!',
 	'extdist-submit-version' => 'Dalej',
-	'extdist-no-remote' => 'Njemóžno zdalony klient Subversion kontaktěrowaś',
-	'extdist-remote-error' => 'Zmólka wót eksternego klienta za póbitowanje rozšyrjenjow: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Njepłaśiwe wótegrono wót klienta za póbitowanje rozšyrjenjow.',
-	'extdist-svn-error' => 'Subversion jo starcył na zmólku: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Njejo móžno XML-daty ze "svn info" pśeźěłaś: <pre>$1</pre>',
-	'extdist-git-error' => 'Git jo starcył na zmólku: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git jo njepłaśiwu hash-gódnotu SHA1 za aktualnu wersiju wrośił: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar jo wróśił kod skóncenja $1:',
 	'extdist-created' => "Foto wobglědowaka wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.
 
 URL za toś to foto wobglědowaka jo:
@@ -785,8 +673,7 @@ Za tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php
 
 Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Druge rozšyrjenje wobstaraś',
-	'extdist-vcs-unsupported' => 'Extension Distributor njepódpěra wersijowy kontrolny system "$1".',
-	'extdist-git-invalid-dir' => 'Njejo móžno, zapis za wótwołanje pśez Git zapódaś',
+	'extdist-tar-error' => 'Archiw URL njedajo se z archiwa API ekstrahěrowaś.',
 );
 
 /** Greek (Ελληνικά)
@@ -800,12 +687,10 @@ Jolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi p�
 $messages['el'] = array(
 	'extensiondistributor' => 'Κατέβασμα επέκτασης Mediawiki',
 	'extensiondistributor-desc' => 'Επέκταση για τη διανομή στιγμιοτύπων επεκτάσεων',
-	'extdist-not-configured' => 'Παρακαλώ ρυθμίστε τα $wgExtDistTarDir και $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Ο καθορισμένος πηγαίος κατάλογος εργασίας δεν υπάρχει!',
+	'extdist-not-configured' => 'Παρακαλώ ρυθμίστε τα $wgExtDistList και $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Δεν υπάρχει επέκταση "$1"',
 	'extdist-no-such-version' => 'Η επέκταση "$1" δεν υπάρχει στην έκδοση "$2".',
 	'extdist-choose-extension' => 'Επιλέξτε ποια επέκταση θέλετε να κατεβάσετε:',
-	'extdist-wc-empty' => 'Ο καθορισμένος πηγαίος κατάλογος εργασίας δεν έχει διανεμήσιμες επεκτάσεις!',
 	'extdist-submit-extension' => 'Συνέχεια',
 	'extdist-current-version' => 'Έκδοση ανάπτυξης (κορμός)',
 	'extdist-choose-version' => 'Κατεβάζετε την επέκταση <b>$1</b>.
@@ -815,13 +700,6 @@ $messages['el'] = array(
 Οι περισσότερες επεκτάσεις λειτουργούν μεταξύ πολλαπλών εκδόσεων του MediaWiki, οπότε αν η έκδοση του MediaWiki σας δεν είναι εδώ ή αν έχετε ανάγκη τα τελευταία χαρακτηριστικά της επέκτασης, δοκιμάστε την τρέχουσα έκδοση.',
 	'extdist-no-versions' => 'Η επιλεγμένη επέκταση ($1) δεν είναι διαθέσιμη σε καμία έκδοση!',
 	'extdist-submit-version' => 'Συνέχεια',
-	'extdist-no-remote' => 'Αδύνατη η επικοινωνία με τον απομακρυσμένο πελάτη subversion.',
-	'extdist-remote-error' => 'Σφάλμα από Διανομέα Επέκτασης απομακρυσμένου υπολογιστή-πελάτη:<pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Μη έγκυρη απόκριση από Διανομέα Επέκτασης απομακρυσμένου υπολογιστή-πελάτη..',
-	'extdist-svn-error' => 'Το σύστημα Subversion αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Αδύνατη η επεξεργασία της XML από το "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Το Git αντιμετώπισε ένα σφάλμα: <pre>$1</pre>',
-	'extdist-tar-error' => 'To Tar επέστρεψε κωδικό εξόδου $1:',
 	'extdist-created' => "Ένα στιγμιότυπο της έκδοσης <b>$2</b> της επέκτασης <b>$1</b> για το MediaWiki <b>$3</b> έχει δημιουργηθεί. Η λήψη σας θα πρέπει να ξεκινήσει αυτόματα σε 5 δευτερόλεπτα.
 
 Το URL για αυτό το στιγμιότυπο είναι:
@@ -842,6 +720,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Αν έχετε ερωτήσεις για αυτό το σύστημα διανομής επεκτάσεων, παρακαλώ πηγαίνετε στη σελίδα [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Άλλη επέκταση',
+	'extdist-tar-error' => 'To Tar επέστρεψε κωδικό εξόδου $1:', # Fuzzy
 );
 
 /** Esperanto (Esperanto)
@@ -851,12 +730,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['eo'] = array(
 	'extensiondistributor' => 'Elŝuti kromprogramon por MediaWiki',
 	'extensiondistributor-desc' => 'Kromprogramo por distribui statikajn arkivojn de kromprogramoj',
-	'extdist-not-configured' => 'Bonvolu konfiguri $wgExtDistTarDir kaj $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'La konfigurita laborspaca dosierujo ne ekzistas!',
+	'extdist-not-configured' => 'Bonvolu konfiguri $wgExtDistList kaj $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Kromprogramo "$1" ne ekzistas',
 	'extdist-no-such-version' => 'La kromprogramo "$1" ne ekzistas en la versio "$2".',
 	'extdist-choose-extension' => 'Elektu kiun kromprogramon tiun vi volas elŝuti.',
-	'extdist-wc-empty' => 'La konfigurita laborspaca dosierujo ne havas doneblaj kromprogramoj!',
 	'extdist-submit-extension' => 'Daŭri',
 	'extdist-current-version' => 'Disvolvada versio (bazo)',
 	'extdist-choose-version' => 'Vi elŝutas la <b>$1</b> kromprogramon.
@@ -866,12 +743,6 @@ Elektu vian MediaWiki-version.
 Pliparto de kromprogramoj funkcias trans pluraj versioj de MediaWiki, do se via MediaWiki-versio ne estas trovebla cxi tie, aux se vi bezonas la plej novajn ecojn, provu uzi la plej lastan version.',
 	'extdist-no-versions' => 'La elektita kromprogramo ($1) ne estas havebla en iu ajn versio!',
 	'extdist-submit-version' => 'Daŭri',
-	'extdist-no-remote' => 'Ne povas kontakti eksteran klienton de subversion.',
-	'extdist-remote-error' => 'Eraro de la ekstera kliento de subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Malvalida respondo de ekstera kliento de Subversion.', # Fuzzy
-	'extdist-svn-error' => 'Subversion renkontis eraron: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Ne povas trakti la XML de "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar donis elirkodon $1:',
 	'extdist-created' => "Statika kopio de versio <b>$2</b> de la <b>$1</b> kromprogramo por MediaWiki <b>$3</b> estis kreita. Via elŝuto komenciĝos aŭtomate post 5 sekundoj.
 
 La URL-o por ĉi tiu statika kopio estas:
@@ -892,6 +763,7 @@ Eltirinte la dosierojn, vi devos registri la kromprogramon en LocalSettings.php.
 
 Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bonvolu iri al [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Akiri pluan kromprogramon',
+	'extdist-tar-error' => 'Tar donis elirkodon $1:', # Fuzzy
 );
 
 /** Spanish (español)
@@ -907,12 +779,10 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
 $messages['es'] = array(
 	'extensiondistributor' => 'Descargar extensión MediaWiki',
 	'extensiondistributor-desc' => 'Extensión para la distribución de archivos de instantáneas de las extensiones',
-	'extdist-not-configured' => 'Por favor configure $wgExtDistTarDir y $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => '¡El directorio de copia en funcionamiento configurado no existe!',
+	'extdist-not-configured' => 'Por favor configure $wgExtDistList y $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'No existe la extensión «$1»',
 	'extdist-no-such-version' => 'la extensión "$1" no existe en la versión "$2".',
 	'extdist-choose-extension' => 'Seleccione qué extensión desea descargar:',
-	'extdist-wc-empty' => '¡El directorio configurado de copia en funcionamiento no tiene extensiones distribuibles!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'versión en desarrollo (principal)',
 	'extdist-choose-version' => 'Estás descargando la extensión <b>$1</b>.
@@ -922,14 +792,6 @@ Selecciona tu versión MediaWiki.
 La mayoría de extensiones funcionan a través de múltiples versiones de Mediawiki, entonces si tu versión Mediawiki no está aquí, o si necesitas las últimas características de las extensiones. trata de usar la versión actual.',
 	'extdist-no-versions' => 'La extensión seleccionada ($1) no esta disponible en ninguna versión!',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'No se ha podido contactar con el cliente remoto de subversion.',
-	'extdist-remote-error' => 'Error del cliente remoto Distribuidor de extensiones: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Respuesta inválida del cliente remoto Distribuidor de Extensiones.',
-	'extdist-svn-error' => "''Subversion'' encontró un error: <pre>$1</pre>",
-	'extdist-svn-parse-error' => 'Incapaz de procesar el XML de "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git ha encontrado un error: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git ha devuelto un hash SHA1 inválido para la revisión actual: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar ha devuelto el código de salida $1:',
 	'extdist-created' => "Se ha creado una instantánea de la versión <b>$2</b> de la extensión <b>$1</b> para MediaWiki <b>$3</b>. Tu descarga debería comenzar automáticamente en 5 segundos.
 
 La URL de esta instantánea es:
@@ -950,8 +812,7 @@ Después de extraer los archivos, necesitarás registrar la extensión en LocalS
 
 Si tienes cualquier duda sobre este sistema de distribución de extensiones, por favor ve a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener otra extensión',
-	'extdist-vcs-unsupported' => 'El Distribuidor de extensión no admite el sistema de control de versión "$1".',
-	'extdist-git-invalid-dir' => 'No se ha podido entrar al directorio para la comprobación de Git',
+	'extdist-tar-error' => 'Tar ha devuelto el código de salida $1:', # Fuzzy
 );
 
 /** Estonian (eesti)
@@ -998,12 +859,10 @@ $messages['eu'] = array(
 $messages['fa'] = array(
 	'extensiondistributor' => 'بارگیری افزونهٔ مدیاویکی',
 	'extensiondistributor-desc' => 'افزونه‌ای برای انتشار بایگانی‌های لحظه‌ای از افزونه‌ها',
-	'extdist-not-configured' => 'لطفاً ‎$‎wgExtDistTarDir و ‎$wgExtDistWorkingCopy را تنظیم کنید',
-	'extdist-wc-missing' => 'شاخهٔ کپی کاری تنظیم شده وجود ندارد!',
+	'extdist-not-configured' => 'لطفاً ‎$‎wgExtDistTarDir و ‎$wgExtDistArchiveAPI را تنظیم کنید',
 	'extdist-no-such-extension' => 'افزونه‌ای به نام «$1» وجود ندارد',
 	'extdist-no-such-version' => 'افزونهٔ «$1» در نسخهٔ «$2» وجود ندارد.',
 	'extdist-choose-extension' => 'افزونه‌ای را که می‌خواهید بارگیری کنید انتخاب کنید:',
-	'extdist-wc-empty' => 'کپی کاری تنظیم شده افزونهٔ قابل انتشاری ندارد!',
 	'extdist-submit-extension' => 'ادامه',
 	'extdist-current-version' => 'نسخهٔ در حال توسعه (تنه)',
 	'extdist-choose-version' => 'شما در حال بارگیری افزونهٔ <b>$1</b> هستید.
@@ -1013,13 +872,6 @@ $messages['fa'] = array(
 بیشتر افزونه‌ها با نسخه‌های مختلف مدیاویکی کار می‌کنند، پس اگر نسخهٔ مدیاویکی شما اینجا نیست، یا اگر می‌خواهید از آخرین امکانات افزونه استفاده کنید، نسخهٔ فعلی را استفاده کنید.',
 	'extdist-no-versions' => 'افزونهٔ انتخاب شده ($1) برای هیچ کدام از نسخه‌ها در دسترس نیست!',
 	'extdist-submit-version' => 'ادامه',
-	'extdist-no-remote' => 'امکان برقراری ارتباط با برنامه ساب‌ورژن خارجی وجود ندارد.',
-	'extdist-remote-error' => 'خطا از طرف برنامهٔ ساب‌ورژن خارجی: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'پاسخ غیر مجاز از طرف برنامهٔ ساب‌ورژن خارجی.',
-	'extdist-svn-error' => 'ساب‌ورژن دچار یک خطا شد: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'امکان پردازش اکس‌ام‌ال دریافتی از «svn info» وجود ندارد: <pre>$1</pre>',
-	'extdist-git-error' => 'ساب‌ورژن دچار یک خطا شد: <pre>$1</pre>',
-	'extdist-tar-error' => 'تار خطای خروج $1 برگرداند:',
 	'extdist-created' => "یک عکس‌فوری از نسخهٔ <b>$2</b> افزونهٔ <b>$1</b> برای مدیاویکی <b>$3</b> ایجاد شده است. بارگیری شما باید تا ۵ ثانیه به صورت خودکار آغاز گردد.
 
 نشانی این عکس فوری این است:
@@ -1040,6 +892,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 در صورتی که هرگونه پرسشی دربارهٔ سامانهٔ توزیع این افزونه دارید، لطفاً به [[Extension talk:ExtensionDistributor]] بروید.",
 	'extdist-want-more' => 'دریافت در قالبی دیگر',
+	'extdist-tar-error' => 'تار خطای خروج $1 برگرداند:', # Fuzzy
 );
 
 /** Finnish (suomi)
@@ -1052,12 +905,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['fi'] = array(
 	'extensiondistributor' => 'Lataa MediaWikin laajennus',
 	'extensiondistributor-desc' => 'Laajennus laajennusten tilannevedosarkistojen jakelulle.',
-	'extdist-not-configured' => 'Aseta $wgExtDistTarDir ja $wgExtDistWorkingCopy.',
-	'extdist-wc-missing' => 'Määritettyä työkopiohakemistoa ei ole olemassa.',
+	'extdist-not-configured' => 'Aseta $wgExtDistList ja $wgExtDistArchiveAPI.',
 	'extdist-no-such-extension' => 'Laajennusta ”$1” ei löydy',
 	'extdist-no-such-version' => 'Laajennus ”$1” ei sisälly versioon ”$2”.',
 	'extdist-choose-extension' => 'Valitse mitkä laajennukset haluat ladata:',
-	'extdist-wc-empty' => 'Määritetyssä työkopiohakemistossa ei ole jaeltavia laajennuksia.',
 	'extdist-submit-extension' => 'Jatka',
 	'extdist-current-version' => 'Kehitysversio (trunk)',
 	'extdist-choose-version' => 'Olet lataamassa laajennusta <b>$1</b>.
@@ -1067,12 +918,6 @@ Valitse MediaWikisi versio.
 Useimmat laajennukset toimivat useiden MediaWikin versioiden välillä. Jos MediaWikisi versiota ei ole täällä tai tarvitset viimeisimpiä ominaisuuksia laajennuksesta, kokeile nykyistä versiota.',
 	'extdist-no-versions' => 'Valitusta laajennuksesta ($1) ei ole saatavilla yhtään versiota!',
 	'extdist-submit-version' => 'Jatka',
-	'extdist-no-remote' => 'Subversion-asiakasohjelmaan ei saatu yhteyttä.',
-	'extdist-remote-error' => 'Virhe ulkoisesta subversion-asiakasohjelmasta: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Kelpaamaton vastaus ulkoiselta subversion-asiakasohjelmalta.', # Fuzzy
-	'extdist-svn-error' => 'Subversion kohtasi virheen: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'XML-dataa ei voitu käsitellä ”svn info” -komennosta: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar-ohjelman suoritus päättyi paluuarvoon $1:',
 	'extdist-created' => "Tilannevedos laajennuksen <b>$1</b> versiosta <b>$2</b> MediaWikin versiolle <b>$3</b> on luotu. Latauksesi pitäisi alkaa automaattisesti viiden sekunnin kuluttua.
 
 URL-osoite tälle tilannevedokselle on
@@ -1093,6 +938,7 @@ Kun olet purkanut tiedostot, laajennus on rekisteröitävä LocalSettings.php-ti
 
 Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hae toinen laajennus',
+	'extdist-tar-error' => 'Tar-ohjelman suoritus päättyi paluuarvoon $1:', # Fuzzy
 );
 
 /** French (français)
@@ -1108,12 +954,10 @@ Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension t
 $messages['fr'] = array(
 	'extensiondistributor' => 'Télécharger l’extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension pour la distribution des archives photographiques des extensions',
-	'extdist-not-configured' => 'Veuillez configurer $wgExtDistTarDir et $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'La répertoire de copies de travail spécifié n’existe pas !',
+	'extdist-not-configured' => 'Veuillez configurer $wgExtDistList et $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Aucune extension « $1 »',
 	'extdist-no-such-version' => 'L’extension « $1 » n’existe pas dans la version « $2 ».',
 	'extdist-choose-extension' => 'Sélectionnez l’extension que vous voulez télécharger :',
-	'extdist-wc-empty' => 'Le répertoire de copies de travail spécifié n’a aucune extension distribuable !',
 	'extdist-submit-extension' => 'Continuer',
 	'extdist-current-version' => 'Version de développement (trunk)',
 	'extdist-choose-version' => 'Vous êtes en train de télécharger l’extension <b>$1</b>.
@@ -1123,14 +967,6 @@ Sélectionnez votre version de MediaWiki.
 La plupart des extensions tourne sur différentes versions de MediaWiki. Aussi, si votre version n’est pas présente ici, ou si vous avez besoin des dernières fonctionnalités de l’extension, essayez d’utiliser la version courante.',
 	'extdist-no-versions' => 'L’extension sélectionnée ($1) n’est disponible dans aucune version !',
 	'extdist-submit-version' => 'Continuer',
-	'extdist-no-remote' => 'Impossible de contacter le client subversion distant.',
-	'extdist-remote-error' => "Erreur du client du distributeur d'extension distant: <pre>$1</pre>",
-	'extdist-remote-invalid-response' => "Réponse non valide du client du distributeur d'extension distant.",
-	'extdist-svn-error' => 'Subversion a rencontré une erreur : <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Impossible de traiter les données XML retournées par « svn info » : <pre>$1</pre>',
-	'extdist-git-error' => 'Git a rencontré une erreur :<pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git a renvoyé un hachage SHA1 non valide pour la révision actuelle:<pre>$1</pre>',
-	'extdist-tar-error' => 'Tar a retourné le code de sortie $1 :',
 	'extdist-created' => "Une copie instantanée de la version <b>$2</b> de l’extension <b>$1</b> pour MediaWiki <b>$3</b> a été créée. Votre téléchargement devrait commencer automatiquement dans 5 secondes.
 
 L’adresse de cette copie est :
@@ -1151,8 +987,7 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <c
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
-	'extdist-vcs-unsupported' => 'Le distributeur d\'extension ne supporte pas le système de contrôle de version "$1".',
-	'extdist-git-invalid-dir' => "Impossible d'entrer dans le répertoire pour une inspection de Git",
+	'extdist-tar-error' => 'Tar a retourné le code de sortie $1 :', # Fuzzy
 );
 
 /** Franco-Provençal (arpetan)
@@ -1161,12 +996,10 @@ Si vous avez des questions concernant ce système de distribution des extensions
 $messages['frp'] = array(
 	'extensiondistributor' => 'Tèlèchargiér l’èxtension MediaWiki',
 	'extensiondistributor-desc' => 'Èxtension por la distribucion de les arch·ives fotografiques de les èxtensions.',
-	'extdist-not-configured' => 'Volyéd configurar $wgExtDistTarDir et $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Lo rèpèrtouèro por copies d’ôvra configurâ ègziste pas !',
+	'extdist-not-configured' => 'Volyéd configurar $wgExtDistList et $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Gins d’èxtension « $1 »',
 	'extdist-no-such-version' => 'L’èxtension « $1 » ègziste pas dens la vèrsion « $2 ».',
 	'extdist-choose-extension' => 'Chouèsésséd l’èxtension que vos voléd tèlèchargiér :',
-	'extdist-wc-empty' => 'Lo rèpèrtouèro por copies d’ôvra configurâ at gins d’èxtension distribuâbla !',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Vèrsion de dèvelopament (trunk)',
 	'extdist-choose-version' => 'Vos éte aprés tèlèchargiér l’èxtension <b>$1</b>.
@@ -1176,12 +1009,6 @@ Chouèsésséd voutra vèrsion de MediaWiki.
 La plepârt de les èxtensions tôrne sur difèrentes vèrsions de MediaWiki. Avouéc, se voutra vèrsion est pas presenta ique, ou ben se vos avéd fôta de les dèrriéres fonccionalitâts de l’èxtension, tâchiéd d’utilisar la vèrsion d’ora.',
 	'extdist-no-versions' => 'L’èxtension chouèsia ($1) est pas disponibla dens gins de vèrsion !',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'Empossiblo de sè veriér vers lo cliant sot-vèrsion distant.',
-	'extdist-remote-error' => 'Èrror du cliant sot-vèrsion distant : <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Rèponsa fôssa dês lo cliant sot-vèrsion distant.', # Fuzzy
-	'extdist-svn-error' => 'Sot-vèrsion at rencontrâ una èrror : <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Empossiblo de trètar les balyês XML retornâs per « svn info » : <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar at retornâ lo code de sortia $1 :',
 	'extdist-created' => "Una copia drêta de la vèrsion <b>$2</b> de l’èxtension <b>$1</b> por MediaWiki <b>$3</b> at étâ fêta. Voutron tèlèchargement devrêt comenciér ôtomaticament dens 5 secondes.
 
 L’adrèce de ceta copia est :
@@ -1202,6 +1029,7 @@ Un côp los fichiérs èxtrèts, vos fôdrat encartar l’èxtension dens <code>
 
 Se vos avéd des quèstions sur cél sistèmo de distribucion de les èxtensions, volyéd vêre [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Avêr una ôtra èxtension',
+	'extdist-tar-error' => 'Tar at retornâ lo code de sortia $1 :', # Fuzzy
 );
 
 /** Friulian (furlan)
@@ -1217,12 +1045,10 @@ $messages['fur'] = array(
 $messages['gl'] = array(
 	'extensiondistributor' => 'Descargar a extensión MediaWiki',
 	'extensiondistributor-desc' => 'Extensión para distribuír arquivos fotográficos de extensións',
-	'extdist-not-configured' => 'Por favor, configure $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'O directorio da copia en funcionamento configurada non existe!',
+	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Non existe a extensión "$1"',
 	'extdist-no-such-version' => 'A extensión "$1" non existe na versión "$2".',
 	'extdist-choose-extension' => 'Seleccione a extensión que queira descargar:',
-	'extdist-wc-empty' => 'A copia configurada do directorio que funciona non ten extensións que se poidan distribuír!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Versión en desenvolvemento (trunk)',
 	'extdist-choose-version' => 'Está descargando a extensión <b>$1</b>.
@@ -1232,14 +1058,6 @@ Seleccione a súa versión de MediaWiki.
 A maioría das extensións traballan con múltiples versións de MediaWiki, polo que se a súa versión de MediaWiki non está aquí, ou se precisa características da última extensión, probe a usar a versión actual.',
 	'extdist-no-versions' => 'A extensión seleccionada ($1) non está dispoñible en ningunha versión!',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'Non se pode contactar co cliente de subversión remoto.',
-	'extdist-remote-error' => 'Erro do cliente remoto da extensión de distribución: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Resposta inválida do cliente remoto da extensión de distribución.',
-	'extdist-svn-error' => 'A subversión atopou un erro: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Non se pode procesar o XML de "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'O Git atopou un erro: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'O Git devolveu un hash SHA1 inválido para a revisión actual: <pre>$1</pre>',
-	'extdist-tar-error' => 'O Tar devolveu o código de saída $1:',
 	'extdist-created' => "Creouse unha fotografía da versión <b>$2</b> da extensión <b>$1</b> de MediaWiki <b>$3</b>. A súa descarga debería comezar automaticamente en 5 segundos.
 
 O enderezo URL desta fotografía é:
@@ -1260,8 +1078,7 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
-	'extdist-vcs-unsupported' => 'A extensión de distribución non soporta o sistema de control de versións "$1".',
-	'extdist-git-invalid-dir' => 'Non se pode entrar no directorio para a comprobación do Git',
+	'extdist-tar-error' => 'O Tar devolveu o código de saída $1:', # Fuzzy
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1279,12 +1096,10 @@ $messages['grc'] = array(
 $messages['gsw'] = array(
 	'extensiondistributor' => 'MediaWiki-Erwyterige abelade',
 	'extensiondistributor-desc' => 'Erwyterig fir d Verteilig vu Schnappschuss-Archiv vu Erwyterige',
-	'extdist-not-configured' => 'Bitte konfigurier $wgExtDistTarDir un $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'S konfiguriert Kopie-Arbetsverzeichnis git s nit!',
+	'extdist-not-configured' => 'Bitte konfigurier $wgExtDistList un $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'D Erwyterig „$1“ git s nit',
 	'extdist-no-such-version' => 'D Erwyterig „$1“ git s nit in dr Version „$2“.',
 	'extdist-choose-extension' => 'Bitte wähl e Erwyterig uus zum Abelade:',
-	'extdist-wc-empty' => 'Im konfigurierte Kopie-Arbetsverzeichnis git s kei Erwyterige, wu mer cha verteile!',
 	'extdist-submit-extension' => 'Wyter',
 	'extdist-current-version' => 'Entwickligs-Version (trunk)',
 	'extdist-choose-version' => 'Du ladsch d <b>$1</b>-Erwyterig abe.
@@ -1294,14 +1109,6 @@ Bitte wähl Dyyni MediaWiki-Version.
 Di meischte Erwyterige schaffe mit vyyle MediaWiki-Versione zämme. Wänn Dyyni MediaWiki-Version doo nit ufgfiert isch oder Du di nejschte Fähigkeite vu dr Eryterig witt nutze, no versuech s mit dr aktuälle Version.',
 	'extdist-no-versions' => 'Di gwählt Erwyterig ($1) git s nit in allene Versione!',
 	'extdist-submit-version' => 'Wyter',
-	'extdist-no-remote' => 'S git kei Kontakt zum färngstyyrte Subversion-Client.',
-	'extdist-remote-error' => 'Fählermäldig vum färngstyyrte Subversion-Client: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Uugiltigi Antwort vum färngstyyrte Subversion-Client.', # Fuzzy
-	'extdist-svn-error' => 'Subversion het e Fähler gmäldet: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'XML-Date vu „svn info“ chenne nit verschafft wäre: <pre>$1</pre>',
-	'extdist-git-error' => 'Git het e Fähler gmäldet: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git het zue dr aktuälle Revision e nit giltige SHA1-Hashwärt uusgee: <pre>$1</pre>',
-	'extdist-tar-error' => 'S Tar-Programm het dr Beändigungscode $1 gliferet:',
 	'extdist-created' => "E Schnappschuss vu dr Version <b>$2</b> vu dr MediaWiki-Erwyterig <b>$1</b> isch aagleit wore (MediaWiki-Version <b>$3</b>). S Abelade fangt automatisch in 5 Sekunde aa.
 
 D URL fir dr Schnappschuss isch:
@@ -1322,8 +1129,7 @@ Wänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <code>LocalSettings.p
 
 Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'No ne Erwyterig hole',
-	'extdist-vcs-unsupported' => 'S Versionsverwaltigssyschtem „$1“ wird nit unterstitzt.',
-	'extdist-git-invalid-dir' => 'Uf s Verzeichnis zum Abruef iber Git het nit chenne zuegriffe wäre',
+	'extdist-tar-error' => 'S Tar-Programm het dr Beändigungscode $1 gliferet:', # Fuzzy
 );
 
 /** Hebrew (עברית)
@@ -1333,12 +1139,10 @@ Wänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Sy
 $messages['he'] = array(
 	'extensiondistributor' => 'הורדת הרחבה של מדיה־ויקי',
 	'extensiondistributor-desc' => 'הרחבה להפצת קבצים מכווצים של הרחבות',
-	'extdist-not-configured' => 'אנא הגדירו את $wgExtDistTarDir ואת $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'התיקייה שהוגדרה כתיקיית ההרחבות אינה קיימת!',
+	'extdist-not-configured' => 'אנא הגדירו את $wgExtDistList ואת $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'אין הרחבה בשם "$1"',
 	'extdist-no-such-version' => 'ההרחבה "$1" אינה קיימת בגרסה "$2".',
 	'extdist-choose-extension' => 'בחרו איזו הרחבה תרצו להוריד:',
-	'extdist-wc-empty' => 'בתיקייה שהוגדרה כתיקיית ההרחבות אין הרחבות שניתן להוריד!',
 	'extdist-submit-extension' => 'המשך',
 	'extdist-current-version' => 'גרסת הפיתוח (trunk)',
 	'extdist-choose-version' => 'אתם מורידים את ההרחבה <b>$1</b>.
@@ -1348,14 +1152,6 @@ $messages['he'] = array(
 רוב ההרחבות עובדות בגרסאות מרובות של מדיה־ויקי, לכן אם גרסת מדיה־ויקי שאתם משתמשים בה אינה מופיעה כאן, או אם אתם צריכים את התכונות האחרונות שנוספו להרחבה, נסו להשתמש בגרסה הנוכחית.',
 	'extdist-no-versions' => 'ההרחבה שנבחרה ($1) אינה זמינה בשום גרסה!',
 	'extdist-submit-version' => 'המשך',
-	'extdist-no-remote' => 'לא ניתן להתחבר ללקוח ה־Subversion המרוחק.',
-	'extdist-remote-error' => 'שגיאה מהלקוח המרוחק של מפיץ ההרחבות: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'תשובה בלתי תקינה מלקוח המרוחק של מפיץ ההרחבות.',
-	'extdist-svn-error' => 'תוכנת Subversion נתקלה בשגיאה: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'לא ניתן לעבד את ה־XML שהוחזר מפקודת "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'תוכנת Git מצאה שגיאה: <pre dir="ltr">$1</pre>',
-	'extdist-git-invalidsha1' => 'תוכנת Git החזירה גיבוב SHA1 בלתי־תקין עבור הגרסה הזאת: <pre dir="ltr">$1<pre>',
-	'extdist-tar-error' => 'פקודת tar החזירה את קוד היציאה $1:',
 	'extdist-created' => "נוצר קובץ היטל של גרסה <b>$2</b> של ההרחבה <b>$1</b> עבור מדיה־ויקי <b>$3</b>. ההורדה אמורה להתחיל אוטומטית בעוד 5 שניות.
 
 הכתובת של קובץ זה היא:
@@ -1376,8 +1172,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
-	'extdist-vcs-unsupported' => 'מפיץ ההרחבות אינו תומך במערכת ניהול הגרסאות "$1".',
-	'extdist-git-invalid-dir' => 'לא התאפשרה כניסה לספרייה לצורך אחזור קבצים באמצעות git',
+	'extdist-tar-error' => 'פקודת tar החזירה את קוד היציאה $1:', # Fuzzy
 );
 
 /** Hindi (हिन्दी)
@@ -1386,8 +1181,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['hi'] = array(
 	'extensiondistributor' => 'डाउनलोड़ मीडियाविकि एक्सटेंशन',
 	'extensiondistributor-desc' => 'एक्सटेंशन स्नैपशॉट अभिलेखागार वितरण के लिए एक्सटेंशन',
-	'extdist-not-configured' => 'कृपया $wgExtDistTarDir और $wgExtDistWorkingCopy कॉन्फ़िगर करें',
-	'extdist-wc-missing' => 'कॉन्फ़िगर किए गए कार्यशील प्रतिलिपि निर्देशिका मौजूद नहीं है!',
+	'extdist-not-configured' => 'कृपया $wgExtDistList और $wgExtDistArchiveAPI कॉन्फ़िगर करें',
 	'extdist-no-such-extension' => 'कोई ऐसे एक्सटेंशन "$1" नहीं',
 	'extdist-no-such-version' => 'एक्सटैन्शन "$1" "$2" संस्करण में मौजूद नहीं ।',
 	'extdist-choose-extension' => 'कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:',
@@ -1399,9 +1193,8 @@ $messages['hi'] = array(
 
 अधिकांश एक्सटेंशन मीडियाविकि के एकाधिक संस्करणों में कम करते हैं, तो यदि आपके मीडियाविकि संस्करण यहाँ नहीं है, या यदि आपको नवीनतम विस्तार सुविधाओं की जरूरत है, वर्तमान संस्करण का उपयोग करें ।',
 	'extdist-submit-version' => 'जारी रखें',
-	'extdist-svn-parse-error' => '"svn info" से XML प्रक्रिया चल नहीं पाया: <pre>$1</pre>',
-	'extdist-tar-error' => 'तार लौटे निकास कोड़ $1:',
 	'extdist-want-more' => 'अन्य एक्सटेन्शन पाएँ',
+	'extdist-tar-error' => 'तार लौटे निकास कोड़ $1:', # Fuzzy
 );
 
 /** Croatian (hrvatski)
@@ -1412,12 +1205,10 @@ $messages['hi'] = array(
 $messages['hr'] = array(
 	'extensiondistributor' => 'Snimi MediaWiki ekstenziju',
 	'extensiondistributor-desc' => 'Ekstenzija za distribuciju inačica arhiva ekstenzija',
-	'extdist-not-configured' => 'Molimo konfigurirajte $wgExtDistTarDir i $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfigurirani radni direktorij za kopiranje ne postoji!',
+	'extdist-not-configured' => 'Molimo konfigurirajte $wgExtDistList i $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Nema takve ekstenziju "$1"',
 	'extdist-no-such-version' => 'Ekstenzija "$1" ne postoji u verziji "$2".',
 	'extdist-choose-extension' => 'Odaberite koju ekstenziju želite preuzeti:',
-	'extdist-wc-empty' => 'U konfiguriranom radnom direktoriju za kopiranje nema ekstenzija za distribuciju!',
 	'extdist-submit-extension' => 'Nastavi',
 	'extdist-current-version' => 'Razvojna inačica (stablo)',
 	'extdist-choose-version' => 'Preuzimate ekstenziju <b>$1</b>.
@@ -1427,12 +1218,6 @@ Izaberite vašu inačicu MedijaWikija.
 Većina ekstenzija će raditi na više (ili svim) inačicama MedijaWikija, pa ako vaša inačica MedijaWikija nije ovdje, ili ako imate potrebu za najnovijim značajkama, pokušajte koristiti trenutnu inačicu.',
 	'extdist-no-versions' => 'Odabrana ekstenzija ($1) nije dostupna u nijednoj inačici!',
 	'extdist-submit-version' => 'Nastavi',
-	'extdist-no-remote' => 'Ne mogu uspostaviti vezu s udaljenim SVN (subversion) klijentom.',
-	'extdist-remote-error' => 'Pogrješka udaljenog SVN klijenta: <pre> $1 </pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Neispravan odgovor od udaljenog SVN klijenta.', # Fuzzy
-	'extdist-svn-error' => 'SVN je naišao na pogrešku: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Nije moguće obraditi XML iz "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar je vratio izlazni kod $1:',
 	'extdist-created' => 'Kreirana je snimka inačice <b>$2</b> ekstenzije <b>$1</b> MedijaWikija inačice <b>$3</b>. Vaše preuzimanje počinje za 5 sekundi.
 
 URL snimke je:
@@ -1453,6 +1238,7 @@ Nakon što se raspakirali arhivu, potrebno je uključiti ekstenziju u LocalSetti
 
 Ukoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu stranicu: [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Dohvati drugu ekstenziju',
+	'extdist-tar-error' => 'Tar je vratio izlazni kod $1:', # Fuzzy
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -1461,12 +1247,11 @@ Ukoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu st
 $messages['hsb'] = array(
 	'extensiondistributor' => 'Rožsěrjenje za MediaWiki sćahnyć',
 	'extensiondistributor-desc' => 'Rozšěrjenje za rozdźělenje archiwow njejapkich fotow rozšěrjenjow',
-	'extdist-not-configured' => 'Prošu konfiguruj $wgExtDistTarDir a $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfigurowany zapis dźěłoweje kopije njeeksistuje!',
+	'extdist-not-configured' => 'Prošu konfiguruj $wgExtDistList a $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Lisćina rozšěrjenjow njeda so wobstarać!',
 	'extdist-no-such-extension' => 'Rozšěrjenje "$1" njeeksistuje',
 	'extdist-no-such-version' => 'Rozšěrjenje "$1" we wersiji "$2" njeeksistuje.',
 	'extdist-choose-extension' => 'Wubjer, kotre rozšěrjenje chceš sćahnyć:',
-	'extdist-wc-empty' => 'Konfigurowany zapis dźěłoweje kopije nima rozdźělujomne rozšěrjenja!',
 	'extdist-submit-extension' => 'Dale',
 	'extdist-current-version' => 'Wuwićowa wersija (trunk)',
 	'extdist-choose-version' => 'Sćahuješ rozšěrjenje <b>$1</b>.
@@ -1476,14 +1261,6 @@ Wubjer swoju wersiju MediaWiki.
 Najwjace rozšěrjenjow funguje přez wjacore wersije MediaWiki, jeli twoja wersija tuž tu njeje abo trjebaš najnowše funkcije rozšěrjenja, spytaj aktualnu wersiju wužiwać.',
 	'extdist-no-versions' => 'Wubrane rozšěrjenje ($1) w žanej wersiji k dispoziciji njesteji!',
 	'extdist-submit-version' => 'Dale',
-	'extdist-no-remote' => 'Njeje móžno nazdalny klient Subversion kontaktować.',
-	'extdist-remote-error' => 'Zmylk z eksterneho klienta za poskićowanje rozšěrjenjow: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Njepłaćiwa wotmołwa klienta za poskićowanje rozšěrjenjow.',
-	'extdist-svn-error' => 'Subversion je na zmylk storčił: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Njemóžno XML-daty wot "svn info" předźełać: <pre>$1</pre>',
-	'extdist-git-error' => 'Git je na zmylk storčił: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git je njepłaćiwu pruwowansku SHA1-sumu za aktualnu wersiju wróćił: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar je kod skónčenja $1 wróćił:',
 	'extdist-created' => "Foto wobrazowki wersije <b>$2</b> rozšěrjenja <b>$1</b> wersije MediaWiki <b>$3</b> je so wutworił. Twoje sćehnjenje dyrbjało za 5 sekundow awtomatisce startować.
 
 URL za tute foto wobrazowki je:
@@ -1504,8 +1281,7 @@ Po tym zo sy dataje wupakował, dyrbiš rozšěrjenje w dataji LocalSettings.php
 
 Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dalše rozšěrjenje wobstarać',
-	'extdist-vcs-unsupported' => 'Extension Distributor wersijowy kontrolny system "$1" njepodpěruje.',
-	'extdist-git-invalid-dir' => 'Njeje móžno, zapis za wotwołanje přez Git zapodać',
+	'extdist-tar-error' => 'Archiw URL njeda so z archiwa API ekstrahować.',
 );
 
 /** Hungarian (magyar)
@@ -1517,12 +1293,10 @@ Jeli maš prašenja wo systemje rozdźělowanja rozšěrjenjow, prošu dźi k [[
 $messages['hu'] = array(
 	'extensiondistributor' => 'MediaWiki-kigészítők letöltése',
 	'extensiondistributor-desc' => 'Kiegészítő kiegészítőcsomagok terjesztéséhez',
-	'extdist-not-configured' => 'Kérlek állítsd be a $wgExtDistTarDir és a $wgExtDistWorkingCopy értékeit',
-	'extdist-wc-missing' => 'A beállított másolat munkakönyvtár nem létezik!',
+	'extdist-not-configured' => 'Kérlek állítsd be a $wgExtDistList és a $wgExtDistArchiveAPI értékeit',
 	'extdist-no-such-extension' => 'Nincs „$1” nevű kiegészítő',
 	'extdist-no-such-version' => 'A(z) „$1” kiterjesztés nem létezik a(z) „$2” verzióban.',
 	'extdist-choose-extension' => 'Válaszd ki, melyik kiterjesztést szeretnéd letölteni:',
-	'extdist-wc-empty' => 'A beállított másolat munkakönyvtárban nincsenek terjeszthető kiterjesztések!',
 	'extdist-submit-extension' => 'Folytatás',
 	'extdist-current-version' => 'Fejlesztői verzió (trunk)',
 	'extdist-choose-version' => 'Éppen a(z) <b>$1</b> kiterjesztést töltöd le.
@@ -1532,14 +1306,6 @@ Válaszd ki a MediaWiki verziót.
 A legtöbb kiterjesztés működik a MediaWiki több verziójával, így ha az általad használt MediaWiki verzió nincs itt, vagy ha szükséged van a kiterjesztés legújabb funkcióira, próbáld az aktuális verziót használni.',
 	'extdist-no-versions' => 'A választott kiterjesztés ($1) nem érhető el semmilyen verzióban!',
 	'extdist-submit-version' => 'Folytatás',
-	'extdist-no-remote' => 'Nem sikerült kapcsolódni a távoli Subversion klienshez.',
-	'extdist-remote-error' => 'Hiba a távoli Subversion klienstől: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Érvénytelen válasz a távoli Extension Distributor klienstől.',
-	'extdist-svn-error' => 'A Subversion hibával tért vissza: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Az „svn info” által visszaadott XML-t nem sikerült feldolgozni: <pre>$1</pre>',
-	'extdist-git-error' => 'Git hibába ütközött: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git érvénytelen SHA1 hash értéket adott vissza az aktuális verzióhoz: <pre>$1</pre>',
-	'extdist-tar-error' => 'A tar által adott visszatérési kód $1:',
 	'extdist-created' => "A(z) <b>$1</b> MediaWiki <b>$3</b> kiterjesztés <b>$2</b> verziójának pillanatfelvétele elkészült. A letöltés automatikusan megkezdődik 5 másodpercen belül.
 
 A pillanatfelvétel URL-je:
@@ -1560,7 +1326,7 @@ Miután kibontottad a fájlokat, regisztrálnod kell a kiterjesztést a LocalSet
 
 Ha bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, keresd fel az [[Extension talk:ExtensionDistributor]] lapot.",
 	'extdist-want-more' => 'Másik kiterjesztés letöltése',
-	'extdist-vcs-unsupported' => 'Az Extension Distributor nem támogatja a "$1" verzió kezelő rendszert.',
+	'extdist-tar-error' => 'A tar által adott visszatérési kód $1:', # Fuzzy
 );
 
 /** Interlingua (interlingua)
@@ -1569,12 +1335,10 @@ Ha bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, ker
 $messages['ia'] = array(
 	'extensiondistributor' => 'Discargar extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension pro distribuer archivos actualisate de extensiones',
-	'extdist-not-configured' => 'Per favor configura $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Le directorio pro copias de travalio configurate non existe!',
+	'extdist-not-configured' => 'Per favor configura $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Non existe un extension "$1"',
 	'extdist-no-such-version' => 'Le extension "$1" non existe in le version "$2".',
 	'extdist-choose-extension' => 'Selige le extension a discargar:',
-	'extdist-wc-empty' => 'Le directorio pro copias de travalio configurate non ha extensiones distribuibile!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Version de disveloppamento (trunco)',
 	'extdist-choose-version' => 'Tu va discargar le extension <b>$1</b>.
@@ -1584,14 +1348,6 @@ Per favor selige tu version de MediaWiki.
 Le majoritate del extensiones functiona trans versiones de MediaWiki, ergo si tu version de MediaWiki non es presente, o si tu ha besonio del ultime functionalitate de extensiones, prova usar le version actual.',
 	'extdist-no-versions' => 'Le extension seligite ($1) non es disponibile in alcun version!',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'Non pote contactar le cliente Subversion remote.',
-	'extdist-remote-error' => 'Error ab le cliente remote de Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Responsa invalide ab le cliente remote de Extension Distributor.',
-	'extdist-svn-error' => 'Subversion incontrava un error: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Non pote processar le formulario XML ab "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git incontrava un error: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git retornava un hash SHA1 invalide pro le version actual: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar retornava le codice de exito $1:',
 	'extdist-created' => "Un instantaneo del version <b>$2</b> del extension <b>$1</b> pro MediaWiki <b>$3</b> ha essite create.
 Le discargamento debe comenciar automaticamente post 5 secundas.
 
@@ -1613,8 +1369,7 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
-	'extdist-vcs-unsupported' => 'Extension Distributor non supporta le systema de controlo de versiones "$1".',
-	'extdist-git-invalid-dir' => 'Impossibile entrar in le directorio pro le synchronisation sortiente (checkout) ab Git',
+	'extdist-tar-error' => 'Tar retornava le codice de exito $1:', # Fuzzy
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1627,8 +1382,7 @@ Si tu ha questiones super iste systema de distribution de extensiones, per favor
 $messages['id'] = array(
 	'extensiondistributor' => 'Unduh pengaya MediaWiki',
 	'extensiondistributor-desc' => 'Ekstensi untuk mendistribusikan arsip snapshot ekstensi',
-	'extdist-not-configured' => 'Silakan mengkonfigurasi $wgExtDistTarDir dan $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfigurasi direktori Copy pekerjaan tidak ada!',
+	'extdist-not-configured' => 'Silakan mengkonfigurasi $wgExtDistList dan $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Tidak ada ekstensi "$1"',
 	'extdist-no-such-version' => '
 
@@ -1636,7 +1390,6 @@ Ekstensi "$1" tidak ada dalam versi "$2".',
 	'extdist-choose-extension' => '
 
 Pilih ekstensi yang ingin Anda unduh:',
-	'extdist-wc-empty' => 'Konfigurasi direktori salinan pekerjaan Anda tidak memiliki ekstensi yang harus didistibusikan!',
 	'extdist-submit-extension' => 'Lanjutkan',
 	'extdist-current-version' => 'Versi pengembangan (trunk)',
 	'extdist-choose-version' => 'Anda mengunduh  <b>$1</b> ekstensi.
@@ -1646,14 +1399,6 @@ Pilih versi MediaWiki anda.
 Kebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi MediaWiki Anda tidak ada di sini, atau jika Anda membutuhkan fitur ekstensi terbaru, coba gunakan versi terbaru.',
 	'extdist-no-versions' => 'Ekstensi terpilih ($1) tidak tersedia di versi mana pun!',
 	'extdist-submit-version' => 'Lanjutkan',
-	'extdist-no-remote' => 'Tidak dapat terhubung ke client subversio.',
-	'extdist-remote-error' => 'Kesalahan dari klien jauh Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Respon salah dari klien jauh Extension Distributor.',
-	'extdist-svn-error' => 'Subversion mengalami masalah: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Tidak dapat memproses XML dari "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git mengalami masalah: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git mengembalikan hash SHA1 salah untuk revisi terkini: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:',
 	'extdist-created' => "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.
 
 URL untuk cuplikan ini adalah:
@@ -1676,8 +1421,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
-	'extdist-vcs-unsupported' => 'Extension Distributor tidak mendukung sistem kontrol versi "$1".',
-	'extdist-git-invalid-dir' => 'Gagal memasuki direktori checkout git',
+	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:', # Fuzzy
 );
 
 /** Italian (italiano)
@@ -1690,12 +1434,10 @@ Dapatkan ekstensi lain',
 $messages['it'] = array(
 	'extensiondistributor' => 'Scarica estensione MediaWiki',
 	'extensiondistributor-desc' => 'Estensione per distribuire archivi snapshot delle estensioni',
-	'extdist-not-configured' => 'Configura $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'La directory per copie di lavoro configurata non esiste!',
+	'extdist-not-configured' => 'Configura $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Nessuna estensione "$1"',
 	'extdist-no-such-version' => 'L\'estensione "$1" non esiste nella versione "$2".',
 	'extdist-choose-extension' => 'Seleziona quale estensione intendi scaricare:',
-	'extdist-wc-empty' => 'La directory per copie di lavoro configurata non contiene estensioni distribuibili!',
 	'extdist-submit-extension' => 'Continua',
 	'extdist-current-version' => 'Versione di sviluppo (trunk)',
 	'extdist-choose-version' => "Stai scaricando l'estensione <b>$1</b>.
@@ -1705,14 +1447,6 @@ Seleziona la tua versione di MediaWiki.
 Molte estensioni funzionano su più versioni di MediaWiki, quindi se la tua versione di MediaWiki non è qui o hai bisogno delle ultime funzioni dell'estensione, prova a usare l'ultima versione.",
 	'extdist-no-versions' => "L'estensione selezionata ($1) non è disponibile in alcuna versione!",
 	'extdist-submit-version' => 'Continua',
-	'extdist-no-remote' => 'Impossibile contattare il client subversion remoto.',
-	'extdist-remote-error' => 'Errore dal client remoto Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Risposta non valida dal client remoto Extension Distributor.',
-	'extdist-svn-error' => 'Subversion ha incontrato un errore: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Impossibile elaborare l\'XML da "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git ha incontrato un errore: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git ha restituito un hash SHA1 non valido per la revisione attuale: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar ha restituito il seguente exitcode $1:',
 	'extdist-created' => "Un'istantanea della versione <b>$2</b> dell'estensione <b>$1</b> per MediaWiki <b>$3</b> è stata creata. Il tuo download dovrebbe partire automaticamente fra 5 secondi.
 
 L'URL per questa istantanea è:
@@ -1733,8 +1467,7 @@ Dopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalS
 
 Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione vedi [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Prendi un'altra estensione",
-	'extdist-vcs-unsupported' => 'Extension Distributor non supporta il sistema di controllo versioni "$1".',
-	'extdist-git-invalid-dir' => 'Impossibile accedere alla directory per git checkout',
+	'extdist-tar-error' => 'Tar ha restituito il seguente exitcode $1:', # Fuzzy
 );
 
 /** Japanese (日本語)
@@ -1748,12 +1481,10 @@ Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione
 $messages['ja'] = array(
 	'extensiondistributor' => 'MediaWiki 拡張機能のダウンロード',
 	'extensiondistributor-desc' => '拡張機能のスナップショットのアーカイブを配布するための拡張機能',
-	'extdist-not-configured' => '$wgExtDistTarDirと$wgExtDistWorkingCopyの設定を行ってください',
-	'extdist-wc-missing' => '指定されたコピー用ディレクトリが存在しません!',
+	'extdist-not-configured' => '$wgExtDistListと$wgExtDistArchiveAPIの設定を行ってください',
 	'extdist-no-such-extension' => '「$1」という拡張機能はありません',
 	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
-	'extdist-wc-empty' => '指定されたコピー先ディレクトリにダウンロードする拡張機能が存在しません!',
 	'extdist-submit-extension' => '続行',
 	'extdist-current-version' => '開発バージョン (trunk)',
 	'extdist-choose-version' => '拡張機能 <b>$1</b> をダウンロードしようとしています。
@@ -1763,14 +1494,6 @@ $messages['ja'] = array(
 多くの拡張機能は複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、または拡張機能の最新の機能が必要な場合は、最新版をお試しください。',
 	'extdist-no-versions' => '選択した拡張機能 ($1) はどのバージョンでも利用できません!',
 	'extdist-submit-version' => '選択',
-	'extdist-no-remote' => 'リモート subversion クライアントにアクセスできませんでした。',
-	'extdist-remote-error' => 'Extension Distributor リモート クライアントがエラーを返しました: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Extension Distributor リモート クライアントが無効な応答をしました。',
-	'extdist-svn-error' => 'subversion でエラーが発生しました: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'XMLへの変換処理が正しく行われませんでした: <pre>$1</pre>',
-	'extdist-git-error' => 'git でエラーが発生しました: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'git が現在の版について無効な SHA1 ハッシュを返しました: <pre>$1</pre>',
-	'extdist-tar-error' => 'tar が終了コード $1 を返しました:',
 	'extdist-created' => "MediaWiki <b>$3</b> の拡張機能 <b>$1</b> バージョン <b>$2</b> のスナップショットが作成されました。5秒後、自動的にダウンロードが開始されます。
 
 このスナップショットのURLは次の通りです:
@@ -1791,8 +1514,7 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
-	'extdist-vcs-unsupported' => 'Extension Distributor はバージョン管理システム「$1」に対応していません。',
-	'extdist-git-invalid-dir' => 'git チェックアウトのためにディレクトリに入ろうとして失敗しました',
+	'extdist-tar-error' => 'tar が終了コード $1 を返しました:', # Fuzzy
 );
 
 /** Javanese (Basa Jawa)
@@ -1801,27 +1523,16 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 $messages['jv'] = array(
 	'extensiondistributor' => 'Undhuh èkstènsi MediaWiki',
 	'extensiondistributor-desc' => 'Èkstènsi kanggo ndistribusikaké arsip snapshot èkstènsi',
-	'extdist-not-configured' => 'Mangga atur $wgExtDistTarDir lan $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Dirèktori panyalinan aktif sing wis diatur ora ana!',
+	'extdist-not-configured' => 'Mangga atur $wgExtDistList lan $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Ora ana èkstènsi "$1"',
 	'extdist-no-such-version' => 'Èkstènsi "$1" ora ana nèng vèrsi "$2".',
 	'extdist-choose-extension' => 'Pilih èkstènsi endi sing Sampéyan pingin undhuh:',
-	'extdist-wc-empty' => 'Dirèktori panyalinan aktif sing wis dikonfigurasi ora nduwé èkstènsi sing bisa didistribusèkaé!',
 	'extdist-submit-extension' => 'Banjuraké',
 	'extdist-current-version' => 'Vèrsi pangembangan (trunk)',
 	'extdist-no-versions' => 'Èkstènsi kapilih ($1) ora sumadhiya nèng vèrsi apa waé!',
 	'extdist-submit-version' => 'Banjuraké',
-	'extdist-no-remote' => 'Ora bisa ngubungi klièn subvèrsi sing adoh.',
-	'extdist-remote-error' => 'Kasalahan saka klièn adoh Distributor Èkstènsi: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Tanggepan ora sah saka klièn adoh Distributor Èkstènsi.',
-	'extdist-svn-error' => 'Subvèrsi ngalami kasalahan: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Ora bisa mrosès formulir XML "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git ngalami kasalahan: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git mbalèkaké hash SHA1 sing ora sah kanggo rèvisi saiki: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar mbalèkaké kodhé metu $1:',
 	'extdist-want-more' => 'Èntukaké èkstènsi liya',
-	'extdist-vcs-unsupported' => 'Distributor Èkstènsi ora nyengkuyung sistem kontrol vèrsi "$1".',
-	'extdist-git-invalid-dir' => 'Ora bisa mlebu dirèktori kanggo pamriksan git',
+	'extdist-tar-error' => 'Tar mbalèkaké kodhé metu $1:', # Fuzzy
 );
 
 /** Georgian (ქართული)
@@ -1856,12 +1567,10 @@ $messages['km'] = array(
 $messages['ko'] = array(
 	'extensiondistributor' => '미디어위키 확장 기능 내려받기',
 	'extensiondistributor-desc' => '확장 기능 스냅샷 배포를 위한 확장 기능',
-	'extdist-not-configured' => '$wgExtDistTarDir와 $wgExtDistWorkingCopy를 설정하세요.',
-	'extdist-wc-missing' => '설정된 복제 디렉토리가 존재하지 않습니다!',
+	'extdist-not-configured' => '$wgExtDistList와 $wgExtDistArchiveAPI를 설정하세요.',
 	'extdist-no-such-extension' => '"$1" 확장 기능이 없습니다.',
 	'extdist-no-such-version' => '"$1" 확장 기능은 "$2" 버전이 존재하지 않습니다.',
 	'extdist-choose-extension' => '당신이 다운로드하기를 원하는 확장 기능을 선택하세요:',
-	'extdist-wc-empty' => '설정된 복제 디렉토리에 배포 가능한 확장 기능이 없습니다!',
 	'extdist-submit-extension' => '계속',
 	'extdist-current-version' => '개발 중인 버전 (trunk)',
 	'extdist-choose-version' => '<b>$1</b> 확장 기능을 다운로드하고 있습니다.
@@ -1871,14 +1580,6 @@ $messages['ko'] = array(
 대부분의 확장 기능은 미디어위키의 여러 버전에서도 동작합니다, 당신의 미디어위키 확장 기능이 여기 없거나 최신 버전이 필요하다면, 현재 버전 다운로드를 선택하세요.',
 	'extdist-no-versions' => '선택한 확장 기능($1)이 어떤 버전으로도 존재하지 않습니다.',
 	'extdist-submit-version' => '계속',
-	'extdist-no-remote' => '외부 서브버전 클라이언트와 연결할 수 없습니다.',
-	'extdist-remote-error' => '확장 기능 배포자 원격 클라이언트에서 오류 발생: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => '확장 기능 배포자 원격 클라이언트에서 잘못된 응답이 도착했습니다.',
-	'extdist-svn-error' => 'SVN에서 오류가 발생하였습니다: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '"svn info"의 XML을 처리할 수 없습니다: <pre>$1</pre>',
-	'extdist-git-error' => 'Git에서 오류가 발생하였습니다: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git에서 현재 판에 대한 잘못된 SHA1 해시가 반환되었습니다: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar에서 종료 코드 $1을(를) 반환하였습니다:',
 	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행될 것입니다.
 
 묶음의 URL은 다음에 있습니다:
@@ -1899,8 +1600,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서를 방문해주십시오.",
 	'extdist-want-more' => '다른 확장 기능 내려받기',
-	'extdist-vcs-unsupported' => '확장 기능 배포자는 "$1" 버전 컨트롤 시스템을 지원하지 않습니다.',
-	'extdist-git-invalid-dir' => 'git 확인을 위한 디렉토리를 입력할 수 없습니다',
+	'extdist-tar-error' => 'Tar에서 종료 코드 $1을(를) 반환하였습니다:', # Fuzzy
 );
 
 /** Colognian (Ripoarisch)
@@ -1910,12 +1610,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['ksh'] = array(
 	'extensiondistributor' => 'MediaWiki Zohsatzprojramm eronger lade',
 	'extensiondistributor-desc' => 'Zohsazprojramm för Arschive met Zohsazprojramme ze verdeile.',
-	'extdist-not-configured' => 'Bes esu joot un donn <code>$wgExtDistTarDir</code> un <code>$wgExtDistWorkingCopy</code> setze.',
-	'extdist-wc-missing' => 'Dat Ärbeitsverzeischnes för de Kopije es nit do.',
+	'extdist-not-configured' => 'Bes esu joot un donn <code>$wgExtDistList</code> un <code>$wgExtDistArchiveAPI</code> setze.',
 	'extdist-no-such-extension' => 'Ene Zosatz „$1“ es nit doh.',
 	'extdist-no-such-version' => 'Dä Zosatz „$1“ en dä Version „$2“ es nit doh.',
 	'extdist-choose-extension' => 'Sök Der us, wat för ene Zosatz De eronger laade wells:',
-	'extdist-wc-empty' => 'En dämm Ärbeitsverzeischnes sin kein Zosätz dren, di mer verdeile künnte.',
 	'extdist-submit-extension' => 'Wigger',
 	'extdist-current-version' => 'De aktoelle Entwecklungs-Version (<i lang="en">trunk</i>)',
 	'extdist-choose-version' => 'Do bes dä Zosatz <b>$1</b> am erunge lade.
@@ -1925,14 +1623,6 @@ Sök Ding Version fun MediaWiki us.
 De miißte Zosätz fungxjeneere met diverse Versione fun MediaWiki, alsu falls Ding Version nit dobei es, udder wann de Bedarref häß aan de neuste Müjjeleschkeite un Eijeschaffte, dann versök de aktoelle Version.',
 	'extdist-no-versions' => 'Dä Zosatz „$1“ jitt et nit en alle Versione!',
 	'extdist-submit-version' => 'Wigger',
-	'extdist-no-remote' => 'Mer krijje keine Kontak zom <i lang="en">subversion (svn)</i> op däm andere Rääschner.',
-	'extdist-remote-error' => 'Dat Projramm op däm andere Rääschner hät ene Fähler jefonge un jeschrevve: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Dat Projramm  op däm andere Rääschner hät en Antwoot jejovve, met dä künne mer nix aanfange.',
-	'extdist-svn-error' => 'Et <i lang="en">subversion (svn)</i> hät ene Fähler jefonge: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'De XML-Date fun <code lang="en">svn info</code> kunnte mer nit verärrbeide: <pre>$1</pre>',
-	'extdist-git-error' => 'Et <i lang="en">Git</i> hädd ene Fähler jemäldt: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Et <i lang="en">Git</i> hädd ene kappodde <code lang="en">SHA1</code>-Prööfsumm för de neuste Version jemäldt: <pre>$1</pre>',
-	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:',
 	'extdist-created' => 'En Schnappschoß-Version fun dä Version <b>$2</b> fun däm Zosatz „<b>$1</b>“ för MediaWiki Version <b>$3</b> eß aanjelaat woode. Et ErungerLade sull automattesch loß jonn, in fönnef Sekunde.
 
 Dä URL för dä Schnappschoß es:
@@ -1953,8 +1643,7 @@ Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz 
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Noch ene Zosatz holle',
-	'extdist-vcs-unsupported' => 'Mer künne met däm Syßteem „$1“ för de Versione ze verwallde nit ömjonn.',
-	'extdist-git-invalid-dir' => 'Mer künne nit en et reschteje Verzeischness eren für met <i lang="en">Git</i> jät ze holle.',
+	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1964,8 +1653,7 @@ Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [
 $messages['lb'] = array(
 	'extensiondistributor' => 'MediaWiki Erweiderung eroflueden',
 	'extensiondistributor-desc' => "Erweiderung fir d'Verdeele vu Schnappschoss-Archive vun Erweiderungen",
-	'extdist-not-configured' => 'Konfiguréiert w.e.g. $wgExtDistTarDir an $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Den agestallten Arbechts-Kopien-Repertoire gëtt et net!',
+	'extdist-not-configured' => 'Konfiguréiert w.e.g. $wgExtDistList an $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Et gëtt keng Erweiderung "$1"',
 	'extdist-no-such-version' => 'D\'Erweiderung "$1" gëtt et net an der Versioun "$2".',
 	'extdist-choose-extension' => 'Wielt wat fir eng Erweiderung Dir wëllt eroflueden:',
@@ -1978,7 +1666,6 @@ Wielt Är MediaWiki Versioun.
 Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neiste Fonctioune vun den Erweiderunge braucht, da versicht déi neiste Versioun ze benotzen.",
 	'extdist-no-versions' => 'Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!',
 	'extdist-submit-version' => 'Viru fueren',
-	'extdist-svn-parse-error' => 'XML\'en vun "svn info" kënnen net verschafft ginn: <pre>$1</pre>',
 	'extdist-want-more' => 'Eng aner Erweiderung benotzen',
 );
 
@@ -1990,12 +1677,10 @@ Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWik
 $messages['li'] = array(
 	'extensiondistributor' => 'Download MediaWiki extension',
 	'extensiondistributor-desc' => 'Extension veur distributere snapshot archieve óf extensions',
-	'extdist-not-configured' => 'Maak de instellinge veur $wgExtDistTarDir en $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'De instelde werkmap besteit neet!',
+	'extdist-not-configured' => 'Maak de instellinge veur $wgExtDistList en $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'De uitbreiding "$1" besteit neet',
 	'extdist-no-such-version' => 'De oetbreiing "$1" besteit neet in de versie "$2".',
 	'extdist-choose-extension' => 'Selekteer de extensie dae se wils downloade:',
-	'extdist-wc-empty' => 'De ingestelde werkmap bevat gein te distributere extensies!',
 	'extdist-submit-extension' => 'Doorgaon',
 	'extdist-current-version' => 'Óntwikkelverzje (trunk)',
 	'extdist-choose-version' => 'De bös de uitbreiding <b>$1</b> aan t downloade.
@@ -2005,12 +1690,6 @@ Selecteer de versie van MediaWiki.
 De meiste uitbreidinge werke met meerdere versies van MediaWiki, dus as de versie neet in de lies steit, of as se behoefte höbs aan de nieuwste meugelikhede van de uitbreidinge, gebroek den de hujige versie.',
 	'extdist-no-versions' => 'De geselecteerde uitbreiding ($1) is in gein enkele versie besjikbaar!',
 	'extdist-submit-version' => 'Doorgaon',
-	'extdist-no-remote' => 't Waas neet meugelik de externe subversionclient te benadere',
-	'extdist-remote-error' => 'Fout van de externe subversionclient: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ongeldig antwoord van de externe subversionclient.', # Fuzzy
-	'extdist-svn-error' => 'Subversion göf de volgende foutmelding: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '\'t Waas neet meugelik de XML van "svn info" te verwerke: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar goof de volgende exitcode $1:',
 	'extdist-created' => 'De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Uw download start automatisch over 5 seconden.
 
 De URL voor de snapshot is:
@@ -2031,6 +1710,7 @@ Nadat u de bestanden hebt uitgepakt en op de juiste plaatst hebt neergezet, moet
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => "Nag 'n uitbreiding downloade",
+	'extdist-tar-error' => 'Tar goof de volgende exitcode $1:', # Fuzzy
 );
 
 /** Lithuanian (lietuvių)
@@ -2059,12 +1739,10 @@ $messages['lv'] = array(
 $messages['mk'] = array(
 	'extensiondistributor' => 'Преземање на додаток за МедијаВики',
 	'extensiondistributor-desc' => 'Додаток за дистрибуција на урнек-архиви на додатоци',
-	'extdist-not-configured' => 'Задајте $wgExtDistTarDir и $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Зададениот директориум со работниот примерок не постои!',
+	'extdist-not-configured' => 'Задајте $wgExtDistList и $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Нема додаток со име „$1“',
 	'extdist-no-such-version' => 'Додатокот „$1“ не постои во верзијата „$2“.',
 	'extdist-choose-extension' => 'Одберете го додатокот што сакате да го преземете',
-	'extdist-wc-empty' => 'Зададениот директориум со работниот примерок нема дистрибутивни додатоци!',
 	'extdist-submit-extension' => 'Продолжи',
 	'extdist-current-version' => 'Развојна верзија (trunk)',
 	'extdist-choose-version' => 'Го преземате додатокот <b>$1</b>.
@@ -2074,14 +1752,6 @@ $messages['mk'] = array(
 Највеќето додатоци работат на многу верзии на МедијаВики, така што ако вашата МедијаВики ја нема, или пак ако имате потреба од можностите во најновиот додаток, тогаш пробајте ја последната верзија.',
 	'extdist-no-versions' => 'Избраниот додаток ($1) не е достапен во ниту една верзија!',
 	'extdist-submit-version' => 'Продолжи',
-	'extdist-no-remote' => 'Не можам да го контактирам далечинскиот Subversion клиент.',
-	'extdist-remote-error' => 'Грешка од далечинскиот клиент за достава на додатоци: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Грешен одговор од клиентот за достава на додатоци.',
-	'extdist-svn-error' => 'Настана грешка во Subversion: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Грешка при обработката на XML од „svn info“: <pre>$1</pre>',
-	'extdist-git-error' => 'Git наиде на грешка: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git даде неважечка SHA1-тараба за тековната ревизија: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar го даде кодот на грешката $1:',
 	'extdist-created' => "Направена е снимка од верзијата <b>$2</b> на додатокот <b>$1</b> за МедијаВики <b>$3</b>. Преземањето треба да започне автоматски за 5 секунди. URL-адресата за оваа снимка е:
 :$4
 Можете да ја искористите веднаш за преземање на опслужувач, но не зачувувајте ја во прелистувачот, бидејќи содржината нема да се обновува, а подоцна може и да биде избришана.
@@ -2100,8 +1770,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
-	'extdist-vcs-unsupported' => 'Распространувачот на додатоци не ја поддржува контролниот систем на верзии „$1“.',
-	'extdist-git-invalid-dir' => 'Не можам да навлезам во директориумот за проверка на Git',
+	'extdist-tar-error' => 'Tar го даде кодот на грешката $1:', # Fuzzy
 );
 
 /** Malayalam (മലയാളം)
@@ -2110,12 +1779,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['ml'] = array(
 	'extensiondistributor' => 'മീഡിയവിക്കി അനുബന്ധം ഡൗൺലോഡ് ചെയ്യുക',
 	'extensiondistributor-desc' => 'അനുബന്ധങ്ങളുടെ തത്സമയ സഞ്ചയങ്ങൾ വിതരണം ചെയ്യാനുള്ള അനുബന്ധം',
-	'extdist-not-configured' => 'ദയവായി $wgExtDistTarDir, $wgExtDistWorkingCopy എന്നിവ ക്രമീകരിക്കുക',
-	'extdist-wc-missing' => 'പ്രവർത്തനം പകർത്താനായി ക്രമീകരിക്കപ്പെട്ട ഡയറക്റ്ററി നിലവിലില്ല!',
+	'extdist-not-configured' => 'ദയവായി $wgExtDistList, $wgExtDistArchiveAPI എന്നിവ ക്രമീകരിക്കുക',
 	'extdist-no-such-extension' => '"$1" എന്നൊരു അനുബന്ധം ഇല്ല',
 	'extdist-no-such-version' => '"$2" പതിപ്പിൽ "$1" എന്നൊരു അനുബന്ധം ഇല്ല.',
 	'extdist-choose-extension' => 'താങ്കൾക്ക് ഡൗൺലോഡ് ചെയ്യേണ്ട അനുബന്ധം തിരഞ്ഞെടുക്കുക:',
-	'extdist-wc-empty' => 'പ്രവർത്തനം പകർത്താനായി ക്രമീകരിക്കപ്പെട്ട ഡയറക്റ്ററിയിൽ വിതരണം ചെയ്യാവുന്ന അനുബന്ധങ്ങളൊന്നും ഇല്ല!',
 	'extdist-submit-extension' => 'തുടരുക',
 	'extdist-current-version' => 'വികസനഘട്ടത്തിലുള്ള പതിപ്പ് (ട്രങ്ക്)',
 	'extdist-choose-version' => 'താങ്കൾ <b>$1</b> എന്ന അനുബന്ധം ഡൗൺലോഡ് ചെയ്യുകയാണ്.
@@ -2125,14 +1792,6 @@ $messages['ml'] = array(
 ബഹുഭൂരിപക്ഷം അനുബന്ധങ്ങളും മീഡിയവിക്കിയുടെ വിവിധ പതിപ്പുകളിൽ ഒരേപോലെ പ്രവർത്തിക്കാൻ പ്രാപ്തമാണ്, അതുകൊണ്ട് മീഡിയവിക്കി പതിപ്പ് ഇല്ലെങ്കിൽ, അല്ലെങ്കിൽ ഏറ്റവും പുതിയ അനുബന്ധ സവിശേഷതകളാണ് താങ്കൾക്ക് വേണ്ടതെങ്കിൽ, ഇപ്പോഴത്തെ പതിപ്പ് പരീക്ഷിക്കുക.',
 	'extdist-no-versions' => 'തിരഞ്ഞെടുത്ത അനുബന്ധം ($1) ഒരു പതിപ്പിലും ലഭ്യമല്ല!',
 	'extdist-submit-version' => 'തുടരുക',
-	'extdist-no-remote' => 'വിദൂര സ‌ബ്‌‌വേർഷൻ ക്ലയന്റുമായി ബന്ധപ്പെടാൻ കഴിഞ്ഞില്ല.',
-	'extdist-remote-error' => 'അനുബന്ധം വിതരണം ചെയ്യുന്ന വിദൂര ക്ലയന്റിൽ നിന്നുണ്ടായ പിഴവ്: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'അനുബന്ധം വിതരണം ചെയ്യുന്ന വിദൂര ക്ലയന്റ് അസാധുവായ പ്രതികരണമാണ് നൽകിയത്.',
-	'extdist-svn-error' => 'സബ്‌‌വേർഷൻ ഒരു പിഴവ് അഭിമുഖീകരിക്കുന്നു: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '"svn info" തന്ന എക്സ്.എം.എൽ. ഉപയോഗിക്കാൻ കഴിയില്ല: <pre>$1</pre>',
-	'extdist-git-error' => 'ജിറ്റ് ഒരു പിഴവ് അഭിമുഖീകരിക്കുന്നു: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'ഇപ്പോഴത്തെ നാൾപ്പതിപ്പിന് ജിറ്റ് അസാധുവായ ഷാ1 (SHA1) ഹാഷ് ആണ് തിരിച്ചുനൽകിയത്: <pre>$1</pre>',
-	'extdist-tar-error' => 'ടാർ എക്സിറ്റ് കോഡ് $1 തിരിച്ചയച്ചിരിക്കുന്നു:',
 	'extdist-created' => "മീഡിയവിക്കി <b>$3</b> ഉപയോഗിക്കുന്ന <b>$1</b> അനുബന്ധത്തിന്റെ തത്സമയ പതിപ്പ് <b>$2</b> സൃഷ്ടിച്ചിരിക്കുന്നു. താങ്കളുടെ ഡൗൺലോഡ് 5 സെക്കന്റുകൾക്കുള്ളിൽ സ്വയം തുടങ്ങുന്നതാണ്.
 
 ഈ തത്സമയ ശേഖരണത്തിന്റെ യൂ.ആർ.എൽ.:
@@ -2154,8 +1813,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.",
 	'extdist-want-more' => 'മറ്റൊരു അനുബന്ധം നേടുക',
-	'extdist-vcs-unsupported' => 'അനുബന്ധ വിതരണോപാധി "$1" പതിപ്പ് നിയന്ത്രണ വ്യവസ്ഥ പിന്തുണയ്ക്കുന്നില്ല.',
-	'extdist-git-invalid-dir' => 'ജിറ്റിന്റെ ഡയറക്ടറിയിൽ പരിശോധനയ്ക്കായി പ്രവേശിക്കാനായില്ല',
+	'extdist-tar-error' => 'ടാർ എക്സിറ്റ് കോഡ് $1 തിരിച്ചയച്ചിരിക്കുന്നു:', # Fuzzy
 );
 
 /** Malay (Bahasa Melayu)
@@ -2167,12 +1825,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['ms'] = array(
 	'extensiondistributor' => 'Muat turun penyambung MediaWiki',
 	'extensiondistributor-desc' => 'Penyambung khas untuk pengedaran arkib petikan penyambung',
-	'extdist-not-configured' => 'Sila tetapkan konfigurasi $wgExtDistTarDir dan $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Direktori salinan kerja yang ditetapkan tidak wujud!',
+	'extdist-not-configured' => 'Sila tetapkan konfigurasi $wgExtDistList dan $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Penyambung "$1" tidak wujud',
 	'extdist-no-such-version' => 'Penyambung "$1" tidak mempunyai versi "$2".',
 	'extdist-choose-extension' => 'Sila pilih penyambung yang ingin dimuat turun:',
-	'extdist-wc-empty' => 'Direktori salinan kerja yang ditetapkan tidak mengandungi sebarang penyambung boleh edar!',
 	'extdist-submit-extension' => 'Teruskan',
 	'extdist-current-version' => 'Versi pembangunan (utama)',
 	'extdist-choose-version' => 'Anda sedang memuat turun penyambung <b>$1</b>.
@@ -2182,14 +1838,6 @@ Sila pilih versi MediaWiki anda.
 Kebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, jika versi MediaWiki anda tiada di sini, atau anda memerlukan penyambung dengan ciri-ciri terkini, anda boleh memilih untuk menggunakan versi semasa.',
 	'extdist-no-versions' => 'Penyambung yang dipilih ($1) tiada dalam sebarang versi!',
 	'extdist-submit-version' => 'Teruskan',
-	'extdist-no-remote' => 'Pelanggan subversion jauh tidak dapat dihubungi.',
-	'extdist-remote-error' => 'Ralat daripada pelanggan jauh Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Jawapan tidak sah daripada pelanggan jauh Extension Distributor.',
-	'extdist-svn-error' => 'Subversion mendapati ralat: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Tidak dapat memproses XML daripada "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git mengalami rakat: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git memulangkan hash SHA1 yang tidak sah untuk semakant terkini: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar memulangkan kod keluar $1:',
 	'extdist-created' => "Sebuah petikan bagi penyambung <b>$1</b> versi <b>$2</b> untuk MediaWiki <b>$3</b> telah dicipta. Proses muat turun akan dimulakan secara automatik dalam masa 5 saat.
 
 URL untuk petikan ini ialah:
@@ -2210,8 +1858,7 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
-	'extdist-vcs-unsupported' => 'Extension Distributor tidak menyokong sistem kawalan versi "$1".',
-	'extdist-git-invalid-dir' => 'Tidak dapat memasukkan direktori untuk daftar keluar git',
+	'extdist-tar-error' => 'Tar memulangkan kod keluar $1:', # Fuzzy
 );
 
 /** Maltese (Malti)
@@ -2220,12 +1867,10 @@ Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung i
 $messages['mt'] = array(
 	'extensiondistributor' => 'Niżżel estensjoni MediaWiki',
 	'extensiondistributor-desc' => "Estensjoni sabiex tiddistribwixxi arkivji ta' ritratti istantanji tal-estensjonijiet",
-	'extdist-not-configured' => 'Jekk jogħġbok ikkonfigura $wgExtDistTarDir u $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Id-direttorju ikkonfigurat għall-kopji tax-xogħol ma jeżistix!',
+	'extdist-not-configured' => 'Jekk jogħġbok ikkonfigura $wgExtDistList u $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Ma teżisti l-ebda estensjoni bl-isem "$1"',
 	'extdist-no-such-version' => 'L-estensjoni "$1" ma teżistix fil-verżjoni "$2".',
 	'extdist-choose-extension' => 'Agħżel liema estenjoni xi tniżżel:',
-	'extdist-wc-empty' => "Id-direttorju ikkonfigurat għall-kopji tax-xogħol m'għandux estensjonijiet distribwibbli!",
 	'extdist-submit-extension' => 'Kompli',
 	'extdist-current-version' => "Verżjoni ta' żvilupp (trunk)",
 	'extdist-choose-version' => 'Inti qiegħed tniżżel l-estensjoni <b>$1</b>.
@@ -2235,16 +1880,8 @@ Agħżel il-verżjoni tal-MediaWiki tiegħek.
 Ħafna mill-estensjonijiet jaħdmu fuq diversi verżjonijiet tal-MediaWiki, għalhekk jekk il-verżjoni tal-MediaWiki mhix hawnhekk, jew għandek bżonn tal-aħħar funzjonijiet tal-estensjoni, ipprova uża l-verżjoni attwali.',
 	'extdist-no-versions' => 'L-estensjoni magħżula ($1) mhijiex disponibbli fl-ebda verżjoni!',
 	'extdist-submit-version' => 'Kompli',
-	'extdist-no-remote' => 'Kien impossibbli li jiġi kkuntatjat il-klijent tas-sovverżjoni remota.',
-	'extdist-remote-error' => 'Żball mill-klijent remot Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Rispons invalidu għall-klijent remot Extension Distributor.',
-	'extdist-svn-error' => "Is-sovverżjoni ltaqgħet ma' żball: <pre>$1</pre>",
-	'extdist-svn-parse-error' => 'Kien impossibbli li jiġi pproċessat l-XML minn "svn info": <pre>$1</pre>',
-	'extdist-git-error' => "Il-Git iltaqa' ma' żball: <pre>$1</pre>",
-	'extdist-git-invalidsha1' => "Il-Git irritorna ''hash'' SHA1 invalida għar-reviżjoni attwali: <pre>$1</pre>",
-	'extdist-tar-error' => "Tar irritorna l-''exit code'' segwenti $1:",
 	'extdist-want-more' => 'Ġib estensjoni oħra',
-	'extdist-vcs-unsupported' => 'Extension Distributor ma jsostnix is-sistema tal-kontroll tal-verżjonijiet "$1".',
+	'extdist-tar-error' => "Tar irritorna l-''exit code'' segwenti $1:", # Fuzzy
 );
 
 /** Erzya (эрзянь)
@@ -2262,12 +1899,10 @@ $messages['myv'] = array(
 $messages['nb'] = array(
 	'extensiondistributor' => 'Last ned utvidelser til MediaWiki',
 	'extensiondistributor-desc' => 'Utvidelse for distribusjon av andre utvidelser',
-	'extdist-not-configured' => 'Still inn $wgExtDistTarDir og $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Mappen med arbeidskopien finnes ikke.',
+	'extdist-not-configured' => 'Still inn $wgExtDistList og $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Ingen utvidelse ved navn «$1»',
 	'extdist-no-such-version' => 'Versjon «$2» av «$1» finnes ikke',
 	'extdist-choose-extension' => 'Velg hvilken utvidelse du ønsker å laste ned:',
-	'extdist-wc-empty' => 'Mappen med arbeidskopien har ingen distribuerbare utvidelser.',
 	'extdist-submit-extension' => 'Fortsett',
 	'extdist-current-version' => 'Utviklingsversjon (trunk)',
 	'extdist-choose-version' => 'Du laster ned utvidelsen <b>$1</b>.
@@ -2277,12 +1912,6 @@ Angi hvilken MediaWiki-versjon du bruker.
 De fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.',
 	'extdist-no-versions' => 'Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.',
 	'extdist-submit-version' => 'Fortsett',
-	'extdist-no-remote' => 'Kunne ikke kontakte ekstern SVN-klient.',
-	'extdist-remote-error' => 'Feil fra ekstern SVN-klient: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ugyldig svar fra ekstern SVN-klient.', # Fuzzy
-	'extdist-svn-error' => 'SVN fant en feil: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Kunne ikke prosessere XML fra «svn info»: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:',
 	'extdist-created' => "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.
 
 Adressen til dette øyeblikksbildet er:
@@ -2303,6 +1932,7 @@ Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. D
 
 Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hent flere utvidelser',
+	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:', # Fuzzy
 );
 
 /** Low German (Plattdüütsch)
@@ -2312,12 +1942,10 @@ Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Ext
 $messages['nds'] = array(
 	'extensiondistributor' => 'MediaWiki-Extension dalladen',
 	'extensiondistributor-desc' => 'Extension för dat Bereidstellen vun Snappschuss-Archiven von Extensions',
-	'extdist-not-configured' => 'Stell $wgExtDistTarDir un $wgExtDistWorkingCopy in',
-	'extdist-wc-missing' => 'De instellt Warkmapp för Kopien gifft dat gornich!',
+	'extdist-not-configured' => 'Stell $wgExtDistList un $wgExtDistArchiveAPI in',
 	'extdist-no-such-extension' => 'Extension „$1“ gifft dat nich',
 	'extdist-no-such-version' => 'De Extension „$1“ gifft dat nich in de Version „$2“.',
 	'extdist-choose-extension' => 'Wähl de Extension ut, de du dalladen wullt:',
-	'extdist-wc-empty' => 'In de instellt Warkmapp för Kopien sünd keen Extensions in!',
 	'extdist-submit-extension' => 'Wiedermaken',
 	'extdist-current-version' => 'Ne’este instabile Version (trunk)',
 	'extdist-choose-version' => 'Du laadst de <b>$1</b>-Extension dal.
@@ -2327,12 +1955,6 @@ Wähl dien MediaWiki-Version ut.
 En groten Deel vun de Extensions arbeidt mit vele MediaWiki-Versionen. Wenn dien MediaWiki-Version hier nich opdükert oder du de ne’esten KNeep vun de Extension bruken wullt, denn versöök de aktuelle Version to bruken.',
 	'extdist-no-versions' => 'De utwählte Extension ($1) is in keen Version verföögbor!',
 	'extdist-submit-version' => 'Wiedermaken',
-	'extdist-no-remote' => 'De feernstüürte Subversion-Client mellt sik nich.',
-	'extdist-remote-error' => 'Fehler vun’n feernstüürt Subversion-Client: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ungüllige Antwoord vun’n feernstüürt Subversion-Client.', # Fuzzy
-	'extdist-svn-error' => 'Subversion hett en Fehler mellt: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'XML-Daten von „svn info“ kunnen nich verarbeidt warrn: <pre>$1</pre>',
-	'extdist-tar-error' => 'Dat Tar-Programm mellt den Enn-Kood $1:',
 	'extdist-created' => "En Snappschuss vun de Version <b>$2</b> vun de MediaWiki-Extension <b>$1</b> is opstellt worrn (MediaWiki-Version <b>$3</b>). Dat Dalladen geit automaatsch los in 5 Sekunnen.
 
 De URL för den Snappschuss is:
@@ -2353,6 +1975,7 @@ Nadem du de Datein utpackt hest, musst du de Extension in de <code>LocalSettings
 
 Wenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'En annere Extension kriegen.',
+	'extdist-tar-error' => 'Dat Tar-Programm mellt den Enn-Kood $1:', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -2365,12 +1988,10 @@ Wenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Exten
 $messages['nl'] = array(
 	'extensiondistributor' => 'MediaWiki-uitbreiding downloaden',
 	'extensiondistributor-desc' => 'Uitbreiding voor het distribueren van uitbreidingen',
-	'extdist-not-configured' => 'Maak de instellingen voor $wgExtDistTarDir en $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'De ingestelde werkmap bestaat niet!',
+	'extdist-not-configured' => 'Maak de instellingen voor $wgExtDistList en $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'De uitbreiding "$1" bestaat niet',
 	'extdist-no-such-version' => 'De uitbreiding "$1" bestaat niet in de versie "$2".',
 	'extdist-choose-extension' => 'Selecteer de uitbreiding die u wilt downloaden:',
-	'extdist-wc-empty' => 'De ingestelde werkmap bevat geen te distribueren uitbreidingen!',
 	'extdist-submit-extension' => 'Doorgaan',
 	'extdist-current-version' => 'Ontwikkelversie (trunk)',
 	'extdist-choose-version' => 'U bent de uitbreiding <b>$1</b> aan het downloaden.
@@ -2380,14 +2001,6 @@ Selecteer uw versie van MediaWiki.
 De meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw versie niet in de lijst staat, of als u behoefte hebt aan de nieuwste mogelijkheden van de uitbreidingen, gebruik dan de huidige versie.',
 	'extdist-no-versions' => 'De geselecteerde uitbreiding ($1) is in geen enkele versie beschikbaar!',
 	'extdist-submit-version' => 'Doorgaan',
-	'extdist-no-remote' => 'Het was niet mogelijk de externe subversionclient te benaderen.',
-	'extdist-remote-error' => 'Foutmelding van de externe client van Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ongeldig antwoord van de externe client van Extension Distributor.',
-	'extdist-svn-error' => 'Subversion geeft de volgende foutmelding: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Het was niet mogelijk de XML van "svn info" te verwerken: <pre>$1</pre>',
-	'extdist-git-error' => 'Er is een fout opgetreden in git: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git heeft een onjuiste SHA1-hash teruggegeven voor de huidige versie: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar gaf de volgende exitcode $1:',
 	'extdist-created' => 'De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Uw download start automatisch over 5 seconden.
 
 De URL voor de snapshot is:
@@ -2408,8 +2021,7 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
-	'extdist-vcs-unsupported' => 'Het is niet mogelijk om uitbreidingen te distribueren met behulp van het versioncontrolsysteem "$1" omdat dit niet wordt ondersteund.',
-	'extdist-git-invalid-dir' => 'Het was niet mogelijk om de map te gebruiken voor "git checkout"',
+	'extdist-tar-error' => 'Tar gaf de volgende exitcode $1:', # Fuzzy
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
@@ -2451,12 +2063,10 @@ Als je vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [
 $messages['nn'] = array(
 	'extensiondistributor' => 'Last ned utvidingar til MediaWiki',
 	'extensiondistributor-desc' => 'Utviding for distribuering av andre utvidingar',
-	'extdist-not-configured' => 'Still inn $wgExtDistTarDir og $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Mappa med arbeidskopien finst ikkje!',
+	'extdist-not-configured' => 'Still inn $wgExtDistList og $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Inga utviding med namnet "$1"',
 	'extdist-no-such-version' => 'Versjon «$2» av «$1» finst ikkje',
 	'extdist-choose-extension' => 'Vel kva utviding du ønskjer å lasta ned:',
-	'extdist-wc-empty' => 'Mappa med arbeidskopien har ingen utvidingar som kan bli distribuerte.',
 	'extdist-submit-extension' => 'Hald fram',
 	'extdist-current-version' => 'Utviklingsverjson (trunk)',
 	'extdist-choose-version' => 'Du lastar ned utvidinga <b>$1</b>.
@@ -2466,12 +2076,6 @@ Oppgje kva MediaWiki-versjon du nyttar.
 Dei fleste utvidingane fungerer på fleire versjonar av MediaWiki, so om versjonen du nyttar ikkje er lista opp her, eller om du har bruk for dei siste utvidingseigenskapane, kan du prøva å nytta den noverande versjonen.',
 	'extdist-no-versions' => 'Den valte utvidinga ($1) er ikkje tilgjengeleg i nokon versjon!',
 	'extdist-submit-version' => 'Hald fram',
-	'extdist-no-remote' => 'Kunne ikkje kontakta ekstern SVN-klient.',
-	'extdist-remote-error' => 'Feil frå ekstern SVN-klient: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ugyldig svar frå ekstern SVN-klient.', # Fuzzy
-	'extdist-svn-error' => 'SVN fann ein feil: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Kunne ikkje handsama XML frå "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar returnerte utgangskoden $1:',
 	'extdist-created' => "Eit snøggskot av versjon <b>$2</b> av utvidinga <b>$1</b> for MediaWiki <b>$3</b> er blitt oppretta. Nedlastinga vil starta automatisk om fem&nbsp;sekund.
 
 Adressa til snøggskotet er:
@@ -2492,6 +2096,7 @@ Etter å ha pakka ut filene må du registrera utvidinga i LocalSettings.php. Dok
 
 Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].", # Fuzzy
 	'extdist-want-more' => 'Hent fleire utvidingar',
+	'extdist-tar-error' => 'Tar returnerte utgangskoden $1:', # Fuzzy
 );
 
 /** Occitan (occitan)
@@ -2501,12 +2106,10 @@ Om du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http
 $messages['oc'] = array(
 	'extensiondistributor' => 'Telecargar l’extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension per la distribucion dels archius fotografics de las extensions',
-	'extdist-not-configured' => 'Configuratz $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Lo repertòri de la còpia de trabalh configurada existís pas !',
+	'extdist-not-configured' => 'Configuratz $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => "Pas cap d'extension « $1 »",
 	'extdist-no-such-version' => 'L’extension « $1 » existís pas dins la version « $2 ».',
 	'extdist-choose-extension' => 'Seleccionatz l’extension que volètz telecargar :',
-	'extdist-wc-empty' => "Lo repertòri de la còpia de trabalh configurada a pas cap d'extension distribuibla !",
 	'extdist-submit-extension' => 'Contunhar',
 	'extdist-current-version' => 'Version de desvolopament (trunk)',
 	'extdist-choose-version' => "Sètz a telecargar l’extension <b>$1</b>.
@@ -2516,12 +2119,6 @@ Seleccionatz vòstra version MediaWiki.
 La màger part de las extensions vira sus diferentas versions de MediaWiki. Atal, se vòstra version es pas presenta aicí, o s'avètz besonh de las darrièras foncionalitats de l’extension, ensajatz d’utilizar la version correnta.",
 	'extdist-no-versions' => 'L’extension seleccionada ($1) es indisponibla dins mantuna version !',
 	'extdist-submit-version' => 'Contunhar',
-	'extdist-no-remote' => 'Impossible de contactar lo client subversion distant.',
-	'extdist-remote-error' => 'Error del client subversion distant : <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Responsa incorrècta dempuèi lo client subversion distant.', # Fuzzy
-	'extdist-svn-error' => 'Subversion a rencontrat una error : <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Impossible de tractar lo XML a partir de « svn info » : <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar a tornat lo còde de sortida $1 :',
 	'extdist-created' => "Una fòto de la version <b>$2</b> de l’extension <b>$1</b> per MediaWiki <b>$3</b> es estada creada. Vòstre telecargament deuriá començar automaticament dins 5 segondas.
 
 L'adreça d'aquesta fòto es :
@@ -2542,6 +2139,7 @@ Un còp l’extraccion facha, auretz besonh d’enregistrar l’extension dins L
 
 S'avètz de questions a prepaus d'aqueste sistèma de distribucion de las extensions, anatz sus [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obténer una autra extension',
+	'extdist-tar-error' => 'Tar a tornat lo còde de sortida $1 :', # Fuzzy
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -2580,12 +2178,10 @@ $messages['pdc'] = array(
 $messages['pl'] = array(
 	'extensiondistributor' => 'Pobierz rozszerzenie MediaWiki',
 	'extensiondistributor-desc' => 'Rozszerzenie odpowiedzialne za dystrybucję zarchiwizowanych rozszerzeń gotowych do pobrania',
-	'extdist-not-configured' => 'Proszę skonfigurować zmienne $wgExtDistTarDir i $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Skonfigurowany katalog z kopią roboczą nie istnieje!',
+	'extdist-not-configured' => 'Proszę skonfigurować zmienne $wgExtDistList i $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Brak rozszerzenia „$1”',
 	'extdist-no-such-version' => 'Rozszerzenie „$1” w wersji „$2” nie istnieje.',
 	'extdist-choose-extension' => 'Wybierz rozszerzenie, które chcesz pobrać:',
-	'extdist-wc-empty' => 'Skonfigurowany katalog z kopią roboczą nie zawiera rozszerzeń, które można by było dystrybuować!',
 	'extdist-submit-extension' => 'Kontynuuj',
 	'extdist-current-version' => 'Wersja rozwijana (trunk)',
 	'extdist-choose-version' => 'Do pobrania zostało wybrane rozszerzenie <b>$1</b>.
@@ -2595,14 +2191,6 @@ Wybierz z listy wersję MediaWiki.
 Większość rozszerzeń działa ze wszystkimi wersjami MediaWiki, więc jeśli nie ma na liście Twojej wersji MediaWiki lub potrzebujesz najnowszej wersji rozszerzenia, należy wybrać bieżącą wersję.',
 	'extdist-no-versions' => 'Wybrane rozszerzenie „$1” nie jest dostępne w żadnej wersji oprogramowania!',
 	'extdist-submit-version' => 'Kontynuuj',
-	'extdist-no-remote' => 'Nie można połączyć się ze zdalnym klientem Subversion.',
-	'extdist-remote-error' => 'Błąd zdalnego klienta Dystrybutora Rozszerzeń: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Nieprawidłowa odpowiedź zdalnego klienta Dystrybutora Rozszerzeń.',
-	'extdist-svn-error' => 'Subversion napotkał błąd <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Nie można przetworzyć danych XML z „svn info”: <pre>$1</pre>',
-	'extdist-git-error' => 'Git napotkał błąd: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git zwrócił nieprawidłowy skrót SHA1 dla bieżącej wersji: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar zwrócił kod zakończenia $1:',
 	'extdist-created' => "Utworzono skompresowane archiwum rozszerzenia <b>$1</b> w wersji <b>$2</b> dla MediaWiki <b>$3</b>. Pobieranie powinno rozpocząć się automatycznie w ciągu 5 sekund.
 
 Archiwum znajduje się pod adresem URL
@@ -2623,8 +2211,7 @@ Po umieszczeniu plików w odpowiednich katalogach, należy włączyć rozszerzen
 
 Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zadaj je na stronie [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Pobierz inne rozszerzenie',
-	'extdist-vcs-unsupported' => 'Dystrybutor rozszerzenia nie obsługuje systemu kontroli wersji "$1".',
-	'extdist-git-invalid-dir' => 'Nie można wprowadzić katalogu git do pobrania',
+	'extdist-tar-error' => 'Tar zwrócił kod zakończenia $1:', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
@@ -2634,12 +2221,10 @@ Jeśli masz jakieś pytania na temat systemu dystrybuującego rozszerzenia, zada
 $messages['pms'] = array(
 	'extensiondistributor' => "Dëscaria l'estension MediaWiki",
 	'extensiondistributor-desc' => "Estension për distribuì j'archivi snapshot ëd j'estension",
-	'extdist-not-configured' => 'Për piasì configura $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Ël dossié configurà për còpie ëd travaj a esist pa!',
+	'extdist-not-configured' => 'Për piasì configura $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Pa gnun-e estension "$1"',
 	'extdist-no-such-version' => 'L\'estension "$1" a esist pa ant la version "$2".',
 	'extdist-choose-extension' => 'Selession-a che estension it veule dëscarié:',
-	'extdist-wc-empty' => "Ël dossié configurà për còpie ëd travaj a l'ha pa gnun-e estension distribuìbij!",
 	'extdist-submit-extension' => 'Continua',
 	'extdist-current-version' => 'Version ëd dësvlup (trunk)',
 	'extdist-choose-version' => "It ses an camin ch'it dëscarie l'estension <b>$1</b>.
@@ -2649,14 +2234,6 @@ Selession-a toa version MediaWiki.
 Vàire estension a travajo dzora a 'd version diferente ëd MediaWiki, parèj se toa version ëd MediaWiki a l'é pa sì, o s'it l'has dabzògn ëd j'ùltime funsion ëd l'estension, preuva a dovré la version corenta.",
 	'extdist-no-versions' => "L'estension selessionà ($1) a l'é pa disponìbil an gnun-e version!",
 	'extdist-submit-version' => 'Continua',
-	'extdist-no-remote' => 'As peul pa contaté ël client leugn ëd la sot-version.',
-	'extdist-remote-error' => 'Eror dal client leugn Extension Distributor: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Rispòsta pa bon-a dal client leugn Extension Distributor.',
-	'extdist-svn-error' => "La sot-version a l'ha rëncontrà n'eror: <pre>$1</pre>",
-	'extdist-svn-parse-error' => 'As peul pa processesse l\'XML da "svn info": <pre>$1</pre>',
-	'extdist-git-error' => "Git a l'ha rancontrà n'eror: <pre>$1</pre>",
-	'extdist-git-invalidsha1' => "Git a l'ha mandà andré n'hash SHA1 pa bon për la revision corenta: <pre>$1</pre>",
-	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:",
 	'extdist-created' => "Na còpia d'amblé ëd la version <b>$2</b> ëd l'estension <b>$1</b> për MediaWiki <b>$3</b> a l'é stàita creà. Soa dëscaria a dovrìa parte automaticament tra 5 second.
 
 L'adrëssa për sta còpia-sì a l'é:
@@ -2677,8 +2254,7 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-vcs-unsupported' => 'Extension Distributor a manten nen ël sistema ëd contròl ëd version «$1».',
-	'extdist-git-invalid-dir' => 'Impossìbil intré ant ël dossié për un contròl ëd Git',
+	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:", # Fuzzy
 );
 
 /** Portuguese (português)
@@ -2688,12 +2264,10 @@ S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'
 $messages['pt'] = array(
 	'extensiondistributor' => 'Descarregar extensão MediaWiki',
 	'extensiondistributor-desc' => "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
-	'extdist-not-configured' => 'Por favor, configure $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'O directório da cópia de trabalho configurado não existe!',
+	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'A extensão "$1" não existe',
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
-	'extdist-wc-empty' => 'O directório configurado para a cópia de trabalho não tem extensões distribuíveis!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Versão de desenvolvimento (tronco)',
 	'extdist-choose-version' => '
@@ -2704,12 +2278,6 @@ Seleccione a sua versão do MediaWiki.
 A maioria das extensões funciona em várias versões do MediaWiki, portanto se a sua versão do MediaWiki não aparecer aqui, ou se precisa das últimas funcionalidades da extensão, experimente usar a versão mais recente.',
 	'extdist-no-versions' => 'A extensão selecionada ($1) não está disponível em nenhuma versão!',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'Não foi possível contactar o cliente Subversion remoto.',
-	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.', # Fuzzy
-	'extdist-svn-error' => 'O Subversion encontrou um erro: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Não foi possível processar o XML da informação SVN: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar retornou código de saída $1:',
 	'extdist-created' => "Foi criado um instantâneo ''(snapshot)'' da versão <b>$2</b> da extensão <b>$1</b>, para o MediaWiki <b>$3</b>. A transferência deverá iniciar-se automaticamente em 5 segundos.
 
 A URL deste instantâneo é:
@@ -2730,6 +2298,7 @@ Após colocar a extensão no directório de extensões da sua wiki, terá de reg
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
+	'extdist-tar-error' => 'Tar retornou código de saída $1:', # Fuzzy
 );
 
 /** Brazilian Portuguese (português do Brasil)
@@ -2739,12 +2308,10 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 $messages['pt-br'] = array(
 	'extensiondistributor' => 'Descarregar extensão MediaWiki',
 	'extensiondistributor-desc' => 'Extensão para distribuir arquivos snapshot de extensões',
-	'extdist-not-configured' => 'Por favor, configure $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'O diretório de cópia de trabalho configurado não existe!',
+	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'A extensão "$1" não existe',
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
-	'extdist-wc-empty' => 'O diretório de cópia de trabalho não possui extensões distribuíveis!',
 	'extdist-submit-extension' => 'Continuar',
 	'extdist-current-version' => 'Versão em desenvolvimento (tronco)',
 	'extdist-choose-version' => 'Você está a descarregando a extensão <b>$1</b>.
@@ -2754,12 +2321,6 @@ Selecione a versão do seu MediaWiki.
 A maioria das extensões funciona através de múltiplas versões do MediaWiki, portanto, se a versão do seu MediaWiki não estiver aqui, ou se tiver necessidade das últimas funcionalidades da extensão, experimente usar a versão atual.',
 	'extdist-no-versions' => 'A extensão selecionada ($1) não está disponível em nenhuma versão!',
 	'extdist-submit-version' => 'Continuar',
-	'extdist-no-remote' => 'Não foi possível contatar o cliente Subversion remoto.',
-	'extdist-remote-error' => 'Erro do cliente Subversion remoto: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Resposta inválida do cliente Subversion remoto.', # Fuzzy
-	'extdist-svn-error' => 'O Subversion encontrou um erro: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Não foi possível processar o XML do "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar retornou código de saída $1:',
 	'extdist-created' => "Foi criado um instantâneo ''(snapshot)'' da versão <b>$2</b> da extensão <b>$1</b>, para o MediaWiki <b>$3</b>. A transferência deverá iniciar-se automaticamente em 5 segundos.
 
 A URL deste instantâneo é:
@@ -2780,6 +2341,7 @@ Após colocar a extensão no diretório de extensões da sua wiki, terá de regi
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
+	'extdist-tar-error' => 'Tar retornou código de saída $1:', # Fuzzy
 );
 
 /** Romanian (română)
@@ -2791,7 +2353,7 @@ Se tiver alguma questão sobre este sistema de distribuição de extensões, por
 $messages['ro'] = array(
 	'extensiondistributor' => 'Descărcare extensie MediaWiki',
 	'extensiondistributor-desc' => 'Extensie pentru distribuirea unor arhive fotografice ale extensiilor',
-	'extdist-not-configured' => 'Vă rugăm să configurați $wgExtDistTarDir și $wgExtDistWorkingCopy',
+	'extdist-not-configured' => 'Vă rugăm să configurați $wgExtDistList și $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Extensia "$1" inexistentă',
 	'extdist-no-such-version' => 'Extensia "$1" nu există în versiunea "$2".',
 	'extdist-submit-extension' => 'Continuă',
@@ -2803,7 +2365,6 @@ Alegeți versiunea dvs MediaWiki.
 Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci dacă versiunea dvs MediaWiki nu este aici sau dacă aveți nevoie de cele mai recente funcționalități pentru extensii, încercați să folosiți versiunea curentă.',
 	'extdist-no-versions' => 'Extensia selectată ($1) nu este disponibilă în orice versiune!',
 	'extdist-submit-version' => 'Continuă',
-	'extdist-svn-parse-error' => 'Imposibil de procesat XML din „svn info”: <pre>$1</pre>',
 	'extdist-want-more' => 'Obține altă extensie',
 );
 
@@ -2834,12 +2395,10 @@ $messages['roa-tara'] = array(
 $messages['ru'] = array(
 	'extensiondistributor' => 'Скачать расширения MediaWiki',
 	'extensiondistributor-desc' => 'Расширение для скачивания дистрибутивов с расширениями',
-	'extdist-not-configured' => 'Пожалуйста, задайте $wgExtDistTarDir и $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Заданная в настройках директория с рабочей копией не существует!',
+	'extdist-not-configured' => 'Пожалуйста, задайте $wgExtDistList и $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Расширение «$1» не найдено',
 	'extdist-no-such-version' => 'Версия $2 расширения «$1» не найдена.',
 	'extdist-choose-extension' => 'Выберите расширение для скачивания:',
-	'extdist-wc-empty' => 'Заданная в настройках директория с рабочей копией не имеет расширений для распространения!',
 	'extdist-submit-extension' => 'Продолжить',
 	'extdist-current-version' => 'Разрабатываемая версия (trunk)',
 	'extdist-choose-version' => 'Вы скачиваете расширение <b>«$1»</b>.
@@ -2849,14 +2408,6 @@ $messages['ru'] = array(
 Большинство расширений работают с несколькими версиями MediaWiki, поэтому если установленная у вас версия здесь не приведена, или вам требуются возможности последней версии расширения — попробуйте последнюю версию.',
 	'extdist-no-versions' => 'Выбранное расширение («$1») не доступно ни в одной версии!',
 	'extdist-submit-version' => 'Продолжить',
-	'extdist-no-remote' => 'Не получилось связаться с удалённым клиентом Subversion.',
-	'extdist-remote-error' => 'Ошибка удалённого клиента Subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Ошибочный ответ клиента subversion.', # Fuzzy
-	'extdist-svn-error' => 'Ошибка Subversion: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Ошибка обработки XML, возвращённого командой «svn info»: <pre>$1</pre>',
-	'extdist-git-error' => 'Git обнаружил ошибку:<pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git вернул недопустимый хэш SHA1 для текущей ревизии:<pre>$1</pre>',
-	'extdist-tar-error' => 'Tar вернул код ошибки $1:',
 	'extdist-created' => "Создан снимок версии <b>$2</b> расширения <b>$1</b> для MediaWiki <b>$3</b>. Загрузка должна начаться автоматически через 5 секунд.
 
 URL данного снимка:
@@ -2877,8 +2428,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Если у вас есть вопрос об этой системе распространения расширений, пожалуйста, обратитесь к странице [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачать другое расширение',
-	'extdist-vcs-unsupported' => 'Система контроля версий «$1» не поддерживается.',
-	'extdist-git-invalid-dir' => 'Не удаётся войти в директорию для действия «git checkout»',
+	'extdist-tar-error' => 'Tar вернул код ошибки $1:', # Fuzzy
 );
 
 /** Rusyn (русиньскый)
@@ -2887,12 +2437,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['rue'] = array(
 	'extensiondistributor' => 'Скачати росшырїня MediaWiki',
 	'extensiondistributor-desc' => 'Росшырїня про дістрібуцію архівів росшырїня',
-	'extdist-not-configured' => 'Просиме, наштелюйте $wgExtDistTarDir і $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Адресарь наставленый про працовну копію не єствує!',
+	'extdist-not-configured' => 'Просиме, наштелюйте $wgExtDistList і $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Росшырїня „$1” не єствує',
 	'extdist-no-such-version' => 'Росшырїня "$1" не єствує у верзії "$2".',
 	'extdist-choose-extension' => 'Выберте, котре росшырїня хочете скачати:',
-	'extdist-wc-empty' => 'Наставленый адресарь з працовнов копіёв не обсягує жадны росшырїня, котры бы было можне дістрібуовати!',
 	'extdist-submit-extension' => 'Продовжыти',
 	'extdist-current-version' => 'Вывоёва верзія (trunk)',
 	'extdist-choose-version' => 'Тягате росшырїня <b>$1</b>.
@@ -2902,12 +2450,6 @@ $messages['rue'] = array(
 Векшына росшырїнь фунґує на веце верзіях MediaWiki, также кідь гев ваша верзія MediaWiki не є уведжена або вам треба новшы властноти росшырїня, попробуйте хосновати актуалну верзію.',
 	'extdist-no-versions' => 'Выбране росшырїня ($1) не є доступне в жадній верзії!',
 	'extdist-submit-version' => 'Продовжыти',
-	'extdist-no-remote' => 'Не подарило ся контактовати далекого кліента Subversion.',
-	'extdist-remote-error' => 'Хыба од далекого кліента Subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Неправилна одповідь од далекого кліента Дістрібутора росшырїнь.',
-	'extdist-svn-error' => 'Subversion наразив на хыбу: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Не дало ся спрацовати XML з выступу „svn info”: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar скінчів з вернутым кодом $1:',
 	'extdist-created' => "Пакунок <b>$1</b> у верзії <b>$2</b> про MediaWiki <b>$3</b> быв створеный. Ёго скачаня бы ся мало автоматічно спустити за пять секунд.
 
 Адреса того пакунка є:
@@ -2928,6 +2470,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Вопросы ку тій сістемі дістрібуції росшырїня можете класти на сторінцї [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачати інше росшырїня',
+	'extdist-tar-error' => 'Tar скінчів з вернутым кодом $1:', # Fuzzy
 );
 
 /** Sakha (саха тыла)
@@ -2936,12 +2479,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['sah'] = array(
 	'extensiondistributor' => 'МедиаВики тупсарыыларын хачайдааһын',
 	'extensiondistributor-desc' => 'Тупсарыылары хачайдыыр тупсарыы',
-	'extdist-not-configured' => 'Бука диэн балары туруор: $wgExtDistTarDir уонна $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Туруорууга бэриллибит үлэлиир копиялаах паапка суох!',
+	'extdist-not-configured' => 'Бука диэн балары туруор: $wgExtDistList уонна $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => '"$1" тупсарыы булуллубата',
 	'extdist-no-such-version' => '"$1" тупсарыы "$2" барыла булуллубата.',
 	'extdist-choose-extension' => 'Тупсарыыны хачайдыырга тал:',
-	'extdist-wc-empty' => 'Уларытыллыахтаах үлэлиир копиялаах директория тупсарыыта суох!',
 	'extdist-submit-extension' => 'Салгыы',
 	'extdist-current-version' => 'Сайдар барыла (trunk)',
 	'extdist-choose-version' => '<b>«$1»</b> тупсарыыны хачайдаан эрэҕин.
@@ -2951,12 +2492,6 @@ $messages['sah'] = array(
 Тупсарыылар үгүстэрэ MediaWiki хас да барылын кытта үлэлииллэр, онон эйиэхэ турар барыл тиһиккэ суох буоллаҕына эбэтэр бүтэһик барыл биэрэр кыахтара наада буоллахтарына — бүтэһик барылы хачайдаан көр.',
 	'extdist-no-versions' => 'Талбыт ($1) тупсарыыҥ ханнык да барылга үлэлиир кыаҕа суох!',
 	'extdist-submit-version' => 'Салгыы',
-	'extdist-no-remote' => 'Атын барылы (subversion client) кытта сибээс кыайан олохтоммото.',
-	'extdist-remote-error' => 'Атын барыл (subversion client) алҕастаах: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Атын барыл (subversion client) алҕастаах хоруйа.', # Fuzzy
-	'extdist-svn-error' => 'Барыл (Subversion) алҕаһа: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '"Svn info" хамаанда ыыппыт XML уларытар процеһын алҕаһа: <pre>$1</pre>',
-	'extdist-tar-error' => 'Куод $1 сыыһатын Tar көрдөрөр:',
 	'extdist-created' => "MediaWiki <b>$3</b> анаан <b>$1</b> тупсарыы <b>$2</b> барылын снэпшота (хаартыската) оҥоһулунна. 5 сөкүүндэннэн хачайданыы саҕаланыахтаах.
 
 Снэпшот URL-а:
@@ -2977,6 +2512,7 @@ Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] б�
 
 Бу туһунан тугу эмит ыйытыаххын баҕардаххына бу сирэйгэ киирээр: [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атын тупсарыыны хачайдыырга',
+	'extdist-tar-error' => 'Куод $1 сыыһатын Tar көрдөрөр:', # Fuzzy
 );
 
 /** Sinhala (සිංහල)
@@ -2985,8 +2521,7 @@ Windows-ка билэлэри арыйарга [http://www.7-zip.org/ 7-zip] б�
  */
 $messages['si'] = array(
 	'extensiondistributor' => 'මීඩියාවිකි විස්තීරණය බාගන්න',
-	'extdist-not-configured' => 'කරුණාකර $wgExtDistTarDir සහ $wgExtDistWorkingCopy වින්‍යාසගත කරන්න',
-	'extdist-wc-missing' => 'වින්‍යාසගතකොට ඇති වැඩකරන පිටපත් කිරීමේ නාමාවලිය නොපවතියි!',
+	'extdist-not-configured' => 'කරුණාකර $wgExtDistList සහ $wgExtDistArchiveAPI වින්‍යාසගත කරන්න',
 	'extdist-no-such-extension' => 'සත්‍ය විස්තීරණයක් නොමැත "$1"',
 	'extdist-no-such-version' => '"$1" විස්තීරණය "$2" අනුවාදයෙහි නොපවතියි.',
 	'extdist-choose-extension' => 'ඔබට බාගැනීමට අවශ්‍ය විස්තීරණය තෝරන්න:',
@@ -2999,7 +2534,6 @@ $messages['si'] = array(
 සමහරක් විස්තීර්ණ මාධ්‍යවිකියෙහි බහුවිධ අනුවාද හරහා වැඩකරයි, එම නිසා ඔබේ මාධ්‍යවිකි අනුවාදය මෙතන නොමැති නම්, හෝ ඔබට නවතම විස්තීර්ණ ගුණාංග අවශ්‍යනම්, වත්මන් අනුවාදය භාවිතා කිරීමට උත්සහ කරන්න.',
 	'extdist-no-versions' => 'තෝරාගත් විස්තීරණය ($1) කිසිදු අනුවාදයකින් ලබාගත නොහැක!',
 	'extdist-submit-version' => 'ඉදිරියට යන්න',
-	'extdist-svn-error' => 'උපඅනුවාදයේ දෝෂයක් හට ගැනුණි: <pre>$1</pre>',
 	'extdist-want-more' => 'වෙනත් විස්තිර්ණයක් ලබාගන්න',
 );
 
@@ -3009,12 +2543,10 @@ $messages['si'] = array(
 $messages['sk'] = array(
 	'extensiondistributor' => 'Stiahnuť rozšírenie MediaWiki',
 	'extensiondistributor-desc' => 'Rozšírenie na distribúciu archívov rozšírení',
-	'extdist-not-configured' => 'Prosím, nastavte $wgExtDistTarDir a $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Nastavený adresár pre pracovnú kópiu neexistuje!',
+	'extdist-not-configured' => 'Prosím, nastavte $wgExtDistList a $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Rozšírenie „$1” neexistuje',
 	'extdist-no-such-version' => 'Rozšírenie „$1” neexistuje vo verzii „$2”',
 	'extdist-choose-extension' => 'Vyberte, ktoré rozšírenie chcete stiahnuť:',
-	'extdist-wc-empty' => 'Nastavená pracovná kópia nemá rozšírenia, ktoré je možné distribuovať!',
 	'extdist-submit-extension' => 'Pokračovať',
 	'extdist-current-version' => 'Vývojová verzia (trunk)',
 	'extdist-choose-version' => 'Sťahujete rozšírenie <b>$1</b>.
@@ -3024,12 +2556,6 @@ Vyberte vašu verziu MediaWiki.
 Väčšina rozšírení funguje na viacerých verziách MediaWiki, takže ak tu nie je vaša verzia MediaWiki uvedená alebo potrebujete najnovšiu vývojovú verziu rozšírenia, pokúste sa použiť aktuálnu verziu.',
 	'extdist-no-versions' => 'Zvolené rozšírenie ($1) nie je dostupné v žiadnej verzii!',
 	'extdist-submit-version' => 'Pokračovať',
-	'extdist-no-remote' => 'Nepodarilo sa kontaktovať vzdialeného klienta Subversion.',
-	'extdist-remote-error' => 'Chyba od vzdialeného klienta Subversion: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Neplatná odpoveď od vzdialeného klienta Subversion.', # Fuzzy
-	'extdist-svn-error' => 'Subversion narazil na chybu: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Nebolo možné spracovať XML z výstupu „svn info”: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar skončil s návratovým kódom $1:',
 	'extdist-created' => "Snímka verzie <b>$2</b> rozšírenia <b>$1</b> pre MediaWiki <b>$3</b> bol vytvorený. Sťahovanie by malo začať automaticky do 5 sekúnd.
 
 URL tohto obrazu je:
@@ -3050,6 +2576,7 @@ Po rozbalení súborov budete musieť rozšírenie zaregistrovať v LocalSetting
 
 Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navštívte [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stiahnuť iné rozšírenie',
+	'extdist-tar-error' => 'Tar skončil s návratovým kódom $1:', # Fuzzy
 );
 
 /** Slovenian (slovenščina)
@@ -3059,12 +2586,10 @@ Ak máte otázky týkajúce sa tohto systému distribúcie rozšírení, navšt�
 $messages['sl'] = array(
 	'extensiondistributor' => 'Prenesi razširitev MediaWiki',
 	'extensiondistributor-desc' => 'Razširitev, ki razdeljuje arhive posnetkov razširitev',
-	'extdist-not-configured' => 'Prosimo, nastavite $wgExtDistTarDir in $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Nastavljena delovna kopija mape ne obstaja!',
+	'extdist-not-configured' => 'Prosimo, nastavite $wgExtDistList in $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Razširitev »$1« ne obstaja',
 	'extdist-no-such-version' => 'Raširitev »$1« v različici »$2« ne obstaja.',
 	'extdist-choose-extension' => 'Izberite, katero razširitev želite prenesti:',
-	'extdist-wc-empty' => 'Nastavljena delovna kopija mape nima razdeljivih razširitev!',
 	'extdist-submit-extension' => 'Nadaljuj',
 	'extdist-current-version' => 'Razvojna različica (trunk)',
 	'extdist-choose-version' => 'Prenašate razširitev <b>$1</b>.
@@ -3074,14 +2599,6 @@ Izberite svojo različico MediaWiki.
 Večina razširitev deluje na več različicah MediaWiki, zato v primeru, da vaša različica MediaWiki tukaj ni navedena ali potrebujete najnovejše funkcije razširitve, poskusite uporabiti trenutno različico.',
 	'extdist-no-versions' => 'Izbrana razširitev ($1) ni na razpolago v nobeni različici!',
 	'extdist-submit-version' => 'Nadaljuj',
-	'extdist-no-remote' => 'Ne morem stopiti v stik z oddaljenim odjemalcem subversion.',
-	'extdist-remote-error' => 'Napaka od oddaljenega odjemalca razširjevalca razširitev: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Neveljavni odziv oddaljenega odjemalca razširjevalca razširitev.',
-	'extdist-svn-error' => 'Subversion je naletel na napako: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Ne morem obdelati XML iz »svn info«: <pre>$1</pre>',
-	'extdist-git-error' => 'Git je naletel na napako: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git je vrnil neveljaven odtis SHA1 za trenutno redakcijo: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar je vrnih izhodno kodo $1:',
 	'extdist-created' => "Posnetek različice <b>$2</b> razširitve <b>$1</b> za MediaWiki <b>$3</b> je ustvarjen. Vaš prenos bi se moral začeti samodejno v 5 sekundah.
 
 URL posnetka je:
@@ -3102,8 +2619,7 @@ Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalS
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dobi drugo razširitev',
-	'extdist-vcs-unsupported' => 'Razširjevalec razširitev ne podpira nadzornega sistema različice »$1«.',
-	'extdist-git-invalid-dir' => 'Ne morem vnesti mape za git checkout.',
+	'extdist-tar-error' => 'Tar je vrnih izhodno kodo $1:', # Fuzzy
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
@@ -3132,12 +2648,10 @@ $messages['sr-el'] = array(
 $messages['sv'] = array(
 	'extensiondistributor' => 'Ladda ner tillägg till MediaWiki',
 	'extensiondistributor-desc' => 'Tillägg för distribution av övriga tillägg',
-	'extdist-not-configured' => 'Var god bekräfta $wgExtDistTarDir och $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Mappen med arbetskopian finns inte!',
+	'extdist-not-configured' => 'Var god bekräfta $wgExtDistList och $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Ingen sådant tillägg "$1"',
 	'extdist-no-such-version' => 'Tillägget "$1" finns inte i versionen "$2".',
 	'extdist-choose-extension' => 'Välj vilket tillägg du vill ladda ner:',
-	'extdist-wc-empty' => 'Mappen med arbetskopian har inga distribuerbara tillägg!',
 	'extdist-submit-extension' => 'Fortsätt',
 	'extdist-current-version' => 'Utvecklingsversion (trunk)',
 	'extdist-choose-version' => '
@@ -3148,12 +2662,6 @@ Ange vilken version av MediaWiki du använder.
 De flesta tilläggen fungerar på flera versioner av MediaWiki, så om versionen du använder inte listas upp här, kan du pröva att välja den nyaste versionen.',
 	'extdist-no-versions' => 'Det valda tillägget ($1) är inte tillgängligt i någon version!',
 	'extdist-submit-version' => 'Fortsätt',
-	'extdist-no-remote' => 'Kunde inte kontakta extern SVN-klient.',
-	'extdist-remote-error' => 'Fel från extern Extension Distributor-klient: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Ogiltigt svar från extern Extension Distributor-klient.',
-	'extdist-svn-error' => 'SVN hittade ett fel: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Kunde inte processera XML från "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar returnerade utgångskod $1:',
 	'extdist-created' => "En ögonblicksbild av version <b>$2</b> av tillägget <b>$1</b> för MediaWiki <b>$3</b> har skapats. Din nerladdning ska starta automatiskt om 5 sekunder.
 
 URL:et för ögonblicksbilden är:
@@ -3174,6 +2682,7 @@ Efter att du packat upp filerna, behöver du registrera programtillägget i Loca
 
 Om du har några frågor om programtilläggets distributionssystem, gå till [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hämta andra tillägg',
+	'extdist-tar-error' => 'Tar returnerade utgångskod $1:', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -3248,23 +2757,16 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['tk'] = array(
 	'extensiondistributor' => 'MediaWiki giňeltmesini düşür',
 	'extensiondistributor-desc' => 'Giňeltmeleriň pursatlyk görnüş arhiwlerini paýlamak üçin giňeltme',
-	'extdist-not-configured' => 'Konfigurirläň: $wgExtDistTarDir we $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Konfigurirlenen iş nusgasy direktoriýasy ýok!',
+	'extdist-not-configured' => 'Konfigurirläň: $wgExtDistList we $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => '"$1" diýip giňeltme ýok.',
 	'extdist-no-such-version' => '"$2" wersiýasynda "$1" giňeltmesi ýok.',
 	'extdist-choose-extension' => 'Düşürmek isleýän giňeltmäňizi saýlaň:',
-	'extdist-wc-empty' => 'Konfigurirlenen iş nusgasy direktoriýasynda hiç hili paýlap boljak giňeltme ýok!',
 	'extdist-submit-extension' => 'Dowam et',
 	'extdist-current-version' => 'Ösdüriş wersiýasy (trunk)',
 	'extdist-no-versions' => 'Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!',
 	'extdist-submit-version' => 'Dowam et',
-	'extdist-no-remote' => 'Uzakdan Subversion müşderisi bilen aragatnaşyk gurup bolmaýar.',
-	'extdist-remote-error' => 'Uzakdan Subversion müşderisinden säwlik: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Uzakdan Subversion müşderisined nädogry jogap.', # Fuzzy
-	'extdist-svn-error' => 'Subversion säwlige duçar boldy: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '"svn info"dan XML-ni işläp bolmaýar: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar çykyş kody $1 gaýdyp geldi:',
 	'extdist-want-more' => 'Başga giňeltme al',
+	'extdist-tar-error' => 'Tar çykyş kody $1 gaýdyp geldi:', # Fuzzy
 );
 
 /** Tagalog (Tagalog)
@@ -3273,12 +2775,10 @@ $messages['tk'] = array(
 $messages['tl'] = array(
 	'extensiondistributor' => 'Ikarga pababa ang karugtong na pang-MediaWiki',
 	'extensiondistributor-desc' => 'Karugtong para sa pagpapamahagi ng sinupan/arkibo ng mga karugtong na para sa mga kuha ng larawan/litrato',
-	'extdist-not-configured' => 'Paki-isaayos ang $wgExtDistTarDir at $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Hindi umiiral ang naisaayos nang direktoryo ng siping panggawain!',
+	'extdist-not-configured' => 'Paki-isaayos ang $wgExtDistList at $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Walang ganyang karugtong na "$1"',
 	'extdist-no-such-version' => 'Hindi umiiral ang karugtong na "$1" sa loob ng bersyong "$2".',
 	'extdist-choose-extension' => 'Piliin kung aling karugtong ang nais mong ikarga pababa:',
-	'extdist-wc-empty' => 'Walang maaaring ipamahaging mga karugtong ang naisaayos na direktoryo ng siping panggawain!',
 	'extdist-submit-extension' => 'Ipagpatuloy',
 	'extdist-current-version' => 'Bersyon ng pagpapaunlad (baul)',
 	'extdist-choose-version' => "Ikinakarga mo pababa ang <b>$1</b> na karugtong.
@@ -3288,14 +2788,6 @@ Piliin ang iyong bersyon ng MediaWiki.
 Gumagawa sa kahabaan ng maramihang mga bersyon ng MediaWiki ang karamihan sa mga karugtong, kaya't kung ang iyong bersyon ng MediaWiki ay hindi dito, o kung kailangan mo ng isang pinakabagong mga kasangkapang-katangian ng karugtong, subuking gamitin ang pangkasalukuyang bersyon.",
 	'extdist-no-versions' => 'Hindi makukuha mula sa loob ng anumang bersyon ang napiling karugtong na ($1)!',
 	'extdist-submit-version' => 'Ipagpatuloy',
-	'extdist-no-remote' => 'Hindi nagawang makipag-ugnayan sa malayong kliyente ng kabahaging bersyon.',
-	'extdist-remote-error' => 'Kamalian mula sa malayong kliyente ng Tagapamudmod ng Dugtong: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Hindi katanggap-tanggap na tugon mula sa malayong kliyente ng Tagapamudmod ng Dugtong.',
-	'extdist-svn-error' => 'Nakaranas ng isang kamalian ang kabahaging bersyon: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Hindi naisagawa ang XML mula sa "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Nakaranas ng isang kamalian ang Git: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Nagbalik ang Git ng isang hindi katanggap-tanggap na tadtad ng SHA1 para sa kasalukuyang rebisyon: <pre>$1</pre>',
-	'extdist-tar-error' => "Ibinalik ng pormat na ''tar'' ang kodigo sa paglabas na $1:",
 	'extdist-created' => "Nalikha ang isang kuhang larawan ng bersyong <b>$2</b> ng dugtong na <b>$1</b> para sa MediaWiki na <b>$3</b>. Dapat na kusang magsimula ang iyong pagkakargang paibaba sa loob ng 5 mga segundo.
 
 Ang URL para sa kuhang larawang ito ay:
@@ -3316,8 +2808,7 @@ Pagkaraan mong mahango ang mga talaksan, kailangan mong ipatala ang mga dugtong 
 
 Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng dugtong na ito, mangyaring pumunta sa [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Kumuha ng iba pang karugtong',
-	'extdist-vcs-unsupported' => 'Hindi sinusuportahan ng Tagapamudmod ng Dugtong ang sistema ng bersiyong pantaban na "$1".',
-	'extdist-git-invalid-dir' => 'Hindi nagawang ipasok ang direktoryo para sa pagpapatalang palabas ng Git',
+	'extdist-tar-error' => "Ibinalik ng pormat na ''tar'' ang kodigo sa paglabas na $1:", # Fuzzy
 );
 
 /** Turkish (Türkçe)
@@ -3327,12 +2818,10 @@ Kung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng d
 $messages['tr'] = array(
 	'extensiondistributor' => 'MedyaViki eklentisini indir',
 	'extensiondistributor-desc' => 'Eklentilerin anlık görüntü arşivlerini dağıtmak için eklenti',
-	'extdist-not-configured' => 'Lütfen $wgExtDistTarDir ve $wgExtDistWorkingCopy ayarlayın',
-	'extdist-wc-missing' => 'Ayarlanan çalışma kopyası dizini mevcut değil!',
+	'extdist-not-configured' => 'Lütfen $wgExtDistList ve $wgExtDistArchiveAPI ayarlayın',
 	'extdist-no-such-extension' => '"$1" adında bir eklenti yok',
 	'extdist-no-such-version' => '"$2" versiyonunda "$1" eklentisi mevcut değil.',
 	'extdist-choose-extension' => 'İndirmek istediğiniz eklentiyi seçin:',
-	'extdist-wc-empty' => 'Ayarlanan çalışma kopyası dizininde hiç dağıtılabilir eklenti yok!',
 	'extdist-submit-extension' => 'Devam et',
 	'extdist-current-version' => 'Geliştirme sürümü (trunk)',
 	'extdist-choose-version' => '<b>$1</b> eklentisini indiriyosunuz.
@@ -3342,12 +2831,6 @@ MedyaViki sürümünüzü seçin.
 Pekçok eklenti MedyaVikinin birçok sürümünde çalışır, eğer MedyaViki sürümünüz burada yoksa, ya da en son eklenti özelliklerine ihtiyacınız varsa, güncel sürümü kullanmayı deneyin.',
 	'extdist-no-versions' => 'Seçili eklenti ($1) hiçbir versiyonda mevcut değil!',
 	'extdist-submit-version' => 'Devam et',
-	'extdist-no-remote' => 'Uzaktan altsürüm istemcisiyle temas kurulamıyor.',
-	'extdist-remote-error' => 'Uzaktan altsürüm istemcisinde hata: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Uzaktan altsürüm istemcisinden geçersiz yanıt.', # Fuzzy
-	'extdist-svn-error' => 'Altsürüm bir hatayla karşılaştı: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '"svn info"daki XML işlenemiyor: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar çıkış kodu $1 geri döndürdü:',
 	'extdist-created' => "<b>$1</b> eklentisinin <b>$2</b> versiyonunun anlık görüntüsü MediaWiki <b>$3</b> için oluşturuldu. İndirmeniz 5 saniye içinde otomatik olarak başlamalıdır.
 
 Anlık görüntünün URLsi:
@@ -3368,6 +2851,7 @@ Dosyaları çıkardıktan sonra, eklentiyi LocalSettings.php'de kaydetmelisiniz.
 
 Eğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Extension talk:ExtensionDistributor]]'a gidin.",
 	'extdist-want-more' => 'Başka eklenti al',
+	'extdist-tar-error' => 'Tar çıkış kodu $1 geri döndürdü:', # Fuzzy
 );
 
 /** Uyghur (Arabic script) (ئۇيغۇرچە)
@@ -3389,12 +2873,10 @@ $messages['ug-arab'] = array(
 $messages['uk'] = array(
 	'extensiondistributor' => 'Завантажити розширення MediaWiki',
 	'extensiondistributor-desc' => 'Розширення для завантаження дистрибутивів розширень',
-	'extdist-not-configured' => 'Будь ласка, налаштуйте $wgExtDistTarDir і $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Зазначеного в налаштуваннях каталогу робочої копії не існує!',
+	'extdist-not-configured' => 'Будь ласка, налаштуйте $wgExtDistList і $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Розширення «$1» не знайдено',
 	'extdist-no-such-version' => 'Розширення "$1" не існує у версії "$2".',
 	'extdist-choose-extension' => 'Виберіть розширення, яке ви хочете завантажити:',
-	'extdist-wc-empty' => 'Зазначений в налаштуваннях каталог робочої копії не містить дистрибутивів розширень!',
 	'extdist-submit-extension' => 'Продовжити',
 	'extdist-current-version' => 'Версія в розробці (trunk)',
 	'extdist-choose-version' => 'Ви завантажуєте розширення <b>$1</b>.
@@ -3404,14 +2886,6 @@ $messages['uk'] = array(
 Більшість розширень працюють на кількох версіях MediaWiki, тому, якщо вашої версії MediaWiki тут немає, або якщо у Вас є потреба в функціях найновішої версії розширення, спробуйте використати поточну версію.',
 	'extdist-no-versions' => 'Обране розширення ($1) не доступне в жодній версії!',
 	'extdist-submit-version' => 'Продовжити',
-	'extdist-no-remote' => "Не вдається зв'язатись з віддаленим клієнтом субверсії.",
-	'extdist-remote-error' => 'Помилка розповсюджувача розширення віддаленого клієнта: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Неприпустима відповідь розповсюджувача розширення віддаленого клієнта.',
-	'extdist-svn-error' => 'Помилка субверсії: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Не вдається обробити XML з "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git виявив помилку: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git повернув недопустимий хеш SHA1 для поточної версії: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar повернув код помилки $1:',
 	'extdist-created' => "Знімок версії <b>$2</b> розширення <b>$1</b> MediaWiki <b>$3</b> створено. Завантаження почнеться автоматично через 5 секунд.
 
 URL-адреса для цього знімка:
@@ -3432,8 +2906,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
-	'extdist-vcs-unsupported' => 'Розширення Distributor не підтримує систему контролю версій «$1».',
-	'extdist-git-invalid-dir' => 'Не вдається увійти до директорії для виконання git checkout',
+	'extdist-tar-error' => 'Tar повернув код помилки $1:', # Fuzzy
 );
 
 /** Urdu (اردو)
@@ -3455,12 +2928,10 @@ $messages['ur'] = array(
 $messages['vec'] = array(
 	'extensiondistributor' => 'Descarga na estension MediaWiki',
 	'extensiondistributor-desc' => 'Estension par distribuir archivi snapshot de le estension',
-	'extdist-not-configured' => 'Par piaser configura $wgExtDistTarDir e $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'La cartèla par copie de laoro configurà no la esiste!',
+	'extdist-not-configured' => 'Par piaser configura $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'L\'estension "$1" no la esiste',
 	'extdist-no-such-version' => 'L\'estension "$1" no la esiste in te la version "$2".',
 	'extdist-choose-extension' => 'Siegli quala estension te voli descargar:',
-	'extdist-wc-empty' => 'La cartèla par copie de laoro configurà no la contien estension distribuibili!',
 	'extdist-submit-extension' => 'Continua',
 	'extdist-current-version' => 'Version de svilùpo (trunk)',
 	'extdist-choose-version' => "Te sì drio descargar l'estension <b>$1</b>.
@@ -3470,12 +2941,6 @@ Selessiona la to version de MediaWiki.
 Tante estension le va su più version de MediaWiki, quindi se la to version de MediaWiki no la xe qua o se te serve le ultime funsion de l'estension, próa a doparar la version corente.",
 	'extdist-no-versions' => "L'estension che ti gà sielto ($1) no la xe disponibile in nissuna version!",
 	'extdist-submit-version' => 'Continua',
-	'extdist-no-remote' => 'No se riesse a contatar el client subversion remoto.',
-	'extdist-remote-error' => 'Eròr dal client subversion remoto: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => 'Risposta mia valida dal client subversion remoto.', # Fuzzy
-	'extdist-svn-error' => 'Subversion el gà catà un eròr: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'No se riesse a elaborar l\'XML da "svn info": <pre>$1</pre>',
-	'extdist-tar-error' => 'El Tar el gà ritornà el seguente còdese de uscita $1:',
 	'extdist-created' => "Na istantanea de la version <b>$2</b> de l'estension <b>$1</b> par MediaWiki <b>$3</b> la xe stà creà. El scaricamento el dovarìa partir da solo fra 5 secondi.
 
 L'URL par sta istantanea el xe:
@@ -3496,6 +2961,7 @@ Dopo che ti gà estrato i file, te gavarè bisogno de registrar l'estension in L
 
 Se ti gà qualche domanda riguardo el sistema de distribussion de sta estension, varda [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Toli n'antra estension",
+	'extdist-tar-error' => 'El Tar el gà ritornà el seguente còdese de uscita $1:', # Fuzzy
 );
 
 /** Veps (vepsän kel’)
@@ -3513,12 +2979,10 @@ $messages['vep'] = array(
 $messages['vi'] = array(
 	'extensiondistributor' => 'Tải về phần mở rộng MediaWiki',
 	'extensiondistributor-desc' => 'Phần mở rộng để phân phối các bản lưu trữ ảnh của các phần mở rộng',
-	'extdist-not-configured' => 'Xin hãy cấu hình $wgExtDistTarDir và $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => 'Không tồn tại thư mục sao chép hiện hành đã được cấu hình!',
+	'extdist-not-configured' => 'Xin hãy cấu hình $wgExtDistList và $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Không có phần mở rộng “$1”',
 	'extdist-no-such-version' => 'Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.',
 	'extdist-choose-extension' => 'Chọn phần mở rộng bạn muốn tải về:',
-	'extdist-wc-empty' => 'Thư mục sao chép hiện hành được cấu hình không có phần mở rộng nào phân phối được!',
 	'extdist-submit-extension' => 'Tiếp tục',
 	'extdist-current-version' => 'Phiên bản phát triển (trunk)',
 	'extdist-choose-version' => 'Bạn đang tải về phần mở rộng <b>$1</b>.
@@ -3528,14 +2992,6 @@ Chọn phiên bản MediaWiki của bạn.
 Phần lớn phần mở rộng có thể chạy được trên nhiều phiên bản MediaWiki, do đó nếu phiên bản MediaWiki của bạn không được liệt kê ở đây, hoặc nếu bạn cần sử dụng các tính năng mở rộng mới nhất, hãy thử sử dụng phiên bản hiện hành.',
 	'extdist-no-versions' => 'Phiên bản được chọn ($1) không có sẵn trong bất kỳ phiên bản nào!',
 	'extdist-submit-version' => 'Tiếp tục',
-	'extdist-no-remote' => 'Không thể liên hệ với máy khách phiên bản con ở xa.',
-	'extdist-remote-error' => 'Lỗi trả về từ máy khách từ xa của Trình phân phối Phần mở rộng: <pre>$1</pre>',
-	'extdist-remote-invalid-response' => 'Phản hồi không hợp lệ từ máy khách từ xa của Trình phân phối Phần mở rộng.',
-	'extdist-svn-error' => 'Phiên bản con gặp một lỗi: <pre>$1</pre>',
-	'extdist-svn-parse-error' => 'Không thể xử lý XML từ "svn info": <pre>$1</pre>',
-	'extdist-git-error' => 'Git gặp lỗi: <pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git cho ra giá trị băm SHA1 không hợp lệ đối với thay đổi hiện hành: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar trả về mã thoát $1:',
 	'extdist-created' => "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải về trong 5 giây nữa.
 
 Địa chỉ URL của bản lưu trữ này là:
@@ -3556,8 +3012,7 @@ Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần m�
 
 Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Lấy một phần mở rộng khác',
-	'extdist-vcs-unsupported' => 'Trình phân phối Phần mở rộng không hỗ trợ hệ thống quản lý phiên bản “$1”.',
-	'extdist-git-invalid-dir' => 'Không thể mở thư mục để thực hiện git checkout',
+	'extdist-tar-error' => 'Tar trả về mã thoát $1:', # Fuzzy
 );
 
 /** Yiddish (ייִדיש)
@@ -3577,12 +3032,10 @@ $messages['yi'] = array(
 $messages['yue'] = array(
 	'extensiondistributor' => '下載MediaWiki擴展',
 	'extensiondistributor-desc' => '發佈擴展歸檔映像嘅擴展',
-	'extdist-not-configured' => '請設定 $wgExtDistTarDir 同 $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => '已經設定咗嘅工作複本目錄唔存在！',
+	'extdist-not-configured' => '請設定 $wgExtDistList 同 $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => '無呢個擴展 "$1"',
 	'extdist-no-such-version' => '個擴展 "$1" 唔存在於呢個版本 "$2" 度。',
 	'extdist-choose-extension' => '揀你要去下載嘅擴展:',
-	'extdist-wc-empty' => '設定咗嘅工作複本目錄無可發佈嘅擴展！',
 	'extdist-submit-extension' => '繼續',
 	'extdist-current-version' => '現時版本 (trunk)', # Fuzzy
 	'extdist-choose-version' => '
@@ -3593,12 +3046,6 @@ $messages['yue'] = array(
 多數嘅擴展都可以響多個 MediaWiki 嘅版本度行到，噉如果你嘅 MediaWiki 版本唔響度，又或者你需要最新嘅擴展功能嘅話，試吓用最新嘅版本。',
 	'extdist-no-versions' => '所揀嘅擴展 ($1) 不適用於任何嘅版本！',
 	'extdist-submit-version' => '繼續',
-	'extdist-no-remote' => '唔能夠聯絡遠端 subversion 客戶端。',
-	'extdist-remote-error' => '自遠端 subversion 客戶端嘅錯誤: <pre>$1</pre>', # Fuzzy
-	'extdist-remote-invalid-response' => '自遠端 subversion 客戶端嘅無效回應。', # Fuzzy
-	'extdist-svn-error' => 'Subversion 遇到一個錯誤: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '唔能夠處理 "svn info" 嘅 XML: <pre>$1</pre>',
-	'extdist-tar-error' => 'Tar 回應結束碼 $1:',
 	'extdist-created' => "一個可供 MediaWiki <b>$3</b> 用嘅 <b>$1</b> 擴展之 <b>$2</b> 版本嘅映像已經整好咗。你嘅下載將會響5秒鐘之後自動開始。
 
 呢個映像嘅 URL 係:
@@ -3619,6 +3066,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 如果你有任何對於呢個擴展發佈系統有問題嘅話，請去[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '攞另一個擴展',
+	'extdist-tar-error' => 'Tar 回應結束碼 $1:', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -3632,12 +3080,10 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 $messages['zh-hans'] = array(
 	'extensiondistributor' => '下载MediaWiki扩展',
 	'extensiondistributor-desc' => '发布扩展存档映像的扩展',
-	'extdist-not-configured' => '请设置 $wgExtDistTarDir 和 $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => '已经设置的工作复本目录不存在！',
+	'extdist-not-configured' => '请设置 $wgExtDistList 和 $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => '没有这个扩展 "$1"',
 	'extdist-no-such-version' => '该扩展 "$1" 不存在于这个版本 "$2" 中。',
 	'extdist-choose-extension' => '选择要下载的扩展：',
-	'extdist-wc-empty' => '设置的工作复本目录无可发布之扩展！',
 	'extdist-submit-extension' => '继续',
 	'extdist-current-version' => '开发版本（trunk）',
 	'extdist-choose-version' => '您将要下载<b>$1</b>扩展。
@@ -3647,14 +3093,6 @@ $messages['zh-hans'] = array(
 多数的扩展都可以在多个 MediaWiki 版本上运行，如果您的 MediaWiki 版本不存在，又或者您需要最新的扩展功能的话，可尝试用最新的版本。',
 	'extdist-no-versions' => '所选择扩展（$1）不适用于任何的版本！',
 	'extdist-submit-version' => '继续',
-	'extdist-no-remote' => '无法连接远程subversion客户端。',
-	'extdist-remote-error' => '扩展分发器远程客户端返回了错误：<pre>$1</pre>',
-	'extdist-remote-invalid-response' => '扩展分发器远程客户端返回了无效回复。',
-	'extdist-svn-error' => 'Subversion 遇到一个错误: <pre>$1</pre>',
-	'extdist-svn-parse-error' => '不能够处理"svn info"的 XML: <pre>$1</pre>',
-	'extdist-git-error' => 'Git 遇到一个错误：<pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git 对当前修订返回了一个无效SHA1散列：<pre>$1</pre>',
-	'extdist-tar-error' => 'Tar 返回了结束码 $1：',
 	'extdist-created' => "MediaWiki <b>$3</b>版本的<b>$1</b>扩展的<b>$2</b>版本已创建。下载将在5秒内自动开始。
 
 快照的链接是：
@@ -3675,8 +3113,7 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 
 如果您对这个插件获取系统有任何建议，请前去[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '下载其他扩展',
-	'extdist-vcs-unsupported' => '扩展分发器不支持“$1”版本控制系统。',
-	'extdist-git-invalid-dir' => 'git checkout 无法进入目录',
+	'extdist-tar-error' => 'Tar 返回了结束码 $1：', # Fuzzy
 );
 
 /** Traditional Chinese (中文（繁體）‎)
@@ -3688,12 +3125,10 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 $messages['zh-hant'] = array(
 	'extensiondistributor' => '下載 MediaWiki 擴充套件',
 	'extensiondistributor-desc' => '發布擴充套件存檔映像的擴充套件',
-	'extdist-not-configured' => '請設定 $wgExtDistTarDir 和 $wgExtDistWorkingCopy',
-	'extdist-wc-missing' => '已經設定的工作複本目錄不存在！',
+	'extdist-not-configured' => '請設定 $wgExtDistList 和 $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => '沒有這個擴充套件「$1」',
 	'extdist-no-such-version' => '該擴充套件「$1」不存在於這個版本「$2」中。',
 	'extdist-choose-extension' => '選擇您要去下載的擴充套件：',
-	'extdist-wc-empty' => '設定的工作複本目錄無可發布之擴充套件！',
 	'extdist-submit-extension' => '繼續',
 	'extdist-current-version' => '開發版本（trunk）',
 	'extdist-choose-version' => '您現正下載 <b>$1</b> 擴充套件。
@@ -3703,14 +3138,6 @@ $messages['zh-hant'] = array(
 多數的擴充套件都可以在多個 MediaWiki 版本上執行，如果您的 MediaWiki 版本不存在，又或者您需要最新的擴充套件功能的話，可嘗試用最新的版本。',
 	'extdist-no-versions' => '所選擇擴充套件 （$1） 不適用於任何的版本！',
 	'extdist-submit-version' => '繼續',
-	'extdist-no-remote' => '不能夠聯絡遠端 subversion 客戶端。',
-	'extdist-remote-error' => '擴展分發器遠程客戶端返回了錯誤：<pre>$1</pre>',
-	'extdist-remote-invalid-response' => '擴展分發器遠程客戶端返回了無效回復。',
-	'extdist-svn-error' => 'Subversion 遇到一個錯誤：<pre>$1</pre>',
-	'extdist-svn-parse-error' => '不能夠處理「svn info」之 XML：<pre>$1</pre>',
-	'extdist-git-error' => 'Git 遇到一個錯誤：<pre>$1</pre>',
-	'extdist-git-invalidsha1' => 'Git 對當前修訂返回了一個無效SHA1散列：<pre>$1</pre>',
-	'extdist-tar-error' => 'Tar 回應結束碼 $1：',
 	'extdist-created' => "已創建的定制<b>$3</b> 的<b>$1</b> 擴展的版本<b>$2</b> 的快照。您下載應在 5 秒後自動啟動。
 
 ，此快照的 URL 是：
@@ -3731,6 +3158,5 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 有關於此擴展名配電系統的任何問題，請轉到[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取得另一個擴充套件',
-	'extdist-vcs-unsupported' => '擴展分發器不支持“$1”版本控制系統。',
-	'extdist-git-invalid-dir' => 'git checkout 無法進入目錄',
+	'extdist-tar-error' => 'Tar 回應結束碼 $1：', # Fuzzy
 );
