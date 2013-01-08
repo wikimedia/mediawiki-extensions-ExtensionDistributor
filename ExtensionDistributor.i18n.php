@@ -518,6 +518,7 @@ $messages['de'] = array(
 	'extensiondistributor' => 'MediaWiki-Erweiterungen herunterladen',
 	'extensiondistributor-desc' => 'Ermöglicht das Herunterladen von MediaWiki-Erweiterungen',
 	'extdist-not-configured' => 'Bitte konfiguriere die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistArchiveAPI</code>.',
+	'extdist-list-missing' => 'Erweiterungsliste konnte nicht abgerufen werden!',
 	'extdist-no-such-extension' => 'Die Erweiterung „$1“ ist nicht vorhanden.',
 	'extdist-no-such-version' => 'Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.',
 	'extdist-choose-extension' => 'Bitte wähle eine Erweiterung zum Herunterladen aus:',
@@ -550,7 +551,7 @@ Nachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei
 
 Sofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
 	'extdist-want-more' => 'Eine weitere Erweiterung herunterladen',
-	'extdist-tar-error' => 'Das Tar-Programm hat den Abbruchcode $1 ausgegeben:', # Fuzzy
+	'extdist-tar-error' => 'Die Archiv-URL konnte nicht von der Archiv-API abgerufen werden.',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -955,6 +956,7 @@ $messages['fr'] = array(
 	'extensiondistributor' => 'Télécharger l’extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension pour la distribution des archives photographiques des extensions',
 	'extdist-not-configured' => 'Veuillez configurer $wgExtDistList et $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Impossible d’analyser la liste d’extensions!',
 	'extdist-no-such-extension' => 'Aucune extension « $1 »',
 	'extdist-no-such-version' => 'L’extension « $1 » n’existe pas dans la version « $2 ».',
 	'extdist-choose-extension' => 'Sélectionnez l’extension que vous voulez télécharger :',
@@ -987,7 +989,7 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <c
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
-	'extdist-tar-error' => 'Tar a retourné le code de sortie $1 :', # Fuzzy
+	'extdist-tar-error' => "Impossible d'analyser l’URL d'archive de l'API d'archive.",
 );
 
 /** Franco-Provençal (arpetan)
@@ -1046,6 +1048,7 @@ $messages['gl'] = array(
 	'extensiondistributor' => 'Descargar a extensión MediaWiki',
 	'extensiondistributor-desc' => 'Extensión para distribuír arquivos fotográficos de extensións',
 	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Non se puido obter a lista de extensións!',
 	'extdist-no-such-extension' => 'Non existe a extensión "$1"',
 	'extdist-no-such-version' => 'A extensión "$1" non existe na versión "$2".',
 	'extdist-choose-extension' => 'Seleccione a extensión que queira descargar:',
@@ -1078,7 +1081,7 @@ Despois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSett
 
 Se ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensión',
-	'extdist-tar-error' => 'O Tar devolveu o código de saída $1:', # Fuzzy
+	'extdist-tar-error' => 'Non se puido obter o enderezo URL do arquivo desde o arquivo da API.',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1467,7 +1470,7 @@ Dopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalS
 
 Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione vedi [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Prendi un'altra estensione",
-	'extdist-tar-error' => 'Tar ha restituito il seguente exitcode $1:', # Fuzzy
+	'extdist-tar-error' => "Impossibile recuperare l'URL dell'archivio dall'archivio API.",
 );
 
 /** Japanese (日本語)
@@ -1481,7 +1484,8 @@ Se hai qualche domanda riguardo al sistema di distribuzione di questa estensione
 $messages['ja'] = array(
 	'extensiondistributor' => 'MediaWiki 拡張機能のダウンロード',
 	'extensiondistributor-desc' => '拡張機能のスナップショットのアーカイブを配布するための拡張機能',
-	'extdist-not-configured' => '$wgExtDistListと$wgExtDistArchiveAPIの設定を行ってください',
+	'extdist-not-configured' => '$wgExtDistList および $wgExtDistArchiveAPI の設定を行ってください',
+	'extdist-list-missing' => '拡張機能一覧を取得できません!',
 	'extdist-no-such-extension' => '「$1」という拡張機能はありません',
 	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
@@ -1514,7 +1518,7 @@ Windowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用�
 
 この拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
 	'extdist-want-more' => '他の拡張機能を入手',
-	'extdist-tar-error' => 'tar が終了コード $1 を返しました:', # Fuzzy
+	'extdist-tar-error' => 'アーカイブ API で アーカイブ URL から取得できません。',
 );
 
 /** Javanese (Basa Jawa)
@@ -1740,6 +1744,7 @@ $messages['mk'] = array(
 	'extensiondistributor' => 'Преземање на додаток за МедијаВики',
 	'extensiondistributor-desc' => 'Додаток за дистрибуција на урнек-архиви на додатоци',
 	'extdist-not-configured' => 'Задајте $wgExtDistList и $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Не можам да го добијам списокот на додатоци!',
 	'extdist-no-such-extension' => 'Нема додаток со име „$1“',
 	'extdist-no-such-version' => 'Додатокот „$1“ не постои во верзијата „$2“.',
 	'extdist-choose-extension' => 'Одберете го додатокот што сакате да го преземете',
@@ -1770,7 +1775,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Доколку имате прашања за овој дистрибутивен систем на додатоци, обратете се на страницата [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Преземи друг додаток',
-	'extdist-tar-error' => 'Tar го даде кодот на грешката $1:', # Fuzzy
+	'extdist-tar-error' => 'Не можам да го добијам URL-то на архивата од нејзиниот API.',
 );
 
 /** Malayalam (മലയാളം)
@@ -2222,6 +2227,7 @@ $messages['pms'] = array(
 	'extensiondistributor' => "Dëscaria l'estension MediaWiki",
 	'extensiondistributor-desc' => "Estension për distribuì j'archivi snapshot ëd j'estension",
 	'extdist-not-configured' => 'Për piasì configura $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => "As peul pa trovesse la lista dj'estension!",
 	'extdist-no-such-extension' => 'Pa gnun-e estension "$1"',
 	'extdist-no-such-version' => 'L\'estension "$1" a esist pa ant la version "$2".',
 	'extdist-choose-extension' => 'Selession-a che estension it veule dëscarié:',
@@ -2254,7 +2260,7 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-tar-error' => "Tar a l'ha restituì ël còdes ëd surtìa $1:", # Fuzzy
+	'extdist-tar-error' => "As peul pa trovesse l'anliura dl'arcivi da l'API dj'erchivi.",
 );
 
 /** Portuguese (português)
@@ -2374,16 +2380,16 @@ Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci
  */
 $messages['roa-tara'] = array(
 	'extensiondistributor' => 'Scareche le estenziune de MediaUicchi',
+	'extdist-list-missing' => "Non ge pozze analizzà l'elenghe de le estenziune!",
 	'extdist-no-such-extension' => 'Nisciuna estenzione "$1"',
 	'extdist-no-such-version' => 'L\'estenzione "$1" non g\'esiste jndr\'à versiune "$2".',
+	'extdist-choose-extension' => "Scacchie l'estenzione ca vuè ccu scareche:",
 	'extdist-submit-extension' => 'Condinue',
 	'extdist-current-version' => 'Versiune de sveluppe (trunk)',
 	'extdist-no-versions' => "L'estenzione scacchiate ($1) non g'è disponibbele pe nisicuna versione!",
 	'extdist-submit-version' => 'Condinue',
-	'extdist-no-remote' => "Non ge pozze condattà 'u cliende remote d'a sotteversione.",
-	'extdist-remote-error' => "Errore da 'u cliende remote de l'Estenzione d'u Distributore: <pre>$1</pre>",
-	'extdist-tar-error' => "Tar ha turnate 'nu codece de assute $1:",
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
+	'extdist-tar-error' => "Non ge pozze analizzà l'URL de l'archivije da l'archivije de le API.",
 );
 
 /** Russian (русский)
@@ -2980,6 +2986,7 @@ $messages['vi'] = array(
 	'extensiondistributor' => 'Tải về phần mở rộng MediaWiki',
 	'extensiondistributor-desc' => 'Phần mở rộng để phân phối các bản lưu trữ ảnh của các phần mở rộng',
 	'extdist-not-configured' => 'Xin hãy cấu hình $wgExtDistList và $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Không thể lấy danh sách phần mở rộng!',
 	'extdist-no-such-extension' => 'Không có phần mở rộng “$1”',
 	'extdist-no-such-version' => 'Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.',
 	'extdist-choose-extension' => 'Chọn phần mở rộng bạn muốn tải về:',
@@ -3012,7 +3019,7 @@ Sau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần m�
 
 Nếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Lấy một phần mở rộng khác',
-	'extdist-tar-error' => 'Tar trả về mã thoát $1:', # Fuzzy
+	'extdist-tar-error' => 'Không thể lấy URL của bản nén từ API bản nén.',
 );
 
 /** Yiddish (ייִדיש)
