@@ -64,14 +64,12 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @return array
 	 */
 	protected function getExtensionList() {
-		global $wgExtDistListFile, $wgExtDistProxy, $wgMemc;
+		global $wgExtDistListFile, $wgMemc;
 
 		$extList = $wgMemc->get( 'extdist-list' );
 		if( !$extList ) {
 			$extList = array();
-			$httpOptions = $wgExtDistProxy ?
-				array( 'proxy' => $wgExtDistProxy ) : array();
-			$res = Http::get( $wgExtDistListFile, $httpOptions );
+			$res = Http::get( $wgExtDistListFile );
 			if( $res ) {
 				$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
 				$wgMemc->set( 'extdist-list', $extList, 3600 );
