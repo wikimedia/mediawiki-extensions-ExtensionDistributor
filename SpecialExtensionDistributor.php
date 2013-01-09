@@ -64,12 +64,14 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @return array
 	 */
 	protected function getExtensionList() {
-		global $wgExtDistListFile, $wgMemc;
+		global $wgExtDistListFile, $wgExtDistProxy, $wgMemc;
 
 		$extList = $wgMemc->get( 'extdist-list' );
 		if( !$extList ) {
 			$extList = array();
-			$res = Http::get( $wgExtDistListFile );
+			$httpOptions = $wgExtDistProxy ?
+				array( 'proxy' => $wgExtDistProxy ) : array();
+			$res = Http::get( $wgExtDistListFile, $httpOptions );
 			if( $res ) {
 				$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
 				$wgMemc->set( 'extdist-list', $extList, 3600 );
@@ -201,10 +203,14 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @return array|false
 	 */
 	protected function fetchArchiveInfo( $extension, $version ) {
-		global $wgExtDistArchiveAPI, $wgMemc;
+		global $wgExtDistArchiveAPI, $wgExtDistProxy, $wgMemc;
 
 		$key = "extdist-ext-$extension-$version";
 		$archiveInfo = $wgMemc->get( $key );
+		$httpOptions = array( 'followRedirects' => false );
+		if( $wgExtDistProxy ) {
+			$httpOptions['proxy'] = $wgExtDistProxy;
+		}
 		if( !$archiveInfo ) {
 			$url = str_replace(
 				array( '$EXT', '$REF' ),
@@ -212,14 +218,14 @@ class SpecialExtensionDistributor extends SpecialPage {
 				$wgExtDistArchiveAPI
 			);
 
-			$req = MWHttpRequest::factory( $url, array( 'followRedirects' => false ) );
+			$req = MWHttpRequest::factory( $url, $httpOptions );
 			$res = $req->execute();
 			$headers = $req->getResponseHeaders();
 			if( !$res->isOK() || !isset( $headers['location'][0] ) ) {
 				$archiveInfo = false;
 			} else {
 				$url = $headers['location'][0];
-				$req = MWHttpRequest::factory( $url, array( 'followRedirects' => false ) );
+				$req = MWHttpRequest::factory( $url, $httpOptions );
 				$res = $req->execute();
 				$headers = $req->getResponseHeaders();
 				if( !$res->isOK() || !isset( $headers['content-disposition'][0] ) ) {

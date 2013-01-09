@@ -41,6 +41,11 @@ $wgExtDistBranches = array(
 	'master',
 );
 
+/**
+ * Proxy to use, if not the default proxy
+ */
+$wgExtDistProxy = false;
+
 /********************
  * Registration
  */
