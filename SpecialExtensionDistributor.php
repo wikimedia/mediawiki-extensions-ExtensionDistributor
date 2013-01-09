@@ -119,9 +119,9 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @return mixed
 	 */
 	protected function showVersionSelector( $extensionName ) {
-		global $wgExtDistBranches;
+		global $wgExtDistSnapshotRefs;
 
-		if ( !$wgExtDistBranches ) {
+		if ( !$wgExtDistSnapshotRefs ) {
 			$this->getOutput()->addWikiMsg( 'extdist-no-versions', $extensionName );
 			$this->showExtensionSelector();
 			return;
@@ -146,7 +146,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 
 		$selected = 0;
 
-		foreach ( $wgExtDistBranches as $branchName ) {
+		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
 			$info = $this->fetchArchiveInfo( $extensionName, $branchName );
 			if( $info ) {
 				$branchMsg = $this->msg( "extdist-branch-$branchName" );

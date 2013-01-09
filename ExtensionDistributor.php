@@ -41,9 +41,9 @@ $wgExtDistListFile = false;
 $wgExtDistArchiveAPI = false;
 
 /**
- * Supported branches, master is the default (and shouldn't be removed)
+ * Supported branches/tags, master is the default (and shouldn't be removed)
  */
-$wgExtDistBranches = array(
+$wgExtDistSnapshotRefs = array(
 	'master',
 );
 
