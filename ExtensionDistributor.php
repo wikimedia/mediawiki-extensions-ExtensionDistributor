@@ -17,8 +17,12 @@ $wgExtensionCredits['specialpage'][] = array(
  * Configuration
  */
 
-/** File to fetch list of extensions from */
-$wgExtDistListFile = 'https://gerrit.wikimedia.org/mediawiki-extensions.txt';
+/**
+ * File to fetch list of extensions from, with one extension per line
+ *
+ * Example url: https://gerrit.wikimedia.org/mediawiki-extensions.txt
+ */
+$wgExtDistListFile = false;
 
 /**
  * URL to get a Location: header from for the actual archive. This is based on
@@ -28,11 +32,13 @@ $wgExtDistListFile = 'https://gerrit.wikimedia.org/mediawiki-extensions.txt';
  * a content-disposition header of the format:
  *    "attachment; filename=<extension>-<sha1>.tar.gz"
  *
+ * Example url: https://api.github.com/repos/wikimedia/mediawiki-extensions-$EXT/tarball/$REF
+ *
  * $EXT is replaced with the extension name (eg: ParserFunctions)
  * "tarball" is the archive format
- * $REF is the branch name (eg: master, REL1_21)
+ * $REF is the branch/tag name (eg: master, REL1_21)
  */
-$wgExtDistArchiveAPI = 'https://api.github.com/repos/wikimedia/mediawiki-extensions-$EXT/tarball/$REF';
+$wgExtDistArchiveAPI = false;
 
 /**
  * Supported branches, master is the default (and shouldn't be removed)
