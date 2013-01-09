@@ -182,6 +182,7 @@ $messages['ast'] = array(
 	'extensiondistributor' => 'Descargar estensión de MediaWiki',
 	'extensiondistributor-desc' => "Estensión pa distribuir archivos de instantánees d'estensiones",
 	'extdist-not-configured' => 'Por favor configura $wgExtDistList y $wgExtDistArchiveAPI',
+	'extdist-list-missing' => "¡Nun se pudo traer la llista d'estensiones!",
 	'extdist-no-such-extension' => 'Nun esiste la estensión «$1»',
 	'extdist-no-such-version' => 'La estensión «$1» nun esiste na versión «$2».',
 	'extdist-choose-extension' => 'Seleiciona la estensión que quies descargar:',
@@ -214,7 +215,7 @@ Después d'estrayer los ficheros, necesitarás rexistrar la estensión en LocalS
 
 Si tienes cualesquier entruga tocante a esti sistema de distribución d'estensiones, por favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Descargar otra estensión',
-	'extdist-tar-error' => "Tar devolvió'l códigu de salida $1:", # Fuzzy
+	'extdist-tar-error' => "Nun se pudo traer la URL del archivu dende la API d'archivu.",
 );
 
 /** Bashkir (башҡортса)
@@ -943,6 +944,7 @@ Jos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension t
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Gomoko
  * @author Grondin
  * @author IAlex
@@ -989,7 +991,7 @@ Une fois les fichiers extraits, il vous faudra enregistrer l’extension dans <c
 
 Si vous avez des questions concernant ce système de distribution des extensions, veuillez consulter [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtenir une autre extension',
-	'extdist-tar-error' => "Impossible d'analyser l’URL d'archive de l'API d'archive.",
+	'extdist-tar-error' => "Impossible d’analyser l’URL d'archive de l’API d'archive.",
 );
 
 /** Franco-Provençal (arpetan)
@@ -1438,6 +1440,7 @@ $messages['it'] = array(
 	'extensiondistributor' => 'Scarica estensione MediaWiki',
 	'extensiondistributor-desc' => 'Estensione per distribuire archivi snapshot delle estensioni',
 	'extdist-not-configured' => 'Configura $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => "Impossibile recuperare l'elenco delle estensioni!",
 	'extdist-no-such-extension' => 'Nessuna estensione "$1"',
 	'extdist-no-such-version' => 'L\'estensione "$1" non esiste nella versione "$2".',
 	'extdist-choose-extension' => 'Seleziona quale estensione intendi scaricare:',
@@ -1570,11 +1573,12 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'extensiondistributor' => '미디어위키 확장 기능 내려받기',
-	'extensiondistributor-desc' => '확장 기능 스냅샷 배포를 위한 확장 기능',
+	'extensiondistributor-desc' => '확장 기능의 스냅샷 아카이브 배포를 위한 확장 기능',
 	'extdist-not-configured' => '$wgExtDistList와 $wgExtDistArchiveAPI를 설정하세요.',
+	'extdist-list-missing' => '확장 기능 목록을 가져올 수 없습니다!',
 	'extdist-no-such-extension' => '"$1" 확장 기능이 없습니다.',
 	'extdist-no-such-version' => '"$1" 확장 기능은 "$2" 버전이 존재하지 않습니다.',
-	'extdist-choose-extension' => '당신이 다운로드하기를 원하는 확장 기능을 선택하세요:',
+	'extdist-choose-extension' => '다운로드하려는 확장 기능을 선택하세요:',
 	'extdist-submit-extension' => '계속',
 	'extdist-current-version' => '개발 중인 버전 (trunk)',
 	'extdist-choose-version' => '<b>$1</b> 확장 기능을 다운로드하고 있습니다.
@@ -1604,7 +1608,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서를 방문해주십시오.",
 	'extdist-want-more' => '다른 확장 기능 내려받기',
-	'extdist-tar-error' => 'Tar에서 종료 코드 $1을(를) 반환하였습니다:', # Fuzzy
+	'extdist-tar-error' => '아카이브 API에서 아카이브 URL을 가져올 수 없습니다.',
 );
 
 /** Colognian (Ripoarisch)
@@ -2593,8 +2597,9 @@ $messages['sl'] = array(
 	'extensiondistributor' => 'Prenesi razširitev MediaWiki',
 	'extensiondistributor-desc' => 'Razširitev, ki razdeljuje arhive posnetkov razširitev',
 	'extdist-not-configured' => 'Prosimo, nastavite $wgExtDistList in $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Ne morem pridobiti seznama razširitev!',
 	'extdist-no-such-extension' => 'Razširitev »$1« ne obstaja',
-	'extdist-no-such-version' => 'Raširitev »$1« v različici »$2« ne obstaja.',
+	'extdist-no-such-version' => 'Razširitev »$1« v različici »$2« ne obstaja.',
 	'extdist-choose-extension' => 'Izberite, katero razširitev želite prenesti:',
 	'extdist-submit-extension' => 'Nadaljuj',
 	'extdist-current-version' => 'Razvojna različica (trunk)',
@@ -2621,11 +2626,11 @@ Na sistemu Windows lahko za razširjanje datotek uporabite [http://www.7-zip.org
 
 Če je vaš wiki na oddaljenem strežniku, razširite datoteke v začasno mapo na vašem lokalnem računalniku in nato '''vse''' razširjene datoteke naložite v mapo razširitev na strežniku.
 
-Po tem, ko ste razširili vse datoteke, morate registrirati razširitev v LocalSettings.php. Dokumentacija razširirtve bi morala vsebovati navodila, kako to storiti.
+Potem ko ste razširili vse datoteke, morate registrirati razširitev v LocalSettings.php. Dokumentacija razširirtve bi morala vsebovati navodila, kako to storiti.
 
 Če imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dobi drugo razširitev',
-	'extdist-tar-error' => 'Tar je vrnih izhodno kodo $1:', # Fuzzy
+	'extdist-tar-error' => 'Ne morem pridobiti URL arhiva iz API arhiva.',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
