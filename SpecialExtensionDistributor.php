@@ -147,7 +147,9 @@ class SpecialExtensionDistributor extends SpecialPage {
 		foreach ( $wgExtDistBranches as $branchName ) {
 			$info = $this->fetchArchiveInfo( $extensionName, $branchName );
 			if( $info ) {
-				$out->addHTML( Xml::option( $branchName, $branchName, ($selected == 1) ) );
+				$branchMsg = $this->msg( "extdist-branch-$branchName" );
+				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
+				$out->addHTML( Xml::option( $branchDesc, $branchName, ($selected == 1) ) );
 				$selected++;
 			}
 		}
