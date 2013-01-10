@@ -272,6 +272,7 @@ $messages['be-tarask'] = array(
 	'extensiondistributor' => 'Загрузіць пашырэньне MediaWiki',
 	'extensiondistributor-desc' => 'Пашырэньне для распаўсюджваньня архіваў пашырэньняў',
 	'extdist-not-configured' => 'Калі ласка, задайце $wgExtDistList і $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Не ўдалося атрымаць сьпіс пашырэньняў!',
 	'extdist-no-such-extension' => 'Пашырэньне «$1» не існуе',
 	'extdist-no-such-version' => 'Вэрсія «$2» пашырэньня «$1» ня знойдзеная.',
 	'extdist-choose-extension' => 'Выберыце, якое пашырэньне Вы жадаеце загрузіць:',
@@ -304,7 +305,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Калі Вы маеце якія-небудзь пытаньні пра сыстэму ўсталяваньня пашырэньня, калі ласка, задайце іх на старонцы [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Атрымаць іншае пашырэньне',
-	'extdist-tar-error' => 'Tar вярнуў код памылкі $1:', # Fuzzy
+	'extdist-tar-error' => 'Не ўдалося атрымаць архіўны URL з API архіва.',
 );
 
 /** Bulgarian (български)
@@ -593,13 +594,14 @@ Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterun
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Mirzali
  * @author Reedy
  * @author Xoser
  */
 $messages['diq'] = array(
 	'extensiondistributor' => 'Extensiyonê MediyaWikiyî bar bike',
 	'extensiondistributor-desc' => 'Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî',
-	'extdist-not-configured' => 'Ma rica keno ke $wgExtDistList u $wgExtDistArchiveAPI konfigure bike',
+	'extdist-not-configured' => 'Kerem ke $wgExtDistList u $wgExtDistArchiveAPI awan ke',
 	'extdist-no-such-extension' => '"$1" name dı oleken çıniyo',
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
