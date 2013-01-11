@@ -530,7 +530,7 @@ $messages['de'] = array(
 
 Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (trunk). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (master). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-no-versions' => 'Die gewählte Erweiterung ($1) ist in keiner Version verfügbar!',
 	'extdist-submit-version' => 'Weiter',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
@@ -569,7 +569,7 @@ $messages['de-formal'] = array(
 
 Bitte wählen Sie zunächst die von Ihnen genutzte MediaWiki-Version.
 
-Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen einer Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (trunk). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.',
+Die meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen einer Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (master). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.',
 	'extdist-created' => "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.
 
 Die URL für den Schnappschuss lautet:
@@ -1590,13 +1590,13 @@ $messages['ko'] = array(
 대부분의 확장 기능은 미디어위키의 여러 버전에서도 동작합니다, 당신의 미디어위키 확장 기능이 여기 없거나 최신 버전이 필요하다면, 현재 버전 다운로드를 선택하세요.',
 	'extdist-no-versions' => '선택한 확장 기능($1)이 어떤 버전으로도 존재하지 않습니다.',
 	'extdist-submit-version' => '계속',
-	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행될 것입니다.
+	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행됩니다.
 
 묶음의 URL은 다음에 있습니다:
 :$4
 이 URL은 서버에서 즉시 다운로드할 때 사용될 것입니다. 하지만 즐겨찾기에 추가하지는 마세요. 내용이 업데이트되지 않고, 나중에 이 URL은 삭제될 것입니다.
 
-tar 압축 파일을 당신의 확장 기능 폴더에 압축을 푸십시오. 유닉스 계열의 운영 체제에서는:
+tar 압축 파일을 확장 기능 폴더에 압축을 푸세요. 유닉스 계열의 운영 체제에서는:
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
 </pre>
@@ -1604,11 +1604,11 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 윈도에서는 압축을 풀 때 [http://www.7-zip.org/ 7-zip]을 이용하실 수 있습니다.
 
-만약 당신의 위키가 원격 서버에 있다면. 당신의 컴퓨터에 임시로 압축을 푼 뒤, 압축이 풀어진 '''모든''' 파일을 서버의 확장 기능 폴더에 올리십시오.
+만약 위키가 원격 서버에 있다면, 컴퓨터에 임시로 압축을 푼 뒤 압축이 풀어진 '''모든''' 파일을 서버의 확장 기능 폴더에 올리세요.
 
 압축을 푼 후, 확장 기능을 LocalSettings.php에 등록해야 합니다. 확장 기능의 설명 문서가 어떻게 확장 기능을 등록하는 지에 대한 설명을 담고 있습니다.
 
-이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서를 방문해주십시오.",
+이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서로 가세요.",
 	'extdist-want-more' => '다른 확장 기능 내려받기',
 	'extdist-tar-error' => '아카이브 API에서 아카이브 URL을 가져올 수 없습니다.',
 );
