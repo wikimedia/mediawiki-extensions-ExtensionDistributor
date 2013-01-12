@@ -2032,7 +2032,7 @@ Nadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalS
 
 Als u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Nog een uitbreiding downloaden',
-	'extdist-tar-error' => 'Tar gaf de volgende exitcode $1:', # Fuzzy
+	'extdist-tar-error' => 'Het was niet mogelijk de archief-URL via de archief-API op te halen.',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
