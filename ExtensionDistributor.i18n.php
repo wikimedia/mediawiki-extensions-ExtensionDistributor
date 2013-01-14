@@ -2881,12 +2881,14 @@ $messages['ug-arab'] = array(
  * @author NickK
  * @author Olvin
  * @author Prima klasy4na
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
 	'extensiondistributor' => 'Завантажити розширення MediaWiki',
 	'extensiondistributor-desc' => 'Розширення для завантаження дистрибутивів розширень',
 	'extdist-not-configured' => 'Будь ласка, налаштуйте $wgExtDistList і $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Не вдалося дістати список розширень!',
 	'extdist-no-such-extension' => 'Розширення «$1» не знайдено',
 	'extdist-no-such-version' => 'Розширення "$1" не існує у версії "$2".',
 	'extdist-choose-extension' => 'Виберіть розширення, яке ви хочете завантажити:',
@@ -2919,7 +2921,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Якщо у вас є питання по цій системі розповсюдження розширень, будь ласка, перейдіть до [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Завантажити інше розширення',
-	'extdist-tar-error' => 'Tar повернув код помилки $1:', # Fuzzy
+	'extdist-tar-error' => 'Не вдалося дістати архівну URL з архівного API.',
 );
 
 /** Urdu (اردو)
