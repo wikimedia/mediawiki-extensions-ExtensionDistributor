@@ -904,12 +904,14 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
  * @author Nedergard
  * @author Nike
  * @author Str4nd
+ * @author VezonThunder
  * @author ZeiP
  */
 $messages['fi'] = array(
 	'extensiondistributor' => 'Lataa MediaWikin laajennus',
 	'extensiondistributor-desc' => 'Laajennus laajennusten tilannevedosarkistojen jakelulle.',
 	'extdist-not-configured' => 'Aseta $wgExtDistList ja $wgExtDistArchiveAPI.',
+	'extdist-list-missing' => 'Laajennusluetteloa ei voitu hakea!',
 	'extdist-no-such-extension' => 'Laajennusta ”$1” ei löydy',
 	'extdist-no-such-version' => 'Laajennus ”$1” ei sisälly versioon ”$2”.',
 	'extdist-choose-extension' => 'Valitse mitkä laajennukset haluat ladata:',
