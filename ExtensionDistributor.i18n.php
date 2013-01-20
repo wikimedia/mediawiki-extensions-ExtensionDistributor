@@ -1149,6 +1149,7 @@ $messages['he'] = array(
 	'extensiondistributor' => 'הורדת הרחבה של מדיה־ויקי',
 	'extensiondistributor-desc' => 'הרחבה להפצת קבצים מכווצים של הרחבות',
 	'extdist-not-configured' => 'אנא הגדירו את $wgExtDistList ואת $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'לא ניתן לאחזר את רשימת ההרחבות!',
 	'extdist-no-such-extension' => 'אין הרחבה בשם "$1"',
 	'extdist-no-such-version' => 'ההרחבה "$1" אינה קיימת בגרסה "$2".',
 	'extdist-choose-extension' => 'בחרו איזו הרחבה תרצו להוריד:',
@@ -1181,7 +1182,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 אם יש לכם שאלות כלשהן על מערכת הפצת ההרחבות הזו, אנא עברו לדף [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'הורדת הרחבה נוספת',
-	'extdist-tar-error' => 'פקודת tar החזירה את קוד היציאה $1:', # Fuzzy
+	'extdist-tar-error' => 'לא ניתן לאחזר את כתובת הארכיון מה־API של הארכיונים.',
 );
 
 /** Hindi (हिन्दी)
