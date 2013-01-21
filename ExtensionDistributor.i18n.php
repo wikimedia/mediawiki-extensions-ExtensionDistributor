@@ -3100,6 +3100,7 @@ $messages['zh-hans'] = array(
 	'extensiondistributor' => '下载MediaWiki扩展',
 	'extensiondistributor-desc' => '发布扩展存档映像的扩展',
 	'extdist-not-configured' => '请设置 $wgExtDistList 和 $wgExtDistArchiveAPI',
+	'extdist-list-missing' => '无法读取扩展列表！',
 	'extdist-no-such-extension' => '没有这个扩展 "$1"',
 	'extdist-no-such-version' => '该扩展 "$1" 不存在于这个版本 "$2" 中。',
 	'extdist-choose-extension' => '选择要下载的扩展：',
@@ -3132,7 +3133,7 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
 
 如果您对这个插件获取系统有任何建议，请前去[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '下载其他扩展',
-	'extdist-tar-error' => 'Tar 返回了结束码 $1：', # Fuzzy
+	'extdist-tar-error' => '无法从存档API读取存档URL。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
