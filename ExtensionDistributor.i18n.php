@@ -2003,6 +2003,7 @@ $messages['nl'] = array(
 	'extensiondistributor' => 'MediaWiki-uitbreiding downloaden',
 	'extensiondistributor-desc' => 'Uitbreiding voor het distribueren van uitbreidingen',
 	'extdist-not-configured' => 'Maak de instellingen voor $wgExtDistList en $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Het was niet mogelijk om de lijst met uitbreidingen op te halen.',
 	'extdist-no-such-extension' => 'De uitbreiding "$1" bestaat niet',
 	'extdist-no-such-version' => 'De uitbreiding "$1" bestaat niet in de versie "$2".',
 	'extdist-choose-extension' => 'Selecteer de uitbreiding die u wilt downloaden:',
@@ -2935,7 +2936,6 @@ $messages['ur'] = array(
 	'extensiondistributor' => 'زیراثقال میڈیاوکی توسیع',
 	'extdist-submit-extension' => 'جاری رکھیں',
 	'extdist-submit-version' => 'جاری رکھیں',
-	'extdist-remote-invalid-response' => 'توسیع کے ڈسٹریبیوٹر ریموٹ کلائنٹ سے باطل کے جواب.',
 	'extdist-want-more' => 'ایک اور توسیع حاصل کریں',
 );
 
