@@ -1840,6 +1840,7 @@ $messages['ms'] = array(
 	'extensiondistributor' => 'Muat turun penyambung MediaWiki',
 	'extensiondistributor-desc' => 'Penyambung khas untuk pengedaran arkib petikan penyambung',
 	'extdist-not-configured' => 'Sila tetapkan konfigurasi $wgExtDistList dan $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Senarai sambungan tidak dapat diambil!',
 	'extdist-no-such-extension' => 'Penyambung "$1" tidak wujud',
 	'extdist-no-such-version' => 'Penyambung "$1" tidak mempunyai versi "$2".',
 	'extdist-choose-extension' => 'Sila pilih penyambung yang ingin dimuat turun:',
@@ -1872,7 +1873,7 @@ Selepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan peny
 
 Sekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Dapatkan penyambung lagi',
-	'extdist-tar-error' => 'Tar memulangkan kod keluar $1:', # Fuzzy
+	'extdist-tar-error' => 'URL arkib tidak dapat diambl dari API arkib.',
 );
 
 /** Maltese (Malti)
