@@ -126,10 +126,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 		}
 
 		$out = $this->getOutput();
-		$out->wrapWikiMsg(
-			"<h2>\n$1\n</h2>",
-			array( 'extdist-choose-version', $extensionName )
-		);
+		$out->addWikiMsg( 'extdist-choose-version', $extensionName );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
 				'action' => $this->getTitle()->getLocalUrl(),
