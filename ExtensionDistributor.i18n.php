@@ -11,7 +11,6 @@ $messages['en'] = array(
 		'extdist-no-such-version' => 'The extension "$1" does not exist in the version "$2".',
 		'extdist-choose-extension' => 'Select which extension you want to download:',
 		'extdist-submit-extension' => 'Continue',
-		'extdist-current-version' => 'Development version (trunk)',
 		'extdist-choose-version' => 'You are downloading the <b>$1</b> extension.
 
 Select your MediaWiki version.
