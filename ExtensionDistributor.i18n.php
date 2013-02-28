@@ -45,12 +45,13 @@ If you have any questions about this extension distribution system, please go to
  * @author Aotake
  * @author Jon Harald Søby
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
 	'extensiondistributor' => '{{Identical|Download}}',
-	'extensiondistributor-desc' => '{{desc}}',
+	'extensiondistributor-desc' => '{{desc|name=Extension Distributor|url=http://www.mediawiki.org/wiki/Extension:ExtensionDistributor}}',
 	'extdist-submit-extension' => '{{Identical|Continue}}',
 	'extdist-submit-version' => '{{Identical|Continue}}',
 	'extdist-created' => '* $1 - extension
