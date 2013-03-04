@@ -1401,7 +1401,6 @@ Ekstensi "$1" tidak ada dalam versi "$2".',
 
 Pilih ekstensi yang ingin Anda unduh:',
 	'extdist-submit-extension' => 'Lanjutkan',
-	'extdist-current-version' => 'Versi pengembangan (trunk)',
 	'extdist-choose-version' => 'Anda mengunduh  <b>$1</b> ekstensi.
 
 Pilih versi MediaWiki anda.
@@ -1431,7 +1430,7 @@ Jika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tu
 	'extdist-want-more' => '
 
 Dapatkan ekstensi lain',
-	'extdist-tar-error' => 'Tar Mengembalikan kode keluar $1:', # Fuzzy
+	'extdist-tar-error' => 'Tidak mampu mendapatkan URL arsip dari API arsip.',
 );
 
 /** Italian (italiano)
