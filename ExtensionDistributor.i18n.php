@@ -187,7 +187,6 @@ $messages['ast'] = array(
 	'extdist-no-such-version' => 'La estensión «$1» nun esiste na versión «$2».',
 	'extdist-choose-extension' => 'Seleiciona la estensión que quies descargar:',
 	'extdist-submit-extension' => 'Siguir',
-	'extdist-current-version' => 'Versión en desendolcu (trunk)',
 	'extdist-choose-version' => "Tas descargando la estensión <b>$1</b>.
 
 Seleiciona la to versión de MediaWiki.
@@ -195,13 +194,13 @@ Seleiciona la to versión de MediaWiki.
 La mayor parte de les estensiones funcionen con múltiples versiones de Mediawiki, de mou que si la to versión de Mediawiki nun ta equí, o si necesites les caberes carauterístiques de les estensiones. trata d'usar la versión actual.",
 	'extdist-no-versions' => '¡La estensión seleicionada ($1) nun ta disponible en denguna versión!',
 	'extdist-submit-version' => 'Siguir',
-	'extdist-created' => "Se creó una instantánea de la versión <b>$2</b> de la estensión <b>$1</b> de MediaWiki <b>$3</b>. Tu descarga debería comenzar de mou automáticu en 5 segundos.
+	'extdist-created' => "Creóse una instantánea de la versión <b>$2</b> de la estensión <b>$1</b> de MediaWiki <b>$3</b>. La descarga tendría de comenzar de mou automáticu en 5 segundos.
 
 La URL d'esta instantánea ye:
 :$4
-Se pue usar pa la descarga nel intre a un sirvidor; pero nun la guardes nun marcador, porque'l conteníu nun s'anovará, y pue desaniciase nuna fecha posterior.
+Pue usase pa la descarga nel intre a un sirvidor; pero nun la guardes nun marcador, porque'l conteníu nun s'anovará, y pue desaniciase nuna fecha posterior.
 
-L'archivu tar tendría d'estrayese nel to direutoriu d'estensiones. Por exemplu, nun sistema operativu tipu Unix:
+L'archivu tar tendría d'estrayese nel direutoriu d'estensiones. Por exemplu, nun sistema operativu tipu Unix:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
