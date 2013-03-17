@@ -52,7 +52,19 @@ If you have any questions about this extension distribution system, please go to
 $messages['qqq'] = array(
 	'extensiondistributor' => '{{Identical|Download}}',
 	'extensiondistributor-desc' => '{{desc|name=Extension Distributor|url=http://www.mediawiki.org/wiki/Extension:ExtensionDistributor}}',
+	'extdist-not-configured' => '{{doc-important|Do not translate <code>$wgExtDistList</code> and <code>$wgExtDistArchiveAPI</code>.}}',
+	'extdist-no-such-extension' => "This message indicates the extension doesn't exist in the extensions list. Parameters:
+* $1 - extension name",
+	'extdist-no-such-version' => "This message indicates the specified version of the extension doesn't exist. Parameters:
+* $1 - extension name
+* $2 - version number of the extension",
 	'extdist-submit-extension' => '{{Identical|Continue}}',
+	'extdist-choose-version' => 'This message is followed by the select box which enables to select a MediaWiki version.
+
+Parameters:
+* $1 - extension name',
+	'extdist-no-versions' => 'Parameters:
+* $1 - extension name',
 	'extdist-submit-version' => '{{Identical|Continue}}',
 	'extdist-created' => '* $1 - extension
 * $2 - revision number
