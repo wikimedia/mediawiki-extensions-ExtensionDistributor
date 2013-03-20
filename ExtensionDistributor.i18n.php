@@ -1221,6 +1221,7 @@ $messages['hi'] = array(
 /** Croatian (hrvatski)
  * @author Ex13
  * @author Herr Mlinka
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -1228,10 +1229,9 @@ $messages['hr'] = array(
 	'extensiondistributor-desc' => 'Ekstenzija za distribuciju inačica arhiva ekstenzija',
 	'extdist-not-configured' => 'Molimo konfigurirajte $wgExtDistList i $wgExtDistArchiveAPI',
 	'extdist-no-such-extension' => 'Nema takve ekstenziju "$1"',
-	'extdist-no-such-version' => 'Ekstenzija "$1" ne postoji u verziji "$2".',
+	'extdist-no-such-version' => 'Ekstenzija "$1" ne postoji u inačici "$2".',
 	'extdist-choose-extension' => 'Odaberite koju ekstenziju želite preuzeti:',
 	'extdist-submit-extension' => 'Nastavi',
-	'extdist-current-version' => 'Razvojna inačica (stablo)',
 	'extdist-choose-version' => 'Preuzimate ekstenziju <b>$1</b>.
 
 Izaberite vašu inačicu MedijaWikija.
