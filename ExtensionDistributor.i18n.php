@@ -53,11 +53,15 @@ $messages['qqq'] = array(
 	'extensiondistributor' => '{{Identical|Download}}',
 	'extensiondistributor-desc' => '{{desc|name=Extension Distributor|url=http://www.mediawiki.org/wiki/Extension:ExtensionDistributor}}',
 	'extdist-not-configured' => '{{doc-important|Do not translate <code>$wgExtDistList</code> and <code>$wgExtDistArchiveAPI</code>.}}',
+	'extdist-list-missing' => 'Used as error message in [[Special:ExtensionDistributor]].',
 	'extdist-no-such-extension' => "This message indicates the extension doesn't exist in the extensions list. Parameters:
 * $1 - extension name",
 	'extdist-no-such-version' => "This message indicates the specified version of the extension doesn't exist. Parameters:
 * $1 - extension name
 * $2 - version number of the extension",
+	'extdist-choose-extension' => 'Used as intro message in [[Special:ExtensionDistributor]].
+
+This message is followed by the Extension Selector form.',
 	'extdist-submit-extension' => '{{Identical|Continue}}',
 	'extdist-choose-version' => 'This message is followed by the select box which enables to select a MediaWiki version.
 
@@ -71,6 +75,10 @@ Parameters:
 * $3 - branch name
 * $4 - URL
 * $5 - filename',
+	'extdist-want-more' => 'Used as link text in [[Special:ExtensionDistributor]].
+
+This message follows the Download icon.',
+	'extdist-tar-error' => 'Used as error message in [[Special:ExtensionDistributor]], when downloading an extension.',
 );
 
 /** Afrikaans (Afrikaans)
