@@ -50,7 +50,8 @@ If you have any questions about this extension distribution system, please go to
  * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
-	'extensiondistributor' => '{{Identical|Download}}',
+	'extensiondistributor' => '{{doc-special|ExtensionDistributor}}
+{{Identical|Download}}',
 	'extensiondistributor-desc' => '{{desc|name=Extension Distributor|url=http://www.mediawiki.org/wiki/Extension:ExtensionDistributor}}',
 	'extdist-not-configured' => '{{doc-important|Do not translate <code>$wgExtDistList</code> and <code>$wgExtDistArchiveAPI</code>.}}',
 	'extdist-list-missing' => 'Used as error message in [[Special:ExtensionDistributor]].',
