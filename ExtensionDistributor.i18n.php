@@ -1643,11 +1643,11 @@ $messages['ksh'] = array(
 	'extensiondistributor' => 'MediaWiki Zohsatzprojramm eronger lade',
 	'extensiondistributor-desc' => 'Zohsazprojramm för Arschive met Zohsazprojramme ze verdeile.',
 	'extdist-not-configured' => 'Bes esu joot un donn <code>$wgExtDistList</code> un <code>$wgExtDistArchiveAPI</code> setze.',
+	'extdist-list-missing' => 'De Leß met de Zohsazprojramme kunnt nit afjeroofe wääde.',
 	'extdist-no-such-extension' => 'Ene Zosatz „$1“ es nit doh.',
 	'extdist-no-such-version' => 'Dä Zosatz „$1“ en dä Version „$2“ es nit doh.',
 	'extdist-choose-extension' => 'Sök Der us, wat för ene Zosatz De eronger laade wells:',
 	'extdist-submit-extension' => 'Wigger',
-	'extdist-current-version' => 'De aktoelle Entwecklungs-Version (<i lang="en">trunk</i>)',
 	'extdist-choose-version' => 'Do bes dä Zosatz <b>$1</b> am erunge lade.
 
 Sök Ding Version fun MediaWiki us.
@@ -1675,7 +1675,7 @@ Wan De mem Ußpacke (un velleich Huhlade) fäädesch bes, do moß De dä Zosatz 
 
 Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [[Extension talk:ExtensionDistributor]].',
 	'extdist-want-more' => 'Noch ene Zosatz holle',
-	'extdist-tar-error' => 'Et Projramm <code lang="en">tar</code> jov uns der Beendijungskood $1:', # Fuzzy
+	'extdist-tar-error' => 'Dä URL för et Aschiif kunnt nit övver de <i lang="en>API</i> afjeroofe wääde.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
