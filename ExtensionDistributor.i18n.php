@@ -479,11 +479,11 @@ $messages['cs'] = array(
 	'extensiondistributor' => 'Stáhnout rozšíření MediaWiki',
 	'extensiondistributor-desc' => 'Rozšíření pro distribuci archivů rozšíření',
 	'extdist-not-configured' => 'Prosím, nastavte $wgExtDistList a $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Nepodařilo se načíst seznam rozšíření!',
 	'extdist-no-such-extension' => 'Rozšíření „$1” neexistuje',
 	'extdist-no-such-version' => 'Rozšíření „$1” neexistuje ve verzi „$2”',
 	'extdist-choose-extension' => 'Vyberte, které rozšíření chcete stáhnout:',
 	'extdist-submit-extension' => 'Pokračovat',
-	'extdist-current-version' => 'Vývojová verze (trunk)',
 	'extdist-choose-version' => 'Stahujete rozšíření <b>$1</b>.
 
 Vyberte verzi MediaWiki.
@@ -511,7 +511,7 @@ Po rozbalení souborů budete muset rozšíření zaregistrovat v souboru <code>
 
 Případné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Stáhnout jiné rozšíření',
-	'extdist-tar-error' => 'Tar sknočil s návratovým kódem $1:', # Fuzzy
+	'extdist-tar-error' => 'Z archivního API se nepodařilo načíst URL archivu.',
 );
 
 /** Danish (dansk)
