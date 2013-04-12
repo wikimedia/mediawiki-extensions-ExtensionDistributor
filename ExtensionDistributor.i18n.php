@@ -2410,12 +2410,12 @@ Cele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci
  */
 $messages['roa-tara'] = array(
 	'extensiondistributor' => 'Scareche le estenziune de MediaUicchi',
+	'extdist-not-configured' => 'Pe piacere configure $wgExtDistList e $wgExtDistArchiveAPI',
 	'extdist-list-missing' => "Non ge pozze analizzà l'elenghe de le estenziune!",
 	'extdist-no-such-extension' => 'Nisciuna estenzione "$1"',
 	'extdist-no-such-version' => 'L\'estenzione "$1" non g\'esiste jndr\'à versiune "$2".',
 	'extdist-choose-extension' => "Scacchie l'estenzione ca vuè ccu scareche:",
 	'extdist-submit-extension' => 'Condinue',
-	'extdist-current-version' => 'Versiune de sveluppe (trunk)',
 	'extdist-no-versions' => "L'estenzione scacchiate ($1) non g'è disponibbele pe nisicuna versione!",
 	'extdist-submit-version' => 'Condinue',
 	'extdist-want-more' => "Pigghie 'n'otra estenzione",
