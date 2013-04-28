@@ -1926,7 +1926,8 @@ $messages['myv'] = array(
 	'extdist-submit-version' => 'Поладомс',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
+ * @author Danmichaelo
  * @author EivindJ
  * @author Nghtwlkr
  */
@@ -1934,11 +1935,11 @@ $messages['nb'] = array(
 	'extensiondistributor' => 'Last ned utvidelser til MediaWiki',
 	'extensiondistributor-desc' => 'Utvidelse for distribusjon av andre utvidelser',
 	'extdist-not-configured' => 'Still inn $wgExtDistList og $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Tilleggslisten kunne ikke hentes!',
 	'extdist-no-such-extension' => 'Ingen utvidelse ved navn «$1»',
 	'extdist-no-such-version' => 'Versjon «$2» av «$1» finnes ikke',
 	'extdist-choose-extension' => 'Velg hvilken utvidelse du ønsker å laste ned:',
 	'extdist-submit-extension' => 'Fortsett',
-	'extdist-current-version' => 'Utviklingsversjon (trunk)',
 	'extdist-choose-version' => 'Du laster ned utvidelsen <b>$1</b>.
 
 Angi hvilken MediaWiki-versjon du bruker.
@@ -1966,7 +1967,7 @@ Etter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. D
 
 Om du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hent flere utvidelser',
-	'extdist-tar-error' => 'Tar ga utgangsfeilen $1:', # Fuzzy
+	'extdist-tar-error' => 'Arkiv-URLen kunne ikke hentes fra arkiv-APIet.',
 );
 
 /** Low German (Plattdüütsch)
