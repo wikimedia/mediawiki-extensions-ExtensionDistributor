@@ -2263,7 +2263,6 @@ $messages['pms'] = array(
 	'extdist-no-such-version' => 'L\'estension "$1" a esist pa ant la version "$2".',
 	'extdist-choose-extension' => 'Selession-a che estension it veule dëscarié:',
 	'extdist-submit-extension' => 'Continua',
-	'extdist-current-version' => 'Version ëd dësvlup (trunk)',
 	'extdist-choose-version' => "It ses an camin ch'it dëscarie l'estension <b>$1</b>.
 
 Selession-a toa version MediaWiki.
@@ -2291,7 +2290,7 @@ Apress ch'a l'ha dëscompatà j'archivi, a dev argistré l'estension an LocalSet
 
 S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'a vada a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => "Pija n'àutra estension",
-	'extdist-tar-error' => "As peul pa trovesse l'anliura dl'arcivi da l'API dj'erchivi.",
+	'extdist-tar-error' => "As peul nen analisesse l'anliura dl'archivi da l'API d'archivi.",
 );
 
 /** Portuguese (português)
