@@ -3187,16 +3187,17 @@ Windows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。
  * @author Liangent
  * @author Mark85296341
  * @author Shinjiman
+ * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'extensiondistributor' => '下載 MediaWiki 擴充套件',
 	'extensiondistributor-desc' => '發布擴充套件存檔映像的擴充套件',
 	'extdist-not-configured' => '請設定 $wgExtDistList 和 $wgExtDistArchiveAPI',
+	'extdist-list-missing' => '無法讀取擴展清單！',
 	'extdist-no-such-extension' => '沒有這個擴充套件「$1」',
 	'extdist-no-such-version' => '該擴充套件「$1」不存在於這個版本「$2」中。',
 	'extdist-choose-extension' => '選擇您要去下載的擴充套件：',
 	'extdist-submit-extension' => '繼續',
-	'extdist-current-version' => '開發版本（trunk）',
 	'extdist-choose-version' => '您現正下載 <b>$1</b> 擴充套件。
 
 選擇您要的 MediaWiki 版本。
@@ -3224,5 +3225,5 @@ tar -xzf $5-C /var/www/mediawiki/extensions
 
 有關於此擴展名配電系統的任何問題，請轉到[[Extension talk:ExtensionDistributor]]。",
 	'extdist-want-more' => '取得另一個擴充套件',
-	'extdist-tar-error' => 'Tar 回應結束碼 $1：', # Fuzzy
+	'extdist-tar-error' => '無法從存檔API讀取存檔URL。',
 );
