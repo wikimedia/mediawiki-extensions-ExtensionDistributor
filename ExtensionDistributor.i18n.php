@@ -93,7 +93,6 @@ $messages['af'] = array(
 	'extdist-no-such-extension' => 'Die uitbreiding "$1" bestaan nie',
 	'extdist-choose-extension' => 'Kies die uitbreiding wat jy wil aflaai:',
 	'extdist-submit-extension' => 'Gaan voort',
-	'extdist-current-version' => 'Ontwikkelingsweergawe (trunc)',
 	'extdist-submit-version' => 'Gaan voort',
 	'extdist-want-more' => "Laai nog 'n uitbreiding af",
 	'extdist-tar-error' => 'TAR stuur die volgende kode terug $1:', # Fuzzy
@@ -122,7 +121,6 @@ $messages['ar'] = array(
 	'extdist-no-such-version' => 'الامتداد "$1" لا يوجد في النسخة "$2".',
 	'extdist-choose-extension' => 'اختر أي امتدات تريد تنزيله:',
 	'extdist-submit-extension' => 'استمرار',
-	'extdist-current-version' => 'نسخة التطوير (جذع)',
 	'extdist-choose-version' => 'أنت تقوم بتنزيل امتداد <b>$1</b>.
 
 اختر نسخة ميدياويكي الخاصة بك.
@@ -165,7 +163,6 @@ $messages['arz'] = array(
 	'extdist-no-such-version' => 'الامتداد "$1" لا يوجد فى النسخة "$2".',
 	'extdist-choose-extension' => 'اختر أى امتدات تريد تنزيله:',
 	'extdist-submit-extension' => 'استمر',
-	'extdist-current-version' => 'نسخة التطوير (جذع)',
 	'extdist-choose-version' => 'أنت تقوم بتنزيل امتداد <b>$1</b>.
 
 اختر نسخة ميدياويكى الخاصة بك.
@@ -250,7 +247,6 @@ $messages['ba'] = array(
 	'extdist-no-such-version' => '"$1" киңәйеүенең "$2" өлгөһө юҡ',
 	'extdist-choose-extension' => 'Күсереп алыу өсөн киңәйеү һайлағыҙ:',
 	'extdist-submit-extension' => 'Дауам итергә',
-	'extdist-current-version' => 'Эшләп сығарыу өлгөһө (trunk)',
 	'extdist-choose-version' => 'Һеҙ <b>$1</b> киңәйеүен күсереп алаһығыҙ.
 
 MediaWiki өлгөгөҙҙө һайлағыҙ.
@@ -297,7 +293,6 @@ $messages['be-tarask'] = array(
 	'extdist-no-such-version' => 'Вэрсія «$2» пашырэньня «$1» ня знойдзеная.',
 	'extdist-choose-extension' => 'Выберыце, якое пашырэньне Вы жадаеце загрузіць:',
 	'extdist-submit-extension' => 'Працягваць',
-	'extdist-current-version' => 'Вэрсія ў распрацоўцы (trunk)',
 	'extdist-choose-version' => 'Вы загружаеце пашырэньне <b>$1</b>.
 
 Выберыце сваю вэрсію MediaWiki.
@@ -339,7 +334,6 @@ $messages['bg'] = array(
 	'extdist-no-such-version' => 'Разширението „$1“ не съществува във версия „$2“.',
 	'extdist-choose-extension' => 'Изберете разширение, което желаете да свалите:',
 	'extdist-submit-extension' => 'Продължаване',
-	'extdist-current-version' => 'Разработвана версия (trunk)',
 	'extdist-choose-version' => 'На път сте да изтеглите разширението <b>$1</b>.
 
 Изберете вашата версия на MediaWiki.
@@ -374,7 +368,6 @@ $messages['br'] = array(
 	'extdist-no-such-version' => 'N\'eus ket eus an astenn "$1" en doare "$2".',
 	'extdist-choose-extension' => "Dibabit peseurt astenn ho peus c'hoant pellgargañ :",
 	'extdist-submit-extension' => "Kenderc'hel",
-	'extdist-current-version' => 'Doare diorroiñ (trunk)',
 	'extdist-choose-version' => "Emaoc'h o pellgargañ an astenn <b>$1</b>.
 
 Dibabit ho stumm MediaWiki.
@@ -416,7 +409,6 @@ $messages['bs'] = array(
 	'extdist-no-such-version' => 'Proširenje "$1" ne postoji u verziji "$2".',
 	'extdist-choose-extension' => 'Odaberite koje proširenje želite da učitate:',
 	'extdist-submit-extension' => 'Nastavi',
-	'extdist-current-version' => 'Razvojna verzija (trunk)',
 	'extdist-choose-version' => 'Skidate proširenje <b>$1</b>.
 
 Odaberite Vašu verziju MediaWikija.
@@ -459,7 +451,6 @@ $messages['ca'] = array(
 	'extdist-no-such-version' => 'L\'extensió "$1" no existeix en la versió "$2"',
 	'extdist-choose-extension' => 'Seleccionau quina extensió voleu descarregar:',
 	'extdist-submit-extension' => 'Continua',
-	'extdist-current-version' => 'Versió de desenvolupament (trunk)',
 	'extdist-choose-version' => "Estau descarregant l'extensió <b>$1</b>.
 
 Seleccionau la vostra versió del Mediawiki.
@@ -545,7 +536,6 @@ $messages['de'] = array(
 	'extdist-no-such-version' => 'Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.',
 	'extdist-choose-extension' => 'Bitte wähle eine Erweiterung zum Herunterladen aus:',
 	'extdist-submit-extension' => 'Weiter',
-	'extdist-current-version' => 'Entwicklungsversion (trunk)',
 	'extdist-choose-version' => 'Du kannst gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.
 
 Bitte wähle zunächst die von dir genutzte MediaWiki-Version.
@@ -626,7 +616,6 @@ $messages['diq'] = array(
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
 	'extdist-submit-extension' => 'Dewam ke',
-	'extdist-current-version' => 'versiyonê dewlemend kerdışi (trunk)',
 	'extdist-choose-version' => 'Şımaye olekene  <b>$1</b>i ronane
 
 Versiyonê MedyaWikiyi weçinê.
@@ -669,7 +658,6 @@ $messages['dsb'] = array(
 	'extdist-no-such-version' => 'Rozšyrjenje "$1" njeeksistěrujo we wersiji "$2".',
 	'extdist-choose-extension' => 'Wubjeŕ rozšyrjenje, kótarež coš ześěgnuś:',
 	'extdist-submit-extension' => 'Dalej',
-	'extdist-current-version' => 'Wuwiśowa wersija (trunk)',
 	'extdist-choose-version' => 'Ześěgujoš rozšyrjenje <b>$1</b>.
 
 Wubjeŕ swóju wersiju MediaWiki.
@@ -716,7 +704,6 @@ $messages['el'] = array(
 	'extdist-no-such-version' => 'Η επέκταση "$1" δεν υπάρχει στην έκδοση "$2".',
 	'extdist-choose-extension' => 'Επιλέξτε ποια επέκταση θέλετε να κατεβάσετε:',
 	'extdist-submit-extension' => 'Συνέχεια',
-	'extdist-current-version' => 'Έκδοση ανάπτυξης (κορμός)',
 	'extdist-choose-version' => 'Κατεβάζετε την επέκταση <b>$1</b>.
 
 Επιλέξτε την έκδοση του MediaWiki σας.
@@ -759,7 +746,6 @@ $messages['eo'] = array(
 	'extdist-no-such-version' => 'La kromprogramo "$1" ne ekzistas en la versio "$2".',
 	'extdist-choose-extension' => 'Elektu kiun kromprogramon tiun vi volas elŝuti.',
 	'extdist-submit-extension' => 'Daŭri',
-	'extdist-current-version' => 'Disvolvada versio (bazo)',
 	'extdist-choose-version' => 'Vi elŝutas la <b>$1</b> kromprogramon.
 
 Elektu vian MediaWiki-version.
@@ -808,7 +794,6 @@ $messages['es'] = array(
 	'extdist-no-such-version' => 'la extensión "$1" no existe en la versión "$2".',
 	'extdist-choose-extension' => 'Seleccione qué extensión desea descargar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'versión en desarrollo (principal)',
 	'extdist-choose-version' => 'Estás descargando la extensión <b>$1</b>.
 
 Selecciona tu versión MediaWiki.
@@ -851,7 +836,6 @@ $messages['et'] = array(
 	'extdist-no-such-version' => 'Versioonis "$2" puudub laiendus "$1".',
 	'extdist-choose-extension' => 'Vali laiendus, mida soovid alla laadida:',
 	'extdist-submit-extension' => 'Jätka',
-	'extdist-current-version' => "Arendusversioon (''trunk'')",
 	'extdist-choose-version' => 'Laadid alla laiendust <b>$1</b>.
 
 Vali oma MediaWiki versioon.
@@ -888,7 +872,6 @@ $messages['fa'] = array(
 	'extdist-no-such-version' => 'افزونهٔ «$1» در نسخهٔ «$2» وجود ندارد.',
 	'extdist-choose-extension' => 'افزونه‌ای را که می‌خواهید بارگیری کنید انتخاب کنید:',
 	'extdist-submit-extension' => 'ادامه',
-	'extdist-current-version' => 'نسخهٔ در حال توسعه (تنه)',
 	'extdist-choose-version' => 'شما در حال بارگیری افزونهٔ <b>$1</b> هستید.
 
 نسخهٔ مدیاویکی خود را انتخاب کنید.
@@ -936,7 +919,6 @@ $messages['fi'] = array(
 	'extdist-no-such-version' => 'Laajennus ”$1” ei sisälly versioon ”$2”.',
 	'extdist-choose-extension' => 'Valitse mitkä laajennukset haluat ladata:',
 	'extdist-submit-extension' => 'Jatka',
-	'extdist-current-version' => 'Kehitysversio (trunk)',
 	'extdist-choose-version' => 'Olet lataamassa laajennusta <b>$1</b>.
 
 Valitse MediaWikisi versio.
@@ -987,7 +969,6 @@ $messages['fr'] = array(
 	'extdist-no-such-version' => 'L’extension « $1 » n’existe pas dans la version « $2 ».',
 	'extdist-choose-extension' => 'Sélectionnez l’extension que vous voulez télécharger :',
 	'extdist-submit-extension' => 'Continuer',
-	'extdist-current-version' => 'Version de développement (trunk)',
 	'extdist-choose-version' => 'Vous êtes en train de télécharger l’extension <b>$1</b>.
 
 Sélectionnez votre version de MediaWiki.
@@ -1029,7 +1010,6 @@ $messages['frp'] = array(
 	'extdist-no-such-version' => 'L’èxtension « $1 » ègziste pas dens la vèrsion « $2 ».',
 	'extdist-choose-extension' => 'Chouèsésséd l’èxtension que vos voléd tèlèchargiér :',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'Vèrsion de dèvelopament (trunk)',
 	'extdist-choose-version' => 'Vos éte aprés tèlèchargiér l’èxtension <b>$1</b>.
 
 Chouèsésséd voutra vèrsion de MediaWiki.
@@ -1079,7 +1059,6 @@ $messages['gl'] = array(
 	'extdist-no-such-version' => 'A extensión "$1" non existe na versión "$2".',
 	'extdist-choose-extension' => 'Seleccione a extensión que queira descargar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'Versión en desenvolvemento (trunk)',
 	'extdist-choose-version' => 'Está descargando a extensión <b>$1</b>.
 
 Seleccione a súa versión de MediaWiki.
@@ -1130,7 +1109,6 @@ $messages['gsw'] = array(
 	'extdist-no-such-version' => 'D Erwyterig „$1“ git s nit in dr Version „$2“.',
 	'extdist-choose-extension' => 'Bitte wähl e Erwyterig uus zum Abelade:',
 	'extdist-submit-extension' => 'Wyter',
-	'extdist-current-version' => 'Entwickligs-Version (trunk)',
 	'extdist-choose-version' => 'Du ladsch d <b>$1</b>-Erwyterig abe.
 
 Bitte wähl Dyyni MediaWiki-Version.
@@ -1174,7 +1152,6 @@ $messages['he'] = array(
 	'extdist-no-such-version' => 'ההרחבה "$1" אינה קיימת בגרסה "$2".',
 	'extdist-choose-extension' => 'בחרו איזו הרחבה תרצו להוריד:',
 	'extdist-submit-extension' => 'המשך',
-	'extdist-current-version' => 'גרסת הפיתוח (trunk)',
 	'extdist-choose-version' => 'אתם מורידים את ההרחבה <b>$1</b>.
 
 אנא בחרו את גרסת מדיה־ויקי שאתם משתמשים בה.
@@ -1216,7 +1193,6 @@ $messages['hi'] = array(
 	'extdist-no-such-version' => 'एक्सटैन्शन "$1" "$2" संस्करण में मौजूद नहीं ।',
 	'extdist-choose-extension' => 'कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:',
 	'extdist-submit-extension' => 'जारी रखें',
-	'extdist-current-version' => 'विकास संस्करण (ट्रंक)',
 	'extdist-choose-version' => 'आप डाउनलोड कर रहे हैं <b>$1</b> एक्सटेंशन ।
 
 अपने मीडियाविकि संस्करण चुनें ।
@@ -1283,7 +1259,6 @@ $messages['hsb'] = array(
 	'extdist-no-such-version' => 'Rozšěrjenje "$1" we wersiji "$2" njeeksistuje.',
 	'extdist-choose-extension' => 'Wubjer, kotre rozšěrjenje chceš sćahnyć:',
 	'extdist-submit-extension' => 'Dale',
-	'extdist-current-version' => 'Wuwićowa wersija (trunk)',
 	'extdist-choose-version' => 'Sćahuješ rozšěrjenje <b>$1</b>.
 
 Wubjer swoju wersiju MediaWiki.
@@ -1328,7 +1303,6 @@ $messages['hu'] = array(
 	'extdist-no-such-version' => 'A(z) „$1” kiterjesztés nem létezik a(z) „$2” verzióban.',
 	'extdist-choose-extension' => 'Válaszd ki, melyik kiterjesztést szeretnéd letölteni:',
 	'extdist-submit-extension' => 'Folytatás',
-	'extdist-current-version' => 'Fejlesztői verzió (trunk)',
 	'extdist-choose-version' => 'Éppen a(z) <b>$1</b> kiterjesztést töltöd le.
 
 Válaszd ki a MediaWiki verziót.
@@ -1370,7 +1344,6 @@ $messages['ia'] = array(
 	'extdist-no-such-version' => 'Le extension "$1" non existe in le version "$2".',
 	'extdist-choose-extension' => 'Selige le extension a discargar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'Version de disveloppamento (trunco)',
 	'extdist-choose-version' => 'Tu va discargar le extension <b>$1</b>.
 
 Per favor selige tu version de MediaWiki.
@@ -1469,7 +1442,6 @@ $messages['it'] = array(
 	'extdist-no-such-version' => 'L\'estensione "$1" non esiste nella versione "$2".',
 	'extdist-choose-extension' => 'Seleziona quale estensione intendi scaricare:',
 	'extdist-submit-extension' => 'Continua',
-	'extdist-current-version' => 'Versione di sviluppo (trunk)',
 	'extdist-choose-version' => "Stai scaricando l'estensione <b>$1</b>.
 
 Seleziona la tua versione di MediaWiki.
@@ -1517,7 +1489,6 @@ $messages['ja'] = array(
 	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
 	'extdist-submit-extension' => '続行',
-	'extdist-current-version' => '開発バージョン (trunk)',
 	'extdist-choose-version' => '拡張機能 <b>$1</b> をダウンロードしようとしています。
 
 ご使用中の MediaWiki のバージョンを選択してください。
@@ -1559,7 +1530,6 @@ $messages['jv'] = array(
 	'extdist-no-such-version' => 'Èkstènsi "$1" ora ana nèng vèrsi "$2".',
 	'extdist-choose-extension' => 'Pilih èkstènsi endi sing Sampéyan pingin undhuh:',
 	'extdist-submit-extension' => 'Banjuraké',
-	'extdist-current-version' => 'Vèrsi pangembangan (trunk)',
 	'extdist-no-versions' => 'Èkstènsi kapilih ($1) ora sumadhiya nèng vèrsi apa waé!',
 	'extdist-submit-version' => 'Banjuraké',
 	'extdist-want-more' => 'Èntukaké èkstènsi liya',
@@ -1604,7 +1574,6 @@ $messages['ko'] = array(
 	'extdist-no-such-version' => '"$1" 확장 기능은 "$2" 버전이 존재하지 않습니다.',
 	'extdist-choose-extension' => '다운로드하려는 확장 기능을 선택하세요:',
 	'extdist-submit-extension' => '계속',
-	'extdist-current-version' => '개발 중인 버전 (trunk)',
 	'extdist-choose-version' => '<b>$1</b> 확장 기능을 다운로드하고 있습니다.
 
 미디어위키 버전을 선택하세요.
@@ -1690,7 +1659,6 @@ $messages['lb'] = array(
 	'extdist-no-such-version' => 'D\'Erweiderung "$1" gëtt et net an der Versioun "$2".',
 	'extdist-choose-extension' => 'Wielt wat fir eng Erweiderung Dir wëllt eroflueden:',
 	'extdist-submit-extension' => 'Viru fueren',
-	'extdist-current-version' => "Entwécklungs'versioun (trunk)",
 	'extdist-choose-version' => "Dir sidd amgaang d'<b>$1</b> Erweiderung erofzelueden.
 
 Wielt Är MediaWiki Versioun.
@@ -1714,7 +1682,6 @@ $messages['li'] = array(
 	'extdist-no-such-version' => 'De oetbreiing "$1" besteit neet in de versie "$2".',
 	'extdist-choose-extension' => 'Selekteer de extensie dae se wils downloade:',
 	'extdist-submit-extension' => 'Doorgaon',
-	'extdist-current-version' => 'Óntwikkelverzje (trunk)',
 	'extdist-choose-version' => 'De bös de uitbreiding <b>$1</b> aan t downloade.
 
 Selecteer de versie van MediaWiki.
@@ -1777,7 +1744,6 @@ $messages['mk'] = array(
 	'extdist-no-such-version' => 'Додатокот „$1“ не постои во верзијата „$2“.',
 	'extdist-choose-extension' => 'Одберете го додатокот што сакате да го преземете',
 	'extdist-submit-extension' => 'Продолжи',
-	'extdist-current-version' => 'Развојна верзија (trunk)',
 	'extdist-choose-version' => 'Го преземате додатокот <b>$1</b>.
 
 Изберете ја вашата верзија на МедијаВики.
@@ -1817,7 +1783,6 @@ $messages['ml'] = array(
 	'extdist-no-such-version' => '"$2" പതിപ്പിൽ "$1" എന്നൊരു അനുബന്ധം ഇല്ല.',
 	'extdist-choose-extension' => 'താങ്കൾക്ക് ഡൗൺലോഡ് ചെയ്യേണ്ട അനുബന്ധം തിരഞ്ഞെടുക്കുക:',
 	'extdist-submit-extension' => 'തുടരുക',
-	'extdist-current-version' => 'വികസനഘട്ടത്തിലുള്ള പതിപ്പ് (ട്രങ്ക്)',
 	'extdist-choose-version' => 'താങ്കൾ <b>$1</b> എന്ന അനുബന്ധം ഡൗൺലോഡ് ചെയ്യുകയാണ്.
 
 താങ്കളുടെ മീഡിയവിക്കി പതിപ്പ് തിരഞ്ഞെടുക്കുക.
@@ -1864,7 +1829,6 @@ $messages['ms'] = array(
 	'extdist-no-such-version' => 'Penyambung "$1" tidak mempunyai versi "$2".',
 	'extdist-choose-extension' => 'Sila pilih penyambung yang ingin dimuat turun:',
 	'extdist-submit-extension' => 'Teruskan',
-	'extdist-current-version' => 'Versi pembangunan (utama)',
 	'extdist-choose-version' => 'Anda sedang memuat turun penyambung <b>$1</b>.
 
 Sila pilih versi MediaWiki anda.
@@ -1906,7 +1870,6 @@ $messages['mt'] = array(
 	'extdist-no-such-version' => 'L-estensjoni "$1" ma teżistix fil-verżjoni "$2".',
 	'extdist-choose-extension' => 'Agħżel liema estenjoni xi tniżżel:',
 	'extdist-submit-extension' => 'Kompli',
-	'extdist-current-version' => "Verżjoni ta' żvilupp (trunk)",
 	'extdist-choose-version' => 'Inti qiegħed tniżżel l-estensjoni <b>$1</b>.
 
 Agħżel il-verżjoni tal-MediaWiki tiegħek.
@@ -1982,7 +1945,6 @@ $messages['nds'] = array(
 	'extdist-no-such-version' => 'De Extension „$1“ gifft dat nich in de Version „$2“.',
 	'extdist-choose-extension' => 'Wähl de Extension ut, de du dalladen wullt:',
 	'extdist-submit-extension' => 'Wiedermaken',
-	'extdist-current-version' => 'Ne’este instabile Version (trunk)',
 	'extdist-choose-version' => 'Du laadst de <b>$1</b>-Extension dal.
 
 Wähl dien MediaWiki-Version ut.
@@ -2029,7 +1991,6 @@ $messages['nl'] = array(
 	'extdist-no-such-version' => 'De uitbreiding "$1" bestaat niet in de versie "$2".',
 	'extdist-choose-extension' => 'Selecteer de uitbreiding die u wilt downloaden:',
 	'extdist-submit-extension' => 'Doorgaan',
-	'extdist-current-version' => 'Ontwikkelversie (trunk)',
 	'extdist-choose-version' => 'U bent de uitbreiding <b>$1</b> aan het downloaden.
 
 Selecteer uw versie van MediaWiki.
@@ -2091,7 +2052,7 @@ Nadat je de bestanden hebt uitgepakt, moet je de uitbreiding registreren in Loca
 Als je vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Reedy
@@ -2104,7 +2065,6 @@ $messages['nn'] = array(
 	'extdist-no-such-version' => 'Versjon «$2» av «$1» finst ikkje',
 	'extdist-choose-extension' => 'Vel kva utviding du ønskjer å lasta ned:',
 	'extdist-submit-extension' => 'Hald fram',
-	'extdist-current-version' => 'Utviklingsverjson (trunk)',
 	'extdist-choose-version' => 'Du lastar ned utvidinga <b>$1</b>.
 
 Oppgje kva MediaWiki-versjon du nyttar.
@@ -2147,7 +2107,6 @@ $messages['oc'] = array(
 	'extdist-no-such-version' => 'L’extension « $1 » existís pas dins la version « $2 ».',
 	'extdist-choose-extension' => 'Seleccionatz l’extension que volètz telecargar :',
 	'extdist-submit-extension' => 'Contunhar',
-	'extdist-current-version' => 'Version de desvolopament (trunk)',
 	'extdist-choose-version' => "Sètz a telecargar l’extension <b>$1</b>.
 
 Seleccionatz vòstra version MediaWiki.
@@ -2178,7 +2137,7 @@ S'avètz de questions a prepaus d'aqueste sistèma de distribucion de las extens
 	'extdist-tar-error' => 'Tar a tornat lo còde de sortida $1 :', # Fuzzy
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  */
 $messages['or'] = array(
@@ -2219,7 +2178,6 @@ $messages['pl'] = array(
 	'extdist-no-such-version' => 'Rozszerzenie „$1” w wersji „$2” nie istnieje.',
 	'extdist-choose-extension' => 'Wybierz rozszerzenie, które chcesz pobrać:',
 	'extdist-submit-extension' => 'Kontynuuj',
-	'extdist-current-version' => 'Wersja rozwijana (trunk)',
 	'extdist-choose-version' => 'Do pobrania zostało wybrane rozszerzenie <b>$1</b>.
 
 Wybierz z listy wersję MediaWiki.
@@ -2305,7 +2263,6 @@ $messages['pt'] = array(
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'Versão de desenvolvimento (tronco)',
 	'extdist-choose-version' => '
 Está a descarregar a extensão <b>$1</b>.
 
@@ -2349,7 +2306,6 @@ $messages['pt-br'] = array(
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-current-version' => 'Versão em desenvolvimento (tronco)',
 	'extdist-choose-version' => 'Você está a descarregando a extensão <b>$1</b>.
 
 Selecione a versão do seu MediaWiki.
@@ -2393,7 +2349,6 @@ $messages['ro'] = array(
 	'extdist-no-such-extension' => 'Extensia "$1" inexistentă',
 	'extdist-no-such-version' => 'Extensia "$1" nu există în versiunea "$2".',
 	'extdist-submit-extension' => 'Continuă',
-	'extdist-current-version' => 'Versiune dezvoltare (trunchi)',
 	'extdist-choose-version' => 'Descărcați extensia <b>$1</b>.
 
 Alegeți versiunea dvs MediaWiki.
@@ -2461,7 +2416,6 @@ $messages['ru'] = array(
 	'extdist-no-such-version' => 'Версия $2 расширения «$1» не найдена.',
 	'extdist-choose-extension' => 'Выберите расширение для скачивания:',
 	'extdist-submit-extension' => 'Продолжить',
-	'extdist-current-version' => 'Разрабатываемая версия (trunk)',
 	'extdist-choose-version' => 'Вы скачиваете расширение <b>«$1»</b>.
 
 Выберите свою версию MediaWiki.
@@ -2503,7 +2457,6 @@ $messages['rue'] = array(
 	'extdist-no-such-version' => 'Росшырїня "$1" не єствує у верзії "$2".',
 	'extdist-choose-extension' => 'Выберте, котре росшырїня хочете скачати:',
 	'extdist-submit-extension' => 'Продовжыти',
-	'extdist-current-version' => 'Вывоёва верзія (trunk)',
 	'extdist-choose-version' => 'Тягате росшырїня <b>$1</b>.
 
 Выберьте верзію MediaWiki.
@@ -2545,7 +2498,6 @@ $messages['sah'] = array(
 	'extdist-no-such-version' => '"$1" тупсарыы "$2" барыла булуллубата.',
 	'extdist-choose-extension' => 'Тупсарыыны хачайдыырга тал:',
 	'extdist-submit-extension' => 'Салгыы',
-	'extdist-current-version' => 'Сайдар барыла (trunk)',
 	'extdist-choose-version' => '<b>«$1»</b> тупсарыыны хачайдаан эрэҕин.
 
 Бэйэҕэр турар MediaWiki барылын тал.
@@ -2587,7 +2539,6 @@ $messages['si'] = array(
 	'extdist-no-such-version' => '"$1" විස්තීරණය "$2" අනුවාදයෙහි නොපවතියි.',
 	'extdist-choose-extension' => 'ඔබට බාගැනීමට අවශ්‍ය විස්තීරණය තෝරන්න:',
 	'extdist-submit-extension' => 'ඉදිරියට යන්න',
-	'extdist-current-version' => 'සංවර්ධනයමය අනුවාදය (පිරිකසුව)',
 	'extdist-choose-version' => 'ඔබ බාගතකරමින් සිටින්නේ <b>$1</b> විස්තිර්ණයයි.
 
 ඔබේ මීඩියාවිකි අනුවාදය තෝරන්න.
@@ -2609,7 +2560,6 @@ $messages['sk'] = array(
 	'extdist-no-such-version' => 'Rozšírenie „$1” neexistuje vo verzii „$2”',
 	'extdist-choose-extension' => 'Vyberte, ktoré rozšírenie chcete stiahnuť:',
 	'extdist-submit-extension' => 'Pokračovať',
-	'extdist-current-version' => 'Vývojová verzia (trunk)',
 	'extdist-choose-version' => 'Sťahujete rozšírenie <b>$1</b>.
 
 Vyberte vašu verziu MediaWiki.
@@ -2653,7 +2603,6 @@ $messages['sl'] = array(
 	'extdist-no-such-version' => 'Razširitev »$1« v različici »$2« ne obstaja.',
 	'extdist-choose-extension' => 'Izberite, katero razširitev želite prenesti:',
 	'extdist-submit-extension' => 'Nadaljuj',
-	'extdist-current-version' => 'Razvojna različica (trunk)',
 	'extdist-choose-version' => 'Prenašate razširitev <b>$1</b>.
 
 Izberite svojo različico MediaWiki.
@@ -2715,7 +2664,6 @@ $messages['sv'] = array(
 	'extdist-no-such-version' => 'Tillägget "$1" finns inte i versionen "$2".',
 	'extdist-choose-extension' => 'Välj vilket tillägg du vill ladda ner:',
 	'extdist-submit-extension' => 'Fortsätt',
-	'extdist-current-version' => 'Utvecklingsversion (trunk)',
 	'extdist-choose-version' => '
 Du laddar ner tillägget <b>$1</b>.
 
@@ -2825,7 +2773,6 @@ $messages['tk'] = array(
 	'extdist-no-such-version' => '"$2" wersiýasynda "$1" giňeltmesi ýok.',
 	'extdist-choose-extension' => 'Düşürmek isleýän giňeltmäňizi saýlaň:',
 	'extdist-submit-extension' => 'Dowam et',
-	'extdist-current-version' => 'Ösdüriş wersiýasy (trunk)',
 	'extdist-no-versions' => 'Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!',
 	'extdist-submit-version' => 'Dowam et',
 	'extdist-want-more' => 'Başga giňeltme al',
@@ -2843,7 +2790,6 @@ $messages['tl'] = array(
 	'extdist-no-such-version' => 'Hindi umiiral ang karugtong na "$1" sa loob ng bersyong "$2".',
 	'extdist-choose-extension' => 'Piliin kung aling karugtong ang nais mong ikarga pababa:',
 	'extdist-submit-extension' => 'Ipagpatuloy',
-	'extdist-current-version' => 'Bersyon ng pagpapaunlad (baul)',
 	'extdist-choose-version' => "Ikinakarga mo pababa ang <b>$1</b> na karugtong.
 
 Piliin ang iyong bersyon ng MediaWiki.
@@ -2886,7 +2832,6 @@ $messages['tr'] = array(
 	'extdist-no-such-version' => '"$2" versiyonunda "$1" eklentisi mevcut değil.',
 	'extdist-choose-extension' => 'İndirmek istediğiniz eklentiyi seçin:',
 	'extdist-submit-extension' => 'Devam et',
-	'extdist-current-version' => 'Geliştirme sürümü (trunk)',
 	'extdist-choose-version' => '<b>$1</b> eklentisini indiriyosunuz.
 
 MedyaViki sürümünüzü seçin.
@@ -2943,7 +2888,6 @@ $messages['uk'] = array(
 	'extdist-no-such-version' => 'Розширення "$1" не існує у версії "$2".',
 	'extdist-choose-extension' => 'Виберіть розширення, яке ви хочете завантажити:',
 	'extdist-submit-extension' => 'Продовжити',
-	'extdist-current-version' => 'Версія в розробці (trunk)',
 	'extdist-choose-version' => 'Ви завантажуєте розширення <b>$1</b>.
 
 Оберіть Вашу версію MediaWiki.
@@ -2997,7 +2941,6 @@ $messages['vec'] = array(
 	'extdist-no-such-version' => 'L\'estension "$1" no la esiste in te la version "$2".',
 	'extdist-choose-extension' => 'Siegli quala estension te voli descargar:',
 	'extdist-submit-extension' => 'Continua',
-	'extdist-current-version' => 'Version de svilùpo (trunk)',
 	'extdist-choose-version' => "Te sì drio descargar l'estension <b>$1</b>.
 
 Selessiona la to version de MediaWiki.
@@ -3049,7 +2992,6 @@ $messages['vi'] = array(
 	'extdist-no-such-version' => 'Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.',
 	'extdist-choose-extension' => 'Chọn phần mở rộng bạn muốn tải về:',
 	'extdist-submit-extension' => 'Tiếp tục',
-	'extdist-current-version' => 'Phiên bản phát triển (trunk)',
 	'extdist-choose-version' => 'Bạn đang tải về phần mở rộng <b>$1</b>.
 
 Chọn phiên bản MediaWiki của bạn.
@@ -3102,7 +3044,6 @@ $messages['yue'] = array(
 	'extdist-no-such-version' => '個擴展 "$1" 唔存在於呢個版本 "$2" 度。',
 	'extdist-choose-extension' => '揀你要去下載嘅擴展:',
 	'extdist-submit-extension' => '繼續',
-	'extdist-current-version' => '現時版本 (trunk)', # Fuzzy
 	'extdist-choose-version' => '
 你而家下載緊 <b>$1</b> 擴展。
 
@@ -3151,7 +3092,6 @@ $messages['zh-hans'] = array(
 	'extdist-no-such-version' => '该扩展 "$1" 不存在于这个版本 "$2" 中。',
 	'extdist-choose-extension' => '选择要下载的扩展：',
 	'extdist-submit-extension' => '继续',
-	'extdist-current-version' => '开发版本（trunk）',
 	'extdist-choose-version' => '您将要下载<b>$1</b>扩展。
 
 请选择您的MediaWiki版本。
