@@ -2654,6 +2654,7 @@ $messages['sr-el'] = array(
 
 /** Swedish (svenska)
  * @author Boivie
+ * @author Jopparn
  * @author M.M.S.
  * @author WikiPhoenix
  */
@@ -2661,6 +2662,7 @@ $messages['sv'] = array(
 	'extensiondistributor' => 'Ladda ner tillägg till MediaWiki',
 	'extensiondistributor-desc' => 'Tillägg för distribution av övriga tillägg',
 	'extdist-not-configured' => 'Var god bekräfta $wgExtDistList och $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Det gick inte att hämta listan över programtillägg!',
 	'extdist-no-such-extension' => 'Ingen sådant tillägg "$1"',
 	'extdist-no-such-version' => 'Tillägget "$1" finns inte i versionen "$2".',
 	'extdist-choose-extension' => 'Välj vilket tillägg du vill ladda ner:',
@@ -2693,7 +2695,7 @@ Efter att du packat upp filerna, behöver du registrera programtillägget i Loca
 
 Om du har några frågor om programtilläggets distributionssystem, gå till [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Hämta andra tillägg',
-	'extdist-tar-error' => 'Tar returnerade utgångskod $1:', # Fuzzy
+	'extdist-tar-error' => 'Det gick inte att hämta arkiv-URL:en från arkiv-API:et.',
 );
 
 /** Tamil (தமிழ்)
