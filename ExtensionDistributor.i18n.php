@@ -861,6 +861,7 @@ $messages['eu'] = array(
  * @author Huji
  * @author Leyth
  * @author Mjbmr
+ * @author Reza1615
  * @author Wayiran
  * @author ZxxZxxZ
  */
@@ -868,6 +869,7 @@ $messages['fa'] = array(
 	'extensiondistributor' => 'بارگیری افزونهٔ مدیاویکی',
 	'extensiondistributor-desc' => 'افزونه‌ای برای انتشار بایگانی‌های لحظه‌ای از افزونه‌ها',
 	'extdist-not-configured' => 'لطفاً ‎$‎wgExtDistTarDir و ‎$wgExtDistArchiveAPI را تنظیم کنید',
+	'extdist-list-missing' => 'قادر به تهیهٔ فهرست افزونه‌ها نیست!',
 	'extdist-no-such-extension' => 'افزونه‌ای به نام «$1» وجود ندارد',
 	'extdist-no-such-version' => 'افزونهٔ «$1» در نسخهٔ «$2» وجود ندارد.',
 	'extdist-choose-extension' => 'افزونه‌ای را که می‌خواهید بارگیری کنید انتخاب کنید:',
@@ -899,7 +901,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 در صورتی که هرگونه پرسشی دربارهٔ سامانهٔ توزیع این افزونه دارید، لطفاً به [[Extension talk:ExtensionDistributor]] بروید.",
 	'extdist-want-more' => 'دریافت در قالبی دیگر',
-	'extdist-tar-error' => 'تار خطای خروج $1 برگرداند:', # Fuzzy
+	'extdist-tar-error' => 'قادر به تهیهٔ بایگانی نشانی اینترنتی از ای‌پی‌آی بایگانی نیست.',
 );
 
 /** Finnish (suomi)
