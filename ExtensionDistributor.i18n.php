@@ -2256,6 +2256,7 @@ S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Malafaya
  */
 $messages['pt'] = array(
@@ -2278,9 +2279,9 @@ A maioria das extensões funciona em várias versões do MediaWiki, portanto se 
 
 A URL deste instantâneo é:
 :$4
-Esta pode ser usada para descarregamento imediato para um servidor, mas por favor não a adicione aos seus favoritos, já que o conteúdo não será actualizado e poderá ser eliminado posteriormente.
+Esta pode ser usada para descarregamento imediato para um servidor, mas por favor não a adicione aos seus favoritos, já que o conteúdo não será atualizado e poderá ser eliminado posteriormente.
 
-Deve extrair o arquivo tar para o seu directório de extensões. Por exemplo, num sistema operativo tipo UNIX, use:
+Deve extrair o arquivo tar para o seu diretório de extensões. Por exemplo, num sistema operativo tipo UNIX, use:
 
 <pre>
 tar -xzf $5 -C /var/www/mediawiki/extensions
@@ -2288,9 +2289,9 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 No Windows, poderá usar o [http://www.7-zip.org/ 7-zip] para extrair os ficheiros.
 
-Se a sua wiki estiver localizada num servidor remoto, extraia os ficheiros para um directório temporário no seu computador local, e depois carregue '''todos''' os directórios e ficheiros extraídos para o directório de extensões da wiki no servidor.
+Se a sua wiki estiver localizada num servidor remoto, extraia os ficheiros para um diretório temporário no seu computador local, e depois carregue '''todos''' os diretórios e ficheiros extraídos para o diretório de extensões da wiki no servidor.
 
-Após colocar a extensão no directório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.
+Após colocar a extensão no diretório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
