@@ -2267,10 +2267,9 @@ $messages['pt'] = array(
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
 	'extdist-submit-extension' => 'Continuar',
-	'extdist-choose-version' => '
-Está a descarregar a extensão <b>$1</b>.
+	'extdist-choose-version' => 'Está a descarregar a extensão <b>$1</b>.
 
-Seleccione a sua versão do MediaWiki.
+Selecione a sua versão do MediaWiki.
 
 A maioria das extensões funciona em várias versões do MediaWiki, portanto se a sua versão do MediaWiki não aparecer aqui, ou se precisa das últimas funcionalidades da extensão, experimente usar a versão mais recente.',
 	'extdist-no-versions' => 'A extensão selecionada ($1) não está disponível em nenhuma versão!',
@@ -2407,6 +2406,7 @@ Ce tu tìne domande da fà sus a stu sisteme de distribuzione de estenzione, pe 
 );
 
 /** Russian (русский)
+ * @author KPu3uC B Poccuu
  * @author Kaganer
  * @author Kalan
  * @author MaxSem
@@ -2447,7 +2447,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 Если у вас есть вопрос об этой системе распространения расширений, пожалуйста, обратитесь к странице [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Скачать другое расширение',
-	'extdist-tar-error' => 'Tar вернул код ошибки $1:', # Fuzzy
+	'extdist-tar-error' => 'Не удается получить URL архива из архивного API.',
 );
 
 /** Rusyn (русиньскый)
