@@ -462,6 +462,14 @@ La majoria d'extensions funcionen a les diferents versions de Mediawiki, així q
 	'extdist-tar-error' => "L'ordre tar ha retornat un codi de sortida $1:", # Fuzzy
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'extdist-submit-extension' => 'Кхин дӀа',
+	'extdist-submit-version' => 'Кхин дӀа',
+);
+
 /** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
