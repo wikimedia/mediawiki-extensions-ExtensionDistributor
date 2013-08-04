@@ -1382,7 +1382,7 @@ Quando tu ha extrahite le files, tu debe registrar le extension in LocalSettings
 
 Si tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener un altere extension',
-	'extdist-tar-error' => 'Tar retornava le codice de exito $1:', # Fuzzy
+	'extdist-tar-error' => 'Impossibile obtener le URL de archivo per medio del API de archivo.',
 );
 
 /** Indonesian (Bahasa Indonesia)
