@@ -2145,7 +2145,7 @@ Un còp l’extraccion facha, auretz besonh d’enregistrar l’extension dins L
 
 S'avètz de questions a prepaus d'aqueste sistèma de distribucion de las extensions, anatz sus [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obténer una autra extension',
-	'extdist-tar-error' => 'Tar a tornat lo còde de sortida $1 :', # Fuzzy
+	'extdist-tar-error' => "Impossible d’analisar l’URL d'archiu de l’API d'archiu.",
 );
 
 /** Oriya (ଓଡ଼ିଆ)
