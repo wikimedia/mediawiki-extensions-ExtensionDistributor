@@ -2263,6 +2263,7 @@ S'a l'ha dle chestion su sto sistema ëd distribuì j'estension, për piasì ch'
 );
 
 /** Portuguese (português)
+ * @author Cainamarques
  * @author Hamilton Abreu
  * @author Luckas
  * @author Malafaya
@@ -2271,6 +2272,7 @@ $messages['pt'] = array(
 	'extensiondistributor' => 'Descarregar extensão MediaWiki',
 	'extensiondistributor-desc' => "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
 	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Não é possível buscar lista de extensões!',
 	'extdist-no-such-extension' => 'A extensão "$1" não existe',
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
@@ -2302,10 +2304,11 @@ Após colocar a extensão no diretório de extensões da sua wiki, terá de regi
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
-	'extdist-tar-error' => 'Tar retornou código de saída $1:', # Fuzzy
+	'extdist-tar-error' => 'Não foi possível encontrar o URL arquivado da API.',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Giro720
  */
@@ -2313,6 +2316,7 @@ $messages['pt-br'] = array(
 	'extensiondistributor' => 'Descarregar extensão MediaWiki',
 	'extensiondistributor-desc' => 'Extensão para distribuir arquivos snapshot de extensões',
 	'extdist-not-configured' => 'Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Não foi possível buscar lista de extensões!',
 	'extdist-no-such-extension' => 'A extensão "$1" não existe',
 	'extdist-no-such-version' => 'A extensão "$1" não existe na versão "$2".',
 	'extdist-choose-extension' => 'Selecione que extensão pretende descarregar:',
@@ -2344,7 +2348,7 @@ Após colocar a extensão no diretório de extensões da sua wiki, terá de regi
 
 Se tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obter outra extensão',
-	'extdist-tar-error' => 'Tar retornou código de saída $1:', # Fuzzy
+	'extdist-tar-error' => 'Não foi possível encontrar o URL arquivado da API.',
 );
 
 /** Romanian (română)
