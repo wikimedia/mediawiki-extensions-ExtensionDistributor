@@ -71,11 +71,14 @@ Parameters:
 	'extdist-no-versions' => 'Parameters:
 * $1 - extension name',
 	'extdist-submit-version' => '{{Identical|Continue}}',
-	'extdist-created' => '* $1 - extension
-* $2 - revision number
-* $3 - branch name
-* $4 - URL
-* $5 - filename',
+	'extdist-created' => 'Followed by the link text {{msg-mw|Extdist-want-more}}.
+
+Parameters:
+* $1 - extension name
+* $2 - revision number (SHA1, 7 characters)
+* $3 - branch name. e.g. master, REL1_21, REL1_20
+* $4 - URL which points to the .tar.gz file
+* $5 - filename of the .tar.gz file',
 	'extdist-want-more' => 'Used as link text in [[Special:ExtensionDistributor]].
 
 This message follows the Download icon.',
