@@ -1353,6 +1353,7 @@ $messages['ia'] = array(
 	'extensiondistributor' => 'Discargar extension MediaWiki',
 	'extensiondistributor-desc' => 'Extension pro distribuer archivos actualisate de extensiones',
 	'extdist-not-configured' => 'Per favor configura $wgExtDistList e $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Impossibile obtener le lista de extensiones.',
 	'extdist-no-such-extension' => 'Non existe un extension "$1"',
 	'extdist-no-such-version' => 'Le extension "$1" non existe in le version "$2".',
 	'extdist-choose-extension' => 'Selige le extension a discargar:',
