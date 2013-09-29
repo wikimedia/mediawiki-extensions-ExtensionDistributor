@@ -1664,6 +1664,7 @@ Wann De Frore övver dat Süßteem zom Zosätz erunger Lade haß, da jangk noh [
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'extensiondistributor' => 'MediaWiki Erweiderung eroflueden',
@@ -1674,11 +1675,11 @@ $messages['lb'] = array(
 	'extdist-no-such-version' => 'D\'Erweiderung "$1" gëtt et net an der Versioun "$2".',
 	'extdist-choose-extension' => 'Wielt wat fir eng Erweiderung Dir wëllt eroflueden:',
 	'extdist-submit-extension' => 'Viru fueren',
-	'extdist-choose-version' => "Dir sidd amgaang d'<b>$1</b> Erweiderung erofzelueden.
+	'extdist-choose-version' => "Dir sidd am Gaang d'<b>$1</b> Erweiderung erofzelueden.
 
 Wielt Är MediaWiki Versioun.
 
-Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neiste Fonctioune vun den Erweiderunge braucht, da versicht déi neiste Versioun ze benotzen.",
+Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neiste Funktioune vun den Erweiderunge braucht, da versicht déi neiste Versioun ze benotzen.",
 	'extdist-no-versions' => 'Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!',
 	'extdist-submit-version' => 'Viru fueren',
 	'extdist-want-more' => 'Eng aner Erweiderung benotzen',
@@ -2426,12 +2427,14 @@ Ce tu tìne domande da fà sus a stu sisteme de distribuzione de estenzione, pe 
  * @author Kaganer
  * @author Kalan
  * @author MaxSem
+ * @author Okras
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'extensiondistributor' => 'Скачать расширения MediaWiki',
 	'extensiondistributor-desc' => 'Расширение для скачивания дистрибутивов с расширениями',
 	'extdist-not-configured' => 'Пожалуйста, задайте $wgExtDistList и $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'Не удаётся получить список расширений!',
 	'extdist-no-such-extension' => 'Расширение «$1» не найдено',
 	'extdist-no-such-version' => 'Версия $2 расширения «$1» не найдена.',
 	'extdist-choose-extension' => 'Выберите расширение для скачивания:',
