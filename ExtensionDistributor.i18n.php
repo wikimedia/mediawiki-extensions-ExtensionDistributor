@@ -1679,7 +1679,7 @@ $messages['lb'] = array(
 
 Wielt Är MediaWiki Versioun.
 
-Déi meescht Erweiderunge fonctionnéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neiste Funktioune vun den Erweiderunge braucht, da versicht déi neiste Versioun ze benotzen.",
+Déi meescht Erweiderunge funktionéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neist Funktioune vun den Erweiderunge braucht, da versicht déi neist Versioun ze benotzen.",
 	'extdist-no-versions' => 'Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!',
 	'extdist-submit-version' => 'Viru fueren',
 	'extdist-want-more' => 'Eng aner Erweiderung benotzen',
