@@ -1197,6 +1197,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 /** Hindi (हिन्दी)
  * @author Ansumang
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'extensiondistributor' => 'डाउनलोड़ मीडियाविकि एक्सटेंशन',
@@ -1213,7 +1214,7 @@ $messages['hi'] = array(
 अधिकांश एक्सटेंशन मीडियाविकि के एकाधिक संस्करणों में कम करते हैं, तो यदि आपके मीडियाविकि संस्करण यहाँ नहीं है, या यदि आपको नवीनतम विस्तार सुविधाओं की जरूरत है, वर्तमान संस्करण का उपयोग करें ।',
 	'extdist-submit-version' => 'जारी रखें',
 	'extdist-want-more' => 'अन्य एक्सटेन्शन पाएँ',
-	'extdist-tar-error' => 'तार लौटे निकास कोड़ $1:', # Fuzzy
+	'extdist-tar-error' => 'पुरालेख ए॰पी॰आई से पुरालेख यू॰आर॰एल नहीं नहीं पाया जा सका।',
 );
 
 /** Croatian (hrvatski)
