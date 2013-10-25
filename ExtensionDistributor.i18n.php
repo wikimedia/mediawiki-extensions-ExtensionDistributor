@@ -1831,6 +1831,16 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 	'extdist-tar-error' => 'ടാർ എക്സിറ്റ് കോഡ് $1 തിരിച്ചയച്ചിരിക്കുന്നു:', # Fuzzy
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'extensiondistributor' => 'मिडियाविकि विस्तारकाचे अधिभारण करा',
+	'extdist-submit-extension' => 'चालू ठेवा',
+	'extdist-submit-version' => 'चालू ठेवा',
+	'extdist-want-more' => 'दुसरे विस्तारक मिळवा',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  * @author Aurora
