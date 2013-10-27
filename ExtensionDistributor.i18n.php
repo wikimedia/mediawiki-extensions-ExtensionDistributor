@@ -1581,7 +1581,7 @@ $messages['km'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'extensiondistributor' => '미디어위키 확장 기능 내려받기',
+	'extensiondistributor' => '미디어위키 확장 기능 다운로드',
 	'extensiondistributor-desc' => '확장 기능의 스냅샷 아카이브 배포를 위한 확장 기능',
 	'extdist-not-configured' => '$wgExtDistList와 $wgExtDistArchiveAPI를 설정하세요.',
 	'extdist-list-missing' => '확장 기능 목록을 가져올 수 없습니다!',
@@ -1596,9 +1596,9 @@ $messages['ko'] = array(
 대부분의 확장 기능은 미디어위키의 여러 버전에서도 동작합니다, 당신의 미디어위키 확장 기능이 여기 없거나 최신 버전이 필요하다면, 현재 버전 다운로드를 선택하세요.',
 	'extdist-no-versions' => '선택한 확장 기능($1)이 어떤 버전으로도 존재하지 않습니다.',
 	'extdist-submit-version' => '계속',
-	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 묶음 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행됩니다.
+	'extdist-created' => "미디어위키 확장 기능 <b>$1</b>의 <b>$2</b> 버전의 스냅샷 <b>$3</b> 이 만들어졌습니다. 5초 후에 다운로드가 자동적으로 실행됩니다.
 
-묶음의 URL은 다음에 있습니다:
+스냅샷의 URL은 다음에 있습니다:
 :$4
 이 URL은 서버에서 즉시 다운로드할 때 사용될 것입니다. 하지만 즐겨찾기에 추가하지는 마세요. 내용이 업데이트되지 않고, 나중에 이 URL은 삭제될 것입니다.
 
@@ -1615,7 +1615,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 압축을 푼 후, 확장 기능을 LocalSettings.php에 등록해야 합니다. 확장 기능의 설명 문서가 어떻게 확장 기능을 등록하는 지에 대한 설명을 담고 있습니다.
 
 이 확장 기능에 대해 어떤 질문이 있다면, [[Extension talk:ExtensionDistributor]] 문서로 가세요.",
-	'extdist-want-more' => '다른 확장 기능 내려받기',
+	'extdist-want-more' => '다른 확장 기능 얻기',
 	'extdist-tar-error' => '아카이브 API에서 아카이브 URL을 가져올 수 없습니다.',
 );
 
