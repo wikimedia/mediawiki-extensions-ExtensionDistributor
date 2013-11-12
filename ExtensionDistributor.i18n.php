@@ -615,6 +615,7 @@ Sofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterun
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Gorizon
  * @author Mirzali
  * @author Reedy
  * @author Xoser
@@ -623,6 +624,7 @@ $messages['diq'] = array(
 	'extensiondistributor' => 'Extensiyonê MediyaWikiyî bar bike',
 	'extensiondistributor-desc' => 'Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî',
 	'extdist-not-configured' => 'Kerem ke $wgExtDistList u $wgExtDistArchiveAPI awan ke',
+	'extdist-list-missing' => 'Derganeya listi néşa biyaro!',
 	'extdist-no-such-extension' => '"$1" name dı oleken çıniyo',
 	'extdist-no-such-version' => 'Versiyonê "$2"î de ekstensiyonê "$1"î çini yo',
 	'extdist-choose-extension' => 'Ekstensiyon ke ti wazeno bar bike ey weçine:',
@@ -654,7 +656,7 @@ badê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumanta
 
 Eke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Yewna oleken bigere',
-	'extdist-tar-error' => 'Kodê tar return exitî $1:', # Fuzzy
+	'extdist-tar-error' => "Kodê arşiv da URL' ra URL",
 );
 
 /** Lower Sorbian (dolnoserbski)
