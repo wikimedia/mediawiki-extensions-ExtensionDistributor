@@ -793,6 +793,7 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
  * @author Armando-Martin
  * @author Bernardom
  * @author Crazymadlover
+ * @author Fitoschido
  * @author Imre
  * @author Pertile
  * @author Platonides
@@ -803,6 +804,7 @@ $messages['es'] = array(
 	'extensiondistributor' => 'Descargar extensión MediaWiki',
 	'extensiondistributor-desc' => 'Extensión para la distribución de archivos de instantáneas de las extensiones',
 	'extdist-not-configured' => 'Por favor configure $wgExtDistList y $wgExtDistArchiveAPI',
+	'extdist-list-missing' => 'No se pudo recuperar la lista de extensiones.',
 	'extdist-no-such-extension' => 'No existe la extensión «$1»',
 	'extdist-no-such-version' => 'la extensión "$1" no existe en la versión "$2".',
 	'extdist-choose-extension' => 'Seleccione qué extensión desea descargar:',
