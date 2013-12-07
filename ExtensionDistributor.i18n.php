@@ -473,7 +473,7 @@ $messages['ce'] = array(
 	'extdist-submit-version' => 'Кхин дӀа',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Matěj Grabovský
  * @author Mormegil
  */
