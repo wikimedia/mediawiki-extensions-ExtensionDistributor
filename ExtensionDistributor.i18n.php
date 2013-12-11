@@ -1508,7 +1508,7 @@ $messages['ja'] = array(
 	'extdist-no-such-version' => '拡張機能「$1」にバージョン「$2」は存在しません。',
 	'extdist-choose-extension' => 'ダウンロードしたい拡張機能を選択してください:',
 	'extdist-submit-extension' => '続行',
-	'extdist-choose-version' => '拡張機能 <b>$1</b> をダウンロードしようとしています。
+	'extdist-choose-version' => '<b>$1</b> 拡張機能をダウンロードしようとしています。
 
 ご使用中の MediaWiki のバージョンを選択してください。
 
