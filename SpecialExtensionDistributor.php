@@ -90,7 +90,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 		$out->addWikiMsg( 'extdist-choose-extension' );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
-				'action' => $this->getTitle()->getLocalUrl(),
+				'action' => $this->getPageTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
 			Xml::openElement( 'select', array(
 				'name' => 'extdist_extension' ) ) .
@@ -129,7 +129,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 		$out->addWikiMsg( 'extdist-choose-version', $extensionName );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
-				'action' => $this->getTitle()->getLocalUrl(),
+				'action' => $this->getPageTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
 			Xml::element( 'input' , array(
 				'type' => 'hidden',
@@ -180,7 +180,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 			$version, $info['url'], $info['archive'] );
 		$this->getOutput()->addHTML(
 			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
-			Linker::link( $this->getTitle(),
+			Linker::link( $this->getPageTitle(),
 				Xml::element( 'img', array( 'src' => $downloadImg ) ) .
 				$this->msg( 'extdist-want-more' )->escaped() ) .
 			Xml::closeElement( 'p' ) . "\n"
