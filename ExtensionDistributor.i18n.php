@@ -517,6 +517,7 @@ Případné dotazy k tomuto systému distribuce rozšíření můžete klást na
 );
 
 /** Danish (dansk)
+ * @author Christian List
  * @author Peter Alberti
  */
 $messages['da'] = array(
@@ -528,7 +529,7 @@ $messages['da'] = array(
 	'extdist-submit-extension' => 'Fortsæt',
 	'extdist-submit-version' => 'Fortsæt',
 	'extdist-want-more' => 'Hent en anden udvidelse',
-	'extdist-tar-error' => 'Tar gav returkoden $1:', # Fuzzy
+	'extdist-tar-error' => 'Ude af stand til at hente arkiv URL fra arkiv API.',
 );
 
 /** German (Deutsch)
