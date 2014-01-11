@@ -793,6 +793,7 @@ Se vi havas iujn ajn demandojn pri ĉi tiu kromprograma distribuada sistemo, bon
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bernardom
+ * @author Ciencia Al Poder
  * @author Crazymadlover
  * @author Fitoschido
  * @author Imre
@@ -837,7 +838,7 @@ Después de extraer los archivos, necesitarás registrar la extensión en LocalS
 
 Si tienes cualquier duda sobre este sistema de distribución de extensiones, por favor ve a [[Extension talk:ExtensionDistributor]].",
 	'extdist-want-more' => 'Obtener otra extensión',
-	'extdist-tar-error' => 'Tar ha devuelto el código de salida $1:', # Fuzzy
+	'extdist-tar-error' => 'No fue posible obtener la URL del archivo desde la API del archivo.',
 );
 
 /** Estonian (eesti)
