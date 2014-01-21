@@ -469,8 +469,11 @@ La majoria d'extensions funcionen a les diferents versions de Mediawiki, així q
  * @author Умар
  */
 $messages['ce'] = array(
+	'extdist-no-such-extension' => 'Шордар «$1» цакарий',
+	'extdist-choose-extension' => 'Хьаржа шордар чудаккха:',
 	'extdist-submit-extension' => 'Кхин дӀа',
 	'extdist-submit-version' => 'Кхин дӀа',
+	'extdist-want-more' => 'Чудаккха кхин шордар',
 );
 
 /** Czech (čeština)
