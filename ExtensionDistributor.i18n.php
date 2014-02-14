@@ -1805,6 +1805,7 @@ $messages['ml'] = array(
 	'extensiondistributor' => 'മീഡിയവിക്കി അനുബന്ധം ഡൗൺലോഡ് ചെയ്യുക',
 	'extensiondistributor-desc' => 'അനുബന്ധങ്ങളുടെ തത്സമയ സഞ്ചയങ്ങൾ വിതരണം ചെയ്യാനുള്ള അനുബന്ധം',
 	'extdist-not-configured' => 'ദയവായി $wgExtDistList, $wgExtDistArchiveAPI എന്നിവ ക്രമീകരിക്കുക',
+	'extdist-list-missing' => 'അനുബന്ധങ്ങളുടെ പട്ടിക എടുക്കാൻ കഴിയുന്നില്ല!',
 	'extdist-no-such-extension' => '"$1" എന്നൊരു അനുബന്ധം ഇല്ല',
 	'extdist-no-such-version' => '"$2" പതിപ്പിൽ "$1" എന്നൊരു അനുബന്ധം ഇല്ല.',
 	'extdist-choose-extension' => 'താങ്കൾക്ക് ഡൗൺലോഡ് ചെയ്യേണ്ട അനുബന്ധം തിരഞ്ഞെടുക്കുക:',
@@ -1837,7 +1838,7 @@ tar -xzf $5 -C /var/www/mediawiki/extensions
 
 ഈ അനുബന്ധ വിതരണ സംവിധാനത്തെ കുറിച്ച് എന്തെങ്കിലും ചോദ്യങ്ങൾ താങ്കൾക്കുണ്ടെങ്കിൽ, ദയവായി [[Extension talk:ExtensionDistributor|ബന്ധപ്പെട്ട സംവാദം താൾ]] പരിശോധിക്കുക.",
 	'extdist-want-more' => 'മറ്റൊരു അനുബന്ധം നേടുക',
-	'extdist-tar-error' => 'ടാർ എക്സിറ്റ് കോഡ് $1 തിരിച്ചയച്ചിരിക്കുന്നു:', # Fuzzy
+	'extdist-tar-error' => 'ആർക്കൈവ് എ.പി.ഐ.യിൽ നിന്നും ആർക്കൈവ് യു.ആർ.എൽ. എടുക്കാനാവുന്നില്ല.',
 );
 
 /** Marathi (मराठी)
