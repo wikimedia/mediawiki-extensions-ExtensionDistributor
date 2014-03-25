@@ -367,6 +367,7 @@ $messages['br'] = array(
 	'extensiondistributor' => 'Pellgargañ an astenn MediaWiki',
 	'extensiondistributor-desc' => 'Astenn evit dasparzh dielloù en ur mare bennak eus an astennoù',
 	'extdist-not-configured' => 'Mar plij keflunit $wgExtDistList ha $wgExtDistArchiveAPI',
+	'extdist-list-missing' => "Ne c'haller ket tapout roll an astennoù !",
 	'extdist-no-such-extension' => 'N\'eus ket eus an astenn "$1"',
 	'extdist-no-such-version' => 'N\'eus ket eus an astenn "$1" en doare "$2".',
 	'extdist-choose-extension' => "Dibabit peseurt astenn ho peus c'hoant pellgargañ :",
