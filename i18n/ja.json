@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aotake",
+            "Fryed-peach",
+            "Marine-Blue",
+            "Ohgi",
+            "Shirayuki",
+            "Whym"
+        ]
+    },
+    "extensiondistributor": "MediaWiki 拡張機能のダウンロード",
+    "extensiondistributor-desc": "拡張機能のスナップショットのアーカイブを配布するための拡張機能",
+    "extdist-not-configured": "$wgExtDistList および $wgExtDistArchiveAPI の設定を行ってください",
+    "extdist-list-missing": "拡張機能一覧を取得できません!",
+    "extdist-no-such-extension": "「$1」という拡張機能はありません",
+    "extdist-no-such-version": "拡張機能「$1」にバージョン「$2」は存在しません。",
+    "extdist-choose-extension": "ダウンロードしたい拡張機能を選択してください:",
+    "extdist-submit-extension": "続行",
+    "extdist-choose-version": "<b>$1</b> 拡張機能をダウンロードしようとしています。\n\nご使用中の MediaWiki のバージョンを選択してください。\n\n多くの拡張機能は複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、または拡張機能の最新の機能が必要な場合は、最新版をお試しください。",
+    "extdist-no-versions": "選択した拡張機能 ($1) はどのバージョンでも利用できません!",
+    "extdist-submit-version": "選択",
+    "extdist-created": "MediaWiki <b>$3</b> の拡張機能 <b>$1</b> バージョン <b>$2</b> のスナップショットが作成されました。5秒後、自動的にダウンロードが開始されます。\n\nこのスナップショットのURLは次の通りです:\n:$4\nコンテンツのアップデートに対応できないため、また、ファイルは数日後に削除される可能性があるため、今すぐダウンロードし、このアドレスをブックマークしないでください。\n\ntar アーカイブは拡張機能ディレクトリに展開してください。Unix 系の OS では、下記のようにします。\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindowsでは[http://www.7-zip.org/ 7-zip]がアーカイブの展開に利用できます。\n\nウィキを遠隔サーバーに設置している場合、ローカルコンピューターの一時ディレクトリにアーカイブを展開し、アーカイブに含まれていた'''すべての'''ファイルをサーバー上の拡張機能ディレクトリへアップロードしてください。\n\nファイルをすべて展開したら、その拡張機能を LocalSettings.php へ登録する必要があります。具体的な作業手順は各拡張機能のドキュメントで解説されています。\n\nこの拡張機能の配布システムに何かご質問がある場合は、[[Extension talk:ExtensionDistributor]] でお尋ねください。",
+    "extdist-want-more": "他の拡張機能を入手",
+    "extdist-tar-error": "アーカイブ API で アーカイブ URL から取得できません。"
+}

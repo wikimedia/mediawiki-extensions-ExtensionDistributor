@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia",
+            "Liangent",
+            "Mark85296341",
+            "Shinjiman",
+            "Simon Shek"
+        ]
+    },
+    "extensiondistributor": "下載 MediaWiki 擴充套件",
+    "extensiondistributor-desc": "發布擴充套件存檔映像的擴充套件",
+    "extdist-not-configured": "請設定 $wgExtDistList 和 $wgExtDistArchiveAPI",
+    "extdist-list-missing": "無法讀取擴展清單！",
+    "extdist-no-such-extension": "沒有這個擴充套件「$1」",
+    "extdist-no-such-version": "該擴充套件「$1」不存在於這個版本「$2」中。",
+    "extdist-choose-extension": "選擇您要去下載的擴充套件：",
+    "extdist-submit-extension": "繼續",
+    "extdist-choose-version": "您現正下載 <b>$1</b> 擴充套件。\n\n選擇您要的 MediaWiki 版本。\n\n多數的擴充套件都可以在多個 MediaWiki 版本上執行，如果您的 MediaWiki 版本不存在，又或者您需要最新的擴充套件功能的話，可嘗試用最新的版本。",
+    "extdist-no-versions": "所選擇擴充套件 （$1） 不適用於任何的版本！",
+    "extdist-submit-version": "繼續",
+    "extdist-created": "已創建的定制<b>$3</b> 的<b>$1</b> 擴展的版本<b>$2</b> 的快照。您下載應在 5 秒後自動啟動。\n\n，此快照的 URL 是：\n:$4\n，可用於直接下載到一個的服務器，但請不要不書籤它，因為內容將不會更新，和它可能在晚些時候會被刪除。\n\ntar 存檔應提取到您擴展的目錄。為例對一個類似 unix 的操作系統：\n\n<pre>\ntar -xzf $5-C /var/www/mediawiki/extensions\n</pre>\n\n在Windows 中，可以使用[http://www.7-zip.org/ 7-zip] 解壓縮文件。\n\n遠程服務器上如果您維基提取到一個臨時目錄在本地計算機上的文件，然後將上傳'''所有'''的解壓縮的文件擴展名的目錄在服務器上。\n\n提取文件後，您將需要在LocalSettings.php 中註冊擴展。擴展的文檔應有說明如何執行此操作。\n\n有關於此擴展名配電系統的任何問題，請轉到[[Extension talk:ExtensionDistributor]]。",
+    "extdist-want-more": "取得另一個擴充套件",
+    "extdist-tar-error": "無法從存檔API讀取存檔URL。"
+}

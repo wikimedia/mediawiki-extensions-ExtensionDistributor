@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "AnakngAraw"
+        ]
+    },
+    "extensiondistributor": "Ikarga pababa ang karugtong na pang-MediaWiki",
+    "extensiondistributor-desc": "Karugtong para sa pagpapamahagi ng sinupan/arkibo ng mga karugtong na para sa mga kuha ng larawan/litrato",
+    "extdist-not-configured": "Paki-isaayos ang $wgExtDistList at $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Walang ganyang karugtong na \"$1\"",
+    "extdist-no-such-version": "Hindi umiiral ang karugtong na \"$1\" sa loob ng bersyong \"$2\".",
+    "extdist-choose-extension": "Piliin kung aling karugtong ang nais mong ikarga pababa:",
+    "extdist-submit-extension": "Ipagpatuloy",
+    "extdist-choose-version": "Ikinakarga mo pababa ang <b>$1</b> na karugtong.\n\nPiliin ang iyong bersyon ng MediaWiki.\n\nGumagawa sa kahabaan ng maramihang mga bersyon ng MediaWiki ang karamihan sa mga karugtong, kaya't kung ang iyong bersyon ng MediaWiki ay hindi dito, o kung kailangan mo ng isang pinakabagong mga kasangkapang-katangian ng karugtong, subuking gamitin ang pangkasalukuyang bersyon.",
+    "extdist-no-versions": "Hindi makukuha mula sa loob ng anumang bersyon ang napiling karugtong na ($1)!",
+    "extdist-submit-version": "Ipagpatuloy",
+    "extdist-created": "Nalikha ang isang kuhang larawan ng bersyong <b>$2</b> ng dugtong na <b>$1</b> para sa MediaWiki na <b>$3</b>. Dapat na kusang magsimula ang iyong pagkakargang paibaba sa loob ng 5 mga segundo.\n\nAng URL para sa kuhang larawang ito ay:\n:$4\nMaaaring gamitin ito para sa kaagad na pagkakargang paibaba patungo sa isang tagapaghain, ngunit huwag itong lagyan ng panandang pang-aklat, dahil hindi maisasapanahon ang mga nilalaman, at maaaring mabura ito sa paglaon.\n\nDapat na hanguin ang sinupan ng tar patungo sa iyong direktoryo ng mga dugtong.  Halimbawa, sa isang mistulang unix na OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nSa Windows, maaari mong gamitin ang [http://www.7-zip.org/ 7-zip] upang humango ng mga talaksan.\n\nKung ang wiki mo ay nasa isang malayong tagapaghain, hanguin ang mga talaksan patungo sa isang pansamantalang direktoryo na nasa iyong lokal na kompyuter, at pagkatapos ay ikarga paitaas ang '''lahat''' ng nahangong mga talaksan papunta sa direktoryo ng mga dugtong na nasa ibabaw ng tagapaghain.\n\nPagkaraan mong mahango ang mga talaksan, kailangan mong ipatala ang mga dugtong sa LocalSettings.php.  Ang dokumentasyon ng dugtong ay dapat na may mga panuto kung paano ito gagawin.\n\nKung mayroon kang anumang mga katanungan hinggil sasistema ng pagpapamahagi ng dugtong na ito, mangyaring pumunta sa [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Kumuha ng iba pang karugtong",
+    "extdist-tar-error": "Ibinalik ng pormat na ''tar'' ang kodigo sa paglabas na $1:"
+}

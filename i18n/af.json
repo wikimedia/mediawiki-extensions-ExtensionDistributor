@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Naudefj",
+            "පසිඳු කාවින්ද"
+        ]
+    },
+    "extensiondistributor": "Laai MediaWiki-uitbreiding af",
+    "extensiondistributor-desc": "Uitbreiding vir die verspreiding van die momentopname argiewe van uitbreidings",
+    "extdist-not-configured": "Stel asseblief $wgExtDistList en $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Die uitbreiding \"$1\" bestaan nie",
+    "extdist-choose-extension": "Kies die uitbreiding wat jy wil aflaai:",
+    "extdist-submit-extension": "Gaan voort",
+    "extdist-submit-version": "Gaan voort",
+    "extdist-want-more": "Laai nog 'n uitbreiding af",
+    "extdist-tar-error": "TAR stuur die volgende kode terug $1:"
+}

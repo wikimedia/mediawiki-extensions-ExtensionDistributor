@@ -58,6 +58,7 @@ $wgExtDistProxy = false;
 $dir = __DIR__ . '/';
 
 // Internationlization files
+$wgMessagesDirs['ExtensionDistributor'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.i18n.php';
 $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDistributor.alias.php';
 

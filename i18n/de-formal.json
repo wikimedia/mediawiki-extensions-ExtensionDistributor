@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Imre",
+            "Kghbln",
+            "MichaelFrey",
+            "Umherirrender"
+        ]
+    },
+    "extdist-not-configured": "Bitte konfigurieren Sie die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistArchiveAPI</code>.",
+    "extdist-choose-extension": "Bitte wählen Sie eine Erweiterung zum Herunterladen aus:",
+    "extdist-choose-version": "Sie können gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.\n\nBitte wählen Sie zunächst die von Ihnen genutzte MediaWiki-Version.\n\nDie meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern Ihre MediaWiki-Version hier nicht aufgeführt ist oder Sie die neuesten Funktionen einer Erweiterung nutzen möchten, versuchen Sie es mit der aktuellen Entwicklerversion (master). Beachten Sie allerdings, dass diese noch Softwarefehler enthalten könnte.",
+    "extdist-created": "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.\n\nDie URL für den Schnappschuss lautet:\n:$4\nDie URL ist allerdings nur zum sofortigen Herunterladen gedacht. Speichern Sie sie daher nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zudem zu einem späteren Zeitpunkt gelöscht sein kann.\n\nDas Tar-Archiv muss in das Installationsverzeichnis für die Erweiterungen entpackt werden. Auf einem Unix-ähnlichen Betriebssystem wird dies wie folgt gemacht:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nUnter Windows können Sie das Programm [http://www.7-zip.org/ 7-zip] zum Entpacken der Dateien verwenden.\n\nSofern Ihr Wiki auf einem entfernten Server läuft, entpacken Sie die Dateien zunächst in ein temporäres Verzeichnis auf Ihrem lokalen Computer und laden Sie dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.\n\nNachdem Sie die Dateien entpackt haben, müssen Sie die Erweiterung noch in der Datei <code>LocalSettings.php</code> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.\n\nSofern Sie Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen haben, nutzen Sie bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]]."
+}

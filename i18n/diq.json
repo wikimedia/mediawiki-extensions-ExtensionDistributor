@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aspar",
+            "Erdemaslancan",
+            "Gorizon",
+            "Mirzali",
+            "Reedy",
+            "Xoser"
+        ]
+    },
+    "extensiondistributor": "Extensiyonê MediyaWikiyî bar bike",
+    "extensiondistributor-desc": "Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî",
+    "extdist-not-configured": "Kerem ke $wgExtDistList u $wgExtDistArchiveAPI awan ke",
+    "extdist-list-missing": "Derganeya listi néşa biyaro!",
+    "extdist-no-such-extension": "\"$1\" name dı oleken çıniyo",
+    "extdist-no-such-version": "Versiyonê \"$2\"î de ekstensiyonê \"$1\"î çini yo",
+    "extdist-choose-extension": "Ekstensiyon ke ti wazeno bar bike ey weçine:",
+    "extdist-submit-extension": "Dewam ke",
+    "extdist-choose-version": "Şımaye olekene  <b>$1</b>i ronane\n\nVersiyonê MedyaWikiyi weçinê.\n\nZaf olekene versiyonê MedyaWikiyi de xebıtyeni, eke versiyonê MedyaWikiyi yê şıma tiya de çıniyo, versiyonê rocaneyi fına karfiyê.",
+    "extdist-no-versions": "Ektensiyonan ($1) ke ti weçina versiyanan bînan de çini yo!",
+    "extdist-submit-version": "Dewam ke",
+    "extdist-created": "qey yew lehza esayişê parçeyê <b>$1</b>i u versiyonê <b>$2</b>i MediaWiki <b>$3</b> vıraziya. gani war ardışê şıma zerreyê panc deqiqe de bı otomatik destpêbıkero.\n\nesayişê URLyi yê lehzayek:\n:$4\nno, qey war ardışê pêşkeşwaneki şuxuliyeno labele muhtewa rocane nêbena u ihtimalê hewnakerdışi zi esto nê sebeban ra işaretê cayan têarê mekerê.\n\narşiwê tari gani bıveciyo parçeya rêzbiyayişi. misal, sistemê karkerdışê tipê unix'an de:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows de, qey vetışê dosyayan şıma eşkêni [http://www.7-zip.org/ 7-zip] bışuxulni.\n\nEke wikiya şıma yew pêşkeşwano dûr de ya, dosyayanê xo compiterê xo u dıma '''heme''' dosyayê veteyan parçeya rêzkerdışê compiteri de kopya bıkerê.\n\nbadê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumantasyonê parçeyi raye mocnena şıma.\n\nEke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Yewna oleken bigere",
+    "extdist-tar-error": "Kodê arşiv da URL' ra URL"
+}

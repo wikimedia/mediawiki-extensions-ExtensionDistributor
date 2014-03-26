@@ -1,0 +1,19 @@
+{
+    "@metadata": {
+        "authors": [
+            "Chrisportelli"
+        ]
+    },
+    "extensiondistributor": "Niżżel estensjoni MediaWiki",
+    "extensiondistributor-desc": "Estensjoni sabiex tiddistribwixxi arkivji ta' ritratti istantanji tal-estensjonijiet",
+    "extdist-not-configured": "Jekk jogħġbok ikkonfigura $wgExtDistList u $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Ma teżisti l-ebda estensjoni bl-isem \"$1\"",
+    "extdist-no-such-version": "L-estensjoni \"$1\" ma teżistix fil-verżjoni \"$2\".",
+    "extdist-choose-extension": "Agħżel liema estenjoni xi tniżżel:",
+    "extdist-submit-extension": "Kompli",
+    "extdist-choose-version": "Inti qiegħed tniżżel l-estensjoni <b>$1</b>.\n\nAgħżel il-verżjoni tal-MediaWiki tiegħek.\n\nĦafna mill-estensjonijiet jaħdmu fuq diversi verżjonijiet tal-MediaWiki, għalhekk jekk il-verżjoni tal-MediaWiki mhix hawnhekk, jew għandek bżonn tal-aħħar funzjonijiet tal-estensjoni, ipprova uża l-verżjoni attwali.",
+    "extdist-no-versions": "L-estensjoni magħżula ($1) mhijiex disponibbli fl-ebda verżjoni!",
+    "extdist-submit-version": "Kompli",
+    "extdist-want-more": "Ġib estensjoni oħra",
+    "extdist-tar-error": "Tar irritorna l-''exit code'' segwenti $1:"
+}

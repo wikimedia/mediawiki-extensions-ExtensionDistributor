@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bennylin",
+            "Farras",
+            "Irwangatot",
+            "IvanLanin",
+            "Kenrick95"
+        ]
+    },
+    "extensiondistributor": "Unduh pengaya MediaWiki",
+    "extensiondistributor-desc": "Ekstensi untuk mendistribusikan arsip snapshot ekstensi",
+    "extdist-not-configured": "Silakan mengkonfigurasi $wgExtDistList dan $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Tidak ada ekstensi \"$1\"",
+    "extdist-no-such-version": "\n\nEkstensi \"$1\" tidak ada dalam versi \"$2\".",
+    "extdist-choose-extension": "\n\nPilih ekstensi yang ingin Anda unduh:",
+    "extdist-submit-extension": "Lanjutkan",
+    "extdist-choose-version": "Anda mengunduh  <b>$1</b> ekstensi.\n\nPilih versi MediaWiki anda.\n\nKebanyakan ekstensi bekerja di beberapa versi program MediaWiki, jadi jika versi MediaWiki Anda tidak ada di sini, atau jika Anda membutuhkan fitur ekstensi terbaru, coba gunakan versi terbaru.",
+    "extdist-no-versions": "Ekstensi terpilih ($1) tidak tersedia di versi mana pun!",
+    "extdist-submit-version": "Lanjutkan",
+    "extdist-created": "Sebuah versi cuplikan <b>$2</b> dari ekstensi <b>$1</b> untuk MediaWiki <b>$3</b> telah dibuat. Unduhan Anda akan dimulai secara otomatis dalam 5 detik.\n\nURL untuk cuplikan ini adalah:\n:$4\nTautan ini dapat digunakan untuk mengunduh langsung ke server, tetapi jangan tandai karena isinya tidak akan diperbarui dan dapat dihapus di kemudian hari.\n\nArsip tar harus diekstrak ke direktori ekstensi Anda. Sebagai contoh, pada sistem operasi keluarga UNIX:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPada Windows, Anda dapat menggunakan [http://www.7-zip.org/ 7-zip] untuk mengekstrak file.\n\nJika wiki Anda di server jauh, ekstrak berkas ke direktori sementara pada komputer lokal Anda, dan kemudian unggah '''semua''' berkas yang diekstrak ke direktori ekstensi pada server.\n\nSetelah mengekstrak berkas, Anda harus mendaftarkan ekstensi di LocalSettings.php. Dokumentasi ekstensi seharusnya memberikan petunjuk tentang cara untuk melakukan hal ini.\n\nJika Anda memiliki pertanyaan tentang sistem distribusi ekstensi ini, silakan tuju ke [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "\n\nDapatkan ekstensi lain",
+    "extdist-tar-error": "Tidak mampu mendapatkan URL arsip dari API arsip."
+}

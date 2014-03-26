@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Als-Holder"
+        ]
+    },
+    "extensiondistributor": "MediaWiki-Erwyterige abelade",
+    "extensiondistributor-desc": "Erwyterig fir d Verteilig vu Schnappschuss-Archiv vu Erwyterige",
+    "extdist-not-configured": "Bitte konfigurier $wgExtDistList un $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "D Erwyterig „$1“ git s nit",
+    "extdist-no-such-version": "D Erwyterig „$1“ git s nit in dr Version „$2“.",
+    "extdist-choose-extension": "Bitte wähl e Erwyterig uus zum Abelade:",
+    "extdist-submit-extension": "Wyter",
+    "extdist-choose-version": "Du ladsch d <b>$1</b>-Erwyterig abe.\n\nBitte wähl Dyyni MediaWiki-Version.\n\nDi meischte Erwyterige schaffe mit vyyle MediaWiki-Versione zämme. Wänn Dyyni MediaWiki-Version doo nit ufgfiert isch oder Du di nejschte Fähigkeite vu dr Eryterig witt nutze, no versuech s mit dr aktuälle Version.",
+    "extdist-no-versions": "Di gwählt Erwyterig ($1) git s nit in allene Versione!",
+    "extdist-submit-version": "Wyter",
+    "extdist-created": "E Schnappschuss vu dr Version <b>$2</b> vu dr MediaWiki-Erwyterig <b>$1</b> isch aagleit wore (MediaWiki-Version <b>$3</b>). S Abelade fangt automatisch in 5 Sekunde aa.\n\nD URL fir dr Schnappschuss isch:\n:$4\nD URL isch nume zum sofortige Abelade dänkt, bitte spychere si nit as Läsezeiche ab, wel dr Dateiinhalt nit aktualisiert wird un speter cha glescht wäre.\n\nS Tar-Archiv sott in s Erwyterigs-Verzeichnis uuspackt wäre. Uf eme Unix-ähnlige Betriebssystem mit:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nUnter Windows chasch s Programm [http://www.7-zip.org/ 7-zip] zum Uuspacke vu dr Dateie neh.\n\nWänn Dyy Wiki uf eme entfärnte Server lauft, no pack d Dateie in e temporär Verzeichnis uf Dyynem lokale Computer uus un lad deno '''alli''' uuspackte Dateie uf dr entfärnt Server uffe.\n\nWänn Du d Dateie uuspackt hesch, muesch d Erwyterig in dr <code>LocalSettings.php</code> regischtriere. In dr Dokumentation zue dr Erwyterig sott s a Aaleitig derzue haa.\n\nWänn Du Froge hesch zue däm Erwyterigs-Verteil-Syschtem, no gang bitte uf d Syte [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "No ne Erwyterig hole",
+    "extdist-tar-error": "S Tar-Programm het dr Beändigungscode $1 gliferet:"
+}

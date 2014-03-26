@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Als-Holder",
+            "Kghbln",
+            "Metalhead64",
+            "Raimond Spekking",
+            "Umherirrender"
+        ]
+    },
+    "extensiondistributor": "MediaWiki-Erweiterungen herunterladen",
+    "extensiondistributor-desc": "Ermöglicht das Herunterladen von MediaWiki-Erweiterungen",
+    "extdist-not-configured": "Bitte konfiguriere die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistArchiveAPI</code>.",
+    "extdist-list-missing": "Erweiterungsliste konnte nicht abgerufen werden!",
+    "extdist-no-such-extension": "Die Erweiterung „$1“ ist nicht vorhanden.",
+    "extdist-no-such-version": "Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.",
+    "extdist-choose-extension": "Bitte wähle eine Erweiterung zum Herunterladen aus:",
+    "extdist-submit-extension": "Weiter",
+    "extdist-choose-version": "Du kannst gleich die MediaWiki-Erweiterung <b>$1</b> herunterladen.\n\nBitte wähle zunächst die von dir genutzte MediaWiki-Version.\n\nDie meisten Erweiterungen funktionieren mit vielen MediaWiki-Versionen. Sofern deine MediaWiki-Version hier nicht aufgeführt ist oder du die neuesten Funktionen einer Erweiterung nutzen möchtest, versuche es mit der aktuellen Entwicklerversion (master). Beachte allerdings, dass diese noch Softwarefehler enthalten könnte.",
+    "extdist-no-versions": "Die gewählte Erweiterung ($1) ist in keiner Version verfügbar!",
+    "extdist-submit-version": "Weiter",
+    "extdist-created": "Ein Schnappschuss der Version <b>$2</b> der MediaWiki-Erweiterung <b>$1</b> wurde erstellt (MediaWiki-Version <b>$3</b>). Das Herunterladen startet automatisch nach 5 Sekunden.\n\nDie URL für den Schnappschuss lautet:\n:$4\nDie URL ist allerdings nur zum sofortigen Herunterladen gedacht. Speichere sie daher nicht als Lesezeichen ab, da der Dateiinhalt nicht aktualisiert wird und zudem zu einem späteren Zeitpunkt gelöscht sein kann.\n\nDas Tar-Archiv muss in das Installationsverzeichnis für die Erweiterungen entpackt werden. Auf einem Unix-ähnlichen Betriebssystem wird dies wie folgt gemacht:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nUnter Windows kannst du das Programm [http://www.7-zip.org/ 7-zip] zum Entpacken der Dateien verwenden.\n\nSofern dein Wiki auf einem entfernten Server läuft, entpacke die Dateien zunächst in ein temporäres Verzeichnis auf deinem lokalen Computer und lade dann '''alle''' entpackten Dateien auf den entfernten Server in das Installationsverzeichnis für die Erweiterungen hoch.\n\nNachdem du die Dateien entpackt hast, musst du die Erweiterung noch in der Datei <code>LocalSettings.php</code> registrieren. Die Dokumentation zur jeweiligen Erweiterung sollte eine Anleitung hierzu enthalten.\n\nSofern du Fragen und Anmerkungen zu diesem System zur Verteilung von Erweiterungen hast, nutze bitte diese [[Extension talk:ExtensionDistributor|Diskussionsseite]].",
+    "extdist-want-more": "Eine weitere Erweiterung herunterladen",
+    "extdist-tar-error": "Die Archiv-URL konnte nicht von der Archiv-API abgerufen werden."
+}

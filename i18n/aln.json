@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mdupont"
+        ]
+    },
+    "extensiondistributor": "Shkarko extension MediaWiki",
+    "extensiondistributor-desc": "Extension për shpërndarjen e arkivave fotografi e shtesave",
+    "extdist-not-configured": "Ju lutem, konfiguroni $wgExtDistList dhe $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Jo zgjatje e tillë \"$1\"",
+    "extdist-no-such-version": "Zgjatja \"$1\" nuk ekziston në versionin e \"$2\"."
+}

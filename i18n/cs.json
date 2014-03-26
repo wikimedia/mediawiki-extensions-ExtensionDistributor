@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matěj Grabovský",
+            "Mormegil"
+        ]
+    },
+    "extensiondistributor": "Stáhnout rozšíření MediaWiki",
+    "extensiondistributor-desc": "Rozšíření pro distribuci archivů rozšíření",
+    "extdist-not-configured": "Prosím, nastavte $wgExtDistList a $wgExtDistArchiveAPI",
+    "extdist-list-missing": "Nepodařilo se načíst seznam rozšíření!",
+    "extdist-no-such-extension": "Rozšíření „$1” neexistuje",
+    "extdist-no-such-version": "Rozšíření „$1” neexistuje ve verzi „$2”",
+    "extdist-choose-extension": "Vyberte, které rozšíření chcete stáhnout:",
+    "extdist-submit-extension": "Pokračovat",
+    "extdist-choose-version": "Stahujete rozšíření <b>$1</b>.\n\nVyberte verzi MediaWiki.\n\nVětšina rozšíření funguje na více verzích MediaWiki, takže pokud tu vaše verze MediaWiki není uvedena nebo potřebujete nejnovější vlastnosti rozšíření, zkuste použít aktuální verzi.",
+    "extdist-no-versions": "Zvolené rozšíření ($1) není dostupné v žádné verzi!",
+    "extdist-submit-version": "Pokračovat",
+    "extdist-created": "Balíček rozšíření <b>$1</b> ve verzi <b>$2</b> pro MediaWiki <b>$3</b> byl vytvořen. Jeho stahování by se mělo automaticky spustit za pět sekund.\n\nAdresa tohoto balíčku je:\n: $4\nMůžete si odtud nyní balíček stáhnout, ale laskavě si tuto adresu nikam neukládejte, protože obsah odkazovaného souboru nebude aktualizován a soubor může být později smazán.\n\nTento tar si rozbalte do adresáře <code>extensions</code>. Na operačních systémech na bázi Unixu například:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windows můžete balíček rozbalit pomocí programu [http://www.7-zip.org/ 7-zip].\n\nPokud vaše wiki běží na vzdáleném serveru, rozbalte si archiv do nějakého dočasného adresáře na lokálním počítači a poté nahrajte '''všechny''' rozbalené soubory do adresáře <code>extensions</code> na vzdáleném serveru.\n\nPo rozbalení souborů budete muset rozšíření zaregistrovat v souboru <code>LocalSettings.php</code>. Podrobnější informace by měla obsahovat dokumentace k rozšíření.\n\nPřípadné dotazy k tomuto systému distribuce rozšíření můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Stáhnout jiné rozšíření",
+    "extdist-tar-error": "Z archivního API se nepodařilo načíst URL archivu."
+}

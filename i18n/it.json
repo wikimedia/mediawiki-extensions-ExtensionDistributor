@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16",
+            "Darth Kule",
+            "McDutchie",
+            "Melos",
+            "Nemo bis"
+        ]
+    },
+    "extensiondistributor": "Scarica estensione MediaWiki",
+    "extensiondistributor-desc": "Estensione per distribuire archivi snapshot delle estensioni",
+    "extdist-not-configured": "Configura $wgExtDistList e $wgExtDistArchiveAPI",
+    "extdist-list-missing": "Impossibile recuperare l'elenco delle estensioni!",
+    "extdist-no-such-extension": "Nessuna estensione \"$1\"",
+    "extdist-no-such-version": "L'estensione \"$1\" non esiste nella versione \"$2\".",
+    "extdist-choose-extension": "Seleziona quale estensione intendi scaricare:",
+    "extdist-submit-extension": "Continua",
+    "extdist-choose-version": "Stai scaricando l'estensione <b>$1</b>.\n\nSeleziona la tua versione di MediaWiki.\n\nMolte estensioni funzionano su più versioni di MediaWiki, quindi se la tua versione di MediaWiki non è qui o hai bisogno delle ultime funzioni dell'estensione, prova a usare l'ultima versione.",
+    "extdist-no-versions": "L'estensione selezionata ($1) non è disponibile in alcuna versione!",
+    "extdist-submit-version": "Continua",
+    "extdist-created": "Un'istantanea della versione <b>$2</b> dell'estensione <b>$1</b> per MediaWiki <b>$3</b> è stata creata. Il tuo download dovrebbe partire automaticamente fra 5 secondi.\n\nL'URL per questa istantanea è:\n:$4\nPuò essere usato per scaricare immediatamente dal server, ma non aggiungerlo ai preferiti poiché il contenuto non sarà aggiornato e il collegamento potrebbe essere rimosso successivamente.\n\nL'archivio tar dovrebbe essere estratto nella tua directory delle estensioni. Per esempio, su un sistema operativo di tipo Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nSu Windows puoi usare [http://www.7-zip.org/ 7-zip] per estrarre i file.\n\nSe la tua wiki si trova su un server remoto, estrai i file in una cartella temporanea sul tuo computer locale e in seguito carica '''tutti''' i file estratti nella directory delle estensioni sul server.\n\nDopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalSettings.php. Il manuale dell'estensione dovrebbe contenere le istruzioni su come farlo.\n\nSe hai qualche domanda riguardo al sistema di distribuzione di questa estensione vedi [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Prendi un'altra estensione",
+    "extdist-tar-error": "Impossibile recuperare l'URL dell'archivio dall'archivio API."
+}

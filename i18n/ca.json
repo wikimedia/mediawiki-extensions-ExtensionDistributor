@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Paucabot",
+            "Solde"
+        ]
+    },
+    "extensiondistributor": "Descarrega una extensió de Mediawiki",
+    "extensiondistributor-desc": "Extensió per distribuir arxius actualitzats de les extensions",
+    "extdist-not-configured": "Per favor, configurau $wgExtDistList i $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "No existeix l'extensió \"$1\"",
+    "extdist-no-such-version": "L'extensió \"$1\" no existeix en la versió \"$2\"",
+    "extdist-choose-extension": "Seleccionau quina extensió voleu descarregar:",
+    "extdist-submit-extension": "Continua",
+    "extdist-choose-version": "Estau descarregant l'extensió <b>$1</b>.\n\nSeleccionau la vostra versió del Mediawiki.\n\nLa majoria d'extensions funcionen a les diferents versions de Mediawiki, així que si la vostra versió de Mediawiki no és aquí o si necessitau les darreres funcionalitats de l'extensió, provau d'usar la versió actual.",
+    "extdist-no-versions": "L'extensió seleccionada ($1) no està disponible en cap versió.",
+    "extdist-submit-version": "Continua",
+    "extdist-want-more": "Descarrega una altra extensió",
+    "extdist-tar-error": "L'ordre tar ha retornat un codi de sortida $1:"
+}

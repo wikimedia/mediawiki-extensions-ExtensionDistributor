@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie"
+        ]
+    },
+    "extensiondistributor": "Discargar extension MediaWiki",
+    "extensiondistributor-desc": "Extension pro distribuer archivos actualisate de extensiones",
+    "extdist-not-configured": "Per favor configura $wgExtDistList e $wgExtDistArchiveAPI",
+    "extdist-list-missing": "Impossibile obtener le lista de extensiones.",
+    "extdist-no-such-extension": "Non existe un extension \"$1\"",
+    "extdist-no-such-version": "Le extension \"$1\" non existe in le version \"$2\".",
+    "extdist-choose-extension": "Selige le extension a discargar:",
+    "extdist-submit-extension": "Continuar",
+    "extdist-choose-version": "Tu va discargar le extension <b>$1</b>.\n\nPer favor selige tu version de MediaWiki.\n\nLe majoritate del extensiones functiona trans versiones de MediaWiki, ergo si tu version de MediaWiki non es presente, o si tu ha besonio del ultime functionalitate de extensiones, prova usar le version actual.",
+    "extdist-no-versions": "Le extension seligite ($1) non es disponibile in alcun version!",
+    "extdist-submit-version": "Continuar",
+    "extdist-created": "Un instantaneo del version <b>$2</b> del extension <b>$1</b> pro MediaWiki <b>$3</b> ha essite create.\nLe discargamento debe comenciar automaticamente post 5 secundas.\n\nLe adresse URL de iste instantaneo es:\n:$4\nEs possibile usar iste adresse pro discargamento immediate verso un servitor, sed per favor non adde lo al lista de favoritos, post que le contento non essera actualisate, e illo pote esser delite plus tarde.\n\nLe archivo tar debe esser extrahite in tu directorio de extensiones. Per exemplo, in un systema de operation de typo Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nIn Windows, tu pote usar [http://www.7-zip.org/ 7-zip] pro extraher le files.\n\nSi tu wiki es situate in un servitor remote, extrahe le files in un directorio temporari in tu computator local, e postea incarga '''tote''' le files extrahite verso le directorio de extensiones in le servitor.\n\nQuando tu ha extrahite le files, tu debe registrar le extension in LocalSettings.php. Le documentation del extension deberea continer instructiones explicante como facer lo.\n\nSi tu ha questiones super iste systema de distribution de extensiones, per favor visita [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Obtener un altere extension",
+    "extdist-tar-error": "Impossibile obtener le URL de archivo per medio del API de archivo."
+}

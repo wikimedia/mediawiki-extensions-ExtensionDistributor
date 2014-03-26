@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "ChrisPtDe"
+        ]
+    },
+    "extensiondistributor": "Tèlèchargiér l’èxtension MediaWiki",
+    "extensiondistributor-desc": "Èxtension por la distribucion de les arch·ives fotografiques de les èxtensions.",
+    "extdist-not-configured": "Volyéd configurar $wgExtDistList et $wgExtDistArchiveAPI",
+    "extdist-no-such-extension": "Gins d’èxtension « $1 »",
+    "extdist-no-such-version": "L’èxtension « $1 » ègziste pas dens la vèrsion « $2 ».",
+    "extdist-choose-extension": "Chouèsésséd l’èxtension que vos voléd tèlèchargiér :",
+    "extdist-submit-extension": "Continuar",
+    "extdist-choose-version": "Vos éte aprés tèlèchargiér l’èxtension <b>$1</b>.\n\nChouèsésséd voutra vèrsion de MediaWiki.\n\nLa plepârt de les èxtensions tôrne sur difèrentes vèrsions de MediaWiki. Avouéc, se voutra vèrsion est pas presenta ique, ou ben se vos avéd fôta de les dèrriéres fonccionalitâts de l’èxtension, tâchiéd d’utilisar la vèrsion d’ora.",
+    "extdist-no-versions": "L’èxtension chouèsia ($1) est pas disponibla dens gins de vèrsion !",
+    "extdist-submit-version": "Continuar",
+    "extdist-created": "Una copia drêta de la vèrsion <b>$2</b> de l’èxtension <b>$1</b> por MediaWiki <b>$3</b> at étâ fêta. Voutron tèlèchargement devrêt comenciér ôtomaticament dens 5 secondes.\n\nL’adrèce de ceta copia est :\n:$4\nPôt étre utilisâ por un tèlèchargement drêt de vers un sèrvor, mas èvitâd de l’enscrire dens voutros mârca-pâges, puésque son contegnu serat pas betâ a jorn et pués pôt étre suprimâ a una dâta futura.\n\nLes arch·ives tar devriant étre èxtrètes dens voutron rèpèrtouèro <code>èxtensions</code>. Per ègzemplo sur un sistèmo semblâblo a UNIX :\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nDesot Windows, vos pouede utilisar [http://www.7-zip.org/ 7-zip] por èxtrère los fichiérs.\n\nSe voutron vouiqui est hèbèrgiê sur un sèrvor distant, èxtreséd los fichiérs dens un rèpèrtouèro temporèro de voutron ordenator local, et pués tèlèchargiéd-los '''tôs''' dens lo rèpèrtouèro <code>èxtensions</code> du sèrvor.\n\nUn côp los fichiérs èxtrèts, vos fôdrat encartar l’èxtension dens <code>LocalSettings.php</code>. La documentacion de l’èxtension devrêt contegnir un guido d’enstalacion qu’èxplique coment procèdar.\n\nSe vos avéd des quèstions sur cél sistèmo de distribucion de les èxtensions, volyéd vêre [[Extension talk:ExtensionDistributor]].",
+    "extdist-want-more": "Avêr una ôtra èxtension",
+    "extdist-tar-error": "Tar at retornâ lo code de sortia $1 :"
+}
