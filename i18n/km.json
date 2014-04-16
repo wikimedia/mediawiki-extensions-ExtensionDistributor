@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lovekhmer"
-        ]
-    },
-    "extensiondistributor": "ទាញយកផ្នែកបន្ថែមនៃមេឌាវិគី",
-    "extdist-submit-extension": "បន្ត",
-    "extdist-submit-version": "បន្ត"
+	"@metadata": {
+		"authors": [
+			"Lovekhmer"
+		]
+	},
+	"extensiondistributor": "ទាញយកផ្នែកបន្ថែមនៃមេឌាវិគី",
+	"extdist-submit-extension": "បន្ត",
+	"extdist-submit-version": "បន្ត"
 }

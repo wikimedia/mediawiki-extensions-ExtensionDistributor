@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hanberke"
-        ]
-    },
-    "extensiondistributor": "MediaWiki giňeltmesini düşür",
-    "extensiondistributor-desc": "Giňeltmeleriň pursatlyk görnüş arhiwlerini paýlamak üçin giňeltme",
-    "extdist-not-configured": "Konfigurirläň: $wgExtDistList we $wgExtDistArchiveAPI",
-    "extdist-no-such-extension": "\"$1\" diýip giňeltme ýok.",
-    "extdist-no-such-version": "\"$2\" wersiýasynda \"$1\" giňeltmesi ýok.",
-    "extdist-choose-extension": "Düşürmek isleýän giňeltmäňizi saýlaň:",
-    "extdist-submit-extension": "Dowam et",
-    "extdist-no-versions": "Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!",
-    "extdist-submit-version": "Dowam et",
-    "extdist-want-more": "Başga giňeltme al",
-    "extdist-tar-error": "Tar çykyş kody $1 gaýdyp geldi:"
+	"@metadata": {
+		"authors": [
+			"Hanberke"
+		]
+	},
+	"extensiondistributor": "MediaWiki giňeltmesini düşür",
+	"extensiondistributor-desc": "Giňeltmeleriň pursatlyk görnüş arhiwlerini paýlamak üçin giňeltme",
+	"extdist-not-configured": "Konfigurirläň: $wgExtDistList we $wgExtDistArchiveAPI",
+	"extdist-no-such-extension": "\"$1\" diýip giňeltme ýok.",
+	"extdist-no-such-version": "\"$2\" wersiýasynda \"$1\" giňeltmesi ýok.",
+	"extdist-choose-extension": "Düşürmek isleýän giňeltmäňizi saýlaň:",
+	"extdist-submit-extension": "Dowam et",
+	"extdist-no-versions": "Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!",
+	"extdist-submit-version": "Dowam et",
+	"extdist-want-more": "Başga giňeltme al",
+	"extdist-tar-error": "Tar çykyş kody $1 gaýdyp geldi:"
 }

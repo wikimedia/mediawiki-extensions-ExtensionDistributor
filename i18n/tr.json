@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joseph",
-            "Reedy"
-        ]
-    },
-    "extensiondistributor": "MedyaViki eklentisini indir",
-    "extensiondistributor-desc": "Eklentilerin anlık görüntü arşivlerini dağıtmak için eklenti",
-    "extdist-not-configured": "Lütfen $wgExtDistList ve $wgExtDistArchiveAPI ayarlayın",
-    "extdist-no-such-extension": "\"$1\" adında bir eklenti yok",
-    "extdist-no-such-version": "\"$2\" versiyonunda \"$1\" eklentisi mevcut değil.",
-    "extdist-choose-extension": "İndirmek istediğiniz eklentiyi seçin:",
-    "extdist-submit-extension": "Devam et",
-    "extdist-choose-version": "<b>$1</b> eklentisini indiriyosunuz.\n\nMedyaViki sürümünüzü seçin.\n\nPekçok eklenti MedyaVikinin birçok sürümünde çalışır, eğer MedyaViki sürümünüz burada yoksa, ya da en son eklenti özelliklerine ihtiyacınız varsa, güncel sürümü kullanmayı deneyin.",
-    "extdist-no-versions": "Seçili eklenti ($1) hiçbir versiyonda mevcut değil!",
-    "extdist-submit-version": "Devam et",
-    "extdist-created": "<b>$1</b> eklentisinin <b>$2</b> versiyonunun anlık görüntüsü MediaWiki <b>$3</b> için oluşturuldu. İndirmeniz 5 saniye içinde otomatik olarak başlamalıdır.\n\nAnlık görüntünün URLsi:\n:$4\nBu, bir sunucuya anında indirme için kullanılabilir. Ancak içerik güncellenmeyeceğinden ve ileri bir tarihte silinebileceğinden, lütfen yer imlerine eklemeyin.\n\nTar arşivi eklenti dizininize çıkarılmalıdır. Örneğin, unix tipi işletim sistemlerinde:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows'ta, dosyaları çıkartmak için [http://www.7-zip.org/ 7-zip]'i kullanabilirsiniz.\n\nEğer vikiniz uzaktan bir sunucuda ise, dosyaları yerel bilgisayarınızda geçici bir dizine çıkarın, ve sonra '''bütün''' çıkarılan dosyaları sunucunun eklenti dizinine kopyalayın.\n\nDosyaları çıkardıktan sonra, eklentiyi LocalSettings.php'de kaydetmelisiniz. Eklenti dokümantasyonu bunu nasıl yapacağınızın açıklamasını içerebilir.\n\nEğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Extension talk:ExtensionDistributor]]'a gidin.",
-    "extdist-want-more": "Başka eklenti al",
-    "extdist-tar-error": "Tar çıkış kodu $1 geri döndürdü:"
+	"@metadata": {
+		"authors": [
+			"Joseph",
+			"Reedy"
+		]
+	},
+	"extensiondistributor": "MedyaViki eklentisini indir",
+	"extensiondistributor-desc": "Eklentilerin anlık görüntü arşivlerini dağıtmak için eklenti",
+	"extdist-not-configured": "Lütfen $wgExtDistList ve $wgExtDistArchiveAPI ayarlayın",
+	"extdist-no-such-extension": "\"$1\" adında bir eklenti yok",
+	"extdist-no-such-version": "\"$2\" versiyonunda \"$1\" eklentisi mevcut değil.",
+	"extdist-choose-extension": "İndirmek istediğiniz eklentiyi seçin:",
+	"extdist-submit-extension": "Devam et",
+	"extdist-choose-version": "<b>$1</b> eklentisini indiriyosunuz.\n\nMedyaViki sürümünüzü seçin.\n\nPekçok eklenti MedyaVikinin birçok sürümünde çalışır, eğer MedyaViki sürümünüz burada yoksa, ya da en son eklenti özelliklerine ihtiyacınız varsa, güncel sürümü kullanmayı deneyin.",
+	"extdist-no-versions": "Seçili eklenti ($1) hiçbir versiyonda mevcut değil!",
+	"extdist-submit-version": "Devam et",
+	"extdist-created": "<b>$1</b> eklentisinin <b>$2</b> versiyonunun anlık görüntüsü MediaWiki <b>$3</b> için oluşturuldu. İndirmeniz 5 saniye içinde otomatik olarak başlamalıdır.\n\nAnlık görüntünün URLsi:\n:$4\nBu, bir sunucuya anında indirme için kullanılabilir. Ancak içerik güncellenmeyeceğinden ve ileri bir tarihte silinebileceğinden, lütfen yer imlerine eklemeyin.\n\nTar arşivi eklenti dizininize çıkarılmalıdır. Örneğin, unix tipi işletim sistemlerinde:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows'ta, dosyaları çıkartmak için [http://www.7-zip.org/ 7-zip]'i kullanabilirsiniz.\n\nEğer vikiniz uzaktan bir sunucuda ise, dosyaları yerel bilgisayarınızda geçici bir dizine çıkarın, ve sonra '''bütün''' çıkarılan dosyaları sunucunun eklenti dizinine kopyalayın.\n\nDosyaları çıkardıktan sonra, eklentiyi LocalSettings.php'de kaydetmelisiniz. Eklenti dokümantasyonu bunu nasıl yapacağınızın açıklamasını içerebilir.\n\nEğer bu eklenti dağıtım sistemi ile herhangi bir sorunuz varsa, lütfen [[Extension talk:ExtensionDistributor]]'a gidin.",
+	"extdist-want-more": "Başka eklenti al",
+	"extdist-tar-error": "Tar çıkış kodu $1 geri döndürdü:"
 }

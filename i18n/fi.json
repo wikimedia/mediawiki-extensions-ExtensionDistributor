@@ -1,26 +1,26 @@
 {
-    "@metadata": {
-        "authors": [
-            "Crt",
-            "Nedergard",
-            "Nike",
-            "Str4nd",
-            "VezonThunder",
-            "ZeiP"
-        ]
-    },
-    "extensiondistributor": "Lataa MediaWikin laajennus",
-    "extensiondistributor-desc": "Laajennus laajennusten tilannevedosarkistojen jakelulle.",
-    "extdist-not-configured": "Aseta $wgExtDistList ja $wgExtDistArchiveAPI.",
-    "extdist-list-missing": "Laajennusluetteloa ei voitu hakea!",
-    "extdist-no-such-extension": "Laajennusta ”$1” ei löydy",
-    "extdist-no-such-version": "Laajennus ”$1” ei sisälly versioon ”$2”.",
-    "extdist-choose-extension": "Valitse mitkä laajennukset haluat ladata:",
-    "extdist-submit-extension": "Jatka",
-    "extdist-choose-version": "Olet lataamassa laajennusta <b>$1</b>.\n\nValitse MediaWikisi versio.\n\nUseimmat laajennukset toimivat useiden MediaWikin versioiden välillä. Jos MediaWikisi versiota ei ole täällä tai tarvitset viimeisimpiä ominaisuuksia laajennuksesta, kokeile nykyistä versiota.",
-    "extdist-no-versions": "Valitusta laajennuksesta ($1) ei ole saatavilla yhtään versiota!",
-    "extdist-submit-version": "Jatka",
-    "extdist-created": "Tilannevedos laajennuksen <b>$1</b> versiosta <b>$2</b> MediaWikin versiolle <b>$3</b> on luotu. Latauksesi pitäisi alkaa automaattisesti viiden sekunnin kuluttua.\n\nURL-osoite tälle tilannevedokselle on\n:$4\nOsoitetta voi käyttää välittömään lataukseen palvelimelle, mutta älä lisää sitä kirjanmerkkeihisi, koska sen sisältö ei päivity ja se saatetaan poistaa.\n\nTar-paketti on purettava extensions-hakemistoon. Esimerkiksi unix-tyylisessä käyttöjärjestelmässä se tapahtuu seuraavalla komennolla:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindowsissa voit käyttää [http://www.7-zip.org/ 7-zip]-ohjelmaa tiedostojen purkamiseen.\n\nJos wikisi on etäpalvelimella, pura tiedostot paikallisen tietokoneen väliaikaishakemistoon ja lähetä sen jälkeen '''kaikki''' puretut tiedostot palvelimen extensions-hakemistoon.\n\nKun olet purkanut tiedostot, laajennus on rekisteröitävä LocalSettings.php-tiedostoon. Laajennuksen ohjeissa pitäisi löytyä rekisteröintiohjeet.\n\nJos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Hae toinen laajennus",
-    "extdist-tar-error": "Tar-ohjelman suoritus päättyi paluuarvoon $1:"
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Nedergard",
+			"Nike",
+			"Str4nd",
+			"VezonThunder",
+			"ZeiP"
+		]
+	},
+	"extensiondistributor": "Lataa MediaWikin laajennus",
+	"extensiondistributor-desc": "Laajennus laajennusten tilannevedosarkistojen jakelulle.",
+	"extdist-not-configured": "Aseta $wgExtDistList ja $wgExtDistArchiveAPI.",
+	"extdist-list-missing": "Laajennusluetteloa ei voitu hakea!",
+	"extdist-no-such-extension": "Laajennusta ”$1” ei löydy",
+	"extdist-no-such-version": "Laajennus ”$1” ei sisälly versioon ”$2”.",
+	"extdist-choose-extension": "Valitse mitkä laajennukset haluat ladata:",
+	"extdist-submit-extension": "Jatka",
+	"extdist-choose-version": "Olet lataamassa laajennusta <b>$1</b>.\n\nValitse MediaWikisi versio.\n\nUseimmat laajennukset toimivat useiden MediaWikin versioiden välillä. Jos MediaWikisi versiota ei ole täällä tai tarvitset viimeisimpiä ominaisuuksia laajennuksesta, kokeile nykyistä versiota.",
+	"extdist-no-versions": "Valitusta laajennuksesta ($1) ei ole saatavilla yhtään versiota!",
+	"extdist-submit-version": "Jatka",
+	"extdist-created": "Tilannevedos laajennuksen <b>$1</b> versiosta <b>$2</b> MediaWikin versiolle <b>$3</b> on luotu. Latauksesi pitäisi alkaa automaattisesti viiden sekunnin kuluttua.\n\nURL-osoite tälle tilannevedokselle on\n:$4\nOsoitetta voi käyttää välittömään lataukseen palvelimelle, mutta älä lisää sitä kirjanmerkkeihisi, koska sen sisältö ei päivity ja se saatetaan poistaa.\n\nTar-paketti on purettava extensions-hakemistoon. Esimerkiksi unix-tyylisessä käyttöjärjestelmässä se tapahtuu seuraavalla komennolla:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindowsissa voit käyttää [http://www.7-zip.org/ 7-zip]-ohjelmaa tiedostojen purkamiseen.\n\nJos wikisi on etäpalvelimella, pura tiedostot paikallisen tietokoneen väliaikaishakemistoon ja lähetä sen jälkeen '''kaikki''' puretut tiedostot palvelimen extensions-hakemistoon.\n\nKun olet purkanut tiedostot, laajennus on rekisteröitävä LocalSettings.php-tiedostoon. Laajennuksen ohjeissa pitäisi löytyä rekisteröintiohjeet.\n\nJos sinulla on kysymyksiä jakelujärjestelmästä, siirry sivulle [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Hae toinen laajennus",
+	"extdist-tar-error": "Tar-ohjelman suoritus päättyi paluuarvoon $1:"
 }

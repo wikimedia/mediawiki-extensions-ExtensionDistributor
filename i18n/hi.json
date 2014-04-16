@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ansumang",
-            "Siddhartha Ghai"
-        ]
-    },
-    "extensiondistributor": "डाउनलोड़ मीडियाविकि एक्सटेंशन",
-    "extensiondistributor-desc": "एक्सटेंशन स्नैपशॉट अभिलेखागार वितरण के लिए एक्सटेंशन",
-    "extdist-not-configured": "कृपया $wgExtDistList और $wgExtDistArchiveAPI कॉन्फ़िगर करें",
-    "extdist-no-such-extension": "कोई ऐसे एक्सटेंशन \"$1\" नहीं",
-    "extdist-no-such-version": "एक्सटैन्शन \"$1\" \"$2\" संस्करण में मौजूद नहीं ।",
-    "extdist-choose-extension": "कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:",
-    "extdist-submit-extension": "जारी रखें",
-    "extdist-choose-version": "आप डाउनलोड कर रहे हैं <b>$1</b> एक्सटेंशन ।\n\nअपने मीडियाविकि संस्करण चुनें ।\n\nअधिकांश एक्सटेंशन मीडियाविकि के एकाधिक संस्करणों में कम करते हैं, तो यदि आपके मीडियाविकि संस्करण यहाँ नहीं है, या यदि आपको नवीनतम विस्तार सुविधाओं की जरूरत है, वर्तमान संस्करण का उपयोग करें ।",
-    "extdist-submit-version": "जारी रखें",
-    "extdist-want-more": "अन्य एक्सटेन्शन पाएँ",
-    "extdist-tar-error": "पुरालेख ए॰पी॰आई से पुरालेख यू॰आर॰एल नहीं नहीं पाया जा सका।"
+	"@metadata": {
+		"authors": [
+			"Ansumang",
+			"Siddhartha Ghai"
+		]
+	},
+	"extensiondistributor": "डाउनलोड़ मीडियाविकि एक्सटेंशन",
+	"extensiondistributor-desc": "एक्सटेंशन स्नैपशॉट अभिलेखागार वितरण के लिए एक्सटेंशन",
+	"extdist-not-configured": "कृपया $wgExtDistList और $wgExtDistArchiveAPI कॉन्फ़िगर करें",
+	"extdist-no-such-extension": "कोई ऐसे एक्सटेंशन \"$1\" नहीं",
+	"extdist-no-such-version": "एक्सटैन्शन \"$1\" \"$2\" संस्करण में मौजूद नहीं ।",
+	"extdist-choose-extension": "कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:",
+	"extdist-submit-extension": "जारी रखें",
+	"extdist-choose-version": "आप डाउनलोड कर रहे हैं <b>$1</b> एक्सटेंशन ।\n\nअपने मीडियाविकि संस्करण चुनें ।\n\nअधिकांश एक्सटेंशन मीडियाविकि के एकाधिक संस्करणों में कम करते हैं, तो यदि आपके मीडियाविकि संस्करण यहाँ नहीं है, या यदि आपको नवीनतम विस्तार सुविधाओं की जरूरत है, वर्तमान संस्करण का उपयोग करें ।",
+	"extdist-submit-version": "जारी रखें",
+	"extdist-want-more": "अन्य एक्सटेन्शन पाएँ",
+	"extdist-tar-error": "पुरालेख ए॰पी॰आई से पुरालेख यू॰आर॰एल नहीं नहीं पाया जा सका।"
 }

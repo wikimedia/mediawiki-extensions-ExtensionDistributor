@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Eitvys200"
-        ]
-    },
-    "extensiondistributor": "Parsisiųsti MediaWiki pratęsimą",
-    "extdist-no-such-extension": "Nėra plėtinio \" $1 \"",
-    "extdist-choose-extension": "Pasirinkite kuri plėtinį, kurį norite atsisiųsti:",
-    "extdist-submit-extension": "Tęsti",
-    "extdist-submit-version": "Tęsti",
-    "extdist-want-more": "Gauti kitą plėtinį"
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"extensiondistributor": "Parsisiųsti MediaWiki pratęsimą",
+	"extdist-no-such-extension": "Nėra plėtinio \" $1 \"",
+	"extdist-choose-extension": "Pasirinkite kuri plėtinį, kurį norite atsisiųsti:",
+	"extdist-submit-extension": "Tęsti",
+	"extdist-submit-version": "Tęsti",
+	"extdist-want-more": "Gauti kitą plėtinį"
 }

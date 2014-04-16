@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "V.narsikar"
-        ]
-    },
-    "extensiondistributor": "मिडियाविकि विस्तारकाचे अधिभारण करा",
-    "extdist-submit-extension": "चालू ठेवा",
-    "extdist-submit-version": "चालू ठेवा",
-    "extdist-want-more": "दुसरे विस्तारक मिळवा"
+	"@metadata": {
+		"authors": [
+			"V.narsikar"
+		]
+	},
+	"extensiondistributor": "मिडियाविकि विस्तारकाचे अधिभारण करा",
+	"extdist-submit-extension": "चालू ठेवा",
+	"extdist-submit-version": "चालू ठेवा",
+	"extdist-want-more": "दुसरे विस्तारक मिळवा"
 }

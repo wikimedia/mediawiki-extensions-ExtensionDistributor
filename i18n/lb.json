@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Les Meloures",
-            "Robby",
-            "Soued031"
-        ]
-    },
-    "extensiondistributor": "MediaWiki Erweiderung eroflueden",
-    "extensiondistributor-desc": "Erweiderung fir d'Verdeele vu Schnappschoss-Archive vun Erweiderungen",
-    "extdist-not-configured": "Konfiguréiert w.e.g. $wgExtDistList an $wgExtDistArchiveAPI",
-    "extdist-list-missing": "Erweiderungslëscht konnt net generéiert ginn!",
-    "extdist-no-such-extension": "Et gëtt keng Erweiderung \"$1\"",
-    "extdist-no-such-version": "D'Erweiderung \"$1\" gëtt et net an der Versioun \"$2\".",
-    "extdist-choose-extension": "Wielt wat fir eng Erweiderung Dir wëllt eroflueden:",
-    "extdist-submit-extension": "Viru fueren",
-    "extdist-choose-version": "Dir sidd am Gaang d'<b>$1</b> Erweiderung erofzelueden.\n\nWielt Är MediaWiki Versioun.\n\nDéi meescht Erweiderunge funktionéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neist Funktioune vun den Erweiderunge braucht, da versicht déi neist Versioun ze benotzen.",
-    "extdist-no-versions": "Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!",
-    "extdist-submit-version": "Viru fueren",
-    "extdist-want-more": "Eng aner Erweiderung benotzen"
+	"@metadata": {
+		"authors": [
+			"Les Meloures",
+			"Robby",
+			"Soued031"
+		]
+	},
+	"extensiondistributor": "MediaWiki Erweiderung eroflueden",
+	"extensiondistributor-desc": "Erweiderung fir d'Verdeele vu Schnappschoss-Archive vun Erweiderungen",
+	"extdist-not-configured": "Konfiguréiert w.e.g. $wgExtDistList an $wgExtDistArchiveAPI",
+	"extdist-list-missing": "Erweiderungslëscht konnt net generéiert ginn!",
+	"extdist-no-such-extension": "Et gëtt keng Erweiderung \"$1\"",
+	"extdist-no-such-version": "D'Erweiderung \"$1\" gëtt et net an der Versioun \"$2\".",
+	"extdist-choose-extension": "Wielt wat fir eng Erweiderung Dir wëllt eroflueden:",
+	"extdist-submit-extension": "Viru fueren",
+	"extdist-choose-version": "Dir sidd am Gaang d'<b>$1</b> Erweiderung erofzelueden.\n\nWielt Är MediaWiki Versioun.\n\nDéi meescht Erweiderunge funktionéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neist Funktioune vun den Erweiderunge braucht, da versicht déi neist Versioun ze benotzen.",
+	"extdist-no-versions": "Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!",
+	"extdist-submit-version": "Viru fueren",
+	"extdist-want-more": "Eng aner Erweiderung benotzen"
 }

@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cainamarques",
-            "Hamilton Abreu",
-            "Luckas",
-            "Malafaya"
-        ]
-    },
-    "extensiondistributor": "Descarregar extensão MediaWiki",
-    "extensiondistributor-desc": "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
-    "extdist-not-configured": "Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI",
-    "extdist-list-missing": "Não é possível buscar lista de extensões!",
-    "extdist-no-such-extension": "A extensão \"$1\" não existe",
-    "extdist-no-such-version": "A extensão \"$1\" não existe na versão \"$2\".",
-    "extdist-choose-extension": "Selecione que extensão pretende descarregar:",
-    "extdist-submit-extension": "Continuar",
-    "extdist-choose-version": "Está a descarregar a extensão <b>$1</b>.\n\nSelecione a sua versão do MediaWiki.\n\nA maioria das extensões funciona em várias versões do MediaWiki, portanto se a sua versão do MediaWiki não aparecer aqui, ou se precisa das últimas funcionalidades da extensão, experimente usar a versão mais recente.",
-    "extdist-no-versions": "A extensão selecionada ($1) não está disponível em nenhuma versão!",
-    "extdist-submit-version": "Continuar",
-    "extdist-created": "Foi criado um instantâneo ''(snapshot)'' da versão <b>$2</b> da extensão <b>$1</b>, para o MediaWiki <b>$3</b>. A transferência deverá iniciar-se automaticamente em 5 segundos.\n\nA URL deste instantâneo é:\n:$4\nEsta pode ser usada para descarregamento imediato para um servidor, mas por favor não a adicione aos seus favoritos, já que o conteúdo não será atualizado e poderá ser eliminado posteriormente.\n\nDeve extrair o arquivo tar para o seu diretório de extensões. Por exemplo, num sistema operativo tipo UNIX, use:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNo Windows, poderá usar o [http://www.7-zip.org/ 7-zip] para extrair os ficheiros.\n\nSe a sua wiki estiver localizada num servidor remoto, extraia os ficheiros para um diretório temporário no seu computador local, e depois carregue '''todos''' os diretórios e ficheiros extraídos para o diretório de extensões da wiki no servidor.\n\nApós colocar a extensão no diretório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.\n\nSe tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Obter outra extensão",
-    "extdist-tar-error": "Não foi possível encontrar o URL arquivado da API."
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Hamilton Abreu",
+			"Luckas",
+			"Malafaya"
+		]
+	},
+	"extensiondistributor": "Descarregar extensão MediaWiki",
+	"extensiondistributor-desc": "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
+	"extdist-not-configured": "Por favor, configure $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-list-missing": "Não é possível buscar lista de extensões!",
+	"extdist-no-such-extension": "A extensão \"$1\" não existe",
+	"extdist-no-such-version": "A extensão \"$1\" não existe na versão \"$2\".",
+	"extdist-choose-extension": "Selecione que extensão pretende descarregar:",
+	"extdist-submit-extension": "Continuar",
+	"extdist-choose-version": "Está a descarregar a extensão <b>$1</b>.\n\nSelecione a sua versão do MediaWiki.\n\nA maioria das extensões funciona em várias versões do MediaWiki, portanto se a sua versão do MediaWiki não aparecer aqui, ou se precisa das últimas funcionalidades da extensão, experimente usar a versão mais recente.",
+	"extdist-no-versions": "A extensão selecionada ($1) não está disponível em nenhuma versão!",
+	"extdist-submit-version": "Continuar",
+	"extdist-created": "Foi criado um instantâneo ''(snapshot)'' da versão <b>$2</b> da extensão <b>$1</b>, para o MediaWiki <b>$3</b>. A transferência deverá iniciar-se automaticamente em 5 segundos.\n\nA URL deste instantâneo é:\n:$4\nEsta pode ser usada para descarregamento imediato para um servidor, mas por favor não a adicione aos seus favoritos, já que o conteúdo não será atualizado e poderá ser eliminado posteriormente.\n\nDeve extrair o arquivo tar para o seu diretório de extensões. Por exemplo, num sistema operativo tipo UNIX, use:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNo Windows, poderá usar o [http://www.7-zip.org/ 7-zip] para extrair os ficheiros.\n\nSe a sua wiki estiver localizada num servidor remoto, extraia os ficheiros para um diretório temporário no seu computador local, e depois carregue '''todos''' os diretórios e ficheiros extraídos para o diretório de extensões da wiki no servidor.\n\nApós colocar a extensão no diretório de extensões da sua wiki, terá de registá-la em LocalSettings.php. A documentação da extensão deverá ter indicações sobre como o fazer.\n\nSe tiver alguma questão sobre este sistema de distribuição de extensões, por favor, visite [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Obter outra extensão",
+	"extdist-tar-error": "Não foi possível encontrar o URL arquivado da API."
 }

@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ex13",
-            "Herr Mlinka",
-            "Roberta F.",
-            "SpeedyGonsales"
-        ]
-    },
-    "extensiondistributor": "Snimi MediaWiki ekstenziju",
-    "extensiondistributor-desc": "Ekstenzija za distribuciju inačica arhiva ekstenzija",
-    "extdist-not-configured": "Molimo konfigurirajte $wgExtDistList i $wgExtDistArchiveAPI",
-    "extdist-no-such-extension": "Nema takve ekstenziju \"$1\"",
-    "extdist-no-such-version": "Ekstenzija \"$1\" ne postoji u inačici \"$2\".",
-    "extdist-choose-extension": "Odaberite koju ekstenziju želite preuzeti:",
-    "extdist-submit-extension": "Nastavi",
-    "extdist-choose-version": "Preuzimate ekstenziju <b>$1</b>.\n\nIzaberite vašu inačicu MedijaWikija.\n\nVećina ekstenzija će raditi na više (ili svim) inačicama MedijaWikija, pa ako vaša inačica MedijaWikija nije ovdje, ili ako imate potrebu za najnovijim značajkama, pokušajte koristiti trenutnu inačicu.",
-    "extdist-no-versions": "Odabrana ekstenzija ($1) nije dostupna u nijednoj inačici!",
-    "extdist-submit-version": "Nastavi",
-    "extdist-created": "Kreirana je snimka inačice <b>$2</b> ekstenzije <b>$1</b> MedijaWikija inačice <b>$3</b>. Vaše preuzimanje počinje za 5 sekundi.\n\nURL snimke je:\n:$4\nTaj URL može biti rabljen za preuzimanje s poslužitelja, no molimo nemojte ga čuvati jer se sadržaj ne osvježava i moguće je njegovo brisanje s vremenom.\n\nTar arhivu trebalo bi raspakirati u vaš direktorij za ekstenzije. Na primjer, na unixoidnim operacijskim sustavima:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsima možete rabiti [http://www.7-zip.org/ 7-zip] za raspakiravanje arhive.\n\nUkoliko je vaš wiki na udaljenom poslužitelju, raspakirajte datoteke u privremeni direktorij lokalno i potom ih sve snimite u direktorij za ekstenzije na poslužitelju.\n\nNakon što se raspakirali arhivu, potrebno je uključiti ekstenziju u LocalSettings.php datoteci. Dokumentacije ekstenzije opisuje taj postupak.\n\nUkoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu stranicu: [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Dohvati drugu ekstenziju",
-    "extdist-tar-error": "Tar je vratio izlazni kod $1:"
+	"@metadata": {
+		"authors": [
+			"Ex13",
+			"Herr Mlinka",
+			"Roberta F.",
+			"SpeedyGonsales"
+		]
+	},
+	"extensiondistributor": "Snimi MediaWiki ekstenziju",
+	"extensiondistributor-desc": "Ekstenzija za distribuciju inačica arhiva ekstenzija",
+	"extdist-not-configured": "Molimo konfigurirajte $wgExtDistList i $wgExtDistArchiveAPI",
+	"extdist-no-such-extension": "Nema takve ekstenziju \"$1\"",
+	"extdist-no-such-version": "Ekstenzija \"$1\" ne postoji u inačici \"$2\".",
+	"extdist-choose-extension": "Odaberite koju ekstenziju želite preuzeti:",
+	"extdist-submit-extension": "Nastavi",
+	"extdist-choose-version": "Preuzimate ekstenziju <b>$1</b>.\n\nIzaberite vašu inačicu MedijaWikija.\n\nVećina ekstenzija će raditi na više (ili svim) inačicama MedijaWikija, pa ako vaša inačica MedijaWikija nije ovdje, ili ako imate potrebu za najnovijim značajkama, pokušajte koristiti trenutnu inačicu.",
+	"extdist-no-versions": "Odabrana ekstenzija ($1) nije dostupna u nijednoj inačici!",
+	"extdist-submit-version": "Nastavi",
+	"extdist-created": "Kreirana je snimka inačice <b>$2</b> ekstenzije <b>$1</b> MedijaWikija inačice <b>$3</b>. Vaše preuzimanje počinje za 5 sekundi.\n\nURL snimke je:\n:$4\nTaj URL može biti rabljen za preuzimanje s poslužitelja, no molimo nemojte ga čuvati jer se sadržaj ne osvježava i moguće je njegovo brisanje s vremenom.\n\nTar arhivu trebalo bi raspakirati u vaš direktorij za ekstenzije. Na primjer, na unixoidnim operacijskim sustavima:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsima možete rabiti [http://www.7-zip.org/ 7-zip] za raspakiravanje arhive.\n\nUkoliko je vaš wiki na udaljenom poslužitelju, raspakirajte datoteke u privremeni direktorij lokalno i potom ih sve snimite u direktorij za ekstenzije na poslužitelju.\n\nNakon što se raspakirali arhivu, potrebno je uključiti ekstenziju u LocalSettings.php datoteci. Dokumentacije ekstenzije opisuje taj postupak.\n\nUkoliko imate pitanja u svezi sustava distribucije ekstenzija, pogledajte ovu stranicu: [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Dohvati drugu ekstenziju",
+	"extdist-tar-error": "Tar je vratio izlazni kod $1:"
 }

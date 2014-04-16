@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Firilacroco",
-            "KlaudiuMihaila",
-            "Minisarm",
-            "Stelistcristi"
-        ]
-    },
-    "extensiondistributor": "Descărcare extensie MediaWiki",
-    "extensiondistributor-desc": "Extensie pentru distribuirea unor arhive fotografice ale extensiilor",
-    "extdist-not-configured": "Vă rugăm să configurați $wgExtDistList și $wgExtDistArchiveAPI",
-    "extdist-no-such-extension": "Extensia \"$1\" inexistentă",
-    "extdist-no-such-version": "Extensia \"$1\" nu există în versiunea \"$2\".",
-    "extdist-submit-extension": "Continuă",
-    "extdist-choose-version": "Descărcați extensia <b>$1</b>.\n\nAlegeți versiunea dvs MediaWiki.\n\nCele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci dacă versiunea dvs MediaWiki nu este aici sau dacă aveți nevoie de cele mai recente funcționalități pentru extensii, încercați să folosiți versiunea curentă.",
-    "extdist-no-versions": "Extensia selectată ($1) nu este disponibilă în orice versiune!",
-    "extdist-submit-version": "Continuă",
-    "extdist-want-more": "Obține altă extensie"
+	"@metadata": {
+		"authors": [
+			"Firilacroco",
+			"KlaudiuMihaila",
+			"Minisarm",
+			"Stelistcristi"
+		]
+	},
+	"extensiondistributor": "Descărcare extensie MediaWiki",
+	"extensiondistributor-desc": "Extensie pentru distribuirea unor arhive fotografice ale extensiilor",
+	"extdist-not-configured": "Vă rugăm să configurați $wgExtDistList și $wgExtDistArchiveAPI",
+	"extdist-no-such-extension": "Extensia \"$1\" inexistentă",
+	"extdist-no-such-version": "Extensia \"$1\" nu există în versiunea \"$2\".",
+	"extdist-submit-extension": "Continuă",
+	"extdist-choose-version": "Descărcați extensia <b>$1</b>.\n\nAlegeți versiunea dvs MediaWiki.\n\nCele mai multe extensii funcționează în mai multe versiuni de MediaWiki, deci dacă versiunea dvs MediaWiki nu este aici sau dacă aveți nevoie de cele mai recente funcționalități pentru extensii, încercați să folosiți versiunea curentă.",
+	"extdist-no-versions": "Extensia selectată ($1) nu este disponibilă în orice versiune!",
+	"extdist-submit-version": "Continuă",
+	"extdist-want-more": "Obține altă extensie"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Harald Khan",
-            "Njardarlogar",
-            "Reedy"
-        ]
-    },
-    "extensiondistributor": "Last ned utvidingar til MediaWiki",
-    "extensiondistributor-desc": "Utviding for distribuering av andre utvidingar",
-    "extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistArchiveAPI",
-    "extdist-no-such-extension": "Inga utviding med namnet \"$1\"",
-    "extdist-no-such-version": "Versjon «$2» av «$1» finst ikkje",
-    "extdist-choose-extension": "Vel kva utviding du ønskjer å lasta ned:",
-    "extdist-submit-extension": "Hald fram",
-    "extdist-choose-version": "Du lastar ned utvidinga <b>$1</b>.\n\nOppgje kva MediaWiki-versjon du nyttar.\n\nDei fleste utvidingane fungerer på fleire versjonar av MediaWiki, so om versjonen du nyttar ikkje er lista opp her, eller om du har bruk for dei siste utvidingseigenskapane, kan du prøva å nytta den noverande versjonen.",
-    "extdist-no-versions": "Den valte utvidinga ($1) er ikkje tilgjengeleg i nokon versjon!",
-    "extdist-submit-version": "Hald fram",
-    "extdist-created": "Eit snøggskot av versjon <b>$2</b> av utvidinga <b>$1</b> for MediaWiki <b>$3</b> er blitt oppretta. Nedlastinga vil starta automatisk om fem&nbsp;sekund.\n\nAdressa til snøggskotet er:\n:$4\nAdressa kan bli brukt for nedlasting til tenaren, men ikkje legg ho til som bokmerke, for innhaldet vil ikkje bli oppdatert, og ho kan bli sletta seinare.\n\nTar-arkivet burde bli pakka ut i utvidingsmappa di; til dømes på eit Unix-liknande operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du nytta [http://www.7-zip.org/ 7-zip] for å pakka ut filene.\n\nOm wikien din er på ein ekstern tenar, pakk ut filene i ei midlertidig mappa på datamaskinen din, og last opp '''alle''' utpakka filer i utvidingsmappa på tenaren.\n\nEtter å ha pakka ut filene må du registrera utvidinga i LocalSettings.php. Dokumentasjonen til utvidinga burde ha instruksjonar på korleis ein gjer dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].",
-    "extdist-want-more": "Hent fleire utvidingar",
-    "extdist-tar-error": "Tar returnerte utgangskoden $1:"
+	"@metadata": {
+		"authors": [
+			"Harald Khan",
+			"Njardarlogar",
+			"Reedy"
+		]
+	},
+	"extensiondistributor": "Last ned utvidingar til MediaWiki",
+	"extensiondistributor-desc": "Utviding for distribuering av andre utvidingar",
+	"extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistArchiveAPI",
+	"extdist-no-such-extension": "Inga utviding med namnet \"$1\"",
+	"extdist-no-such-version": "Versjon «$2» av «$1» finst ikkje",
+	"extdist-choose-extension": "Vel kva utviding du ønskjer å lasta ned:",
+	"extdist-submit-extension": "Hald fram",
+	"extdist-choose-version": "Du lastar ned utvidinga <b>$1</b>.\n\nOppgje kva MediaWiki-versjon du nyttar.\n\nDei fleste utvidingane fungerer på fleire versjonar av MediaWiki, so om versjonen du nyttar ikkje er lista opp her, eller om du har bruk for dei siste utvidingseigenskapane, kan du prøva å nytta den noverande versjonen.",
+	"extdist-no-versions": "Den valte utvidinga ($1) er ikkje tilgjengeleg i nokon versjon!",
+	"extdist-submit-version": "Hald fram",
+	"extdist-created": "Eit snøggskot av versjon <b>$2</b> av utvidinga <b>$1</b> for MediaWiki <b>$3</b> er blitt oppretta. Nedlastinga vil starta automatisk om fem&nbsp;sekund.\n\nAdressa til snøggskotet er:\n:$4\nAdressa kan bli brukt for nedlasting til tenaren, men ikkje legg ho til som bokmerke, for innhaldet vil ikkje bli oppdatert, og ho kan bli sletta seinare.\n\nTar-arkivet burde bli pakka ut i utvidingsmappa di; til dømes på eit Unix-liknande operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du nytta [http://www.7-zip.org/ 7-zip] for å pakka ut filene.\n\nOm wikien din er på ein ekstern tenar, pakk ut filene i ei midlertidig mappa på datamaskinen din, og last opp '''alle''' utpakka filer i utvidingsmappa på tenaren.\n\nEtter å ha pakka ut filene må du registrera utvidinga i LocalSettings.php. Dokumentasjonen til utvidinga burde ha instruksjonar på korleis ein gjer dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidingar, gå til [http://www.mediawiki.org/wiki/Extension_talk:ExtensionDistributor Extension talk:ExtensionDistributor].",
+	"extdist-want-more": "Hent fleire utvidingar",
+	"extdist-tar-error": "Tar returnerte utgangskoden $1:"
 }

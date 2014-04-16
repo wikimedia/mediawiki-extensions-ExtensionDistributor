@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Danmichaelo",
-            "EivindJ",
-            "Nghtwlkr"
-        ]
-    },
-    "extensiondistributor": "Last ned utvidelser til MediaWiki",
-    "extensiondistributor-desc": "Utvidelse for distribusjon av andre utvidelser",
-    "extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistArchiveAPI",
-    "extdist-list-missing": "Tilleggslisten kunne ikke hentes!",
-    "extdist-no-such-extension": "Ingen utvidelse ved navn «$1»",
-    "extdist-no-such-version": "Versjon «$2» av «$1» finnes ikke",
-    "extdist-choose-extension": "Velg hvilken utvidelse du ønsker å laste ned:",
-    "extdist-submit-extension": "Fortsett",
-    "extdist-choose-version": "Du laster ned utvidelsen <b>$1</b>.\n\nAngi hvilken MediaWiki-versjon du bruker.\n\nDe fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.",
-    "extdist-no-versions": "Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.",
-    "extdist-submit-version": "Fortsett",
-    "extdist-created": "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.\n\nAdressen til dette øyeblikksbildet er:\n:$4\nAdressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.\n\nTar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.\n\nOm wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.\n\nEtter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Hent flere utvidelser",
-    "extdist-tar-error": "Arkiv-URLen kunne ikke hentes fra arkiv-APIet."
+	"@metadata": {
+		"authors": [
+			"Danmichaelo",
+			"EivindJ",
+			"Nghtwlkr"
+		]
+	},
+	"extensiondistributor": "Last ned utvidelser til MediaWiki",
+	"extensiondistributor-desc": "Utvidelse for distribusjon av andre utvidelser",
+	"extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistArchiveAPI",
+	"extdist-list-missing": "Tilleggslisten kunne ikke hentes!",
+	"extdist-no-such-extension": "Ingen utvidelse ved navn «$1»",
+	"extdist-no-such-version": "Versjon «$2» av «$1» finnes ikke",
+	"extdist-choose-extension": "Velg hvilken utvidelse du ønsker å laste ned:",
+	"extdist-submit-extension": "Fortsett",
+	"extdist-choose-version": "Du laster ned utvidelsen <b>$1</b>.\n\nAngi hvilken MediaWiki-versjon du bruker.\n\nDe fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.",
+	"extdist-no-versions": "Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.",
+	"extdist-submit-version": "Fortsett",
+	"extdist-created": "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.\n\nAdressen til dette øyeblikksbildet er:\n:$4\nAdressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.\n\nTar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.\n\nOm wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.\n\nEtter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Hent flere utvidelser",
+	"extdist-tar-error": "Arkiv-URLen kunne ikke hentes fra arkiv-APIet."
 }

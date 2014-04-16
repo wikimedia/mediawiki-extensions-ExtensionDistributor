@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "extensiondistributor": "Rozšyrjenje MediaWiki ześěgnuś",
-    "extensiondistributor-desc": "Rozšyrjenje za rozdźělowanje archiwow rozšyrjenjow",
-    "extdist-not-configured": "Pšosym konfigurěruj $wgExtDistList a $wgExtDistArchiveAPI",
-    "extdist-list-missing": "Lisćina rozšyrjenjow njedajo se wobstaraś!",
-    "extdist-no-such-extension": "Rozšyrjenje \"$1\" njeeksistěrujo",
-    "extdist-no-such-version": "Rozšyrjenje \"$1\" njeeksistěrujo we wersiji \"$2\".",
-    "extdist-choose-extension": "Wubjeŕ rozšyrjenje, kótarež coš ześěgnuś:",
-    "extdist-submit-extension": "Dalej",
-    "extdist-choose-version": "Ześěgujoš rozšyrjenje <b>$1</b>.\n\nWubjeŕ swóju wersiju MediaWiki.\n\nNejwěcej rozšyrjenjow funkcioněrujo w někotarych wersijach MediaWiki, jolic stakim twója wersija MediaWiki njejo how abo trjebaš nejnowše funkcije rozšyrjenja, wopytaj aktualnu wersiju wužywaś.",
-    "extdist-no-versions": "Wubrane rozšyrjenje ($1) njestoj k dispoziciji we wšych wersijach!",
-    "extdist-submit-version": "Dalej",
-    "extdist-created": "Foto wobglědowaka wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.\n\nURL za toś to foto wobglědowaka jo:\n:$4\nDataja wužywa se, aby se ned ześěgnuła na serwer, ale pšosym njeskładuj ju ako załožk, dokulaž se wopśimjeśe njezaktualizěrujo a wóna móžo se pózdźej wulašowaś.\n\nTar-archiw by měł se do twójego zapisa rozšyrjenjow rozpakowaś. Na pśikład na uniksowych źěłowych systemach:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsu móžoš [http://www.7-zip.org/ 7-zip] wužywaś, aby rozpakował dataje.\n\nJolic twój wiki jo na zdalonem serwerje, rozpakuj dataje do nachylnego zapisa na swójom lokalnem licadle a nagraj pótom '''wše''' rozpakowane dataje do zapisa rozšyrjenjow na serwerje.\n\nZa tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php registrěrowaś. Dokumentacija rozšyrjenja by měła instrukcije wopśimjeś, kak se dajo cyniś.\n\nJolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Druge rozšyrjenje wobstaraś",
-    "extdist-tar-error": "Archiw URL njedajo se z archiwa API ekstrahěrowaś."
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"extensiondistributor": "Rozšyrjenje MediaWiki ześěgnuś",
+	"extensiondistributor-desc": "Rozšyrjenje za rozdźělowanje archiwow rozšyrjenjow",
+	"extdist-not-configured": "Pšosym konfigurěruj $wgExtDistList a $wgExtDistArchiveAPI",
+	"extdist-list-missing": "Lisćina rozšyrjenjow njedajo se wobstaraś!",
+	"extdist-no-such-extension": "Rozšyrjenje \"$1\" njeeksistěrujo",
+	"extdist-no-such-version": "Rozšyrjenje \"$1\" njeeksistěrujo we wersiji \"$2\".",
+	"extdist-choose-extension": "Wubjeŕ rozšyrjenje, kótarež coš ześěgnuś:",
+	"extdist-submit-extension": "Dalej",
+	"extdist-choose-version": "Ześěgujoš rozšyrjenje <b>$1</b>.\n\nWubjeŕ swóju wersiju MediaWiki.\n\nNejwěcej rozšyrjenjow funkcioněrujo w někotarych wersijach MediaWiki, jolic stakim twója wersija MediaWiki njejo how abo trjebaš nejnowše funkcije rozšyrjenja, wopytaj aktualnu wersiju wužywaś.",
+	"extdist-no-versions": "Wubrane rozšyrjenje ($1) njestoj k dispoziciji we wšych wersijach!",
+	"extdist-submit-version": "Dalej",
+	"extdist-created": "Foto wobglědowaka wersije <b>$2</b> rozšyrjenja <b>$1</b> za MediaWiki <b>$3</b> jo se napórał. Twójo ześěgnjenje by měło za 5 sekundow awtomatiski startowaś.\n\nURL za toś to foto wobglědowaka jo:\n:$4\nDataja wužywa se, aby se ned ześěgnuła na serwer, ale pšosym njeskładuj ju ako załožk, dokulaž se wopśimjeśe njezaktualizěrujo a wóna móžo se pózdźej wulašowaś.\n\nTar-archiw by měł se do twójego zapisa rozšyrjenjow rozpakowaś. Na pśikład na uniksowych źěłowych systemach:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsu móžoš [http://www.7-zip.org/ 7-zip] wužywaś, aby rozpakował dataje.\n\nJolic twój wiki jo na zdalonem serwerje, rozpakuj dataje do nachylnego zapisa na swójom lokalnem licadle a nagraj pótom '''wše''' rozpakowane dataje do zapisa rozšyrjenjow na serwerje.\n\nZa tym, az sy rozpakował dataje, musyš rozšyrjenje w dataji localSettings.php registrěrowaś. Dokumentacija rozšyrjenja by měła instrukcije wopśimjeś, kak se dajo cyniś.\n\nJolic maš pšašanja wo toś tom systemje rozdźělowanja rozšyrjenjow, źi pšosym k [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Druge rozšyrjenje wobstaraś",
+	"extdist-tar-error": "Archiw URL njedajo se z archiwa API ekstrahěrowaś."
 }

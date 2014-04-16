@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia",
-            "Aurora",
-            "Aviator",
-            "Reedy"
-        ]
-    },
-    "extensiondistributor": "Muat turun penyambung MediaWiki",
-    "extensiondistributor-desc": "Penyambung khas untuk pengedaran arkib petikan penyambung",
-    "extdist-not-configured": "Sila tetapkan konfigurasi $wgExtDistList dan $wgExtDistArchiveAPI",
-    "extdist-list-missing": "Senarai sambungan tidak dapat diambil!",
-    "extdist-no-such-extension": "Penyambung \"$1\" tidak wujud",
-    "extdist-no-such-version": "Penyambung \"$1\" tidak mempunyai versi \"$2\".",
-    "extdist-choose-extension": "Sila pilih penyambung yang ingin dimuat turun:",
-    "extdist-submit-extension": "Teruskan",
-    "extdist-choose-version": "Anda sedang memuat turun penyambung <b>$1</b>.\n\nSila pilih versi MediaWiki anda.\n\nKebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, jika versi MediaWiki anda tiada di sini, atau anda memerlukan penyambung dengan ciri-ciri terkini, anda boleh memilih untuk menggunakan versi semasa.",
-    "extdist-no-versions": "Penyambung yang dipilih ($1) tiada dalam sebarang versi!",
-    "extdist-submit-version": "Teruskan",
-    "extdist-created": "Sebuah petikan bagi penyambung <b>$1</b> versi <b>$2</b> untuk MediaWiki <b>$3</b> telah dicipta. Proses muat turun akan dimulakan secara automatik dalam masa 5 saat.\n\nURL untuk petikan ini ialah:\n:$4\nAlamat ini boleh digunakan untuk memuat turun ke dalam pelayan anda dengan segera. Akan tetapi, jangan simpan alamat ini dalam ''bookmark'' kerana kandungannya tidak akan dikemas kini lagi, dan kelak mungkin akan dihapuskan balik.\n\nArkib tar yang dimuat turun perlu dikeluarkan ke dalam direktori extensions anda. Sebagai contoh, untuk sistem pengendalian ala UNIX:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nUntuk Windows pula, anda boleh menggunakan perisian [http://www.7-zip.org/ 7-zip] untuk mengeluarkan fail-fail yang berkenaan.\n\nSekiranya wiki anda terdapat dalam pelayan jauh, sila keluarkan fail-fail yang berkenaan ke dalam direktori sementara dalam komputer tempatan anda, kemudian muat naik '''semua''' fail yang telah dikeluarkan ke dalam direktori extensions dalam komputer pelayan.\n\nSelepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan penyambung tersebut dalam LocalSettings.php. Anda boleh mendapatkan arahan untuk melakukan pendaftaran ini dengan merujuk dokumentasi yang disertakan dengan penyambung tersebut.\n\nSekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Dapatkan penyambung lagi",
-    "extdist-tar-error": "URL arkib tidak dapat diambl dari API arkib."
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Aurora",
+			"Aviator",
+			"Reedy"
+		]
+	},
+	"extensiondistributor": "Muat turun penyambung MediaWiki",
+	"extensiondistributor-desc": "Penyambung khas untuk pengedaran arkib petikan penyambung",
+	"extdist-not-configured": "Sila tetapkan konfigurasi $wgExtDistList dan $wgExtDistArchiveAPI",
+	"extdist-list-missing": "Senarai sambungan tidak dapat diambil!",
+	"extdist-no-such-extension": "Penyambung \"$1\" tidak wujud",
+	"extdist-no-such-version": "Penyambung \"$1\" tidak mempunyai versi \"$2\".",
+	"extdist-choose-extension": "Sila pilih penyambung yang ingin dimuat turun:",
+	"extdist-submit-extension": "Teruskan",
+	"extdist-choose-version": "Anda sedang memuat turun penyambung <b>$1</b>.\n\nSila pilih versi MediaWiki anda.\n\nKebanyakan penyambung boleh digunakan dalam pelbagai versi MediaWiki. Oleh itu, jika versi MediaWiki anda tiada di sini, atau anda memerlukan penyambung dengan ciri-ciri terkini, anda boleh memilih untuk menggunakan versi semasa.",
+	"extdist-no-versions": "Penyambung yang dipilih ($1) tiada dalam sebarang versi!",
+	"extdist-submit-version": "Teruskan",
+	"extdist-created": "Sebuah petikan bagi penyambung <b>$1</b> versi <b>$2</b> untuk MediaWiki <b>$3</b> telah dicipta. Proses muat turun akan dimulakan secara automatik dalam masa 5 saat.\n\nURL untuk petikan ini ialah:\n:$4\nAlamat ini boleh digunakan untuk memuat turun ke dalam pelayan anda dengan segera. Akan tetapi, jangan simpan alamat ini dalam ''bookmark'' kerana kandungannya tidak akan dikemas kini lagi, dan kelak mungkin akan dihapuskan balik.\n\nArkib tar yang dimuat turun perlu dikeluarkan ke dalam direktori extensions anda. Sebagai contoh, untuk sistem pengendalian ala UNIX:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nUntuk Windows pula, anda boleh menggunakan perisian [http://www.7-zip.org/ 7-zip] untuk mengeluarkan fail-fail yang berkenaan.\n\nSekiranya wiki anda terdapat dalam pelayan jauh, sila keluarkan fail-fail yang berkenaan ke dalam direktori sementara dalam komputer tempatan anda, kemudian muat naik '''semua''' fail yang telah dikeluarkan ke dalam direktori extensions dalam komputer pelayan.\n\nSelepas anda mengeluarkan fail-fail yang berkenaan, anda perlu mendaftarkan penyambung tersebut dalam LocalSettings.php. Anda boleh mendapatkan arahan untuk melakukan pendaftaran ini dengan merujuk dokumentasi yang disertakan dengan penyambung tersebut.\n\nSekiranya anda mempunyai sebarang soalan mengenai sistem pengedaran penyambung ini, sila ke [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Dapatkan penyambung lagi",
+	"extdist-tar-error": "URL arkib tidak dapat diambl dari API arkib."
 }

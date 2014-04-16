@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Reedy",
-            "Slomox"
-        ]
-    },
-    "extensiondistributor": "MediaWiki-Extension dalladen",
-    "extensiondistributor-desc": "Extension för dat Bereidstellen vun Snappschuss-Archiven von Extensions",
-    "extdist-not-configured": "Stell $wgExtDistList un $wgExtDistArchiveAPI in",
-    "extdist-no-such-extension": "Extension „$1“ gifft dat nich",
-    "extdist-no-such-version": "De Extension „$1“ gifft dat nich in de Version „$2“.",
-    "extdist-choose-extension": "Wähl de Extension ut, de du dalladen wullt:",
-    "extdist-submit-extension": "Wiedermaken",
-    "extdist-choose-version": "Du laadst de <b>$1</b>-Extension dal.\n\nWähl dien MediaWiki-Version ut.\n\nEn groten Deel vun de Extensions arbeidt mit vele MediaWiki-Versionen. Wenn dien MediaWiki-Version hier nich opdükert oder du de ne’esten KNeep vun de Extension bruken wullt, denn versöök de aktuelle Version to bruken.",
-    "extdist-no-versions": "De utwählte Extension ($1) is in keen Version verföögbor!",
-    "extdist-submit-version": "Wiedermaken",
-    "extdist-created": "En Snappschuss vun de Version <b>$2</b> vun de MediaWiki-Extension <b>$1</b> is opstellt worrn (MediaWiki-Version <b>$3</b>). Dat Dalladen geit automaatsch los in 5 Sekunnen.\n\nDe URL för den Snappschuss is:\n:$4\nDe URL is blot för dat Dalladen nu glieks dacht, spieker ehr nich as Leesteken af, de Datei warrt nich opfrischt un kann later ganz wegdaan warrn.\n\nDat Tar-Archiv schull in de Extension-Mapp utpackt warrn. Op en Unix-achtig Bedrievssystem mit:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nÜnner Windows kannst du dat Programm [http://www.7-zip.org/ 7-zip] för dat Utpacken vun de Datein bruken.\n\nWenn dien Wiki op en vun feern bedeenten Server löppt, pack de Datein in en temporäre Mapp op dien lokalen Reekner ut un laad denn '''all''' utpackte Datein op den Server hooch.\n\nNadem du de Datein utpackt hest, musst du de Extension in de <code>LocalSettings.php</code> registreren. In de Doku för de Extension schull dor wat to stahn.\n\nWenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "En annere Extension kriegen.",
-    "extdist-tar-error": "Dat Tar-Programm mellt den Enn-Kood $1:"
+	"@metadata": {
+		"authors": [
+			"Reedy",
+			"Slomox"
+		]
+	},
+	"extensiondistributor": "MediaWiki-Extension dalladen",
+	"extensiondistributor-desc": "Extension för dat Bereidstellen vun Snappschuss-Archiven von Extensions",
+	"extdist-not-configured": "Stell $wgExtDistList un $wgExtDistArchiveAPI in",
+	"extdist-no-such-extension": "Extension „$1“ gifft dat nich",
+	"extdist-no-such-version": "De Extension „$1“ gifft dat nich in de Version „$2“.",
+	"extdist-choose-extension": "Wähl de Extension ut, de du dalladen wullt:",
+	"extdist-submit-extension": "Wiedermaken",
+	"extdist-choose-version": "Du laadst de <b>$1</b>-Extension dal.\n\nWähl dien MediaWiki-Version ut.\n\nEn groten Deel vun de Extensions arbeidt mit vele MediaWiki-Versionen. Wenn dien MediaWiki-Version hier nich opdükert oder du de ne’esten KNeep vun de Extension bruken wullt, denn versöök de aktuelle Version to bruken.",
+	"extdist-no-versions": "De utwählte Extension ($1) is in keen Version verföögbor!",
+	"extdist-submit-version": "Wiedermaken",
+	"extdist-created": "En Snappschuss vun de Version <b>$2</b> vun de MediaWiki-Extension <b>$1</b> is opstellt worrn (MediaWiki-Version <b>$3</b>). Dat Dalladen geit automaatsch los in 5 Sekunnen.\n\nDe URL för den Snappschuss is:\n:$4\nDe URL is blot för dat Dalladen nu glieks dacht, spieker ehr nich as Leesteken af, de Datei warrt nich opfrischt un kann later ganz wegdaan warrn.\n\nDat Tar-Archiv schull in de Extension-Mapp utpackt warrn. Op en Unix-achtig Bedrievssystem mit:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nÜnner Windows kannst du dat Programm [http://www.7-zip.org/ 7-zip] för dat Utpacken vun de Datein bruken.\n\nWenn dien Wiki op en vun feern bedeenten Server löppt, pack de Datein in en temporäre Mapp op dien lokalen Reekner ut un laad denn '''all''' utpackte Datein op den Server hooch.\n\nNadem du de Datein utpackt hest, musst du de Extension in de <code>LocalSettings.php</code> registreren. In de Doku för de Extension schull dor wat to stahn.\n\nWenn du Fragen to dit Extensions-Verdeel-System hest, gah man na de Sied [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "En annere Extension kriegen.",
+	"extdist-tar-error": "Dat Tar-Programm mellt den Enn-Kood $1:"
 }

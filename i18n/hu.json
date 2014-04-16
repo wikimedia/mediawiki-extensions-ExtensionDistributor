@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dani",
-            "Dj",
-            "Glanthor Reviol",
-            "Reedy"
-        ]
-    },
-    "extensiondistributor": "MediaWiki-kigészítők letöltése",
-    "extensiondistributor-desc": "Kiegészítő kiegészítőcsomagok terjesztéséhez",
-    "extdist-not-configured": "Kérlek állítsd be a $wgExtDistList és a $wgExtDistArchiveAPI értékeit",
-    "extdist-no-such-extension": "Nincs „$1” nevű kiegészítő",
-    "extdist-no-such-version": "A(z) „$1” kiterjesztés nem létezik a(z) „$2” verzióban.",
-    "extdist-choose-extension": "Válaszd ki, melyik kiterjesztést szeretnéd letölteni:",
-    "extdist-submit-extension": "Folytatás",
-    "extdist-choose-version": "Éppen a(z) <b>$1</b> kiterjesztést töltöd le.\n\nVálaszd ki a MediaWiki verziót.\n\nA legtöbb kiterjesztés működik a MediaWiki több verziójával, így ha az általad használt MediaWiki verzió nincs itt, vagy ha szükséged van a kiterjesztés legújabb funkcióira, próbáld az aktuális verziót használni.",
-    "extdist-no-versions": "A választott kiterjesztés ($1) nem érhető el semmilyen verzióban!",
-    "extdist-submit-version": "Folytatás",
-    "extdist-created": "A(z) <b>$1</b> MediaWiki <b>$3</b> kiterjesztés <b>$2</b> verziójának pillanatfelvétele elkészült. A letöltés automatikusan megkezdődik 5 másodpercen belül.\n\nA pillanatfelvétel URL-je:\n:$4\nHasználható a szerverről való azonnali letöltésre, de kérlek ne tedd el a könyvjelzőid közé, mert a tartalma nem fog frissülni, és lehet hogy később törölve lesz.\n\nA tar tömörítvényt a kiterjesztéseid könyvtárába kell kicsomagolni. Példa unix-szerű operációs rendszeren:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindowson használhatod a [http://www.7-zip.org/ 7-zip]-et a fájlok kibontásához.\n\nHa a wikid egy távoli szerveren van, bontsd ki a fájlokat egy ideiglenes könyvtárba a helyi számítógépeden, majd tölds fel '''az összes''' kitömörített fájlt a szerver kiterjesztések könyvtárába.\n\nMiután kibontottad a fájlokat, regisztrálnod kell a kiterjesztést a LocalSettings.php-ben. Erről a kiterjesztés dokumentációjának kell bővebb útmutatást adnia.\n\nHa bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, keresd fel az [[Extension talk:ExtensionDistributor]] lapot.",
-    "extdist-want-more": "Másik kiterjesztés letöltése",
-    "extdist-tar-error": "A tar által adott visszatérési kód $1:"
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Dj",
+			"Glanthor Reviol",
+			"Reedy"
+		]
+	},
+	"extensiondistributor": "MediaWiki-kigészítők letöltése",
+	"extensiondistributor-desc": "Kiegészítő kiegészítőcsomagok terjesztéséhez",
+	"extdist-not-configured": "Kérlek állítsd be a $wgExtDistList és a $wgExtDistArchiveAPI értékeit",
+	"extdist-no-such-extension": "Nincs „$1” nevű kiegészítő",
+	"extdist-no-such-version": "A(z) „$1” kiterjesztés nem létezik a(z) „$2” verzióban.",
+	"extdist-choose-extension": "Válaszd ki, melyik kiterjesztést szeretnéd letölteni:",
+	"extdist-submit-extension": "Folytatás",
+	"extdist-choose-version": "Éppen a(z) <b>$1</b> kiterjesztést töltöd le.\n\nVálaszd ki a MediaWiki verziót.\n\nA legtöbb kiterjesztés működik a MediaWiki több verziójával, így ha az általad használt MediaWiki verzió nincs itt, vagy ha szükséged van a kiterjesztés legújabb funkcióira, próbáld az aktuális verziót használni.",
+	"extdist-no-versions": "A választott kiterjesztés ($1) nem érhető el semmilyen verzióban!",
+	"extdist-submit-version": "Folytatás",
+	"extdist-created": "A(z) <b>$1</b> MediaWiki <b>$3</b> kiterjesztés <b>$2</b> verziójának pillanatfelvétele elkészült. A letöltés automatikusan megkezdődik 5 másodpercen belül.\n\nA pillanatfelvétel URL-je:\n:$4\nHasználható a szerverről való azonnali letöltésre, de kérlek ne tedd el a könyvjelzőid közé, mert a tartalma nem fog frissülni, és lehet hogy később törölve lesz.\n\nA tar tömörítvényt a kiterjesztéseid könyvtárába kell kicsomagolni. Példa unix-szerű operációs rendszeren:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindowson használhatod a [http://www.7-zip.org/ 7-zip]-et a fájlok kibontásához.\n\nHa a wikid egy távoli szerveren van, bontsd ki a fájlokat egy ideiglenes könyvtárba a helyi számítógépeden, majd tölds fel '''az összes''' kitömörített fájlt a szerver kiterjesztések könyvtárába.\n\nMiután kibontottad a fájlokat, regisztrálnod kell a kiterjesztést a LocalSettings.php-ben. Erről a kiterjesztés dokumentációjának kell bővebb útmutatást adnia.\n\nHa bármi kérdésed van a kiterjesztésterjesztő rendszerrel kapcsolatban, keresd fel az [[Extension talk:ExtensionDistributor]] lapot.",
+	"extdist-want-more": "Másik kiterjesztés letöltése",
+	"extdist-tar-error": "A tar által adott visszatérési kód $1:"
 }

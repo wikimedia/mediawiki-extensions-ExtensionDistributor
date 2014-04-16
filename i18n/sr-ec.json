@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rancher",
-            "Михајло Анђелковић"
-        ]
-    },
-    "extdist-submit-extension": "Настави",
-    "extdist-submit-version": "Настави",
-    "extdist-want-more": "Преузми другу екстензију"
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Михајло Анђелковић"
+		]
+	},
+	"extdist-submit-extension": "Настави",
+	"extdist-submit-version": "Настави",
+	"extdist-want-more": "Преузми другу екстензију"
 }

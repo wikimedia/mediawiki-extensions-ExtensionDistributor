@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Christian List",
-            "Peter Alberti"
-        ]
-    },
-    "extensiondistributor": "Hent MediaWikiudvidelse",
-    "extdist-not-configured": "Venligst indstil $wgExtDistList og $wgExtDistArchiveAPI",
-    "extdist-no-such-extension": "Ingen udvidelse ved navn \"$1\"",
-    "extdist-no-such-version": "Udvidelsen \"$1\" findes ikke i versionen \"$2\".",
-    "extdist-choose-extension": "Vælg den udvidelse, du ønsker at hente:",
-    "extdist-submit-extension": "Fortsæt",
-    "extdist-submit-version": "Fortsæt",
-    "extdist-want-more": "Hent en anden udvidelse",
-    "extdist-tar-error": "Ude af stand til at hente arkiv URL fra arkiv API."
+	"@metadata": {
+		"authors": [
+			"Christian List",
+			"Peter Alberti"
+		]
+	},
+	"extensiondistributor": "Hent MediaWikiudvidelse",
+	"extdist-not-configured": "Venligst indstil $wgExtDistList og $wgExtDistArchiveAPI",
+	"extdist-no-such-extension": "Ingen udvidelse ved navn \"$1\"",
+	"extdist-no-such-version": "Udvidelsen \"$1\" findes ikke i versionen \"$2\".",
+	"extdist-choose-extension": "Vælg den udvidelse, du ønsker at hente:",
+	"extdist-submit-extension": "Fortsæt",
+	"extdist-submit-version": "Fortsæt",
+	"extdist-want-more": "Hent en anden udvidelse",
+	"extdist-tar-error": "Ude af stand til at hente arkiv URL fra arkiv API."
 }
