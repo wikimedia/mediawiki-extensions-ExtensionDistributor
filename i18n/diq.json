@@ -6,7 +6,8 @@
 			"Gorizon",
 			"Mirzali",
 			"Reedy",
-			"Xoser"
+			"Xoser",
+			"Marmase"
 		]
 	},
 	"extensiondistributor": "Extensiyonê MediyaWikiyî bar bike",
@@ -14,7 +15,7 @@
 	"extdist-not-configured": "Kerem ke $wgExtDistList u $wgExtDistArchiveAPI awan ke",
 	"extdist-list-missing": "Derganeya listi néşa biyaro!",
 	"extdist-no-such-extension": "\"$1\" name dı oleken çıniyo",
-	"extdist-no-such-version": "Versiyonê \"$2\"î de ekstensiyonê \"$1\"î çini yo",
+	"extdist-no-such-version": "Versiyon da \"$2\" de dekewtekê \"$1\"i çıniyo",
 	"extdist-choose-extension": "Ekstensiyon ke ti wazeno bar bike ey weçine:",
 	"extdist-submit-extension": "Dewam ke",
 	"extdist-choose-version": "Şımaye olekene  <b>$1</b>i ronane\n\nVersiyonê MedyaWikiyi weçinê.\n\nZaf olekene versiyonê MedyaWikiyi de xebıtyeni, eke versiyonê MedyaWikiyi yê şıma tiya de çıniyo, versiyonê rocaneyi fına karfiyê.",
