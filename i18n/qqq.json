@@ -22,5 +22,6 @@
 	"extdist-submit-version": "{{Identical|Continue}}",
 	"extdist-created": "Followed by the link text {{msg-mw|Extdist-want-more}}.\n\nParameters:\n* $1 - extension name\n* $2 - revision number (SHA1, 7 characters)\n* $3 - branch name. e.g. master, REL1_21, REL1_20\n* $4 - URL which points to the .tar.gz file\n* $5 - filename of the .tar.gz file",
 	"extdist-want-more": "Used as link text in [[Special:ExtensionDistributor]].\n\nThis message follows the Download icon.",
-	"extdist-tar-error": "Used as error message in [[Special:ExtensionDistributor]], when downloading an extension."
+	"extdist-tar-error": "Used as error message in [[Special:ExtensionDistributor]], when downloading an extension.",
+	"extdist-no-branches": "Error message shown if it can't find any information about any branches"
 }

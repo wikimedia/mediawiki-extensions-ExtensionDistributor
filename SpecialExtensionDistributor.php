@@ -127,7 +127,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 
 		$out = $this->getOutput();
 		$out->addWikiMsg( 'extdist-choose-version', $extensionName );
-		$out->addHTML(
+		$html =
 			Xml::openElement( 'form', array(
 				'action' => $this->getPageTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
@@ -136,8 +136,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 				'name' => 'extdist_extension',
 				'value' => $extensionName ) ) .
 			Xml::openElement( 'select', array(
-				'name' => 'extdist_version' ) )
-		);
+				'name' => 'extdist_version' ) );
 
 		$selected = 0;
 
@@ -146,19 +145,25 @@ class SpecialExtensionDistributor extends SpecialPage {
 			if( $info ) {
 				$branchMsg = $this->msg( "extdist-branch-$branchName" );
 				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
-				$out->addHTML( Xml::option( $branchDesc, $branchName, ($selected == 1) ) );
+				$html .= Xml::option( $branchDesc, $branchName, ($selected == 1) );
 				$selected++;
 			}
 		}
+		if ( $selected !== 0 ) {
+			$out->addHTML( $html );
+			$out->addHTML(
+				Xml::closeElement( 'select' ) . ' ' .
+				Xml::submitButton(
+					$this->msg( 'extdist-submit-version' )->text(),
+					array( 'name' => 'extdist_submit' )
+				) .
+				Xml::closeElement( 'form' ) . "\n"
+			);
+		} else {
+			wfDebugLog( 'ExtensionDistributor', "Couldn't find any branches for \"{$extensionName}\"" );
+			$out->wrapWikiMsg( '<div class="error">$1</div>', 'extdist-no-branches' );
+		}
 
-		$out->addHTML(
-			Xml::closeElement( 'select' ) . ' ' .
-			Xml::submitButton(
-				$this->msg( 'extdist-submit-version' )->text(),
-				array( 'name' => 'extdist_submit' )
-			) .
-			Xml::closeElement( 'form' ) . "\n"
-		);
 	}
 
 	/**
