@@ -202,10 +202,16 @@ class SpecialExtensionDistributor extends SpecialPage {
 
 		$key = "extdist-ext-$extension-$version";
 		$archiveInfo = $wgMemc->get( $key );
+		if ( $archiveInfo === null ) {
+			// Cached false
+			return false;
+		}
+
 		$httpOptions = array( 'followRedirects' => false );
 		if( $wgExtDistProxy ) {
 			$httpOptions['proxy'] = $wgExtDistProxy;
 		}
+
 		if( !$archiveInfo ) {
 			$url = str_replace(
 				array( '$EXT', '$REF' ),
@@ -237,7 +243,16 @@ class SpecialExtensionDistributor extends SpecialPage {
 					$wgMemc->set( $key, $archiveInfo, $cacheLength );
 				}
 			}
+
+			if ( $archiveInfo === false ) {
+				// Cache failure to avoid making a bunch of
+				// useless API requests
+				$wgMemc->set( $key, null, 3600 );
+			}
 		}
+
+
+
 		return $archiveInfo;
 	}
 }
