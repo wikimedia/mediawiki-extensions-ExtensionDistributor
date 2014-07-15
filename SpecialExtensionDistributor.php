@@ -198,7 +198,8 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @return array|false
 	 */
 	protected function fetchArchiveInfo( $extension, $version ) {
-		global $wgExtDistArchiveAPI, $wgExtDistProxy, $wgMemc;
+		global $wgExtDistArchiveAPI, $wgExtDistProxy, $wgExtDistGitHubOAuth2Token,
+		       $wgMemc;
 
 		$key = "extdist-ext-$extension-$version";
 		$archiveInfo = $wgMemc->get( $key );
@@ -212,6 +213,11 @@ class SpecialExtensionDistributor extends SpecialPage {
 				array( rawurlencode( $extension ), rawurlencode( $version ) ),
 				$wgExtDistArchiveAPI
 			);
+
+			if ( $wgExtDistGitHubOAuth2Token ) {
+				// See https://developer.github.com/v3/#authentication
+				$url = wfAppendQuery( $url, array( 'access_token' => $wgExtDistGitHubOAuth2Token ) );
+			}
 
 			$req = MWHttpRequest::factory( $url, $httpOptions );
 			$res = $req->execute();

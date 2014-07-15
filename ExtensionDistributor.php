@@ -52,6 +52,14 @@ $wgExtDistSnapshotRefs = array(
  */
 $wgExtDistProxy = false;
 
+/**
+ * If using GitHub's API, you might need to perform logged-in requests to avoid
+ * being hit by rate limiting,
+ *
+ * @see https://github.com/blog/1509-personal-api-tokens
+ */
+$wgExtDistGitHubOAuth2Token = false;
+
 /********************
  * Registration
  */
