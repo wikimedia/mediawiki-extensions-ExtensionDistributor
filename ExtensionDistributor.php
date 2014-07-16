@@ -66,3 +66,16 @@ $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDist
 $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
+$wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, array &$data ) {
+	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
+	$data['extensiondistributor'] = array(
+		'snapshots' => $wgExtDistSnapshotRefs,
+		'list' => $wgExtDistListFile
+	);
+	$api->getResult()->setIndexedTagName(
+		$data['extensiondistributor']['snapshots'],
+		'snapshot'
+	);
+
+	return true;
+};
