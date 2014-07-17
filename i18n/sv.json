@@ -4,7 +4,8 @@
 			"Boivie",
 			"Jopparn",
 			"M.M.S.",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
 	"extensiondistributor": "Ladda ner tillägg till MediaWiki",
@@ -20,5 +21,6 @@
 	"extdist-submit-version": "Fortsätt",
 	"extdist-created": "En ögonblicksbild av version <b>$2</b> av tillägget <b>$1</b> för MediaWiki <b>$3</b> har skapats. Din nerladdning ska starta automatiskt om 5 sekunder.\n\nURL:et för ögonblicksbilden är:\n:$4\nDen kan användas för direkt nedladdning till en server, men bokmärk den inte, för innehållet kommer inte uppdateras, och den kan bli raderad vid ett senare tillfälle.\n\nTar-arkivet ska packas upp i din extensions-katalog. Till exempel, på ett unix-likt OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du använda [http://www.7-zip.org/ 7-zip] för att packa upp filerna.\n\nOm din wiki är på en fjärrserver, packa upp filerna till en tillfällig katalog på din lokala dator, och ladda sedan upp '''alla''' uppackade filer till extensions-katalogen på servern.\n\nEfter att du packat upp filerna, behöver du registrera programtillägget i LocalSettings.php. Programtilläggets dokumentation ska ha instruktioner om hur man gör det.\n\nOm du har några frågor om programtilläggets distributionssystem, gå till [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more": "Hämta andra tillägg",
-	"extdist-tar-error": "Det gick inte att hämta arkiv-URL:en från arkiv-API:et."
+	"extdist-tar-error": "Det gick inte att hämta arkiv-URL:en från arkiv-API:et.",
+	"extdist-no-branches": "Kunde inte hämta information om några grenar."
 }
