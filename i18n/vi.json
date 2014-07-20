@@ -18,5 +18,6 @@
 	"extdist-submit-version": "Tiếp tục",
 	"extdist-created": "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải về trong 5 giây nữa.\n\nĐịa chỉ URL của bản lưu trữ này là:\n:$4\nCó thể tải trực tiếp lên máy chủ, nhưng xin đừng đánh dấu trang (<i>bookmark</i>) nó, vì nội dung co thể sẽ không được cập nhật, và nó có thể bị xóa sau vài ngày nữa.\n\nTập tin lưu trữ tar nên được bung vào thư mục chứa phần mở rộng của bạn. Ví dụ, trên hệ điều hành tương tự Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nTrên Windows, bạn có thể sử dụng [http://www.7-zip.org/ 7-zip] để giải nén các tập tin.\n\nNếu wiki của bạn nằm ở máy chủ từ xa, hãy bung các tập tin đó vào một thư mục tạm trên máy tính hiện tại của bạn, rồi sau đó tải '''tất cả''' các tập tin đã giải nén lên thư mục chứa phần mở rộng trên máy chủ.\n\nSau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần mở rộng trong LocalSettings.php. Tài liệu đi kèm với phần mở rộng sẽ có những hướng dẫn về cách thực hiện điều này.\n\nNếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more": "Lấy một phần mở rộng khác",
-	"extdist-tar-error": "Không thể lấy URL của bản nén từ API bản nén."
+	"extdist-tar-error": "Không thể lấy URL của bản nén từ API bản nén.",
+	"extdist-no-branches": "Không thể lấy thông tin về bất cứ chi nhánh nào."
 }
