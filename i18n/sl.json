@@ -18,5 +18,6 @@
 	"extdist-submit-version": "Nadaljuj",
 	"extdist-created": "Posnetek različice <b>$2</b> razširitve <b>$1</b> za MediaWiki <b>$3</b> je ustvarjen. Vaš prenos bi se moral začeti samodejno v 5 sekundah.\n\nURL posnetka je:\n:$4\nLahko ga uporabite za takojšnji prenos s strežnika, vendar ga ne dodajte med zaznamke, saj vsebina ne bo posodobljena in bo pozneje morda izbrisana.\n\nArhiv tar je potrebno razširiti v mapo z razširitvami. Na primer, na operacijskem sistemu vrste unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa sistemu Windows lahko za razširjanje datotek uporabite [http://www.7-zip.org/ 7-zip].\n\nČe je vaš wiki na oddaljenem strežniku, razširite datoteke v začasno mapo na vašem lokalnem računalniku in nato '''vse''' razširjene datoteke naložite v mapo razširitev na strežniku.\n\nPotem ko ste razširili vse datoteke, morate registrirati razširitev v LocalSettings.php. Dokumentacija razširirtve bi morala vsebovati navodila, kako to storiti.\n\nČe imate kakšna vprašanje glede sistema razdeljevanja razširitev, pojdite na [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more": "Dobi drugo razširitev",
-	"extdist-tar-error": "Ne morem pridobiti URL arhiva iz API arhiva."
+	"extdist-tar-error": "Ne morem pridobiti URL arhiva iz API arhiva.",
+	"extdist-no-branches": "Ne morem pridobiti informacij o kateri koli veji."
 }
