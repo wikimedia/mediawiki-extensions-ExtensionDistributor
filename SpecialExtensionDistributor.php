@@ -6,6 +6,12 @@
  * @author Tim Starling
  */
 class SpecialExtensionDistributor extends SpecialPage {
+
+	/**
+	 * @var ExtDistProvider
+	 */
+	private $provider;
+
 	public function __construct() {
 		parent::__construct( 'ExtensionDistributor' );
 	}
@@ -52,7 +58,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 			return;
 		}
 
-		if ( !$this->fetchArchiveInfo( $extension, $version ) ) {
+		if ( !$this->getProvider()->hasExtBranch( $extension, $version ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-no-such-version', $extension, $version );
 			return;
 		}
@@ -141,8 +147,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 		$selected = 0;
 
 		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
-			$info = $this->fetchArchiveInfo( $extensionName, $branchName );
-			if( $info ) {
+			if ( $this->getProvider()->hasExtBranch( $extensionName, $branchName ) ) {
 				$branchMsg = $this->msg( "extdist-branch-$branchName" );
 				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
 				$html .= Xml::option( $branchDesc, $branchName, ($selected == 1) );
@@ -172,17 +177,19 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 */
 	protected function doDownload( $extension, $version ) {
 		global $wgExtensionAssetsPath;
-		$info = $this->fetchArchiveInfo( $extension, $version );
 
-		if( !$info ) {
+		if( !$this->getProvider()->hasExtBranch( $extension, $version ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-tar-error' );
 			return;
 		}
 
 		// Show a message
+		$sha1 = $this->getProvider()->getExtBranchSha( $extension, $version );
+		$url = $this->getProvider()->getTarballLocation( $extension, $version );
+		$fileName = $this->getProvider()->getExpectedTarballName( $extension, $version );
 		$downloadImg = "$wgExtensionAssetsPath/ExtensionDistributor/download.png";
-		$this->getOutput()->addWikiMsg( 'extdist-created', $extension, $info['sha1'],
-			$version, $info['url'], $info['archive'] );
+		$this->getOutput()->addWikiMsg( 'extdist-created', $extension, $sha1,
+			$version, $url, $fileName );
 		$this->getOutput()->addHTML(
 			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
 			Linker::link( $this->getPageTitle(),
@@ -192,78 +199,22 @@ class SpecialExtensionDistributor extends SpecialPage {
 		);
 
 		// Redirect to the file
-		header( 'Refresh: 5;url=' . $info['url'] );
+		header( 'Refresh: 5;url=' . $url );
 	}
 
 	/**
-	 * Fetch information about the file we'd like to download
-	 *
-	 * @param $extension string
-	 * @param $version string
-	 * @return array|false
+	 * @throws MWException
+	 * @return ExtDistProvider
 	 */
-	protected function fetchArchiveInfo( $extension, $version ) {
-		global $wgExtDistArchiveAPI, $wgExtDistProxy, $wgExtDistGitHubOAuth2Token,
-		       $wgMemc;
-
-		$key = "extdist-ext-$extension-$version";
-		$archiveInfo = $wgMemc->get( $key );
-		if ( $archiveInfo === null ) {
-			// Cached false
-			return false;
+	protected function getProvider() {
+		if ( $this->provider === null ) {
+			global $wgExtDistAPIConfig;
+			if ( !is_array( $wgExtDistAPIConfig ) ) {
+				throw new MWException('$wgExtDistAPIConfig not configured properly' );
+			}
+			$this->provider = ExtDistProvider::factory( $wgExtDistAPIConfig );
 		}
 
-		$httpOptions = array( 'followRedirects' => false );
-		if( $wgExtDistProxy ) {
-			$httpOptions['proxy'] = $wgExtDistProxy;
-		}
-
-		if( !$archiveInfo ) {
-			$url = str_replace(
-				array( '$EXT', '$REF' ),
-				array( rawurlencode( $extension ), rawurlencode( $version ) ),
-				$wgExtDistArchiveAPI
-			);
-
-			if ( $wgExtDistGitHubOAuth2Token ) {
-				// See https://developer.github.com/v3/#authentication
-				$url = wfAppendQuery( $url, array( 'access_token' => $wgExtDistGitHubOAuth2Token ) );
-			}
-
-			$req = MWHttpRequest::factory( $url, $httpOptions );
-			$res = $req->execute();
-			$headers = $req->getResponseHeaders();
-			if( !$res->isOK() || !isset( $headers['location'][0] ) ) {
-				$archiveInfo = false;
-			} else {
-				$url = $headers['location'][0];
-				$req = MWHttpRequest::factory( $url, $httpOptions );
-				$res = $req->execute();
-				$headers = $req->getResponseHeaders();
-				if( !$res->isOK() || !isset( $headers['content-disposition'][0] ) ) {
-					$archiveInfo = false;
-				} else {
-					$tarName = str_replace( "attachment; filename=", "", $headers['content-disposition'][0] );
-					$sha1 = substr( $tarName, strrpos( $tarName, "-" ) + 1, 7 );
-					$archiveInfo = array(
-						'url' => $url,
-						'archive' => $tarName,
-						'sha1' => $sha1
-					);
-					$cacheLength = $version == 'master' ? 3600 : 3600 * 24 * 7;
-					$wgMemc->set( $key, $archiveInfo, $cacheLength );
-				}
-			}
-
-			if ( $archiveInfo === false ) {
-				// Cache failure to avoid making a bunch of
-				// useless API requests
-				$wgMemc->set( $key, null, 3600 );
-			}
-		}
-
-
-
-		return $archiveInfo;
+		return $this->provider;
 	}
 }

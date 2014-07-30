@@ -8,7 +8,7 @@
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Extension Distributor',
-	'author'         => array( 'Tim Starling', 'Sam Reed', 'Chad Horohoe' ),
+	'author'         => array( 'Tim Starling', 'Sam Reed', 'Chad Horohoe', 'Kunal Mehta' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:ExtensionDistributor',
 	'descriptionmsg' => 'extensiondistributor-desc',
 );
@@ -18,6 +18,25 @@ $wgExtensionCredits['specialpage'][] = array(
  */
 
 /**
+ * Configuration for the API client to use
+ *
+ * Must have a 'class' key, can either be
+ * "GithubExtDistProvider" or "GerritExtDistProvider"
+ *
+ * Common parameters:
+ *  'apiUrl' - API url to use with $EXT and $REF variables
+ *  'tarballUrl' - API url where tarballs are located
+ *  'tarballName' - Expected filename of tarballs
+ *  'proxy' - Proxy to use (optional)
+ *
+ * Github specific parameters:
+ *  'token' - An OAuth token for authenticating requests
+ *
+ * @var array
+ */
+$wgExtDistAPIConfig = false;
+
+/**
  * File to fetch list of extensions from, with one extension per line
  *
  * Example url: https://gerrit.wikimedia.org/mediawiki-extensions.txt
@@ -25,40 +44,11 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgExtDistListFile = false;
 
 /**
- * URL to get a Location: header from for the actual archive. This is based on
- * GitHub's REST API for fetching archives. In theory, it could be any service
- * that can respond with a 302 and a Location: header pointing to where the
- * archive can be retrieved. That archive should be a tar.gz file, and contain
- * a content-disposition header of the format:
- *    "attachment; filename=<extension>-<sha1>.tar.gz"
- *
- * Example url: https://api.github.com/repos/wikimedia/mediawiki-extensions-$EXT/tarball/$REF
- *
- * $EXT is replaced with the extension name (eg: ParserFunctions)
- * "tarball" is the archive format
- * $REF is the branch/tag name (eg: master, REL1_21)
- */
-$wgExtDistArchiveAPI = false;
-
-/**
  * Supported branches/tags, master is the default (and shouldn't be removed)
  */
 $wgExtDistSnapshotRefs = array(
 	'master',
 );
-
-/**
- * Proxy to use, if not the default proxy
- */
-$wgExtDistProxy = false;
-
-/**
- * If using GitHub's API, you might need to perform logged-in requests to avoid
- * being hit by rate limiting,
- *
- * @see https://github.com/blog/1509-personal-api-tokens
- */
-$wgExtDistGitHubOAuth2Token = false;
 
 /********************
  * Registration
@@ -74,6 +64,9 @@ $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDist
 $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
+$wgAutoloadClasses['ExtDistProvider'] = $dir . 'ExtDistProvider.php';
+$wgAutoloadClasses['GerritExtDistProvider'] = $dir . 'GerritExtDistProvider.php';
+$wgAutoloadClasses['GithubExtDistProvider'] = $dir . 'GithubExtDistProvider.php';
 $wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, array &$data ) {
 	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
 	$data['extensiondistributor'] = array(
