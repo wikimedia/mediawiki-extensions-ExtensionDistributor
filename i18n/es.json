@@ -18,7 +18,7 @@
 	"extdist-not-configured": "Por favor configure $wgExtDistList y $wgExtDistArchiveAPI",
 	"extdist-list-missing": "No se pudo recuperar la lista de extensiones.",
 	"extdist-no-such-extension": "No existe la extensión «$1»",
-	"extdist-no-such-version": "la extensión \"$1\" no existe en la versión \"$2\".",
+	"extdist-no-such-version": "La extensión «$1» no existe en la versión «$2».",
 	"extdist-choose-extension": "Seleccione qué extensión desea descargar:",
 	"extdist-submit-extension": "Continuar",
 	"extdist-choose-version": "Estás descargando la extensión <b>$1</b>.\n\nSelecciona tu versión MediaWiki.\n\nLa mayoría de extensiones funcionan a través de múltiples versiones de Mediawiki, entonces si tu versión Mediawiki no está aquí, o si necesitas las últimas características de las extensiones. trata de usar la versión actual.",
