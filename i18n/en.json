@@ -4,7 +4,7 @@
     },
     "extensiondistributor": "Download MediaWiki extension",
     "extensiondistributor-desc": "Extension for distributing snapshot archives of extensions",
-    "extdist-not-configured": "Please configure $wgExtDistList and $wgExtDistArchiveAPI",
+    "extdist-not-configured": "Please configure $wgExtDistList and $wgExtDistAPIConfig",
     "extdist-list-missing": "Unable to fetch extension list!",
     "extdist-no-such-extension": "No such extension \"$1\"",
     "extdist-no-such-version": "The extension \"$1\" does not exist in the version \"$2\".",

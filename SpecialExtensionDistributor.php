@@ -20,11 +20,11 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @param $subpage string
 	 */
 	public function execute( $subpage ) {
-		global $wgExtDistListFile, $wgExtDistArchiveAPI;
+		global $wgExtDistListFile, $wgExtDistAPIConfig;
 
 		$this->setHeaders();
 
-		if ( !$wgExtDistListFile || !$wgExtDistArchiveAPI ) {
+		if ( !$wgExtDistListFile || !$wgExtDistAPIConfig ) {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
 			return;
 		}
