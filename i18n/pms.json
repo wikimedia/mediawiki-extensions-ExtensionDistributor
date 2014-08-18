@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Dëscaria l'estension MediaWiki",
 	"extensiondistributor-desc": "Estension për distribuì j'archivi snapshot ëd j'estension",
-	"extdist-not-configured": "Për piasì configura $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Për piasì configura $wgExtDistList e $wgExtDistAPIConfig",
 	"extdist-list-missing": "As peul pa trovesse la lista dj'estension!",
 	"extdist-no-such-extension": "Pa gnun-e estension \"$1\"",
 	"extdist-no-such-version": "L'estension \"$1\" a esist pa ant la version \"$2\".",

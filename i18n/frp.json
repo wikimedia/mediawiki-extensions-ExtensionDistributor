@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Tèlèchargiér l’èxtension MediaWiki",
 	"extensiondistributor-desc": "Èxtension por la distribucion de les arch·ives fotografiques de les èxtensions.",
-	"extdist-not-configured": "Volyéd configurar $wgExtDistList et $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Volyéd configurar $wgExtDistList et $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Gins d’èxtension « $1 »",
 	"extdist-no-such-version": "L’èxtension « $1 » ègziste pas dens la vèrsion « $2 ».",
 	"extdist-choose-extension": "Chouèsésséd l’èxtension que vos voléd tèlèchargiér :",

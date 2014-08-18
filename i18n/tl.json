@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Ikarga pababa ang karugtong na pang-MediaWiki",
 	"extensiondistributor-desc": "Karugtong para sa pagpapamahagi ng sinupan/arkibo ng mga karugtong na para sa mga kuha ng larawan/litrato",
-	"extdist-not-configured": "Paki-isaayos ang $wgExtDistList at $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Paki-isaayos ang $wgExtDistList at $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Walang ganyang karugtong na \"$1\"",
 	"extdist-no-such-version": "Hindi umiiral ang karugtong na \"$1\" sa loob ng bersyong \"$2\".",
 	"extdist-choose-extension": "Piliin kung aling karugtong ang nais mong ikarga pababa:",

@@ -8,7 +8,7 @@
 	},
 	"extensiondistributor": "Last ned utvidelser til MediaWiki",
 	"extensiondistributor-desc": "Utvidelse for distribusjon av andre utvidelser",
-	"extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistAPIConfig",
 	"extdist-list-missing": "Tilleggslisten kunne ikke hentes!",
 	"extdist-no-such-extension": "Ingen utvidelse ved navn «$1»",
 	"extdist-no-such-version": "Versjon «$2» av «$1» finnes ikke",

@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Rožsěrjenje za MediaWiki sćahnyć",
 	"extensiondistributor-desc": "Rozšěrjenje za rozdźělenje archiwow njejapkich fotow rozšěrjenjow",
-	"extdist-not-configured": "Prošu konfiguruj $wgExtDistList a $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Prošu konfiguruj $wgExtDistList a $wgExtDistAPIConfig",
 	"extdist-list-missing": "Lisćina rozšěrjenjow njeda so wobstarać!",
 	"extdist-no-such-extension": "Rozšěrjenje \"$1\" njeeksistuje",
 	"extdist-no-such-version": "Rozšěrjenje \"$1\" we wersiji \"$2\" njeeksistuje.",

@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "MediaWiki-Erwyterige abelade",
 	"extensiondistributor-desc": "Erwyterig fir d Verteilig vu Schnappschuss-Archiv vu Erwyterige",
-	"extdist-not-configured": "Bitte konfigurier $wgExtDistList un $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Bitte konfigurier $wgExtDistList un $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "D Erwyterig „$1“ git s nit",
 	"extdist-no-such-version": "D Erwyterig „$1“ git s nit in dr Version „$2“.",
 	"extdist-choose-extension": "Bitte wähl e Erwyterig uus zum Abelade:",

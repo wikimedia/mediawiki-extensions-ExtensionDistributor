@@ -6,7 +6,7 @@
 		]
 	},
 	"extensiondistributor": "මීඩියාවිකි විස්තීරණය බාගන්න",
-	"extdist-not-configured": "කරුණාකර $wgExtDistList සහ $wgExtDistArchiveAPI වින්‍යාසගත කරන්න",
+	"extdist-not-configured": "කරුණාකර $wgExtDistList සහ $wgExtDistAPIConfig වින්‍යාසගත කරන්න",
 	"extdist-no-such-extension": "සත්‍ය විස්තීරණයක් නොමැත \"$1\"",
 	"extdist-no-such-version": "\"$1\" විස්තීරණය \"$2\" අනුවාදයෙහි නොපවතියි.",
 	"extdist-choose-extension": "ඔබට බාගැනීමට අවශ්‍ය විස්තීරණය තෝරන්න:",

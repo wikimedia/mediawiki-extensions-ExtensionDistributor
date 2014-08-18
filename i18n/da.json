@@ -6,7 +6,7 @@
 		]
 	},
 	"extensiondistributor": "Hent MediaWikiudvidelse",
-	"extdist-not-configured": "Venligst indstil $wgExtDistList og $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Venligst indstil $wgExtDistList og $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Ingen udvidelse ved navn \"$1\"",
 	"extdist-no-such-version": "Udvidelsen \"$1\" findes ikke i versionen \"$2\".",
 	"extdist-choose-extension": "Vælg den udvidelse, du ønsker at hente:",

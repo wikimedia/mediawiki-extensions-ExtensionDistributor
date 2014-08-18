@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Stáhnout rozšíření MediaWiki",
 	"extensiondistributor-desc": "Rozšíření pro distribuci archivů rozšíření",
-	"extdist-not-configured": "Prosím, nastavte $wgExtDistList a $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Prosím, nastavte $wgExtDistList a $wgExtDistAPIConfig",
 	"extdist-list-missing": "Nepodařilo se načíst seznam rozšíření!",
 	"extdist-no-such-extension": "Rozšíření „$1” neexistuje",
 	"extdist-no-such-version": "Rozšíření „$1” neexistuje ve verzi „$2”",

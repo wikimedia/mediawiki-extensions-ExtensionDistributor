@@ -9,7 +9,7 @@
 	},
 	"extensiondistributor": "Descărcare extensie MediaWiki",
 	"extensiondistributor-desc": "Extensie pentru distribuirea unor arhive fotografice ale extensiilor",
-	"extdist-not-configured": "Vă rugăm să configurați $wgExtDistList și $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Vă rugăm să configurați $wgExtDistList și $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Extensia \"$1\" inexistentă",
 	"extdist-no-such-version": "Extensia \"$1\" nu există în versiunea \"$2\".",
 	"extdist-submit-extension": "Continuă",

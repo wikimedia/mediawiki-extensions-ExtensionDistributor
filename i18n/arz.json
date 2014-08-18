@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "تنزيل امتداد ميدياويكي",
 	"extensiondistributor-desc": "امتداد لتوزيع أرشيفات ملتقطة للامتدادات",
-	"extdist-not-configured": "من فضلك اضبط $wgExtDistList و $wgExtDistArchiveAPI",
+	"extdist-not-configured": "من فضلك اضبط $wgExtDistList و $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "لا امتداد كهذا \"$1\"",
 	"extdist-no-such-version": "الامتداد \"$1\" لا يوجد فى النسخة \"$2\".",
 	"extdist-choose-extension": "اختر أى امتدات تريد تنزيله:",

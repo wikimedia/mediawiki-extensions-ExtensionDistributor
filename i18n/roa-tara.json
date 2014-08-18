@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Scareche le estenziune de MediaUicchi",
 	"extensiondistributor-desc": "Estenzione pe le archivije distribbuite istandanèe de le estenziune",
-	"extdist-not-configured": "Pe piacere configure $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Pe piacere configure $wgExtDistList e $wgExtDistAPIConfig",
 	"extdist-list-missing": "Non ge pozze analizzà l'elenghe de le estenziune!",
 	"extdist-no-such-extension": "Nisciuna estenzione \"$1\"",
 	"extdist-no-such-version": "L'estenzione \"$1\" non g'esiste jndr'à versiune \"$2\".",

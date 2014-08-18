@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Скачати росшырїня MediaWiki",
 	"extensiondistributor-desc": "Росшырїня про дістрібуцію архівів росшырїня",
-	"extdist-not-configured": "Просиме, наштелюйте $wgExtDistList і $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Просиме, наштелюйте $wgExtDistList і $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Росшырїня „$1” не єствує",
 	"extdist-no-such-version": "Росшырїня \"$1\" не єствує у верзії \"$2\".",
 	"extdist-choose-extension": "Выберте, котре росшырїня хочете скачати:",

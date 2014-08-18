@@ -8,7 +8,7 @@
 	},
 	"extensiondistributor": "Download MediaWiki extension",
 	"extensiondistributor-desc": "Extension veur distributere snapshot archieve óf extensions",
-	"extdist-not-configured": "Maak de instellinge veur $wgExtDistList en $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Maak de instellinge veur $wgExtDistList en $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "De uitbreiding \"$1\" besteit neet",
 	"extdist-no-such-version": "De oetbreiing \"$1\" besteit neet in de versie \"$2\".",
 	"extdist-choose-extension": "Selekteer de extensie dae se wils downloade:",

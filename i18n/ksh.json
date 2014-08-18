@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "MediaWiki Zohsatzprojramm eronger lade",
 	"extensiondistributor-desc": "Zohsazprojramm för Arschive met Zohsazprojramme ze verdeile.",
-	"extdist-not-configured": "Bes esu joot un donn <code>$wgExtDistList</code> un <code>$wgExtDistArchiveAPI</code> setze.",
+	"extdist-not-configured": "Bes esu joot un donn <code>$wgExtDistList</code> un <code>$wgExtDistAPIConfig</code> setze.",
 	"extdist-list-missing": "De Leß met de Zohsazprojramme kunnt nit afjeroofe wääde.",
 	"extdist-no-such-extension": "Ene Zosatz „$1“ es nit doh.",
 	"extdist-no-such-version": "Dä Zosatz „$1“ en dä Version „$2“ es nit doh.",

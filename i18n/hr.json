@@ -9,7 +9,7 @@
 	},
 	"extensiondistributor": "Snimi MediaWiki ekstenziju",
 	"extensiondistributor-desc": "Ekstenzija za distribuciju inačica arhiva ekstenzija",
-	"extdist-not-configured": "Molimo konfigurirajte $wgExtDistList i $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Molimo konfigurirajte $wgExtDistList i $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Nema takve ekstenziju \"$1\"",
 	"extdist-no-such-version": "Ekstenzija \"$1\" ne postoji u inačici \"$2\".",
 	"extdist-choose-extension": "Odaberite koju ekstenziju želite preuzeti:",

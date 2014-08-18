@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Descarga na estension MediaWiki",
 	"extensiondistributor-desc": "Estension par distribuir archivi snapshot de le estension",
-	"extdist-not-configured": "Par piaser configura $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Par piaser configura $wgExtDistList e $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "L'estension \"$1\" no la esiste",
 	"extdist-no-such-version": "L'estension \"$1\" no la esiste in te la version \"$2\".",
 	"extdist-choose-extension": "Siegli quala estension te voli descargar:",

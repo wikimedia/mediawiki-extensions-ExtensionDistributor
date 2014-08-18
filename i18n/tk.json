@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "MediaWiki giňeltmesini düşür",
 	"extensiondistributor-desc": "Giňeltmeleriň pursatlyk görnüş arhiwlerini paýlamak üçin giňeltme",
-	"extdist-not-configured": "Konfigurirläň: $wgExtDistList we $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Konfigurirläň: $wgExtDistList we $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "\"$1\" diýip giňeltme ýok.",
 	"extdist-no-such-version": "\"$2\" wersiýasynda \"$1\" giňeltmesi ýok.",
 	"extdist-choose-extension": "Düşürmek isleýän giňeltmäňizi saýlaň:",

@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Преземање на додаток за МедијаВики",
 	"extensiondistributor-desc": "Додаток за дистрибуција на урнек-архиви на додатоци",
-	"extdist-not-configured": "Задајте $wgExtDistList и $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Задајте $wgExtDistList и $wgExtDistAPIConfig",
 	"extdist-list-missing": "Не можам да го добијам списокот на додатоци!",
 	"extdist-no-such-extension": "Нема додаток со име „$1“",
 	"extdist-no-such-version": "Додатокот „$1“ не постои во верзијата „$2“.",

@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Undhuh èkstènsi MediaWiki",
 	"extensiondistributor-desc": "Èkstènsi kanggo ndistribusikaké arsip snapshot èkstènsi",
-	"extdist-not-configured": "Mangga atur $wgExtDistList lan $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Mangga atur $wgExtDistList lan $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Ora ana èkstènsi \"$1\"",
 	"extdist-no-such-version": "Èkstènsi \"$1\" ora ana nèng vèrsi \"$2\".",
 	"extdist-choose-extension": "Pilih èkstènsi endi sing Sampéyan pingin undhuh:",

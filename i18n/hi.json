@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "डाउनलोड़ मीडियाविकि एक्सटेंशन",
 	"extensiondistributor-desc": "एक्सटेंशन स्नैपशॉट अभिलेखागार वितरण के लिए एक्सटेंशन",
-	"extdist-not-configured": "कृपया $wgExtDistList और $wgExtDistArchiveAPI कॉन्फ़िगर करें",
+	"extdist-not-configured": "कृपया $wgExtDistList और $wgExtDistAPIConfig कॉन्फ़िगर करें",
 	"extdist-no-such-extension": "कोई ऐसे एक्सटेंशन \"$1\" नहीं",
 	"extdist-no-such-version": "एक्सटैन्शन \"$1\" \"$2\" संस्करण में मौजूद नहीं ।",
 	"extdist-choose-extension": "कौनसी एक्सटैन्शन डाउनलोड़ करना चाहते हैं चुने:",

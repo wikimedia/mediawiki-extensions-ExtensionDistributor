@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "Scarica estensione MediaWiki",
 	"extensiondistributor-desc": "Estensione per distribuire archivi snapshot delle estensioni",
-	"extdist-not-configured": "Configura $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Configura $wgExtDistList e $wgExtDistAPIConfig",
 	"extdist-list-missing": "Impossibile recuperare l'elenco delle estensioni!",
 	"extdist-no-such-extension": "Nessuna estensione \"$1\"",
 	"extdist-no-such-version": "L'estensione \"$1\" non esiste nella versione \"$2\".",

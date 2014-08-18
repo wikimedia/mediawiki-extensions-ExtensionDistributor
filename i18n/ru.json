@@ -11,7 +11,7 @@
 	},
 	"extensiondistributor": "Скачать расширения MediaWiki",
 	"extensiondistributor-desc": "Расширение для скачивания дистрибутивов с расширениями",
-	"extdist-not-configured": "Пожалуйста, задайте $wgExtDistList и $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Пожалуйста, задайте $wgExtDistList и $wgExtDistAPIConfig",
 	"extdist-list-missing": "Не удаётся получить список расширений!",
 	"extdist-no-such-extension": "Расширение «$1» не найдено",
 	"extdist-no-such-version": "Версия $2 расширения «$1» не найдена.",

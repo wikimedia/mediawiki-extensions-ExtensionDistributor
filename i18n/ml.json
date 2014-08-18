@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "മീഡിയവിക്കി അനുബന്ധം ഡൗൺലോഡ് ചെയ്യുക",
 	"extensiondistributor-desc": "അനുബന്ധങ്ങളുടെ തത്സമയ സഞ്ചയങ്ങൾ വിതരണം ചെയ്യാനുള്ള അനുബന്ധം",
-	"extdist-not-configured": "ദയവായി $wgExtDistList, $wgExtDistArchiveAPI എന്നിവ ക്രമീകരിക്കുക",
+	"extdist-not-configured": "ദയവായി $wgExtDistList, $wgExtDistAPIConfig എന്നിവ ക്രമീകരിക്കുക",
 	"extdist-list-missing": "അനുബന്ധങ്ങളുടെ പട്ടിക എടുക്കാൻ കഴിയുന്നില്ല!",
 	"extdist-no-such-extension": "\"$1\" എന്നൊരു അനുബന്ധം ഇല്ല",
 	"extdist-no-such-version": "\"$2\" പതിപ്പിൽ \"$1\" എന്നൊരു അനുബന്ധം ഇല്ല.",

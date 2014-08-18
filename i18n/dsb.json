@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Rozšyrjenje MediaWiki ześěgnuś",
 	"extensiondistributor-desc": "Rozšyrjenje za rozdźělowanje archiwow rozšyrjenjow",
-	"extdist-not-configured": "Pšosym konfigurěruj $wgExtDistList a $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Pšosym konfigurěruj $wgExtDistList a $wgExtDistAPIConfig",
 	"extdist-list-missing": "Lisćina rozšyrjenjow njedajo se wobstaraś!",
 	"extdist-no-such-extension": "Rozšyrjenje \"$1\" njeeksistěrujo",
 	"extdist-no-such-version": "Rozšyrjenje \"$1\" njeeksistěrujo we wersiji \"$2\".",

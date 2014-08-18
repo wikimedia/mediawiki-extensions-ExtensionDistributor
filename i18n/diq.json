@@ -12,7 +12,7 @@
 	},
 	"extensiondistributor": "Extensiyonê MediyaWikiyî bar bike",
 	"extensiondistributor-desc": "Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî",
-	"extdist-not-configured": "Kerem ke $wgExtDistList u $wgExtDistArchiveAPI awan ke",
+	"extdist-not-configured": "Kerem ke $wgExtDistList u $wgExtDistAPIConfig awan ke",
 	"extdist-list-missing": "Derganeya listi néşa biyaro!",
 	"extdist-no-such-extension": "\"$1\" name dı oleken çıniyo",
 	"extdist-no-such-version": "Versiyonê \"$2\" de ilaweyê \"$1\" çıniyo.",

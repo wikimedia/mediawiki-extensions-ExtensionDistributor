@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "미디어위키 확장 기능 다운로드",
 	"extensiondistributor-desc": "확장 기능의 스냅샷 아카이브 배포를 위한 확장 기능",
-	"extdist-not-configured": "$wgExtDistList와 $wgExtDistArchiveAPI를 설정하세요.",
+	"extdist-not-configured": "$wgExtDistList와 $wgExtDistAPIConfig를 설정하세요.",
 	"extdist-list-missing": "확장 기능 목록을 가져올 수 없습니다!",
 	"extdist-no-such-extension": "\"$1\" 확장 기능이 없습니다.",
 	"extdist-no-such-version": "\"$1\" 확장 기능은 \"$2\" 버전이 존재하지 않습니다.",

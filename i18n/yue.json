@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "下載MediaWiki擴展",
 	"extensiondistributor-desc": "發佈擴展歸檔映像嘅擴展",
-	"extdist-not-configured": "請設定 $wgExtDistList 同 $wgExtDistArchiveAPI",
+	"extdist-not-configured": "請設定 $wgExtDistList 同 $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "無呢個擴展 \"$1\"",
 	"extdist-no-such-version": "個擴展 \"$1\" 唔存在於呢個版本 \"$2\" 度。",
 	"extdist-choose-extension": "揀你要去下載嘅擴展:",

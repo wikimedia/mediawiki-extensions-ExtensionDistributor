@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "Ladda ner tillägg till MediaWiki",
 	"extensiondistributor-desc": "Tillägg för distribution av övriga tillägg",
-	"extdist-not-configured": "Var god bekräfta $wgExtDistList och $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Var god bekräfta $wgExtDistList och $wgExtDistAPIConfig",
 	"extdist-list-missing": "Det gick inte att hämta listan över programtillägg!",
 	"extdist-no-such-extension": "Ingen sådant tillägg \"$1\"",
 	"extdist-no-such-version": "Tillägget \"$1\" finns inte i versionen \"$2\".",

@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Prenesi razširitev MediaWiki",
 	"extensiondistributor-desc": "Razširitev, ki razdeljuje arhive posnetkov razširitev",
-	"extdist-not-configured": "Prosimo, nastavite $wgExtDistList in $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Prosimo, nastavite $wgExtDistList in $wgExtDistAPIConfig",
 	"extdist-list-missing": "Ne morem pridobiti seznama razširitev!",
 	"extdist-no-such-extension": "Razširitev »$1« ne obstaja",
 	"extdist-no-such-version": "Razširitev »$1« v različici »$2« ne obstaja.",

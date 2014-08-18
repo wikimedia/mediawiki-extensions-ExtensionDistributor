@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Tải về phần mở rộng MediaWiki",
 	"extensiondistributor-desc": "Phần mở rộng để phân phối các bản lưu trữ ảnh của các phần mở rộng",
-	"extdist-not-configured": "Xin hãy cấu hình $wgExtDistList và $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Xin hãy cấu hình $wgExtDistList và $wgExtDistAPIConfig",
 	"extdist-list-missing": "Không thể lấy danh sách phần mở rộng!",
 	"extdist-no-such-extension": "Không có phần mở rộng “$1”",
 	"extdist-no-such-version": "Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.",

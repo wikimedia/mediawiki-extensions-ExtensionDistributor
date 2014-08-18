@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "MediaWiki киңәйеүҙәрен күсереп алырға",
 	"extensiondistributor-desc": "Киңәйеүҙәр менән дистрибутивты күсереп алыу өсөн киңәйеү",
-	"extdist-not-configured": "Зинһар, $wgExtDistList һәм $wgExtDistArchiveAPI көйләгеҙ",
+	"extdist-not-configured": "Зинһар, $wgExtDistList һәм $wgExtDistAPIConfig көйләгеҙ",
 	"extdist-no-such-extension": "\"$1\" киңәйеүе юҡ",
 	"extdist-no-such-version": "\"$1\" киңәйеүенең \"$2\" өлгөһө юҡ",
 	"extdist-choose-extension": "Күсереп алыу өсөн киңәйеү һайлағыҙ:",

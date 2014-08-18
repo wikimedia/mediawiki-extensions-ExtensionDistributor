@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "下載 MediaWiki 擴充套件",
 	"extensiondistributor-desc": "發布擴充套件存檔映像的擴充套件",
-	"extdist-not-configured": "請設定 $wgExtDistList 和 $wgExtDistArchiveAPI",
+	"extdist-not-configured": "請設定 $wgExtDistList 和 $wgExtDistAPIConfig",
 	"extdist-list-missing": "無法讀取擴展清單！",
 	"extdist-no-such-extension": "沒有這個擴充套件「$1」",
 	"extdist-no-such-version": "該擴充套件「$1」不存在於這個版本「$2」中。",

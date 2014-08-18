@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "МедиаВики тупсарыыларын хачайдааһын",
 	"extensiondistributor-desc": "Тупсарыылары хачайдыыр тупсарыы",
-	"extdist-not-configured": "Бука диэн балары туруор: $wgExtDistList уонна $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Бука диэн балары туруор: $wgExtDistList уонна $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "\"$1\" тупсарыы булуллубата",
 	"extdist-no-such-version": "\"$1\" тупсарыы \"$2\" барыла булуллубата.",
 	"extdist-choose-extension": "Тупсарыыны хачайдыырга тал:",

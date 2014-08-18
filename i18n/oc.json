@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Telecargar l’extension MediaWiki",
 	"extensiondistributor-desc": "Extension per la distribucion dels archius fotografics de las extensions",
-	"extdist-not-configured": "Configuratz $wgExtDistList e $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Configuratz $wgExtDistList e $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Pas cap d'extension « $1 »",
 	"extdist-no-such-version": "L’extension « $1 » existís pas dins la version « $2 ».",
 	"extdist-choose-extension": "Seleccionatz l’extension que volètz telecargar :",

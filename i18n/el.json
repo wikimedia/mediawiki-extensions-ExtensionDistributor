@@ -11,7 +11,7 @@
 	},
 	"extensiondistributor": "Κατέβασμα επέκτασης Mediawiki",
 	"extensiondistributor-desc": "Επέκταση για τη διανομή στιγμιοτύπων επεκτάσεων",
-	"extdist-not-configured": "Παρακαλώ ρυθμίστε τα $wgExtDistList και $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Παρακαλώ ρυθμίστε τα $wgExtDistList και $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Δεν υπάρχει επέκταση \"$1\"",
 	"extdist-no-such-version": "Η επέκταση \"$1\" δεν υπάρχει στην έκδοση \"$2\".",
 	"extdist-choose-extension": "Επιλέξτε ποια επέκταση θέλετε να κατεβάσετε:",

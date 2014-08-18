@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "MedyaViki eklentisini indir",
 	"extensiondistributor-desc": "Eklentilerin anlık görüntü arşivlerini dağıtmak için eklenti",
-	"extdist-not-configured": "Lütfen $wgExtDistList ve $wgExtDistArchiveAPI ayarlayın",
+	"extdist-not-configured": "Lütfen $wgExtDistList ve $wgExtDistAPIConfig ayarlayın",
 	"extdist-no-such-extension": "\"$1\" adında bir eklenti yok",
 	"extdist-no-such-version": "\"$2\" versiyonunda \"$1\" eklentisi mevcut değil.",
 	"extdist-choose-extension": "İndirmek istediğiniz eklentiyi seçin:",

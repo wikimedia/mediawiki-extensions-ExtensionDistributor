@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Descarrega una extensió de Mediawiki",
 	"extensiondistributor-desc": "Extensió per distribuir arxius actualitzats de les extensions",
-	"extdist-not-configured": "Per favor, configurau $wgExtDistList i $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Per favor, configurau $wgExtDistList i $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "No existeix l'extensió \"$1\"",
 	"extdist-no-such-version": "L'extensió \"$1\" no existeix en la versió \"$2\"",
 	"extdist-choose-extension": "Seleccionau quina extensió voleu descarregar:",

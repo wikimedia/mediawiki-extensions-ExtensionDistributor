@@ -9,7 +9,7 @@
 	},
 	"extensiondistributor": "MediaWiki-kigészítők letöltése",
 	"extensiondistributor-desc": "Kiegészítő kiegészítőcsomagok terjesztéséhez",
-	"extdist-not-configured": "Kérlek állítsd be a $wgExtDistList és a $wgExtDistArchiveAPI értékeit",
+	"extdist-not-configured": "Kérlek állítsd be a $wgExtDistList és a $wgExtDistAPIConfig értékeit",
 	"extdist-no-such-extension": "Nincs „$1” nevű kiegészítő",
 	"extdist-no-such-version": "A(z) „$1” kiterjesztés nem létezik a(z) „$2” verzióban.",
 	"extdist-choose-extension": "Válaszd ki, melyik kiterjesztést szeretnéd letölteni:",

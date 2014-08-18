@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Descargar estensión de MediaWiki",
 	"extensiondistributor-desc": "Estensión pa distribuir archivos de instantánees d'estensiones",
-	"extdist-not-configured": "Por favor configura $wgExtDistList y $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Por favor configura $wgExtDistList y $wgExtDistAPIConfig",
 	"extdist-list-missing": "¡Nun se pudo traer la llista d'estensiones!",
 	"extdist-no-such-extension": "Nun esiste la estensión «$1»",
 	"extdist-no-such-version": "La estensión «$1» nun esiste na versión «$2».",

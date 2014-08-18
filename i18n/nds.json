@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "MediaWiki-Extension dalladen",
 	"extensiondistributor-desc": "Extension för dat Bereidstellen vun Snappschuss-Archiven von Extensions",
-	"extdist-not-configured": "Stell $wgExtDistList un $wgExtDistArchiveAPI in",
+	"extdist-not-configured": "Stell $wgExtDistList un $wgExtDistAPIConfig in",
 	"extdist-no-such-extension": "Extension „$1“ gifft dat nich",
 	"extdist-no-such-version": "De Extension „$1“ gifft dat nich in de Version „$2“.",
 	"extdist-choose-extension": "Wähl de Extension ut, de du dalladen wullt:",

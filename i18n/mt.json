@@ -6,7 +6,7 @@
 	},
 	"extensiondistributor": "Niżżel estensjoni MediaWiki",
 	"extensiondistributor-desc": "Estensjoni sabiex tiddistribwixxi arkivji ta' ritratti istantanji tal-estensjonijiet",
-	"extdist-not-configured": "Jekk jogħġbok ikkonfigura $wgExtDistList u $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Jekk jogħġbok ikkonfigura $wgExtDistList u $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Ma teżisti l-ebda estensjoni bl-isem \"$1\"",
 	"extdist-no-such-version": "L-estensjoni \"$1\" ma teżistix fil-verżjoni \"$2\".",
 	"extdist-choose-extension": "Agħżel liema estenjoni xi tniżżel:",

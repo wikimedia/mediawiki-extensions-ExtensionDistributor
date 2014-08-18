@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Laai MediaWiki-uitbreiding af",
 	"extensiondistributor-desc": "Uitbreiding vir die verspreiding van die momentopname argiewe van uitbreidings",
-	"extdist-not-configured": "Stel asseblief $wgExtDistList en $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Stel asseblief $wgExtDistList en $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Die uitbreiding \"$1\" bestaan nie",
 	"extdist-choose-extension": "Kies die uitbreiding wat jy wil aflaai:",
 	"extdist-submit-extension": "Gaan voort",

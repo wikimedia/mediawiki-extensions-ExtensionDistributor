@@ -11,7 +11,7 @@
 	},
 	"extensiondistributor": "Lataa MediaWikin laajennus",
 	"extensiondistributor-desc": "Laajennus laajennusten tilannevedosarkistojen jakelulle.",
-	"extdist-not-configured": "Aseta $wgExtDistList ja $wgExtDistArchiveAPI.",
+	"extdist-not-configured": "Aseta $wgExtDistList ja $wgExtDistAPIConfig.",
 	"extdist-list-missing": "Laajennusluetteloa ei voitu hakea!",
 	"extdist-no-such-extension": "Laajennusta ”$1” ei löydy",
 	"extdist-no-such-version": "Laajennus ”$1” ei sisälly versioon ”$2”.",

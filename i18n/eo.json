@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "Elŝuti kromprogramon por MediaWiki",
 	"extensiondistributor-desc": "Kromprogramo por distribui statikajn arkivojn de kromprogramoj",
-	"extdist-not-configured": "Bonvolu konfiguri $wgExtDistList kaj $wgExtDistArchiveAPI",
+	"extdist-not-configured": "Bonvolu konfiguri $wgExtDistList kaj $wgExtDistAPIConfig",
 	"extdist-no-such-extension": "Kromprogramo \"$1\" ne ekzistas",
 	"extdist-no-such-version": "La kromprogramo \"$1\" ne ekzistas en la versio \"$2\".",
 	"extdist-choose-extension": "Elektu kiun kromprogramon tiun vi volas elŝuti.",
