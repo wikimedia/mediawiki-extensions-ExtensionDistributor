@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"C.R."
+		]
+	},
+	"extdist-not-configured": "Pe' piacere configura $wgExtDistList e $wgExtDistAPIConfig"
+}

@@ -4,6 +4,7 @@
 			"Умар"
 		]
 	},
+	"extdist-not-configured": "Дехар до, чугӀо $wgExtDistList а $wgExtDistAPIConfig а",
 	"extdist-no-such-extension": "Шордар «$1» цакарий",
 	"extdist-choose-extension": "Хьаржа шордар чудаккха:",
 	"extdist-submit-extension": "Кхин дӀа",

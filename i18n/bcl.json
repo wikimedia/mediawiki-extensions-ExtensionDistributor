@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geopoet"
+		]
+	},
+	"extdist-not-configured": "Pakisunsaya an $wgExtDistList asin $wgExtDistAPIConfig"
+}
