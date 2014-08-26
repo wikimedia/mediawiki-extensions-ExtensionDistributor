@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wisdom"
+		]
+	},
+	"extdist-not-configured": "$wgExtDistList, $wgExtDistAPIConfig нарын тохиргоог хийнэ үү."
+}
