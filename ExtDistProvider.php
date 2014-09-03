@@ -180,4 +180,38 @@ abstract class ExtDistProvider {
 	 * @return array
 	 */
 	abstract protected function fetchExtensionBranches( $ext );
+
+	/**
+	 * Get a list of extensions
+	 *
+	 * @return array
+	 */
+	public function getExtensionList() {
+		global $wgMemc;
+
+		$extList = $wgMemc->get( 'extdist-list' );
+		if ( $extList === false ) {
+			$extList = $this->fetchExtensionList();
+			$wgMemc->set( 'extdist-list', $extList, 3600 );
+		}
+		return $extList;
+	}
+
+	/**
+	 * Default implementation that requires a
+	 * list of extension names to be available
+	 * at $wgExtDistListFile.
+	 *
+	 * @return array
+	 */
+	protected function fetchExtensionList() {
+		global $wgExtDistListFile;
+		$extList = array();
+		$res = Http::get( $wgExtDistListFile );
+		if ( $res ) {
+			$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
+		}
+
+		return $extList;
+	}
 }

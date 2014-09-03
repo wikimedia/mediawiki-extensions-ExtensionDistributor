@@ -32,6 +32,9 @@ $wgExtensionCredits['specialpage'][] = array(
  * Github specific parameters:
  *  'token' - An OAuth token for authenticating requests
  *
+ * Gerrit specific parameters:
+ *  'extensionListUrl' - API url to fetch a list of extension repositories
+ *
  * @var array
  */
 $wgExtDistAPIConfig = false;
@@ -71,7 +74,7 @@ $wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, arr
 	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
 	$data['extensiondistributor'] = array(
 		'snapshots' => $wgExtDistSnapshotRefs,
-		'list' => $wgExtDistListFile
+		'list' => $wgExtDistListFile ? : ''
 	);
 	$api->getResult()->setIndexedTagName(
 		$data['extensiondistributor']['snapshots'],

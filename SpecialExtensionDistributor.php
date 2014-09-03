@@ -20,11 +20,11 @@ class SpecialExtensionDistributor extends SpecialPage {
 	 * @param $subpage string
 	 */
 	public function execute( $subpage ) {
-		global $wgExtDistListFile, $wgExtDistAPIConfig;
+		global $wgExtDistAPIConfig;
 
 		$this->setHeaders();
 
-		if ( !$wgExtDistListFile || !$wgExtDistAPIConfig ) {
+		if ( !$wgExtDistAPIConfig ) {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
 			return;
 		}
@@ -47,7 +47,7 @@ class SpecialExtensionDistributor extends SpecialPage {
 			return;
 		}
 
-		if ( !in_array( $extension, $this->getExtensionList() ) ) {
+		if ( !in_array( $extension, $this->getProvider()->getExtensionList() ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-no-such-extension', $extension );
 			$this->showExtensionSelector();
 			return;
@@ -66,26 +66,8 @@ class SpecialExtensionDistributor extends SpecialPage {
 		$this->doDownload( $extension, $version );
 	}
 
-	/**
-	 * @return array
-	 */
-	protected function getExtensionList() {
-		global $wgExtDistListFile, $wgMemc;
-
-		$extList = $wgMemc->get( 'extdist-list' );
-		if( !$extList ) {
-			$extList = array();
-			$res = Http::get( $wgExtDistListFile );
-			if( $res ) {
-				$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
-				$wgMemc->set( 'extdist-list', $extList, 3600 );
-			}
-		}
-		return $extList;
-	}
-
 	protected function showExtensionSelector() {
-		$extensions = $this->getExtensionList();
+		$extensions = $this->getProvider()->getExtensionList();
 
 		if ( !$extensions ) {
 			$this->getOutput()->addWikiMsg( 'extdist-list-missing' );
