@@ -10,9 +10,9 @@
  *
  * $wgExtDistAPIConfig = array(
  *  'class' => 'GithubExtDistProvider',
- *  'apiUrl' => 'https://api.github.com/repos/wikimedia/mediawiki-extensions-$EXT/branches',
- *  'tarballUrl' => 'https://codeload.github.com/wikimedia/mediawiki-extensions-$EXT/legacy.tar.gz/$REF',
- *  'tarballName' => 'wikimedia-mediawiki-extensions-$EXT-$SHA.tar.gz'
+ *  'apiUrl' => 'https://api.github.com/repos/wikimedia/mediawiki-$TYPE-$EXT/branches',
+ *  'tarballUrl' => 'https://codeload.github.com/wikimedia/mediawiki-$TYPE-$EXT/legacy.tar.gz/$REF',
+ *  'tarballName' => 'wikimedia-mediawiki-$TYPE-$EXT-$SHA.tar.gz'
  *  'token' => 'YOUR TOKEN HERE',
  * );
  *
@@ -41,14 +41,14 @@ class GithubExtDistProvider extends ExtDistProvider {
 		return $this->substituteUrlVariables( $this->tarballUrl, $ext, $version );
 	}
 
-	protected function fetchExtensionBranches( $ext ) {
+	protected function fetchBranches( $name ) {
 		if ( $this->proxy ) {
 			$options = array( 'proxy' => $this->proxy );
 		} else {
 			$options = null; // Default
 		}
 
-		$url = $this->substituteUrlVariables( $this->apiUrl, $ext );
+		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
 		if ( $this->oAuthToken ) {
 			// See https://developer.github.com/v3/#authentication
 			$url = wfAppendQuery( $url, array( 'access_token' => $this->oAuthToken ) );
@@ -57,7 +57,7 @@ class GithubExtDistProvider extends ExtDistProvider {
 		$req = MWHttpRequest::factory( $url, $options );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
-			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch branches for $ext, " .
+			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch branches for $name, " .
 				"received: {$status->errors[0]}"
 			);
 			return array();

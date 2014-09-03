@@ -13,4 +13,5 @@ $specialPageAliases = array();
  */
 $specialPageAliases['en'] = array(
 	'ExtensionDistributor' => array( 'ExtensionDistributor' ),
+	'SkinDistributor' => array( 'SkinDistributor' ),
 );

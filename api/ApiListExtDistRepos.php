@@ -15,12 +15,14 @@ class ApiListExtDistRepos extends ApiQueryGeneratorBase {
 	}
 
 	public function run() {
-		global $wgExtDistAPIConfig;
-		$provider = ExtDistProvider::factory( $wgExtDistAPIConfig );
+		$extProvider = ExtDistProvider::getProviderFor( ExtDistProvider::EXTENSIONS );
+		$skinProvider = ExtDistProvider::getProviderFor( ExtDistProvider::SKINS );
 		$info = array(
-			'extensions' => $provider->getExtensionList(),
+			'extensions' => $extProvider->getRepositoryList(),
+			'skins' => $skinProvider->getRepositoryList(),
 		);
 		$this->getResult()->setIndexedTagName( $info['extensions'], 'extension' );
+		$this->getResult()->setIndexedTagName( $info['skins'], 'skin' );
 		$this->getResult()->addValue(
 			'query',
 			$this->getModuleName(),
