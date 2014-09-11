@@ -11,12 +11,26 @@
  *  'apiUrl' => 'https://gerrit.wikimedia.org/r/projects/mediawiki%2Fextensions%2F$EXT/branches',
  *  'tarballUrl' => 'http://extdist.wmflabs.org/dist/$EXT-$REF-$SHA.tar.gz',
  *  'tarballName' => '$EXT-$REF-$SHA.tar.gz',
+ *  'extensionListUrl' => 'https://gerrit.wikimedia.org/r/projects/?p=mediawiki/extensions',
  * );
  *
  */
 class GerritExtDistProvider extends ExtDistProvider {
-	protected function fetchExtensionBranches( $ext ) {
-		$url = $this->substituteUrlVariables( $this->apiUrl, $ext );
+
+	private $extensionListUrl = false;
+
+	public function __construct( array $options ) {
+		parent::__construct( $options );
+		if ( isset( $options['extensionListUrl'] ) ) {
+			$this->extensionListUrl = $options['extensionListUrl'];
+		}
+	}
+
+	/**
+	 * @param string $url full URL to request
+	 * @return array
+	 */
+	private function makeGerritApiRequest( $url ) {
 		if ( $this->proxy ) {
 			$options = array( 'proxy' => $this->proxy );
 		} else {
@@ -25,14 +39,19 @@ class GerritExtDistProvider extends ExtDistProvider {
 		$req = MWHttpRequest::factory( $url, $options );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
-			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch branches for $ext, " .
+			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch \"{$url}\", " .
 				"received: {$status->errors[0]}"
 			);
 			return array();
 		}
 		// Gerrit API responses start with )]}' so trim it, then parse the JSON
 		$clean = substr( $req->getContent(), 4 );
-		$info = wfObjectToArray( FormatJson::decode( $clean ), true );
+		return wfObjectToArray( FormatJson::decode( $clean ), true );
+	}
+
+	protected function fetchExtensionBranches( $ext ) {
+		$url = $this->substituteUrlVariables( $this->apiUrl, $ext );
+		$info = $this->makeGerritApiRequest( $url );
 		$branches = array();
 		foreach( $info as $branch ) {
 			if ( strpos( $branch['ref'], 'refs/heads/' ) === 0 ) {
@@ -42,6 +61,22 @@ class GerritExtDistProvider extends ExtDistProvider {
 		}
 
 		return $branches;
+	}
+
+	protected function fetchExtensionList() {
+		if ( !$this->extensionListUrl ) {
+			// Not configured, fallback to default
+			return parent::fetchExtensionList();
+		}
+
+		$extensions = array();
+		$out = $this->makeGerritApiRequest( $this->extensionListUrl );
+		foreach ( $out as $name => $info ) {
+			$parts = explode( '/', $name );
+			$extensions[] = array_pop( $parts );
+		}
+
+		return $extensions;
 	}
 
 	public function getTarballLocation( $ext, $version ) {
