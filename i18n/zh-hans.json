@@ -13,7 +13,7 @@
 	},
 	"extensiondistributor": "下载MediaWiki扩展程序",
 	"extensiondistributor-desc": "分发扩展程序快照档案的扩展程序",
-	"extdist-not-configured": "请设置 $wgExtDistList 和 $wgExtDistAPIConfig",
+	"extdist-not-configured": "请设置<code>$wgExtDistAPIConfig</code>。",
 	"extdist-list-missing": "无法读取扩展程序列表！",
 	"extdist-no-such-extension": "没有这个扩展程序“$1”",
 	"extdist-no-such-version": "扩展程序“$1”不存在于版本“$2”中。",

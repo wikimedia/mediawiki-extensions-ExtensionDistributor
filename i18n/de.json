@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "MediaWiki-Erweiterungen herunterladen",
 	"extensiondistributor-desc": "Ermöglicht das Herunterladen von MediaWiki-Erweiterungen",
-	"extdist-not-configured": "Bitte konfiguriere die Parameter <code>$wgExtDistList</code> und <code>$wgExtDistAPIConfig</code>.",
+	"extdist-not-configured": "Bitte konfiguriere den Parameter <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Erweiterungsliste konnte nicht abgerufen werden!",
 	"extdist-no-such-extension": "Die Erweiterung „$1“ ist nicht vorhanden.",
 	"extdist-no-such-version": "Die Erweiterung „$1“ ist in der Version „$2“ nicht vorhanden.",

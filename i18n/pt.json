@@ -4,12 +4,13 @@
 			"Cainamarques",
 			"Hamilton Abreu",
 			"Luckas",
-			"Malafaya"
+			"Malafaya",
+			"Vitorvicentevalente"
 		]
 	},
 	"extensiondistributor": "Descarregar extensão MediaWiki",
 	"extensiondistributor-desc": "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
-	"extdist-not-configured": "Por favor, configure $wgExtDistList e $wgExtDistAPIConfig",
+	"extdist-not-configured": "Por favor, configure <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Não é possível buscar lista de extensões!",
 	"extdist-no-such-extension": "A extensão \"$1\" não existe",
 	"extdist-no-such-version": "A extensão \"$1\" não existe na versão \"$2\".",

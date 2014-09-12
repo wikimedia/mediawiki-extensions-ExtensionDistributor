@@ -12,7 +12,7 @@
 	},
 	"extensiondistributor": "{{doc-special|ExtensionDistributor}}\n{{Identical|Download}}",
 	"extensiondistributor-desc": "{{desc|name=Extension Distributor|url=http://www.mediawiki.org/wiki/Extension:ExtensionDistributor}}",
-	"extdist-not-configured": "{{doc-important|Do not translate <code>$wgExtDistList</code> and <code>$wgExtDistAPIConfig</code>.}}",
+	"extdist-not-configured": "{{doc-important|Do not translate <code>$wgExtDistAPIConfig</code>.}}",
 	"extdist-list-missing": "Used as error message in [[Special:ExtensionDistributor]].",
 	"extdist-no-such-extension": "This message indicates the extension doesn't exist in the extensions list. Parameters:\n* $1 - extension name",
 	"extdist-no-such-version": "This message indicates the specified version of the extension doesn't exist. Parameters:\n* $1 - extension name\n* $2 - version number of the extension",

@@ -7,7 +7,7 @@
 	},
 	"extensiondistributor": "הורדת הרחבה של מדיה־ויקי",
 	"extensiondistributor-desc": "הרחבה להפצת קבצים מכווצים של הרחבות",
-	"extdist-not-configured": "אנא הגדירו את $wgExtDistList ואת $wgExtDistAPIConfig",
+	"extdist-not-configured": "יש להגדיר את <code dir=\"ltr\">$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "לא ניתן לאחזר את רשימת ההרחבות!",
 	"extdist-no-such-extension": "אין הרחבה בשם \"$1\"",
 	"extdist-no-such-version": "ההרחבה \"$1\" אינה קיימת בגרסה \"$2\".",
