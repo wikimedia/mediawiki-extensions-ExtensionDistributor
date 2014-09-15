@@ -9,12 +9,13 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Verdy p",
-			"Wyz"
+			"Wyz",
+			"Ltrlg"
 		]
 	},
 	"extensiondistributor": "Télécharger l’extension MediaWiki",
 	"extensiondistributor-desc": "Extension pour la distribution des archives photographiques des extensions",
-	"extdist-not-configured": "Veuillez configurer $wgExtDistList et $wgExtDistAPIConfig",
+	"extdist-not-configured": "Veuillez configurer <code>$wgExtDistAPIConfig</code>",
 	"extdist-list-missing": "Impossible d’analyser la liste d’extensions!",
 	"extdist-no-such-extension": "Aucune extension « $1 »",
 	"extdist-no-such-version": "L’extension « $1 » n’existe pas dans la version « $2 ».",

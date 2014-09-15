@@ -5,12 +5,13 @@
 			"Derbeth",
 			"Leinad",
 			"Maikking",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Chrumps"
 		]
 	},
 	"extensiondistributor": "Pobierz rozszerzenie MediaWiki",
 	"extensiondistributor-desc": "Rozszerzenie odpowiedzialne za dystrybucję zarchiwizowanych rozszerzeń gotowych do pobrania",
-	"extdist-not-configured": "Proszę skonfigurować zmienne $wgExtDistList i $wgExtDistAPIConfig",
+	"extdist-not-configured": "Proszę skonfigurować zmienną <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extension": "Brak rozszerzenia „$1”",
 	"extdist-no-such-version": "Rozszerzenie „$1” w wersji „$2” nie istnieje.",
 	"extdist-choose-extension": "Wybierz rozszerzenie, które chcesz pobrać:",
