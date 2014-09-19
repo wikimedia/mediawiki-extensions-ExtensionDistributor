@@ -6,7 +6,7 @@
 		]
 	},
 	"extensiondistributor": "ַאַראָפלאָדן מעדיעוויקי פֿאַרברייטערונג",
-	"extdist-not-configured": "ביטע קאנפֿיגורירן $wgExtDistList און $wgExtDistAPIConfig",
+	"extdist-not-configured": "ביטע קאנפֿיגורירן <code>$wgExtDistAPIConfig</code>.",
 	"extdist-submit-extension": "פֿארזעצן",
 	"extdist-submit-version": "פֿארזעצן"
 }
