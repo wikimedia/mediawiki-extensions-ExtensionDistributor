@@ -7,12 +7,13 @@
 			"Olvin",
 			"Prima klasy4na",
 			"Ата",
-			"Тест"
+			"Тест",
+			"Andriykopanytsia"
 		]
 	},
 	"extensiondistributor": "Завантажити розширення MediaWiki",
 	"extensiondistributor-desc": "Розширення для завантаження дистрибутивів розширень",
-	"extdist-not-configured": "Будь ласка, налаштуйте $wgExtDistList і $wgExtDistAPIConfig",
+	"extdist-not-configured": "Будь ласка, налаштуйте <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Не вдалося дістати список розширень!",
 	"extdist-no-such-extension": "Розширення «$1» не знайдено",
 	"extdist-no-such-version": "Розширення \"$1\" не існує у версії \"$2\".",
