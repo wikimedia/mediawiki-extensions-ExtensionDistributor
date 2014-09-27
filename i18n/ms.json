@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "Muat turun penyambung MediaWiki",
 	"extensiondistributor-desc": "Penyambung khas untuk pengedaran arkib petikan penyambung",
-	"extdist-not-configured": "Sila tetapkan konfigurasi $wgExtDistList dan $wgExtDistAPIConfig",
+	"extdist-not-configured": "Sila tetapkan konfigurasi <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Senarai sambungan tidak dapat diambil!",
 	"extdist-no-such-extension": "Penyambung \"$1\" tidak wujud",
 	"extdist-no-such-version": "Penyambung \"$1\" tidak mempunyai versi \"$2\".",
