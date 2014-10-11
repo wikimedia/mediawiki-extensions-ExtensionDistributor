@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "Загрузіць пашырэньне MediaWiki",
 	"extensiondistributor-desc": "Пашырэньне для распаўсюджваньня архіваў пашырэньняў",
-	"extdist-not-configured": "Калі ласка, задайце $wgExtDistList і $wgExtDistAPIConfig",
+	"extdist-not-configured": "Калі ласка, задайце <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Не ўдалося атрымаць сьпіс пашырэньняў!",
 	"extdist-no-such-extension": "Пашырэньне «$1» не існуе",
 	"extdist-no-such-version": "Вэрсія «$2» пашырэньня «$1» ня знойдзеная.",
