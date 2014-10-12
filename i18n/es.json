@@ -16,7 +16,7 @@
 	},
 	"extensiondistributor": "Descargar extensión MediaWiki",
 	"extensiondistributor-desc": "Extensión para la distribución de archivos de instantáneas de las extensiones",
-	"extdist-not-configured": "Por favor configura $wgExtDistList y $wgExtDistAPIConfig",
+	"extdist-not-configured": "Configura <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "No se pudo recuperar la lista de extensiones.",
 	"extdist-no-such-extension": "No existe la extensión «$1»",
 	"extdist-no-such-version": "La extensión «$1» no existe en la versión «$2».",
