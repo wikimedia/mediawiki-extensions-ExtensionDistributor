@@ -70,6 +70,8 @@ $wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDist
 $wgAutoloadClasses['ExtDistProvider'] = $dir . 'ExtDistProvider.php';
 $wgAutoloadClasses['GerritExtDistProvider'] = $dir . 'GerritExtDistProvider.php';
 $wgAutoloadClasses['GithubExtDistProvider'] = $dir . 'GithubExtDistProvider.php';
+$wgAutoloadClasses['ApiListExtDistRepos'] = $dir . 'api/ApiListExtDistRepos.php';
+$wgAPIListModules['extdistrepos'] = 'ApiListExtDistRepos';
 $wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, array &$data ) {
 	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
 	$data['extensiondistributor'] = array(
