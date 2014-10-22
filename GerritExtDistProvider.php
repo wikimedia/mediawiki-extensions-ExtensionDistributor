@@ -73,7 +73,9 @@ class GerritExtDistProvider extends ExtDistProvider {
 		$out = $this->makeGerritApiRequest( $this->extensionListUrl );
 		foreach ( $out as $name => $info ) {
 			$parts = explode( '/', $name );
-			$extensions[] = array_pop( $parts );
+			if ( count( $parts ) === 3 ) {
+				$extensions[] = array_pop( $parts );
+			}
 		}
 
 		return $extensions;
