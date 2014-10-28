@@ -1,20 +1,22 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "extensiondistributor": "Download MediaWiki extension",
-    "extensiondistributor-desc": "Extension for distributing snapshot archives of extensions",
-    "extdist-not-configured": "Please configure <code>$wgExtDistAPIConfig</code>.",
-    "extdist-list-missing": "Unable to fetch extension list!",
-    "extdist-no-such-extension": "No such extension \"$1\".",
-    "extdist-no-such-version": "The extension \"$1\" does not exist in the version \"$2\".",
-    "extdist-choose-extension": "Select which extension you want to download:",
-    "extdist-submit-extension": "Continue",
-    "extdist-choose-version": "You are downloading the <b>$1</b> extension.\n\nSelect your MediaWiki version.\n\nMost extensions work across multiple versions of MediaWiki, so if your MediaWiki version is not here, or if you have a need for the latest extension features, try using the current version.",
-    "extdist-no-versions": "The selected extension ($1) is not available in any version!",
-    "extdist-submit-version": "Continue",
-    "extdist-created": "A snapshot of version <b>$2</b> of the <b>$1</b> extension for MediaWiki <b>$3</b> has been created. Your download should start automatically in 5 seconds.\n\nThe URL for this snapshot is:\n:$4\nIt may be used for immediate download to a server, but please do not bookmark it, since the contents will not be updated, and it may be deleted at a later date.\n\nThe tar archive should be extracted into your extensions directory. For example, on a unix-like OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nOn Windows, you can use [http://www.7-zip.org/ 7-zip] to extract the files.\n\nIf your wiki is on a remote server, extract the files to a temporary directory on your local computer, and then upload '''all''' of the extracted files to the extensions directory on the server.\n\nAfter you have extracted the files, you will need to register the extension in LocalSettings.php. The extension documentation should have instructions on how to do this.\n\nIf you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]].",
-    "extdist-want-more": "Get another extension",
-    "extdist-tar-error": "Unable to fetch archive URL from archive API.",
-    "extdist-no-branches": "Unable to fetch information about any branches."
+	"@metadata": {
+		"authors": []
+	},
+	"extensiondistributor": "Download MediaWiki extension",
+	"extensiondistributor-desc": "Extension for distributing snapshot archives of extensions",
+	"extdist-not-configured": "Please configure <code>$wgExtDistAPIConfig</code>.",
+	"extdist-list-missing": "Unable to fetch extension list!",
+	"extdist-no-such-extension": "No such extension \"$1\".",
+	"extdist-no-such-version": "The extension \"$1\" does not exist in the version \"$2\".",
+	"extdist-choose-extension": "Select which extension you want to download:",
+	"extdist-submit-extension": "Continue",
+	"extdist-choose-version": "You are downloading the <b>$1</b> extension.\n\nSelect your MediaWiki version.\n\nMost extensions work across multiple versions of MediaWiki, so if your MediaWiki version is not here, or if you have a need for the latest extension features, try using the current version.",
+	"extdist-no-versions": "The selected extension ($1) is not available in any version!",
+	"extdist-submit-version": "Continue",
+	"extdist-created": "A snapshot of version <b>$2</b> of the <b>$1</b> extension for MediaWiki <b>$3</b> has been created. Your download should start automatically in 5 seconds.\n\nThe URL for this snapshot is:\n:$4\nIt may be used for immediate download to a server, but please do not bookmark it, since the contents will not be updated, and it may be deleted at a later date.\n\nThe tar archive should be extracted into your extensions directory. For example, on a unix-like OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nOn Windows, you can use [http://www.7-zip.org/ 7-zip] to extract the files.\n\nIf your wiki is on a remote server, extract the files to a temporary directory on your local computer, and then upload '''all''' of the extracted files to the extensions directory on the server.\n\nAfter you have extracted the files, you will need to register the extension in LocalSettings.php. The extension documentation should have instructions on how to do this.\n\nIf you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more": "Get another extension",
+	"extdist-tar-error": "Unable to fetch archive URL from archive API.",
+	"extdist-no-branches": "Unable to fetch information about any branches.",
+	"apihelp-query+extdistrepos-description": "Returns the list of repositories supported by ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "List repositories"
 }
