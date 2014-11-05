@@ -21,5 +21,5 @@
 	"extdist-want-more": "Lấy một phần mở rộng khác",
 	"extdist-tar-error": "Không thể lấy URL của bản nén từ API bản nén.",
 	"extdist-no-branches": "Không thể lấy thông tin về bất cứ chi nhánh nào.",
-	"apihelp-query+extdistrepos-example-1": "Danh sách repository"
+	"apihelp-query+extdistrepos-example-1": "Danh sách kho mã nguồn"
 }

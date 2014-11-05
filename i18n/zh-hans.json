@@ -25,5 +25,6 @@
 	"extdist-created": "MediaWiki <b>$3</b>版本的<b>$1</b>扩展的<b>$2</b>版本已创建。下载将在5秒内自动开始。\n\n快照的链接是：\n:$4\n它可能可以给您直接在服务器上下载，但不要收藏它，因为它不会更新，并且下载后可能过后就会删除。\n\nTar压缩文件要解压到您的扩展目录中。比如在类Unix系统中使用命令：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows上，可以使用[http://www.7-zip.org/ 7-zip]来解压文件。\n\n若您的维基在远程服务器上，请解压所有文件到您的电脑上的一个临时文件夹中，然后上传'''所有'''文件到远程服务器上的扩展目录中。\n\n解压文件后，您就需要在LocalSettings.php中注册您的插件。插件资料中应该已经介绍了。\n\n如果您对这个插件获取系统有任何建议，请前去[[Extension talk:ExtensionDistributor]]。",
 	"extdist-want-more": "获取其他扩展程序",
 	"extdist-tar-error": "无法从存档API读取存档URL。",
-	"extdist-no-branches": "无法获取关于分支机构的信息。"
+	"extdist-no-branches": "无法获取关于分支机构的信息。",
+	"apihelp-query+extdistrepos-example-1": "存储库列表"
 }
