@@ -8,7 +8,7 @@
 	},
 	"extensiondistributor": "Tải về phần mở rộng MediaWiki",
 	"extensiondistributor-desc": "Phần mở rộng để phân phối các bản lưu trữ ảnh của các phần mở rộng",
-	"extdist-not-configured": "Xin hãy cấu hình $wgExtDistList và $wgExtDistAPIConfig",
+	"extdist-not-configured": "Xin hãy cấu hình <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing": "Không thể lấy danh sách phần mở rộng!",
 	"extdist-no-such-extension": "Không có phần mở rộng “$1”",
 	"extdist-no-such-version": "Phần mở rộng “$1” không tồn tại trong phiên bản “$2”.",
@@ -21,5 +21,6 @@
 	"extdist-want-more": "Lấy một phần mở rộng khác",
 	"extdist-tar-error": "Không thể lấy URL của bản nén từ API bản nén.",
 	"extdist-no-branches": "Không thể lấy thông tin về bất cứ chi nhánh nào.",
+	"apihelp-query+extdistrepos-description": "Cho ra danh sách kho mã nguồn được hỗ trợ bởi ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Danh sách kho mã nguồn"
 }
