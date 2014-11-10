@@ -23,5 +23,6 @@
 	"extdist-want-more": "Eine weitere Erweiterung herunterladen",
 	"extdist-tar-error": "Die Archiv-URL konnte nicht von der Archiv-API abgerufen werden.",
 	"extdist-no-branches": "Informationen über Versionszweige konnten nicht abgerufen werden.",
+	"apihelp-query+extdistrepos-description": "Gibt eine Liste der Repositorien aus, die von der Erweiterung ExtensionDistributor unterstützt werden.",
 	"apihelp-query+extdistrepos-example-1": "Repositorien auflisten"
 }
