@@ -7,8 +7,12 @@
  *  proxy (optional) - HTTP proxy used in requests
  *  apiUrl - API endpoint to use
  *  tarballUrl - Where tarballs are stored
+ *  'repoType' - Either "skins" or "extensions"
  */
 abstract class ExtDistProvider {
+
+	const EXTENSIONS = 'extensions';
+	const SKINS = 'skins';
 
 	/**
 	 * @var string|bool Proxy url, false if no proxy
@@ -18,11 +22,12 @@ abstract class ExtDistProvider {
 	protected $tarballUrl;
 	protected $tarballName;
 	protected $apiUrl;
+	protected $repoType;
 
 	/**
-	 * @var array Instance cache of extension => branches
+	 * @var array Instance cache of repo name => branches
 	 */
-	private $extBranches = array();
+	private $branches = array();
 
 	/**
 	 * @param array $options
@@ -34,6 +39,7 @@ abstract class ExtDistProvider {
 		$this->tarballUrl = $options['tarballUrl'];
 		$this->tarballName = $options['tarballName'];
 		$this->apiUrl = $options['apiUrl'];
+		$this->repoType = $options['repoType'];
 	}
 
 	/**
@@ -47,6 +53,24 @@ abstract class ExtDistProvider {
 	}
 
 	/**
+	 * Get the provider configured for the given type
+	 *
+	 * @param string $type
+	 * @return ExtDistProvider
+	 */
+	public static function getProviderFor( $type ) {
+		static $providers = array();
+		if ( !isset( $providers[$type] ) ) {
+			global $wgExtDistAPIConfig;
+			$providers[$type] = self::factory(
+				$wgExtDistAPIConfig + array( 'repoType' => $type )
+			);
+		}
+
+		return $providers[$type];
+	}
+
+	/**
 	 * List of branches enabled by configuration
 	 *
 	 * @return array
@@ -57,7 +81,7 @@ abstract class ExtDistProvider {
 	}
 
 	/**
-	 * Quick helper for subclasses to replace $EXT, $REF, and $SHA
+	 * Quick helper for subclasses to replace $EXT, $REF, $SHA, and $TYPE
 	 *
 	 * @param string $url
 	 * @param string $ext
@@ -65,10 +89,13 @@ abstract class ExtDistProvider {
 	 * @param string $hash
 	 * @return string
 	 */
-	protected function substituteUrlVariables( $url, $ext, $version = '', $hash = '' ) {
+	protected function substituteUrlVariables( $url, $ext = '', $version = '', $hash = '' ) {
 		return str_replace(
-			array( '$EXT', '$REF', '$SHA' ),
-			array( rawurlencode( $ext ), rawurlencode( $version ), rawurlencode( $hash ) ),
+			array( '$EXT', '$REF', '$SHA', '$TYPE' ),
+			array(
+				rawurlencode( $ext ), rawurlencode( $version ),
+				rawurlencode( $hash ), rawurlencode( $this->repoType )
+			),
 			$url
 		);
 	}
@@ -81,59 +108,59 @@ abstract class ExtDistProvider {
 	abstract protected function getCacheDuration();
 
 	/**
-	 * Does $ext have a branch named $version?
+	 * Does $name have a branch named $version?
 	 *
-	 * @param string $ext
+	 * @param string $name
 	 * @param string $version
 	 * @return bool
 	 */
-	public function hasExtBranch( $ext, $version ) {
-		$branches = $this->getExtensionBranches( $ext );
+	public function hasBranch( $name, $version ) {
+		$branches = $this->getBranches( $name );
 		//var_dump($branches);
 		return isset( $branches[$version] );
 	}
 
 	/**
 	 * Returns short sha hash for the branch. Callers should have
-	 * called hasExtBranch first.
+	 * called hasBranch first.
 	 *
-	 * If you need the full hash, use getExtensionBranches directly.
+	 * If you need the full hash, use getBranches directly.
 	 *
-	 * @param string $ext
+	 * @param string $name
 	 * @param string $version
 	 * @return string
 	 */
-	public function getExtBranchSha( $ext, $version ) {
-		$branches = $this->getExtensionBranches( $ext );
+	public function getBranchSha( $name, $version ) {
+		$branches = $this->getBranches( $name );
 		return substr( $branches[$version], 0, 7 );
 	}
 
 	/**
 	 * Return an array of validated branch names the
-	 * extension has.
+	 * repo has.
 	 *
-	 * @param string $ext
+	 * @param string $name
 	 * @return array branch name => sha1
 	 */
-	public function getExtensionBranches( $ext ) {
+	public function getBranches( $name ) {
 		global $wgMemc;
 
 		// We'll probably call this function multiple
 		// times, so use instance cache
-		if ( isset( $this->extBranches[$ext] ) ) {
-			return $this->extBranches[$ext];
+		if ( isset( $this->branches[$name] ) ) {
+			return $this->branches[$name];
 		}
 
-		// If a new release branch is added, the extensions probably also
+		// If a new release branch is added, the repos probably also
 		// got that branch, so vary cache on that
 		$branches = $this->getEnabledBranches();
 		sort( $branches );
 		$confHash = md5( serialize( $branches ) );
 
-		$key = "extdist-branches-$ext-$confHash";
+		$key = "extdist-branches-{$this->repoType}-$name-$confHash";
 		$data = $wgMemc->get( $key );
 		if ( $data === false ) {
-			$data = $this->fetchExtensionBranches( $ext );
+			$data = $this->fetchBranches( $name );
 			$wgMemc->set( $key, $data, $this->getCacheDuration() );
 		}
 
@@ -144,7 +171,7 @@ abstract class ExtDistProvider {
 			}
 		}
 
-		$this->extBranches[$ext] = $enabled;
+		$this->branches[$name] = $enabled;
 
 		return $enabled;
 	}
@@ -157,13 +184,13 @@ abstract class ExtDistProvider {
 	 * @return string
 	 */
 	public function getExpectedTarballName( $ext, $version ) {
-		$shortHash = $this->getExtBranchSha( $ext, $version );
+		$shortHash = $this->getBranchSha( $ext, $version );
 		return $this->substituteUrlVariables( $this->tarballName, $ext, $version, $shortHash );
 	}
 
 	/**
 	 * Returns a fully qualified URL pointing to the location of the
-	 * tarball, given the extension name and version.
+	 * tarball, given the repo name and version.
 	 *
 	 * @param string $ext
 	 * @param string $version
@@ -173,38 +200,39 @@ abstract class ExtDistProvider {
 
 	/**
 	 * Should return an array of branches that
-	 * the extension has, don't validate whether they
+	 * the repo has, don't validate whether they
 	 * are in $wgExtDistSnapshotRefs
 	 *
-	 * @param string $ext
+	 * @param string $name
 	 * @return array
 	 */
-	abstract protected function fetchExtensionBranches( $ext );
+	abstract protected function fetchBranches( $name );
 
 	/**
-	 * Get a list of extensions
+	 * Get a list of repository names
 	 *
 	 * @return array
 	 */
-	public function getExtensionList() {
+	public function getRepositoryList() {
 		global $wgMemc;
 
-		$extList = $wgMemc->get( 'extdist-list' );
+		$key = "extdist-{$this->repoType}-list";
+		$extList = $wgMemc->get( $key );
 		if ( $extList === false ) {
-			$extList = $this->fetchExtensionList();
-			$wgMemc->set( 'extdist-list', $extList, 3600 );
+			$extList = $this->fetchRepositoryList();
+			$wgMemc->set( $key, $extList, 3600 );
 		}
 		return $extList;
 	}
 
 	/**
 	 * Default implementation that requires a
-	 * list of extension names to be available
+	 * list of repository names to be available
 	 * at $wgExtDistListFile.
 	 *
 	 * @return array
 	 */
-	protected function fetchExtensionList() {
+	protected function fetchRepositoryList() {
 		global $wgExtDistListFile;
 		$extList = array();
 		$res = Http::get( $wgExtDistListFile );

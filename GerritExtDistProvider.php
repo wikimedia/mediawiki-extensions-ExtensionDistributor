@@ -8,21 +8,21 @@
  *
  * $wgExtDistAPIConfig = array(
  *  'class' => 'GerritExtDistProvider',
- *  'apiUrl' => 'https://gerrit.wikimedia.org/r/projects/mediawiki%2Fextensions%2F$EXT/branches',
- *  'tarballUrl' => 'http://extdist.wmflabs.org/dist/$EXT-$REF-$SHA.tar.gz',
+ *  'apiUrl' => 'https://gerrit.wikimedia.org/r/projects/mediawiki%2F$TYPE%2F$EXT/branches',
+ *  'tarballUrl' => 'http://extdist.wmflabs.org/dist/$TYPE/$EXT-$REF-$SHA.tar.gz',
  *  'tarballName' => '$EXT-$REF-$SHA.tar.gz',
- *  'extensionListUrl' => 'https://gerrit.wikimedia.org/r/projects/?p=mediawiki/extensions/',
+ *  'repoListUrl' => 'https://gerrit.wikimedia.org/r/projects/?p=mediawiki/$TYPE/',
  * );
  *
  */
 class GerritExtDistProvider extends ExtDistProvider {
 
-	private $extensionListUrl = false;
+	private $repoListUrl = false;
 
 	public function __construct( array $options ) {
 		parent::__construct( $options );
-		if ( isset( $options['extensionListUrl'] ) ) {
-			$this->extensionListUrl = $options['extensionListUrl'];
+		if ( isset( $options['repoListUrl'] ) ) {
+			$this->repoListUrl = $options['repoListUrl'];
 		}
 	}
 
@@ -49,8 +49,8 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return wfObjectToArray( FormatJson::decode( $clean ), true );
 	}
 
-	protected function fetchExtensionBranches( $ext ) {
-		$url = $this->substituteUrlVariables( $this->apiUrl, $ext );
+	protected function fetchBranches( $name ) {
+		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
 		$info = $this->makeGerritApiRequest( $url );
 		$branches = array();
 		foreach( $info as $branch ) {
@@ -63,26 +63,28 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return $branches;
 	}
 
-	protected function fetchExtensionList() {
-		if ( !$this->extensionListUrl ) {
+	protected function fetchRepositoryList() {
+		if ( !$this->repoListUrl ) {
 			// Not configured, fallback to default
-			return parent::fetchExtensionList();
+			return parent::fetchRepositoryList();
 		}
 
-		$extensions = array();
-		$out = $this->makeGerritApiRequest( $this->extensionListUrl );
+		$repos = array();
+		$out = $this->makeGerritApiRequest(
+			$this->substituteUrlVariables( $this->repoListUrl )
+		);
 		foreach ( $out as $name => $info ) {
 			$parts = explode( '/', $name );
 			if ( count( $parts ) === 3 ) {
-				$extensions[] = array_pop( $parts );
+				$repos[] = array_pop( $parts );
 			}
 		}
 
-		return $extensions;
+		return $repos;
 	}
 
 	public function getTarballLocation( $ext, $version ) {
-		$shortHash = $this->getExtBranchSha( $ext, $version );
+		$shortHash = $this->getBranchSha( $ext, $version );
 		return $this->substituteUrlVariables( $this->tarballUrl, $ext, $version, $shortHash );
 	}
 

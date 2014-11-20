@@ -13,6 +13,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'extensiondistributor-desc',
 );
 
+define( 'MW_ED_SUPPORTS_SKINS', true );
+
 /********************
  * Configuration
  */
@@ -33,7 +35,7 @@ $wgExtensionCredits['specialpage'][] = array(
  *  'token' - An OAuth token for authenticating requests
  *
  * Gerrit specific parameters:
- *  'extensionListUrl' - API url to fetch a list of extension repositories
+ *  'repoListUrl' - API url to fetch a list of repositories
  *
  * @var array
  */
@@ -65,8 +67,11 @@ $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDist
 
 // Special page classes
 $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
+$wgSpecialPages['SkinDistributor'] = 'SpecialSkinDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
+$wgAutoloadClasses['SpecialBaseDistributor'] = $dir . 'SpecialBaseDistributor.php';
 $wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
+$wgAutoloadClasses['SpecialSkinDistributor'] = $dir . 'SpecialSkinDistributor.php';
 $wgAutoloadClasses['ExtDistProvider'] = $dir . 'ExtDistProvider.php';
 $wgAutoloadClasses['GerritExtDistProvider'] = $dir . 'GerritExtDistProvider.php';
 $wgAutoloadClasses['GithubExtDistProvider'] = $dir . 'GithubExtDistProvider.php';
