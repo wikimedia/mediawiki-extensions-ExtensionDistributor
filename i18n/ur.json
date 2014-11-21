@@ -6,7 +6,10 @@
 		]
 	},
 	"extensiondistributor": "زیراثقال میڈیاوکی توسیع",
+	"skindistributor": "میڈیاویکی سکن ڈاؤنلوڈ کریں",
+	"extdist-choose-skins": "سکن فہرست مل نہیں سکی",
 	"extdist-submit-extension": "جاری رکھیں",
+	"extdist-no-versions-skins": "ڈاؤنلوڈ کے لیے اپنی پسندیدہ سکن منتخب کریں",
 	"extdist-submit-version": "جاری رکھیں",
-	"extdist-want-more": "ایک اور توسیع حاصل کریں"
+	"extdist-want-more-extensions": "ایک اور توسیع حاصل کریں"
 }
