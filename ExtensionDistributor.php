@@ -69,6 +69,7 @@ $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDist
 $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPages['SkinDistributor'] = 'SpecialSkinDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
+$wgSpecialPageGroups['SkinDistributor'] = 'developer';
 $wgAutoloadClasses['SpecialBaseDistributor'] = $dir . 'SpecialBaseDistributor.php';
 $wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
 $wgAutoloadClasses['SpecialSkinDistributor'] = $dir . 'SpecialSkinDistributor.php';
