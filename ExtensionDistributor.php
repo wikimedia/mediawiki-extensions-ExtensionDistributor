@@ -58,25 +58,24 @@ $wgExtDistSnapshotRefs = array(
 /********************
  * Registration
  */
-$dir = __DIR__ . '/';
 
 // Internationlization files
 $wgMessagesDirs['ExtensionDistributor'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ExtensionDistributor'] = $dir . 'ExtensionDistributor.i18n.php';
-$wgExtensionMessagesFiles['ExtensionDistributorAliases'] = $dir . 'ExtensionDistributor.alias.php';
+$wgExtensionMessagesFiles['ExtensionDistributor'] = __DIR__ . '/ExtensionDistributor.i18n.php';
+$wgExtensionMessagesFiles['ExtensionDistributorAliases'] = __DIR__ . '/ExtensionDistributor.alias.php';
 
 // Special page classes
 $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPages['SkinDistributor'] = 'SpecialSkinDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgSpecialPageGroups['SkinDistributor'] = 'developer';
-$wgAutoloadClasses['SpecialBaseDistributor'] = $dir . 'SpecialBaseDistributor.php';
-$wgAutoloadClasses['SpecialExtensionDistributor'] = $dir . 'SpecialExtensionDistributor.php';
-$wgAutoloadClasses['SpecialSkinDistributor'] = $dir . 'SpecialSkinDistributor.php';
-$wgAutoloadClasses['ExtDistProvider'] = $dir . 'ExtDistProvider.php';
-$wgAutoloadClasses['GerritExtDistProvider'] = $dir . 'GerritExtDistProvider.php';
-$wgAutoloadClasses['GithubExtDistProvider'] = $dir . 'GithubExtDistProvider.php';
-$wgAutoloadClasses['ApiListExtDistRepos'] = $dir . 'api/ApiListExtDistRepos.php';
+$wgAutoloadClasses['SpecialBaseDistributor'] = __DIR__ . '/specials/SpecialBaseDistributor.php';
+$wgAutoloadClasses['SpecialExtensionDistributor'] = __DIR__ . '/specials/SpecialExtensionDistributor.php';
+$wgAutoloadClasses['SpecialSkinDistributor'] = __DIR__ . '/specials/SpecialSkinDistributor.php';
+$wgAutoloadClasses['ExtDistProvider'] = __DIR__ . '/providers/ExtDistProvider.php';
+$wgAutoloadClasses['GerritExtDistProvider'] = __DIR__ . '/providers/GerritExtDistProvider.php';
+$wgAutoloadClasses['GithubExtDistProvider'] = __DIR__ . '/providers/GithubExtDistProvider.php';
+$wgAutoloadClasses['ApiListExtDistRepos'] = __DIR__ . '/api/ApiListExtDistRepos.php';
 $wgAPIListModules['extdistrepos'] = 'ApiListExtDistRepos';
 $wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, array &$data ) {
 	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
