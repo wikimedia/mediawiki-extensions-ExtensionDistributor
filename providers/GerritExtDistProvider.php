@@ -39,7 +39,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 		$req = MWHttpRequest::factory( $url, $options );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
-			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch \"{$url}\", " .
+			$this->logger->error( __METHOD__ . ": Could not fetch \"{$url}\", " .
 				"received: {$status->errors[0]}"
 			);
 			return array();

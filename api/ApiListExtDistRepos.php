@@ -15,8 +15,11 @@ class ApiListExtDistRepos extends ApiQueryGeneratorBase {
 	}
 
 	public function run() {
+		$logger = MWLoggerFactory::getInstance( 'ExtensionDistributor' );
 		$extProvider = ExtDistProvider::getProviderFor( ExtDistProvider::EXTENSIONS );
+		$extProvider->setLogger( $logger );
 		$skinProvider = ExtDistProvider::getProviderFor( ExtDistProvider::SKINS );
+		$skinProvider->setLogger( $logger );
 		$info = array(
 			'extensions' => $extProvider->getRepositoryList(),
 			'skins' => $skinProvider->getRepositoryList(),
