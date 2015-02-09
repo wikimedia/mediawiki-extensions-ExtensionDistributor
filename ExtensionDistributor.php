@@ -67,6 +67,7 @@ $wgSpecialPages['ExtensionDistributor'] = 'SpecialExtensionDistributor';
 $wgSpecialPages['SkinDistributor'] = 'SpecialSkinDistributor';
 $wgSpecialPageGroups['ExtensionDistributor'] = 'developer';
 $wgSpecialPageGroups['SkinDistributor'] = 'developer';
+$wgAutoloadClasses['ExtensionDistributorHooks'] = __DIR__ .'/ExtensionDistributor.hooks.php';
 $wgAutoloadClasses['SpecialBaseDistributor'] = __DIR__ . '/specials/SpecialBaseDistributor.php';
 $wgAutoloadClasses['SpecialExtensionDistributor'] = __DIR__ . '/specials/SpecialExtensionDistributor.php';
 $wgAutoloadClasses['SpecialSkinDistributor'] = __DIR__ . '/specials/SpecialSkinDistributor.php';
@@ -75,16 +76,4 @@ $wgAutoloadClasses['GerritExtDistProvider'] = __DIR__ . '/providers/GerritExtDis
 $wgAutoloadClasses['GithubExtDistProvider'] = __DIR__ . '/providers/GithubExtDistProvider.php';
 $wgAutoloadClasses['ApiListExtDistRepos'] = __DIR__ . '/api/ApiListExtDistRepos.php';
 $wgAPIListModules['extdistrepos'] = 'ApiListExtDistRepos';
-$wgHooks['APIQuerySiteInfoGeneralInfo'][] = function( ApiQuerySiteInfo $api, array &$data ) {
-	global $wgExtDistSnapshotRefs, $wgExtDistListFile;
-	$data['extensiondistributor'] = array(
-		'snapshots' => $wgExtDistSnapshotRefs,
-		'list' => $wgExtDistListFile ? : ''
-	);
-	$api->getResult()->setIndexedTagName(
-		$data['extensiondistributor']['snapshots'],
-		'snapshot'
-	);
-
-	return true;
-};
+$wgHooks['APIQuerySiteInfoGeneralInfo'][] = 'ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo';
