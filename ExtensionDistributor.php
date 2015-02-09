@@ -13,8 +13,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'extensiondistributor-desc',
 );
 
-define( 'MW_ED_SUPPORTS_SKINS', true );
-
 /********************
  * Configuration
  */
