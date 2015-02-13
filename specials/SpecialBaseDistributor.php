@@ -13,6 +13,16 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	protected $type;
 
 	/**
+	 * @var Psr\Log\LoggerInterface
+	 */
+	protected $logger;
+
+	/**
+	 * @var ExtDistProvider
+	 */
+	protected $provider;
+
+	/**
 	 * Substitute $TYPE in a message key
 	 *
 	 * @param $key
@@ -29,6 +39,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		global $wgExtDistAPIConfig;
 
 		$this->setHeaders();
+		$this->logger = MWLoggerFactory::getInstance( 'ExtensionDistributor' );
 
 		if ( !$wgExtDistAPIConfig ) {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
@@ -159,7 +170,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				Xml::closeElement( 'form' ) . "\n"
 			);
 		} else {
-			wfDebugLog( 'ExtensionDistributor', "Couldn't find any branches for \"{$repoName}\"" );
+			$this->logger->warning( "Couldn't find any branches for \"{$repoName}\"" );
 			$out->wrapWikiMsg( '<div class="error">$1</div>', 'extdist-no-branches' );
 		}
 
@@ -202,6 +213,10 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @return ExtDistProvider
 	 */
 	protected function getProvider() {
-		return ExtDistProvider::getProviderFor( $this->type );
+		if ( !$this->provider ) {
+			$this->provider = ExtDistProvider::getProviderFor( $this->type );
+			$this->provider->setLogger( $this->logger );
+		}
+		return $this->provider;
 	}
 }

@@ -1,5 +1,9 @@
 <?php
 
+use Psr\Log\LoggerAwareInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
+
 /**
  * Base ExtensionDistributor provider
  *
@@ -9,7 +13,7 @@
  *  tarballUrl - Where tarballs are stored
  *  'repoType' - Either "skins" or "extensions"
  */
-abstract class ExtDistProvider {
+abstract class ExtDistProvider implements LoggerAwareInterface {
 
 	const EXTENSIONS = 'extensions';
 	const SKINS = 'skins';
@@ -23,6 +27,10 @@ abstract class ExtDistProvider {
 	protected $tarballName;
 	protected $apiUrl;
 	protected $repoType;
+	/**
+	 * @var LoggerInterface
+	 */
+	protected $logger;
 
 	/**
 	 * @var array Instance cache of repo name => branches
@@ -40,6 +48,11 @@ abstract class ExtDistProvider {
 		$this->tarballName = $options['tarballName'];
 		$this->apiUrl = $options['apiUrl'];
 		$this->repoType = $options['repoType'];
+		$this->setLogger( new NullLogger() );
+	}
+
+	public function setLogger( LoggerInterface $logger ) {
+		$this->logger = $logger;
 	}
 
 	/**
@@ -59,15 +72,10 @@ abstract class ExtDistProvider {
 	 * @return ExtDistProvider
 	 */
 	public static function getProviderFor( $type ) {
-		static $providers = array();
-		if ( !isset( $providers[$type] ) ) {
-			global $wgExtDistAPIConfig;
-			$providers[$type] = self::factory(
-				$wgExtDistAPIConfig + array( 'repoType' => $type )
-			);
-		}
-
-		return $providers[$type];
+		global $wgExtDistAPIConfig;
+		return self::factory(
+			$wgExtDistAPIConfig + array( 'repoType' => $type )
+		);
 	}
 
 	/**

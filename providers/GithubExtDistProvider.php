@@ -57,7 +57,7 @@ class GithubExtDistProvider extends ExtDistProvider {
 		$req = MWHttpRequest::factory( $url, $options );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
-			wfDebugLog( 'ExtensionDistributor', __METHOD__ . ": Could not fetch branches for $name, " .
+			$this->logger->error( __METHOD__ . ": Could not fetch branches for $name, " .
 				"received: {$status->errors[0]}"
 			);
 			return array();
