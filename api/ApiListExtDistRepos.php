@@ -34,22 +34,6 @@ class ApiListExtDistRepos extends ApiQueryGeneratorBase {
 	}
 
 	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getDescription() {
-		return array(
-			'Returns the list of repositories supported by ExtensionDistributor'
-		);
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getExamples() {
-		return 'api.php?action=query&list=extdistrepos';
-	}
-
-	/**
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {

@@ -59,7 +59,6 @@ $wgExtDistSnapshotRefs = array(
 
 // Internationlization files
 $wgMessagesDirs['ExtensionDistributor'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ExtensionDistributor'] = __DIR__ . '/ExtensionDistributor.i18n.php';
 $wgExtensionMessagesFiles['ExtensionDistributorAliases'] = __DIR__ . '/ExtensionDistributor.alias.php';
 
 // Special page classes
