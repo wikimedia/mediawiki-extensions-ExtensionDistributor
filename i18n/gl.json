@@ -2,21 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
 	"extensiondistributor": "Descargar a extensión MediaWiki",
+	"skindistributor": "Descargar pel MediaWiki",
 	"extensiondistributor-desc": "Extensión para distribuír arquivos fotográficos de extensións",
 	"extdist-not-configured": "Por favor, configure <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Non se puido obter a lista de extensións!",
 	"extdist-no-such-extensions": "Non existe a extensión \"$1\"",
 	"extdist-no-such-version-extensions": "A extensión \"$1\" non existe na versión \"$2\".",
 	"extdist-choose-extensions": "Seleccione a extensión que queira descargar:",
+	"extdist-choose-skins": "Seleccione a pel que desexa descargar:",
 	"extdist-submit-extension": "Continuar",
 	"extdist-choose-version-extensions": "Está descargando a extensión <b>$1</b>.\n\nSeleccione a súa versión de MediaWiki.\n\nA maioría das extensións traballan con múltiples versións de MediaWiki, polo que se a súa versión de MediaWiki non está aquí, ou se precisa características da última extensión, probe a usar a versión actual.",
 	"extdist-no-versions-extensions": "A extensión seleccionada ($1) non está dispoñible en ningunha versión!",
 	"extdist-submit-version": "Continuar",
 	"extdist-created-extensions": "Creouse unha fotografía da versión <b>$2</b> da extensión <b>$1</b> de MediaWiki <b>$3</b>. A súa descarga debería comezar automaticamente en 5 segundos.\n\nO enderezo URL desta fotografía é:\n:$4\nPoderá ser usada para descargala inmediatamente a un servidor, pero, por favor, non a engada á lista dos seus favoritos mentres o contido non estea actualizado. Poderá tamén ser eliminada nuns días.\n\nO arquivo tar deberá ser extraído no seu directorio de extensións. Por exemplo, nun sistema beseado no UNIX:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNo Windows, pode usar [http://www.7-zip.org/ 7-zip] para extraer os ficheiros.\n\nSe o seu wiki está nun servidor remoto, extraia os ficheiros nun directorio temporal no seu computador e logo cargue '''todos''' os ficheiros extraídos no directorio de extensións do servidor.\n\nDespois de extraer os ficheiros, necesitará rexistrar a extensión en LocalSettings.php. A documentación da extensión deberá ter instrucións de como facer isto.\n\nSe ten algunha dúbida ou pregunta acerca do sistema de distribución das extensións, por favor, vaia a [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Obter outra extensión",
-	"extdist-tar-error": "Non se puido obter o enderezo URL do arquivo desde o arquivo da API."
+	"extdist-tar-error": "Non se puido obter o enderezo URL do arquivo desde o arquivo da API.",
+	"apihelp-query+extdistrepos-example-1": "Listar repositorios"
 }
