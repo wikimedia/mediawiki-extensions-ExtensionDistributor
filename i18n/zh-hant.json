@@ -6,22 +6,23 @@
 			"Mark85296341",
 			"Shinjiman",
 			"Simon Shek",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Nemo bis"
 		]
 	},
 	"extensiondistributor": "下載 MediaWiki 擴充套件",
 	"extensiondistributor-desc": "發佈擴充套快照封存的擴充套件",
 	"extdist-not-configured": "請設定 $wgExtDistList 和 $wgExtDistAPIConfig",
-	"extdist-list-missing": "無法取得擴充套件清單！",
-	"extdist-no-such-extension": "沒有這個擴充套件 \"$1\"",
-	"extdist-no-such-version": "該擴充套件 \"$1\" 不存在於這個版本 \"$2\" 中。",
-	"extdist-choose-extension": "選擇您要去下載的擴充套件：",
+	"extdist-list-missing-extensions": "無法取得擴充套件清單！",
+	"extdist-no-such-extensions": "沒有這個擴充套件 \"$1\"",
+	"extdist-no-such-version-extensions": "該擴充套件 \"$1\" 不存在於這個版本 \"$2\" 中。",
+	"extdist-choose-extensions": "選擇您要去下載的擴充套件：",
 	"extdist-submit-extension": "繼續",
-	"extdist-choose-version": "您現正下載 <b>$1</b> 擴充套件。\n\n選擇您的 MediaWiki 版本。\n\n多數的擴充套件都可以在多個 MediaWiki 版本上執行，如果您的 MediaWiki 版本不在此清單，或者您需要最新的擴充套件功能的話，可嘗試使用最新的版本。",
-	"extdist-no-versions": "選擇的擴充套件 ($1) 不適用於任何的版本！",
+	"extdist-choose-version-extensions": "您現正下載 <b>$1</b> 擴充套件。\n\n選擇您的 MediaWiki 版本。\n\n多數的擴充套件都可以在多個 MediaWiki 版本上執行，如果您的 MediaWiki 版本不在此清單，或者您需要最新的擴充套件功能的話，可嘗試使用最新的版本。",
+	"extdist-no-versions-extensions": "選擇的擴充套件 ($1) 不適用於任何的版本！",
 	"extdist-submit-version": "繼續",
-	"extdist-created": "已建立 MediaWiki <b>$3</b> 擴充套件 <b>$1</b> 版本 <b>$2</b> 的快照(Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n此連結僅用於目前的下載動作，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n下載的 tar 壓縮檔要解壓縮至您的擴充套件目錄。如在 Unix-like 的作業系統：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的擴充套件目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫擴充套件的資訊。 該擴充套件的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關擴充套件發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
-	"extdist-want-more": "取得另一個擴充套件",
+	"extdist-created-extensions": "已建立 MediaWiki <b>$3</b> 擴充套件 <b>$1</b> 版本 <b>$2</b> 的快照 (Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n此連結僅用於目前的下載動作，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n下載的 tar 壓縮檔要解壓縮至您的擴充套件目錄。如在 Unix-like 的作業系統：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的擴充套件目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫擴充套件的資訊。 該擴充套件的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關擴充套件發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
+	"extdist-want-more-extensions": "取得另一個擴充套件",
 	"extdist-tar-error": "無法從封存 API 取得封存 URL。",
 	"extdist-no-branches": "無法取得任何分支的資訊。"
 }
