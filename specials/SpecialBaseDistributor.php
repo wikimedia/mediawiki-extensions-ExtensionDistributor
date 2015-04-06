@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Logger\LoggerFactory;
+
 /**
  * Base class for special pages that allow users to download repository snapshots
  *
@@ -39,7 +41,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		global $wgExtDistAPIConfig;
 
 		$this->setHeaders();
-		$this->logger = MWLoggerFactory::getInstance( 'ExtensionDistributor' );
+		$this->logger = LoggerFactory::getInstance( 'ExtensionDistributor' );
 
 		if ( !$wgExtDistAPIConfig ) {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );

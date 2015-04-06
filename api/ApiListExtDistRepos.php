@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Logger\LoggerFactory;
+
 class ApiListExtDistRepos extends ApiQueryGeneratorBase {
 
 	public function __construct( ApiQuery $query, $moduleName ) {
@@ -15,7 +17,7 @@ class ApiListExtDistRepos extends ApiQueryGeneratorBase {
 	}
 
 	public function run() {
-		$logger = MWLoggerFactory::getInstance( 'ExtensionDistributor' );
+		$logger = LoggerFactory::getInstance( 'ExtensionDistributor' );
 		$extProvider = ExtDistProvider::getProviderFor( ExtDistProvider::EXTENSIONS );
 		$extProvider->setLogger( $logger );
 		$skinProvider = ExtDistProvider::getProviderFor( ExtDistProvider::SKINS );
