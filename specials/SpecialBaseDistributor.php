@@ -128,7 +128,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @return mixed
 	 */
 	protected function showVersionSelector( $repoName ) {
-		global $wgExtDistSnapshotRefs;
+		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot;
 
 		if ( !$wgExtDistSnapshotRefs ) {
 			// extdist-no-versions-extensions, extdist-no-versions-skins
@@ -157,7 +157,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			if ( $this->getProvider()->hasBranch( $repoName, $branchName ) ) {
 				$branchMsg = $this->msg( "extdist-branch-$branchName" );
 				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
-				$html .= Xml::option( $branchDesc, $branchName, ($selected == 1) );
+				$html .= Xml::option(
+					$branchDesc,
+					$branchName,
+					( $branchName === $wgExtDistDefaultSnapshot )
+				);
 				$selected++;
 			}
 		}

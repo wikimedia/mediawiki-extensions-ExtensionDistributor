@@ -53,6 +53,11 @@ $wgExtDistSnapshotRefs = array(
 	'master',
 );
 
+/**
+ * Snapshot branch/tag to default to
+ */
+$wgExtDistDefaultSnapshot = 'master';
+
 /********************
  * Registration
  */
