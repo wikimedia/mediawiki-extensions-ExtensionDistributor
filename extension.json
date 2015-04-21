@@ -1,0 +1,54 @@
+{
+	"name": "Extension Distributor",
+	"author": [
+		"Tim Starling",
+		"Sam Reed",
+		"Chad Horohoe",
+		"Kunal Mehta"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ExtensionDistributor",
+	"descriptionmsg": "extensiondistributor-desc",
+	"type": "specialpage",
+	"config": {
+		"ExtDistAPIConfig": false,
+		"ExtDistListFile": false,
+		"ExtDistSnapshotRefs": [
+			"master"
+		],
+		"ExtDistDefaultSnapshot": "master"
+	},
+	"ExtensionMessagesFiles": {
+		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
+	},
+	"APIListModules": {
+		"extdistrepos": "ApiListExtDistRepos"
+	},
+	"MessagesDirs": {
+		"ExtensionDistributor": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"APIQuerySiteInfoGeneralInfo": [
+			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
+		]
+	},
+	"SpecialPageGroups": {
+		"ExtensionDistributor": "developer",
+		"SkinDistributor": "developer"
+	},
+	"SpecialPages": {
+		"ExtensionDistributor": "SpecialExtensionDistributor",
+		"SkinDistributor": "SpecialSkinDistributor"
+	},
+	"AutoloadClasses": {
+		"ExtensionDistributorHooks": "ExtensionDistributor.hooks.php",
+		"SpecialBaseDistributor": "specials/SpecialBaseDistributor.php",
+		"SpecialExtensionDistributor": "specials/SpecialExtensionDistributor.php",
+		"SpecialSkinDistributor": "specials/SpecialSkinDistributor.php",
+		"ExtDistProvider": "providers/ExtDistProvider.php",
+		"GerritExtDistProvider": "providers/GerritExtDistProvider.php",
+		"GithubExtDistProvider": "providers/GithubExtDistProvider.php",
+		"ApiListExtDistRepos": "api/ApiListExtDistRepos.php"
+	}
+}
