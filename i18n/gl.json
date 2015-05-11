@@ -20,6 +20,7 @@
 	"extdist-choose-skins": "Seleccione a pel que desexa descargar:",
 	"extdist-submit-extension": "Continuar",
 	"extdist-choose-version-extensions": "Está descargando a extensión <b>$1</b>.\n\nSeleccione a súa versión de MediaWiki.\n\nA maioría das extensións traballan con múltiples versións de MediaWiki, polo que se a súa versión de MediaWiki non está aquí, ou se precisa características da última extensión, probe a usar a versión actual.",
+	"extdist-choose-version-skins": "Está descargando a aparencia<b>$1</b>.\n\nSeleccione a súa versión de MediaWiki.\n\nA maioría das aparencias traballan con múltiples versións de MediaWiki, polo que se a súa versión de MediaWiki non está aquí, ou se precisa características da última aparencia, probe a usar a versión actual.",
 	"extdist-no-versions-extensions": "A extensión seleccionada ($1) non está dispoñible en ningunha versión!",
 	"extdist-no-versions-skins": "A aparencia seleccionada ($1) non está dispoñible en ningunha versión!",
 	"extdist-submit-version": "Continuar",
