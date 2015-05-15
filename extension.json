@@ -33,10 +33,6 @@
 			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
 		]
 	},
-	"SpecialPageGroups": {
-		"ExtensionDistributor": "developer",
-		"SkinDistributor": "developer"
-	},
 	"SpecialPages": {
 		"ExtensionDistributor": "SpecialExtensionDistributor",
 		"SkinDistributor": "SpecialSkinDistributor"

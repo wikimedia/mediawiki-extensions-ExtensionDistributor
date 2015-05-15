@@ -225,4 +225,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 		return $this->provider;
 	}
+
+	protected function getGroupName() {
+		return 'developer';
+	}
 }
