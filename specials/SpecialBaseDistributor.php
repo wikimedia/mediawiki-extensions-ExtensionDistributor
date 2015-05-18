@@ -47,7 +47,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
 			return;
 		}
-
 		if ( $subpage ) {
 			$parts = explode( '/', $subpage, 2 );
 
@@ -97,28 +96,33 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$out = $this->getOutput();
+		$out->enableOOUI();
 		// extdist-choose-extensions, extdist-choose-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
 				'action' => $this->getPageTitle()->getLocalUrl(),
-				'method' => 'GET' ) ) .
-			Xml::openElement( 'select', array(
-				'name' => 'extdist_name' ) ) .
-			Xml::element( 'option', array(
-				'value' => '' ) )
+				'method' => 'GET' ) )
 		);
+		$items = array( array( 'data' => '' ) );
 
 		foreach ( $repos as $name ) {
-			$out->addHTML( Xml::element( 'option', array( 'value' => $name ), $name ) . "\n" );
+			$items[] = array( 'data' => $name );
 		}
-
+		// Add JS infuse magic
+		$out->addModules( 'ext.extensiondistributor.special' );
 		$out->addHTML(
-			Xml::closeElement( 'select' ) . ' ' .
-			Xml::submitButton(
-				$this->msg( 'extdist-submit-extension' )->text(),
-				array( 'name' => 'extdist_submit' )
-			) .
+			new OOUI\DropdownInputWidget( array(
+				'id' => 'mw-extdist-selector',
+				'infusable' => true,
+				'options' => $items,
+				'name' => 'extdist_name',
+			) ) .
+			new OOUI\ButtonInputWidget( array(
+				'name' => 'extdist_submit',
+				'label' => $this->msg( 'extdist-submit-extension' )->text(),
+				'type' => 'submit',
+			) ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
 	}
@@ -138,41 +142,42 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$out = $this->getOutput();
+		$out->enableOOUI();
 		// extdist-choose-version-extensions, extdist-choose-version-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-version-$TYPE' ), $repoName );
 		$html =
 			Xml::openElement( 'form', array(
 				'action' => $this->getPageTitle()->getLocalUrl(),
 				'method' => 'GET' ) ) .
-			Xml::element( 'input' , array(
-				'type' => 'hidden',
-				'name' => 'extdist_name',
-				'value' => $repoName ) ) .
-			Xml::openElement( 'select', array(
-				'name' => 'extdist_version' ) );
-
+			Html::hidden( 'extdist_name', $repoName );
+		$options = array();
 		$selected = 0;
 
 		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
 			if ( $this->getProvider()->hasBranch( $repoName, $branchName ) ) {
 				$branchMsg = $this->msg( "extdist-branch-$branchName" );
 				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
-				$html .= Xml::option(
-					$branchDesc,
-					$branchName,
-					( $branchName === $wgExtDistDefaultSnapshot )
-				);
+				$options[] = array( 'data' => $branchName, 'label' => $branchDesc );
 				$selected++;
 			}
 		}
 		if ( $selected !== 0 ) {
 			$out->addHTML( $html );
+			// Add JS infuse magic
+			$out->addModules( 'ext.extensiondistributor.special' );
 			$out->addHTML(
-				Xml::closeElement( 'select' ) . ' ' .
-				Xml::submitButton(
-					$this->msg( 'extdist-submit-version' )->text(),
-					array( 'name' => 'extdist_submit' )
-				) .
+				new OOUI\DropdownInputWidget( array(
+					'id' => 'mw-extdist-selector',
+					'infusable' => true,
+					'options' => $options,
+					'value' => $wgExtDistDefaultSnapshot,
+					'name' => 'extdist_version',
+				) ) .
+				new OOUI\ButtonInputWidget( array(
+					'name' => 'extdist_submit',
+					'label' => $this->msg( 'extdist-submit-version' )->text(),
+					'type' => 'submit',
+				) ) .
 				Xml::closeElement( 'form' ) . "\n"
 			);
 		} else {

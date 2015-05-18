@@ -46,5 +46,15 @@
 		"GithubExtDistProvider": "providers/GithubExtDistProvider.php",
 		"ApiListExtDistRepos": "api/ApiListExtDistRepos.php",
 		"ApiListExtDistBranches": "api/ApiListExtDistBranches.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ExtensionDistributor/resources"
+	},
+	"ResourceModules": {
+		"ext.extensiondistributor.special": {
+			"scripts": "ext.extensiondistributor.special.js",
+			"dependencies": ["oojs-ui"]
+		}
 	}
 }
