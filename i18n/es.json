@@ -29,7 +29,7 @@
 	"extdist-choose-skins": "Selecciona la apariencia que quieres descargar:",
 	"extdist-submit-extension": "Continuar",
 	"extdist-choose-version-extensions": "Estás descargando la extensión <b>$1</b>.\n\nSelecciona tu versión MediaWiki.\n\nLa mayoría de extensiones funcionan a través de múltiples versiones de Mediawiki, entonces si tu versión Mediawiki no está aquí, o si necesitas las últimas características de las extensiones. trata de usar la versión actual.",
-	"extdist-choose-version-skins": "Estás por descargar la apariencia <b>$1</b>.\n\nSelecciona tu versión de MediaWiki.\n\nLa mayor parte de las apariencias funcionan en varias versiones de MediaWiki, de modo que si tu versión del software no está aquí, o si necesitas las funcionalidades más recientes, prueba a usar la versión actual.",
+	"extdist-choose-version-skins": "Estás por descargar la apariencia <b>$1</b>.\n\nSelecciona tu versión de MediaWiki.\n\nLa mayoría de las apariencias funcionan en varias versiones de MediaWiki, de modo que si tu versión del software no está aquí, o si necesitas las funcionalidades más recientes, prueba a usar la versión actual.",
 	"extdist-no-versions-extensions": "La extensión seleccionada ($1) no esta disponible en ninguna versión!",
 	"extdist-no-versions-skins": "La apariencia seleccionada ($1) no está disponible para ninguna versión.",
 	"extdist-submit-version": "Continuar",
