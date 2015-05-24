@@ -12,9 +12,7 @@
 	"config": {
 		"ExtDistAPIConfig": false,
 		"ExtDistListFile": false,
-		"ExtDistSnapshotRefs": [
-			"master"
-		],
+		"ExtDistSnapshotRefs": [],
 		"ExtDistDefaultSnapshot": "master"
 	},
 	"ExtensionMessagesFiles": {
