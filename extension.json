@@ -30,6 +30,9 @@
 	"Hooks": {
 		"APIQuerySiteInfoGeneralInfo": [
 			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
+		],
+		"ResourceLoaderRegisterModules": [
+			"ExtensionDistributorHooks::onResourceLoaderRegisterModules"
 		]
 	},
 	"SpecialPages": {
@@ -52,9 +55,11 @@
 		"remoteExtPath": "ExtensionDistributor/resources"
 	},
 	"ResourceModules": {
-		"ext.extensiondistributor.special": {
-			"scripts": "ext.extensiondistributor.special.js",
-			"dependencies": ["oojs-ui"]
+		"ext.extensiondistributor.special.infuse": {
+			"scripts": "ext.extensiondistributor.special.infuse.js",
+			"dependencies": [
+				"oojs-ui"
+			]
 		}
 	}
 }

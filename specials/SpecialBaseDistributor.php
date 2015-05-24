@@ -87,6 +87,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	protected function showExtensionSelector() {
+		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot;
 		$repos = $this->getProvider()->getRepositoryList();
 
 		if ( !$repos ) {
@@ -111,6 +112,10 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 		// Add JS infuse magic
 		$out->addModules( 'ext.extensiondistributor.special' );
+		$out->addJsConfigVars( array(
+			'wgExtDistSnapshotRefs' => $wgExtDistSnapshotRefs,
+			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot
+		) );
 		$out->addHTML(
 			new OOUI\DropdownInputWidget( array(
 				'id' => 'mw-extdist-selector',
@@ -118,12 +123,17 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'options' => $items,
 				'name' => 'extdist_name',
 			) ) .
-			new OOUI\ButtonInputWidget( array(
+			// noscript because JS triggers on selector
+			Html::rawElement( 'noscript', array(), new OOUI\ButtonInputWidget( array(
+				'id' => 'mw-extdist-ext-submit',
+				'infusable' => true,
 				'name' => 'extdist_submit',
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
 				'type' => 'submit',
-			) ) .
-			Xml::closeElement( 'form' ) . "\n"
+				'flags' => array( 'primary', 'progressive' ),
+			) ) ) .
+			Xml::closeElement( 'form' ) . "\n" .
+			Html::element( 'div', array( 'id' => 'mw-extdist-continue' ) )
 		);
 	}
 
@@ -142,7 +152,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$out = $this->getOutput();
-		$out->enableOOUI();
 		// extdist-choose-version-extensions, extdist-choose-version-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-version-$TYPE' ), $repoName );
 		$html =
@@ -164,10 +173,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		if ( $selected !== 0 ) {
 			$out->addHTML( $html );
 			// Add JS infuse magic
-			$out->addModules( 'ext.extensiondistributor.special' );
+			$out->addModules( 'ext.extensiondistributor.special.infuse' );
+			$out->enableOOUI();
 			$out->addHTML(
 				new OOUI\DropdownInputWidget( array(
-					'id' => 'mw-extdist-selector',
+					'id' => 'mw-extdist-selector-version',
 					'infusable' => true,
 					'options' => $options,
 					'value' => $wgExtDistDefaultSnapshot,
@@ -177,6 +187,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 					'name' => 'extdist_submit',
 					'label' => $this->msg( 'extdist-submit-version' )->text(),
 					'type' => 'submit',
+					'flags' => array( 'primary', 'progressive' ),
 				) ) .
 				Xml::closeElement( 'form' ) . "\n"
 			);
