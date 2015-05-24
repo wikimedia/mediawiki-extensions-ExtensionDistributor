@@ -2,21 +2,13 @@
 
 use MediaWiki\Logger\LoggerFactory;
 
-class ApiListExtDistRepos extends ApiQueryGeneratorBase {
+class ApiListExtDistRepos extends ApiQueryBase {
 
 	public function __construct( ApiQuery $query, $moduleName ) {
 		parent::__construct( $query, $moduleName, 'edr' );
 	}
 
 	public function execute() {
-		$this->run();
-	}
-
-	public function executeGenerator( $resultPageSet ) {
-		$this->run();
-	}
-
-	public function run() {
 		$logger = LoggerFactory::getInstance( 'ExtensionDistributor' );
 		$extProvider = ExtDistProvider::getProviderFor( ExtDistProvider::EXTENSIONS );
 		$extProvider->setLogger( $logger );
