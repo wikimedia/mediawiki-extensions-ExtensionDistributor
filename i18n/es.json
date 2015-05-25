@@ -12,7 +12,8 @@
 			"Remember the dot",
 			"Sanbec",
 			"Macofe",
-			"Ryo567"
+			"Ryo567",
+			"Csbotero"
 		]
 	},
 	"extensiondistributor": "Descargar extensión MediaWiki",
@@ -40,5 +41,9 @@
 	"extdist-tar-error": "No fue posible obtener la URL del archivo desde la API del archivo.",
 	"extdist-no-branches": "No se pudo recuperar la información sobre ninguna rama.",
 	"apihelp-query+extdistrepos-description": "Devuelve la lista de repositorios admitida por ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Listar repositorios"
+	"apihelp-query+extdistrepos-example-1": "Listar repositorios",
+	"apihelp-query+extdistbranches-description": "Devuelve la lista de ramificaciones para un repositorio apoyado por ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Apariencias para obtener las ramificaciones paras",
+	"apihelp-query+extdistbranches-param-exts": "Extensiones para obtener las ramificaciones para",
+	"apihelp-query+extdistbranches-example-1": "Obtener las ramificaciones de la extensión ExtensionDistributor"
 }

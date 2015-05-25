@@ -33,5 +33,9 @@
 	"extdist-tar-error": "Die Archiv-URL konnte nicht von der Archiv-API abgerufen werden.",
 	"extdist-no-branches": "Informationen über Versionszweige konnten nicht abgerufen werden.",
 	"apihelp-query+extdistrepos-description": "Gibt eine Liste der Repositorien aus, die von der Erweiterung ExtensionDistributor unterstützt werden.",
-	"apihelp-query+extdistrepos-example-1": "Repositorien auflisten"
+	"apihelp-query+extdistrepos-example-1": "Repositorien auflisten",
+	"apihelp-query+extdistbranches-description": "Gibt die Liste der Versionszweige für ein Repositorium zurück, die durch den ExtensionDistributor unterstützt werden",
+	"apihelp-query+extdistbranches-param-skins": "Benutzeroberflächen, für die die Versionszweige abgerufen werden sollen",
+	"apihelp-query+extdistbranches-param-exts": "Erweiterungen, für die die Versionszweige abgerufen werden sollen",
+	"apihelp-query+extdistbranches-example-1": "Ruft Versionszweige für die Erweiterung „ExtensionDistributor“ ab"
 }

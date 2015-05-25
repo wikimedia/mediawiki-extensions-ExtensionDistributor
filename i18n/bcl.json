@@ -4,5 +4,9 @@
 			"Geopoet"
 		]
 	},
-	"extdist-not-configured": "Pakisunsaya an $wgExtDistList asin $wgExtDistAPIConfig"
+	"extdist-not-configured": "Pakisunsaya an $wgExtDistList asin $wgExtDistAPIConfig",
+	"apihelp-query+extdistbranches-description": "Nagbabalik kan listahan kan mga sanga para sa sarong repositoryo na suportado sa paagi kan ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "An mga onit magkurua nin mga sanga para sa",
+	"apihelp-query+extdistbranches-param-exts": "Mga ekstensyon magkurua nin mga sanga para sa",
+	"apihelp-query+extdistbranches-example-1": "Magkurua nin mga sanga para sa ExtensionDistributor na ekstensyon"
 }

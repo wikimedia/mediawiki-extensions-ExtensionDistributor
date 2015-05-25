@@ -30,5 +30,9 @@
 	"extdist-tar-error": "Не можам да го добијам URL-то на архивата од нејзиниот извршник.",
 	"extdist-no-branches": "Не можам да добијам информации за било која гранка.",
 	"apihelp-query+extdistrepos-description": "Дава список на складишта поддржани од ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Испиши складишта"
+	"apihelp-query+extdistrepos-example-1": "Испиши складишта",
+	"apihelp-query+extdistbranches-description": "Дава список на ограноци на складиште поддржани од ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "За кои рува да се дадат ограноци",
+	"apihelp-query+extdistbranches-param-exts": "За кои додатоци да се дадат ограноци",
+	"apihelp-query+extdistbranches-example-1": "Дај ограноци за додатокот ExtensionDistributor"
 }

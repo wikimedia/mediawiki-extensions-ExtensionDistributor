@@ -30,5 +30,9 @@
 	"extdist-tar-error": "Dä URL för et Aschihf kunnt nit övver de <i lang=\"en>API</i> afjerohfe wähde.",
 	"extdist-no-branches": "De Aanjahbe övver de Zweije kunnte nit afjerohfe wähde.",
 	"apihelp-query+extdistrepos-description": "Jivv en Leß met de Repossetohreje uß, woh mer Zohsatzprojramme zom MehdijaWikki vun eronger lade kann",
-	"apihelp-query+extdistrepos-example-1": "Don de Repossetohreje opleßte"
+	"apihelp-query+extdistrepos-example-1": "Don de Repossetohreje opleßte",
+	"apihelp-query+extdistbranches-description": "Jivv en Leß met de Verzweijonge uß för e Repossetohrejom us, wat dat Zohsatzprojramme  ExtensionDistributor zom MehdijaWikki bedehne kann.",
+	"apihelp-query+extdistbranches-param-skins": "Bedehnbovverfläsche, woh mer Verzweijonge för holle künne",
+	"apihelp-query+extdistbranches-param-exts": "Zohsazprojramme, woh mer Verzweijonge för holle künne",
+	"apihelp-query+extdistbranches-example-1": "Holl Verzweijonge för dat Zohsatzprojramme !!FUZZY!! ExtensionDistributor zom MehdijaWikki"
 }

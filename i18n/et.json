@@ -6,14 +6,14 @@
 			"Pikne"
 		]
 	},
-	"extensiondistributor": "MediaWiki-laienduse allalaadimine",
-	"extensiondistributor-desc": "Võimaldab jagada laienduste hetktõmmiste arhiivi.",
-	"extdist-no-such-extension": "Laiendus \"$1\" puudub",
-	"extdist-no-such-version": "Versioonis \"$2\" puudub laiendus \"$1\".",
-	"extdist-choose-extension": "Vali laiendus, mida soovid alla laadida:",
+	"extensiondistributor": "MediaWiki lisade allalaadimine",
+	"extensiondistributor-desc": "Lisa, mis võimaldab jagada tarkvaralisade hetktõmmiste arhiivi.",
+	"extdist-no-such-extensions": "Lisa \"$1\" puudub.",
+	"extdist-no-such-version-extensions": "Versioonis \"$2\" puudub lisa \"$1\".",
+	"extdist-choose-extensions": "Vali lisa, mida soovid alla laadida:",
 	"extdist-submit-extension": "Jätka",
-	"extdist-choose-version": "Laadid alla laiendust <b>$1</b>.\n\nVali oma MediaWiki versioon.\n\nSuurem osa laiendusi töötab erinevate MediaWiki versioonidega. Kui sinu MediaWiki versiooni pole siin või sa vajad laienduse uusimaid funktsioone, proovi kasutada praegust versiooni.",
-	"extdist-no-versions": "Valitud laiendusest $1 pole saadaval ühtegi versiooni!",
+	"extdist-choose-version-extensions": "Laadid alla lisa <b>$1</b>.\n\nVali oma MediaWiki versioon.\n\nSuurem osa lisasid töötab erinevate MediaWiki versioonidega. Kui sinu MediaWiki versiooni pole siin või kui vajad lisa uusimaid funktsioone, proovi kasutada praegust versiooni.",
+	"extdist-no-versions-extensions": "Valitud lisast $1 pole saadaval ühtegi versiooni!",
 	"extdist-submit-version": "Jätka",
-	"extdist-want-more": "Hangi teine laiendus"
+	"extdist-want-more-extensions": "Hangi teine lisa"
 }
