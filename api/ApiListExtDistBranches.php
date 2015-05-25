@@ -22,6 +22,10 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		return $this->providers[$type];
 	}
 
+	public function getCacheMode() {
+		return 'public';
+	}
+
 	public function execute() {
 		$logger = LoggerFactory::getInstance( 'ExtensionDistributor' );
 		$extProvider = ExtDistProvider::getProviderFor( ExtDistProvider::EXTENSIONS );
