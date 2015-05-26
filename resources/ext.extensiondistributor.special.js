@@ -71,7 +71,10 @@
 			$continue.before( progress.$element );
 			params = {
 				action: 'query',
-				list: 'extdistbranches'
+				list: 'extdistbranches',
+				// Set maxage of 30 minutes, which is same as server-side cach
+				maxage: 30 * 60,
+				smaxage: 30 * 60
 			};
 			if ( distributorType === 'extensions' ) {
 				params.edbexts = selector.getValue();
