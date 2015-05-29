@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sindhu"
+		]
+	},
+	"apihelp-query+extdistbranches-description": "ذخيري کي هٿي وٺرائيندڙ ايڪسٽينشن ورهائيندڙ شاخن جي لسٽ ڏانهن واپس ورو",
+	"apihelp-query+extdistbranches-param-skins": "اسڪنس لاءِ شاخون حاصل ڪرڻ",
+	"apihelp-query+extdistbranches-param-exts": "شاخون حاصل ڪرڻ لاءِ ايڪسٽينشنز",
+	"apihelp-query+extdistbranches-example-1": "ايڪسٽينشن ورهائيندڙ ايڪسٽينشن لاءِ شاخون حاصل ڪريو"
+}
