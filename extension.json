@@ -61,5 +61,6 @@
 				"oojs-ui"
 			]
 		}
-	}
+	},
+	"manifest_version": 1
 }
