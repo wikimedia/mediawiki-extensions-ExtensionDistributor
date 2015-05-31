@@ -35,19 +35,42 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		$info = array();
 		ApiResult::setArrayType( $info, 'assoc' );
 		$params = $this->extractRequestParams();
-		foreach ( $params['exts'] as $ext ) {
-			$info['extensions'][$ext] = $extProvider->getBranches( $ext );
-			ApiResult::setArrayType( $info['extensions'][$ext], 'assoc' );
+		if ( $params['exts'] ) {
+			$info['extensions'] = $this->getInfo( $extProvider, $params['exts'] );
 		}
-		foreach ( $params['skins'] as $skin ) {
-			$info['skins'][$skin] = $skinProvider->getBranches( $skin );
-			ApiResult::setArrayType( $info['skins'][$skin], 'assoc' );
+		if ( $params['skins'] ) {
+			$info['skins'] = $this->getInfo( $skinProvider, $params['skins'] );
 		}
 		$this->getResult()->addValue(
 			'query',
 			$this->getModuleName(),
 			$info
 		);
+	}
+
+	/**
+	 * Get the info to output for a given provider
+	 *
+	 * @param ExtDistProvider $provider
+	 * @param array $repos
+	 * @return array
+	 */
+	private function getInfo( ExtDistProvider $provider, array $repos ) {
+		$out = array();
+		foreach ( $repos as $repo ) {
+			$out[$repo] = array();
+			$branches = $provider->getBranches( $repo );
+			foreach ( $branches as $branch => $sha1 ) {
+				$out[$repo][$branch] = $provider->getTarballLocation( $repo, $branch );
+			}
+			ApiResult::setArrayType( $out[$repo], 'assoc' );
+		}
+
+		return $out;
+	}
+
+	public function isInternal() {
+		return true;
 	}
 
 	public function getAllowedParams() {
