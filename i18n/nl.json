@@ -6,7 +6,8 @@
 			"Romaine",
 			"SPQRobin",
 			"Siebrand",
-			"Esketti"
+			"Esketti",
+			"Sjoerddebruin"
 		]
 	},
 	"extensiondistributor": "MediaWiki-uitbreiding downloaden",
@@ -30,7 +31,7 @@
 	"extdist-created-extensions": "De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Uw download start automatisch over 5 seconden.\n\nDe URL voor de snapshot is:\n:$4\nDeze koppeling kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.\n\nPak het tararchief uit in uw map \"extensions/\". Op een UNIX-achtig besturingssysteem gaat dat als volgt:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nOp Windows kunt u [http://www.7-zip.org/ 7-zip] gebruiken om de bestanden uit te pakken.\n\nAls uw wiki op een op afstand beheerde server staat, pak de bestanden dan uit in een tijdelijke map op uw computer. Upload daarna '''alle''' uitgepakte bestanden naar de map \"extensions/\" op de server.\n\nNadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding treft u de instructies aan.\n\nAls u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].",
 	"extdist-created-skins": "De snapshot voor versie <b>$2</b> voor de uitbreiding <b>$1</b> voor MediaWiki <b>$3</b> is aangemaakt. Uw download start automatisch over 5 seconden.\n\nDe URL voor de snapshot is:\n:$4\nDeze koppeling kan gebruikt worden voor het direct downloaden naar een server, maar maak geen bladwijzers aan, omdat de inhoud niet bijgewerkt wordt, en op een later moment verwijderd kan worden.\n\nPak het tararchief uit in uw map \"extensions/\". Op een UNIX-achtig besturingssysteem gaat dat als volgt:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nOp Windows kunt u [http://www.7-zip.org/ 7-zip] gebruiken om de bestanden uit te pakken.\n\nAls uw wiki op een op afstand beheerde server staat, pak de bestanden dan uit in een tijdelijke map op uw computer. Upload daarna '''alle''' uitgepakte bestanden naar de map \"extensions/\" op de server.\n\nNadat u de bestanden hebt uitgepakt, moet u de uitbreiding registreren in LocalSettings.php. In de documentatie van de uitbreiding treft u de instructies aan.\n\nAls u vragen hebt over dit distributiesysteem voor uitbreidingen, ga dan naar [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Nog een uitbreiding downloaden",
-	"extdist-want-more-skins": "Krijg een ander huid",
+	"extdist-want-more-skins": "Andere vormgeving verkrijgen",
 	"extdist-tar-error": "Het was niet mogelijk de archief-URL via de archief-API op te halen.",
 	"extdist-no-branches": "Het was niet mogelijk om gegevens op te halen over branches.",
 	"apihelp-query+extdistrepos-description": "Geeft de lijst van repositories ondersteund door ExtensionDistributor",
