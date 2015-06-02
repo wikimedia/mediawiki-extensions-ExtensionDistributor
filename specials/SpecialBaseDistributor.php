@@ -227,8 +227,29 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			Xml::closeElement( 'p' ) . "\n"
 		);
 
+		$this->doEventLogging( $extension, $version );
+
 		// Redirect to the file
 		header( 'Refresh: 5;url=' . $url );
+	}
+
+	/**
+	 * If enabled, log the download to EventLogging
+	 *
+	 * @param string $repo
+	 * @param string $version
+	 */
+	protected function doEventLogging( $repo, $version ) {
+		global $wgExtDistUseEventLogging;
+		if ( !$wgExtDistUseEventLogging || !class_exists( 'EventLogging' ) ) {
+			return;
+		}
+
+		EventLogging::logEvent( 'ExtDistDownloads', 12369387, array(
+			'name' => $repo,
+			'version' => $version,
+			'type' => $this->type,
+		) );
 	}
 
 	/**
