@@ -28,5 +28,11 @@
 	"extdist-want-more-extensions": "הורדת הרחבה נוספת",
 	"extdist-want-more-skins": "לקבל עיצוב אחר",
 	"extdist-tar-error": "לא ניתן לאחזר את כתובת הארכיון מה־API של הארכיונים.",
-	"extdist-no-branches": "לא ניתן לאחזר מידע על שום ענף."
+	"extdist-no-branches": "לא ניתן לאחזר מידע על שום ענף.",
+	"apihelp-query+extdistrepos-description": "החזרת רשימת מאגרים שנתמכים במפיץ ההרחבות",
+	"apihelp-query+extdistrepos-example-1": "רשימת מאגרים",
+	"apihelp-query+extdistbranches-description": "החזרת רשימת הענפים למאגרים שתומכים במפיץ ההרחבות",
+	"apihelp-query+extdistbranches-param-skins": "לאילו עיצובים לקבל ענפים",
+	"apihelp-query+extdistbranches-param-exts": "לאילו הרחבות לקבל ענפים",
+	"apihelp-query+extdistbranches-example-1": "לקבל ענפים עבור ההרחבה מפיץ ההרחבות"
 }
