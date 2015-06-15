@@ -37,5 +37,9 @@
 	"extdist-tar-error": "Used as error message in [[Special:ExtensionDistributor]], when downloading an extension.",
 	"extdist-no-branches": "Error message shown if it can't find any information about any branches",
 	"apihelp-query+extdistrepos-description": "{{doc-apihelp-description|query+extdistrepos}}",
-	"apihelp-query+extdistrepos-example-1": "{{doc-apihelp-example|query+extdistrepos}}"
+	"apihelp-query+extdistrepos-example-1": "{{doc-apihelp-example|query+extdistrepos}}",
+	"apihelp-query+extdistbranches-description": "{{doc-apihelp-description|query+extdistbranches}}",
+	"apihelp-query+extdistbranches-param-skins": "{{doc-apihelp-param|query+extdistbranches|skins}}",
+	"apihelp-query+extdistbranches-param-exts": "{{doc-apihelp-param|query+extdistbranches|exts}}",
+	"apihelp-query+extdistbranches-example-1": "{{doc-apihelp-example|query+extdistbranches}}"
 }
