@@ -1,7 +1,7 @@
 /* global OO, window */
-( function( $, mw, OO ) {
+( function ( $, mw, OO ) {
 	'use strict';
-	$( function() {
+	$( function () {
 		// infusing the DropdownInputWidgets makes
 		// them look prettier.
 		var selector = OO.ui.infuse( 'mw-extdist-selector' ),
@@ -16,8 +16,9 @@
 		function processAPIResponse( data ) {
 			var info = data.query.extdistbranches[distributorType][selector.getValue()],
 				options = [],
-				versionSelector;
-			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function( i, value ) {
+				versionSelector,
+				versionButton;
+			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function ( i, value ) {
 				if ( info[value] ) {
 					options.push( { data: value, label: mw.msg( 'extdist-branch-' + value ) } );
 				}
@@ -45,22 +46,24 @@
 			).parse().replace( /\n\n/g, '<p>' ) );
 			// Add version selector after the help text
 			$continue.after( versionSelector.$element );
-			var versionButton = new OO.ui.ButtonInputWidget( {
+			versionButton = new OO.ui.ButtonInputWidget( {
 				id: 'mw-extdist-submit-button',
 				name: 'extdist_submit',
 				label: mw.msg( 'extdist-submit-version' ),
-				flags: ['primary', 'progressive']
-			} ).on( 'click', function() {
+				flags: [ 'primary', 'progressive' ]
+			} ).on( 'click', function () {
 				// Redirect to download page:
 				// extdist_name=ExtensionDistributor&extdist_version=master
 				window.location.href = mw.util.getUrl( mw.config.get( 'wgPageName' ), {
-					'extdist_name': selector.getValue(),
-					'extdist_version': versionSelector.getValue()
+					// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+					extdist_name: selector.getValue(),
+					extdist_version: versionSelector.getValue()
+					// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 				} );
 			} );
 			versionSelector.$element.after( versionButton.$element );
 		}
-		selector.on( 'change', function() {
+		selector.on( 'change', function () {
 			var params;
 			// Hide any things created for previous selections
 			$( '#mw-extdist-selector-version' ).remove();

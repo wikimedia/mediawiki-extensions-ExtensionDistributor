@@ -1,7 +1,7 @@
 /* global OO */
-( function( $, OO ) {
+( function ( $, OO ) {
 	'use strict';
-	$( function() {
+	$( function () {
 		OO.ui.infuse( 'mw-extdist-selector-version' );
 	} );
 }( jQuery, OO ) );
