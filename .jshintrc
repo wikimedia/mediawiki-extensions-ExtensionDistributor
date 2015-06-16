@@ -18,7 +18,7 @@
 	"jquery": true,
 
 	"globals": {
-		"mediaWiki": true,
-		"OO": true
+		"mediaWiki": false,
+		"OO": false
 	}
 }
