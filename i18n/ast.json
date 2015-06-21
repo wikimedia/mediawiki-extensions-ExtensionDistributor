@@ -29,5 +29,9 @@
 	"extdist-tar-error": "Nun se pudo traer la URL del archivu dende la API d'archivu.",
 	"extdist-no-branches": "Nun pue algamase información de nenguna rama.",
 	"apihelp-query+extdistrepos-description": "Devuelve la llista de repositorios sofitaos por ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Llista de repositorios"
+	"apihelp-query+extdistrepos-example-1": "Llista de repositorios",
+	"apihelp-query+extdistbranches-description": "Devuelve la llista de rames d'un repositoriu sofitáu por ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Pieles pa les qu'hai qu'algamar les rames",
+	"apihelp-query+extdistbranches-param-exts": "Estensiones pa les qu'hai qu'algamar les rames",
+	"apihelp-query+extdistbranches-example-1": "Algamar rames pa la estensión ExtensionDistributor"
 }
