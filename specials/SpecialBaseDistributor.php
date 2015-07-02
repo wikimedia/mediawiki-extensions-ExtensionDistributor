@@ -172,8 +172,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 		if ( $selected !== 0 ) {
 			$out->addHTML( $html );
-			// Add JS infuse magic
-			$out->addModules( 'ext.extensiondistributor.special.infuse' );
 			$out->enableOOUI();
 			$out->addHTML(
 				new OOUI\DropdownInputWidget( array(

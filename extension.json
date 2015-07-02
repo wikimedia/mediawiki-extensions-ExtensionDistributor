@@ -55,13 +55,5 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "ExtensionDistributor/resources"
 	},
-	"ResourceModules": {
-		"ext.extensiondistributor.special.infuse": {
-			"scripts": "ext.extensiondistributor.special.infuse.js",
-			"dependencies": [
-				"oojs-ui"
-			]
-		}
-	},
 	"manifest_version": 1
 }
