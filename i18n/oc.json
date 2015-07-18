@@ -6,6 +6,7 @@
 		]
 	},
 	"extensiondistributor": "Telecargar l’extension MediaWiki",
+	"skindistributor": "Telecargar l’abilhatge MediaWiki",
 	"extensiondistributor-desc": "Extension per la distribucion dels archius fotografics de las extensions",
 	"extdist-not-configured": "Configuratz <code>$wgExtDistAPIConfig</code>",
 	"extdist-no-such-extensions": "Pas cap d'extension « $1 »",
