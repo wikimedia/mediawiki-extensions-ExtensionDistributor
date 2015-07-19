@@ -10,7 +10,8 @@
 			"Urhixidur",
 			"Verdy p",
 			"Wyz",
-			"Ltrlg"
+			"Ltrlg",
+			"Wladek92"
 		]
 	},
 	"extensiondistributor": "Télécharger l’extension MediaWiki",
@@ -41,5 +42,6 @@
 	"apihelp-query+extdistrepos-example-1": "Lister les référentiels",
 	"apihelp-query+extdistbranches-description": "Retourne la liste des branches supportées par ExtensionDistributor pour un dépôt",
 	"apihelp-query+extdistbranches-param-skins": "Habillages pour lequel récupérer les branches",
-	"apihelp-query+extdistbranches-param-exts": "Extensions pour lequel récupérer les branches"
+	"apihelp-query+extdistbranches-param-exts": "Extensions pour lequel récupérer les branches",
+	"apihelp-query+extdistbranches-example-1": "Obtenir les branches l'extension ExtensionDistributor"
 }
