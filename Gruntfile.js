@@ -6,11 +6,11 @@
 
 /*jshint node:true */
 module.exports = function ( grunt ) {
+	var conf = grunt.file.readJSON( 'extension.json' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-jscs' );
-	var conf = grunt.file.readJSON( 'extension.json' );
 
 	grunt.initConfig( {
 		jshint: {
@@ -18,7 +18,8 @@ module.exports = function ( grunt ) {
 				jshintrc: true
 			},
 			all: [
-				'resources/*.js'
+				'resources/*.js',
+				'*.js'
 			]
 		},
 		jscs: {

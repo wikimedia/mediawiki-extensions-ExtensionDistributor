@@ -14,12 +14,12 @@
 		}
 
 		function processAPIResponse( data ) {
-			var info = data.query.extdistbranches[distributorType][selector.getValue()],
+			var info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
 				options = [],
 				versionSelector,
 				versionButton;
 			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function ( i, value ) {
-				if ( info[value] ) {
+				if ( info[ value ] ) {
 					options.push( { data: value, label: mw.msg( 'extdist-branch-' + value ) } );
 				}
 			} );
