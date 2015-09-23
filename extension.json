@@ -9,6 +9,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:ExtensionDistributor",
 	"descriptionmsg": "extensiondistributor-desc",
 	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.26.0"
+	},
 	"config": {
 		"ExtDistAPIConfig": false,
 		"ExtDistListFile": false,
