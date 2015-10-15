@@ -5,9 +5,9 @@
 		]
 	},
 	"extensiondistributor": "Parsisiųsti MediaWiki pratęsimą",
-	"extdist-no-such-extension": "Nėra plėtinio \" $1 \"",
-	"extdist-choose-extension": "Pasirinkite kuri plėtinį, kurį norite atsisiųsti:",
+	"extdist-no-such-extensions": "Nėra plėtinio \" $1 \"",
+	"extdist-choose-extensions": "Pasirinkite kuri plėtinį, kurį norite atsisiųsti:",
 	"extdist-submit-extension": "Tęsti",
 	"extdist-submit-version": "Tęsti",
-	"extdist-want-more": "Gauti kitą plėtinį"
+	"extdist-want-more-extensions": "Gauti kitą plėtinį"
 }

@@ -7,12 +7,12 @@
 	"extensiondistributor": "MediaWiki giňeltmesini düşür",
 	"extensiondistributor-desc": "Giňeltmeleriň pursatlyk görnüş arhiwlerini paýlamak üçin giňeltme",
 	"extdist-not-configured": "Konfigurirläň: $wgExtDistList we $wgExtDistAPIConfig",
-	"extdist-no-such-extension": "\"$1\" diýip giňeltme ýok.",
-	"extdist-no-such-version": "\"$2\" wersiýasynda \"$1\" giňeltmesi ýok.",
-	"extdist-choose-extension": "Düşürmek isleýän giňeltmäňizi saýlaň:",
+	"extdist-no-such-extensions": "\"$1\" diýip giňeltme ýok.",
+	"extdist-no-such-version-extensions": "\"$2\" wersiýasynda \"$1\" giňeltmesi ýok.",
+	"extdist-choose-extensions": "Düşürmek isleýän giňeltmäňizi saýlaň:",
 	"extdist-submit-extension": "Dowam et",
-	"extdist-no-versions": "Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!",
+	"extdist-no-versions-extensions": "Saýlanylan giňeltme ($1) hiç bir wersiýada ýok!",
 	"extdist-submit-version": "Dowam et",
-	"extdist-want-more": "Başga giňeltme al",
+	"extdist-want-more-extensions": "Başga giňeltme al",
 	"extdist-tar-error": "Tar çykyş kody $1 gaýdyp geldi:"
 }
