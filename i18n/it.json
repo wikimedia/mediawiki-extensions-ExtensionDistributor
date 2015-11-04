@@ -34,5 +34,6 @@
 	"extdist-want-more-skins": "Ottieni un'altra skin",
 	"extdist-tar-error": "Impossibile recuperare l'URL dell'archivio dall'archivio API.",
 	"extdist-no-branches": "Impossibile recuperare informazioni relative a eventuali rami.",
+	"apihelp-query+extdistrepos-description": "Restituisce l'elenco degli archivi supportati da ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Elenco dei repository"
 }
