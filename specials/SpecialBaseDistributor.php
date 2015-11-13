@@ -232,7 +232,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	/**
-	 * Send some download metrics to graphite
+	 * Record some download metrics
 	 *
 	 * @param string $repo
 	 * @param string $version
