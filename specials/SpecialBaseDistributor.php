@@ -225,29 +225,26 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			Xml::closeElement( 'p' ) . "\n"
 		);
 
-		$this->doEventLogging( $extension, $version );
+		$this->doStats( $extension, $version );
 
 		// Redirect to the file
 		header( 'Refresh: 5;url=' . $url );
 	}
 
 	/**
-	 * If enabled, log the download to EventLogging
+	 * Send some download metrics to graphite
 	 *
 	 * @param string $repo
 	 * @param string $version
 	 */
-	protected function doEventLogging( $repo, $version ) {
-		global $wgExtDistUseEventLogging;
-		if ( !$wgExtDistUseEventLogging || !class_exists( 'EventLogging' ) ) {
-			return;
-		}
-
-		EventLogging::logEvent( 'ExtDistDownloads', 12369387, array(
-			'name' => $repo,
-			'version' => $version,
-			'type' => $this->type,
-		) );
+	protected function doStats( $repo, $version ) {
+		$stats = $this->getContext()->getStats();
+		// Overall repo downloads
+		$stats->increment( "extdist.{$this->type}.$repo" );
+		// Repo split by version
+		$stats->increment( "extdist.{$this->type}.$repo.$version" );
+		// MediaWiki core version adoption
+		$stats->increment( "extdist.$version" );
 	}
 
 	/**

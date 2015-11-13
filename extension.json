@@ -16,8 +16,7 @@
 		"ExtDistAPIConfig": false,
 		"ExtDistListFile": false,
 		"ExtDistSnapshotRefs": [],
-		"ExtDistDefaultSnapshot": "master",
-		"ExtDistUseEventLogging": false
+		"ExtDistDefaultSnapshot": "master"
 	},
 	"ExtensionMessagesFiles": {
 		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
