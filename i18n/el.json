@@ -9,7 +9,7 @@
 			"Reedy"
 		]
 	},
-	"extensiondistributor": "Κατέβασμα επέκτασης MediaWiki",
+	"extensiondistributor": "Λήψη επέκτασης MediaWiki",
 	"skindistributor": "Κατέβασμα θέματος εμφάνισης (skin) για το Mediawiki",
 	"extensiondistributor-desc": "Επέκταση για τη διανομή αρχειοθετημένων στιγμιοτύπων επεκτάσεων",
 	"extdist-not-configured": "Παρακαλούμε ρυθμίστε το <code>$wgExtDistAPIConfig</code>.",
