@@ -47,6 +47,38 @@
 			}
 		}
 
+		/**
+		 * Set up a handler for someone pressing back
+		 *
+		 * @param {Object} event
+		 */
+		window.onpopstate = function ( event ) {
+			if ( event.state && event.state.name ) {
+				// This will trigger our change function below
+				selector.setValue( event.state.name );
+			}
+		};
+
+		/**
+		 * If history.pushState is supported, set the new URL
+		 *
+		 * @param {string} name
+		 */
+		function updateURL( name ) {
+			if ( history.pushState ) {
+				history.pushState(
+					{ name: name },
+					name,
+					mw.util.getUrl( mw.config.get( 'wgPageName' ) + '/' + name )
+				);
+			}
+		}
+
+		/**
+		 * Handle an API response after the selector is changed
+		 *
+		 * @param {Object} data
+		 */
 		function processAPIResponse( data ) {
 			var info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
 				options = [],
@@ -57,6 +89,7 @@
 					options.push( { data: value, label: formatBranch( value ) } );
 				}
 			} );
+			updateURL( selector.getValue() );
 			// Hide progress bar
 			progress.$element.remove();
 			if ( !options.length ) {
