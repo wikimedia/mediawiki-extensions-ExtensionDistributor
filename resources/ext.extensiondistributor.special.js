@@ -75,7 +75,7 @@
 			params = {
 				action: 'query',
 				list: 'extdistbranches',
-				// Set maxage of 30 minutes, which is same as server-side cach
+				// Set maxage of 30 minutes, which is same as server-side cache
 				maxage: 30 * 60,
 				smaxage: 30 * 60
 			};
