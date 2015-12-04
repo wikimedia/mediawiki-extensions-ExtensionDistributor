@@ -36,9 +36,6 @@
 	"Hooks": {
 		"APIQuerySiteInfoGeneralInfo": [
 			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
-		],
-		"ResourceLoaderRegisterModules": [
-			"ExtensionDistributorHooks::onResourceLoaderRegisterModules"
 		]
 	},
 	"SpecialPages": {
@@ -60,6 +57,24 @@
 		"ext.extensiondistributor.special.styles": {
 			"position": "top",
 			"styles": "ext.extensiondistributor.special.css"
+		},
+		"ext.extensiondistributor.special": {
+			"scripts": "ext.extensiondistributor.special.js",
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg",
+				"oojs-ui"
+			],
+			"messages": [
+				"extdist-choose-version-extensions",
+				"extdist-choose-version-skins",
+				"extdist-submit-version",
+				"extdist-no-versions-extensions",
+				"extdist-no-versions-skins",
+				"extdist-branch-alpha",
+				"extdist-branch-stable",
+				"extdist-branch-candidate"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
