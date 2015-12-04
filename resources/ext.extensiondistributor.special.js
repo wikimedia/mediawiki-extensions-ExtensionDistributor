@@ -87,5 +87,12 @@
 
 			( new mw.Api() ).get( params ).done( processAPIResponse );
 		} );
+
+		$( '.mw-extdist-plinks' ).on( 'click', function ( e ) {
+			var name = $( this ).data( 'name' );
+			e.preventDefault();
+			selector.setValue( name );
+			return false;
+		} );
 	} );
 }( jQuery, mediaWiki, OO ) );

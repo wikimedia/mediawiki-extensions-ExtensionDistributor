@@ -10,4 +10,10 @@ class SpecialSkinDistributor extends SpecialBaseDistributor {
 	public function __construct() {
 		parent::__construct( 'SkinDistributor' );
 	}
+
+	protected function getPopularList() {
+		global $wgExtDistPopularSkinList;
+
+		return $wgExtDistPopularSkinList ?: false;
+	}
 }

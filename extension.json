@@ -16,7 +16,9 @@
 		"ExtDistAPIConfig": false,
 		"ExtDistListFile": false,
 		"ExtDistSnapshotRefs": [],
-		"ExtDistDefaultSnapshot": "master"
+		"ExtDistDefaultSnapshot": "master",
+		"ExtDistPopularExtList": [],
+		"ExtDistPopularSkinList": []
 	},
 	"ExtensionMessagesFiles": {
 		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
@@ -52,6 +54,12 @@
 		"GithubExtDistProvider": "providers/GithubExtDistProvider.php",
 		"ApiListExtDistRepos": "api/ApiListExtDistRepos.php",
 		"ApiListExtDistBranches": "api/ApiListExtDistBranches.php"
+	},
+	"ResourceModules": {
+		"ext.extensiondistributor.special.styles": {
+			"position": "top",
+			"styles": "ext.extensiondistributor.special.css"
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",

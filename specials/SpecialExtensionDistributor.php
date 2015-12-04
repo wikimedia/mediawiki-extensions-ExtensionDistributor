@@ -12,4 +12,10 @@ class SpecialExtensionDistributor extends SpecialBaseDistributor {
 	public function __construct() {
 		parent::__construct( 'ExtensionDistributor' );
 	}
+
+	protected function getPopularList() {
+		global $wgExtDistPopularExtList;
+
+		return $wgExtDistPopularExtList ?: false;
+	}
 }
