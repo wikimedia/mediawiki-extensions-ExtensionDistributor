@@ -87,7 +87,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	protected function showExtensionSelector() {
-		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot;
+		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot, $wgExtDistCandidateSnapshot;
 		$repos = $this->getProvider()->getRepositoryList();
 
 		if ( !$repos ) {
@@ -116,7 +116,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$out->addModuleStyles( 'ext.extensiondistributor.special.styles' );
 		$out->addJsConfigVars( array(
 			'wgExtDistSnapshotRefs' => $wgExtDistSnapshotRefs,
-			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot
+			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot,
+			'wgExtDistCandidateSnapshot' => $wgExtDistCandidateSnapshot,
 		) );
 		$out->addHTML(
 			new OOUI\DropdownInputWidget( array(
@@ -168,6 +169,43 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	/**
+	 * @param string $version
+	 * @return string
+	 */
+	protected function formatVersion( $version ) {
+		if ( strpos( $version, 'REL' ) === 0 ) {
+			// Strip "REL" prefix, and convert _ to .
+			return str_replace( '_', '.', substr( $version, 3 ) );
+		} else {
+			// Don't touch it
+			return $version;
+		}
+
+	}
+
+	/**
+	 * @note Keep this in-sync with the JavaScript version
+	 * @param string $branch Branch name
+	 * @return string formatted text
+	 */
+	protected function formatBranch( $branch ) {
+		global $wgExtDistDefaultSnapshot, $wgExtDistCandidateSnapshot;
+
+		$version = $this->formatVersion( $branch );
+		if ( $branch === 'master' ) {
+			// Special case
+			return $this->msg( 'extdist-branch-alpha' )->text();
+		} elseif ( $branch === $wgExtDistDefaultSnapshot ) {
+			return $this->msg( 'extdist-branch-stable' )->params( $version )->text();
+		} elseif ( $branch === $wgExtDistCandidateSnapshot ) {
+			return $this->msg( 'extdist-branch-candidate' )->params( $version )->text();
+		} else {
+			// Don't touch it
+			return $version;
+		}
+	}
+
+	/**
 	 * @param $repoName string
 	 * @return mixed
 	 */
@@ -194,8 +232,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
 			if ( $this->getProvider()->hasBranch( $repoName, $branchName ) ) {
-				$branchMsg = $this->msg( "extdist-branch-$branchName" );
-				$branchDesc = $branchMsg->isDisabled() ? $branchName : $branchMsg->plain();
+				$branchDesc = $this->formatBranch( $branchName );
 				$options[] = array( 'data' => $branchName, 'label' => $branchDesc );
 				$selected++;
 			}
