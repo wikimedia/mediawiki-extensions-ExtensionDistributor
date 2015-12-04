@@ -2,3 +2,19 @@
 #mw-extdist-continue {
 	max-width: 50em;
 }
+
+/* use display: table to create two columns */
+#mw-extdist-container {
+	width: 100%;
+	display: table;
+}
+
+#mw-extdist-form {
+	width: 60%;
+	display: table-cell;
+}
+
+#mw-extdist-popular {
+	width: 40%;
+	display: table-cell;
+}

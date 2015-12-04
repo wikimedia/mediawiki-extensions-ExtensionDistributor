@@ -99,6 +99,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$out = $this->getOutput();
 		$out->enableOOUI();
 		// extdist-choose-extensions, extdist-choose-skins
+		$out->addHTML( '<div id="mw-extdist-container"><div id="mw-extdist-form">' );
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
@@ -112,6 +113,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 		// Add JS infuse magic
 		$out->addModules( 'ext.extensiondistributor.special' );
+		$out->addModuleStyles( 'ext.extensiondistributor.special.styles' );
 		$out->addJsConfigVars( array(
 			'wgExtDistSnapshotRefs' => $wgExtDistSnapshotRefs,
 			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot
@@ -133,8 +135,36 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'flags' => array( 'primary', 'progressive' ),
 			) ) ) .
 			Xml::closeElement( 'form' ) . "\n" .
-			Html::element( 'div', array( 'id' => 'mw-extdist-continue' ) )
+			Html::element( 'div', array( 'id' => 'mw-extdist-continue' ) ) .
+			"</div>"
 		);
+
+		$popularList = $this->getPopularList();
+		if ( !$popularList ) {
+			return;
+		}
+
+		$out->addHTML(
+			'<div id="mw-extdist-popular">' .
+			$this->msg( $this->msgKey( 'extdist-popular-$TYPE' ) )
+				->numParams( count( $popularList ) )
+				->escaped() .
+			"\n<ol>"
+		);
+		foreach ( $popularList as $popularItem ) {
+			$link = Linker::link(
+				$this->getPageTitle( $popularItem ),
+				htmlspecialchars( $popularItem ),
+				array(
+					'data-name' => $popularItem,
+					'class' => 'mw-extdist-plinks',
+				)
+			);
+			$out->addHTML( "<li>$link</li>\n" );
+		}
+		$out->addHTML( '</ol>' );
+		// Closes popular and container
+		$out->addHTML( '</div></div>' );
 	}
 
 	/**
@@ -261,4 +291,12 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	protected function getGroupName() {
 		return 'developer';
 	}
+
+	/**
+	 * Get the list of popular items for this special page,
+	 * or false if none are configured
+	 *
+	 * @return string[]|bool
+	 */
+	abstract protected function getPopularList();
 }

@@ -30,7 +30,6 @@ class ExtensionDistributorHooks {
 		global $wgExtDistSnapshotRefs;
 		$module = array(
 			'scripts' => 'ext.extensiondistributor.special.js',
-			'styles' => 'ext.extensiondistributor.special.css',
 			'dependencies' => array(
 				'mediawiki.api',
 				'mediawiki.jqueryMsg',
