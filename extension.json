@@ -17,6 +17,7 @@
 		"ExtDistListFile": false,
 		"ExtDistSnapshotRefs": [],
 		"ExtDistDefaultSnapshot": "master",
+		"ExtDistCandidateSnapshot": false,
 		"ExtDistPopularExtList": [],
 		"ExtDistPopularSkinList": []
 	},

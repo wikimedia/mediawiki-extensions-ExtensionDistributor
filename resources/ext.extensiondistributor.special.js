@@ -13,6 +13,40 @@
 			distributorType = 'skins';
 		}
 
+		/**
+		 * Note: Keep this in-sync with the PHP version
+		 *
+		 * @param {string} version
+		 * @return {string}
+		 */
+		function formatVersion( version ) {
+			if ( version.indexOf( 'REL' ) === 0 ) {
+				return version.slice( 3 ).replace( '_', '.' );
+			} else {
+				return version;
+			}
+		}
+
+		/**
+		 * Note: Keep this in-sync with the PHP version
+		 *
+		 * @param {string} branch
+		 * @return {string}
+		 */
+		function formatBranch( branch ) {
+			var version = formatVersion( branch );
+			if ( branch === 'master' ) {
+				// Special case
+				return mw.msg( 'extdist-branch-alpha' );
+			} else if ( branch === mw.config.get( 'wgExtDistDefaultSnapshot' ) ) {
+				return mw.msg( 'extdist-branch-stable', version );
+			} else if ( branch === mw.config.get( 'wgExtDistCandidateSnapshot' ) ) {
+				return mw.msg( 'extdist-branch-candidate', version );
+			} else {
+				return version;
+			}
+		}
+
 		function processAPIResponse( data ) {
 			var info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
 				options = [],
@@ -20,7 +54,7 @@
 				versionButton;
 			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function ( i, value ) {
 				if ( info[ value ] ) {
-					options.push( { data: value, label: mw.msg( 'extdist-branch-' + value ) } );
+					options.push( { data: value, label: formatBranch( value ) } );
 				}
 			} );
 			// Hide progress bar
