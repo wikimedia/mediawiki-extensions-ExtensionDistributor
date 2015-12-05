@@ -16,6 +16,11 @@ class SpecialExtensionDistributor extends SpecialBaseDistributor {
 	protected function getPopularList() {
 		global $wgExtDistPopularExtList;
 
+		$list = parent::getPopularList();
+		if ( $list ) {
+			return $list;
+		}
+
 		return $wgExtDistPopularExtList ?: false;
 	}
 }

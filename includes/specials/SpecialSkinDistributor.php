@@ -14,6 +14,11 @@ class SpecialSkinDistributor extends SpecialBaseDistributor {
 	protected function getPopularList() {
 		global $wgExtDistPopularSkinList;
 
+		$list = parent::getPopularList();
+		if ( $list ) {
+			return $list;
+		}
+
 		return $wgExtDistPopularSkinList ?: false;
 	}
 }
