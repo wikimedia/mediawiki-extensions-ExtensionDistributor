@@ -36,6 +36,9 @@
 	"Hooks": {
 		"APIQuerySiteInfoGeneralInfo": [
 			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
+		],
+		"UnitTestsList": [
+			"ExtensionDistributorHooks::onUnitTestsList"
 		]
 	},
 	"SpecialPages": {
@@ -44,14 +47,14 @@
 	},
 	"AutoloadClasses": {
 		"ExtensionDistributorHooks": "ExtensionDistributor.hooks.php",
-		"SpecialBaseDistributor": "specials/SpecialBaseDistributor.php",
-		"SpecialExtensionDistributor": "specials/SpecialExtensionDistributor.php",
-		"SpecialSkinDistributor": "specials/SpecialSkinDistributor.php",
-		"ExtDistProvider": "providers/ExtDistProvider.php",
-		"GerritExtDistProvider": "providers/GerritExtDistProvider.php",
-		"GithubExtDistProvider": "providers/GithubExtDistProvider.php",
-		"ApiListExtDistRepos": "api/ApiListExtDistRepos.php",
-		"ApiListExtDistBranches": "api/ApiListExtDistBranches.php"
+		"SpecialBaseDistributor": "includes/specials/SpecialBaseDistributor.php",
+		"SpecialExtensionDistributor": "includes/specials/SpecialExtensionDistributor.php",
+		"SpecialSkinDistributor": "includes/specials/SpecialSkinDistributor.php",
+		"ExtDistProvider": "includes/providers/ExtDistProvider.php",
+		"GerritExtDistProvider": "includes/providers/GerritExtDistProvider.php",
+		"GithubExtDistProvider": "includes/providers/GithubExtDistProvider.php",
+		"ApiListExtDistRepos": "includes/api/ApiListExtDistRepos.php",
+		"ApiListExtDistBranches": "includes/api/ApiListExtDistBranches.php"
 	},
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
