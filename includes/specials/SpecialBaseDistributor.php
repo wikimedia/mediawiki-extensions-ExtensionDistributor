@@ -335,5 +335,17 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 *
 	 * @return string[]|bool
 	 */
-	abstract protected function getPopularList();
+	protected function getPopularList() {
+		return $this->getGraphiteStats()->getPopularList( $this->type );
+	}
+
+	/**
+	 * @return ExtDistGraphiteStats
+	 */
+	protected function getGraphiteStats() {
+		$stats = new ExtDistGraphiteStats();
+		$stats->setLogger( $this->logger );
+		return $stats;
+	}
+
 }

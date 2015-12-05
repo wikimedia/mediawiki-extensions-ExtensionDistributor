@@ -18,6 +18,7 @@
 		"ExtDistSnapshotRefs": [],
 		"ExtDistDefaultSnapshot": "master",
 		"ExtDistCandidateSnapshot": false,
+		"ExtDistGraphiteRanderApi": null,
 		"ExtDistPopularExtList": [],
 		"ExtDistPopularSkinList": []
 	},
@@ -54,7 +55,8 @@
 		"GerritExtDistProvider": "includes/providers/GerritExtDistProvider.php",
 		"GithubExtDistProvider": "includes/providers/GithubExtDistProvider.php",
 		"ApiListExtDistRepos": "includes/api/ApiListExtDistRepos.php",
-		"ApiListExtDistBranches": "includes/api/ApiListExtDistBranches.php"
+		"ApiListExtDistBranches": "includes/api/ApiListExtDistBranches.php",
+		"ExtDistGraphiteStats": "includes/stats/ExtDistGraphiteStats.php"
 	},
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
