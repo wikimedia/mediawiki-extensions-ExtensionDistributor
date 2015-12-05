@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Matěj Grabovský",
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"extensiondistributor": "Stáhnout rozšíření MediaWiki",
@@ -29,6 +30,11 @@
 	"extdist-want-more-skins": "Získat další vzhled",
 	"extdist-tar-error": "Z archivního API se nepodařilo načíst URL archivu.",
 	"extdist-no-branches": "Nepodařilo se načíst informace o žádné větvi.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Nejstahovanější rozšíření|$1 nejstahovanější rozšíření|$1 nejstahovanějších rozšíření}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|Nejstahovanější vzhled|$1 nejstahovanější vzhledy|$1 nejstahovanějších vzhledů}}:",
+	"extdist-branch-alpha": "master (nejnovější vývojová verze)",
+	"extdist-branch-candidate": "$1 (kandidát příští stabilní verze)",
+	"extdist-branch-stable": "$1 (aktuální stabilní MediaWiki)",
 	"apihelp-query+extdistrepos-description": "Vrátí seznam úložišť podporovaných rozšířením ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Vypsat seznam úložišť"
 }

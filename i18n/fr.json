@@ -11,7 +11,8 @@
 			"Verdy p",
 			"Wyz",
 			"Ltrlg",
-			"Wladek92"
+			"Wladek92",
+			"Orlodrim"
 		]
 	},
 	"extensiondistributor": "Télécharger l’extension MediaWiki",
@@ -38,6 +39,11 @@
 	"extdist-want-more-skins": "Obtenir un autre habillage",
 	"extdist-tar-error": "Impossible d’analyser l’URL d'archive de l’API d'archive.",
 	"extdist-no-branches": "Impossible d’extraire l’information sur aucune branche.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Extension la plus téléchargée|$1 extensions les plus téléchargées}} :",
+	"extdist-popular-skins": "{{PLURAL:$1|Habillage le plus téléchargé|$1 habillages les plus téléchargés}} :",
+	"extdist-branch-alpha": "master (dernière version de développement)",
+	"extdist-branch-candidate": "$1 (candidat pour la prochaine version stable)",
+	"extdist-branch-stable": "$1 (dernière version stable de MediaWiki)",
 	"apihelp-query+extdistrepos-description": "Renvoie la liste des dépôts supportés par ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lister les référentiels",
 	"apihelp-query+extdistbranches-description": "Retourne la liste des branches supportées par ExtensionDistributor pour un dépôt",
