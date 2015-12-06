@@ -17,5 +17,7 @@
 	"extdist-choose-version-extensions": "Dir sidd am Gaang d'<b>$1</b> Erweiderung erofzelueden.\n\nWielt Är MediaWiki Versioun.\n\nDéi meescht Erweiderunge funktionéiere mat verschiddene Versioune vu MediaWiki, wann Är Versioun vu MediaWiki net hei steet, oder wann der déi neist Funktioune vun den Erweiderunge braucht, da versicht déi neist Versioun ze benotzen.",
 	"extdist-no-versions-extensions": "Déi gewielten Erweiderung ($1) ass a kenger Versioun disponibel!",
 	"extdist-submit-version": "Viru fueren",
-	"extdist-want-more-extensions": "Eng aner Erweiderung benotzen"
+	"extdist-want-more-extensions": "Eng aner Erweiderung benotzen",
+	"extdist-branch-candidate": "$1 (Kandidat fir déi nächst stabil Versioun)",
+	"extdist-branch-stable": "$1 (lescht stabil MediaWiki Versioun)"
 }

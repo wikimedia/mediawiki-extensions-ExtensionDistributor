@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Sindhu",
-			"Aursani"
+			"Aursani",
+			"Mehtab ahmed"
 		]
 	},
 	"apihelp-query+extdistbranches-description": "توسيع‌ورڇ جي منظورشده ذخيري طور شاخن جي فهرست ڏي ٿو",
-	"apihelp-query+extdistbranches-param-skins": "چَمُون، جن لاءِ شاخون حاصل ڪجن",
+	"apihelp-query+extdistbranches-param-skins": "چَمڙيون، جن لاءِ شاخون حاصل ڪجن",
 	"apihelp-query+extdistbranches-param-exts": "توسيعات، جن لاءِ شاخون حاصل ڪجن",
 	"apihelp-query+extdistbranches-example-1": "توسيع‌ورڇ توسيع لاءِ شاخون حاصل ڪريو"
 }
