@@ -4,6 +4,8 @@
  * ExtensionDistributor provider for the Gerrit Code Review system
  * Requires an external service to provide tarballs
  *
+ * @author Legoktm
+ *
  * Example configuration for Wikimedia sites:
  *
  * $wgExtDistAPIConfig = array(

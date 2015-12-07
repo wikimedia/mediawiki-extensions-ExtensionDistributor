@@ -2,6 +2,9 @@
 
 use MediaWiki\Logger\LoggerFactory;
 
+/**
+ * @author Legoktm
+ */
 class ApiListExtDistBranches extends ApiQueryBase {
 
 	private $providers = array();

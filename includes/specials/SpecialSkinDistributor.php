@@ -2,6 +2,8 @@
 
 /**
  * Special page that allows users to download skins as tar archives.
+ *
+ * @author Legoktm
  */
 class SpecialSkinDistributor extends SpecialBaseDistributor {
 

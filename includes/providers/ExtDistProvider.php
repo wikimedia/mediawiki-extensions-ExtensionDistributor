@@ -7,6 +7,8 @@ use Psr\Log\NullLogger;
 /**
  * Base ExtensionDistributor provider
  *
+ * @author Legoktm
+ *
  * Parameters that apply to all providers:
  *  proxy (optional) - HTTP proxy used in requests
  *  apiUrl - API endpoint to use

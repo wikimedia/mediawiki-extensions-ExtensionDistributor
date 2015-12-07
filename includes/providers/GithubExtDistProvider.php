@@ -3,6 +3,8 @@
 /**
  * ExtensionDistributor provider for Github.com
  *
+ * @author Legoktm
+ *
  * Provider-specific parameters:
  *  token - OAuth authentication token, see https://github.com/blog/1509-personal-api-tokens
  *

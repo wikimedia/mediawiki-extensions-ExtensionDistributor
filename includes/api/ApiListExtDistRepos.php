@@ -2,6 +2,9 @@
 
 use MediaWiki\Logger\LoggerFactory;
 
+/**
+ * @author Legoktm
+ */
 class ApiListExtDistRepos extends ApiQueryBase {
 
 	public function __construct( ApiQuery $query, $moduleName ) {
