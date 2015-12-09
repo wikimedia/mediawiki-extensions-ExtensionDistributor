@@ -142,6 +142,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 		$popularList = $this->getPopularList();
 		if ( !$popularList ) {
+			// Close the container div
+			$out->addHTML( '</div>' );
 			return;
 		}
 
