@@ -32,5 +32,7 @@
 	"extdist-want-more-skins": "Загрузить другую тему оформления",
 	"extdist-tar-error": "Не удается получить URL архива из архивного API.",
 	"extdist-no-branches": "Не удалось получить информацию о каких-либо версиях.",
+	"extdist-branch-candidate": "$1 (следующая стабильная версия-кандидат)",
+	"extdist-branch-stable": "$1 (последняя стабильная MediaWiki)",
 	"apihelp-query+extdistrepos-description": "Возвращает список репозиториев, поддерживаемых ExtensionDistributor"
 }
