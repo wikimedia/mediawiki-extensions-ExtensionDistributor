@@ -126,7 +126,6 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 */
 	public function hasBranch( $name, $version ) {
 		$branches = $this->getBranches( $name );
-		//var_dump($branches);
 		return isset( $branches[$version] );
 	}
 
