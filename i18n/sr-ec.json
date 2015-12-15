@@ -16,5 +16,6 @@
 	"extdist-no-versions-extensions": "Изабрана екстензија ($1) није доступна ни у једној верзији!",
 	"extdist-no-versions-skins": "Изабрана тема ($1) није доступна ни у једној верзији!",
 	"extdist-submit-version": "Настави",
-	"extdist-want-more-extensions": "Преузми другу екстензију"
+	"extdist-want-more-extensions": "Преузми другу екстензију",
+	"extdist-branch-stable": "$1 (најновија стабилна верзија Медијавикија)"
 }
