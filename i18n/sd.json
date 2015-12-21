@@ -7,7 +7,7 @@
 		]
 	},
 	"apihelp-query+extdistbranches-description": "توسيع‌ورڇيندڙ جي منظورشده ذخيري طور شاخن جي فهرست ڏي ٿو",
-	"apihelp-query+extdistbranches-param-skins": "چَمڙيون، جن لاءِ شاخون حاصل ڪجن",
+	"apihelp-query+extdistbranches-param-skins": "چَمُون، جن لاءِ شاخون درڪار آهن",
 	"apihelp-query+extdistbranches-param-exts": "توسيعات، جن لاءِ شاخون حاصل ڪجن",
 	"apihelp-query+extdistbranches-example-1": "توسيع‌ورڇيندڙ توسيع لاءِ شاخون حاصل ڪريو"
 }
