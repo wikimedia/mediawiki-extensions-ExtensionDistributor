@@ -31,6 +31,7 @@
 	"extdist-tar-error": "Non se puido obter o enderezo URL do arquivo desde o arquivo da API.",
 	"extdist-no-branches": "Imposible obter información sobre ningunha rama.",
 	"extdist-popular-extensions": "{{PLURAL:$1|$1 Extensión máis descargada|$1 extensións máis descargadas}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|$1 aparencia máis descargada|$1 aparencias máis descargadas}}:",
 	"extdist-branch-alpha": "principal (última versión en desenvolvemento)",
 	"extdist-branch-candidate": "$1 (seguinte candidato estable)",
 	"extdist-branch-stable": "$1 (último MediaWiki estable)",
