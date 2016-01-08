@@ -34,7 +34,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 	 * @returns array|bool array of extensions in order of popularity or false on failure
 	 */
 	public function getPopularList( $type ) {
-		global $wgExtDistGraphiteRenderApi, $wgServerName;
+		global $wgExtDistGraphiteRenderApi, $wgServerName, $wgStatsdMetricPrefix;
 		if ( !$wgExtDistGraphiteRenderApi ) {
 			return false;
 		}
@@ -48,7 +48,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			return $cachedValue;
 		}
 
-		$metric = "MediaWiki.extdist.$type.*.*.sum";
+		$metric = "$wgStatsdMetricPrefix.extdist.$type.*.*.sum";
 		$requestParams = array(
 			'target' => 'sortByMaxima(groupByNode(summarize(' . $metric . ',"4w","sum",true),3,"sum"))',
 			'format' => 'json',
