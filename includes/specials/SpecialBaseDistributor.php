@@ -285,6 +285,23 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		// extdist-created-extensions, extdist-created-skins
 		$this->getOutput()->addWikiMsg( $this->msgKey( 'extdist-created-$TYPE' ), $extension, $sha1,
 			$version, $url, $fileName );
+
+		// Add link to the extension/skin's page
+		$pageTitle = Title::newFromText(
+			( $this->type === ExtDistProvider::EXTENSIONS ? 'Extension:' : 'Skin:' ) . $extension
+		);
+		if ( $pageTitle->isKnown() ) {
+			$this->getOutput()->addHTML(
+				Xml::openElement( 'p' ) .
+				Linker::link(
+					$pageTitle,
+					// extdist-goto-extensions-page, extdist-goto-skins-page
+					$this->msg( $this->msgKey( 'extdist-goto-$TYPE-page' ), $extension )->plain()
+				) .
+				Xml::closeElement( 'p' ) . "\n"
+			);
+		}
+
 		$this->getOutput()->addHTML(
 			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
 			Linker::link( $this->getPageTitle(),

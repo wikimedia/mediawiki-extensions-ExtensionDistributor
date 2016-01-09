@@ -35,6 +35,8 @@
 	"extdist-created-skins": "Followed by the link text {{msg-mw|Extdist-want-more-skins}}.\n\nIn the expression \"skins directory\", \"skins\" is the name of an actual directory and should not be translated.\n\nParameters:\n* $1 - skin name\n* $2 - revision number (SHA1, 7 characters)\n* $3 - branch name. e.g. master, REL1_21, REL1_20\n* $4 - URL which points to the .tar.gz file\n* $5 - filename of the .tar.gz file",
 	"extdist-want-more-extensions": "Used as link text in [[Special:ExtensionDistributor]].\n\nThis message follows the Download icon.",
 	"extdist-want-more-skins": "Used as link text in [[Special:SkinDistributor]].\n\nThis message follows the Download icon.",
+	"extdist-goto-extensions-page": "Used as link text in [[Special:ExtensionDistributor]].\n\nThis message precedes the \"Want more\" message.",
+	"extdist-goto-skins-page": "Used as link text in [[Special:SkinDistributor]].\n\nThis message precedes the \"Want more\" message.",
 	"extdist-tar-error": "Used as error message in [[Special:ExtensionDistributor]], when downloading an extension.",
 	"extdist-no-branches": "Error message shown if it can't find any information about any branches",
 	"extdist-popular-extensions": "Message shown before a list of popular extensions. $1 is the number of items in the list.",
