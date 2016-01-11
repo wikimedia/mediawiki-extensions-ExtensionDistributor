@@ -4,5 +4,6 @@
 			"Papuass"
 		]
 	},
-	"extdist-submit-version": "Turpināt"
+	"extdist-submit-version": "Turpināt",
+	"extdist-goto-extensions-page": "Atgriezties <b>$1</b> paplašinājuma lapā."
 }
