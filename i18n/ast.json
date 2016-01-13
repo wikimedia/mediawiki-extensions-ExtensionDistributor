@@ -26,6 +26,8 @@
 	"extdist-created-skins": "Creóse una instantanea de la versión <b>$2</b> de l'aspeutu <b>$1</b> de MediaWiki <b>$3</b>. La descarga tendría de comenzar de mou automáticu en 5 segundos.\n\nLa URL d'esta instantanea ye:\n:$4\nPuedes usar esti enllaz pa descargar la estensión a cualquier ordenador; pero nun la guardes nun marcador, porque'l conteníu nun s'anovará, y puede desaniciase nun momentu posterior.\n\nTendríes d'estrayer l'archivu tar nel direutoriu d'estensiones de la instalación de Mediawiki. Por exemplu, nun sistema operativu tipu Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\nEn Windows, pues usar [http://www.7-zip.org/ 7-zip] pa estrayer los ficheros.\n\nSi la to wiki ta nun sirvidor remotu, estrái los ficheros nun direutoriu temporal del to ordenador, y llueu xube '''tolos''' ficheros estrayíos al direutoriu d'aspeutos del sirvidor.\n\nDempués d'estrayer los ficheros, necesitarás rexistrar l'aspeutu en LocalSettings.php. La documentación de l'aspeutu debería tener instrucciones de cómo facelo.\n\nSi tienes cualesquier entruga tocante a esti sistema de distribución d'aspeutos, por favor visita [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Descargar otra estensión",
 	"extdist-want-more-skins": "Obtener otru aspeutu",
+	"extdist-goto-extensions-page": "Volver a la páxina de la estensión <b>$1</b>.",
+	"extdist-goto-skins-page": "Volver a la páxina del aspeutu <b>$1</b>.",
 	"extdist-tar-error": "Nun se pudo traer la URL del archivu dende la API d'archivu.",
 	"extdist-no-branches": "Nun pue algamase información de nenguna rama.",
 	"extdist-popular-extensions": "{{PLURAL:$1|La estensión más descargada|Les $1 estensiones más descargaes}}:",

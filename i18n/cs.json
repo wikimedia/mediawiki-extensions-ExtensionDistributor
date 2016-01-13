@@ -28,6 +28,8 @@
 	"extdist-created-skins": "Balíček vzhledu <b>$1</b> ve verzi <b>$2</b> pro MediaWiki <b>$3</b> byl vytvořen. Jeho stahování by se mělo automaticky spustit za pět sekund.\n\nAdresa tohoto balíčku je:\n: $4\nPomocí tohoto odkazu si můžete balíček stáhnout na libovolném počítači, ale laskavě si tuto adresu nikam neukládejte, protože její obsah nebude aktualizován a může být později smazán.\n\nObsah taru byste měli rozbalit do adresáře <code>skins</code> u vaší instalace MediaWiki. Na operačních systémech na bázi Unixu například:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windows můžete balíček rozbalit pomocí programu [http://www.7-zip.org/ 7-zip].\n\nPokud vaše wiki běží na vzdáleném serveru, rozbalte si archiv do nějakého dočasného adresáře na lokálním počítači a poté nahrajte '''všechny''' rozbalené soubory do adresáře <code>skins</code> na vzdáleném serveru.\n\nPo rozbalení souborů budete muset vzhled zaregistrovat v souboru <code>LocalSettings.php</code>. Podrobnější informace by měla obsahovat dokumentace k vzhledu.\n\nPřípadné dotazy k tomuto systému distribuce vzhledů můžete klást na stránce [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Stáhnout jiné rozšíření",
 	"extdist-want-more-skins": "Získat další vzhled",
+	"extdist-goto-extensions-page": "Zpět na stránku rozšíření <b>$1</b>.",
+	"extdist-goto-skins-page": "Zpět na stránku vzhledu <b>$1</b>.",
 	"extdist-tar-error": "Z archivního API se nepodařilo načíst URL archivu.",
 	"extdist-no-branches": "Nepodařilo se načíst informace o žádné větvi.",
 	"extdist-popular-extensions": "{{PLURAL:$1|Nejstahovanější rozšíření|$1 nejstahovanější rozšíření|$1 nejstahovanějších rozšíření}}:",
