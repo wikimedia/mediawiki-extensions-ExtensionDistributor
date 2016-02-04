@@ -14,5 +14,6 @@
 	"extdist-no-versions-extensions": "Izabrana ekstenzija ($1) nije dostupna ni u jednoj verziji!",
 	"extdist-no-versions-skins": "Izabrana tema ($1) nije dostupna ni u jednoj verziji!",
 	"extdist-submit-version": "Produži",
-	"extdist-want-more-extensions": "Preuzmi drugu ekstenziju"
+	"extdist-want-more-extensions": "Preuzmi drugu ekstenziju",
+	"extdist-branch-stable": "$1 (najnovija stabilna verzija Medijavikija)"
 }
