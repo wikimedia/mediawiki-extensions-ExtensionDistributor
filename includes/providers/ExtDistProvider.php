@@ -75,6 +75,10 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 */
 	public static function getProviderFor( $type ) {
 		global $wgExtDistAPIConfig;
+
+		if ( !$wgExtDistAPIConfig ) {
+			return null;
+		}
 		return self::factory(
 			$wgExtDistAPIConfig + array( 'repoType' => $type )
 		);

@@ -77,14 +77,20 @@ class ApiListExtDistBranches extends ApiQueryBase {
 	}
 
 	public function getAllowedParams() {
+		$extensionsProvider = $this->getProvider( ExtDistProvider::EXTENSIONS );
+		$skinsProvider = $this->getProvider( ExtDistProvider::SKINS );
 		return array(
 			'exts' => array(
 				ApiBase::PARAM_ISMULTI => true,
-				ApiBase::PARAM_TYPE => $this->getProvider( ExtDistProvider::EXTENSIONS )->getRepositoryList(),
+				ApiBase::PARAM_TYPE => $extensionsProvider
+					? $extensionsProvider->getRepositoryList()
+					: array(),
 			),
 			'skins' => array(
 				ApiBase::PARAM_ISMULTI => true,
-				ApiBase::PARAM_TYPE => $this->getProvider( ExtDistProvider::SKINS )->getRepositoryList(),
+				ApiBase::PARAM_TYPE => $skinsProvider
+					? $skinsProvider->getRepositoryList()
+					: array(),
 			)
 		);
 	}
