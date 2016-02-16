@@ -103,6 +103,12 @@
 			$( '#mw-extdist-selector-version' ).remove();
 			$( '#mw-extdist-submit-button' ).remove();
 			$continue.text( '' );
+
+			// If they pick the empty option, just bail out here
+			if ( !selector.getValue() ) {
+				return;
+			}
+
 			// Add a progress bar to the page
 			progress = new OO.ui.ProgressBarWidget();
 			$continue.before( progress.$element );
