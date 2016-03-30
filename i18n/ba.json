@@ -2,20 +2,43 @@
 	"@metadata": {
 		"authors": [
 			"Assele",
-			"Haqmar"
+			"Haqmar",
+			"Азат Хәлилов",
+			"Мухамадеева"
 		]
 	},
 	"extensiondistributor": "MediaWiki киңәйеүҙәрен күсереп алырға",
+	"skindistributor": "MediaWiki-ның биҙәү темаһын өҫтәргә",
 	"extensiondistributor-desc": "Киңәйеүҙәр менән дистрибутивты күсереп алыу өсөн киңәйеү",
 	"extdist-not-configured": "Зинһар, $wgExtDistList һәм $wgExtDistAPIConfig көйләгеҙ",
+	"extdist-list-missing-extensions": "Киңәйтеү исемлеген алып булмай",
+	"extdist-list-missing-skins": "биҙәү темлары исемленген алып булмай",
 	"extdist-no-such-extensions": "\"$1\" киңәйеүе юҡ",
+	"extdist-no-such-skins": "«$1». кеүек биҙәү слады юҡ",
 	"extdist-no-such-version-extensions": "\"$1\" киңәйеүенең \"$2\" өлгөһө юҡ",
+	"extdist-no-such-version-skins": "«$1 биҙәү темаһы «$2» версияһында юҡ",
 	"extdist-choose-extensions": "Күсереп алыу өсөн киңәйеү һайлағыҙ:",
+	"extdist-choose-skins": "Ниндәй биҙәү темаһын күсереп алырға теләйһегеҙ, һайлағыҙ",
 	"extdist-submit-extension": "Дауам итергә",
 	"extdist-choose-version-extensions": "Һеҙ <b>$1</b> киңәйеүен күсереп алаһығыҙ.\n\nMediaWiki өлгөгөҙҙө һайлағыҙ.\n\nКиңәйеүҙәрҙең күбеһе төрлө MediaWiki өлгөләре менән эшләй, шуға күрә әгәр һеҙҙең MediaWiki өлгөһө бында күрһәтелмәһә, йәки һеҙгә һуңғы киңәйеү өлгөһөнөң мөмкинлектәре кәрәкһә, ағымдағы өлгөнө ҡулланып ҡарағыҙ.",
+	"extdist-choose-version-skins": "Һеҙ <b>«$1»</b> биҙәү темаһын күсерәгеҙ.\nҮҙегеҙҙең MediaWiki версияһын һайлағыҙ.\nКүп кенә биҙәү темаһы бер нисә MediaWiki версияһы менән эшләй, шуға күрә һеҙ ҡуйған версия бында килтерелмәһә, йәки һеҙгә биҙәү темаһы версияһының һуңғы мөмкинлеге талап ителә -һуңғы версияны файҙаланығыҙ",
 	"extdist-no-versions-extensions": "Һайланған киңәйеүҙе ($1) бер өлгөлә лә алып булмай!",
+	"extdist-no-versions-skins": "Һайланған $1 биҙәү темаһы бер версияла ла юҡ",
 	"extdist-submit-version": "Дауам итергә",
 	"extdist-created-extensions": "MediaWiki өсөн <b>$1</b> киңәйеүенең <b>$2</b> өлгөһөнөң <b>$3</b> күсермәһе булдырылды. Күсереп алыу 5 секундтан үҙенән-үҙе башланырға тейеш.\n\nБыл күсермәнең URL адресы:\n:$4\nБыл адрес серверға туранан-тура күсереп алыу өсөн ҡулланыла ала, әммә, зинһар, был һылтанманы Һайланғандарға өҫтәмәгеҙ, сөнки эстәлек яңырмаясаҡ, һәм һуңыраҡ юйылыуы ихтимал.\n\nTar-архив һеҙҙең киңәйеүҙәр директорияһына бушатылырға тейеш. Мәҫәлән unix-ҡа оҡшаш ОС-лар өсөн:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows-та файлдарҙы бушатыу өсөн, һеҙ [http://www.7-zip.org/ 7-zip] программаһын ҡуллана алаһығыҙ.\n\nӘгәр викилар алыҫтағы серверҙа урынлашҡан булһа, файлдарҙы урындағы компьютерҙың ваҡытлы директорияһына бушатығыҙ һәм '''бөтә''' бушатылған файлдарҙы серверҙағы киңәйеүҙәр директорияһына тейәгеҙ.\n\nФайлдарҙы бушатҡандан һуң, һеҙгә был киңәйеүҙе LocalSettings.php файлында теркәргә кәрәк буласаҡ. Киңәйеүҙең документтарында быны нисек эшләргә кәрәклеге тураһында күрһәтмә булырға тейеш.\n\nӘгәр һеҙҙең был киңәйеүҙе таратыу системаһы тураһында һорауҙарығыҙ булһа, зинһар, [[Extension talk:ExtensionDistributor]] битен ҡарағыҙ.",
 	"extdist-want-more-extensions": "Башҡа киңәйеү алырға",
-	"extdist-tar-error": "Tar $1 коды ҡайтарҙы:"
+	"extdist-want-more-skins": "икенсе биҙәү темаһын күсерергә",
+	"extdist-goto-extensions-page": "<b>$1</b> киңәйтеү битенә ҡайтыу",
+	"extdist-goto-skins-page": "<b>$1</b> биҙәү темаһына ҡайтыу",
+	"extdist-tar-error": "API.архивынан URL архивынан алып булмай",
+	"extdist-no-branches": "Ниндәйҙер версиялар тураһында мәғлүмәт алып булманы",
+	"extdist-popular-extensions": "Топ {{PLURAL:$1|$1 күсерелгән киңәйтеү|$1 күсерелгән киңәйтеүҙән}}:",
+	"extdist-popular-skins": "Топ {{PLURAL:$1|$1 күсерелгән биҙәү темаһы|$1 күсерелгән биҙәү темалары}}:",
+	"extdist-branch-alpha": "һуңғы эшкәртелгән версия master",
+	"extdist-branch-candidate": "Һуңғы тотороҡло кандидат-версия $1",
+	"extdist-branch-stable": "$1 һуңғы тотороҡло MediaWiki",
+	"apihelp-query+extdistrepos-example-1": "Репозиториев исемлеге",
+	"apihelp-query+extdistbranches-param-skins": "Тармаҡ алыу өсөн биҙәү темаһы.",
+	"apihelp-query+extdistbranches-param-exts": "Тармаҡ алыу өсөн киңәйтеү.",
+	"apihelp-query+extdistbranches-example-1": "ExtensionDistributor киңәйтеү өсөн тармаҡ алыу"
 }
