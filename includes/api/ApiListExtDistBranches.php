@@ -25,7 +25,7 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		return $this->providers[$type];
 	}
 
-	public function getCacheMode() {
+	public function getCacheMode( $params ) {
 		return 'public';
 	}
 
