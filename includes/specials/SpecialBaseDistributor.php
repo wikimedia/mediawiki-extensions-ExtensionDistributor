@@ -127,15 +127,15 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'options' => $items,
 				'name' => 'extdist_name',
 			) ) .
-			// noscript because JS triggers on selector
-			Html::rawElement( 'noscript', array(), new OOUI\ButtonInputWidget( array(
+			// only shown to no-JS users via CSS
+			new OOUI\ButtonInputWidget( array(
 				'id' => 'mw-extdist-ext-submit',
 				'infusable' => true,
 				'name' => 'extdist_submit',
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
 				'type' => 'submit',
 				'flags' => array( 'primary', 'progressive' ),
-			) ) ) .
+			) ) .
 			Xml::closeElement( 'form' ) . "\n" .
 			Html::element( 'div', array( 'id' => 'mw-extdist-continue' ) ) .
 			"</div>"

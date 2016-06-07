@@ -18,3 +18,8 @@
 	width: 40%;
 	display: table-cell;
 }
+
+/* hide submit button for JS users */
+.client-js #mw-extdist-ext-submit {
+	display: none;
+}
