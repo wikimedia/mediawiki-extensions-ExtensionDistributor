@@ -108,6 +108,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		);
 		$items = array( array( 'data' => '' ) );
 
+		natcasesort( $repos );
 		foreach ( $repos as $name ) {
 			$items[] = array( 'data' => $name );
 		}
