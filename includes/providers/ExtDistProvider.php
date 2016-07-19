@@ -248,7 +248,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	protected function fetchRepositoryList() {
 		global $wgExtDistListFile;
 		$extList = array();
-		$res = Http::get( $wgExtDistListFile );
+		$res = Http::get( $wgExtDistListFile, [], __METHOD__ );
 		if ( $res ) {
 			$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
 		}
