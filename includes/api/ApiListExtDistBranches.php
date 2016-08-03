@@ -66,6 +66,12 @@ class ApiListExtDistBranches extends ApiQueryBase {
 			foreach ( $branches as $branch => $sha1 ) {
 				$out[$repo][$branch] = $provider->getTarballLocation( $repo, $branch );
 			}
+			$source = $provider->getSourceURL( $repo );
+			if ( $source !== false ) {
+				// As long as 'source' is never added to $wgExtDistSnapshotRefs,
+				// we'll be totally fine.
+				$out[$repo]['source'] = $source;
+			}
 			ApiResult::setArrayType( $out[$repo], 'assoc' );
 		}
 

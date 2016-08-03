@@ -15,6 +15,7 @@
  *  'apiUrl' => 'https://api.github.com/repos/wikimedia/mediawiki-$TYPE-$EXT/branches',
  *  'tarballUrl' => 'https://codeload.github.com/wikimedia/mediawiki-$TYPE-$EXT/legacy.tar.gz/$REF',
  *  'tarballName' => 'wikimedia-mediawiki-$TYPE-$EXT-$SHA.tar.gz'
+ *  'sourceUrl' => 'https://github.com/wikimedia/mediawiki-$TYPE-$EXT',
  *  'token' => 'YOUR TOKEN HERE',
  * );
  *

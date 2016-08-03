@@ -13,6 +13,7 @@ use Psr\Log\NullLogger;
  *  proxy (optional) - HTTP proxy used in requests
  *  apiUrl - API endpoint to use
  *  tarballUrl - Where tarballs are stored
+ *  sourceUrl - URL to the VCS repository
  *  'repoType' - Either "skins" or "extensions"
  */
 abstract class ExtDistProvider implements LoggerAwareInterface {
@@ -29,6 +30,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	protected $tarballName;
 	protected $apiUrl;
 	protected $repoType;
+	protected $sourceUrl = false;
 	/**
 	 * @var LoggerInterface
 	 */
@@ -50,6 +52,9 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 		$this->tarballName = $options['tarballName'];
 		$this->apiUrl = $options['apiUrl'];
 		$this->repoType = $options['repoType'];
+		if ( isset( $options['sourceUrl'] ) ) {
+			$this->sourceUrl = $options['sourceUrl'];
+		}
 		$this->setLogger( new NullLogger() );
 	}
 
@@ -254,5 +259,19 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 		}
 
 		return $extList;
+	}
+
+	/**
+	 * Get the URL to the source VCS repository
+	 *
+	 * @param string $name
+	 * @return bool|string false if not configured
+	 */
+	public function getSourceURL( $name ) {
+		if ( $this->sourceUrl !== false ) {
+			return $this->substituteUrlVariables( $this->sourceUrl, $name );
+		} else {
+			return false;
+		}
 	}
 }
