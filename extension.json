@@ -38,9 +38,6 @@
 	"Hooks": {
 		"APIQuerySiteInfoGeneralInfo": [
 			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
-		],
-		"UnitTestsList": [
-			"ExtensionDistributorHooks::onUnitTestsList"
 		]
 	},
 	"SpecialPages": {
