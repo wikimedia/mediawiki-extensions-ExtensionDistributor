@@ -155,10 +155,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				->escaped() .
 			"\n<ol>"
 		);
+		$linkRenderer = $this->getLinkRenderer();
 		foreach ( $popularList as $popularItem ) {
-			$link = Linker::link(
+			$link = $linkRenderer->makeLink(
 				$this->getPageTitle( $popularItem ),
-				htmlspecialchars( $popularItem ),
+				$popularItem,
 				array(
 					'data-name' => $popularItem,
 					'class' => 'mw-extdist-plinks',
@@ -227,7 +228,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-version-$TYPE' ), $repoName );
 		$html =
 			Xml::openElement( 'form', array(
-				'action' => $this->getPageTitle()->getLocalUrl(),
+				'action' => $this->getPageTitle()->getLocalURL(),
 				'method' => 'GET' ) ) .
 			Html::hidden( 'extdist_name', $repoName );
 		$options = array();
@@ -291,13 +292,14 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$pageTitle = Title::newFromText(
 			( $this->type === ExtDistProvider::EXTENSIONS ? 'Extension:' : 'Skin:' ) . $extension
 		);
+		$linkRenderer = $this->getLinkRenderer();
 		if ( $pageTitle->isKnown() ) {
 			$this->getOutput()->addHTML(
 				Xml::openElement( 'p' ) .
-				Linker::link(
+				$linkRenderer->makeKnownLink(
 					$pageTitle,
 					// extdist-goto-extensions-page, extdist-goto-skins-page
-					$this->msg( $this->msgKey( 'extdist-goto-$TYPE-page' ), $extension )->plain()
+					$this->msg( $this->msgKey( 'extdist-goto-$TYPE-page' ), $extension )->text()
 				) .
 				Xml::closeElement( 'p' ) . "\n"
 			);
@@ -305,11 +307,14 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 		$this->getOutput()->addHTML(
 			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
-			Linker::link( $this->getPageTitle(),
-				Xml::element( 'img', array( 'src' => $downloadImg ) ) .
-				// extdist-want-more-extensions, extdist-want-more-skins
-				$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped() ) .
-			Xml::closeElement( 'p' ) . "\n"
+			$linkRenderer->makeLink(
+				$this->getPageTitle(),
+				new HtmlArmor(
+					Xml::element( 'img', array( 'src' => $downloadImg ) ) .
+					// extdist-want-more-extensions, extdist-want-more-skins
+					$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped()
+				)
+			) . Xml::closeElement( 'p' ) . "\n"
 		);
 
 		$this->doStats( $extension, $version );
