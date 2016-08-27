@@ -7,12 +7,14 @@
 			"Mirzali",
 			"Reedy",
 			"Xoser",
-			"Marmase"
+			"Marmase",
+			"Kumkumuk"
 		]
 	},
 	"extensiondistributor": "İlaweyê MediyaWikiyi bar ke",
-	"extensiondistributor-desc": "Ekstensiyon ke ser ekstesiyonê vila kerdişî arşivê snapshotî",
-	"extdist-not-configured": "Kerem ke $wgExtDistList u $wgExtDistAPIConfig awan ke",
+	"skindistributor": "Cild ê MediaWiki ron",
+	"extensiondistributor-desc": "Olekenê arşivanê ekrana vıla kerdışi rê nıik oleken.",
+	"extdist-not-configured": "Lutfen  <code>$wgExtDistAPIConfig</code> saz ker ê.",
 	"extdist-list-missing-extensions": "Derganeya listi néşa biyaro!",
 	"extdist-no-such-extensions": "\"$1\" name dı oleken çıniyo",
 	"extdist-no-such-version-extensions": "Versiyonê \"$2\" de ilaweyê \"$1\" çıniyo.",
@@ -23,5 +25,9 @@
 	"extdist-submit-version": "Dewam ke",
 	"extdist-created-extensions": "qey yew lehza esayişê parçeyê <b>$1</b>i u versiyonê <b>$2</b>i MediaWiki <b>$3</b> vıraziya. gani war ardışê şıma zerreyê panc deqiqe de bı otomatik destpêbıkero.\n\nesayişê URLyi yê lehzayek:\n:$4\nno, qey war ardışê pêşkeşwaneki şuxuliyeno labele muhtewa rocane nêbena u ihtimalê hewnakerdışi zi esto nê sebeban ra işaretê cayan têarê mekerê.\n\narşiwê tari gani bıveciyo parçeya rêzbiyayişi. misal, sistemê karkerdışê tipê unix'an de:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows de, qey vetışê dosyayan şıma eşkêni [http://www.7-zip.org/ 7-zip] bışuxulni.\n\nEke wikiya şıma yew pêşkeşwano dûr de ya, dosyayanê xo compiterê xo u dıma '''heme''' dosyayê veteyan parçeya rêzkerdışê compiteri de kopya bıkerê.\n\nbadê vetışê dosyayan, parçe LocalSettings.php'de gani qeyd bıbo. dokumantasyonê parçeyi raye mocnena şıma.\n\nEke no sistem de yew problemê şıma bıbo, kerem kerê şêrê [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Yewna oleken bigere",
-	"extdist-tar-error": "Kodê arşiv da URL' ra URL"
+	"extdist-want-more-skins": "Şo cildan dê binan",
+	"extdist-tar-error": "Kodê arşiv da URL' ra URL",
+	"extdist-branch-candidate": "$1 (stabilni ezaya peyên )",
+	"extdist-branch-stable": "$1 (peyên stabil MediaWiki)",
+	"apihelp-query+extdistrepos-example-1": "Liste yê depoyan"
 }
