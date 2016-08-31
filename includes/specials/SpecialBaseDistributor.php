@@ -299,7 +299,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				$linkRenderer->makeKnownLink(
 					$pageTitle,
 					// extdist-goto-extensions-page, extdist-goto-skins-page
-					$this->msg( $this->msgKey( 'extdist-goto-$TYPE-page' ), $extension )->text()
+					new HtmlArmor(
+						$this
+							->msg( $this->msgKey( 'extdist-goto-$TYPE-page' ), $extension )
+							->parse()
+					)
 				) .
 				Xml::closeElement( 'p' ) . "\n"
 			);
