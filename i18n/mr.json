@@ -8,6 +8,6 @@
 	"extdist-submit-extension": "चालू ठेवा",
 	"extdist-submit-version": "चालू ठेवा",
 	"extdist-want-more-extensions": "दुसरे विस्तारक मिळवा",
-	"extdist-goto-extensions-page": "<b>$1</b> विस्तार पानावर परत चला.",
-	"extdist-goto-skins-page": "<b>$1</b> त्वचा पानावर परत चला."
+	"extdist-goto-extensions-page": "'''$1''' विस्तार पानावर परत चला.",
+	"extdist-goto-skins-page": "'''$1''' त्वचा पानावर परत चला."
 }
