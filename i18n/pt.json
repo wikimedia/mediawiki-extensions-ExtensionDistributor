@@ -10,7 +10,7 @@
 	},
 	"extensiondistributor": "Descarregar extensão MediaWiki",
 	"skindistributor": "Descarregar tema MediaWiki",
-	"extensiondistributor-desc": "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões",
+	"extensiondistributor-desc": "Extensão para distribuir instantâneos arquivados ''(snapshot archives)'' de extensões.",
 	"extdist-not-configured": "Por favor, configure <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Não é possível buscar lista de extensões!",
 	"extdist-list-missing-skins": "Não foi possível obter a lista de temas!",
