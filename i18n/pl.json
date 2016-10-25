@@ -17,9 +17,9 @@
 	"extdist-list-missing-extensions": "Nie udało się pobrać listy rozszerzeń!",
 	"extdist-list-missing-skins": "Nie udało się pobrać listy skórek!",
 	"extdist-no-such-extensions": "Brak rozszerzenia „$1”",
-	"extdist-no-such-skins": "Nie ma skórki \"$1\".",
+	"extdist-no-such-skins": "Nie ma skórki „$1”.",
 	"extdist-no-such-version-extensions": "Rozszerzenie „$1” w wersji „$2” nie istnieje.",
-	"extdist-no-such-version-skins": "Nie istnieje skórka \"$1\" w wersji \"$2\".",
+	"extdist-no-such-version-skins": "Nie istnieje skórka „$1” w wersji „$2”.",
 	"extdist-choose-extensions": "Wybierz rozszerzenie, które chcesz pobrać:",
 	"extdist-choose-skins": "Wybierz skórkę, którą chcesz pobrać:",
 	"extdist-submit-extension": "Kontynuuj",
@@ -44,7 +44,7 @@
 	"apihelp-query+extdistrepos-description": "Zwraca listę repozytoriów obsługiwanych przez ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lista repozytoriów",
 	"apihelp-query+extdistbranches-description": "Zwraca listę gałęzi repozytorium, obsługiwanych przez ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Skórki dla których pobrać gałęzie",
-	"apihelp-query+extdistbranches-param-exts": "Rozszerzenia dla których pobrać gałęzie",
+	"apihelp-query+extdistbranches-param-skins": "Skórki, dla których pobrać gałęzie",
+	"apihelp-query+extdistbranches-param-exts": "Rozszerzenia, dla których pobrać gałęzie",
 	"apihelp-query+extdistbranches-example-1": "Uzyskaj gałęzie dla rozszerzenia ExtensionDistributor."
 }
