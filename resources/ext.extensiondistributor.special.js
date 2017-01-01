@@ -104,7 +104,7 @@
 				classes: [ 'mw-extdist-selector-version' ],
 				options: options,
 				value: mw.config.get( 'wgExtDistDefaultSnapshot' ),
-				name: 'extdist_version'
+				name: 'extdistversion'
 			} );
 			// JS parser doesn't handle \n\n, see T100229
 			$continue.html( mw.message(
@@ -113,17 +113,14 @@
 			).parse().replace( /\n\n/g, '<p>' ) );
 			versionButton = new OO.ui.ButtonInputWidget( {
 				classes: [ 'mw-extdist-submit-button' ],
-				name: 'extdist_submit',
 				label: mw.msg( 'extdist-submit-version' ),
 				flags: [ 'primary', 'progressive' ]
 			} ).on( 'click', function () {
 				// Redirect to download page:
-				// extdist_name=ExtensionDistributor&extdist_version=master
+				// extdistname=ExtensionDistributor&extdistversion=master
 				window.location.href = mw.util.getUrl( mw.config.get( 'wgPageName' ), {
-					/* eslint-disable camelcase */
-					extdist_name: selector.getValue(),
-					extdist_version: versionSelector.getValue()
-					/* eslint-enable camelcase */
+					extdistname: selector.getValue(),
+					extdistversion: versionSelector.getValue()
 				} );
 			} );
 			versionField = new OO.ui.ActionFieldLayout( versionSelector, versionButton, {

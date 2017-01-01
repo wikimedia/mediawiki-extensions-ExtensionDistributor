@@ -56,8 +56,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 			list( $name, $version ) = $parts;
 		} else {
-			$name = $this->getRequest()->getVal( 'extdist_name' );
-			$version = $this->getRequest()->getVal( 'extdist_version' );
+			$name = $this->getRequest()->getVal( 'extdistname' );
+			$version = $this->getRequest()->getVal( 'extdistversion' );
 		}
 
 		if ( !$name ) {
@@ -125,13 +125,12 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'classes' => [ 'mw-extdist-selector' ],
 				'infusable' => true,
 				'options' => $items,
-				'name' => 'extdist_name',
+				'name' => 'extdistname',
 			] ) .
 			// only shown to no-JS users via CSS
 			new OOUI\ButtonInputWidget( [
 				'classes' => [ 'mw-extdist-ext-submit' ],
 				'infusable' => true,
-				'name' => 'extdist_submit',
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
 				'type' => 'submit',
 				'flags' => [ 'primary', 'progressive' ],
@@ -230,7 +229,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			Xml::openElement( 'form', [
 				'action' => $this->getPageTitle()->getLocalURL(),
 				'method' => 'GET' ] ) .
-			Html::hidden( 'extdist_name', $repoName );
+			Html::hidden( 'extdistname', $repoName );
 		$options = [];
 		$selected = 0;
 
@@ -251,10 +250,9 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 						'infusable' => true,
 						'options' => $options,
 						'value' => $wgExtDistDefaultSnapshot,
-						'name' => 'extdist_version',
+						'name' => 'extdistversion',
 					] ),
 					new OOUI\ButtonInputWidget( [
-						'name' => 'extdist_submit',
 						'label' => $this->msg( 'extdist-submit-version' )->text(),
 						'type' => 'submit',
 						'flags' => [ 'primary', 'progressive' ],
