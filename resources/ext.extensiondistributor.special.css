@@ -1,3 +1,4 @@
+/* stylelint-disable selector-no-id */
 /* make it look the same width as the input fields */
 #mw-extdist-continue {
 	max-width: 50em;

@@ -1,4 +1,3 @@
-/* global OO, window */
 ( function ( $, mw, OO ) {
 	'use strict';
 	$( function () {
@@ -122,10 +121,10 @@
 				// Redirect to download page:
 				// extdist_name=ExtensionDistributor&extdist_version=master
 				window.location.href = mw.util.getUrl( mw.config.get( 'wgPageName' ), {
-					// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+					/* eslint-disable camelcase */
 					extdist_name: selector.getValue(),
 					extdist_version: versionSelector.getValue()
-					// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
+					/* eslint-enable camelcase */
 				} );
 			} );
 			versionSelector.$element.after( versionButton.$element );
