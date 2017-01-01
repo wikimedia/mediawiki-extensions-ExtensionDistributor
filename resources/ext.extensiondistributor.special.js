@@ -3,9 +3,9 @@
 	$( function () {
 		// infusing the DropdownInputWidgets makes
 		// them look prettier.
-		var selector = OO.ui.infuse( 'mw-extdist-selector' ),
+		var selector = OO.ui.infuse( $( '.mw-extdist-selector' ) ),
 			distributorType, progress,
-			$continue = $( '#mw-extdist-continue' );
+			$continue = $( '.mw-extdist-continue' );
 		if ( mw.config.get( 'wgCanonicalSpecialPageName' ) === 'ExtensionDistributor' ) {
 			distributorType = 'extensions';
 		} else {
@@ -101,7 +101,7 @@
 				return;
 			}
 			versionSelector = new OO.ui.DropdownInputWidget( {
-				id: 'mw-extdist-selector-version',
+				classes: [ 'mw-extdist-selector-version' ],
 				options: options,
 				value: mw.config.get( 'wgExtDistDefaultSnapshot' ),
 				name: 'extdist_version'
@@ -112,7 +112,7 @@
 				selector.getValue()
 			).parse().replace( /\n\n/g, '<p>' ) );
 			versionButton = new OO.ui.ButtonInputWidget( {
-				id: 'mw-extdist-submit-button',
+				classes: [ 'mw-extdist-submit-button' ],
 				name: 'extdist_submit',
 				label: mw.msg( 'extdist-submit-version' ),
 				flags: [ 'primary', 'progressive' ]
@@ -135,8 +135,8 @@
 		selector.on( 'change', function () {
 			var params;
 			// Hide any things created for previous selections
-			$( '#mw-extdist-selector-version' ).remove();
-			$( '#mw-extdist-submit-button' ).remove();
+			$( '.mw-extdist-selector-version' ).remove();
+			$( '.mw-extdist-submit-button' ).remove();
 			$continue.text( '' );
 
 			// If they pick the empty option, just bail out here

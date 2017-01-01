@@ -98,8 +98,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 		$out = $this->getOutput();
 		$out->enableOOUI();
+		$out->addHTML( '<div class="mw-extdist-container"><div class="mw-extdist-form">' );
 		// extdist-choose-extensions, extdist-choose-skins
-		$out->addHTML( '<div id="mw-extdist-container"><div id="mw-extdist-form">' );
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
 			Xml::openElement( 'form', array(
@@ -122,14 +122,14 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		) );
 		$out->addHTML(
 			new OOUI\DropdownInputWidget( array(
-				'id' => 'mw-extdist-selector',
+				'classes' => array( 'mw-extdist-selector' ),
 				'infusable' => true,
 				'options' => $items,
 				'name' => 'extdist_name',
 			) ) .
 			// only shown to no-JS users via CSS
 			new OOUI\ButtonInputWidget( array(
-				'id' => 'mw-extdist-ext-submit',
+				'classes' => array( 'mw-extdist-ext-submit' ),
 				'infusable' => true,
 				'name' => 'extdist_submit',
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
@@ -137,7 +137,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'flags' => array( 'primary', 'progressive' ),
 			) ) .
 			Xml::closeElement( 'form' ) . "\n" .
-			Html::element( 'div', array( 'id' => 'mw-extdist-continue' ) ) .
+			Html::element( 'div', array( 'class' => 'mw-extdist-continue' ) ) .
 			"</div>"
 		);
 
@@ -149,7 +149,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$out->addHTML(
-			'<div id="mw-extdist-popular">' .
+			'<div class="mw-extdist-popular">' .
 			$this->msg( $this->msgKey( 'extdist-popular-$TYPE' ) )
 				->numParams( count( $popularList ) )
 				->escaped() .

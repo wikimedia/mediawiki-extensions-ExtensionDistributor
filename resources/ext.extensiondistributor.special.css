@@ -1,26 +1,25 @@
-/* stylelint-disable selector-no-id */
 /* make it look the same width as the input fields */
-#mw-extdist-continue {
+.mw-extdist-continue {
 	max-width: 50em;
 }
 
 /* use display: table to create two columns */
-#mw-extdist-container {
+.mw-extdist-container {
 	width: 100%;
 	display: table;
 }
 
-#mw-extdist-form {
+.mw-extdist-form {
 	width: 60%;
 	display: table-cell;
 }
 
-#mw-extdist-popular {
+.mw-extdist-popular {
 	width: 40%;
 	display: table-cell;
 }
 
 /* hide submit button for JS users */
-.client-js #mw-extdist-ext-submit {
+.client-js .mw-extdist-ext-submit {
 	display: none;
 }
