@@ -245,19 +245,24 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$out->addHTML( $html );
 			$out->enableOOUI();
 			$out->addHTML(
-				new OOUI\DropdownInputWidget( array(
-					'id' => 'mw-extdist-selector-version',
-					'infusable' => true,
-					'options' => $options,
-					'value' => $wgExtDistDefaultSnapshot,
-					'name' => 'extdist_version',
-				) ) .
-				new OOUI\ButtonInputWidget( array(
-					'name' => 'extdist_submit',
-					'label' => $this->msg( 'extdist-submit-version' )->text(),
-					'type' => 'submit',
-					'flags' => array( 'primary', 'progressive' ),
-				) ) .
+				new OOUI\ActionFieldLayout(
+					new OOUI\DropdownInputWidget( array(
+						'id' => 'mw-extdist-selector-version',
+						'infusable' => true,
+						'options' => $options,
+						'value' => $wgExtDistDefaultSnapshot,
+						'name' => 'extdist_version',
+					) ),
+					new OOUI\ButtonInputWidget( array(
+						'name' => 'extdist_submit',
+						'label' => $this->msg( 'extdist-submit-version' )->text(),
+						'type' => 'submit',
+						'flags' => array( 'primary', 'progressive' ),
+					) ),
+					array(
+						'align' => 'top'
+					)
+				) .
 				Xml::closeElement( 'form' ) . "\n"
 			);
 		} else {

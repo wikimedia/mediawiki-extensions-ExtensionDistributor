@@ -81,6 +81,7 @@
 		function processAPIResponse( data ) {
 			var info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
 				options = [],
+				versionField,
 				versionSelector,
 				versionButton;
 			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function ( i, value ) {
@@ -110,8 +111,6 @@
 				'extdist-choose-version-' + distributorType,
 				selector.getValue()
 			).parse().replace( /\n\n/g, '<p>' ) );
-			// Add version selector after the help text
-			$continue.after( versionSelector.$element );
 			versionButton = new OO.ui.ButtonInputWidget( {
 				id: 'mw-extdist-submit-button',
 				name: 'extdist_submit',
@@ -127,7 +126,11 @@
 					/* eslint-enable camelcase */
 				} );
 			} );
-			versionSelector.$element.after( versionButton.$element );
+			versionField = new OO.ui.ActionFieldLayout( versionSelector, versionButton, {
+				align: 'top'
+			} );
+			// Add version selector after the help text
+			$continue.after( versionField.$element );
 		}
 		selector.on( 'change', function () {
 			var params;
