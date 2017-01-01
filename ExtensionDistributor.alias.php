@@ -6,12 +6,12 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English
  * @author Chad Horohoe
  */
-$specialPageAliases['en'] = array(
-	'ExtensionDistributor' => array( 'ExtensionDistributor' ),
-	'SkinDistributor' => array( 'SkinDistributor' ),
-);
+$specialPageAliases['en'] = [
+	'ExtensionDistributor' => [ 'ExtensionDistributor' ],
+	'SkinDistributor' => [ 'SkinDistributor' ],
+];

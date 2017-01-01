@@ -49,16 +49,16 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		}
 
 		$metric = "$wgStatsdMetricPrefix.extdist.$type.*.*.sum";
-		$requestParams = array(
+		$requestParams = [
 			'target' => 'sortByMaxima(groupByNode(summarize(' . $metric . ',"4w","sum",true),3,"sum"))',
 			'format' => 'json',
 			'from' => '-4w',
 			'until' => 'now',
-		);
+		];
 
-		$httpOptions = array(
+		$httpOptions = [
 			'userAgent' => "$wgServerName - ExtensionDistributor  - Mediawiki Extension",
-		);
+		];
 		$url = $wgExtDistGraphiteRenderApi . '/?' . http_build_query( $requestParams );
 		$req = MWHttpRequest::factory( $url, $httpOptions );
 		$status = $req->execute();
@@ -71,7 +71,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 
 		$info = wfObjectToArray( FormatJson::decode( $req->getContent(), true ), true );
 
-		$popularList = array();
+		$popularList = [];
 		foreach ( $info as $dataSet ) {
 			$popularList[] = $dataSet['target'];
 		}
@@ -102,10 +102,10 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 
 	public function clearCache() {
 		$cache = wfGetCache( CACHE_ANYTHING );
-		$typesToClear = array(
+		$typesToClear = [
 			ExtDistProvider::EXTENSIONS,
 			ExtDistProvider::SKINS
-		);
+		];
 		foreach ( $typesToClear as $type ) {
 			$success = $cache->delete( $this->getCacheKey( $type ) );
 			if ( !$success ) {

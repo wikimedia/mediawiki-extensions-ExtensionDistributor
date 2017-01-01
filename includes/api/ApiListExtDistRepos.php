@@ -17,10 +17,10 @@ class ApiListExtDistRepos extends ApiQueryBase {
 		$extProvider->setLogger( $logger );
 		$skinProvider = ExtDistProvider::getProviderFor( ExtDistProvider::SKINS );
 		$skinProvider->setLogger( $logger );
-		$info = array(
+		$info = [
 			'extensions' => $extProvider->getRepositoryList(),
 			'skins' => $skinProvider->getRepositoryList(),
-		);
+		];
 		$this->getResult()->setIndexedTagName( $info['extensions'], 'extension' );
 		$this->getResult()->setIndexedTagName( $info['skins'], 'skin' );
 		$this->getResult()->addValue(
@@ -34,9 +34,9 @@ class ApiListExtDistRepos extends ApiQueryBase {
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=query&list=extdistrepos'
 				=> 'apihelp-query+extdistrepos-example-1',
-		);
+		];
 	}
 }

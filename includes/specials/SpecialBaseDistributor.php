@@ -102,42 +102,42 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		// extdist-choose-extensions, extdist-choose-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
-			Xml::openElement( 'form', array(
+			Xml::openElement( 'form', [
 				'action' => $this->getPageTitle()->getLocalUrl(),
-				'method' => 'GET' ) )
+				'method' => 'GET' ] )
 		);
-		$items = array( array( 'data' => '' ) );
+		$items = [ [ 'data' => '' ] ];
 
 		natcasesort( $repos );
 		foreach ( $repos as $name ) {
-			$items[] = array( 'data' => $name );
+			$items[] = [ 'data' => $name ];
 		}
 		// Add JS infuse magic
 		$out->addModules( 'ext.extensiondistributor.special' );
 		$out->addModuleStyles( 'ext.extensiondistributor.special.styles' );
-		$out->addJsConfigVars( array(
+		$out->addJsConfigVars( [
 			'wgExtDistSnapshotRefs' => $wgExtDistSnapshotRefs,
 			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot,
 			'wgExtDistCandidateSnapshot' => $wgExtDistCandidateSnapshot,
-		) );
+		] );
 		$out->addHTML(
-			new OOUI\DropdownInputWidget( array(
-				'classes' => array( 'mw-extdist-selector' ),
+			new OOUI\DropdownInputWidget( [
+				'classes' => [ 'mw-extdist-selector' ],
 				'infusable' => true,
 				'options' => $items,
 				'name' => 'extdist_name',
-			) ) .
+			] ) .
 			// only shown to no-JS users via CSS
-			new OOUI\ButtonInputWidget( array(
-				'classes' => array( 'mw-extdist-ext-submit' ),
+			new OOUI\ButtonInputWidget( [
+				'classes' => [ 'mw-extdist-ext-submit' ],
 				'infusable' => true,
 				'name' => 'extdist_submit',
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
 				'type' => 'submit',
-				'flags' => array( 'primary', 'progressive' ),
-			) ) .
+				'flags' => [ 'primary', 'progressive' ],
+			] ) .
 			Xml::closeElement( 'form' ) . "\n" .
-			Html::element( 'div', array( 'class' => 'mw-extdist-continue' ) ) .
+			Html::element( 'div', [ 'class' => 'mw-extdist-continue' ] ) .
 			"</div>"
 		);
 
@@ -160,10 +160,10 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$link = $linkRenderer->makeLink(
 				$this->getPageTitle( $popularItem ),
 				$popularItem,
-				array(
+				[
 					'data-name' => $popularItem,
 					'class' => 'mw-extdist-plinks',
-				)
+				]
 			);
 			$out->addHTML( "<li>$link</li>\n" );
 		}
@@ -227,17 +227,17 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		// extdist-choose-version-extensions, extdist-choose-version-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-version-$TYPE' ), $repoName );
 		$html =
-			Xml::openElement( 'form', array(
+			Xml::openElement( 'form', [
 				'action' => $this->getPageTitle()->getLocalURL(),
-				'method' => 'GET' ) ) .
+				'method' => 'GET' ] ) .
 			Html::hidden( 'extdist_name', $repoName );
-		$options = array();
+		$options = [];
 		$selected = 0;
 
 		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
 			if ( $this->getProvider()->hasBranch( $repoName, $branchName ) ) {
 				$branchDesc = $this->formatBranch( $branchName );
-				$options[] = array( 'data' => $branchName, 'label' => $branchDesc );
+				$options[] = [ 'data' => $branchName, 'label' => $branchDesc ];
 				$selected++;
 			}
 		}
@@ -246,22 +246,22 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$out->enableOOUI();
 			$out->addHTML(
 				new OOUI\ActionFieldLayout(
-					new OOUI\DropdownInputWidget( array(
+					new OOUI\DropdownInputWidget( [
 						'id' => 'mw-extdist-selector-version',
 						'infusable' => true,
 						'options' => $options,
 						'value' => $wgExtDistDefaultSnapshot,
 						'name' => 'extdist_version',
-					) ),
-					new OOUI\ButtonInputWidget( array(
+					] ),
+					new OOUI\ButtonInputWidget( [
 						'name' => 'extdist_submit',
 						'label' => $this->msg( 'extdist-submit-version' )->text(),
 						'type' => 'submit',
-						'flags' => array( 'primary', 'progressive' ),
-					) ),
-					array(
+						'flags' => [ 'primary', 'progressive' ],
+					] ),
+					[
 						'align' => 'top'
-					)
+					]
 				) .
 				Xml::closeElement( 'form' ) . "\n"
 			);
@@ -315,11 +315,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'p', array( 'style' => 'font-size:150%' ) ) .
+			Xml::openElement( 'p', [ 'style' => 'font-size:150%' ] ) .
 			$linkRenderer->makeLink(
 				$this->getPageTitle(),
 				new HtmlArmor(
-					Xml::element( 'img', array( 'src' => $downloadImg ) ) .
+					Xml::element( 'img', [ 'src' => $downloadImg ] ) .
 					// extdist-want-more-extensions, extdist-want-more-skins
 					$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped()
 				)

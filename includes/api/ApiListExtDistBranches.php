@@ -7,7 +7,7 @@ use MediaWiki\Logger\LoggerFactory;
  */
 class ApiListExtDistBranches extends ApiQueryBase {
 
-	private $providers = array();
+	private $providers = [];
 
 	public function __construct( ApiQuery $query, $moduleName ) {
 		parent::__construct( $query, $moduleName, 'edb' );
@@ -35,7 +35,7 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		$extProvider->setLogger( $logger );
 		$skinProvider = ExtDistProvider::getProviderFor( ExtDistProvider::SKINS );
 		$skinProvider->setLogger( $logger );
-		$info = array();
+		$info = [];
 		ApiResult::setArrayType( $info, 'assoc' );
 		$params = $this->extractRequestParams();
 		if ( $params['exts'] ) {
@@ -59,9 +59,9 @@ class ApiListExtDistBranches extends ApiQueryBase {
 	 * @return array
 	 */
 	private function getInfo( ExtDistProvider $provider, array $repos ) {
-		$out = array();
+		$out = [];
 		foreach ( $repos as $repo ) {
-			$out[$repo] = array();
+			$out[$repo] = [];
 			$branches = $provider->getBranches( $repo );
 			foreach ( $branches as $branch => $sha1 ) {
 				$out[$repo][$branch] = $provider->getTarballLocation( $repo, $branch );
@@ -85,29 +85,29 @@ class ApiListExtDistBranches extends ApiQueryBase {
 	public function getAllowedParams() {
 		$extensionsProvider = $this->getProvider( ExtDistProvider::EXTENSIONS );
 		$skinsProvider = $this->getProvider( ExtDistProvider::SKINS );
-		return array(
-			'exts' => array(
+		return [
+			'exts' => [
 				ApiBase::PARAM_ISMULTI => true,
 				ApiBase::PARAM_TYPE => $extensionsProvider
 					? $extensionsProvider->getRepositoryList()
-					: array(),
-			),
-			'skins' => array(
+					: [],
+			],
+			'skins' => [
 				ApiBase::PARAM_ISMULTI => true,
 				ApiBase::PARAM_TYPE => $skinsProvider
 					? $skinsProvider->getRepositoryList()
-					: array(),
-			)
-		);
+					: [],
+			]
+		];
 	}
 
 	/**
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=query&list=extdistbranches&edbexts=ExtensionDistributor'
 				=> 'apihelp-query+extdistbranches-example-1',
-		);
+		];
 	}
 }

@@ -39,7 +39,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	/**
 	 * @var array Instance cache of repo name => branches
 	 */
-	private $branches = array();
+	private $branches = [];
 
 	/**
 	 * @param array $options
@@ -85,7 +85,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 			return null;
 		}
 		return self::factory(
-			$wgExtDistAPIConfig + array( 'repoType' => $type )
+			$wgExtDistAPIConfig + [ 'repoType' => $type ]
 		);
 	}
 
@@ -110,11 +110,11 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 */
 	protected function substituteUrlVariables( $url, $ext = '', $version = '', $hash = '' ) {
 		return str_replace(
-			array( '$EXT', '$REF', '$SHA', '$TYPE' ),
-			array(
+			[ '$EXT', '$REF', '$SHA', '$TYPE' ],
+			[
 				rawurlencode( $ext ), rawurlencode( $version ),
 				rawurlencode( $hash ), rawurlencode( $this->repoType )
-			),
+			],
 			$url
 		);
 	}
@@ -182,7 +182,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 			$wgMemc->set( $key, $data, $this->getCacheDuration() );
 		}
 
-		$enabled = array();
+		$enabled = [];
 		foreach ( $data as $branch => $sha ) {
 			if ( in_array( $branch, $this->getEnabledBranches() ) ) {
 				$enabled[$branch] = $sha;
@@ -252,7 +252,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 */
 	protected function fetchRepositoryList() {
 		global $wgExtDistListFile;
-		$extList = array();
+		$extList = [];
 		$res = Http::get( $wgExtDistListFile, [], __METHOD__ );
 		if ( $res ) {
 			$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );

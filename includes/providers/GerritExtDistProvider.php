@@ -8,14 +8,14 @@
  *
  * Example configuration for Wikimedia sites:
  *
- * $wgExtDistAPIConfig = array(
+ * $wgExtDistAPIConfig = [
  *  'class' => 'GerritExtDistProvider',
  *  'apiUrl' => 'https://gerrit.wikimedia.org/r/projects/mediawiki%2F$TYPE%2F$EXT/branches',
  *  'tarballUrl' => 'http://extdist.wmflabs.org/dist/$TYPE/$EXT-$REF-$SHA.tar.gz',
  *  'tarballName' => '$EXT-$REF-$SHA.tar.gz',
  *  'repoListUrl' => 'https://gerrit.wikimedia.org/r/projects/?p=mediawiki/$TYPE/',
  *  'sourceUrl' => 'https://gerrit.wikimedia.org/r/mediawiki/$TYPE/$EXT.git',
- * );
+ * ];
  *
  */
 class GerritExtDistProvider extends ExtDistProvider {
@@ -35,7 +35,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 	 */
 	private function makeGerritApiRequest( $url ) {
 		if ( $this->proxy ) {
-			$options = array( 'proxy' => $this->proxy );
+			$options = [ 'proxy' => $this->proxy ];
 		} else {
 			$options = null; // Default
 		}
@@ -45,7 +45,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 			$this->logger->error( __METHOD__ . ": Could not fetch \"{$url}\", " .
 				"received: {$status->errors[0]}"
 			);
-			return array();
+			return [];
 		}
 		// Gerrit API responses start with )]}' so trim it, then parse the JSON
 		$clean = substr( $req->getContent(), 4 );
@@ -55,7 +55,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 	protected function fetchBranches( $name ) {
 		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
 		$info = $this->makeGerritApiRequest( $url );
-		$branches = array();
+		$branches = [];
 		foreach( $info as $branch ) {
 			if ( strpos( $branch['ref'], 'refs/heads/' ) === 0 ) {
 				$name = substr( $branch['ref'], strlen( 'refs/heads/' ) );
@@ -72,7 +72,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 			return parent::fetchRepositoryList();
 		}
 
-		$repos = array();
+		$repos = [];
 		$out = $this->makeGerritApiRequest(
 			$this->substituteUrlVariables( $this->repoListUrl )
 		);
