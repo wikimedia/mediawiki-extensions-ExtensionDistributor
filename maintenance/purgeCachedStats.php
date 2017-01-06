@@ -17,6 +17,7 @@ class ExtDistPurgeCachedStats extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = "Purge cached ExtensionDistributor stats";
+		$this->requireExtension( 'ExtensionDistributor' );
 	}
 
 	public function execute() {
