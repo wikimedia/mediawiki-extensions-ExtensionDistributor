@@ -8,10 +8,11 @@
 			"Reedy",
 			"Xoser",
 			"Marmase",
-			"Kumkumuk"
+			"Kumkumuk",
+			"Asmen"
 		]
 	},
-	"extensiondistributor": "Olekenë MediyaWikiyi bıwarne",
+	"extensiondistributor": "Peybendê MediyaWiki biya war",
 	"skindistributor": "Cild ê MediaWiki ron",
 	"extensiondistributor-desc": "Olekenê arşivanê ekrana vıla kerdışi rê nıik oleken.",
 	"extdist-not-configured": "Lutfen  <code>$wgExtDistAPIConfig</code> saz ker ê.",
