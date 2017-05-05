@@ -4,3 +4,4 @@
 .*.swp
 svn-invoker.conf
 node_modules/
+/vendor
