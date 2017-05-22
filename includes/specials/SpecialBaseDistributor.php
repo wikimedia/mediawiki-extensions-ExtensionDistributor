@@ -79,7 +79,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 		if ( !$this->getProvider()->hasBranch( $name, $version ) ) {
 			// extdist-no-such-version-extensions, extdist-no-such-version-skins
-			$this->getOutput()->addWikiMsg( $this->msgKey( 'extdist-no-such-version-$TYPE' ), $name, $version );
+			$this->getOutput()->addWikiMsg(
+				$this->msgKey( 'extdist-no-such-version-$TYPE' ), $name, $version );
 			return;
 		}
 
@@ -277,7 +278,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	protected function doDownload( $extension, $version ) {
 		global $wgExtensionAssetsPath;
 
-		if( !$this->getProvider()->hasBranch( $extension, $version ) ) {
+		if ( !$this->getProvider()->hasBranch( $extension, $version ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-tar-error' );
 			return;
 		}

@@ -56,7 +56,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
 		$info = $this->makeGerritApiRequest( $url );
 		$branches = [];
-		foreach( $info as $branch ) {
+		foreach ( $info as $branch ) {
 			if ( strpos( $branch['ref'], 'refs/heads/' ) === 0 ) {
 				$name = substr( $branch['ref'], strlen( 'refs/heads/' ) );
 				$branches[$name] = $branch['revision'];
