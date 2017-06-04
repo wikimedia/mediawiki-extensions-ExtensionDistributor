@@ -4,10 +4,12 @@
 			"Ex13",
 			"Herr Mlinka",
 			"Roberta F.",
-			"SpeedyGonsales"
+			"SpeedyGonsales",
+			"Bugoslav"
 		]
 	},
 	"extensiondistributor": "Snimi MediaWiki ekstenziju",
+	"skindistributor": "Preuzmi MediaWiki temu",
 	"extensiondistributor-desc": "Ekstenzija za distribuciju inačica arhiva ekstenzija",
 	"extdist-not-configured": "Molimo konfigurirajte $wgExtDistList i $wgExtDistAPIConfig",
 	"extdist-no-such-extensions": "Nema takve ekstenziju \"$1\"",
