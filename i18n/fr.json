@@ -47,6 +47,7 @@
 	"extdist-branch-candidate": "$1 (candidat pour la prochaine version stable)",
 	"extdist-branch-stable": "$1 (dernière version stable de MediaWiki)",
 	"apihelp-query+extdistrepos-description": "Renvoie la liste des dépôts pris en charge par ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Retourne la liste des répertoires supportés par ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lister les référentiels",
 	"apihelp-query+extdistbranches-description": "Retourne la liste des branches prises en charge par ExtensionDistributor pour un dépôt",
 	"apihelp-query+extdistbranches-param-skins": "Habillages pour lequel récupérer les branches",
