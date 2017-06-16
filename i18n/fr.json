@@ -50,6 +50,7 @@
 	"apihelp-query+extdistrepos-summary": "Retourne la liste des répertoires supportés par ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lister les référentiels",
 	"apihelp-query+extdistbranches-description": "Retourne la liste des branches prises en charge par ExtensionDistributor pour un dépôt",
+	"apihelp-query+extdistbranches-summary": "Retourne la liste des branches pour un dépôt supporté par ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Habillages pour lequel récupérer les branches",
 	"apihelp-query+extdistbranches-param-exts": "Extensions pour lequel récupérer les branches",
 	"apihelp-query+extdistbranches-example-1": "Obtenir les branches l'extension ExtensionDistributor"
