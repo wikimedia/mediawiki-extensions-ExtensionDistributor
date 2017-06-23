@@ -4,6 +4,7 @@
 			"Умар"
 		]
 	},
+	"extensiondistributor": "MediaWiki шоралла схьаэца",
 	"extdist-not-configured": "Дехар до, чугӀо <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Шордар «$1» цакарий",
 	"extdist-choose-extensions": "Харжа шордар чудаккха:",
