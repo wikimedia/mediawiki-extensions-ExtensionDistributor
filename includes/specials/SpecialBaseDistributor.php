@@ -184,7 +184,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			// Don't touch it
 			return $version;
 		}
-
 	}
 
 	/**
@@ -268,7 +267,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$this->logger->warning( "Couldn't find any branches for \"{$repoName}\"" );
 			$out->wrapWikiMsg( '<div class="error">$1</div>', 'extdist-no-branches' );
 		}
-
 	}
 
 	/**
