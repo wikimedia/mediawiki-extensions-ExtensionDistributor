@@ -5,7 +5,8 @@
 			"Eduardo.mps",
 			"Giro720",
 			"OTAVIO1981",
-			"Araceletorres"
+			"Araceletorres",
+			"Felipe L. Ewald"
 		]
 	},
 	"extensiondistributor": "Descarregar extensão MediaWiki",
@@ -33,5 +34,6 @@
 	"extdist-tar-error": "Não foi possível encontrar o URL arquivado da API.",
 	"extdist-no-branches": "Não foi possível obter informações sobre nenhum ramo.",
 	"apihelp-query+extdistrepos-description": "Retorna a lista de repositórios suportados por ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Retorna a lista de repositórios suportados por ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Listar repositórios"
 }
