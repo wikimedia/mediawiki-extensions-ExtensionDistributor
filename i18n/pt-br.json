@@ -31,8 +31,13 @@
 	"extdist-created-skins": "Foi criado um instantâneo ''(snapshot)'' da versão <b>$2</b> do tema <b>$1</b> para o MediaWiki <b>$3</b>. A transferência deverá iniciar-se automaticamente em 5 segundos.\n\nA URL deste instantâneo é:\n:$4\nVocê pode usar este link para baixar o tema em qualquer computador, mas não o adicione aos favoritos, pois seu conteúdo não será atualizado e poderá ser excluído em uma data posterior.\n\nVocê deve extrair o conteúdo do arquivo tar no diretório de skins da sua instalação MediaWiki. Por exemplo, em um sistema operacional semelhante ao Unix:\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\nNo Windows, poderá usar o [http://www.7-zip.org/ 7-zip] para extrair os arquivos.\n\nSe a sua wiki estiver localizada num servidor remoto, extraia os arquivos para um diretório temporário no seu computador local, e depois carregue '''todos''' os arquivos extraídos para o diretório de skins da wiki no servidor.\n\nApós colocar a skin no diretório de skins da sua wiki, terá de registrá-la em LocalSettings.php. A documentação da skin deverá ter indicações sobre como o fazer.\n\nSe tiver alguma questão sobre este sistema de distribuição de skins, por favor, visite [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Obter outra extensão",
 	"extdist-want-more-skins": "Obter outra aparência",
+	"extdist-goto-extensions-page": "Retorne à página de extensão ''''$1'''.",
+	"extdist-goto-skins-page": "Volte para a página de \"'$1'''.",
 	"extdist-tar-error": "Não foi possível encontrar o URL arquivado da API.",
 	"extdist-no-branches": "Não foi possível obter informações sobre nenhum ramo.",
+	"extdist-popular-extensions": "{{PLURAL:$1|$1 extensão mais baixada|$1 extensões mais baixadas}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|$1 tema mais baixado|$1 temas mais baixados}}:",
+	"extdist-branch-alpha": "mestre (versão de desenvolvimento mais recente)",
 	"extdist-branch-candidate": "$1 (próximo candidato estável)",
 	"extdist-branch-stable": "$1 (última versão estável do MediaWiki)",
 	"apihelp-query+extdistrepos-description": "Retorna a lista de repositórios suportados por ExtensionDistributor",
@@ -41,5 +46,6 @@
 	"apihelp-query+extdistbranches-description": "Retorna a lista de ramos para um repositório suportado pelo ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "Retorna a lista de ramos para um repositório suportado pelo ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Temas dos quais obter ramificações",
-	"apihelp-query+extdistbranches-param-exts": "Extensões das quais obter ramos"
+	"apihelp-query+extdistbranches-param-exts": "Extensões das quais obter ramos",
+	"apihelp-query+extdistbranches-example-1": "Obtenha ramos para a extensão ExtensionDistributor"
 }
