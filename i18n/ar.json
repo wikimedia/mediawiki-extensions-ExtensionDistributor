@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"OsamaK"
+			"OsamaK",
+			"ديفيد"
 		]
 	},
 	"extensiondistributor": "تنزيل امتداد ميدياويكي",
 	"extensiondistributor-desc": "امتداد لتوزيع أرشيفات ملتقطة للامتدادات",
-	"extdist-not-configured": "من فضلك اضبط $wgExtDistList و $wgExtDistAPIConfig",
+	"extdist-not-configured": "من فضلك اضبط <code>$wgExtDistAPIConfig</code>",
 	"extdist-no-such-extensions": "لا امتداد كهذا \"$1\"",
 	"extdist-no-such-version-extensions": "الامتداد \"$1\" لا يوجد في النسخة \"$2\".",
 	"extdist-choose-extensions": "اختر أي امتدات تريد تنزيله:",
@@ -17,6 +18,6 @@
 	"extdist-submit-version": "استمرار",
 	"extdist-created-extensions": "لقطة من النسخة <b>$2</b> من الامتداد <b>$1</b> لميدياويكي <b>$3</b> تم إنشاؤها. تحميلك ينبغي أن يبدأ تلقائيا خلال 5 ثوان.\n\nالمسار لهذه اللقطة هو:\n:$4\nربما يستخدم للتحميل الفوري لخادم، لكن من فضلك لا تستخدمه كمفضلة، حيث أن المحتويات لن يتم تحديثها، وربما يتم حذفها في وقت لاحق.\n\nأرشيف التار ينبغي أن يتم استخراجه إلى مجلد امتداداتك. على سبيل المثال، على نظام تشغيل شبيه بيونكس:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nعلى ويندوز، يمكنك استخدام [http://www.7-zip.org/ 7-زيب] لاستخراج الملفات.\n\nلو أن الويكي الخاص بك على خادم بعيد، استخرج الملفات إلى مجلد مؤقت على حاسوبك المحلي، ثم ارفع '''كل''' الملفات المستخرجة إلى مجلد الامتدادات على الخادم.\n\nبعد استخراجك للملفات، ستحتاج إلى تسجيل الامتداد في LocalSettings.php. وثائق الامتداد ينبغي أن تحتوي على التعليمات عن كيفية عمل هذا.\n\nلو كانت لديك أية أسئلة حول نظام توزيع الامتدادات هذا، من فضلك اذهب إلى [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "الحصول على امتداد آخر",
-	"extdist-tar-error": "تار أرجع كود خروج $1:",
+	"extdist-tar-error": "غير قادر على جلب مسار أرشيف من API الأرشيف",
 	"apihelp-query+extdistrepos-example-1": "عرض المستودعات"
 }
