@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kwj2772",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"extensiondistributor": "미디어위키 확장 기능 다운로드",
@@ -28,5 +29,7 @@
 	"extdist-want-more-extensions": "다른 확장 기능 얻기",
 	"extdist-want-more-skins": "다른 스킨 찾아보기",
 	"extdist-tar-error": "아카이브 API에서 아카이브 URL을 가져올 수 없습니다.",
-	"extdist-no-branches": "어느 브랜치에서도 정보를 불러들일 수 없습니다."
+	"extdist-no-branches": "어느 브랜치에서도 정보를 불러들일 수 없습니다.",
+	"extdist-branch-candidate": "$1 (차기 안정 후보판)",
+	"extdist-branch-stable": "$1 (최신 미디어위키 안정판)"
 }
