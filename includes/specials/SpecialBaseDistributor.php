@@ -316,7 +316,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$linkRenderer->makeLink(
 				$this->getPageTitle(),
 				new HtmlArmor(
-					Xml::element( 'img', [ 'src' => $downloadImg ] ) .
+					Xml::element( 'img', [ 'src' => $downloadImg, 'alt' => '' ] ) .
 					// extdist-want-more-extensions, extdist-want-more-skins
 					$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped()
 				)
