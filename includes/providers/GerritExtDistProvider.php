@@ -77,6 +77,10 @@ class GerritExtDistProvider extends ExtDistProvider {
 			$this->substituteUrlVariables( $this->repoListUrl )
 		);
 		foreach ( $out as $name => $info ) {
+			// Skip read-only repositories
+			if ( isset( $info['state'] ) && $info['state'] === 'READ_ONLY' ) {
+				continue;
+			}
 			$parts = explode( '/', $name );
 			if ( count( $parts ) === 3 ) {
 				$repos[] = array_pop( $parts );
