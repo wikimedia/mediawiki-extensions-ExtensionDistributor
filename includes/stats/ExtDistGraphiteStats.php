@@ -31,7 +31,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 	 *
 	 * TODO we need some way to limit the number of extensions returning?
 	 *
-	 * @returns array|bool array of extensions in order of popularity or false on failure
+	 * @return array|bool array of extensions in order of popularity or false on failure
 	 */
 	public function getPopularList( $type ) {
 		global $wgExtDistGraphiteRenderApi, $wgServerName, $wgStatsdMetricPrefix;
