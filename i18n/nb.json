@@ -3,21 +3,35 @@
 		"authors": [
 			"Danmichaelo",
 			"EivindJ",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Jon Harald Søby"
 		]
 	},
 	"extensiondistributor": "Last ned utvidelser til MediaWiki",
+	"skindistributor": "Last ned MediaWiki-drakt",
 	"extensiondistributor-desc": "Utvidelse for distribusjon av andre utvidelser",
-	"extdist-not-configured": "Still inn $wgExtDistList og $wgExtDistAPIConfig",
+	"extdist-not-configured": "Konfigurer <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Tilleggslisten kunne ikke hentes!",
+	"extdist-list-missing-skins": "Kunne ikke hente liste over drakter!",
 	"extdist-no-such-extensions": "Ingen utvidelse ved navn «$1»",
+	"extdist-no-such-skins": "Ingen drakt med navn «$1».",
 	"extdist-no-such-version-extensions": "Versjon «$2» av «$1» finnes ikke",
+	"extdist-no-such-version-skins": "Drakta «$1» finnes ikke i versjon «$2».",
 	"extdist-choose-extensions": "Velg hvilken utvidelse du ønsker å laste ned:",
+	"extdist-choose-skins": "Velg hvilken drakt du ønsker å laste ned:",
 	"extdist-submit-extension": "Fortsett",
 	"extdist-choose-version-extensions": "Du laster ned utvidelsen <b>$1</b>.\n\nAngi hvilken MediaWiki-versjon du bruker.\n\nDe fleste utvidelser fungerer på flere versjoner av MediaWiki, så om versjonen du bruker ikke listes opp her, kan du prøve å velge den nyeste versjonen.",
+	"extdist-choose-version-skins": "Du laster ned drakta <b>$1</b>.\n\nVelg din MediaWiki-versjon.\n\nDe fleste draktene virker i flere versjoner av MediaWiki, så om din versjon ikke er her eller du trenger de nyeste funksjonene i drakta, prøv å bruke den nyligste versjonen.",
 	"extdist-no-versions-extensions": "Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.",
+	"extdist-no-versions-skins": "Den valgte drakta ($1) er ikke tilgjengelig i noen versjon!",
 	"extdist-submit-version": "Fortsett",
 	"extdist-created-extensions": "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.\n\nAdressen til dette øyeblikksbildet er:\n:$4\nAdressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.\n\nTar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.\n\nOm wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.\n\nEtter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Hent flere utvidelser",
-	"extdist-tar-error": "Arkiv-URLen kunne ikke hentes fra arkiv-APIet."
+	"extdist-want-more-skins": "Hent en annen drakt",
+	"extdist-goto-extensions-page": "Tilbake til siden for utvidelsen '''$1'''.",
+	"extdist-goto-skins-page": "Tilbake til siden for drakta '''$1'''",
+	"extdist-tar-error": "Arkiv-URLen kunne ikke hentes fra arkiv-APIet.",
+	"extdist-no-branches": "Kunne ikke hente informasjon om noen grener.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Den mest nedlastede utvidelsen|De $1 mest nedlastede utvidelsene}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|Den mest nedlastede drakta|De $1 mest nedlastede draktene}}:"
 }
