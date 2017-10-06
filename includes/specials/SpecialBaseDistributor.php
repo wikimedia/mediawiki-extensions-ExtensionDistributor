@@ -27,7 +27,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	/**
 	 * Substitute $TYPE in a message key
 	 *
-	 * @param $key
+	 * @param string $key
 	 * @return mixed
 	 */
 	protected function msgKey( $key ) {
@@ -35,7 +35,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	/**
-	 * @param $subpage string
+	 * @param string $subpage
 	 */
 	public function execute( $subpage ) {
 		global $wgExtDistAPIConfig;
@@ -209,7 +209,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	/**
-	 * @param $repoName string
+	 * @param string $repoName
 	 * @return mixed
 	 */
 	protected function showVersionSelector( $repoName ) {
@@ -270,8 +270,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	/**
-	 * @param $extension string
-	 * @param $version string
+	 * @param string $extension
+	 * @param string $version
 	 */
 	protected function doDownload( $extension, $version ) {
 		global $wgExtensionAssetsPath;

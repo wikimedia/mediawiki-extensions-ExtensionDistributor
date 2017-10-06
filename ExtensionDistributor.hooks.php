@@ -4,7 +4,7 @@ class ExtensionDistributorHooks {
 
 	/**
 	 * @param ApiQuerySiteInfo $api
-	 * @param array $data
+	 * @param array &$data
 	 * @return bool
 	 */
 	public static function onAPIQuerySiteInfoGeneralInfo( ApiQuerySiteInfo $api, array &$data ) {
