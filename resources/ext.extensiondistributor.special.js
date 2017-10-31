@@ -95,8 +95,8 @@
 			if ( !options.length ) {
 				// Eek, no branches found....
 				$continue.text( mw.message(
-						'extdist-no-versions-' + distributorType,
-						selector.getValue()
+					'extdist-no-versions-' + distributorType,
+					selector.getValue()
 				).text() );
 				return;
 			}
