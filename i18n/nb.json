@@ -25,7 +25,7 @@
 	"extdist-no-versions-extensions": "Den valgte utvidelsen ($1) er ikke tilgjengelig i noen versjon.",
 	"extdist-no-versions-skins": "Den valgte drakta ($1) er ikke tilgjengelig i noen versjon!",
 	"extdist-submit-version": "Fortsett",
-	"extdist-created-extensions": "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.\n\nAdressen til dette øyeblikksbildet er:\n:$4\nAdressen kan brukes for nedlasting til en tjener, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.\n\nTar-arkivet burde pakkes ut i din utvidelsesmappe. For eksempel, på et Unix-lignende operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.\n\nOm wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.\n\nEtter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
+	"extdist-created-extensions": "Et øyeblikksbilde av versjon <b>$2</b> av utvidelsen <b>$1</b> for MediaWiki <b>$3</b> har blitt opprettet. Nedlastingen vil begynne automatisk om fem&nbsp;sekunder.\n\nAdressen til dette øyeblikksbildet er:\n:$4\nAdressen kan brukes for nedlasting til en maskin, men ikke legg den til som bokmerke, for innholdet vil ikke bli oppdatert, og den kan slettes senere.\n\nDu bør pakke ut Tar-arkivet til utvidelsesmappen i MediaWiki-installasjonen din. For eksempel, på et Unix-lignende operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du bruke [http://www.7-zip.org/ 7-zip] for å pakke ut filene.\n\nOm wikien din er på en ekstern tjener, pakk ut filene i en midlertidig mappe på datamaskinen din, og last opp '''alle''' utpakkede filer til utvidelsesmappa på tjeneren.\n\nEtter å ha pakket ut filene må du registrere utvidelsen i LocalSettings.php. Dokumentasjonen til utvidelsen burde ha instruksjoner på hvordan man gjør dette.\n\nOm du har spørsmål om dette distribusjonssytemet for utvidelser, gå til [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Hent flere utvidelser",
 	"extdist-want-more-skins": "Hent en annen drakt",
 	"extdist-goto-extensions-page": "Tilbake til siden for utvidelsen '''$1'''.",
@@ -33,5 +33,11 @@
 	"extdist-tar-error": "Arkiv-URLen kunne ikke hentes fra arkiv-APIet.",
 	"extdist-no-branches": "Kunne ikke hente informasjon om noen grener.",
 	"extdist-popular-extensions": "{{PLURAL:$1|Den mest nedlastede utvidelsen|De $1 mest nedlastede utvidelsene}}:",
-	"extdist-popular-skins": "{{PLURAL:$1|Den mest nedlastede drakta|De $1 mest nedlastede draktene}}:"
+	"extdist-popular-skins": "{{PLURAL:$1|Den mest nedlastede drakta|De $1 mest nedlastede draktene}}:",
+	"extdist-branch-alpha": "master (nyeste utviklingsversjon)",
+	"extdist-branch-candidate": "$1 (neste stabile kandidat)",
+	"extdist-branch-stable": "$1 (nyeste stabile MediaWiki)",
+	"apihelp-query+extdistbranches-param-skins": "Drakter det skal hentes grener for",
+	"apihelp-query+extdistbranches-param-exts": "Utvidelser det skal hentes grener for",
+	"apihelp-query+extdistbranches-example-1": "Hent grener for utvidelsen ExtensionDistributor"
 }
