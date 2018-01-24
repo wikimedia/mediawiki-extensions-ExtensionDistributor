@@ -2,6 +2,7 @@
 
 /**
  * @covers SpecialExtensionDistributor
+ * @covers SpecialBaseDistributor
  *
  * @group SpecialPage
  *
