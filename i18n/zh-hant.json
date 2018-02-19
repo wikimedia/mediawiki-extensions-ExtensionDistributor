@@ -7,7 +7,8 @@
 			"Shinjiman",
 			"Simon Shek",
 			"Cwlin0416",
-			"Nemo bis"
+			"Nemo bis",
+			"Hello903hello"
 		]
 	},
 	"extensiondistributor": "下載 MediaWiki 擴充套件",
@@ -28,8 +29,8 @@
 	"extdist-no-versions-extensions": "選擇的擴充套件 ($1) 不適用於任何的版本！",
 	"extdist-no-versions-skins": "選擇的外觀 ($1) 不適用於任何的版本！",
 	"extdist-submit-version": "繼續",
-	"extdist-created-extensions": "已建立 MediaWiki <b>$3</b> 擴充套件 <b>$1</b> 版本 <b>$2</b> 的快照 (Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n此連結僅用於目前的下載動作，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n下載的 tar 壓縮檔要解壓縮至您的擴充套件目錄。如在 Unix-like 的作業系統：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的擴充套件目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫擴充套件的資訊。 該擴充套件的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關擴充套件發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
-	"extdist-created-skins": "已建立 MediaWiki <b>$3</b> 外觀 <b>$1</b> 版本 <b>$2</b> 的快照 (Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n此連結僅用於目前的下載動作，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n下載的 tar 壓縮檔要解壓縮至您的外觀目錄。如在 Unix-like 的作業系統：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的外觀目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫外觀的資訊。 該外觀的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關外觀發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
+	"extdist-created-extensions": "已建立 MediaWiki <b>$3</b> 擴充套件 <b>$1</b> 版本 <b>$2</b> 的快照。您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n您可以使用此連結在任何電腦下載此擴充套件，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n您應該將tar壓縮檔的内容解壓縮至您的MediaWiki安裝位置中的擴充套件目錄。如在類Unix的作業系統中：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的擴充套件目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫擴充套件的資訊。 該擴充套件的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關擴充套件發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
+	"extdist-created-skins": "已建立 MediaWiki <b>$3</b> 外觀 <b>$1</b> 版本 <b>$2</b> 的快照 (Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n您可以使用此連結在任何電腦下載此外觀，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n您應該將tar壓縮檔的内容解壓縮至您的MediaWiki安裝位置中的外觀目錄。如在類Unix的作業系統中：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的外觀目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫外觀的資訊。 該外觀的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關外觀發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
 	"extdist-want-more-extensions": "取得其他擴充套件",
 	"extdist-want-more-skins": "取得其他外觀",
 	"extdist-tar-error": "無法從封存 API 取得封存 URL。",
