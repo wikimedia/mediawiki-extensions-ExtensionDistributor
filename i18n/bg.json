@@ -6,7 +6,7 @@
 			"StanProg"
 		]
 	},
-	"extensiondistributor": "Сваляне на разширения за МедияУики",
+	"extensiondistributor": "Изтегляне на разширения за МедияУики",
 	"extdist-not-configured": "Моля, конфигурирайте <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Няма такова разширение „$1“",
 	"extdist-no-such-version-extensions": "Разширението „$1“ не съществува във версия „$2“.",
