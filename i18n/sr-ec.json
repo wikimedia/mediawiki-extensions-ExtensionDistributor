@@ -4,9 +4,11 @@
 			"Rancher",
 			"Михајло Анђелковић",
 			"Milicevic01",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"Zoranzoki21"
 		]
 	},
+	"extensiondistributor": "Преузми Медијавики екстензију",
 	"skindistributor": "Преузми Медијавики тему",
 	"extdist-no-such-extensions": "Нема такве екстензије „$1“",
 	"extdist-no-such-version-extensions": "Екстензија „$1“ не постоји у верзији „$2“.",

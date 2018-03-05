@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
+	"extensiondistributor": "Preuzmi Medijaviki ekstenziju",
 	"skindistributor": "Preuzmi Medijaviki temu",
 	"extdist-no-such-extensions": "Nema takve ekstenzije „$1“",
 	"extdist-no-such-version-extensions": "Ekstenzija „$1“ ne postoji u verziji „$2“.",
