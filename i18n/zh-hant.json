@@ -8,7 +8,8 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"Nemo bis",
-			"Hello903hello"
+			"Hello903hello",
+			"Kly"
 		]
 	},
 	"extensiondistributor": "下載 MediaWiki 擴充套件",
@@ -33,11 +34,20 @@
 	"extdist-created-skins": "已建立 MediaWiki <b>$3</b> 外觀 <b>$1</b> 版本 <b>$2</b> 的快照 (Snapshot)。 您的下載將於 5 秒後自動進行。\n\n此快照的 URL 為：\n:$4\n您可以使用此連結在任何電腦下載此外觀，該連結的內容不會更新，且在稍後會被刪除，請不要將該連結加入書籤。\n\n您應該將tar壓縮檔的内容解壓縮至您的MediaWiki安裝位置中的外觀目錄。如在類Unix的作業系統中：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\n在 Windows，您可以使用 [http://www.7-zip.org/ 7-zip] 來解壓縮檔案。\n\n若您的 Wiki 存放於遠端的伺服器，請先解壓縮檔案至您本機暫存的目錄，再上傳 '''所有''' 解壓縮過後的檔案至您伺服器上的外觀目錄。\n\n在您完成解壓縮檔案的動作後，您需要在 LocalSettings.php 的檔案填寫外觀的資訊。 該外觀的說明文件應該會有如何完成此動作的指示。\n\n若您有任何有關外觀發佈系統的問題，請至 [[Extension talk:ExtensionDistributor]]。",
 	"extdist-want-more-extensions": "取得其他擴充套件",
 	"extdist-want-more-skins": "取得其他外觀",
+	"extdist-goto-extensions-page": "返回至'''$1'''擴充頁面。",
+	"extdist-goto-skins-page": "返回至'''$1'''外觀頁面。",
 	"extdist-tar-error": "無法從封存 API 取得封存 URL。",
 	"extdist-no-branches": "無法取得任何分支的資訊。",
+	"extdist-popular-extensions": "前 {{PLURAL:$1|$1 名下載擴充|$1 名下載擴充}}：",
+	"extdist-popular-skins": "前 {{PLURAL:$1|$1 名下載外觀|$1 名下載外觀}}：",
+	"extdist-branch-alpha": "master（最新的開發版本）",
+	"extdist-branch-candidate": "$1（預定的下一次穩定版本）",
+	"extdist-branch-stable": "$1（最新的 MediaWiki 穩定版本）",
 	"apihelp-query+extdistrepos-description": "回傳 ExtensionDistributor 所支援的儲存庫清單",
+	"apihelp-query+extdistrepos-summary": "回傳 ExtensionDistributor 所支援的儲存庫清單",
 	"apihelp-query+extdistrepos-example-1": "儲存庫清單",
 	"apihelp-query+extdistbranches-description": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
+	"apihelp-query+extdistbranches-summary": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
 	"apihelp-query+extdistbranches-param-skins": "取得外觀的分支",
 	"apihelp-query+extdistbranches-param-exts": "取得擴充套件的分支",
 	"apihelp-query+extdistbranches-example-1": "取得 ExtensionDistributor 擴充套件的分支"
