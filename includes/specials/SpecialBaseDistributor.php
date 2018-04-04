@@ -210,7 +210,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 
 	/**
 	 * @param string $repoName
-	 * @return mixed
 	 */
 	protected function showVersionSelector( $repoName ) {
 		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot;
