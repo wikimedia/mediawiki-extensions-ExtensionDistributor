@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"extdist-created-extensions": "A snapshot of version <b>$2</b> of the <b>$1</b> extension for MediaWiki <b>$3</b> has been created. Your download should start automatically in 5 seconds.\n\nThe URL for this snapshot is:\n:$4\nYou can use this link to download the extension on any computer, but please do not bookmark it, since its contents will not be updated, and it may be deleted at a later date.\n\nYou should extract the tar archive's contents into the extensions directory of your MediaWiki installation. For example, on a Unix-like OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nOn Windows, you can use [http://www.7-zip.org/ 7-zip] to extract the files.\n\nIf your wiki is on a remote server, extract the files to a temporary directory on your local computer, and then upload '''all''' of the extracted files to the extensions directory on the server.\n\nAfter you have extracted the files, you will need to register the extension in LocalSettings.php. The extension documentation should have instructions on how to do this.\n\nIf you have any questions about this extension distribution system, please go to [[Extension talk:ExtensionDistributor]]."
+}
