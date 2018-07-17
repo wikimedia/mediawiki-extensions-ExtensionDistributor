@@ -29,7 +29,7 @@
 	"extdist-goto-extensions-page": "Volver a la páxina de la estensión '''$1'''.",
 	"extdist-goto-skins-page": "Volver a la páxina del aspeutu '''$1'''.",
 	"extdist-tar-error": "Nun se pudo traer la URL del archivu dende la API d'archivu.",
-	"extdist-no-branches": "Nun pue algamase información de nenguna rama.",
+	"extdist-no-branches": "Nun pudu llograse información de nenguna rama.",
 	"extdist-popular-extensions": "{{PLURAL:$1|La estensión más descargada|Les $1 estensiones más descargaes}}:",
 	"extdist-popular-skins": "{{PLURAL:$1|La piel más descargada|Les $1 pieles más descargaes}}:",
 	"extdist-branch-alpha": "maestra (cabera versión en desendolcu)",
