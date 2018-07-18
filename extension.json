@@ -19,7 +19,7 @@
 		"ExtDistSnapshotRefs": [],
 		"ExtDistDefaultSnapshot": "master",
 		"ExtDistCandidateSnapshot": false,
-		"ExtDistGraphiteRanderApi": null,
+		"ExtDistGraphiteRenderApi": null,
 		"ExtDistPopularExtList": [],
 		"ExtDistPopularSkinList": []
 	},
