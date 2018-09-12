@@ -45,7 +45,7 @@
 		"SkinDistributor": "SpecialSkinDistributor"
 	},
 	"AutoloadClasses": {
-		"ExtensionDistributorHooks": "ExtensionDistributor.hooks.php",
+		"ExtensionDistributorHooks": "includes/ExtensionDistributorHooks.php",
 		"SpecialBaseDistributor": "includes/specials/SpecialBaseDistributor.php",
 		"SpecialExtensionDistributor": "includes/specials/SpecialExtensionDistributor.php",
 		"SpecialSkinDistributor": "includes/specials/SpecialSkinDistributor.php",
