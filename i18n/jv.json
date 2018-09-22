@@ -9,7 +9,7 @@
 	"extdist-not-configured": "Mangga atur $wgExtDistList lan $wgExtDistAPIConfig",
 	"extdist-no-such-extensions": "Ora ana èkstènsi \"$1\"",
 	"extdist-no-such-version-extensions": "Èkstènsi \"$1\" ora ana nèng vèrsi \"$2\".",
-	"extdist-choose-extensions": "Pilih èkstènsi endi sing Sampéyan pingin undhuh:",
+	"extdist-choose-extensions": "Pilih èkstènsi endi sing panjenengan pingin undhuh:",
 	"extdist-submit-extension": "Banjuraké",
 	"extdist-no-versions-extensions": "Èkstènsi kapilih ($1) ora sumadhiya nèng vèrsi apa waé!",
 	"extdist-submit-version": "Banjuraké",
