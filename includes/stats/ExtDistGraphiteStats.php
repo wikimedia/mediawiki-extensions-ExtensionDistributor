@@ -64,7 +64,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
 			$this->logger->error( "Could not fetch popularList of $type from graphite, " .
-				"received: {$status->errors[0]}"
+				"received: {$status}"
 			);
 			return false;
 		}
