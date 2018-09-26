@@ -40,5 +40,6 @@
 	"extdist-branch-alpha": "اصلی(آخرین نسخهٔ توسعه‌ای)",
 	"extdist-branch-candidate": "$1 (نامزد نسخهٔ پایدار بعدی)",
 	"extdist-branch-stable": "$1 (آخرین نسخهٔ پایدار)",
-	"apihelp-query+extdistrepos-example-1": "فهرست مخزن‌ها"
+	"apihelp-query+extdistrepos-example-1": "فهرست مخزن‌ها",
+	"apihelp-query+extdistbranches-param-skins": "پوسته‌ها برای دریافت شاخه‌ها"
 }
