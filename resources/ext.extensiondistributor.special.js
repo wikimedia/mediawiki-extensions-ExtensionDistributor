@@ -1,4 +1,4 @@
-( function ( $, mw, OO ) {
+( function () {
 	'use strict';
 	$( function () {
 		// infusing the DropdownInputWidgets makes
@@ -167,4 +167,4 @@
 			return false;
 		} );
 	} );
-}( jQuery, mediaWiki, OO ) );
+}() );
