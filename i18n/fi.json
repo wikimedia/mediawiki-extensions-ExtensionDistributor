@@ -8,7 +8,8 @@
 			"VezonThunder",
 			"ZeiP",
 			"McSalama",
-			"01miki10"
+			"01miki10",
+			"Valtlait"
 		]
 	},
 	"extensiondistributor": "Lataa MediaWikin laajennus",
@@ -18,9 +19,9 @@
 	"extdist-list-missing-extensions": "Laajennusluetteloa ei voitu hakea!",
 	"extdist-list-missing-skins": "Ulkoasuluetteloa ei voitu hakea!",
 	"extdist-no-such-extensions": "Laajennusta ”$1” ei löydy",
-	"extdist-no-such-skins": "Ulkoasua \"$1\" ei ole.",
+	"extdist-no-such-skins": "Ulkoasua ”$1” ei ole.",
 	"extdist-no-such-version-extensions": "Laajennus ”$1” ei sisälly versioon ”$2”.",
-	"extdist-no-such-version-skins": "Ulkoasua \"$1\" ei ole versiossa \"$2\".",
+	"extdist-no-such-version-skins": "Ulkoasua ”$1” ei ole versiossa ”$2”.",
 	"extdist-choose-extensions": "Valitse mitkä laajennukset haluat ladata:",
 	"extdist-choose-skins": "Valitse mitkä ulkoasut haluat ladata:",
 	"extdist-submit-extension": "Jatka",
