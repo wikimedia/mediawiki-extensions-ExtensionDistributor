@@ -84,7 +84,7 @@
 				versionField,
 				versionSelector,
 				versionButton;
-			$.each( mw.config.get( 'wgExtDistSnapshotRefs' ), function ( i, value ) {
+			mw.config.get( 'wgExtDistSnapshotRefs' ).forEach( function ( value ) {
 				if ( info[ value ] ) {
 					options.push( { data: value, label: formatBranch( value ) } );
 				}
