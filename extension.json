@@ -59,7 +59,7 @@
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
 			"position": "top",
-			"styles": "ext.extensiondistributor.special.css"
+			"styles": "ext.extensiondistributor.special.less"
 		},
 		"ext.extensiondistributor.special": {
 			"scripts": "ext.extensiondistributor.special.js",

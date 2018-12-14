@@ -273,8 +273,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @param string $version
 	 */
 	protected function doDownload( $extension, $version ) {
-		global $wgExtensionAssetsPath;
-
 		if ( !$this->getProvider()->hasBranch( $extension, $version ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-tar-error' );
 			return;
@@ -284,10 +282,11 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$sha1 = $this->getProvider()->getBranchSha( $extension, $version );
 		$url = $this->getProvider()->getTarballLocation( $extension, $version );
 		$fileName = $this->getProvider()->getExpectedTarballName( $extension, $version );
-		$downloadImg = "$wgExtensionAssetsPath/ExtensionDistributor/download.png";
 		// extdist-created-extensions, extdist-created-skins
 		$this->getOutput()->addWikiMsg( $this->msgKey( 'extdist-created-$TYPE' ), $extension, $sha1,
 			$version, $url, $fileName );
+
+		$this->getOutput()->addModuleStyles( 'ext.extensiondistributor.special.styles' );
 
 		// Add link to the extension/skin's page
 		$pageTitle = Title::newFromText(
@@ -311,14 +310,15 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		}
 
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'p', [ 'style' => 'font-size:150%' ] ) .
+			Xml::openElement( 'p' ) .
 			$linkRenderer->makeLink(
 				$this->getPageTitle(),
 				new HtmlArmor(
 					Xml::element( 'img', [ 'src' => $downloadImg, 'alt' => '' ] ) .
 					// extdist-want-more-extensions, extdist-want-more-skins
 					$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped()
-				)
+				),
+				[ 'class' => 'mw-extdist-download' ]
 			) . Xml::closeElement( 'p' ) . "\n"
 		);
 

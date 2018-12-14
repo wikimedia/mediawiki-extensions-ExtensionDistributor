@@ -1,3 +1,5 @@
+@import 'mediawiki.mixins';
+
 /* make it look the same width as the input fields */
 .mw-extdist-continue {
 	max-width: 50em;
@@ -17,6 +19,15 @@
 .mw-extdist-popular {
 	width: 40%;
 	display: table-cell;
+}
+
+.mw-extdist-download {
+	display: inline-block;
+	font-size: 150%;
+	padding: 10px 0 10px 50px;
+	.background-image-svg( 'download.svg', 'download.png' );
+	background-repeat: no-repeat;
+	background-position: center left;
 }
 
 /* hide submit button for JS users */
