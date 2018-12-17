@@ -13,7 +13,7 @@
 		]
 	},
 	"extensiondistributor": "Peybendê MediyaWiki biya war",
-	"skindistributor": "Cild ê MediaWiki ron",
+	"skindistributor": "Cildê MediaWikiyi biya war",
 	"extensiondistributor-desc": "Olekenê arşivanê ekrana vıla kerdışi rê nıik oleken.",
 	"extdist-not-configured": "Lutfen  <code>$wgExtDistAPIConfig</code> saz ker ê.",
 	"extdist-list-missing-extensions": "Derganeya listi néşa biyaro!",
