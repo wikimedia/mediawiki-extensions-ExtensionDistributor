@@ -30,6 +30,9 @@
 	"extdist-goto-extensions-page": "Tuèrne a 'a pàgene de l'estenzione \"$1\".",
 	"extdist-goto-skins-page": "Tuèrne a 'a pàgene d'u teme \"$1\".",
 	"extdist-tar-error": "Non ge pozze analizzà l'URL de l'archivije da l'archivije de le API.",
+	"extdist-no-branches": "'Mbossibbele recuperà 'mbormaziune relative a le rame.",
+	"extdist-popular-extensions": "{{PLURAL:$1|$1 L'estenzione|Le prime $1 estenziune}} cchiù scarecate:",
+	"extdist-popular-skins": "{{PLURAL:$1|$1 'U skin|Le prime $1 skin}} cchiù scarecate:",
 	"extdist-branch-alpha": "master (urtema versione de sveluppe)",
 	"extdist-branch-candidate": "$1 (prossime candidate secure)",
 	"extdist-branch-stable": "$1 (urtema versione de MediaUicchi secure)",
@@ -37,5 +40,8 @@
 	"apihelp-query+extdistrepos-summary": "Dèje l'elenghe de le archivije supportate da ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Elenghe de le archivije",
 	"apihelp-query+extdistbranches-description": "Dèje l'elenghe de le rame de 'n'archivije supportate da ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Dèje l'elenghe de le rame de 'n'archivije supportate da ExtensionDistributor"
+	"apihelp-query+extdistbranches-summary": "Dèje l'elenghe de le rame de 'n'archivije supportate da ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Skin da pigghià 'u rame",
+	"apihelp-query+extdistbranches-param-exts": "Estenziune da pigghià 'u rame",
+	"apihelp-query+extdistbranches-example-1": "Pigghie le rame pe l'estenzione ExtensionDistributor"
 }
