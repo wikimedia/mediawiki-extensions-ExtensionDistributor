@@ -5,7 +5,6 @@ class ExtensionDistributorHooks {
 	/**
 	 * @param ApiQuerySiteInfo $api
 	 * @param array &$data
-	 * @return bool
 	 */
 	public static function onAPIQuerySiteInfoGeneralInfo( ApiQuerySiteInfo $api, array &$data ) {
 		global $wgExtDistSnapshotRefs, $wgExtDistListFile;
@@ -17,7 +16,5 @@ class ExtensionDistributorHooks {
 			$data['extensiondistributor']['snapshots'],
 			'snapshot'
 		);
-
-		return true;
 	}
 }
