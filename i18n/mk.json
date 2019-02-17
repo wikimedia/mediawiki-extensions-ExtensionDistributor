@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bjankuloski06",
-			"Brest"
+			"Brest",
+			"Vlad5250"
 		]
 	},
 	"extensiondistributor": "Преземање на додаток за МедијаВики",
@@ -29,7 +30,7 @@
 	"extdist-want-more-skins": "Дај друго руво",
 	"extdist-goto-extensions-page": "Назад на страницата на додатокот '''$1'''.",
 	"extdist-goto-skins-page": "Назад на страницата на рувото '''$1'''.",
-	"extdist-tar-error": "Не можам да го добијам URL-то на архивата од нејзиниот извршник.",
+	"extdist-tar-error": "Не можам да го добијам URL-то на архивата од нејзиниот API.",
 	"extdist-no-branches": "Не можам да добијам информации за било која гранка.",
 	"extdist-popular-extensions": "{{PLURAL:$1|Најпреземан додаток|Најпреземани $1 додатоци}}:",
 	"extdist-popular-skins": "{{PLURAL:$1|Најпреземано руво|Најпреземани $1 рува}}:",
