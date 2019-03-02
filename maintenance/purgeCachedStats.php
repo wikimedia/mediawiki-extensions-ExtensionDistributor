@@ -29,5 +29,5 @@ class ExtDistPurgeCachedStats extends Maintenance {
 
 }
 
-$maintClass = "ExtDistPurgeCachedStats";
+$maintClass = ExtDistPurgeCachedStats::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
