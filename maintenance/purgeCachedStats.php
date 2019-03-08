@@ -12,7 +12,7 @@ require_once "$IP/maintenance/Maintenance.php";
 /**
  * @author Addshore
  */
-class ExtDistPurgeCachedStats extends Maintenance {
+class PurgeCachedStats extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
@@ -29,5 +29,5 @@ class ExtDistPurgeCachedStats extends Maintenance {
 
 }
 
-$maintClass = ExtDistPurgeCachedStats::class;
+$maintClass = PurgeCachedStats::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
