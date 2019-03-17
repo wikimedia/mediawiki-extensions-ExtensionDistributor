@@ -7,6 +7,7 @@
 	},
 	"extensiondistributor": "Preuzmi Medijaviki ekstenziju",
 	"skindistributor": "Preuzmi Medijaviki temu",
+	"extdist-list-missing-extensions": "Nije moguće preuzeti spisak ekstenzija!",
 	"extdist-no-such-extensions": "Nema takve ekstenzije „$1“",
 	"extdist-no-such-version-extensions": "Ekstenzija „$1“ ne postoji u verziji „$2“.",
 	"extdist-choose-extensions": "Izaberite ekstenziju koju želite preuzeti:",
