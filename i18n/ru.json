@@ -9,7 +9,8 @@
 			"Александр Сигачёв",
 			"Alexandr Efremov",
 			"Putnik",
-			"Facenapalm"
+			"Facenapalm",
+			"Diralik"
 		]
 	},
 	"extensiondistributor": "Скачать расширения MediaWiki",
@@ -36,7 +37,7 @@
 	"extdist-want-more-skins": "Загрузить другую тему оформления",
 	"extdist-goto-extensions-page": "Возвращение к странице расширения '''$1'''.",
 	"extdist-goto-skins-page": "Возвращение к странице темы оформления '''$1'''.",
-	"extdist-tar-error": "Не удается получить URL архива из архивного API.",
+	"extdist-tar-error": "Не удаётся получить URL архива из архивного API.",
 	"extdist-no-branches": "Не удалось получить информацию о каких-либо версиях.",
 	"extdist-popular-extensions": "Топ {{PLURAL:$1|$1 скачанное расширение|$1 скачанных расширений}}:",
 	"extdist-popular-skins": "Топ {{PLURAL:$1|$1 скачанная тема оформления|$1 скачанных тем оформления}}:",
