@@ -11,7 +11,7 @@
 	},
 	"extensiondistributor": "Преузми Медијавики екстензију",
 	"skindistributor": "Преузми Медијавики тему",
-	"extdist-list-missing-extensions": "Није могуће преузети списак екстензија!",
+	"extdist-list-missing-extensions": "Није могуће добавити листу проширења!",
 	"extdist-no-such-extensions": "Нема такве екстензије „$1“",
 	"extdist-no-such-version-extensions": "Екстензија „$1“ не постоји у верзији „$2“.",
 	"extdist-choose-extensions": "Изаберите екстензију коју желите преузети:",
