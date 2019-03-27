@@ -16,7 +16,7 @@ class PurgeCachedStats extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = "Purge cached ExtensionDistributor stats";
+		$this->addDescription( "Purge cached ExtensionDistributor stats" );
 		$this->requireExtension( 'ExtensionDistributor' );
 	}
 
