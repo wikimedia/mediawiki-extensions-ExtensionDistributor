@@ -104,7 +104,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
 			Xml::openElement( 'form', [
-				'action' => $this->getPageTitle()->getLocalUrl(),
+				'action' => $this->getPageTitle()->getLocalURL(),
 				'method' => 'GET' ] )
 		);
 		$items = [ [ 'data' => '' ] ];
