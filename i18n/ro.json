@@ -4,12 +4,13 @@
 			"Firilacroco",
 			"KlaudiuMihaila",
 			"Minisarm",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Andrei Stroe"
 		]
 	},
 	"extensiondistributor": "Descărcare extensie MediaWiki",
 	"extensiondistributor-desc": "Extensie pentru distribuirea unor arhive fotografice ale extensiilor",
-	"extdist-not-configured": "Vă rugăm să configurați $wgExtDistList și $wgExtDistAPIConfig",
+	"extdist-not-configured": "Vă rugăm să configurați <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Extensia „$1” nu există.",
 	"extdist-no-such-version-extensions": "Extensia „$1” nu există în versiunea „$2”.",
 	"extdist-submit-extension": "Continuă",
