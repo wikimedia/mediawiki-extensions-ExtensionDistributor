@@ -58,7 +58,6 @@
 	},
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
-			"position": "top",
 			"styles": "ext.extensiondistributor.special.less"
 		},
 		"ext.extensiondistributor.special": {
