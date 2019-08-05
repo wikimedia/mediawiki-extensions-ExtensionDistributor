@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geopoet"
+			"Geopoet",
+			"Brazal.dang"
 		]
 	},
-	"extdist-not-configured": "Pakisunsaya an $wgExtDistList asin $wgExtDistAPIConfig",
+	"extdist-not-configured": "Pakisunsaya an  <code>$wgExtDistAPIConfig</code>.",
 	"apihelp-query+extdistbranches-description": "Nagbabalik kan listahan kan mga sanga para sa sarong repositoryo na suportado sa paagi kan ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "An mga onit magkurua nin mga sanga para sa",
 	"apihelp-query+extdistbranches-param-exts": "Mga ekstensyon magkurua nin mga sanga para sa",
