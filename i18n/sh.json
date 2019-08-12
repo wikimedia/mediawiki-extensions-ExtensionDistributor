@@ -28,5 +28,11 @@
 	"extdist-want-more-skins": "Daj drugu temu",
 	"extdist-goto-extensions-page": "Nazad na stranicu dodatka '''$1'''.",
 	"extdist-goto-skins-page": "Nazad na stranicu teme '''$1'''.",
-	"extdist-tar-error": "Ne mogu dobiti URL arhive koristeći njen API."
+	"extdist-tar-error": "Ne mogu dobiti URL arhive koristeći njen API.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Najpreuzimaniji dodatak|Najpreuzimanijih $1 dodataka}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|Najpreuzimaniji izgled (skin)|Najpreuzimanijih $1 izgleda (skinova)}}:",
+	"extdist-branch-alpha": "matična (najnovija razvojna verzija)",
+	"extdist-branch-candidate": "$1 (kandidat na buduću stabilnu verziju)",
+	"extdist-branch-stable": "$1 (najnovija stabilna verzija MedijaWikija)",
+	"apihelp-query+extdistrepos-example-1": "Ispiši repozitorije"
 }
