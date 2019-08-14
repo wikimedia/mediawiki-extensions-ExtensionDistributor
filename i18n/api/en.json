@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-query+extdistrepos-description": "Returns the list of repositories supported by ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Returns the list of repositories supported by ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "List repositories",
+	"apihelp-query+extdistbranches-description": "Returns the list of branches for a repository supported by ExtensionDistributor",
+	"apihelp-query+extdistbranches-summary": "Returns the list of branches for a repository supported by ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Skins to get branches for",
+	"apihelp-query+extdistbranches-param-exts": "Extensions to get branches for",
+	"apihelp-query+extdistbranches-example-1": "Get branches for the ExtensionDistributor extension"
+}

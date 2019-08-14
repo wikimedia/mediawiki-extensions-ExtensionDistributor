@@ -32,7 +32,8 @@
 	},
 	"MessagesDirs": {
 		"ExtensionDistributor": [
-			"i18n"
+			"i18n",
+			"i18n/api"
 		]
 	},
 	"Hooks": {

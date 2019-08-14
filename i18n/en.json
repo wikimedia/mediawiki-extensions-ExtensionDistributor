@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
-"extensiondistributor": "Download MediaWiki extension",
+	"extensiondistributor": "Download MediaWiki extension",
 	"skindistributor": "Download MediaWiki skin",
 	"extensiondistributor-desc": "Extension for distributing snapshot archives of extensions",
 	"extdist-not-configured": "Please configure <code>$wgExtDistAPIConfig</code>.",
@@ -32,13 +32,5 @@
 	"extdist-popular-skins": "Top {{PLURAL:$1|$1 downloaded skin|$1 downloaded skins}}:",
 	"extdist-branch-alpha": "master (latest development version)",
 	"extdist-branch-candidate": "$1 (next stable candidate)",
-	"extdist-branch-stable": "$1 (latest stable MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Returns the list of repositories supported by ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Returns the list of repositories supported by ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "List repositories",
-	"apihelp-query+extdistbranches-description": "Returns the list of branches for a repository supported by ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Returns the list of branches for a repository supported by ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Skins to get branches for",
-	"apihelp-query+extdistbranches-param-exts": "Extensions to get branches for",
-	"apihelp-query+extdistbranches-example-1": "Get branches for the ExtensionDistributor extension"
+	"extdist-branch-stable": "$1 (latest stable MediaWiki)"
 }
