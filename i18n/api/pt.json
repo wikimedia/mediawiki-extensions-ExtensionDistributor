@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "Devolve a lista de repositórios suportados pelo ExtensionDistribuitor",
+	"apihelp-query+extdistrepos-summary": "Devolve a lista de repositórios suportados pelo ExtensionDistribuitor",
+	"apihelp-query+extdistrepos-example-1": "Listar repositórios",
+	"apihelp-query+extdistbranches-description": "Devolve a lista das ramificações (<i>branches</i>) de um repositório suportadas pelo ExtensionDistributor",
+	"apihelp-query+extdistbranches-summary": "Devolve a lista das ramificações (<i>branches</i>) de um repositório suportadas pelo ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Temas dos quais obter ramificações (<i>branches</i>)",
+	"apihelp-query+extdistbranches-param-exts": "Extensões das quais obter as ramificações (<i>branches</i>)",
+	"apihelp-query+extdistbranches-example-1": "Obter ramificações (<i>branches</i>) da extensão ExtensionDistributor"
+}

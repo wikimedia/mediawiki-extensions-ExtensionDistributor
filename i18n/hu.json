@@ -37,11 +37,5 @@
 	"extdist-popular-skins": "A(z) $1 leggyakrabban letöltött felület:",
 	"extdist-branch-alpha": "master (legfrissebb fejlesztői verzió)",
 	"extdist-branch-candidate": "$1 (következő stabiljelölt)",
-	"extdist-branch-stable": "$1 (legfrissebb stabil MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Az ExtensionDistributor által támogatott tárhelyeket adja vissza",
-	"apihelp-query+extdistrepos-summary": "Az ExtensionDistributor által támogatott tárolók listájának lekérése",
-	"apihelp-query+extdistrepos-example-1": "Tárhelyek listázása",
-	"apihelp-query+extdistbranches-description": "Egy ExtensionDistributor által támogatott tároló ágainak lekérése",
-	"apihelp-query+extdistbranches-summary": "Egy ExtensionDistributor által támogatott tároló ágainak lekérése",
-	"apihelp-query+extdistbranches-example-1": "Az ExtensionDistributor kiterjesztés ágainak lekérése"
+	"extdist-branch-stable": "$1 (legfrissebb stabil MediaWiki)"
 }

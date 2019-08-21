@@ -35,13 +35,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|$1 'U skin|Le prime $1 skin}} cchiù scarecate:",
 	"extdist-branch-alpha": "master (urtema versione de sveluppe)",
 	"extdist-branch-candidate": "$1 (prossime candidate secure)",
-	"extdist-branch-stable": "$1 (urtema versione de MediaUicchi secure)",
-	"apihelp-query+extdistrepos-description": "Dèje l'elenghe de le archivije supportate da ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Dèje l'elenghe de le archivije supportate da ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Elenghe de le archivije",
-	"apihelp-query+extdistbranches-description": "Dèje l'elenghe de le rame de 'n'archivije supportate da ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Dèje l'elenghe de le rame de 'n'archivije supportate da ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Skin da pigghià 'u rame",
-	"apihelp-query+extdistbranches-param-exts": "Estenziune da pigghià 'u rame",
-	"apihelp-query+extdistbranches-example-1": "Pigghie le rame pe l'estenzione ExtensionDistributor"
+	"extdist-branch-stable": "$1 (urtema versione de MediaUicchi secure)"
 }

@@ -39,13 +39,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|$1 tema mais baixado|$1 temas mais baixados}}:",
 	"extdist-branch-alpha": "mestre (versão de desenvolvimento mais recente)",
 	"extdist-branch-candidate": "$1 (próximo candidato estável)",
-	"extdist-branch-stable": "$1 (última versão estável do MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Retorna a lista de repositórios suportados por ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Retorna a lista de repositórios suportados por ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Listar repositórios",
-	"apihelp-query+extdistbranches-description": "Retorna a lista de ramos para um repositório suportado pelo ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Retorna a lista de ramos para um repositório suportado pelo ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Temas dos quais obter ramificações",
-	"apihelp-query+extdistbranches-param-exts": "Extensões das quais obter ramos",
-	"apihelp-query+extdistbranches-example-1": "Obtenha ramos para a extensão ExtensionDistributor"
+	"extdist-branch-stable": "$1 (última versão estável do MediaWiki)"
 }

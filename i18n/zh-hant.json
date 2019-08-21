@@ -43,13 +43,5 @@
 	"extdist-popular-skins": "前 {{PLURAL:$1|$1 名下載外觀|$1 名下載外觀}}：",
 	"extdist-branch-alpha": "master（最新的開發版本）",
 	"extdist-branch-candidate": "$1（預定的下一次穩定版本）",
-	"extdist-branch-stable": "$1（最新的 MediaWiki 穩定版本）",
-	"apihelp-query+extdistrepos-description": "回傳 ExtensionDistributor 所支援的儲存庫清單",
-	"apihelp-query+extdistrepos-summary": "回傳 ExtensionDistributor 所支援的儲存庫清單",
-	"apihelp-query+extdistrepos-example-1": "儲存庫清單",
-	"apihelp-query+extdistbranches-description": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
-	"apihelp-query+extdistbranches-summary": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
-	"apihelp-query+extdistbranches-param-skins": "取得佈景主題的分支",
-	"apihelp-query+extdistbranches-param-exts": "取得擴充套件的分支",
-	"apihelp-query+extdistbranches-example-1": "取得 ExtensionDistributor 擴充套件的分支"
+	"extdist-branch-stable": "$1（最新的 MediaWiki 穩定版本）"
 }

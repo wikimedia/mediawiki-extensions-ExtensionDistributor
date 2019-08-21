@@ -43,13 +43,5 @@
 	"extdist-popular-skins": "Топ-{{PLURAL:$1|$1 завантажувана тема оформлення|$1 завантажувані теми оформлення|$1 завантажуваних тем оформлення}}:",
 	"extdist-branch-alpha": "master (найновіша версія розробки)",
 	"extdist-branch-candidate": "$1 (наступний стабільний кандидат)",
-	"extdist-branch-stable": "$1 (остання стабільна MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Видає список репозиторіїв, підтримуваних ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Видає список репозиторіїв, підтримуваних ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Список репозиторіїв",
-	"apihelp-query+extdistbranches-description": "Видає список гілок репозиторію, підтримуваного ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Видає список гілок репозиторію, підтримуваного ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Теми, для яких отримати гілки",
-	"apihelp-query+extdistbranches-param-exts": "Розширення, для яких отримати гілки",
-	"apihelp-query+extdistbranches-example-1": "Отримати гілки для розширення ExtensionDistributor"
+	"extdist-branch-stable": "$1 (остання стабільна MediaWiki)"
 }

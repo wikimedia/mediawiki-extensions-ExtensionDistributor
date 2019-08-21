@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Railfail536",
+			"Woytecr"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "Zwraca listę repozytoriów obsługiwanych przez ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Zwraca listę repozytoriów obsługiwanych przez ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Lista repozytoriów",
+	"apihelp-query+extdistbranches-description": "Zwraca listę gałęzi repozytorium, obsługiwanych przez ExtensionDistributor",
+	"apihelp-query+extdistbranches-summary": "Zwraca listę gałęzi repozytorium, obsługiwanych przez ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Skórki, dla których pobrać gałęzie",
+	"apihelp-query+extdistbranches-param-exts": "Rozszerzenia, dla których pobrać gałęzie",
+	"apihelp-query+extdistbranches-example-1": "Uzyskaj gałęzie dla rozszerzenia ExtensionDistributor."
+}

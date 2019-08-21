@@ -36,7 +36,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|Giao diện|Các giao diện}} được tải về nhiều nhất:",
 	"extdist-branch-alpha": "master (phiên bản phát triển mới nhất)",
 	"extdist-branch-candidate": "$1 (phiên bản có thể ổn định sau)",
-	"extdist-branch-stable": "$1 (MediaWiki ổn định mới nhất)",
-	"apihelp-query+extdistrepos-description": "Cho ra danh sách kho mã nguồn được hỗ trợ bởi ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Danh sách kho mã nguồn"
+	"extdist-branch-stable": "$1 (MediaWiki ổn định mới nhất)"
 }

@@ -37,6 +37,5 @@
 	"extdist-popular-skins": "다운로드 상위 {{PLURAL:$1|스킨 $1개}}:",
 	"extdist-branch-alpha": "master (최신 개발 버전)",
 	"extdist-branch-candidate": "$1 (차기 안정 후보판)",
-	"extdist-branch-stable": "$1 (최신 미디어위키 안정판)",
-	"apihelp-query+extdistrepos-example-1": "저장소 나열"
+	"extdist-branch-stable": "$1 (최신 미디어위키 안정판)"
 }

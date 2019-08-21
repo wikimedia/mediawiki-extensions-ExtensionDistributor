@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ladsgroup"
+		]
+	},
+	"apihelp-query+extdistrepos-example-1": "فهرست مخزن‌ها",
+	"apihelp-query+extdistbranches-param-skins": "پوسته‌ها برای دریافت شاخه‌ها"
+}

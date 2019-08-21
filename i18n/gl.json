@@ -36,13 +36,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|$1 aparencia máis descargada|$1 aparencias máis descargadas}}:",
 	"extdist-branch-alpha": "principal (última versión en desenvolvemento)",
 	"extdist-branch-candidate": "$1 (seguinte candidato estable)",
-	"extdist-branch-stable": "$1 (último MediaWiki estable)",
-	"apihelp-query+extdistrepos-description": "Devolve a lista de repositorios soportados por ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Devolve a lista de repositorios soportados por ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Listar repositorios",
-	"apihelp-query+extdistbranches-description": "Devolve a lista de ramificacións soportadas por ExtensionDistributor para un repositorio",
-	"apihelp-query+extdistbranches-summary": "Devolve a lista de ramificacións soportadas por ExtensionDistributor para un repositorio",
-	"apihelp-query+extdistbranches-param-skins": "Aparencias para as que recuperar as ramificacións",
-	"apihelp-query+extdistbranches-param-exts": "Extensións para as que recuperar as ramificacións",
-	"apihelp-query+extdistbranches-example-1": "Obter as ramificacións da extensión ExtensionDistributor"
+	"extdist-branch-stable": "$1 (último MediaWiki estable)"
 }

@@ -34,11 +34,5 @@
 	"extdist-want-more-skins": "Λήψη κι άλλου θέματος εμφάνισης",
 	"extdist-tar-error": "Αδύνατη η λήψη της διεύθυνσης URL του αρχείου από το API του αρχείου.",
 	"extdist-no-branches": "Αδύνατη η λήψη πληροφοριών σχετικά με οποιονδήποτε κλάδο.",
-	"extdist-branch-alpha": "master (πιό πρόσφατη έκδοση ανάπτυξης)",
-	"apihelp-query+extdistrepos-description": "Επιστρέφει τη λίστα των αποθετηρίων που υποστηρίζονται από τον ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Κατάλογος αποθετηρίων",
-	"apihelp-query+extdistbranches-description": "Επιστρέφει τη λίστα των κλάδων για αποθετήριο υποστηριζόμενο από τον ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Θέματα εμφάνισης για τα οποία να γίνει λήψη κλάδων",
-	"apihelp-query+extdistbranches-param-exts": "Επεκτάσεις για τις οποίες να γίνει λήψη κλάδων",
-	"apihelp-query+extdistbranches-example-1": "Λήψη κλάδων για την επέκταση ExtensionDistributor"
+	"extdist-branch-alpha": "master (πιό πρόσφατη έκδοση ανάπτυξης)"
 }

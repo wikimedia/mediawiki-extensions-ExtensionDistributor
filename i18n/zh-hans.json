@@ -41,13 +41,5 @@
 	"extdist-popular-skins": "前{{PLURAL:$1|$1位下载皮肤}}：",
 	"extdist-branch-alpha": "原始版（最新开发版本）",
 	"extdist-branch-candidate": "$1（下次稳定版本候选）",
-	"extdist-branch-stable": "$1（最新稳定MediaWiki版本）",
-	"apihelp-query+extdistrepos-description": "返回由ExtensionDistributor支持的存储库的列表",
-	"apihelp-query+extdistrepos-summary": "返回由ExtensionDistributor支持的存储库的列表",
-	"apihelp-query+extdistrepos-example-1": "存储库列表",
-	"apihelp-query+extdistbranches-description": "返回由ExtensionDistributor支持的用于存储库的分支列表",
-	"apihelp-query+extdistbranches-summary": "返回由ExtensionDistributor支持的用于存储库的分支列表",
-	"apihelp-query+extdistbranches-param-skins": "要获取分支的皮肤",
-	"apihelp-query+extdistbranches-param-exts": "要获取分支的扩展",
-	"apihelp-query+extdistbranches-example-1": "获取用于ExtensionDistributor扩展的分支"
+	"extdist-branch-stable": "$1（最新稳定MediaWiki版本）"
 }

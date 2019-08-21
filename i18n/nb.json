@@ -36,8 +36,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|Den mest nedlastede drakta|De $1 mest nedlastede draktene}}:",
 	"extdist-branch-alpha": "master (nyeste utviklingsversjon)",
 	"extdist-branch-candidate": "$1 (neste stabile kandidat)",
-	"extdist-branch-stable": "$1 (nyeste stabile MediaWiki)",
-	"apihelp-query+extdistbranches-param-skins": "Drakter det skal hentes grener for",
-	"apihelp-query+extdistbranches-param-exts": "Utvidelser det skal hentes grener for",
-	"apihelp-query+extdistbranches-example-1": "Hent grener for utvidelsen ExtensionDistributor"
+	"extdist-branch-stable": "$1 (nyeste stabile MediaWiki)"
 }

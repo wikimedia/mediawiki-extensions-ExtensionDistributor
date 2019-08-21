@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "Az ExtensionDistributor által támogatott tárhelyeket adja vissza",
+	"apihelp-query+extdistrepos-summary": "Az ExtensionDistributor által támogatott tárolók listájának lekérése",
+	"apihelp-query+extdistrepos-example-1": "Tárhelyek listázása",
+	"apihelp-query+extdistbranches-description": "Egy ExtensionDistributor által támogatott tároló ágainak lekérése",
+	"apihelp-query+extdistbranches-summary": "Egy ExtensionDistributor által támogatott tároló ágainak lekérése",
+	"apihelp-query+extdistbranches-example-1": "Az ExtensionDistributor kiterjesztés ágainak lekérése"
+}

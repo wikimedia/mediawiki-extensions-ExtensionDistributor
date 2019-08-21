@@ -41,11 +41,5 @@
 	"extdist-popular-skins": "Top $1 meest gedownloade {{PLURAL:$1|vormgeving|vormgevingen}}:",
 	"extdist-branch-alpha": "master (nieuwste ontwikkeling versie)",
 	"extdist-branch-candidate": "$1 (volgende stabiele kandidaat)",
-	"extdist-branch-stable": "$1 (laatste stabiele MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Geeft de lijst van repositories ondersteund door ExtensionDistributor weer",
-	"apihelp-query+extdistrepos-example-1": "Lijst van repositories",
-	"apihelp-query+extdistbranches-description": "Geeft de lijst van de branches voor een repository ondersteund door ExtensionDistributor weer",
-	"apihelp-query+extdistbranches-param-skins": "Vormgeving om branches voor op te halen",
-	"apihelp-query+extdistbranches-param-exts": "Uitbreidingen om branches voor op te halen",
-	"apihelp-query+extdistbranches-example-1": "Toon de branches voor de ExtensionDistributor uitbreiding"
+	"extdist-branch-stable": "$1 (laatste stabiele MediaWiki)"
 }

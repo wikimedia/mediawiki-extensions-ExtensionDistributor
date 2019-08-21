@@ -29,7 +29,5 @@
 	"extdist-want-more-extensions": "Hämta andra tillägg",
 	"extdist-want-more-skins": "Hämta ett annat utseende",
 	"extdist-tar-error": "Det gick inte att hämta arkiv-URL:en från arkiv-API:et.",
-	"extdist-no-branches": "Kunde inte hämta information om några grenar.",
-	"apihelp-query+extdistrepos-description": "Returnerar listan över centralförvar som stöds av ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Lista centralförvar"
+	"extdist-no-branches": "Kunde inte hämta information om några grenar."
 }

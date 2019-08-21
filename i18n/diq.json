@@ -29,6 +29,5 @@
 	"extdist-want-more-skins": "Şo cildan dê binan",
 	"extdist-tar-error": "Kodê arşiv da URL' ra URL",
 	"extdist-branch-candidate": "$1 (stabilni ezaya peyên )",
-	"extdist-branch-stable": "$1 (peyên stabil MediaWiki)",
-	"apihelp-query+extdistrepos-example-1": "Liste yê depoyan"
+	"extdist-branch-stable": "$1 (peyên stabil MediaWiki)"
 }

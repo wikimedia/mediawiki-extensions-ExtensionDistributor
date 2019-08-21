@@ -33,6 +33,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|Najpreuzimaniji izgled (skin)|Najpreuzimanijih $1 izgleda (skinova)}}:",
 	"extdist-branch-alpha": "matična (najnovija razvojna verzija)",
 	"extdist-branch-candidate": "$1 (kandidat na buduću stabilnu verziju)",
-	"extdist-branch-stable": "$1 (najnovija stabilna verzija MedijaWikija)",
-	"apihelp-query+extdistrepos-example-1": "Ispiši repozitorije"
+	"extdist-branch-stable": "$1 (najnovija stabilna verzija MedijaWikija)"
 }

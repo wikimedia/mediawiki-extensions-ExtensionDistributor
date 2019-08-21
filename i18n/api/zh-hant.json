@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"Winston Sung"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "回傳 ExtensionDistributor 所支援的儲存庫清單",
+	"apihelp-query+extdistrepos-summary": "回傳 ExtensionDistributor 所支援的儲存庫清單",
+	"apihelp-query+extdistrepos-example-1": "儲存庫清單",
+	"apihelp-query+extdistbranches-description": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
+	"apihelp-query+extdistbranches-summary": "回傳 ExtensionDistributor 支援的儲存庫分支清單",
+	"apihelp-query+extdistbranches-param-skins": "取得佈景主題的分支",
+	"apihelp-query+extdistbranches-param-exts": "取得擴充套件的分支",
+	"apihelp-query+extdistbranches-example-1": "取得 ExtensionDistributor 擴充套件的分支"
+}

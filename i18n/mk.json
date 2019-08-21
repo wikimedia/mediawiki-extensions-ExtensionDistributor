@@ -36,13 +36,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|Најпреземано руво|Најпреземани $1 рува}}:",
 	"extdist-branch-alpha": "матична (најнова развојна верзија)",
 	"extdist-branch-candidate": "$1 (кандидат за следна стабилна верзија)",
-	"extdist-branch-stable": "$1 (најнова стабилна верзија на МедијаВики)",
-	"apihelp-query+extdistrepos-description": "Дава список на складишта поддржани од ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Дава список на складишта поддржани од ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Испиши складишта",
-	"apihelp-query+extdistbranches-description": "Дава список на ограноци на складиште поддржани од ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Дава список на ограноци на складиште поддржани од ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "За кои рува да се дадат ограноци",
-	"apihelp-query+extdistbranches-param-exts": "За кои додатоци да се дадат ограноци",
-	"apihelp-query+extdistbranches-example-1": "Дај ограноци за додатокот ExtensionDistributor"
+	"extdist-branch-stable": "$1 (најнова стабилна верзија на МедијаВики)"
 }

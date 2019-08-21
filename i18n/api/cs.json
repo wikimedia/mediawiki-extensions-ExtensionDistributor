@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "Vrátí seznam úložišť podporovaných rozšířením ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Vypsat seznam úložišť"
+}

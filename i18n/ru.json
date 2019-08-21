@@ -43,13 +43,5 @@
 	"extdist-popular-skins": "Топ {{PLURAL:$1|$1 скачанная тема оформления|$1 скачанных тем оформления}}:",
 	"extdist-branch-alpha": "master (последняя разрабатываемая версия)",
 	"extdist-branch-candidate": "$1 (следующая стабильная версия-кандидат)",
-	"extdist-branch-stable": "$1 (последняя стабильная MediaWiki)",
-	"apihelp-query+extdistrepos-description": "Возвращает список репозиториев, поддерживаемых ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Возвращает список репозиториев, поддерживаемых ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Список репозиториев",
-	"apihelp-query+extdistbranches-description": "Возвращает список веток для репозитория, поддерживаемого ExtensionDistributor",
-	"apihelp-query+extdistbranches-summary": "Возвращает список веток для репозитория, поддерживаемого ExtensionDistributor",
-	"apihelp-query+extdistbranches-param-skins": "Темы оформления для получения веток",
-	"apihelp-query+extdistbranches-param-exts": "Расширения для получения веток",
-	"apihelp-query+extdistbranches-example-1": "Получить ветки для расширения ExtensionDistributor"
+	"extdist-branch-stable": "$1 (последняя стабильная MediaWiki)"
 }

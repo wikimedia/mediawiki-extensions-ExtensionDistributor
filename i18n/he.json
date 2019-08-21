@@ -36,13 +36,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|העיצוב שמוּרד|$1 העיצובים שמוּרדים}} הכי הרבה:",
 	"extdist-branch-alpha": "master (גרסת הפיתוח האחרונה)",
 	"extdist-branch-candidate": "$1 (המועמד היציב הבא)",
-	"extdist-branch-stable": "$1 (מדיה־ויקי יציבה אחרונה)",
-	"apihelp-query+extdistrepos-description": "החזרת רשימת מאגרים שנתמכים במפיץ ההרחבות",
-	"apihelp-query+extdistrepos-summary": "החזרת רשימת מאגרים שנתמכים במפיץ ההרחבות",
-	"apihelp-query+extdistrepos-example-1": "רשימת מאגרים",
-	"apihelp-query+extdistbranches-description": "החזרת רשימת הענפים למאגרים שתומכים במפיץ ההרחבות",
-	"apihelp-query+extdistbranches-summary": "החזרת רשימת הענפים למאגרים שתומכים במפיץ ההרחבות",
-	"apihelp-query+extdistbranches-param-skins": "לאילו עיצובים לקבל ענפים",
-	"apihelp-query+extdistbranches-param-exts": "לאילו הרחבות לקבל ענפים",
-	"apihelp-query+extdistbranches-example-1": "לקבל ענפים עבור ההרחבה מפיץ ההרחבות"
+	"extdist-branch-stable": "$1 (מדיה־ויקי יציבה אחרונה)"
 }

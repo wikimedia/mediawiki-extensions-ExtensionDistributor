@@ -41,8 +41,5 @@
 	"extdist-popular-skins": "{{PLURAL:$1|Il tema più scaricato|Primi $1 temi più scaricati}}:",
 	"extdist-branch-alpha": "master (ultima versione in sviluppo)",
 	"extdist-branch-candidate": "$1 (prossima candidata stabile)",
-	"extdist-branch-stable": "$1 (ultima versione stabile)",
-	"apihelp-query+extdistrepos-description": "Restituisce l'elenco degli archivi supportati da ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Restituisce l'elenco degli archivi supportati da ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Elenco dei repository"
+	"extdist-branch-stable": "$1 (ultima versione stabile)"
 }

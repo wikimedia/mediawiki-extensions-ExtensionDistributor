@@ -38,13 +38,5 @@
 	"extdist-popular-skins": "Die {{PLURAL:$1|beliebteste heruntergeladene Benutzeroberfläche|$1 beliebtesten heruntergeladenen Benutzeroberflächen}}:",
 	"extdist-branch-alpha": "master (aktuellste Entwicklerversion)",
 	"extdist-branch-candidate": "$1 (Kandidat für die nächste stabile Version)",
-	"extdist-branch-stable": "$1 (aktuellste stabile MediaWiki-Version)",
-	"apihelp-query+extdistrepos-description": "Gibt eine Liste der Repositorien aus, die von der Erweiterung ExtensionDistributor unterstützt werden.",
-	"apihelp-query+extdistrepos-summary": "Gibt die Liste der Repositorien zurück, die vom ExtensionDistributor unterstützt werden.",
-	"apihelp-query+extdistrepos-example-1": "Repositorien auflisten",
-	"apihelp-query+extdistbranches-description": "Gibt die Liste der Versionszweige für ein Repositorium zurück, die durch den ExtensionDistributor unterstützt werden",
-	"apihelp-query+extdistbranches-summary": "Gibt die Liste der Versionszweige für ein Repositorium zurück, das vom ExtensionDistributor unterstützt wird.",
-	"apihelp-query+extdistbranches-param-skins": "Benutzeroberflächen, für die die Versionszweige abgerufen werden sollen",
-	"apihelp-query+extdistbranches-param-exts": "Erweiterungen, für die die Versionszweige abgerufen werden sollen",
-	"apihelp-query+extdistbranches-example-1": "Ruft Versionszweige für die Erweiterung „ExtensionDistributor“ ab"
+	"extdist-branch-stable": "$1 (aktuellste stabile MediaWiki-Version)"
 }

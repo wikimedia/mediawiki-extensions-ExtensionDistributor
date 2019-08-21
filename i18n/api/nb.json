@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"apihelp-query+extdistbranches-param-skins": "Drakter det skal hentes grener for",
+	"apihelp-query+extdistbranches-param-exts": "Utvidelser det skal hentes grener for",
+	"apihelp-query+extdistbranches-example-1": "Hent grener for utvidelsen ExtensionDistributor"
+}

@@ -37,9 +37,5 @@
 	"extdist-popular-skins": "Топ {{PLURAL:$1|$1 күсерелгән биҙәү темаһы|$1 күсерелгән биҙәү темалары}}:",
 	"extdist-branch-alpha": "һуңғы эшкәртелгән версия master",
 	"extdist-branch-candidate": "Һуңғы тотороҡло кандидат-версия $1",
-	"extdist-branch-stable": "$1 һуңғы тотороҡло MediaWiki",
-	"apihelp-query+extdistrepos-example-1": "Репозиториев исемлеге",
-	"apihelp-query+extdistbranches-param-skins": "Тармаҡ алыу өсөн биҙәү темаһы.",
-	"apihelp-query+extdistbranches-param-exts": "Тармаҡ алыу өсөн киңәйтеү.",
-	"apihelp-query+extdistbranches-example-1": "ExtensionDistributor киңәйтеү өсөн тармаҡ алыу"
+	"extdist-branch-stable": "$1 һуңғы тотороҡло MediaWiki"
 }

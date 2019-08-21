@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"F. Cosoleto"
+		]
+	},
+	"apihelp-query+extdistrepos-description": "Restituisce l'elenco degli archivi supportati da ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Restituisce l'elenco degli archivi supportati da ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Elenco dei repository"
+}
