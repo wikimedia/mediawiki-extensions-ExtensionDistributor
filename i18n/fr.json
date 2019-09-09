@@ -12,7 +12,8 @@
 			"Wyz",
 			"Ltrlg",
 			"Wladek92",
-			"Orlodrim"
+			"Orlodrim",
+			"Thibaut120094"
 		]
 	},
 	"extensiondistributor": "Télécharger l’extension MediaWiki",
@@ -22,9 +23,9 @@
 	"extdist-list-missing-extensions": "Impossible d’analyser la liste d’extensions!",
 	"extdist-list-missing-skins": "Impossible de récupérer la liste des habillages !",
 	"extdist-no-such-extensions": "Aucune extension « $1 »",
-	"extdist-no-such-skins": "Pas d’habillage « $1 ».",
+	"extdist-no-such-skins": "Pas d’habillage « $1 ».",
 	"extdist-no-such-version-extensions": "L’extension « $1 » n’existe pas dans la version « $2 ».",
-	"extdist-no-such-version-skins": "L’habillage « $1 » n’existe pas dans la version « $2 ».",
+	"extdist-no-such-version-skins": "L’habillage « $1 » n’existe pas dans la version « $2 ».",
 	"extdist-choose-extensions": "Sélectionnez l’extension que vous voulez télécharger :",
 	"extdist-choose-skins": "Sélectionner quel habillage vous voulez télécharger :",
 	"extdist-submit-extension": "Continuer",
