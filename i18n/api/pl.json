@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Railfail536",
-			"Woytecr"
+			"Woytecr",
+			"Rail"
 		]
 	},
 	"apihelp-query+extdistrepos-description": "Zwraca listę repozytoriów obsługiwanych przez ExtensionDistributor",
