@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Vlad5250"
 		]
 	},
 	"extensiondistributor": "Stiahnuť rozšírenie MediaWiki",
 	"extensiondistributor-desc": "Rozšírenie na distribúciu archívov rozšírení",
-	"extdist-not-configured": "Prosím, nastavte $wgExtDistList a $wgExtDistAPIConfig",
+	"extdist-not-configured": "Prosím, nastavte <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Rozšírenie „$1” neexistuje",
 	"extdist-no-such-version-extensions": "Rozšírenie „$1” neexistuje vo verzii „$2”",
 	"extdist-choose-extensions": "Vyberte, ktoré rozšírenie chcete stiahnuť:",
