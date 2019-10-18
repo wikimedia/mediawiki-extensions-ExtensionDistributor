@@ -4,10 +4,11 @@
 			"Joseph",
 			"Reedy",
 			"Violetanka",
-			"Sayginer"
+			"Sayginer",
+			"BaRaN6161 TURK"
 		]
 	},
-	"extensiondistributor": "MedyaViki eklentisini indir",
+	"extensiondistributor": "MediaWiki eklentisini indir",
 	"extensiondistributor-desc": "Eklentilerin anlık görüntü arşivlerini dağıtmak için eklenti",
 	"extdist-not-configured": "Lütfen  <code>$wgExtDistAPIConfig</code> ayarlayın",
 	"extdist-no-such-extensions": "\"$1\" adında bir eklenti yok",
