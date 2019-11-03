@@ -31,7 +31,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 
 	/**
 	 * @param string $url full URL to request
-	 * @return array
+	 * @return array[]
 	 */
 	private function makeGerritApiRequest( $url ) {
 		if ( $this->proxy ) {

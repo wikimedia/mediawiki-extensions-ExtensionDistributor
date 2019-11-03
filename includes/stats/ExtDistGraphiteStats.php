@@ -68,6 +68,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		}
 
 		$info = wfObjectToArray( FormatJson::decode( $req->getContent(), true ), true );
+		'@phan-var array[] $info';
 
 		$popularList = [];
 		foreach ( $info as $dataSet ) {

@@ -68,6 +68,7 @@ class GithubExtDistProvider extends ExtDistProvider {
 		}
 
 		$info = wfObjectToArray( FormatJson::decode( $req->getContent() ), true );
+		'@phan-var array[] $info';
 		$branches = [];
 		foreach ( $info as $branch ) {
 			$branches[$branch['name']] = $branch['commit']['sha1'];
