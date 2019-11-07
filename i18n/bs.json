@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"CERminator",
-			"Srdjan m"
+			"Srdjan m",
+			"Obsuser"
 		]
 	},
 	"extensiondistributor": "Učitaj MediaWiki proširenje",
@@ -16,6 +17,6 @@
 	"extdist-no-versions-extensions": "Odabrano proširenje ($1) nije dostupno u nijednoj verziji!",
 	"extdist-submit-version": "Nastavi",
 	"extdist-created-extensions": "Napravljen je snimak verzije <b>$2</b> proširenja <b>$1</b> za MediaWiki <b>$3</b>. Preuzimanje će početi za 5 sekundi.\n\nURL ovog snimka je:\n:$4\nMožete ga koristiti za preuzimanje proširenja na bilo kojem računaru, ali ga ne stavljajte u favorite jer mu se sadržaj neće ažurirati, a možda će kasnije biti obrisan.\n\nTrebali biste raspakirati sadržaj tar arhive u folder za proširenja Vaše instalacije MediaWikija. Naprimjer, na OS-u poput Unixa:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsu, možete koristiti [http://www.7-zip.org/ 7-zip] za raspakiranje datoteka.\n\nAko je Vaš wiki na udaljenom serveru, raspakirajte datoteke u privremeni folder na Vašem računaru, zatim postavite '''sve''' raspakirane datoteke u folder za proširenja na serveru.\n\nNakon što raspakirate datoteke, morat ćete registrirati proširenje u LocalSettings.php. Dokumentacija proširenja trebala bi imati detaljna objašnjenja kako se ovo radi.\n\nAko imate nekih pitanja oko ovog sistema distribucije proširenja, pogledajte [[Extension talk:ExtensionDistributor]].",
-	"extdist-want-more-extensions": "Nađi slijedeće proširenje",
+	"extdist-want-more-extensions": "Nađi sljedeće proširenje",
 	"extdist-tar-error": "Ne mogu dobiti URL arhive koristeći njen API."
 }
