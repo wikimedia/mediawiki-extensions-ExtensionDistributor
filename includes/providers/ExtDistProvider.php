@@ -76,7 +76,7 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 * Get the provider configured for the given type
 	 *
 	 * @param string $type
-	 * @return ExtDistProvider
+	 * @return ExtDistProvider|null
 	 */
 	public static function getProviderFor( $type ) {
 		global $wgExtDistAPIConfig;
