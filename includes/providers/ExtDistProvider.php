@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -161,8 +162,6 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 * @return array branch name => sha1
 	 */
 	public function getBranches( $name ) {
-		global $wgMemc;
-
 		// We'll probably call this function multiple
 		// times, so use instance cache
 		if ( isset( $this->branches[$name] ) ) {
@@ -175,12 +174,14 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 		sort( $branches );
 		$confHash = md5( serialize( $branches ) );
 
-		$key = "extdist-branches-{$this->repoType}-$name-$confHash";
-		$data = $wgMemc->get( $key );
-		if ( $data === false ) {
-			$data = $this->fetchBranches( $name );
-			$wgMemc->set( $key, $data, $this->getCacheDuration() );
-		}
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$data = $cache->getWithSetCallback(
+			$cache->makeGlobalKey( "extdist-branches", $this->repoType, $name, $confHash ),
+			$this->getCacheDuration(),
+			function () use ( $name ) {
+				return $this->fetchBranches( $name );
+			}
+		);
 
 		$enabled = [];
 		foreach ( $data as $branch => $sha ) {
@@ -232,15 +233,15 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 * @return array
 	 */
 	public function getRepositoryList() {
-		global $wgMemc;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
-		$key = "extdist-{$this->repoType}-list";
-		$extList = $wgMemc->get( $key );
-		if ( $extList === false ) {
-			$extList = $this->fetchRepositoryList();
-			$wgMemc->set( $key, $extList, 3600 );
-		}
-		return $extList;
+		return $cache->getWithSetCallback(
+			$cache->makeGlobalKey( "extdist-list", $this->repoType ),
+			$cache::TTL_HOUR,
+			function () {
+				return $this->fetchRepositoryList();
+			}
+		);
 	}
 
 	/**
