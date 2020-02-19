@@ -9,7 +9,7 @@
 	"extensiondistributor": "MediaWiki Erweiderung eroflueden",
 	"skindistributor": "MediaWiki-Interface eroflueden",
 	"extensiondistributor-desc": "Erweiderung fir d'Verdeele vu Schnappschoss-Archive vun Erweiderungen",
-	"extdist-not-configured": "Konfiguréiert w.e.g. <code>$wgExtDistAPIConfig</code>",
+	"extdist-not-configured": "Konfiguréiert wgl. <code>$wgExtDistAPIConfig</code>",
 	"extdist-list-missing-extensions": "Erweiderungslëscht konnt net generéiert ginn!",
 	"extdist-no-such-extensions": "Et gëtt keng Erweiderung \"$1\"",
 	"extdist-no-such-version-extensions": "D'Erweiderung \"$1\" gëtt et net an der Versioun \"$2\".",
