@@ -95,6 +95,9 @@
 			progress.$element.remove();
 			if ( !options.length ) {
 				// Eek, no branches found....
+				// The following messages are used here:
+				// * extdist-no-versions-extensions
+				// * extdist-no-versions-skins
 				$continue.text( mw.message(
 					'extdist-no-versions-' + distributorType,
 					selector.getValue()
@@ -108,6 +111,9 @@
 				name: 'extdistversion'
 			} );
 			// JS parser doesn't handle \n\n, see T100229
+			// The following messages are used here:
+			// * extdist-choose-version-extensions
+			// * extdist-choose-version-skins
 			$continue.html( mw.message(
 				'extdist-choose-version-' + distributorType,
 				selector.getValue()
