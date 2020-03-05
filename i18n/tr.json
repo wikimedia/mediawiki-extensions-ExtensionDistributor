@@ -21,7 +21,7 @@
 	"extdist-choose-extensions": "İndirmek istediğiniz eklentiyi seçin:",
 	"extdist-choose-skins": "Hangi kaplamayı indirmek istediğinizi seçin:",
 	"extdist-submit-extension": "Devam et",
-	"extdist-choose-version-extensions": "<b>$1</b> eklentisini indiriyosunuz.\n\nMedyaViki sürümünüzü seçin.\n\nPekçok eklenti MedyaVikinin birçok sürümünde çalışır, eğer MedyaViki sürümünüz burada yoksa, ya da en son eklenti özelliklerine ihtiyacınız varsa, güncel sürümü kullanmayı deneyin.",
+	"extdist-choose-version-extensions": "<b>$1</b> uzantısını indiriyorsunuz.\n\nMediaWiki sürümünüzü seçin.\n\nPek çok uzantı MediaWiki'nin birçok sürümünde çalışır, eğer MediaWiki sürümünüz burada yoksa, ya da en son uzantı özelliklerine ihtiyacınız varsa, güncel sürümü kullanmayı deneyin.",
 	"extdist-choose-version-skins": "<b>$1</b> arayüzünü indiriyorsunuz.\n\nMediaWiki sürümünüzü seçin.\n\nKaplamaların çoğu MediaWiki'nin birden çok sürümünde çalışır, bu nedenle MediaWiki sürümünüz burada değilse veya en son arayüz özelliklerine ihtiyacınız varsa mevcut sürümü kullanmayı deneyin.",
 	"extdist-no-versions-extensions": "Seçili eklenti ($1) hiçbir versiyonda mevcut değil!",
 	"extdist-no-versions-skins": "Seçilen kaplama ($1) hiçbir sürümde mevcut değil!",
