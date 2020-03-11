@@ -37,9 +37,7 @@
 		]
 	},
 	"Hooks": {
-		"APIQuerySiteInfoGeneralInfo": [
-			"ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
-		]
+		"APIQuerySiteInfoGeneralInfo": "ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
 	},
 	"SpecialPages": {
 		"ExtensionDistributor": "SpecialExtensionDistributor",
