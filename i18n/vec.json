@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Candalua",
+			"Fierodelveneto",
 			"Reedy"
 		]
 	},
@@ -11,10 +12,10 @@
 	"extdist-no-such-extensions": "L'estension \"$1\" no la esiste",
 	"extdist-no-such-version-extensions": "L'estension \"$1\" no la esiste in te la version \"$2\".",
 	"extdist-choose-extensions": "Siegli quala estension te voli descargar:",
-	"extdist-submit-extension": "Continua",
+	"extdist-submit-extension": "Sèvita",
 	"extdist-choose-version-extensions": "Te sì drio descargar l'estension <b>$1</b>.\n\nSelessiona la to version de MediaWiki.\n\nTante estension le va su più version de MediaWiki, quindi se la to version de MediaWiki no la xe qua o se te serve le ultime funsion de l'estension, próa a doparar la version corente.",
 	"extdist-no-versions-extensions": "L'estension che ti gà sielto ($1) no la xe disponibile in nissuna version!",
-	"extdist-submit-version": "Continua",
+	"extdist-submit-version": "Sèvita",
 	"extdist-created-extensions": "Na istantanea de la version <b>$2</b> de l'estension <b>$1</b> par MediaWiki <b>$3</b> la xe stà creà. El scaricamento el dovarìa partir da solo fra 5 secondi.\n\nL'URL par sta istantanea el xe:\n:$4\nEl pode vegner doparà par descargar de boto dal server, ma no stà zontarlo ai Preferiti parché el contenuto no'l vegnarà mia ajornà e el colegamento el podarìa in futuro èssar cavà.\n\nL'archivio tar el dovarìa vegner estrato in te la to cartèla de le estension. Par esenpio, su de un sistema operativo de tipo unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nSu Windows te podi doparar [http://www.7-zip.org/ 7-zip] par estrarre i file.\n\nSe la to wiki la se cata su de un server remoto, estrai i file in te na cartèla tenporanea sul to computer locale e in seguito carga '''tuti quanti''' i file estrati in te la cartèla de le estension sul server.\n\nDopo che ti gà estrato i file, te gavarè bisogno de registrar l'estension in LocalSettings.php. El manual de l'estension el dovarìa contegner le istrussion su come far.\n\nSe ti gà qualche domanda riguardo el sistema de distribussion de sta estension, varda [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Toli n'antra estension",
 	"extdist-tar-error": "El Tar el gà ritornà el seguente còdese de uscita $1:"
