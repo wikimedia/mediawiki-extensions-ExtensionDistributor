@@ -11,17 +11,33 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.26.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"config": {
-		"ExtDistAPIConfig": false,
-		"ExtDistListFile": false,
-		"ExtDistSnapshotRefs": [],
-		"ExtDistDefaultSnapshot": "master",
-		"ExtDistCandidateSnapshot": false,
-		"ExtDistGraphiteRenderApi": null,
-		"ExtDistPopularExtList": [],
-		"ExtDistPopularSkinList": []
+		"ExtDistAPIConfig": {
+			"value": false
+		},
+		"ExtDistListFile": {
+			"value": false
+		},
+		"ExtDistSnapshotRefs": {
+			"value": []
+		},
+		"ExtDistDefaultSnapshot": {
+			"value": "master"
+		},
+		"ExtDistCandidateSnapshot": {
+			"value": false
+		},
+		"ExtDistGraphiteRenderApi": {
+			"value": null
+		},
+		"ExtDistPopularExtList": {
+			"value": []
+		},
+		"ExtDistPopularSkinList": {
+			"value": []
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
@@ -82,5 +98,5 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "ExtensionDistributor/resources"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
