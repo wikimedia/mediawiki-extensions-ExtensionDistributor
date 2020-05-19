@@ -19,8 +19,8 @@ use Psr\Log\NullLogger;
  */
 abstract class ExtDistProvider implements LoggerAwareInterface {
 
-	const EXTENSIONS = 'extensions';
-	const SKINS = 'skins';
+	public const EXTENSIONS = 'extensions';
+	public const SKINS = 'skins';
 
 	/**
 	 * @var string|bool Proxy url, false if no proxy
