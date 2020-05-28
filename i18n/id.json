@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bennylin",
+			"Diki Ananta",
 			"Farras",
 			"Irwangatot",
 			"IvanLanin",
@@ -10,7 +11,7 @@
 	},
 	"extensiondistributor": "Unduh pengaya MediaWiki",
 	"extensiondistributor-desc": "Ekstensi untuk mendistribusikan arsip snapshot ekstensi",
-	"extdist-not-configured": "Silakan mengkonfigurasi $wgExtDistList dan $wgExtDistAPIConfig",
+	"extdist-not-configured": "Silakan mengkonfigurasi <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Tidak ada ekstensi \"$1\"",
 	"extdist-no-such-version-extensions": "\n\nEkstensi \"$1\" tidak ada dalam versi \"$2\".",
 	"extdist-choose-extensions": "\n\nPilih ekstensi yang ingin Anda unduh:",

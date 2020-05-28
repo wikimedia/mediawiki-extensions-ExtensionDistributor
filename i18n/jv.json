@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"NoiX180"
 		]
 	},
-	"extensiondistributor": "Undhuh èkstènsi MediaWiki",
+	"extensiondistributor": "Undhuh èkstènsi MédiaWiki",
 	"extensiondistributor-desc": "Èkstènsi kanggo ndistribusikaké arsip snapshot èkstènsi",
 	"extdist-not-configured": "Mangga konfigurasi <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Ora ana èkstènsi \"$1\"",
