@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 
@@ -58,7 +59,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			'userAgent' => "$wgServerName - ExtensionDistributor  - Mediawiki Extension",
 		];
 		$url = $wgExtDistGraphiteRenderApi . '/?' . http_build_query( $requestParams );
-		$req = MWHttpRequest::factory( $url, $httpOptions );
+		$req = MediaWikiServices::getInstance()->getHttpRequestFactory()
+			->create( $url, $httpOptions, __METHOD__ );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
 			$this->logger->error( "Could not fetch popularList of $type from graphite, " .

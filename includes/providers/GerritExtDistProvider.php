@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * ExtensionDistributor provider for the Gerrit Code Review system
  * Requires an external service to provide tarballs
@@ -34,12 +36,13 @@ class GerritExtDistProvider extends ExtDistProvider {
 	 * @return array[]
 	 */
 	private function makeGerritApiRequest( $url ) {
+		$options = [];
 		if ( $this->proxy ) {
-			$options = [ 'proxy' => $this->proxy ];
-		} else {
-			$options = null; // Default
+			$options['proxy'] = $this->proxy;
 		}
-		$req = MWHttpRequest::factory( $url, $options );
+
+		$req = MediaWikiServices::getInstance()->getHttpRequestFactory()
+			->create( $url, $options, __METHOD__ );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
 			$errorText = Status::wrap( $status )->getWikiText( false, false, 'en' );

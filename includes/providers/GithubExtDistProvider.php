@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * ExtensionDistributor provider for Github.com
  *
@@ -45,10 +47,9 @@ class GithubExtDistProvider extends ExtDistProvider {
 	}
 
 	protected function fetchBranches( $name ) {
+		$options = [];
 		if ( $this->proxy ) {
-			$options = [ 'proxy' => $this->proxy ];
-		} else {
-			$options = null; // Default
+			$options['proxy'] = $this->proxy;
 		}
 
 		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
@@ -57,7 +58,8 @@ class GithubExtDistProvider extends ExtDistProvider {
 			$url = wfAppendQuery( $url, [ 'access_token' => $this->oAuthToken ] );
 		}
 
-		$req = MWHttpRequest::factory( $url, $options );
+		$req = MediaWikiServices::getInstance()->getHttpRequestFactory()
+			->create( $url, $options, __METHOD__ );
 		$status = $req->execute();
 		if ( !$status->isOK() ) {
 			$errorText = Status::wrap( $status )->getWikiText( false, false, 'en' );
