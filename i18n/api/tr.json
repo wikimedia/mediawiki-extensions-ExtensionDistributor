@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"apihelp-query+extdistrepos-description": "ExtensionDistributor tarafından desteklenen depoların listesini döndürür",
 	"apihelp-query+extdistrepos-summary": "ExtensionDistributor tarafından desteklenen depoların listesini döndürür",
-	"apihelp-query+extdistrepos-example-1": "Depoları listele",
+	"apihelp-query+extdistrepos-example-1": "Depoları listeleyin",
 	"apihelp-query+extdistbranches-description": "ExtensionDistributor tarafından desteklenen deponun dallarının listesini döndürür",
 	"apihelp-query+extdistbranches-summary": "ExtensionDistributor tarafından desteklenen deponun dallarının listesini döndürür",
 	"apihelp-query+extdistbranches-param-skins": "Dalları almak için görünümler",
