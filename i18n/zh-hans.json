@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Great Brightstar",
 			"Hudafu",
 			"Hydra",
 			"Hzy980512",
@@ -40,6 +41,6 @@
 	"extdist-popular-extensions": "前{{PLURAL:$1|$1位下载扩展}}：",
 	"extdist-popular-skins": "前{{PLURAL:$1|$1位下载皮肤}}：",
 	"extdist-branch-alpha": "原始版（最新开发版本）",
-	"extdist-branch-candidate": "$1（下次稳定版本候选）",
+	"extdist-branch-candidate": "$1（下一个候选稳定版本）",
 	"extdist-branch-stable": "$1（最新稳定MediaWiki版本）"
 }
