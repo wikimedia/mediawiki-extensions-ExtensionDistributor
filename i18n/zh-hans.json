@@ -22,7 +22,7 @@
 	"extdist-no-such-skins": "没有这个皮肤“$1”。",
 	"extdist-no-such-version-extensions": "扩展程序“$1”不存在于版本“$2”中。",
 	"extdist-no-such-version-skins": "皮肤“$1”不存在于版本“$2”中。",
-	"extdist-choose-extensions": "选择您想要下载的扩展：",
+	"extdist-choose-extensions": "选择您想要下载的扩展程序：",
 	"extdist-choose-skins": "选择您想要下载的皮肤：",
 	"extdist-submit-extension": "继续",
 	"extdist-choose-version-extensions": "您将要下载<b>$1</b>扩展。\n\n请选择您的MediaWiki版本。\n\n多数的扩展都可以在多个 MediaWiki 版本上运行，如果您的 MediaWiki 版本不存在，又或者您需要最新的扩展功能的话，可尝试用最新的版本。",
