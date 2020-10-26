@@ -38,8 +38,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			return false;
 		}
 
-		$cacheKey = $this->getCacheKey( $type );
 		$cache = wfGetCache( CACHE_ANYTHING );
+		$cacheKey = $this->getCacheKey( $cache, $type );
 
 		$cachedValue = $cache->get( $cacheKey );
 		if ( $cachedValue ) {
@@ -93,12 +93,12 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 	}
 
 	/**
+	 * @param BagOStuff $cache
 	 * @param string $type
-	 *
 	 * @return string
 	 */
-	private function getCacheKey( $type ) {
-		return wfMemcKey( 'extdist', 'GraphiteStats', $type, 'PopularList' );
+	private function getCacheKey( BagOStuff $cache, $type ) {
+		return $cache->makeKey( 'extdist', 'GraphiteStats', $type, 'PopularList' );
 	}
 
 	public function clearCache() {
@@ -108,7 +108,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			ExtDistProvider::SKINS
 		];
 		foreach ( $typesToClear as $type ) {
-			$success = $cache->delete( $this->getCacheKey( $type ) );
+			$success = $cache->delete( $this->getCacheKey( $cache, $type ) );
 			if ( !$success ) {
 				$this->logger->error( "Failed to clear PopularList cache for $type" );
 			}
