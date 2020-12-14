@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mguix",
 			"Paucabot",
 			"Solde"
 		]
 	},
 	"extensiondistributor": "Descarrega una extensió de Mediawiki",
 	"extensiondistributor-desc": "Extensió per distribuir arxius actualitzats de les extensions",
-	"extdist-not-configured": "Per favor, configurau $wgExtDistList i $wgExtDistAPIConfig",
+	"extdist-not-configured": "Configureu <code>$wgExtDistaPIConfig</code>.",
 	"extdist-no-such-extensions": "No existeix l'extensió \"$1\"",
 	"extdist-no-such-version-extensions": "L'extensió \"$1\" no existeix en la versió \"$2\"",
 	"extdist-choose-extensions": "Seleccionau quina extensió voleu descarregar:",
@@ -16,5 +17,5 @@
 	"extdist-no-versions-extensions": "L'extensió seleccionada ($1) no està disponible en cap versió.",
 	"extdist-submit-version": "Continua",
 	"extdist-want-more-extensions": "Descarrega una altra extensió",
-	"extdist-tar-error": "L'ordre tar ha retornat un codi de sortida $1:"
+	"extdist-tar-error": "No s'ha pogut obtenir l'URL de l'arxiu de l'API d'arxiu."
 }
