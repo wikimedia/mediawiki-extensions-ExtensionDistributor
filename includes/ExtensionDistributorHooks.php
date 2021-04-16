@@ -7,10 +7,10 @@ class ExtensionDistributorHooks {
 	 * @param array &$data
 	 */
 	public static function onAPIQuerySiteInfoGeneralInfo( ApiQuerySiteinfo $api, array &$data ) {
-		global $wgExtDistSnapshotRefs, $wgExtDistListFile;
+		$config = $api->getConfig();
 		$data['extensiondistributor'] = [
-			'snapshots' => $wgExtDistSnapshotRefs,
-			'list' => $wgExtDistListFile ?: ''
+			'snapshots' => $config->get( 'ExtDistSnapshotRefs' ),
+			'list' => $config->get( 'ExtDistListFile' ) ?: ''
 		];
 		$api->getResult()->setIndexedTagName(
 			$data['extensiondistributor']['snapshots'],
