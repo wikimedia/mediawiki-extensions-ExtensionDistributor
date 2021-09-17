@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"Krinkle",
 			"Mainframe98",
 			"McDutchie",
 			"Mihxil",
@@ -12,9 +13,9 @@
 			"Sjoerddebruin"
 		]
 	},
-	"extensiondistributor": "MediaWiki-uitbreiding downloaden",
+	"extensiondistributor": "MediaWiki-extensie downloaden",
 	"skindistributor": "MediaWiki-vormgeving downloaden",
-	"extensiondistributor-desc": "Uitbreiding voor het distribueren van uitbreidingen",
+	"extensiondistributor-desc": "Extensie voor het distribueren van extensies",
 	"extdist-not-configured": "Maak de instellingen voor <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Het was niet mogelijk om de lijst met uitbreidingen op te halen.",
 	"extdist-list-missing-skins": "Het was niet mogelijk om de lijst met vormgevingen op te halen.",
@@ -22,7 +23,7 @@
 	"extdist-no-such-skins": "Geen vormgeving \"$1\".",
 	"extdist-no-such-version-extensions": "De uitbreiding \"$1\" bestaat niet in de versie \"$2\".",
 	"extdist-no-such-version-skins": "De vormgeving \"$1\" bestaat niet in de versie \"$2\".",
-	"extdist-choose-extensions": "Selecteer de uitbreiding die u wilt downloaden:",
+	"extdist-choose-extensions": "Selecteer de extensie die u wilt downloaden:",
 	"extdist-choose-skins": "Selecteer de vormgeving die u wilt downloaden:",
 	"extdist-submit-extension": "Doorgaan",
 	"extdist-choose-version-extensions": "U bent de uitbreiding <b>$1</b> aan het downloaden.\n\nSelecteer uw versie van MediaWiki.\n\nDe meeste uitbreidingen werken met meerdere versies van MediaWiki, dus als uw versie niet in de lijst staat, of als u behoefte hebt aan de nieuwste mogelijkheden van de uitbreidingen, gebruik dan de huidige versie.",
