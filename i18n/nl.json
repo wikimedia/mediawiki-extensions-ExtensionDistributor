@@ -41,7 +41,7 @@
 	"extdist-no-branches": "Het was niet mogelijk om gegevens op te halen over branches.",
 	"extdist-popular-extensions": "Top $1 meest gedownloade {{PLURAL:$1|uitbreiding|uitbreidingen}}:",
 	"extdist-popular-skins": "Top $1 meest gedownloade {{PLURAL:$1|vormgeving|vormgevingen}}:",
-	"extdist-branch-alpha": "master (nieuwste ontwikkeling versie)",
+	"extdist-branch-alpha": "master (nieuwste ontwikkelingsversie)",
 	"extdist-branch-candidate": "$1 (volgende stabiele kandidaat)",
 	"extdist-branch-stable": "$1 (laatste stabiele MediaWiki)"
 }
