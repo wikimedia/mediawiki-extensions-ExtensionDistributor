@@ -38,7 +38,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			return false;
 		}
 
-		$cache = wfGetCache( CACHE_ANYTHING );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$cacheKey = $this->getCacheKey( $cache, $type );
 
 		$cachedValue = $cache->get( $cacheKey );
@@ -102,7 +102,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 	}
 
 	public function clearCache() {
-		$cache = wfGetCache( CACHE_ANYTHING );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$typesToClear = [
 			ExtDistProvider::EXTENSIONS,
 			ExtDistProvider::SKINS
