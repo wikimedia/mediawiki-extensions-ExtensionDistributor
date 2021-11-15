@@ -44,7 +44,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		$cachedValue = $cache->get( $cacheKey );
 		if ( $cachedValue ) {
 			$this->logger->debug( "Retrieved PopularList of $type from cache" );
-			return $cachedValue;
+			// @phan-suppress-next-line PhanCoalescingNeverNull $cachedValue can be null
+			return $cachedValue ?? false;
 		}
 
 		$metric = "$wgStatsdMetricPrefix.extdist.$type.*.*.sum";
@@ -56,7 +57,7 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		];
 
 		$httpOptions = [
-			'userAgent' => "$wgServerName - ExtensionDistributor  - Mediawiki Extension",
+			'userAgent' => "$wgServerName - ExtensionDistributor  - MediaWiki Extension",
 		];
 		$url = $wgExtDistGraphiteRenderApi . '/?' . http_build_query( $requestParams );
 		$req = MediaWikiServices::getInstance()->getHttpRequestFactory()
@@ -66,6 +67,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			$this->logger->error( "Could not fetch popularList of $type from graphite, " .
 				"received: {$status}"
 			);
+			// Store a negative cache entry so we don't hammer graphite
+			$cache->set( $cacheKey, null, 60 * 60 );
 			return false;
 		}
 
@@ -78,6 +81,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 		}
 		if ( !$popularList ) {
 			$this->logger->error( "Graphite result resulted in empty PopularList of $type" );
+			// Store a negative cache entry so we don't hammer graphite
+			$cache->set( $cacheKey, null, 60 * 60 );
 			return false;
 		}
 
