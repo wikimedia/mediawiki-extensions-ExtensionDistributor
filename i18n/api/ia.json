@@ -5,8 +5,10 @@
 		]
 	},
 	"apihelp-query+extdistrepos-description": "Retorna le lista de repositorios supportate per ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Retorna le lista de repositorios supportate per ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Listar repositorios",
 	"apihelp-query+extdistbranches-description": "Retorna le lista de ramos de un repositorio supportate per ExtensionDistributor",
+	"apihelp-query+extdistbranches-summary": "Retorna le lista de ramos de un repositorio supportate per ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Apparentias pro le quales obtener ramos",
 	"apihelp-query+extdistbranches-param-exts": "Extensiones pro le quales obtener ramos",
 	"apihelp-query+extdistbranches-example-1": "Obtener ramos pro le extension ExtensionDistributor"

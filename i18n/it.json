@@ -8,7 +8,8 @@
 			"FRacco",
 			"McDutchie",
 			"Melos",
-			"Nemo bis"
+			"Nemo bis",
+			"Ajeje Brazorf"
 		]
 	},
 	"extensiondistributor": "Scarica estensione MediaWiki",
@@ -32,7 +33,7 @@
 	"extdist-created-extensions": "Un'istantanea della versione <b>$2</b> dell'estensione <b>$1</b> per MediaWiki <b>$3</b> è stata creata. Il tuo download dovrebbe partire automaticamente fra 5 secondi.\n\nL'URL per questa istantanea è:\n:$4\nPuoi usare questo collegamento per scaricare il tema su qualsiasi computer, ma non aggiungerlo ai preferiti poiché il suo contenuto non sarà aggiornato e il collegamento potrebbe essere rimosso successivamente.\n\nDovresti estrarre il contenuto dell'archivio tar nella directory dei temi della tua installazione MediaWiki. Per esempio, su un sistema operativo di tipo Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nSu Windows puoi usare [http://www.7-zip.org/ 7-zip] per estrarre i file.\n\nSe la tua wiki si trova su un server remoto, estrai i file in una cartella temporanea sul tuo computer locale e in seguito carica '''tutti''' i file estratti nella directory delle estensioni sul server.\n\nDopo che hai estratto i file, avrai bisogno di registrare l'estensione in LocalSettings.php. Il manuale dell'estensione dovrebbe contenere le istruzioni su come farlo.\n\nSe hai qualche domanda riguardo al sistema di distribuzione di questa estensione vedi [[Extension talk:ExtensionDistributor]].",
 	"extdist-created-skins": "Un'istantanea della versione <b>$2</b> del tema <b>$1</b> per MediaWiki <b>$3</b> è stata creata. Il tuo download dovrebbe partire automaticamente fra 5 secondi.\n\nL'URL per questa istantanea è:\n:$4\nPuoi usare questo collegamento per scaricare il tema su qualsiasi computer, ma non aggiungerlo ai preferiti poiché il suo contenuto non sarà aggiornato e il collegamento potrebbe essere rimosso successivamente.\n\nDovresti estrarre il contenuto dell'archivio tar nella directory dei temi della tua installazione MediaWiki. Per esempio, su un sistema operativo di tipo Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\nSu Windows puoi usare [http://www.7-zip.org/ 7-zip] per estrarre i file.\n\nSe la tua wiki si trova su un server remoto, estrai i file in una cartella temporanea sul tuo computer locale e in seguito carica '''tutti''' i file estratti nella directory dei temi sul server.\n\nDopo che hai estratto i file, avrai bisogno di registrare il tema in LocalSettings.php. Il manuale del tema dovrebbe contenere le istruzioni su come farlo.\n\nSe hai qualche domanda riguardo al sistema di distribuzione di questo tema vedi [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Scarica un'altra estensione",
-	"extdist-want-more-skins": "Ottieni un'altro tema",
+	"extdist-want-more-skins": "Ottieni un altro tema",
 	"extdist-goto-extensions-page": "Ritorna alla pagina dell'estensione '''$1'''.",
 	"extdist-goto-skins-page": "Ritorna alla pagina del tema '''$1'''.",
 	"extdist-tar-error": "Impossibile recuperare l'URL dell'archivio dall'archivio API.",
