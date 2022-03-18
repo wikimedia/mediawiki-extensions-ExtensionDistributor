@@ -1,5 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Api;
+
+use ApiBase;
+use ApiQuery;
+use ApiQueryBase;
+use ApiResult;
+use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Logger\LoggerFactory;
 
 /**

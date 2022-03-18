@@ -1,5 +1,9 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Specials;
+
+use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
+
 /**
  * Special page that allows users to download skins as tar archives.
  *
@@ -14,13 +18,11 @@ class SpecialSkinDistributor extends SpecialBaseDistributor {
 	}
 
 	protected function getPopularList() {
-		global $wgExtDistPopularSkinList;
-
 		$list = parent::getPopularList();
 		if ( $list ) {
 			return $list;
 		}
 
-		return $wgExtDistPopularSkinList ?: false;
+		return $this->getConfig()->get( 'ExtDistPopularSkinList' ) ?: false;
 	}
 }

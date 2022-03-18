@@ -1,5 +1,8 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Providers;
+
+use Http;
 use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;

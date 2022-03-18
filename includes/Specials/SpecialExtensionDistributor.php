@@ -1,5 +1,9 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Specials;
+
+use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
+
 /**
  * Special page that allows users to download extensions as tar archives.
  *
@@ -14,13 +18,11 @@ class SpecialExtensionDistributor extends SpecialBaseDistributor {
 	}
 
 	protected function getPopularList() {
-		global $wgExtDistPopularExtList;
-
 		$list = parent::getPopularList();
 		if ( $list ) {
 			return $list;
 		}
 
-		return $wgExtDistPopularExtList ?: false;
+		return $this->getConfig()->get( 'ExtDistPopularExtList' ) ?: false;
 	}
 }

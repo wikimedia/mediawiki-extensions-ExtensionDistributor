@@ -43,8 +43,8 @@
 		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
 	},
 	"APIListModules": {
-		"extdistrepos": "ApiListExtDistRepos",
-		"extdistbranches": "ApiListExtDistBranches"
+		"extdistrepos": "MediaWiki\\Extension\\ExtensionDistributor\\Api\\ApiListExtDistRepos",
+		"extdistbranches": "MediaWiki\\Extension\\ExtensionDistributor\\Api\\ApiListExtDistBranches"
 	},
 	"MessagesDirs": {
 		"ExtensionDistributor": [
@@ -53,23 +53,18 @@
 		]
 	},
 	"Hooks": {
-		"APIQuerySiteInfoGeneralInfo": "ExtensionDistributorHooks::onAPIQuerySiteInfoGeneralInfo"
+		"APIQuerySiteInfoGeneralInfo": "MediaWiki\\Extension\\ExtensionDistributor\\Hooks::onAPIQuerySiteInfoGeneralInfo"
 	},
 	"SpecialPages": {
-		"ExtensionDistributor": "SpecialExtensionDistributor",
-		"SkinDistributor": "SpecialSkinDistributor"
+		"ExtensionDistributor": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialExtensionDistributor",
+		"SkinDistributor": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialSkinDistributor"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ExtensionDistributor\\": "includes/"
 	},
 	"AutoloadClasses": {
-		"ExtensionDistributorHooks": "includes/ExtensionDistributorHooks.php",
-		"SpecialBaseDistributor": "includes/specials/SpecialBaseDistributor.php",
-		"SpecialExtensionDistributor": "includes/specials/SpecialExtensionDistributor.php",
-		"SpecialSkinDistributor": "includes/specials/SpecialSkinDistributor.php",
-		"ExtDistProvider": "includes/providers/ExtDistProvider.php",
-		"GerritExtDistProvider": "includes/providers/GerritExtDistProvider.php",
-		"GithubExtDistProvider": "includes/providers/GithubExtDistProvider.php",
-		"ApiListExtDistRepos": "includes/api/ApiListExtDistRepos.php",
-		"ApiListExtDistBranches": "includes/api/ApiListExtDistBranches.php",
-		"ExtDistGraphiteStats": "includes/stats/ExtDistGraphiteStats.php"
+		"GerritExtDistProvider": "includes/Providers/GerritExtDistProvider.php",
+		"MediaWiki\\Extension\\ExtensionDistributor\\Providers\\GerritExtDistProvider": "includes/Providers/GerritExtDistProvider.php"
 	},
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
