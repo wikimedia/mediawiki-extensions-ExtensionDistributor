@@ -5,7 +5,7 @@
 		// infusing the DropdownInputWidgets makes
 		// them look prettier.
 		var selector = OO.ui.infuse( $( '.mw-extdist-selector' ) ),
-			distributorType, progress,
+			distributorType, progress, api = new mw.Api(),
 			$continue = $( '.mw-extdist-continue' );
 		if ( mw.config.get( 'wgCanonicalSpecialPageName' ) === 'ExtensionDistributor' ) {
 			distributorType = 'extensions';
@@ -138,6 +138,15 @@
 		}
 		selector.on( 'change', function () {
 			var params;
+
+			// Abort unfinished requests in case user
+			// makes new selection before previous
+			// request is done
+			if ( progress ) {
+				progress.$element.remove();
+			}
+			api.abort();
+
 			// Hide any things created for previous selections
 			$( '.mw-extdist-selector-version' ).remove();
 			$( '.mw-extdist-submit-button' ).remove();
@@ -164,7 +173,7 @@
 				params.edbskins = selector.getValue();
 			}
 
-			( new mw.Api() ).get( params ).done( processAPIResponse );
+			api.get( params ).done( processAPIResponse );
 		} );
 
 		$( '.mw-extdist-plinks' ).on( 'click', function ( e ) {
