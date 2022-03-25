@@ -1,6 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Stats;
+
+use BagOStuff;
+use FormatJson;
+use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\MediaWikiServices;
+use ObjectCache;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 

@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Logger\LoggerFactory;
 
 if ( getenv( 'MW_INSTALL_PATH' ) ) {

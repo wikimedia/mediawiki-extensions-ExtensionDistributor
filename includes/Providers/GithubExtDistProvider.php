@@ -1,6 +1,10 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Providers;
+
+use FormatJson;
 use MediaWiki\MediaWikiServices;
+use Status;
 
 /**
  * ExtensionDistributor provider for Github.com

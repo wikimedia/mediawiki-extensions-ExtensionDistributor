@@ -1,6 +1,10 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Providers;
+
+use FormatJson;
 use MediaWiki\MediaWikiServices;
+use Status;
 
 /**
  * ExtensionDistributor provider for the Gerrit Code Review system
@@ -108,3 +112,5 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return 60 * 30;
 	}
 }
+
+class_alias( GerritExtDistProvider::class, 'GerritExtDistProvider' );

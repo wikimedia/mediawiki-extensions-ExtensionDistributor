@@ -1,6 +1,19 @@
 <?php
 
+namespace MediaWiki\Extension\ExtensionDistributor\Specials;
+
+use Html;
+use HtmlArmor;
+use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
+use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Logger\LoggerFactory;
+use OOUI\ActionFieldLayout;
+use OOUI\ButtonInputWidget;
+use OOUI\DropdownInputWidget;
+use Psr\Log\LoggerInterface;
+use SpecialPage;
+use Title;
+use Xml;
 
 /**
  * Base class for special pages that allow users to download repository snapshots
@@ -15,7 +28,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	protected $type;
 
 	/**
-	 * @var Psr\Log\LoggerInterface
+	 * @var LoggerInterface
 	 */
 	protected $logger;
 
@@ -38,12 +51,10 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @param string $subpage
 	 */
 	public function execute( $subpage ) {
-		global $wgExtDistAPIConfig;
-
 		$this->setHeaders();
 		$this->logger = LoggerFactory::getInstance( 'ExtensionDistributor' );
 
-		if ( !$wgExtDistAPIConfig ) {
+		if ( !$this->getConfig()->get( 'ExtDistAPIConfig' ) ) {
 			$this->getOutput()->addWikiMsg( 'extdist-not-configured' );
 			return;
 		}
@@ -88,7 +99,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	}
 
 	protected function showExtensionSelector() {
-		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot, $wgExtDistCandidateSnapshot;
 		$repos = $this->getProvider()->getRepositoryList();
 
 		if ( !$repos ) {
@@ -113,23 +123,26 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		foreach ( $repos as $name ) {
 			$items[] = [ 'data' => $name ];
 		}
+
+		$config = $this->getConfig();
+
 		// Add JS infuse magic
 		$out->addModules( 'ext.extensiondistributor.special' );
 		$out->addModuleStyles( 'ext.extensiondistributor.special.styles' );
 		$out->addJsConfigVars( [
-			'wgExtDistSnapshotRefs' => $wgExtDistSnapshotRefs,
-			'wgExtDistDefaultSnapshot' => $wgExtDistDefaultSnapshot,
-			'wgExtDistCandidateSnapshot' => $wgExtDistCandidateSnapshot,
+			'wgExtDistSnapshotRefs' => $config->get( 'ExtDistSnapshotRefs' ),
+			'wgExtDistDefaultSnapshot' => $config->get( 'ExtDistDefaultSnapshot' ),
+			'wgExtDistCandidateSnapshot' => $config->get( 'ExtDistCandidateSnapshot' ),
 		] );
 		$out->addHTML(
-			new OOUI\DropdownInputWidget( [
+			new DropdownInputWidget( [
 				'classes' => [ 'mw-extdist-selector' ],
 				'infusable' => true,
 				'options' => $items,
 				'name' => 'extdistname',
 			] ) .
 			// only shown to no-JS users via CSS
-			new OOUI\ButtonInputWidget( [
+			new ButtonInputWidget( [
 				'classes' => [ 'mw-extdist-ext-submit' ],
 				'infusable' => true,
 				'label' => $this->msg( 'extdist-submit-extension' )->text(),
@@ -192,15 +205,14 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @return string formatted text
 	 */
 	protected function formatBranch( $branch ) {
-		global $wgExtDistDefaultSnapshot, $wgExtDistCandidateSnapshot;
-
 		$version = $this->formatVersion( $branch );
+		$config = $this->getConfig();
 		if ( $branch === 'master' ) {
 			// Special case
 			return $this->msg( 'extdist-branch-alpha' )->text();
-		} elseif ( $branch === $wgExtDistDefaultSnapshot ) {
+		} elseif ( $branch === $config->get( 'ExtDistDefaultSnapshot' ) ) {
 			return $this->msg( 'extdist-branch-stable' )->params( $version )->text();
-		} elseif ( $branch === $wgExtDistCandidateSnapshot ) {
+		} elseif ( $branch === $config->get( 'ExtDistCandidateSnapshot' ) ) {
 			return $this->msg( 'extdist-branch-candidate' )->params( $version )->text();
 		} else {
 			// Don't touch it
@@ -212,9 +224,8 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @param string $repoName
 	 */
 	protected function showVersionSelector( $repoName ) {
-		global $wgExtDistSnapshotRefs, $wgExtDistDefaultSnapshot;
-
-		if ( !$wgExtDistSnapshotRefs ) {
+		$config = $this->getConfig();
+		if ( !$config->get( 'ExtDistSnapshotRefs' ) ) {
 			// extdist-no-versions-extensions, extdist-no-versions-skins
 			$this->getOutput()->addWikiMsg( $this->msgKey( 'extdist-no-versions-$TYPE' ), $repoName );
 			$this->showExtensionSelector();
@@ -232,7 +243,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$options = [];
 		$selected = 0;
 
-		foreach ( $wgExtDistSnapshotRefs as $branchName ) {
+		foreach ( $config->get( 'ExtDistSnapshotRefs' ) as $branchName ) {
 			if ( $this->getProvider()->hasBranch( $repoName, $branchName ) ) {
 				$branchDesc = $this->formatBranch( $branchName );
 				$options[] = [ 'data' => $branchName, 'label' => $branchDesc ];
@@ -243,15 +254,15 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 			$out->addHTML( $html );
 			$out->enableOOUI();
 			$out->addHTML(
-				new OOUI\ActionFieldLayout(
-					new OOUI\DropdownInputWidget( [
+				new ActionFieldLayout(
+					new DropdownInputWidget( [
 						'id' => 'mw-extdist-selector-version',
 						'infusable' => true,
 						'options' => $options,
-						'value' => $wgExtDistDefaultSnapshot,
+						'value' => $config->get( 'ExtDistDefaultSnapshot' ),
 						'name' => 'extdistversion',
 					] ),
-					new OOUI\ButtonInputWidget( [
+					new ButtonInputWidget( [
 						'label' => $this->msg( 'extdist-submit-version' )->text(),
 						'type' => 'submit',
 						'flags' => [ 'primary', 'progressive' ],

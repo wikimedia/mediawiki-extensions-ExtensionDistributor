@@ -1,8 +1,10 @@
 <?php
 
+use MediaWiki\Extension\ExtensionDistributor\Specials\SpecialSkinDistributor;
+
 /**
- * @covers SpecialSkinDistributor
- * @covers SpecialBaseDistributor
+ * @covers \MediaWiki\Extension\ExtensionDistributor\Specials\SpecialSkinDistributor
+ * @covers \MediaWiki\Extension\ExtensionDistributor\Specials\SpecialBaseDistributor
  *
  * @group SpecialPage
  *

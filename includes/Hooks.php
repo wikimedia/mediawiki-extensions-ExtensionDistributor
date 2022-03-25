@@ -1,6 +1,10 @@
 <?php
 
-class ExtensionDistributorHooks {
+namespace MediaWiki\Extension\ExtensionDistributor;
+
+use ApiQuerySiteinfo;
+
+class Hooks {
 
 	/**
 	 * @param ApiQuerySiteinfo $api
