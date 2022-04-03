@@ -8,6 +8,7 @@ use ApiQueryBase;
 use ApiResult;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Logger\LoggerFactory;
+use Wikimedia\ParamValidator\ParamValidator;
 
 /**
  * @author Legoktm
@@ -94,14 +95,14 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		$skinsProvider = $this->getProvider( ExtDistProvider::SKINS );
 		return [
 			'exts' => [
-				ApiBase::PARAM_ISMULTI => true,
-				ApiBase::PARAM_TYPE => $extensionsProvider
+				ParamValidator::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_TYPE => $extensionsProvider
 					? $extensionsProvider->getRepositoryList()
 					: [],
 			],
 			'skins' => [
-				ApiBase::PARAM_ISMULTI => true,
-				ApiBase::PARAM_TYPE => $skinsProvider
+				ParamValidator::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_TYPE => $skinsProvider
 					? $skinsProvider->getRepositoryList()
 					: [],
 			]
