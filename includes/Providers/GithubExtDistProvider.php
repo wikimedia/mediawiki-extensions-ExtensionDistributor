@@ -16,8 +16,10 @@ use Status;
  *
  * Example configuration for the Wikimedia Github account:
  *
+ * use MediaWiki\Extension\ExtensionDistributor\Providers\GithubExtDistProvider;
+ *
  * $wgExtDistAPIConfig = [
- *  'class' => 'GithubExtDistProvider',
+ *  'class' => GithubExtDistProvider::class,
  *  'apiUrl' => 'https://api.github.com/repos/wikimedia/mediawiki-$TYPE-$EXT/branches',
  *  'tarballUrl' => 'https://codeload.github.com/wikimedia/mediawiki-$TYPE-$EXT/legacy.tar.gz/$REF',
  *  'tarballName' => 'wikimedia-mediawiki-$TYPE-$EXT-$SHA.tar.gz'

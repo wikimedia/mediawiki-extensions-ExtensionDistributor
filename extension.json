@@ -62,10 +62,6 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\ExtensionDistributor\\": "includes/"
 	},
-	"AutoloadClasses": {
-		"GerritExtDistProvider": "includes/Providers/GerritExtDistProvider.php",
-		"MediaWiki\\Extension\\ExtensionDistributor\\Providers\\GerritExtDistProvider": "includes/Providers/GerritExtDistProvider.php"
-	},
 	"ResourceModules": {
 		"ext.extensiondistributor.special.styles": {
 			"styles": "ext.extensiondistributor.special.less"

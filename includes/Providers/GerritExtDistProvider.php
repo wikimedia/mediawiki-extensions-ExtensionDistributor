@@ -14,8 +14,10 @@ use Status;
  *
  * Example configuration for Wikimedia sites:
  *
+ * use MediaWiki\Extension\ExtensionDistributor\Providers\GerritExtDistProvider;
+ *
  * $wgExtDistAPIConfig = [
- *  'class' => 'GerritExtDistProvider',
+ *  'class' => GerritExtDistProvider::class,
  *  'apiUrl' => 'https://gerrit.wikimedia.org/r/projects/mediawiki%2F$TYPE%2F$EXT/branches',
  *  'tarballUrl' => 'http://extdist.wmflabs.org/dist/$TYPE/$EXT-$REF-$SHA.tar.gz',
  *  'tarballName' => '$EXT-$REF-$SHA.tar.gz',
@@ -112,5 +114,3 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return 60 * 30;
 	}
 }
-
-class_alias( GerritExtDistProvider::class, 'GerritExtDistProvider' );
