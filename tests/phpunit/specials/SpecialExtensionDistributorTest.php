@@ -13,7 +13,8 @@ use MediaWiki\Extension\ExtensionDistributor\Specials\SpecialExtensionDistributo
 class SpecialExtensionDistributorTest extends SpecialPageTestBase {
 
 	protected function newSpecialPage() {
-		return new SpecialExtensionDistributor();
+		$mockStatsDataFacotory = $this->createMock( IBufferingStatsdDataFactory::class );
+		return new SpecialExtensionDistributor( $mockStatsDataFacotory );
 	}
 
 	public function testSpecialPageDoesNotFatal() {

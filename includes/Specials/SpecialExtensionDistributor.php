@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
+use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 
 /**
@@ -13,8 +14,11 @@ class SpecialExtensionDistributor extends SpecialBaseDistributor {
 
 	protected $type = ExtDistProvider::EXTENSIONS;
 
-	public function __construct() {
-		parent::__construct( 'ExtensionDistributor' );
+	/**
+	 * @param IBufferingStatsdDataFactory $statsFactory
+	 */
+	public function __construct( IBufferingStatsdDataFactory $statsFactory ) {
+		parent::__construct( 'ExtensionDistributor', $statsFactory );
 	}
 
 	protected function getPopularList() {

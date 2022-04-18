@@ -56,8 +56,18 @@
 		"APIQuerySiteInfoGeneralInfo": "MediaWiki\\Extension\\ExtensionDistributor\\Hooks::onAPIQuerySiteInfoGeneralInfo"
 	},
 	"SpecialPages": {
-		"ExtensionDistributor": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialExtensionDistributor",
-		"SkinDistributor": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialSkinDistributor"
+		"ExtensionDistributor": {
+			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialExtensionDistributor",
+			"services": [
+				"StatsdDataFactory"
+			]
+		},
+		"SkinDistributor": {
+			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialSkinDistributor",
+			"services": [
+				"StatsdDataFactory"
+			]
+		}
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\ExtensionDistributor\\": "includes/"

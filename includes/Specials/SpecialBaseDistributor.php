@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
 use Html;
 use HtmlArmor;
+use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Logger\LoggerFactory;
@@ -36,6 +37,19 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @var ExtDistProvider
 	 */
 	protected $provider;
+
+	/** @var IBufferingStatsdDataFactory */
+	protected $statsFactory;
+
+	/**
+	 * @param string $pageName
+	 * @param IBufferingStatsdDataFactory $statsFactory
+	 */
+	public function __construct( $pageName, IBufferingStatsdDataFactory $statsFactory ) {
+		$this->statsFactory = $statsFactory;
+
+		parent::__construct( $pageName );
+	}
 
 	/**
 	 * Substitute $TYPE in a message key
@@ -345,13 +359,12 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @param string $version
 	 */
 	protected function doStats( $repo, $version ) {
-		$stats = $this->getContext()->getStats();
 		// Overall repo downloads
-		$stats->increment( "extdist.{$this->type}.$repo" );
+		$this->statsFactory->increment( "extdist.{$this->type}.$repo" );
 		// Repo split by version
-		$stats->increment( "extdist.{$this->type}.$repo.$version" );
+		$this->statsFactory->increment( "extdist.{$this->type}.$repo.$version" );
 		// MediaWiki core version adoption
-		$stats->increment( "extdist.$version" );
+		$this->statsFactory->increment( "extdist.$version" );
 	}
 
 	/**

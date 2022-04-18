@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
+use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 
 /**
@@ -13,8 +14,11 @@ class SpecialSkinDistributor extends SpecialBaseDistributor {
 
 	protected $type = ExtDistProvider::SKINS;
 
-	public function __construct() {
-		parent::__construct( 'SkinDistributor' );
+	/**
+	 * @param IBufferingStatsdDataFactory $statsFactory
+	 */
+	public function __construct( IBufferingStatsdDataFactory $statsFactory ) {
+		parent::__construct( 'SkinDistributor', $statsFactory );
 	}
 
 	protected function getPopularList() {
