@@ -3,7 +3,8 @@
 		"authors": [
 			"Max20091",
 			"Minh Nguyen",
-			"Vinhtantran"
+			"Vinhtantran",
+			"NguoiDungKhongDinhDanh"
 		]
 	},
 	"extensiondistributor": "Tải về phần mở rộng MediaWiki",
@@ -21,7 +22,7 @@
 	"extdist-submit-extension": "Tiếp tục",
 	"extdist-choose-version-extensions": "Bạn đang tải về phần mở rộng <b>$1</b>.\n\nChọn phiên bản MediaWiki của bạn.\n\nPhần lớn phần mở rộng có thể chạy được trên nhiều phiên bản MediaWiki, do đó nếu phiên bản MediaWiki của bạn không được liệt kê ở đây, hoặc nếu bạn cần sử dụng các tính năng mở rộng mới nhất, hãy thử sử dụng phiên bản hiện hành.",
 	"extdist-choose-version-skins": "Bạn đang tải về giao diện <b>$1</b>.\n\nChọn phiên bản MediaWiki của bạn.\n\nPhần lớn giao diện có thể chạy được trên nhiều phiên bản MediaWiki, do đó nếu phiên bản MediaWiki của bạn không được liệt kê ở đây, hoặc nếu bạn cần sử dụng các tính năng giao diện mới nhất, hãy thử sử dụng phiên bản hiện hành.",
-	"extdist-no-versions-extensions": "Phiên bản được chọn ($1) không có sẵn trong bất kỳ phiên bản nào!",
+	"extdist-no-versions-extensions": "Phần mở rộng đã chọn ($1) không có trong bất kỳ phiên bản nào!",
 	"extdist-no-versions-skins": "Giao diện được chọn ($1) không có sẵn trong bất kỳ phiên bản nào!",
 	"extdist-submit-version": "Tiếp tục",
 	"extdist-created-extensions": "Đã tạo ra bản lưu trữ phiên bản <b>$2</b> của phần mở rộng <b>$1</b> dành cho MediaWiki <b>$3</b>. Nó sẽ tự động bắt đầu tải về trong 5 giây nữa.\n\nĐịa chỉ URL của bản lưu trữ này là:\n:$4\nBạn có thể sử dụng liên kết này để tải phần mở rộng về máy tính nào, nhưng xin đừng đánh dấu trang (<i>bookmark</i>) nó, vì nội dung của nó có thể sẽ không được cập nhật, và nó có thể bị xóa sau vài ngày nữa.\n\nBạn nên bung nội dung của lưu trữ tar vào thư mục chứa phần mở rộng của bản MediaWiki trên máy tính của bạn. Ví dụ, trên hệ điều hành tương tự Unix:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nTrên Windows, bạn có thể sử dụng [http://www.7-zip.org/ 7-zip] để giải nén các tập tin.\n\nNếu wiki của bạn nằm ở máy chủ từ xa, hãy bung các tập tin đó vào một thư mục tạm trên máy tính hiện tại của bạn, rồi sau đó tải '''tất cả''' các tập tin đã giải nén lên thư mục chứa phần mở rộng trên máy chủ.\n\nSau khi đã giải nén tập tin, bạn sẽ cần phải đăng ký phần mở rộng trong LocalSettings.php. Tài liệu đi kèm với phần mở rộng sẽ có những hướng dẫn về cách thực hiện điều này.\n\nNếu bạn có thắc mắc nào về hệ thống phân phối phần mở rộng này, xin ghé vào [[Extension talk:ExtensionDistributor]].",
