@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Providers;
 
-use Http;
 use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
@@ -257,7 +256,9 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	protected function fetchRepositoryList() {
 		global $wgExtDistListFile;
 		$extList = [];
-		$res = Http::get( $wgExtDistListFile, [], __METHOD__ );
+
+		$httpFactory = MediaWikiServices::getInstance()->getHttpRequestFactory();
+		$res = $httpFactory->get( $wgExtDistListFile, [], __METHOD__ );
 		if ( $res ) {
 			$extList = array_filter( array_map( 'trim', explode( "\n", $res ) ) );
 		}
