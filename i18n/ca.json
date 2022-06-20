@@ -6,14 +6,14 @@
 			"Mguix"
 		]
 	},
-	"extensiondistributor": "Descarrega una extensió de Mediawiki",
+	"extensiondistributor": "Descarrega una extensió de MediaWiki",
 	"extensiondistributor-desc": "Extensió per distribuir arxius actualitzats de les extensions",
 	"extdist-not-configured": "Configureu <code>$wgExtDistaPIConfig</code>.",
 	"extdist-no-such-extensions": "No existeix l'extensió \"$1\"",
 	"extdist-no-such-version-extensions": "L'extensió \"$1\" no existeix en la versió \"$2\"",
 	"extdist-choose-extensions": "Seleccionau quina extensió voleu descarregar:",
 	"extdist-submit-extension": "Continua",
-	"extdist-choose-version-extensions": "Estau descarregant l'extensió <b>$1</b>.\n\nSeleccionau la vostra versió del Mediawiki.\n\nLa majoria d'extensions funcionen a les diferents versions de Mediawiki, així que si la vostra versió de Mediawiki no és aquí o si necessitau les darreres funcionalitats de l'extensió, provau d'usar la versió actual.",
+	"extdist-choose-version-extensions": "Estau descarregant l'extensió <b>$1</b>.\n\nSeleccionau la vostra versió del MediaWiki.\n\nLa majoria d'extensions funcionen a les diferents versions de MediaWiki, així que si la vostra versió de MediaWiki no és aquí o si necessitau les darreres funcionalitats de l'extensió, provau d'usar la versió actual.",
 	"extdist-no-versions-extensions": "L'extensió seleccionada ($1) no està disponible en cap versió.",
 	"extdist-submit-version": "Continua",
 	"extdist-want-more-extensions": "Descarrega una altra extensió",
