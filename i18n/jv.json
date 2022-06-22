@@ -6,7 +6,7 @@
 			"Sumbukompor"
 		]
 	},
-	"extensiondistributor": "Undhuh èkstènsi MédiaWiki",
+	"extensiondistributor": "Undhuh èkstènsi MediaWiki",
 	"extensiondistributor-desc": "Èkstènsi kanggo ndistribusikaké arsip snapshot èkstènsi",
 	"extdist-not-configured": "Mangga konfigurasi <code>$wgExtDistAPIConfig</code>.",
 	"extdist-no-such-extensions": "Ora ana èkstènsi \"$1\"",
