@@ -4,15 +4,16 @@
 			"Gomoko",
 			"Ltrlg",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"apihelp-query+extdistrepos-description": "Renvoie la liste des dépôts pris en charge par ExtensionDistributor",
-	"apihelp-query+extdistrepos-summary": "Retourne la liste des répertoires pris en charge par ExtensionDistributor",
-	"apihelp-query+extdistrepos-example-1": "Lister les référentiels",
-	"apihelp-query+extdistbranches-description": "Retourne la liste des branches prises en charge par ExtensionDistributor pour un dépôt",
-	"apihelp-query+extdistbranches-summary": "Retourne la liste des branches pour un dépôt pris en charge par ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Renvoie la liste des dépôts pris en charge par ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Lister les dépôts",
+	"apihelp-query+extdistbranches-description": "Renvoie la liste des branches pour un dépôt pris en charge par ExtensionDistributor",
+	"apihelp-query+extdistbranches-summary": "Renvoie la liste des branches pour un dépôt pris en charge par ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Habillages pour lequel récupérer les branches",
 	"apihelp-query+extdistbranches-param-exts": "Extensions pour lequel récupérer les branches",
-	"apihelp-query+extdistbranches-example-1": "Obtenir les branches l'extension ExtensionDistributor"
+	"apihelp-query+extdistbranches-example-1": "Obtenir les branches pour l’extension ExtensionDistributor"
 }
