@@ -29,6 +29,7 @@
 	"extdist-goto-extensions-page": "Nazad na stranicu dodatka '''$1'''.",
 	"extdist-goto-skins-page": "Nazad na stranicu teme '''$1'''.",
 	"extdist-tar-error": "Ne mogu dobiti URL arhive koristeći njen API.",
+	"extdist-no-branches": "Nije moguće dohvatiti informacije ni o jednoj podružnici.",
 	"extdist-popular-extensions": "{{PLURAL:$1|Najpreuzimaniji dodatak|Najpreuzimanijih $1 dodataka}}:",
 	"extdist-popular-skins": "{{PLURAL:$1|Najpreuzimaniji izgled (skin)|Najpreuzimanijih $1 izgleda (skinova)}}:",
 	"extdist-branch-alpha": "matična (najnovija razvojna verzija)",
