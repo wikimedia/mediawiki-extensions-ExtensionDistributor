@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"An13sa"
+			"An13sa",
+			"Xabier Armendaritz"
 		]
 	},
-	"extensiondistributor": "MediaWiki luzapena jaitsi",
+	"extensiondistributor": "Deskargatu  MediaWiki luzapena",
 	"extdist-submit-extension": "Jarraitu",
 	"extdist-submit-version": "Jarraitu",
 	"extdist-want-more-extensions": "Beste luzapen bat hartu"
