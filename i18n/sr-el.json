@@ -2,21 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Milicevic01",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Kizule"
 		]
 	},
 	"extensiondistributor": "Preuzmi Medijaviki ekstenziju",
 	"skindistributor": "Preuzmi Medijaviki temu",
-	"extdist-list-missing-extensions": "Nije moguće preuzeti spisak ekstenzija!",
+	"extdist-list-missing-extensions": "Nije moguće dobaviti listu proširenja!",
 	"extdist-no-such-extensions": "Nema takve ekstenzije „$1“",
 	"extdist-no-such-version-extensions": "Ekstenzija „$1“ ne postoji u verziji „$2“.",
 	"extdist-choose-extensions": "Izaberite ekstenziju koju želite preuzeti:",
 	"extdist-choose-skins": "Izaberite temu koju želite preuzeti:",
-	"extdist-submit-extension": "Produži",
+	"extdist-submit-extension": "Nastavi",
 	"extdist-choose-version-extensions": "Preuzimate ekstenziju <b>$1</b>.\n\nIzaberite vašu verziju Medijavikija.\n\nVećina ekstenzija će raditi na više (ili svim) verzijama Medijavikija, pa ako vaša verzija Medijavikija nije ovde, ili ako imate potrebu za najnovijim mogućnostima, pokušajte koristiti trenutnu verziju.",
 	"extdist-no-versions-extensions": "Izabrana ekstenzija ($1) nije dostupna ni u jednoj verziji!",
 	"extdist-no-versions-skins": "Izabrana tema ($1) nije dostupna ni u jednoj verziji!",
-	"extdist-submit-version": "Produži",
+	"extdist-submit-version": "Nastavi",
 	"extdist-want-more-extensions": "Preuzmi drugu ekstenziju",
-	"extdist-branch-stable": "$1 (najnovija stabilna verzija Medijavikija)"
+	"extdist-branch-stable": "$1 (najnovije stabilno izdanje Medijavikija)"
 }
