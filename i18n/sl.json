@@ -7,7 +7,7 @@
 		]
 	},
 	"extensiondistributor": "Prenesi razširitev MediaWiki",
-	"skindistributor": "Prenesi MediaWiki preobleko",
+	"skindistributor": "Prenesi preobleko MediaWiki",
 	"extensiondistributor-desc": "Razširitev, ki razdeljuje arhive posnetkov razširitev",
 	"extdist-not-configured": "Prosimo, nastavite <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Ne morem pridobiti seznama razširitev!",
