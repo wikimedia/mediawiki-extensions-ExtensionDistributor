@@ -18,6 +18,8 @@
 	"extdist-choose-extensions": "Pasirinkite kuri plėtinį, kurį norite atsisiųsti:",
 	"extdist-choose-skins": "Pasirinkite kurią išvaizdą norite parsisiųsti:",
 	"extdist-submit-extension": "Tęsti",
+	"extdist-choose-version-extensions": "Atsisiunčiate <b>$1</b> plėtinį.\n\nPasirinkite savo MediaWiki versiją.\n\nDauguma plėtinių veikia keliose MediaWiki versijose, taigi, jei jūsų MediaWiki versijos čia nėra arba jums reikia naujausių plėtinio funkcijų, pabandykite naudoti dabartinę versiją.",
+	"extdist-choose-version-skins": "Jūs atsisiunčiate <b>$1</b> temą.\n\nPasirinkite savo MediaWiki versiją.\n\nDauguma temų veikia keliose MediaWiki versijose, taigi, jei jūsų MediaWiki versijos čia nėra arba jums reikia naujausių temos funkcijų, pabandykite naudoti dabartinę versiją.",
 	"extdist-no-versions-extensions": "Pasirinktas plėtinys ($1) nėra prieinamas jokiai versijai!",
 	"extdist-no-versions-skins": "Pasirinkta išvaizda ($1) nėra prieinama jokiai versijai!",
 	"extdist-submit-version": "Tęsti",
@@ -26,6 +28,8 @@
 	"extdist-goto-extensions-page": "Grįžti į '''$1''' plėtinio puslapį.",
 	"extdist-goto-skins-page": "Grįžti į '''$1''' išvaizdos puslapį.",
 	"extdist-tar-error": "Negalima gauti archyvo URL iš archyvo API.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Populiariausias $1 atsisiųstas plėtinys|Populiariausi $1 atsisiųsti plėtiniai}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|Populiariausia $1 atsisiųsta tema|Populiariausios $1 atsisiųstos temos}}:",
 	"extdist-branch-candidate": "$1 (kitas stabilus kandidatas)",
 	"extdist-branch-stable": "$1 (paskutinė stabili „MediaWiki“)"
 }
