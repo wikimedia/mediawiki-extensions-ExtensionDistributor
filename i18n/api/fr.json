@@ -8,10 +8,8 @@
 			"Wladek92"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Renvoie la liste des dépôts pris en charge par ExtensionDistributor",
 	"apihelp-query+extdistrepos-summary": "Renvoie la liste des dépôts pris en charge par ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lister les dépôts",
-	"apihelp-query+extdistbranches-description": "Renvoie la liste des branches pour un dépôt pris en charge par ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "Renvoie la liste des branches pour un dépôt pris en charge par ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Habillages pour lequel récupérer les branches",
 	"apihelp-query+extdistbranches-param-exts": "Extensions pour lequel récupérer les branches",

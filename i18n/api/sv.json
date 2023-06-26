@@ -4,6 +4,5 @@
 			"Lokal Profil"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Returnerar listan över centralförvar som stöds av ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Lista centralförvar"
 }

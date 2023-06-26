@@ -4,10 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Vrne seznam shramb, ki jih podpira ExtensionDistributor",
 	"apihelp-query+extdistrepos-summary": "Vrne seznam shramb, ki jih podpira ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Navedi shrambe",
-	"apihelp-query+extdistbranches-description": "Vrne seznam vej za shrambo, ki jo podpira ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "Vrne seznam vej za shrambo, ki jo podpira ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Preobleke, za katere naj se pridobijo veje",
 	"apihelp-query+extdistbranches-param-exts": "Razširitve, za katere naj se pridobijo veje",

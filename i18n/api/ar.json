@@ -5,10 +5,8 @@
 			"ديفيد"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "يعرض قائمة المستودعات التي يدعمها ExtensionDistributor",
 	"apihelp-query+extdistrepos-summary": "يعرض قائمة المستودعات التي يدعمها ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "عرض المستودعات",
-	"apihelp-query+extdistbranches-description": "يعرض قائمة الفروع لمستودع يدعمه ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "يعرض قائمة الفروع لمستودع يدعمه ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "أشكال للحصول على فروعها",
 	"apihelp-query+extdistbranches-param-exts": "امتدادات للحصول على فروعها",

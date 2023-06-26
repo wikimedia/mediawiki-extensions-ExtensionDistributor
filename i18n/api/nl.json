@@ -5,10 +5,8 @@
 			"Mainframe98"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Geeft de lijst van repositories ondersteund door ExtensionDistributor weer",
 	"apihelp-query+extdistrepos-summary": "Geeft de lijst van repositories ondersteund door ExtensionDistributor weer",
 	"apihelp-query+extdistrepos-example-1": "Lijst van repositories",
-	"apihelp-query+extdistbranches-description": "Geeft de lijst van de branches voor een repository ondersteund door ExtensionDistributor weer",
 	"apihelp-query+extdistbranches-summary": "Geeft de lijst van de branches voor een repository ondersteund door ExtensionDistributor weer",
 	"apihelp-query+extdistbranches-param-skins": "Vormgeving om branches voor op te halen",
 	"apihelp-query+extdistbranches-param-exts": "Uitbreidingen om branches voor op te halen",

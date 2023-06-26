@@ -5,10 +5,8 @@
 			"Metalhead64"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Gibt eine Liste der Repositorien aus, die von der Erweiterung ExtensionDistributor unterstützt werden.",
 	"apihelp-query+extdistrepos-summary": "Gibt die Liste der Repositorien zurück, die vom ExtensionDistributor unterstützt werden.",
 	"apihelp-query+extdistrepos-example-1": "Repositorien auflisten",
-	"apihelp-query+extdistbranches-description": "Gibt die Liste der Versionszweige für ein Repositorium zurück, die durch den ExtensionDistributor unterstützt werden",
 	"apihelp-query+extdistbranches-summary": "Gibt die Liste der Versionszweige für ein Repositorium zurück, das vom ExtensionDistributor unterstützt wird.",
 	"apihelp-query+extdistbranches-param-skins": "Benutzeroberflächen, für die die Versionszweige abgerufen werden sollen",
 	"apihelp-query+extdistbranches-param-exts": "Erweiterungen, für die die Versionszweige abgerufen werden sollen",

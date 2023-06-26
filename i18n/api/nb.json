@@ -4,10 +4,8 @@
 			"Jon Harald Søby"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Returnerer listen over kodelagre som støttes av ExtensionDistributor",
 	"apihelp-query+extdistrepos-summary": "Returnerer listen over kodelagre som støttes av ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "List opp kodelagre",
-	"apihelp-query+extdistbranches-description": "Returnerer listen over grener for et kodelager som støttes av ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "Returnerer listen over grener for et kodelager som støttes av ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Drakter det skal hentes grener for",
 	"apihelp-query+extdistbranches-param-exts": "Utvidelser det skal hentes grener for",

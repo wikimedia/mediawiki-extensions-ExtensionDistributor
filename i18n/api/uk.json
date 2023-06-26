@@ -5,10 +5,8 @@
 			"Ата"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Видає список репозиторіїв, підтримуваних ExtensionDistributor",
 	"apihelp-query+extdistrepos-summary": "Видає список репозиторіїв, підтримуваних ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Список репозиторіїв",
-	"apihelp-query+extdistbranches-description": "Видає список гілок репозиторію, підтримуваного ExtensionDistributor",
 	"apihelp-query+extdistbranches-summary": "Видає список гілок репозиторію, підтримуваного ExtensionDistributor",
 	"apihelp-query+extdistbranches-param-skins": "Теми, для яких отримати гілки",
 	"apihelp-query+extdistbranches-param-exts": "Розширення, для яких отримати гілки",

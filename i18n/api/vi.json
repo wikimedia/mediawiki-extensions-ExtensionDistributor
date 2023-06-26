@@ -4,6 +4,5 @@
 			"Minh Nguyen"
 		]
 	},
-	"apihelp-query+extdistrepos-description": "Cho ra danh sách kho mã nguồn được hỗ trợ bởi ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Danh sách kho mã nguồn"
 }
