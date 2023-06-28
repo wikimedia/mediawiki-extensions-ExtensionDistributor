@@ -9,6 +9,7 @@
 		]
 	},
 	"extensiondistributor": "ดาวน์โหลดส่วนขยาย MediaWiki",
+	"skindistributor": "ดาวน์โหลดสกิน MediaWiki",
 	"extdist-no-such-extensions": "ไม่มีส่วนขยายนี้ \"$1\"",
 	"extdist-no-such-version-extensions": "ไม่มีส่วนขยาย \"$1\" อยู่ในรุ่น \"$2\"",
 	"extdist-submit-extension": "ดำเนินการต่อ",
