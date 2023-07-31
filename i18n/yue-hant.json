@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"extensiondistributor": "下載MediaWiki擴展",
+	"extensiondistributor-desc": "發佈擴展歸檔映像嘅擴展",
+	"extdist-not-configured": "請設定 $wgExtDistList 同 $wgExtDistAPIConfig",
+	"extdist-no-such-extensions": "無呢個擴展 \"$1\"",
+	"extdist-no-such-version-extensions": "個擴展 \"$1\" 唔存在於呢個版本 \"$2\" 度。",
+	"extdist-choose-extensions": "揀你要去下載嘅擴展:",
+	"extdist-submit-extension": "繼續",
+	"extdist-choose-version-extensions": "\n您而家下載緊「<b>$1</b>」擴展。\n\n揀您要嘅MediaWiki版本。\n\n多數擴展響多種版本嘅MediaWiki都行到，噉如果您嘅MediaWiki版本唔響度，又或者你要最新嘅擴展功能嘅話，試吓用最新版。",
+	"extdist-no-versions-extensions": "所揀嘅擴展 ($1) 唔適用喺任何嘅版本！",
+	"extdist-submit-version": "繼續",
+	"extdist-created-extensions": "一個可供 MediaWiki <b>$3</b> 用嘅 <b>$1</b> 擴展之 <b>$2</b> 版本嘅映像已經整好咗。你嘅下載將會響5秒鐘之後自動開始。\n\n呢個映像嘅 URL 係:\n:$4\n佢可能會用響即時下載到伺服器度，但係請唔好記底響書籤度，因為裏面啲嘢可能唔會更新，亦可能會響之後嘅時間刪除。\n\n個 tar 壓縮檔應該要解壓到你嘅擴展目錄。例如，響 unix 類 OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\n響 Windows，你可以用 [http://www.7-zip.org/ 7-zip] 去解壓嗰啲檔案。\n\n如果你嘅 wiki 係響一個遠端伺服器嘅話，就響電腦度解壓檔案到一個臨時目錄，然後再上載'''全部'''已經解壓咗嘅檔案到伺服器嘅擴展目錄。\n\n響你解壓咗啲檔案之後，你需要響 LocalSettings.php 度註冊番個擴展。個擴展說明講咗點樣可以做到呢樣嘢。\n\n如果你有任何對於呢個擴展發佈系統有問題嘅話，請去[[Extension talk:ExtensionDistributor]]。",
+	"extdist-want-more-extensions": "攞另一個擴展",
+	"extdist-tar-error": "Tar 回應結束碼 $1:"
+}

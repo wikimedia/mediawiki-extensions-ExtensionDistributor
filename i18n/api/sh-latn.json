@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"apihelp-query+extdistrepos-summary": "Daje spisak repozitorijuma podržanih od ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Ispiši repozitorije",
+	"apihelp-query+extdistbranches-summary": "Daje spisak grana za spremište koje podržava ExtensionDistributor"
+}

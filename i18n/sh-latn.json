@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"extensiondistributor": "Preuzimanje MediaWiki ekstenzije",
+	"skindistributor": "Preuzimanje teme „MediaWiki“",
+	"extensiondistributor-desc": "Dodatak za distribuciju snapshot arhiva dodataka",
+	"extdist-not-configured": "Podesite <code>$wgExtDistAPIConfig</code>.",
+	"extdist-list-missing-extensions": "Nije moguće dobiti popis dodataka!",
+	"extdist-list-missing-skins": "Nije moguće dobiti popis tema!",
+	"extdist-no-such-extensions": "Nema ekstenzije s imenom \"$1\"",
+	"extdist-no-such-skins": "Ne postoji teme nazvane \"$1\"",
+	"extdist-no-such-version-extensions": "Dodatak \"$1\" ne postoji u verziji \"$2\".",
+	"extdist-no-such-version-skins": "Tema \"$1\" ne postoji u verziji \"$2\".",
+	"extdist-choose-extensions": "Odaberite dodatak što želite preuzeti",
+	"extdist-choose-skins": "Odaberite temu što želite preuzeti.",
+	"extdist-submit-extension": "Nastavi",
+	"extdist-choose-version-extensions": "Preuzimate dodatak <b>$1</b>.\n\nIzaberite Vašu verziju MediaWikija.\n\nVećina dodataka radi na mnogim verzijama MediaWikija, pa ako se Vaša MediaWikija je nema, ili pak ako imate potrebu za najnovijim mogućnostima dodatka, tada pokušajte posljednju verziju.",
+	"extdist-choose-version-skins": "Preuzimate temu <b>$1</b>.\n\nIzaberite Vašu verziju MediaWikija.\n\nVećina tema radi na više verzija MediaWikija, pa zato, ako ne pronađete svoju verziju MediaWikija ili pak ako imate potrebu za najnovijim mogućnostima tema, tada koristite najnoviju verziju.",
+	"extdist-no-versions-extensions": "Izabrani dodatak ($1) nije dostupan u nijednoj verziji!",
+	"extdist-no-versions-skins": "Izabrana tema ($1) nije dostupna u nijednoj verziji!",
+	"extdist-submit-version": "Nastavi",
+	"extdist-created-extensions": "Napravljen je snimak iz verzije <b>$2</b> dodatka <b>$1</b> za MediaWIki <b>$3</b>. Preuzimanje će početi za 5 sekundi.\n\nURL ovog snimka je:\n:$4\nPutem linka možete preuzeti dodatak na bilo koje računalo, ali ga ne stavljajte na označeno, jer sadržaj neće biti obnovljen, a može se kasnije izbrisati.\n\nPotrebno je raspakirati sadržaj tar-arhive u folder za dodatke na svoj uspostavi MediaWikija. Na primjer, u operativnom sustavu poput Unixa, to bi bilo:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nNa Windowsu, možete se poslužiti uz [http://www.7-zip.org/ 7-zip] za njihovo raspakiranje.\n\nUkoliko je Vaš wiki smijesten na udaljenom poslužitelju, raspakirajte datoteke u privremeni folder na svom mjesnom računalu, a zatim prenesite '''sve''' raspakirane datoteke u folder za dodatke na serveru.\n\nNakon što napravite raspakiranje, morate prijaviti dodatak u LocalSettings.php. Dokumentacija dodatka trebala bi imati vodič koji će vam reći kako to učiniti.\n\nAko imate nekih pitanja oko ovog sistema dostave dodataka, idite na [[Extension talk:ExtensionDistributor]].",
+	"extdist-created-skins": "Napravljen je snimak iz verzije <b>$2</b> teme <b>$1</b> za MediaWIki <b>$3</b>. Preuzimanje će početi za 5 sekundi.\n\nURL ovog snimka je:\n:$4\nPutem linka možete preuzeti temu na bilo koje računalo, ali ga ne stavljajte na označeno, jer sadržaj neće biti obnovljen, a može se kasnije izbrisati.\n\nPotrebno je raspakirati sadržaj tar-arhive u folder za teme na svoj uspostavi MediaWikija. Na primjer, u operativnom sustavu poput Unixa, to bi bilo:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\nNa Windowsu, možete se poslužiti uz [http://www.7-zip.org/ 7-zip] za njihovo raspakiranje.\n\nUkoliko je Vaš wiki smijesten na udaljenom poslužitelju, raspakirajte datoteke u privremeni folder na svom mjesnom računalu, a zatim prenesite '''sve''' raspakirane datoteke u folder za teme na serveru.\n\nNakon što napravite raspakiranje, morate prijaviti temu u LocalSettings.php. Dokumentacija teme trebala bi imati vodič koji će vam reći kako to učiniti.\n\nAko imate nekih pitanja oko ovog sistema dostave tema, idite na [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more-extensions": "Preuzmi drugi dodatak",
+	"extdist-want-more-skins": "Daj drugu temu",
+	"extdist-goto-extensions-page": "Nazad na stranicu dodatka '''$1'''.",
+	"extdist-goto-skins-page": "Nazad na stranicu teme '''$1'''.",
+	"extdist-tar-error": "Ne mogu dobiti URL arhive koristeći njen API.",
+	"extdist-no-branches": "Nije moguće dohvatiti informacije ni o jednoj podružnici.",
+	"extdist-popular-extensions": "{{PLURAL:$1|Najpreuzimaniji dodatak|Najpreuzimanijih $1 dodataka}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|Najpreuzimaniji izgled (skin)|Najpreuzimanijih $1 izgleda (skinova)}}:",
+	"extdist-branch-alpha": "matična (najnovija razvojna verzija)",
+	"extdist-branch-candidate": "$1 (kandidat na buduću stabilnu verziju)",
+	"extdist-branch-stable": "$1 (najnovija stabilna verzija MedijaWikija)"
+}
