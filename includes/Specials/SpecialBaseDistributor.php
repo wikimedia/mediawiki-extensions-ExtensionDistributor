@@ -8,12 +8,12 @@ use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\Title\Title;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
 use Psr\Log\LoggerInterface;
 use SpecialPage;
-use Title;
 use Xml;
 
 /**
