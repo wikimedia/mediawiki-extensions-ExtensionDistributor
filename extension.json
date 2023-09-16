@@ -53,7 +53,12 @@
 		]
 	},
 	"Hooks": {
-		"APIQuerySiteInfoGeneralInfo": "MediaWiki\\Extension\\ExtensionDistributor\\Hooks::onAPIQuerySiteInfoGeneralInfo"
+		"APIQuerySiteInfoGeneralInfo": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Hooks"
+		}
 	},
 	"SpecialPages": {
 		"ExtensionDistributor": {
