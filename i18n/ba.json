@@ -38,6 +38,6 @@
 	"extdist-popular-extensions": "Иң яҡшы {{PLURAL:$1|$1 йөкләнгән киңәйтеү}}:",
 	"extdist-popular-skins": "Иң яҡшы {{PLURAL:$1|$1 йөкләнгән биҙәлеш темаһы}}:",
 	"extdist-branch-alpha": "master (һуңғы эшкәртелгән өлгө)",
-	"extdist-branch-candidate": "Һуңғы тотороҡло кандидат-версия $1",
-	"extdist-branch-stable": "$1 һуңғы тотороҡло MediaWiki"
+	"extdist-branch-candidate": "$1 (сираттағы тотороҡло өлгө-кандидат)",
+	"extdist-branch-stable": "$1 (һуңғы тотороҡло MediaWiki)"
 }
