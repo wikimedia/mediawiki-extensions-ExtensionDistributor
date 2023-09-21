@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Мухамадеева"
+			"Мухамадеева",
+			"З. ӘЙЛЕ"
 		]
 	},
-	"apihelp-query+extdistrepos-example-1": "Репозиториев исемлеге",
-	"apihelp-query+extdistbranches-param-skins": "Тармаҡ алыу өсөн биҙәү темаһы.",
-	"apihelp-query+extdistbranches-param-exts": "Тармаҡ алыу өсөн киңәйтеү.",
+	"apihelp-query+extdistrepos-example-1": "Һаҡлағыстар исемлеге",
+	"apihelp-query+extdistbranches-param-skins": "Тармаҡ алыу өсөн темалар",
+	"apihelp-query+extdistbranches-param-exts": "Тармаҡ алыу өсөн киңәйтеү",
 	"apihelp-query+extdistbranches-example-1": "ExtensionDistributor киңәйтеү өсөн тармаҡ алыу"
 }
