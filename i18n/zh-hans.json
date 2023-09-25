@@ -9,7 +9,8 @@
 			"Shinjiman",
 			"Wmr89502270",
 			"Yfdyh000",
-			"Great Brightstar"
+			"Great Brightstar",
+			"LittlePaw365"
 		]
 	},
 	"extensiondistributor": "下载MediaWiki扩展程序",
@@ -34,8 +35,8 @@
 	"extdist-created-skins": "用于MediaWiki <b>$3</b>的<b>$1</b>皮肤版本<b>$2</b>的快照已经创建。您的下载应该在5秒内自动开始。\n\n快照的URL是：\n:$4\n您可以使用此链接以在任意计算机上下载皮肤，但请不要收藏它，因为它的内容不会更新，并且下载后可能过后就会删除。\n\n您应该将tar压缩包的内容解压缩至您的MediaWiki安装位置内的皮肤目录中。例如在类Unix系统中：\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\n在Windows，您可以使用[http://www.7-zip.org/ 7-zip]解压文件。\n\n如果您的wiki位于远程服务器上，在您的本地计算机中解压至一个临时目录，并上传'''所有'''解压出的文件至服务器的皮肤目录。\n\n在您解压文件后，您将需要在LocalSettings.php注册您的皮肤。皮肤文档应该有如何操作的介绍。\n\n如果您对皮肤部署系统有任何问题，请至[[Extension talk:ExtensionDistributor]]。",
 	"extdist-want-more-extensions": "获取其他扩展程序",
 	"extdist-want-more-skins": "获取其他皮肤",
-	"extdist-goto-extensions-page": "返回至'''$1'''扩展页面。",
-	"extdist-goto-skins-page": "返回至'''$1'''皮肤页面。",
+	"extdist-goto-extensions-page": "返回'''$1'''扩展页面。",
+	"extdist-goto-skins-page": "返回'''$1'''皮肤页面。",
 	"extdist-tar-error": "无法从存档API读取存档URL。",
 	"extdist-no-branches": "无法获取关于分支机构的信息。",
 	"extdist-popular-extensions": "前{{PLURAL:$1|$1位下载扩展}}：",
