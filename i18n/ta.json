@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fahimrazick",
 			"TRYPPN",
 			"மதனாஹரன்"
 		]
 	},
 	"extensiondistributor": "மீடியாவிக்கி நீட்சியைத் தரவிறக்கவும்",
-	"extdist-choose-extensions": "நீங்கள் தரவிறக்க வேண்டிய நீட்சியைத் தெரிவு செய்யவும்:",
+	"extdist-choose-extensions": "நீர் தரவிறக்க விரும்பும் நீட்சியைத் தெரிவு செய்க:",
 	"extdist-submit-extension": "தொடரவும்",
 	"extdist-no-versions-extensions": "தெரிவு செய்யப்பட்ட நீட்சி ($1) எந்தவொரு பதிப்பிலும் கிடைக்காது!",
 	"extdist-submit-version": "தொடரவும்",
