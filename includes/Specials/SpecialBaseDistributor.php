@@ -2,18 +2,18 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
-use Html;
 use HtmlArmor;
 use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
+use MediaWiki\Html\Html;
 use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
 use Psr\Log\LoggerInterface;
-use SpecialPage;
 use Xml;
 
 /**

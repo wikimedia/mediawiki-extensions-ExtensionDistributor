@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\ExtensionDistributor\Providers;
 
 use FormatJson;
 use MediaWiki\MediaWikiServices;
-use Status;
+use MediaWiki\Status\Status;
 
 /**
  * ExtensionDistributor provider for the Gerrit Code Review system
