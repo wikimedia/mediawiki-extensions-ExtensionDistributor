@@ -79,7 +79,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				$parts[] = false;
 			}
 
-			list( $name, $version ) = $parts;
+			[ $name, $version ] = $parts;
 		} else {
 			$name = $this->getRequest()->getVal( 'extdistname' );
 			$version = $this->getRequest()->getVal( 'extdistversion' );
