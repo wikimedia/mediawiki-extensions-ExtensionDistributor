@@ -6,7 +6,6 @@ use BagOStuff;
 use FormatJson;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\MediaWikiServices;
-use ObjectCache;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 
@@ -44,7 +43,9 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 			return false;
 		}
 
-		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$objectcachefactory = MediaWikiServices::getInstance()->getObjectCacheFactory();
+
+		$cache = $objectcachefactory->getInstance( CACHE_ANYTHING );
 		$cacheKey = $this->getCacheKey( $cache, $type );
 
 		$cachedValue = $cache->get( $cacheKey );
@@ -113,7 +114,8 @@ class ExtDistGraphiteStats implements LoggerAwareInterface {
 	}
 
 	public function clearCache() {
-		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$cache = MediaWikiServices::getInstance()
+			->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$typesToClear = [
 			ExtDistProvider::EXTENSIONS,
 			ExtDistProvider::SKINS
