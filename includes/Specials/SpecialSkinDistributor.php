@@ -12,6 +12,7 @@ use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
  */
 class SpecialSkinDistributor extends SpecialBaseDistributor {
 
+	/** @var string */
 	protected $type = ExtDistProvider::SKINS;
 
 	/**

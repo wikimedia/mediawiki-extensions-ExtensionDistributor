@@ -12,6 +12,7 @@ use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
  */
 class SpecialExtensionDistributor extends SpecialBaseDistributor {
 
+	/** @var string */
 	protected $type = ExtDistProvider::EXTENSIONS;
 
 	/**

@@ -30,6 +30,7 @@ use MediaWiki\Status\Status;
  */
 class GithubExtDistProvider extends ExtDistProvider {
 
+	/** @var string|false */
 	private $oAuthToken = false;
 
 	public function __construct( array $options ) {

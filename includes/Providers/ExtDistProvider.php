@@ -29,10 +29,15 @@ abstract class ExtDistProvider implements LoggerAwareInterface {
 	 */
 	protected $proxy = false;
 
+	/** @var string */
 	protected $tarballUrl;
+	/** @var string */
 	protected $tarballName;
+	/** @var string */
 	protected $apiUrl;
+	/** @var string */
 	protected $repoType;
+	/** @var string|false */
 	protected $sourceUrl = false;
 	/**
 	 * @var LoggerInterface

@@ -28,6 +28,7 @@ use MediaWiki\Status\Status;
  */
 class GerritExtDistProvider extends ExtDistProvider {
 
+	/** @var string|false */
 	private $repoListUrl = false;
 
 	public function __construct( array $options ) {
