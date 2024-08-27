@@ -15,6 +15,7 @@ use Wikimedia\ParamValidator\ParamValidator;
  */
 class ApiListExtDistBranches extends ApiQueryBase {
 
+	/** @var (ExtDistProvider|null)[] */
 	private $providers = [];
 
 	public function __construct( ApiQuery $query, $moduleName ) {
@@ -23,7 +24,7 @@ class ApiListExtDistBranches extends ApiQueryBase {
 
 	/**
 	 * @param string $type
-	 * @return ExtDistProvider
+	 * @return ExtDistProvider|null
 	 */
 	protected function getProvider( $type ) {
 		if ( !isset( $this->providers[$type] ) ) {
