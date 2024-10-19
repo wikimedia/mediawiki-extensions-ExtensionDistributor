@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Api;
 
-use ApiQuery;
-use ApiQueryBase;
+use MediaWiki\Api\ApiQuery;
+use MediaWiki\Api\ApiQueryBase;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Logger\LoggerFactory;
 

@@ -3,18 +3,18 @@
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
 use HtmlArmor;
-use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Html\Html;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\Xml\Xml;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
 use Psr\Log\LoggerInterface;
-use Xml;
+use Wikimedia\Stats\IBufferingStatsdDataFactory;
 
 /**
  * Base class for special pages that allow users to download repository snapshots

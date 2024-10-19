@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor;
 
-use ApiQuerySiteinfo;
+use MediaWiki\Api\ApiQuerySiteinfo;
 use MediaWiki\Api\Hook\APIQuerySiteInfoGeneralInfoHook;
 
 class Hooks implements APIQuerySiteInfoGeneralInfoHook {

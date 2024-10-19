@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
-use IBufferingStatsdDataFactory;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
+use Wikimedia\Stats\IBufferingStatsdDataFactory;
 
 /**
  * Special page that allows users to download extensions as tar archives.

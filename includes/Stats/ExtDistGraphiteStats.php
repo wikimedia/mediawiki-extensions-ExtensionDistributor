@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Stats;
 
-use BagOStuff;
-use FormatJson;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
+use Wikimedia\ObjectCache\BagOStuff;
 
 /**
  * Class for retrieving stats about downloads from a Graphite render url

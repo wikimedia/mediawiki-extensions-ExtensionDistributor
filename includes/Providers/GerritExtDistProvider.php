@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Providers;
 
-use FormatJson;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Status\Status;
 

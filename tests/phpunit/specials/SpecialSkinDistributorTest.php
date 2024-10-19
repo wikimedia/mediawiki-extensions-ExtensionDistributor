@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Extension\ExtensionDistributor\Specials\SpecialSkinDistributor;
+use Wikimedia\Stats\IBufferingStatsdDataFactory;
 
 /**
  * @covers \MediaWiki\Extension\ExtensionDistributor\Specials\SpecialSkinDistributor
