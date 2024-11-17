@@ -63,6 +63,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return wfObjectToArray( FormatJson::decode( $clean ), true );
 	}
 
+	/** @inheritDoc */
 	protected function fetchBranches( $name ) {
 		$url = $this->substituteUrlVariables( $this->apiUrl, $name );
 		$info = $this->makeGerritApiRequest( $url );
@@ -101,6 +102,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return $repos;
 	}
 
+	/** @inheritDoc */
 	public function getTarballLocation( $ext, $version ) {
 		$shortHash = $this->getBranchSha( $ext, $version );
 		return $this->substituteUrlVariables( $this->tarballUrl, $ext, $version, $shortHash );

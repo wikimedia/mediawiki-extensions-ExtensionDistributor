@@ -22,6 +22,7 @@ class SpecialSkinDistributor extends SpecialBaseDistributor {
 		parent::__construct( 'SkinDistributor', $statsFactory );
 	}
 
+	/** @inheritDoc */
 	protected function getPopularList() {
 		$list = parent::getPopularList();
 		if ( $list ) {

@@ -49,10 +49,12 @@ class GithubExtDistProvider extends ExtDistProvider {
 		return 60 * 60;
 	}
 
+	/** @inheritDoc */
 	public function getTarballLocation( $ext, $version ) {
 		return $this->substituteUrlVariables( $this->tarballUrl, $ext, $version );
 	}
 
+	/** @inheritDoc */
 	protected function fetchBranches( $name ) {
 		$options = [];
 		if ( $this->proxy ) {

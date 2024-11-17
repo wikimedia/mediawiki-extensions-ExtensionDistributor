@@ -34,6 +34,7 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		return $this->providers[$type];
 	}
 
+	/** @inheritDoc */
 	public function getCacheMode( $params ) {
 		return 'public';
 	}
@@ -87,10 +88,12 @@ class ApiListExtDistBranches extends ApiQueryBase {
 		return $out;
 	}
 
+	/** @inheritDoc */
 	public function isInternal() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		$extensionsProvider = $this->getProvider( ExtDistProvider::EXTENSIONS );
 		$skinsProvider = $this->getProvider( ExtDistProvider::SKINS );

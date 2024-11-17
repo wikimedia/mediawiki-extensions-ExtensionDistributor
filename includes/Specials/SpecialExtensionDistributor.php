@@ -22,6 +22,7 @@ class SpecialExtensionDistributor extends SpecialBaseDistributor {
 		parent::__construct( 'ExtensionDistributor', $statsFactory );
 	}
 
+	/** @inheritDoc */
 	protected function getPopularList() {
 		$list = parent::getPopularList();
 		if ( $list ) {
