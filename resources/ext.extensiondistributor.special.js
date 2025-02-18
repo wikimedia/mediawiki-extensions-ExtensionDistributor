@@ -1,12 +1,15 @@
 /* eslint-disable no-jquery/no-global-selector */
 ( function () {
 	'use strict';
-	$( function () {
+	$( () => {
 		// infusing the DropdownInputWidgets makes
 		// them look prettier.
-		var selector = OO.ui.infuse( $( '.mw-extdist-selector' ) ),
-			distributorType, progress, api = new mw.Api(),
+		const selector = OO.ui.infuse( $( '.mw-extdist-selector' ) ),
+			api = new mw.Api(),
 			$continue = $( '.mw-extdist-continue' );
+		let progress;
+
+		let distributorType;
 		if ( mw.config.get( 'wgCanonicalSpecialPageName' ) === 'ExtensionDistributor' ) {
 			distributorType = 'extensions';
 		} else {
@@ -34,7 +37,7 @@
 		 * @return {string}
 		 */
 		function formatBranch( branch ) {
-			var version = formatVersion( branch );
+			const version = formatVersion( branch );
 			if ( branch === 'master' ) {
 				// Special case
 				return mw.msg( 'extdist-branch-alpha' );
@@ -80,12 +83,9 @@
 		 * @param {Object} data
 		 */
 		function processAPIResponse( data ) {
-			var info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
-				options = [],
-				versionField,
-				versionSelector,
-				versionButton;
-			mw.config.get( 'wgExtDistSnapshotRefs' ).forEach( function ( value ) {
+			const info = data.query.extdistbranches[ distributorType ][ selector.getValue() ],
+				options = [];
+			mw.config.get( 'wgExtDistSnapshotRefs' ).forEach( ( value ) => {
 				if ( info[ value ] ) {
 					options.push( { data: value, label: formatBranch( value ) } );
 				}
@@ -104,7 +104,7 @@
 				).text() );
 				return;
 			}
-			versionSelector = new OO.ui.DropdownInputWidget( {
+			const versionSelector = new OO.ui.DropdownInputWidget( {
 				classes: [ 'mw-extdist-selector-version' ],
 				options: options,
 				value: mw.config.get( 'wgExtDistDefaultSnapshot' ),
@@ -118,11 +118,11 @@
 				'extdist-choose-version-' + distributorType,
 				selector.getValue()
 			).parse().replace( /\n\n/g, '<p>' ) );
-			versionButton = new OO.ui.ButtonInputWidget( {
+			const versionButton = new OO.ui.ButtonInputWidget( {
 				classes: [ 'mw-extdist-submit-button' ],
 				label: mw.msg( 'extdist-submit-version' ),
 				flags: [ 'primary', 'progressive' ]
-			} ).on( 'click', function () {
+			} ).on( 'click', () => {
 				// Redirect to download page:
 				// extdistname=ExtensionDistributor&extdistversion=master
 				window.location.href = mw.util.getUrl( mw.config.get( 'wgPageName' ), {
@@ -130,15 +130,13 @@
 					extdistversion: versionSelector.getValue()
 				} );
 			} );
-			versionField = new OO.ui.ActionFieldLayout( versionSelector, versionButton, {
+			const versionField = new OO.ui.ActionFieldLayout( versionSelector, versionButton, {
 				align: 'top'
 			} );
 			// Add version selector after the help text
 			$continue.after( versionField.$element );
 		}
-		selector.on( 'change', function () {
-			var params;
-
+		selector.on( 'change', () => {
 			// Abort unfinished requests in case user
 			// makes new selection before previous
 			// request is done
@@ -160,7 +158,7 @@
 			// Add a progress bar to the page
 			progress = new OO.ui.ProgressBarWidget();
 			$continue.before( progress.$element );
-			params = {
+			const params = {
 				action: 'query',
 				list: 'extdistbranches',
 				// Set maxage of 30 minutes, which is same as server-side cache
@@ -177,7 +175,7 @@
 		} );
 
 		$( '.mw-extdist-plinks' ).on( 'click', function ( e ) {
-			var name = $( this ).data( 'name' );
+			const name = $( this ).data( 'name' );
 			e.preventDefault();
 			selector.setValue( name );
 			return false;
