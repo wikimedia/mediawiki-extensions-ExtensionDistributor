@@ -1,7 +1,7 @@
 <?php
 
 use MediaWiki\Extension\ExtensionDistributor\Specials\SpecialExtensionDistributor;
-use Wikimedia\Stats\IBufferingStatsdDataFactory;
+use Wikimedia\Stats\StatsFactory;
 
 /**
  * @covers \MediaWiki\Extension\ExtensionDistributor\Specials\SpecialExtensionDistributor
@@ -14,8 +14,8 @@ use Wikimedia\Stats\IBufferingStatsdDataFactory;
 class SpecialExtensionDistributorTest extends SpecialPageTestBase {
 
 	protected function newSpecialPage() {
-		$mockStatsDataFacotory = $this->createMock( IBufferingStatsdDataFactory::class );
-		return new SpecialExtensionDistributor( $mockStatsDataFacotory );
+		$mockStatsFactory = $this->createMock( StatsFactory::class );
+		return new SpecialExtensionDistributor( $mockStatsFactory );
 	}
 
 	public function testSpecialPageDoesNotFatal() {

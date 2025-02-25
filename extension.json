@@ -64,13 +64,13 @@
 		"ExtensionDistributor": {
 			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialExtensionDistributor",
 			"services": [
-				"StatsdDataFactory"
+				"StatsFactory"
 			]
 		},
 		"SkinDistributor": {
 			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialSkinDistributor",
 			"services": [
-				"StatsdDataFactory"
+				"StatsFactory"
 			]
 		}
 	},

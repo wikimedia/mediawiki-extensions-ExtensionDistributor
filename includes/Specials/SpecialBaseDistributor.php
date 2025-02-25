@@ -14,7 +14,7 @@ use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
 use Psr\Log\LoggerInterface;
-use Wikimedia\Stats\IBufferingStatsdDataFactory;
+use Wikimedia\Stats\StatsFactory;
 
 /**
  * Base class for special pages that allow users to download repository snapshots
@@ -38,14 +38,14 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 */
 	protected $provider;
 
-	/** @var IBufferingStatsdDataFactory */
+	/** @var StatsFactory */
 	protected $statsFactory;
 
 	/**
 	 * @param string $pageName
-	 * @param IBufferingStatsdDataFactory $statsFactory
+	 * @param StatsFactory $statsFactory
 	 */
-	public function __construct( $pageName, IBufferingStatsdDataFactory $statsFactory ) {
+	public function __construct( $pageName, StatsFactory $statsFactory ) {
 		$this->statsFactory = $statsFactory;
 
 		parent::__construct( $pageName );
@@ -359,12 +359,17 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @param string $version
 	 */
 	protected function doStats( $repo, $version ) {
-		// Overall repo downloads
-		$this->statsFactory->increment( "extdist.{$this->type}.$repo" );
-		// Repo split by version
-		$this->statsFactory->increment( "extdist.{$this->type}.$repo.$version" );
-		// MediaWiki core version adoption
-		$this->statsFactory->increment( "extdist.$version" );
+		// Overall repo downloads, Repo split by version and MediaWiki core version adoption
+		$repoMetric = $this->statsFactory->getCounter( 'extdist_repo_downloads_total' );
+		$repoMetric->setLabel( 'type', $this->type )
+			->setLabel( 'version', $version )
+			->setLabel( 'repo', $repo )
+			->copyToStatsdAt( [
+				"extdist.{$this->type}.$repo",
+				"extdist.{$this->type}.$repo.$version",
+				"extdist.$version"
+			] )
+			->increment();
 	}
 
 	/**
