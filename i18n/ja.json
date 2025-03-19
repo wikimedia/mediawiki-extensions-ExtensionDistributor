@@ -13,7 +13,7 @@
 		]
 	},
 	"extensiondistributor": "MediaWiki 拡張機能のダウンロード",
-	"skindistributor": "MediaWiki スキンのダウンロード",
+	"skindistributor": "MediaWiki 外装のダウンロード",
 	"extensiondistributor-desc": "拡張機能のスナップショットのアーカイブを配布するための拡張機能",
 	"extdist-not-configured": "<code>$wgExtDistAPIConfig</code> の設定を行ってください。",
 	"extdist-list-missing-extensions": "拡張機能一覧を取得できません!",
@@ -23,7 +23,7 @@
 	"extdist-no-such-version-extensions": "拡張機能「$1」にバージョン「$2」は存在しません。",
 	"extdist-no-such-version-skins": "スキン「$1」にバージョン「$2」は存在しません。",
 	"extdist-choose-extensions": "ダウンロードしたい拡張機能を選択してください:",
-	"extdist-choose-skins": "ダウンロードしたいスキンを選択してください:",
+	"extdist-choose-skins": "ダウンロードしたい外装を選択してください:",
 	"extdist-submit-extension": "続行",
 	"extdist-choose-version-extensions": "<b>$1</b> 拡張機能をダウンロードしようとしています。\n\nご使用中の MediaWiki のバージョンを選択してください。\n\n多くの拡張機能は複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、または拡張機能の最新の機能が必要な場合は、最新版をお試しください。",
 	"extdist-choose-version-skins": "<b>$1</b> スキンをダウンロードしようとしています。\n\nご使用中の MediaWiki のバージョンを選択してください。\n\n多くのスキンは複数のバージョンで動作しますが、ご使用中の MediaWiki のバージョンが一覧にない場合、またはスキンの最新の機能が必要な場合は、最新版をお試しください。",
