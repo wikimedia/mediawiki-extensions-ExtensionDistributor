@@ -78,6 +78,7 @@ class GerritExtDistProvider extends ExtDistProvider {
 		return $branches;
 	}
 
+	/** @inheritDoc */
 	protected function fetchRepositoryList() {
 		if ( !$this->repoListUrl ) {
 			// Not configured, fallback to default
