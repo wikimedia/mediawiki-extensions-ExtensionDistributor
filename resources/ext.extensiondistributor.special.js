@@ -72,7 +72,7 @@
 				history.pushState(
 					{ name: name },
 					name,
-					mw.util.getUrl( mw.config.get( 'wgPageName' ) + '/' + name )
+					mw.util.getUrl( 'Special:ExtensionDistributor/' + name )
 				);
 			}
 		}
@@ -125,7 +125,7 @@
 			} ).on( 'click', () => {
 				// Redirect to download page:
 				// extdistname=ExtensionDistributor&extdistversion=master
-				window.location.href = mw.util.getUrl( mw.config.get( 'wgPageName' ), {
+				window.location.href = mw.util.getUrl( 'Special:ExtensionDistributor', {
 					extdistname: selector.getValue(),
 					extdistversion: versionSelector.getValue()
 				} );
