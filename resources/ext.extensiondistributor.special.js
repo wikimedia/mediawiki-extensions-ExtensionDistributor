@@ -171,7 +171,7 @@
 				params.edbskins = selector.getValue();
 			}
 
-			api.get( params ).done( processAPIResponse );
+			api.get( params ).then( processAPIResponse );
 		} );
 
 		$( '.mw-extdist-plinks' ).on( 'click', function ( e ) {
