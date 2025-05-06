@@ -9,7 +9,6 @@ use MediaWiki\Html\Html;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use MediaWiki\Xml\Xml;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
@@ -127,7 +126,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		// extdist-choose-extensions, extdist-choose-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-$TYPE' ) );
 		$out->addHTML(
-			Xml::openElement( 'form', [
+			Html::openElement( 'form', [
 				'action' => $this->getPageTitle()->getLocalURL(),
 				'method' => 'GET' ] )
 		);
@@ -163,7 +162,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 				'type' => 'submit',
 				'flags' => [ 'primary', 'progressive' ],
 			] ) .
-			Xml::closeElement( 'form' ) . "\n" .
+			Html::closeElement( 'form' ) . "\n" .
 			Html::element( 'div', [ 'class' => 'mw-extdist-continue' ] ) .
 			"</div>"
 		);
@@ -250,7 +249,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		// extdist-choose-version-extensions, extdist-choose-version-skins
 		$out->addWikiMsg( $this->msgKey( 'extdist-choose-version-$TYPE' ), $repoName );
 		$html =
-			Xml::openElement( 'form', [
+			Html::openElement( 'form', [
 				'action' => $this->getPageTitle()->getLocalURL(),
 				'method' => 'GET' ] ) .
 			Html::hidden( 'extdistname', $repoName );
@@ -285,7 +284,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 						'align' => 'top'
 					]
 				) .
-				Xml::closeElement( 'form' ) . "\n"
+				Html::closeElement( 'form' ) . "\n"
 			);
 		} else {
 			$this->logger->warning( "Couldn't find any branches for \"{$repoName}\"" );
@@ -320,7 +319,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$linkRenderer = $this->getLinkRenderer();
 		if ( $pageTitle->isKnown() ) {
 			$this->getOutput()->addHTML(
-				Xml::openElement( 'p' ) .
+				Html::openElement( 'p' ) .
 				$linkRenderer->makeKnownLink(
 					$pageTitle,
 					// extdist-goto-extensions-page, extdist-goto-skins-page
@@ -330,12 +329,12 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 							->parse()
 					)
 				) .
-				Xml::closeElement( 'p' ) . "\n"
+				Html::closeElement( 'p' ) . "\n"
 			);
 		}
 
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'p' ) .
+			Html::openElement( 'p' ) .
 			$linkRenderer->makeLink(
 				$this->getPageTitle(),
 				new HtmlArmor(
@@ -343,7 +342,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 					$this->msg( $this->msgKey( 'extdist-want-more-$TYPE' ) )->escaped()
 				),
 				[ 'class' => 'mw-extdist-download' ]
-			) . Xml::closeElement( 'p' ) . "\n"
+			) . Html::closeElement( 'p' ) . "\n"
 		);
 
 		$this->doStats( $extension, $version );
