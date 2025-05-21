@@ -15,9 +15,13 @@
 	"extdist-choose-skins": "Izaberite temu koju želite preuzeti:",
 	"extdist-submit-extension": "Nastavi",
 	"extdist-choose-version-extensions": "Preuzimate ekstenziju <b>$1</b>.\n\nIzaberite vašu verziju Medijavikija.\n\nVećina ekstenzija će raditi na više (ili svim) verzijama Medijavikija, pa ako vaša verzija Medijavikija nije ovde, ili ako imate potrebu za najnovijim mogućnostima, pokušajte koristiti trenutnu verziju.",
+	"extdist-choose-version-skins": "Preuzimate temu <b>$1</b>.\n\nIzaberite vašu verziju Medijavikija.\n\nVećina tema će raditi na više (ili svim) verzijama Medijavikija, pa ako vaša verzija Medijavikija nije ovde, ili ako imate potrebu za najnovijim mogućnostima, pokušajte koristiti trenutnu verziju.",
 	"extdist-no-versions-extensions": "Izabrana ekstenzija ($1) nije dostupna ni u jednoj verziji!",
 	"extdist-no-versions-skins": "Izabrana tema ($1) nije dostupna ni u jednoj verziji!",
 	"extdist-submit-version": "Nastavi",
 	"extdist-want-more-extensions": "Preuzmi drugu ekstenziju",
+	"extdist-want-more-skins": "Preuzmi drugu temu",
+	"extdist-goto-extensions-page": "Nazad na stranicu ekstenzije '''$1'''.",
+	"extdist-goto-skins-page": "Nazad na stranicu teme '''$1'''.",
 	"extdist-branch-stable": "$1 (najnovije stabilno izdanje Medijavikija)"
 }
