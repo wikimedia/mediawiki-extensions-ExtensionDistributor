@@ -4,5 +4,10 @@
 			"Умар"
 		]
 	},
-	"apihelp-query+extdistrepos-example-1": "Репозиторийн могӀам"
+	"apihelp-query+extdistrepos-summary": "ExtensionDistributor тӀехь ловш йолу репозиторийн могӀам йухаберзабо",
+	"apihelp-query+extdistrepos-example-1": "Репозиторийн могӀам",
+	"apihelp-query+extdistbranches-summary": "ExtensionDistributor тӀехь ловш долу гаьннаш могӀам йухаберзабо репозиторина",
+	"apihelp-query+extdistbranches-param-skins": "Гаьннаш схьаэцаран теманаш",
+	"apihelp-query+extdistbranches-param-exts": "Гаьннаш схьаэца лерина шордарш",
+	"apihelp-query+extdistbranches-example-1": "ExtensionDistributor шордарна гаьннаш схьаэца"
 }
