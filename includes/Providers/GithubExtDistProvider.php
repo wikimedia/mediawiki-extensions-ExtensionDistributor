@@ -26,7 +26,6 @@ use MediaWiki\Status\Status;
  *  'sourceUrl' => 'https://github.com/wikimedia/mediawiki-$TYPE-$EXT',
  *  'token' => 'YOUR TOKEN HERE',
  * ];
- *
  */
 class GithubExtDistProvider extends ExtDistProvider {
 

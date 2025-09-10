@@ -24,7 +24,6 @@ use MediaWiki\Status\Status;
  *  'repoListUrl' => 'https://gerrit.wikimedia.org/r/projects/?b=master&p=mediawiki/$TYPE/',
  *  'sourceUrl' => 'https://gerrit.wikimedia.org/r/mediawiki/$TYPE/$EXT.git',
  * ];
- *
  */
 class GerritExtDistProvider extends ExtDistProvider {
 
