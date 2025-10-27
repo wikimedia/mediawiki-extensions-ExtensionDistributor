@@ -35,6 +35,6 @@
 	"extdist-popular-extensions": "{{PLURAL:$1|Најпреземан додаток|Најпреземани $1 додатоци}}:",
 	"extdist-popular-skins": "{{PLURAL:$1|Најпреземано руво|Најпреземани $1 рува}}:",
 	"extdist-branch-alpha": "матична (најнова развојна верзија)",
-	"extdist-branch-candidate": "$1 (кандидат за следна устојчива верзија)",
-	"extdist-branch-stable": "$1 (најнова устојчива верзија на МедијаВики)"
+	"extdist-branch-candidate": "$1 (кандидат за следна постојана верзија)",
+	"extdist-branch-stable": "$1 (најнова постојана верзија на МедијаВики)"
 }
