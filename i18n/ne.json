@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"NehalDaveND"
+			"NehalDaveND",
+			"बडा काजी"
 		]
 	},
-	"extdist-submit-extension": "जारी राख्ने",
-	"extdist-submit-version": "जारी राख्ने"
+	"extdist-submit-extension": "जारी राख्नुहोस्",
+	"extdist-submit-version": "जारी राख्नुहोस्"
 }
