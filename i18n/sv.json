@@ -5,6 +5,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"M.M.S.",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -25,7 +26,7 @@
 	"extdist-no-versions-extensions": "Det valda tillägget ($1) är inte tillgängligt i någon version!",
 	"extdist-no-versions-skins": "Det valda utseendet ($1) finns inte tillgängligt i någon version!",
 	"extdist-submit-version": "Fortsätt",
-	"extdist-created-extensions": "En ögonblicksbild av version <b>$2</b> av tillägget <b>$1</b> för MediaWiki <b>$3</b> har skapats. Din nerladdning ska starta automatiskt om 5 sekunder.\n\nURL:et för ögonblicksbilden är:\n:$4\nDen kan användas för direkt nedladdning till en server, men bokmärk den inte, för innehållet kommer inte uppdateras, och den kan bli raderad vid ett senare tillfälle.\n\nTar-arkivet ska packas upp i din extensions-katalog. Till exempel, på ett unix-likt OS:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du använda [http://www.7-zip.org/ 7-zip] för att packa upp filerna.\n\nOm din wiki är på en fjärrserver, packa upp filerna till en tillfällig katalog på din lokala dator, och ladda sedan upp '''alla''' uppackade filer till extensions-katalogen på servern.\n\nEfter att du packat upp filerna, behöver du registrera programtillägget i LocalSettings.php. Programtilläggets dokumentation ska ha instruktioner om hur man gör det.\n\nOm du har några frågor om programtilläggets distributionssystem, gå till [[Extension talk:ExtensionDistributor]].",
+	"extdist-created-extensions": "En ögonblicksbild av version <b>$2</b> av tillägget <b>$1</b> för MediaWiki <b>$3</b> har skapats. Din nerladdning ska starta automatiskt om 5 sekunder.\n\nURL:et för ögonblicksbilden är:\n:$4\nDu kan använda den här länken för att ladda ner tillägget på vilken dator som helst, men vänligen bokmärk det inte, eftersom dess innehåll inte kommer att uppdateras och det kan tas bort vid ett senare tillfälle.\n\nDu bör extrahera tar-arkivets innehåll till tilläggskatalogen i din MediaWiki-installation. Till exempel, på ett Unix-liknande operativsystem:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nPå Windows kan du använda [http://www.7-zip.org/ 7-zip] för att packa upp filerna.\n\nOm din wiki är på en fjärrserver, packa upp filerna till en tillfällig katalog på din lokala dator, och ladda sedan upp '''alla''' uppackade filer till extensions-katalogen på servern.\n\nEfter att du packat upp filerna, behöver du registrera programtillägget i LocalSettings.php. Programtilläggets dokumentation ska ha instruktioner om hur man gör det.\n\nOm du har några frågor om programtilläggets distributionssystem, gå till [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Hämta andra tillägg",
 	"extdist-want-more-skins": "Hämta ett annat utseende",
 	"extdist-tar-error": "Det gick inte att hämta arkiv-URL:en från arkiv-API:et.",
