@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lokal Profil"
+			"Lokal Profil",
+			"Stefan2255"
 		]
 	},
-	"apihelp-query+extdistrepos-example-1": "Lista centralförvar"
+	"apihelp-query+extdistrepos-summary": "Returnerar listan över centralförvar som stöds av ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Lista centralförvar",
+	"apihelp-query+extdistbranches-summary": "Returnerar listan över centralförvar som stöds av ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Skinn att få grenar till",
+	"apihelp-query+extdistbranches-param-exts": "Tillägg att hämta grenar för",
+	"apihelp-query+extdistbranches-example-1": "Hämta grenar för ExtensionDistributor-tillägget"
 }
