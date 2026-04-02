@@ -5,7 +5,7 @@
 			"Aca"
 		]
 	},
-	"apihelp-query+extdistrepos-summary": "Daje spisak repozitorijuma podržanih od ExtensionDistributor",
+	"apihelp-query+extdistrepos-summary": "Daje listu repozitorija podržanih od ExtensionDistributor",
 	"apihelp-query+extdistrepos-example-1": "Ispiši repozitorije",
 	"apihelp-query+extdistbranches-summary": "Daje listu grana za skladište koje podržava ExtensionDistributor"
 }
