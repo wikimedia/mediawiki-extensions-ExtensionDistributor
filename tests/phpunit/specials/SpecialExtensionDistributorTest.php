@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Extension\ExtensionDistributor\Specials\SpecialExtensionDistributor;
+use MediaWiki\Tests\Specials\SpecialPageTestBase;
 use Wikimedia\Stats\StatsFactory;
 
 /**

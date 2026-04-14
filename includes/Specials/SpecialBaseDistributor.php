@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
-use HtmlArmor;
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
 use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Html\Html;
@@ -13,6 +12,7 @@ use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\DropdownInputWidget;
 use Psr\Log\LoggerInterface;
+use Wikimedia\HtmlArmor\HtmlArmor;
 use Wikimedia\Stats\StatsFactory;
 
 /**
