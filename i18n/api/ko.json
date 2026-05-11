@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
-	"apihelp-query+extdistrepos-example-1": "저장소 나열"
+	"apihelp-query+extdistrepos-summary": "ExtensionDistributor에서 지원하는 저장소 목록을 반환합니다",
+	"apihelp-query+extdistrepos-example-1": "저장소 나열",
+	"apihelp-query+extdistbranches-summary": "ExtensionDistributor에서 지원하는 저장소의 브랜치 목록을 반환합니다",
+	"apihelp-query+extdistbranches-param-skins": "브랜치를 가져오기 위한 스킨",
+	"apihelp-query+extdistbranches-param-exts": "브랜치를 가져오기 위한 확장 기능",
+	"apihelp-query+extdistbranches-example-1": "ExtensionDistributor 확장 기능의 브랜치를 가져옵니다"
 }
