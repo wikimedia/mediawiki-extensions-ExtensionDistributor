@@ -203,7 +203,7 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @return string
 	 */
 	protected function formatVersion( $version ) {
-		if ( strpos( $version, 'REL' ) === 0 ) {
+		if ( str_starts_with( $version, 'REL' ) ) {
 			// Strip "REL" prefix, and convert _ to .
 			return str_replace( '_', '.', substr( $version, 3 ) );
 		} else {
@@ -363,11 +363,6 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 		$repoMetric->setLabel( 'type', $this->type )
 			->setLabel( 'version', $version )
 			->setLabel( 'repo', $repo )
-			->copyToStatsdAt( [
-				"extdist.{$this->type}.$repo",
-				"extdist.{$this->type}.$repo.$version",
-				"extdist.$version"
-			] )
 			->increment();
 	}
 
