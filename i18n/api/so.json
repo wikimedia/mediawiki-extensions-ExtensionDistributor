@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-query+extdistrepos-summary": "Waxay soo celisaa liiska kaydadka ay taageerto ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Liiska kaydadka",
+	"apihelp-query+extdistbranches-summary": "Waxay soo celisaa liiska laamaha ee kayd ay taageerto ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Muuqaal maqaarro laamahooda la soo helayo",
+	"apihelp-query+extdistbranches-param-exts": "Kordhinta laamahooda la soo helayo",
+	"apihelp-query+extdistbranches-example-1": "Soo hel laamaha kordhinta ExtensionDistributor"
+}
