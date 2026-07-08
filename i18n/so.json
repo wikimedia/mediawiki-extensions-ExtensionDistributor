@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"extensiondistributor": "Soo dejiso kordhinta MediaWiki",
+	"skindistributor": "Soo dejiso muuqaal maqaar MediaWiki",
+	"extensiondistributor-desc": "Kordhin loogu talagalay qaybinta kaydadka sawir-qaadista ee kordhinnada",
+	"extdist-not-configured": "Fadlan habee <code>$wgExtDistAPIConfig</code>.",
+	"extdist-list-missing-extensions": "Lama soo heli karo liiska kordhinnada!",
+	"extdist-list-missing-skins": "Lama soo heli karo liiska muuqaal maqaarada!",
+	"extdist-no-such-extensions": "Kordhin noocaas ah ma jiro \"$1\".",
+	"extdist-no-such-skins": "Muuqaal maqaar noocaas ah ma jiro \"$1\".",
+	"extdist-no-such-version-extensions": "Kordhinta \"$1\" kuma jirto nooca \"$2\".",
+	"extdist-no-such-version-skins": "Muuqaal maqaar \"$1\" kuma jiro nooca \"$2\".",
+	"extdist-choose-extensions": "Dooro kordhinta aad rabto inaad soo dejiso:",
+	"extdist-choose-skins": "Dooro muuqaal maqaarka aad rabto inaad soo dejiso:",
+	"extdist-submit-extension": "Sii wad",
+	"extdist-choose-version-extensions": "Waxaad soo dejisanaysaa kordhinta <b>$1</b>.\n\nDooro nooca MediaWiki kaaga.\n\nInta badan kordhinnadu waxay ku shaqeeyaan noocyo badan oo MediaWiki ah, sidaas darteed haddii noocaaga MediaWiki aanu halkan ku jirin, ama haddii aad u baahan tahay astaamaha ugu dambeeya ee kordhinta, isku day inaad isticmaasho nooca hadda jira.",
+	"extdist-choose-version-skins": "Waxaad soo dejisanaysaa muuqaal-maqaarka <b>$1</b>.\n\nDooro nooca MediaWiki kaaga.\n\nInta badan muuqaal maqaaradu waxay ku shaqeeyaan noocyo badan oo MediaWiki ah, sidaas darteed haddii noocaaga MediaWiki aanu halkan ku jirin, ama haddii aad u baahan tahay astaamaha ugu dambeeya ee muuqaal maqaarka, isku day inaad isticmaasho nooca hadda jira.",
+	"extdist-no-versions-extensions": "Kordhinta la doortay ($1) lagama heli karo wax nooc ah!",
+	"extdist-no-versions-skins": "Muuqaal maqaarka la doortay ($1) lagama heli karo wax nooc ah!",
+	"extdist-submit-version": "Sii wad",
+	"extdist-created-extensions": "Nooc sawir ah oo ka mid ah nooca <b>$2</b> ee kordhinta <b>$1</b> ee MediaWiki <b>$3</b> ayaa la sameeyay. Soo dejintaadu si toos ah ayey u bilaaban doontaa 5 ilbiriqsi gudahood.\n\nURL-ka sawirkan waa:\n:$4\nWaxaad isticmaali kartaa xiriiriyahaan si aad kordhinta ugu soo dejiso kombiyuutar kasta, laakiin fadlan ha calaamadeen, maadaama waxa ku jira aan la cusboonaysiin doonin, lagana yaabo in mar dambe la tirtiro.\n\nWaa inaad ka soo saartaa faylka tarka galka kordhinta ee rakibidda MediaWiki kaaga. Tusaale ahaan, nidaam Unix-like ah:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nWindows-ka, waxaad isticmaali kartaa [http://www.7-zip.org/ 7-zip] si aad u furto faylasha.\n\nHaddii wiki-gaagu ku yaal server fog, ka soo saar faylasha kombiyuutarkaaga ka dibna dhammaan faylasha la soo furay ku geli galka kordhinta ee server-ka.\n\nKadib marka aad faylasha soo saarto, waa inaad ku diiwaangelisaa extension LocalSettings.php. Dukumentiga kordhinta ayaa bixin doona tilmaamo ku saabsan sida tan loo sameeyo.\n\nHaddii aad qabto su'aalo ku saabsan nidaamkan qaybinta kordhinta, fadlan booqo [[Extension talk:ExtensionDistributor]].",
+	"extdist-created-skins": "Nooc sawirka ah oo ka mid ah nooca <b>$2</b> ee muuqaal maqaarka <b>$1</b> ee MediaWiki <b>$3</b> ayaa la sameeyay. Soo dejintaadu si toos ah ayey u bilaaban doontaa 5 ilbiriqsi gudahood.\n\nURL-ka sawirkan waa:\n:$4\nWaxaad isticmaali kartaa xiriiriyahaan si aad muuqaal maqaarka ugu soo dejiso kombiyuutar kasta, laakiin fadlan ha calaameen, maadaama waxa ku jira aan la cusboonaysiin doonin, lagana yaabo in mar dambe la tirtiro.\n\nWaa inaad ka soo saartaa faylka tarka galka skins ee rakibidda MediaWiki kaaga. Tusaale ahaan, nidaam Unix-like ah:\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/skins\n</pre>\n\nWindows-ka, waxaad isticmaali kartaa [http://www.7-zip.org/ 7-zip] si aad u furto faylasha.\n\nHaddii wiki-gaagu ku yaal server fog, ka soo saar faylasha kombiyuutarkaaga ka dibna dhammaan faylasha la soo furay ku geli galka skins ee server-ka.\n\nKadib marka aad faylasha soo saarto, waa inaad ku diiwaangelisaa muuqaalka maqaarka LocalSettings.php. Dukumentiga muuqaalka maqaarka ayaa bixin doona tilmaamo ku saabsan sida tan loo sameeyo.\n\nHaddii aad qabto su'aalo ku saabsan nidaamkan qaybinta muuqaalka maqaarka, fadlan booqo [[Extension talk:ExtensionDistributor]].",
+	"extdist-want-more-extensions": "Soo hel kordhin kale",
+	"extdist-want-more-skins": "Soo hel muuqaal maqaar kale",
+	"extdist-goto-extensions-page": "Ku laabo bogga kordhinta '''$1'''.",
+	"extdist-goto-skins-page": "Ku laabo bogga muuqaal maqaarka '''$1'''.",
+	"extdist-tar-error": "Lama soo heli karo URL-ka kaydka ee API-ga kaydka.",
+	"extdist-no-branches": "Lama soo heli karo macluumaad ku saabsan laamo kasta.",
+	"extdist-popular-extensions": "Kordhinnada ugu badan ee la soo dejistay {{PLURAL:$1|$1 kordhin|$1 kordhinno}}:",
+	"extdist-popular-skins": "{{PLURAL:$1|$1 muuqaal maqaar|$1 muuqaal maqaarro}} ugu badan:",
+	"extdist-branch-alpha": "master (nooca ugu dambeeya ee horumarinta)",
+	"extdist-branch-candidate": "$1 (murashaxa xasilloonida xigta)",
+	"extdist-branch-stable": "$1 (nooca ugu dambeeya ee xasilloon MediaWiki)"
+}
