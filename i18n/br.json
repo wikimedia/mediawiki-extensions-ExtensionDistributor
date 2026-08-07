@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ar choler",
 			"Fohanno",
 			"Fulup",
 			"Gwendal",
@@ -19,7 +20,7 @@
 	"extdist-choose-version-extensions": "Emaoc'h o pellgargañ an astenn <b>$1</b>.\n\nDibabit ho stumm MediaWiki.\n\nAl lod vrasañ eus an astennoù a  ya en-dro war stumm disheñvel MediaWiki. Neuze ma n'emañ ket ho stumm amañ, pe m'hoc'h eus ezhomm arc'hweladurioù ziwezhañ an astenn, klaskit implijout ar stumm a-vremañ.",
 	"extdist-no-versions-extensions": "Dizimplijadus eo an astenn bet dibabet ($1) e stumm ebet !",
 	"extdist-submit-version": "Kenderc'hel",
-	"extdist-created-extensions": "Krouet ez eus bet un eilad prim eus ar stumm <b>$2</b> eus <b>$1</b> an astenn evit MediaWiki <b>$3</b>. Ho pellgargadenn a zlefe kregiñ a-benn 5 eilenn.\n\nUrl an eilad prim zo :\n:$4\nGallout a ra bezañ implijet evit pellgargañ diouzhtu diwar ur servijer, met na enrollit ket anezhañ en ho sinedoù peogwir ne vo ket hizivaet an danvez hag e c'hall bezañ dilamet a-c'houdevezh.\n\nAn diell tar a vo eztennet e kavlec'h hoc'h astennoù. Da skouer, en ur reizhiad evel Unix :\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nGant Windows, e c'hallit implijout [http://www.7-zip.org/ 7-zip] evit eztennañ ar restroù.\n\nM'emañ ho wiki war ur servijer a-bell, eztennit ar restroù en ur c'havlec'h padennek en hoc'h urzhiataer lec'hel, ha da c'houde ezporzhiit '''holl''' ar restroù eztennet da gavlec'h an astennoù war ar servijer.\n\nGoude bezañ eztennet ar restroù, ho po ezhomm da enrollañ an astenn e LocalSettings.php. Teulliadur an astenn a zlefe bezañ ennañ kuzulioù war an doare d'en ober.\n\nM'hoc'h eus goulennoù diwar-benn reizhiad dasparzh an astennoù-mañ, kit war [[Extension talk:ExtensionDistributor]].",
+	"extdist-created-extensions": "Krouet ez eus bet ur skeudenn brim eus kentel <b>$2</b> an astenn <b>$1</b> evit  MediaWiki <b>$3</b>. Hoc'h enkargadenn a zlefe kregiñ a-benn 5 eilenn.\n\nSetu URL ar skeudenn brim-mañ :\n:$4\nTu zo deoc'h da implijout al liamm-se evit enkargañ an astenn e forzh pe urzhiataer, hogen ho pet ar vadelezh da chom hep e ouzhpennañ d'ho pennroll rak ne vo ket hizivaet ha diverket e vo diwezhatoc'h marteze.\n\nDav eo deoc'h eztennañ endalc'had an diell tar hag e lakaat e kavlec'h « extensions » ho staliadur Metawiki. Da skouer, gant ur reizhiad korvoiñ par da Unix :\n\n<pre>\ntar -xzf $5 -C /var/www/mediawiki/extensions\n</pre>\n\nGant Windows e c'hallit implijout [http://www.7-zip.org/ 7-zip] evit eztennañ ar restroù.\n\nMard emañ ho wiki war ur servijer diabell, eztennit ar restroù en ur c'havlec'h da c'hortoz en hoc'h urzhiataer lec'hel a-raok ezporzhiañ '''an holl''' restroù eztennet da gavlec'h « extensions » ar servijer.\n\nGoude bezañ eztennet ar restroù e rankot enrollañ an astenn e LocalSettings.php. Teuliadur an astenn a zlefe bezañ ennañ kemennoù a-zivout an doare d'ober.\n\nMard hoc'h eus goulennoù a-zivout an doare-mañ da zasparzh astennoù, kit war [[Extension talk:ExtensionDistributor]].",
 	"extdist-want-more-extensions": "Tapout un astenn all",
 	"extdist-tar-error": "N’eo ket bet posubl kargañ URL diell eus API dielloù."
 }
