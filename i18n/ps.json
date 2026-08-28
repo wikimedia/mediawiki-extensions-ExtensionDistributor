@@ -1,11 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"extensiondistributor": "د مېډياويکي شاتاړي ښکته کول",
 	"skindistributor": "د مېډياويکي پوښۍ ښکته کول",
 	"extdist-want-more-extensions": "بل شاتاړی ترلاسه کول",
-	"extdist-want-more-skins": "بله پوښۍ ترلاسه کول"
+	"extdist-want-more-skins": "بله پوښۍ ترلاسه کول",
+	"extdist-goto-extensions-page": "د '''$1''' شاتاړي مخ ته بېرته راستنېدل.",
+	"extdist-goto-skins-page": "د '''$1''' پوښۍ مخ ته بېرته راستنېدل.",
+	"extdist-tar-error": "د خوندي کاريال‌بهير‌مخبڼې څخه د خونديځ وېبتړ ترلاسه‌کولو توان نلري.",
+	"extdist-no-branches": "د هېڅ څانگې په اړه مالومات نشي ترلاسه کېدی.",
+	"extdist-branch-alpha": "ماسټر ( د پراختيا وروستۍ بل‌بڼه)",
+	"extdist-branch-candidate": "$1 (راتلونکی پايدار نوماند)",
+	"extdist-branch-stable": "$1 (وروستۍ پايداره مېډياويکي)"
 }

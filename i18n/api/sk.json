@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"apihelp-query+extdistrepos-summary": "Vráti zoznam úložísk podporovaných rozšírením ExtensionDistributor",
+	"apihelp-query+extdistrepos-example-1": "Vypísať úložiská",
+	"apihelp-query+extdistbranches-summary": "Vráti zoznam vetiev úložiska podporovaného rozšírením ExtensionDistributor",
+	"apihelp-query+extdistbranches-param-skins": "Vzhľady, pre ktoré sa majú získať vetvy",
+	"apihelp-query+extdistbranches-param-exts": "Rozšírenia, pre ktoré sa majú získať vetvy",
+	"apihelp-query+extdistbranches-example-1": "Získať vetvy rozšírenia ExtensionDistributor"
+}
