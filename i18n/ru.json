@@ -10,6 +10,7 @@
 			"MaxSem",
 			"Okras",
 			"Putnik",
+			"Yurina Tatiana",
 			"Александр Сигачёв"
 		]
 	},
@@ -19,8 +20,8 @@
 	"extdist-not-configured": "Пожалуйста, задайте <code>$wgExtDistAPIConfig</code>.",
 	"extdist-list-missing-extensions": "Не удаётся получить список расширений!",
 	"extdist-list-missing-skins": "Не удаётся получить список тем оформления!",
-	"extdist-no-such-extensions": "Расширение «$1» не найдено",
-	"extdist-no-such-skins": "Нет такой темы оформления, как «$1».",
+	"extdist-no-such-extensions": "Расширение «$1» не найдено.",
+	"extdist-no-such-skins": "Тема оформления «$1» не найдена.",
 	"extdist-no-such-version-extensions": "Версия $2 расширения «$1» не найдена.",
 	"extdist-no-such-version-skins": "Тема оформления «$1» не существует в версии «$2».",
 	"extdist-choose-extensions": "Выберите расширение для скачивания:",
