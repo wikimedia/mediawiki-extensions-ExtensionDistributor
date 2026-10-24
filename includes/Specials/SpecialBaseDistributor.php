@@ -3,7 +3,6 @@
 namespace MediaWiki\Extension\ExtensionDistributor\Specials;
 
 use MediaWiki\Extension\ExtensionDistributor\Providers\ExtDistProvider;
-use MediaWiki\Extension\ExtensionDistributor\Stats\ExtDistGraphiteStats;
 use MediaWiki\Html\Html;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -389,16 +388,15 @@ abstract class SpecialBaseDistributor extends SpecialPage {
 	 * @return string[]|bool
 	 */
 	protected function getPopularList() {
-		return $this->getGraphiteStats()->getPopularList( $this->type );
+		// TODO: Track popularity in some other way?
+		//
+		// This previously read increments stored by self::doStats() from
+		// Graphite. As of 2023, this is migrated to Prometheus which is
+		// write-only from MediaWiki (T327033).
+		//
+		// Instead, we now set $wgExtDistPopularExtList and $wgExtDistPopularSkinList
+		// by hand, based on manual review of Grafana
+		// https://grafana.wikimedia.org/d/000000161/extension-distributor-downloads
+		return false;
 	}
-
-	/**
-	 * @return ExtDistGraphiteStats
-	 */
-	protected function getGraphiteStats() {
-		$stats = new ExtDistGraphiteStats();
-		$stats->setLogger( $this->logger );
-		return $stats;
-	}
-
 }
